@@ -1,0 +1,43 @@
+# Tiny Japanese - YouTube lesson script
+# Header first, then four sections: [story] [vocab] [grammar] [quiz]
+# Romaji is generated automatically (pykakasi); add it as an extra "| romaji" part to override.
+title: Alex's First Day at School
+episode: 1
+scene: classroom
+
+[story]
+@scene home
+Mika: おはよう、アレックス！ | Good morning, Alex! | Ohayou, Arekkusu!
+Alex: おはよう、ミカ。きょうは がっこうの はじめての ひだね。 | Morning, Mika. Today is my first day at school. | Ohayou, Mika. Kyou wa gakkou no hajimete no hi ne.
+Mika: いっしょに いこう！ | Let's go together! | Issho ni ikou!
+@scene classroom
+Alex: ここが きょうしつ？ | Is this the classroom? | Koko ga kyoushitsu?
+Mika: そう。わたしの となりに すわって。 | Yes. Sit next to me. | Sou. Watashi no tonari ni suwatte.
+Alex: ありがとう。はじめまして、アレックスです。 | Thanks. Nice to meet you, I'm Alex. | Arigatou. Hajimemashite, Arekkusu desu.
+Mika: こちらこそ。ミカです。よろしくね。 | Likewise. I'm Mika. Please be nice to me. | Kochira koso. Mika desu. Yoroshiku ne.
+Alex: ミカは なにが すき？ | Mika, what do you like? | Mika wa nani ga suki?
+Mika: わたしは にほんごが すきだよ。 | I like Japanese. | Watashi wa nihongo ga suki da yo.
+Alex: ぼくも にほんごが すき！ | I like Japanese too! | Boku mo nihongo ga suki!
+
+[vocab]
+vocab: きょうしつ | classroom | kyoushitsu
+example: きょうしつに せんせいが います。 | The teacher is in the classroom. | Kyoushitsu ni sensei ga imasu.
+vocab: となり | next to / beside | tonari
+example: ミカの となりに すわります。 | I sit next to Mika. | Mika no tonari ni suwarimasu.
+vocab: すき | to like | suki
+example: ねこが すきです。 | I like cats. | Neko ga suki desu.
+vocab: よろしく | please treat me well | yoroshiku
+example: これから よろしく おねがいします。 | I look forward to working with you. | Korekara yoroshiku onegaishimasu.
+
+[grammar]
+grammar: Noun + が すき | Use this to say you like something
+example: わたしは ねこが すきです。 | I like cats. | Watashi wa neko ga suki desu.
+example: アレックスは コーヒーが すきです。 | Alex likes coffee. | Arekkusu wa koohii ga suki desu.
+grammar: Place + に すわる | Use this to say where you sit
+example: いすに すわります。 | I sit on the chair. | Isu ni suwarimasu.
+example: ミカの となりに すわります。 | I sit next to Mika. | Mika no tonari ni suwarimasu.
+
+[quiz]
+quiz: How do you say "I like Japanese"? | にほんごが すきです | にほんごを すきです | にほんごに すきです | A | が marks the thing you like.
+quiz: What does となり mean? | classroom | next to | teacher | B | Mika sat となり, next to Alex.
+quiz: Which one means "Nice to meet you"? | ありがとう | はじめまして | おはよう | B | Say はじめまして when you first meet someone.
