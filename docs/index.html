@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#14101a">
+<title>Tiny Japanese · YouTube Studio</title>
+<style>
+:root{color-scheme:dark;--bg:#14101a;--card:#1e1822;--field:#120e16;--pink:#ef7c96;--ink:#f4eaed;--soft:#a99aa1;--line:#3a2f3a;--ok:#6cc58c;--err:#ff7a70}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.5rem;margin:0 0 4px}h1 span{color:var(--pink)}
+p.sub{margin:0 0 20px;color:var(--soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:16px;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+label{display:block;font-weight:600;margin:0 0 6px}
+textarea,input[type=password]{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;background:var(--field);color:var(--ink)}
+textarea:focus,input:focus{outline:2px solid var(--pink);outline-offset:1px}
+textarea{min-height:380px;font-family:ui-monospace,Menlo,Consolas,"Noto Sans JP",monospace;font-size:.9rem;line-height:1.55}
+textarea.out{min-height:170px;font-size:.85rem}
+code{background:var(--field);padding:1px 6px;border-radius:6px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{border:0;border-radius:999px;background:var(--pink);color:#2a1219;font:inherit;font-weight:700;padding:14px 28px;cursor:pointer;width:100%;font-size:1.05rem}
+button:hover{filter:brightness(1.08)}button:disabled{opacity:.55;cursor:wait}
+button.ghost{background:transparent;color:var(--pink);border:1px solid var(--pink);width:auto;padding:8px 16px;font-size:.92rem}
+details summary{cursor:pointer;font-weight:600}
+.hint{color:var(--soft);font-size:.88rem;margin:8px 0 0}
+#status{white-space:pre-wrap;font-size:.95rem}
+.ok{color:var(--ok)}.err{color:var(--err)}
+video{width:100%;border-radius:16px;display:block;margin:12px auto 0;background:#000}
+a{color:var(--pink)}
+</style>
+</head>
+<body>
+<main>
+<h1>Tiny <span>Japanese</span> · YouTube Studio</h1>
+<p class="sub">Paste a lesson script, press the button, get a story + vocab + grammar + quiz video.</p>
+
+<div class="card">
+<label for="script">Lesson script</label>
+<textarea id="script" spellcheck="false"></textarea>
+<p class="hint">Header (<code>title:</code> <code>episode:</code> <code>scene:</code>), then <code>[story]</code> <code>[vocab]</code> <code>[grammar]</code> <code>[quiz]</code>. Speakers: Mika, Alex. Romaji is automatic. Aim for 12–16 story lines for a 5–6 minute video.</p>
+<button id="run" style="margin-top:14px">Make video</button>
+</div>
+
+<div class="card"><div id="status">Ready.</div><div id="result"></div></div>
+
+<div class="card">
+<details id="setup">
+<summary>One-time setup: GitHub access token</summary>
+<p class="hint">Create a fine-grained token at GitHub → Settings → Developer settings → Fine-grained tokens. Limit it to the repository <b>tiny-japanese-youtube</b> with <b>Contents: read/write</b> and <b>Actions: read/write</b>. It is saved only in this browser.</p>
+<label for="token" style="margin-top:10px">Token</label>
+<input id="token" type="password" autocomplete="off" placeholder="github_pat_…">
+<div class="row" style="margin-top:10px"><button class="ghost" id="saveTok" type="button">Save token</button><button class="ghost" id="clearTok" type="button">Forget token</button></div>
+</details>
+</div>
+</main>
+
+<script>
+const OWNER="sabaghanbarlo-hash", REPO="tiny-japanese-youtube", BRANCH="main", WF="render.yml";
+const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
+const $=id=>document.getElementById(id);
+const SAMPLE=`title: Alex's First Day at School
+episode: 1
+scene: classroom
+
+[story]
+@scene home
+Mika: おはよう、アレックス！ | Good morning, Alex!
+Alex: おはよう、ミカ。きょうは がっこうの はじめての ひだね。 | Morning, Mika. Today is my first day at school.
+Mika: いっしょに いこう！ | Let's go together!
+@scene classroom
+Alex: ここが きょうしつ？ | Is this the classroom?
+Mika: そう。わたしの となりに すわって。 | Yes. Sit next to me.
+Alex: ありがとう。はじめまして、アレックスです。 | Thanks. Nice to meet you, I'm Alex.
+Mika: こちらこそ。ミカです。よろしくね。 | Likewise. I'm Mika. Please be nice to me.
+Alex: ミカは なにが すき？ | Mika, what do you like?
+Mika: わたしは にほんごが すきだよ。 | I like Japanese.
+Alex: ぼくも にほんごが すき！ | I like Japanese too!
+
+[vocab]
+vocab: きょうしつ | classroom
+example: きょうしつに せんせいが います。 | The teacher is in the classroom.
+vocab: となり | next to / beside
+example: ミカの となりに すわります。 | I sit next to Mika.
+vocab: すき | to like
+example: ねこが すきです。 | I like cats.
+
+[grammar]
+grammar: Noun + が すき | Use this to say you like something
+example: わたしは ねこが すきです。 | I like cats.
+example: アレックスは コーヒーが すきです。 | Alex likes coffee.
+
+[quiz]
+quiz: How do you say "I like Japanese"? | にほんごが すきです | にほんごを すきです | にほんごに すきです | A | が marks the thing you like.
+quiz: What does となり mean? | classroom | next to | teacher | B | Mika sat となり, next to Alex.
+`;
+const get=k=>{try{return localStorage.getItem(k)||""}catch(e){return ""}};
+const set=(k,v)=>{try{v?localStorage.setItem(k,v):localStorage.removeItem(k)}catch(e){}};
+$("script").value=get("tjy_script")||SAMPLE;
+$("script").addEventListener("input",()=>set("tjy_script",$("script").value));
+$("token").value=get("tjy_token");
+if(!get("tjy_token"))$("setup").open=true;
+$("saveTok").onclick=()=>{set("tjy_token",$("token").value.trim());say("Token saved in this browser.","ok")};
+$("clearTok").onclick=()=>{set("tjy_token","");$("token").value="";say("Token removed.")};
+
+function say(t,cls){const s=$("status");s.textContent=t;s.className=cls||""}
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const b64=s=>{const b=new TextEncoder().encode(s);let o="";b.forEach(c=>o+=String.fromCharCode(c));return btoa(o)};
+function hdr(){return{Authorization:"Bearer "+get("tjy_token"),Accept:"application/vnd.github+json","Content-Type":"application/json"}}
+async function gh(path,opt={}){const r=await fetch(API+path,{...opt,headers:hdr()});if(!r.ok){let m="";try{m=(await r.json()).message}catch(e){}throw new Error(`GitHub ${r.status}: ${m||r.statusText}`)}return r.status===204?null:r.json()}
+function slug(t){return (t||"lesson").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)||"lesson"}
+function check(text){
+  const sec=/^\[(story|vocab|grammar|quiz)\]$/i;let inStory=false,n=0,any=false;
+  for(const raw of text.split("\n")){const l=raw.trim();if(!l||l.startsWith("#"))continue;
+    const m=l.match(sec);if(m){any=true;inStory=m[1].toLowerCase()==="story";continue}
+    if(inStory&&/^(mika|alex)\s*[:：]/i.test(l))n++}
+  if(!any)throw new Error("Add a [story] section (and optionally [vocab] [grammar] [quiz]).");
+  if(!n)throw new Error("No story lines found. Use  Mika: こんにちは | Hello");
+}
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+$("run").onclick=async()=>{
+  const btn=$("run");$("result").innerHTML="";
+  try{
+    if(!get("tjy_token")){$("setup").open=true;throw new Error("Add your GitHub token first (setup box below).")}
+    const text=$("script").value.trim();check(text);
+    btn.disabled=true;
+    const title=(text.match(/^title\s*:\s*(.+)$/im)||[])[1]||"lesson";
+    const stamp=new Date().toISOString().slice(0,16).replace(/[-:T]/g,"");
+    const stem=`${stamp}-${slug(title)}`;
+    say("Saving script…");
+    await gh(`/contents/lessons/${stem}.txt`,{method:"PUT",body:JSON.stringify({message:"Add lesson: "+title,content:b64(text+"\n"),branch:BRANCH})});
+    const t0=Date.now()-5000;
+    say("Starting the video job…");
+    await gh(`/actions/workflows/${WF}/dispatches`,{method:"POST",body:JSON.stringify({ref:BRANCH,inputs:{lesson:stem+".txt"}})});
+    let run=null;
+    for(let i=0;i<30&&!run;i++){await sleep(3000);
+      const r=await gh(`/actions/workflows/${WF}/runs?event=workflow_dispatch&per_page=5`);
+      run=(r.workflow_runs||[]).find(x=>new Date(x.created_at).getTime()>=t0)}
+    if(!run)throw new Error("The job didn't start. Check the Actions tab on GitHub.");
+    const started=Date.now();
+    for(;;){await sleep(8000);
+      run=await gh(`/actions/runs/${run.id}`);
+      say(`Rendering… (${run.status.replace("_"," ")}, ${Math.floor((Date.now()-started)/60000)} min)  A 5–6 minute video takes about 10–20 minutes.`);
+      if(run.status==="completed")break}
+    if(run.conclusion!=="success"){
+      let why="";try{const j=await gh(`/actions/runs/${run.id}/jobs`);const bad=j.jobs.find(x=>x.conclusion==="failure");
+        if(bad)why=` Failed step: "${(bad.steps.find(s=>s.conclusion==="failure")||{}).name||bad.name}".`}catch(e){}
+      throw new Error("The job didn't finish."+why+"\n"+run.html_url)}
+    const base=location.origin+location.pathname.replace(/[^/]*$/,"")+"videos/"+stem;
+    say("Publishing to the site…");
+    let ready=false;
+    for(let i=0;i<48&&!ready;i++){try{const r=await fetch(base+".mp4",{method:"HEAD",cache:"no-store"});ready=r.ok}catch(e){}if(!ready)await sleep(5000)}
+    if(!ready)throw new Error("The video is rendered but the site hasn't published it yet. Try this link in a minute:\n"+base+".mp4");
+    let desc="";try{desc=await (await fetch(base+".description.txt",{cache:"no-store"})).text()}catch(e){}
+    say("Done – your video is ready.","ok");
+    $("result").innerHTML=`<video controls playsinline poster="${base}.thumbnail.png" src="${base}.mp4"></video>
+<p style="text-align:center;margin:10px 0 0"><a href="${base}.mp4" download>Download MP4</a> · <a href="${base}.thumbnail.png" download>Thumbnail</a> · <a href="${base}.srt" download>Subtitles (.srt)</a> · <a href="${run.html_url}" target="_blank" rel="noopener">View job</a></p>
+<label for="desc" style="margin-top:14px">YouTube description (title, chapters, vocab)</label>
+<textarea id="desc" class="out" readonly>${esc(desc)}</textarea>
+<div class="row" style="margin-top:8px"><button class="ghost" id="copy" type="button">Copy description</button></div>`;
+    $("copy").onclick=async()=>{try{await navigator.clipboard.writeText(desc);$("copy").textContent="Copied!"}catch(e){$("desc").select()}};
+  }catch(e){say(String(e.message||e),"err")}
+  finally{btn.disabled=false}
+};
+</script>
+</body>
+</html>

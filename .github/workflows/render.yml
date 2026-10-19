@@ -4,17 +4,21 @@ on:
   workflow_dispatch:
     inputs:
       lesson:
-        description: "Lesson script in lessons/ (e.g. 01-first-day-at-school.txt). Leave empty to render all."
+        description: "Lesson script file name in lessons/ (e.g. 01-first-day-at-school.txt). Leave empty to render all."
         required: false
         default: ""
-  push:
-    paths:
-      - "lessons/*.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-lesson
+  cancel-in-progress: false
 
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,3 +39,13 @@ jobs:
         with:
           name: youtube-lessons
           path: output/
+      - name: Publish to the website
+        run: |
+          mkdir -p docs/videos
+          cp output/* docs/videos/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/videos
+          git commit -m "Publish lesson video" || exit 0
+          git pull --rebase origin main
+          git push
