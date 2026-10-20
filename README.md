@@ -11,13 +11,19 @@ Separate from the Instagram Reels project (`tiny-japanese-video`), but uses the 
 A lesson of about 12–16 story lines + 4 words + 2 grammar points + 3 quiz questions lands around 4–6 minutes.
 
 ## Make a video
-1. Open the studio page, paste a script, press **Make video** (or add a script in `lessons/` and run **Actions → Render YouTube lesson** with the file name).
+1. Open the studio page, pick **Lesson video** or **Short (vertical)**, paste a script, press the button (or add a script to `lessons/` or `shorts/` and run the matching workflow with the file name).
 2. The job renders the video, uploads it to YouTube (if the secrets below are set) and publishes it on the site.
-3. Outputs: `.mp4`, `.thumbnail.png`, `.srt`, `.description.txt` (title, chapters, vocab, hashtags) and `.youtube.txt` (the YouTube link).
+3. Outputs: `.mp4`, `.thumbnail.png`, `.srt` (lessons), `.description.txt` (title, chapters, vocab, hashtags) and `.youtube.txt` (the YouTube link).
 
 Locally: `pip install -r requirements.txt` (plus ffmpeg and a Japanese font), then
-`python lesson.py lessons/01-first-day-at-school.txt`.
-Quick checks: `--preview folder/` saves one image per section, `--dummy-audio` skips the voices.
+`python lesson.py lessons/01-first-day-at-school.txt` or `python short.py shorts/short-01-first-day.txt`.
+Quick checks: `--preview folder/` saves frames, `--dummy-audio` skips the voices.
+
+## Thumbnails
+Lesson thumbnails use the approved illustration in `assets/thumbnail_template.png` (chalkboard, Mika & Alex, brush-stroke banner). `thumb.py` paints each episode's `Ep.N · Title` onto it (the workflow runs it after rendering). Replace the template image to change the look for all future videos. If the file is missing, the built-in drawn cover is used.
+
+## Shorts
+`short.py` makes a **vertical 1080×1920 Short** (about 45 seconds): hook → mini story (4–6 lines) → 1–2 key words → one quick quiz question (3-second timer) → "follow" outro. Same script format as lessons; `[grammar]` is ignored and the story is capped at 8 lines. Example: `shorts/short-01-first-day.txt`. Run it from the studio page's **Short** tab or via **Actions → Render YouTube Short**. The description includes `#Shorts`.
 
 ## Automatic YouTube upload
 Uses your own Google Cloud OAuth app (no shared quota). Add these under **Settings → Secrets and variables → Actions**:
@@ -30,7 +36,7 @@ Uses your own Google Cloud OAuth app (no shared quota). Add these under **Settin
 | Variable (optional) | `YT_PRIVACY` | `private` (default), `unlisted` or `public` |
 
 Keep the Google consent screen **In production**, otherwise the refresh token expires after 7 days.
-A lesson is uploaded once; its `docs/videos/<name>.youtube.txt` marks it as done. If the upload fails the video is still published on the site and the job is marked failed so you notice.
+A video is uploaded once; its `docs/videos/<name>.youtube.txt` marks it as done. If the upload fails the video is still published on the site and the job is marked failed so you notice.
 Custom thumbnails need a phone-verified YouTube channel.
 
 ## Script format

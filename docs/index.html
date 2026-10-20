@@ -30,17 +30,23 @@ details summary{cursor:pointer;font-weight:600}
 .ok{color:var(--ok)}.err{color:var(--err)}
 video{width:100%;border-radius:16px;display:block;margin:12px auto 0;background:#000}
 a{color:var(--pink)}
+.tabs{display:flex;gap:8px;margin:0 0 16px}
+.tab{width:auto;flex:1;background:transparent;color:var(--soft);border:1px solid var(--line);padding:10px 16px;font-size:1rem}
+.tab.on{background:var(--pink);color:#2a1219;border-color:var(--pink)}
+video.vert{max-width:340px}
+textarea.short{min-height:300px}
 </style>
 </head>
 <body>
 <main>
 <h1>Tiny <span>Japanese</span> · YouTube Studio</h1>
-<p class="sub">Paste a lesson script, press the button, get a story + vocab + grammar + quiz video.</p>
+<p class="sub" id="sub"></p>
+<div class="tabs"><button class="tab" id="tabV" type="button">Lesson video</button><button class="tab" id="tabS" type="button">Short (vertical)</button></div>
 
 <div class="card">
 <label for="script">Lesson script</label>
 <textarea id="script" spellcheck="false"></textarea>
-<p class="hint">Header (<code>title:</code> <code>episode:</code> <code>scene:</code>), then <code>[story]</code> <code>[vocab]</code> <code>[grammar]</code> <code>[quiz]</code>. Speakers: Mika, Alex. Romaji is automatic. Aim for 12–16 story lines for a 5–6 minute video.</p>
+<p class="hint" id="hint"></p>
 <button id="run" style="margin-top:14px">Make video</button>
 </div>
 
@@ -58,10 +64,19 @@ a{color:var(--pink)}
 </main>
 
 <script>
-const OWNER="sabaghanbarlo-hash", REPO="tiny-japanese-youtube", BRANCH="main", WF="render.yml";
+const OWNER="sabaghanbarlo-hash", REPO="tiny-japanese-youtube", BRANCH="main";
 const API=`https://api.github.com/repos/${OWNER}/${REPO}`;
 const $=id=>document.getElementById(id);
-const SAMPLE=`title: Alex's First Day at School
+const MODES={
+ video:{wf:"render.yml",dir:"lessons",input:"lesson",key:"tjy_script",btn:"Make video",
+  sub:"Paste a lesson script, press the button, get a story + vocab + grammar + quiz video.",
+  hint:"Header (title: episode: scene:), then [story] [vocab] [grammar] [quiz]. Speakers: Mika, Alex. Romaji is automatic. Aim for 12–16 story lines for a 5–6 minute video.",wait:"A 5–6 minute video takes about 10–20 minutes.",vert:false},
+ short:{wf:"short.yml",dir:"shorts",input:"short",key:"tjy_short",btn:"Make Short",
+  sub:"Paste a short script, get a vertical ~45 second Short: mini story + 2 key words + 1 quiz question.",
+  hint:"Same format, but keep it tiny: 4–6 story lines, 1–2 [vocab] words, one [quiz] question. [grammar] is ignored. Romaji is automatic.",wait:"A Short takes about 4–8 minutes.",vert:true}};
+let MODE=get0("tjy_mode")==="short"?"short":"video";
+function get0(k){try{return localStorage.getItem(k)||""}catch(e){return ""}}
+const SAMPLE_VIDEO=`title: Alex's First Day at School
 episode: 1
 scene: classroom
 
@@ -98,10 +113,36 @@ quiz: What does となり mean? | classroom | next to | teacher | B | Mika sat �
 `;
 const get=k=>{try{return localStorage.getItem(k)||""}catch(e){return ""}};
 const set=(k,v)=>{try{v?localStorage.setItem(k,v):localStorage.removeItem(k)}catch(e){}};
-$("script").value=get("tjy_script")||SAMPLE;
-$("script").addEventListener("input",()=>set("tjy_script",$("script").value));
+const SAMPLE_SHORT=`title: Alex's First Day
+episode: 1
+scene: classroom
+
+[story]
+Mika: おはよう、アレックス！ | Good morning, Alex!
+Alex: おはよう。きょうは がっこうの はじめての ひだね。 | Morning. Today is my first day at school.
+Mika: いっしょに いこう！ | Let's go together!
+Alex: ここが きょうしつ？ | Is this the classroom?
+Mika: そう。わたしの となりに すわって。 | Yes. Sit next to me.
+
+[vocab]
+vocab: きょうしつ | classroom
+example: きょうしつに せんせいが います。 | The teacher is in the classroom.
+vocab: となり | next to
+example: ミカの となりに すわります。 | I sit next to Mika.
+
+[quiz]
+quiz: What does となり mean? | classroom | next to | teacher | B | Sit となり, next to me!
+`;
+function setMode(m){MODE=m;set("tjy_mode",m);const c=MODES[m];
+  $("tabV").classList.toggle("on",m==="video");$("tabS").classList.toggle("on",m==="short");
+  $("sub").textContent=c.sub;$("hint").textContent=c.hint;$("run").textContent=c.btn;
+  $("script").value=get(c.key)||(m==="short"?SAMPLE_SHORT:SAMPLE_VIDEO);$("script").classList.toggle("short",m==="short");
+  $("result").innerHTML="";say("Ready.")}
+$("script").addEventListener("input",()=>set(MODES[MODE].key,$("script").value));
+$("tabV").onclick=()=>setMode("video");$("tabS").onclick=()=>setMode("short");
 $("token").value=get("tjy_token");
 if(!get("tjy_token"))$("setup").open=true;
+setMode(MODE);
 $("saveTok").onclick=()=>{set("tjy_token",$("token").value.trim());say("Token saved in this browser.","ok")};
 $("clearTok").onclick=()=>{set("tjy_token","");$("token").value="";say("Token removed.")};
 
@@ -129,21 +170,21 @@ $("run").onclick=async()=>{
     btn.disabled=true;
     const title=(text.match(/^title\s*:\s*(.+)$/im)||[])[1]||"lesson";
     const stamp=new Date().toISOString().slice(0,16).replace(/[-:T]/g,"");
-    const stem=`${stamp}-${slug(title)}`;
+    const stem=`${MODE==="short"?"short-":""}${stamp}-${slug(title)}`;
     say("Saving script…");
-    await gh(`/contents/lessons/${stem}.txt`,{method:"PUT",body:JSON.stringify({message:"Add lesson: "+title,content:b64(text+"\n"),branch:BRANCH})});
+    await gh(`/contents/${MODES[MODE].dir}/${stem}.txt`,{method:"PUT",body:JSON.stringify({message:"Add lesson: "+title,content:b64(text+"\n"),branch:BRANCH})});
     const t0=Date.now()-5000;
     say("Starting the video job…");
-    await gh(`/actions/workflows/${WF}/dispatches`,{method:"POST",body:JSON.stringify({ref:BRANCH,inputs:{lesson:stem+".txt"}})});
+    const WFX=MODES[MODE].wf;await gh(`/actions/workflows/${WFX}/dispatches`,{method:"POST",body:JSON.stringify({ref:BRANCH,inputs:{[MODES[MODE].input]:stem+".txt"}})});
     let run=null;
     for(let i=0;i<30&&!run;i++){await sleep(3000);
-      const r=await gh(`/actions/workflows/${WF}/runs?event=workflow_dispatch&per_page=5`);
+      const r=await gh(`/actions/workflows/${WFX}/runs?event=workflow_dispatch&per_page=5`);
       run=(r.workflow_runs||[]).find(x=>new Date(x.created_at).getTime()>=t0)}
     if(!run)throw new Error("The job didn't start. Check the Actions tab on GitHub.");
     const started=Date.now();
     for(;;){await sleep(8000);
       run=await gh(`/actions/runs/${run.id}`);
-      say(`Rendering… (${run.status.replace("_"," ")}, ${Math.floor((Date.now()-started)/60000)} min)  A 5–6 minute video takes about 10–20 minutes.`);
+      say(`Rendering… (${run.status.replace("_"," ")}, ${Math.floor((Date.now()-started)/60000)} min)  ${MODES[MODE].wait}`);
       if(run.status==="completed")break}
     if(run.conclusion!=="success"){
       let why="";try{const j=await gh(`/actions/runs/${run.id}/jobs`);const bad=j.jobs.find(x=>x.conclusion==="failure");
@@ -155,9 +196,10 @@ $("run").onclick=async()=>{
     for(let i=0;i<48&&!ready;i++){try{const r=await fetch(base+".mp4",{method:"HEAD",cache:"no-store"});ready=r.ok}catch(e){}if(!ready)await sleep(5000)}
     if(!ready)throw new Error("The video is rendered but the site hasn't published it yet. Try this link in a minute:\n"+base+".mp4");
     let desc="";try{desc=await (await fetch(base+".description.txt",{cache:"no-store"})).text()}catch(e){}
-    say("Done – your video is ready.","ok");
-    $("result").innerHTML=`<video controls playsinline poster="${base}.thumbnail.png" src="${base}.mp4"></video>
-<p style="text-align:center;margin:10px 0 0"><a href="${base}.mp4" download>Download MP4</a> · <a href="${base}.thumbnail.png" download>Thumbnail</a> · <a href="${base}.srt" download>Subtitles (.srt)</a> · <a href="${run.html_url}" target="_blank" rel="noopener">View job</a></p>
+    let yt="";try{const r=await fetch(base+".youtube.txt",{cache:"no-store"});if(r.ok)yt=(await r.text()).split("\n")[0].trim()}catch(e){}
+    say("Done – your video is ready."+(yt?"\nUploaded to YouTube: "+yt:""),"ok");
+    $("result").innerHTML=`<video class="${MODES[MODE].vert?"vert":""}" controls playsinline poster="${base}.thumbnail.png" src="${base}.mp4"></video>
+<p style="text-align:center;margin:10px 0 0"><a href="${base}.mp4" download>Download MP4</a> · <a href="${base}.thumbnail.png" download>Thumbnail</a>${MODES[MODE].vert?"":` · <a href="${base}.srt" download>Subtitles (.srt)</a>`} · ${yt?`<a href="${yt}" target="_blank" rel="noopener">YouTube</a> · `:""}<a href="${run.html_url}" target="_blank" rel="noopener">View job</a></p>
 <label for="desc" style="margin-top:14px">YouTube description (title, chapters, vocab)</label>
 <textarea id="desc" class="out" readonly>${esc(desc)}</textarea>
 <div class="row" style="margin-top:8px"><button class="ghost" id="copy" type="button">Copy description</button></div>`;
