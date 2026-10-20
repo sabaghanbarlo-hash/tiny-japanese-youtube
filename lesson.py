@@ -18,6 +18,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W, H, FPS, SR = 1920, 1080, 24, 24000
 CHAR_SCALE, CHAR_Y = 0.9, 190
 FLOOR_Y = 800
+STAGE_OUT = 0.69   # full-body characters in the story scenes
 BRAND = (222, 110, 134)
 INK, SOFT, ROMA = (52, 40, 44), (90, 78, 80), (176, 110, 128)
 GREEN = (60, 150, 100)
@@ -297,15 +298,30 @@ def slide_bg(meta):
 
 # ------------------------------------------------------------------ characters
 @functools.lru_cache(None)
-def sprite(name, mouth, blink):
+def sprite(name, mouth, blink, out=1.0, full=False):
+    """full=True adds the lower body (skirt/trousers, legs, shoes); the default crops it off (hidden behind the table)."""
     c, S = CHARS[name], 2 * CHAR_SCALE
-    w, h = int(560 * S), int(760 * S)
+    w, h = int(560 * S), int(960 * S)
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     P = lambda *v: [int(x * S) for x in v]
     ell = lambda box, fill: d.ellipse(P(*box), fill=fill)
     ink, hair, skin, top, acc = (70, 45, 48), c["hair"], c["skin"], c["top"], c["accent"]
     if c["long_hair"]:
         d.rounded_rectangle(P(110, 170, 450, 590), radius=int(110 * S), fill=hair)
+    shoe = (96, 66, 60)
+    if c["long_hair"]:   # skirt, legs, socks, shoes
+        for x0 in (214, 306):
+            d.rounded_rectangle(P(x0, 780, x0 + 42, 905), radius=int(16 * S), fill=skin)
+            d.rounded_rectangle(P(x0 - 2, 862, x0 + 44, 912), radius=int(14 * S), fill=(250, 248, 246))
+            ell((x0 - 14, 896, x0 + 62, 940), shoe)
+        d.polygon(P(178, 640, 382, 640, 414, 805, 146, 805), fill=(122, 132, 196))
+        for x in range(170, 400, 46):
+            d.line(P(x, 700, x - (280 - x) * 0.08, 800), fill=(104, 114, 178), width=int(5 * S))
+    else:                # trousers, shoes
+        for x0 in (198, 292):
+            d.rounded_rectangle(P(x0, 640, x0 + 72, 890), radius=int(26 * S), fill=(96, 112, 150))
+            ell((x0 - 10, 876, x0 + 84, 926), shoe)
+        d.rounded_rectangle(P(190, 628, 370, 700), radius=int(26 * S), fill=(96, 112, 150))
     d.rounded_rectangle(P(185, 450, 375, 690), radius=int(60 * S), fill=top)
     d.polygon(P(245, 452, 280, 505, 315, 452), fill=skin)
     ell((140, 500, 210, 650), top); ell((350, 500, 420, 650), top)
@@ -334,7 +350,10 @@ def sprite(name, mouth, blink):
         ell((268, 408, 292, 430), (120, 40, 52))
     else:
         ell((258, 405, 302, 442), (120, 40, 52)); ell((266, 424, 294, 440), (236, 120, 132))
-    return im.resize((SPRITE_W, SPRITE_H), Image.LANCZOS)
+    if not full:
+        im = im.crop((0, 0, w, int(760 * S)))
+        return im.resize((int(SPRITE_W * out), int(SPRITE_H * out)), Image.LANCZOS)
+    return im.resize((int(SPRITE_W * out), int(SPRITE_H * out * 960 / 760)), Image.LANCZOS)
 
 
 @functools.lru_cache(None)
@@ -702,10 +721,10 @@ class Renderer:
     def seg_at(self, tt):
         return self.B["segs"][max(0, bisect.bisect_right(self.starts, tt) - 1)]
 
-    def character(self, fr, nm, i, tt, speaking, mouth, x, y, scale_pill=True):
+    def character(self, fr, nm, i, tt, speaking, mouth, x, y, scale_pill=True, full=False, out=1.0):
         bob = 6 * abs(math.sin(tt * 7)) if speaking and mouth else 2 * math.sin(tt * 2 + (0 if nm == "Mika" else 1.7))
         blink = ((i + (0 if nm == "Mika" else 41)) % 72) < 3
-        s = sprite(nm, int(mouth) if speaking else 0, blink)
+        s = sprite(nm, int(mouth) if speaking else 0, blink, out, full)
         fr.paste(s, (x, int(y - bob)), s)
         return s
 
@@ -722,9 +741,12 @@ class Renderer:
         if seg["kind"] == "story" and seg["prev_scene"] != name and tt - seg["start"] < 0.5:
             fr = Image.blend(self.scene(seg["prev_scene"])[0], bg, min(1, (tt - seg["start"]) / 0.5))
         for nm, c in CHARS.items():
-            s = self.character(fr, nm, i, tt, who == nm, mouth, c["x"], CHAR_Y)
+            cx = c["x"] + SPRITE_W // 2
+            fs = sprite(nm, 0, False, STAGE_OUT, True)
+            x, y = cx - fs.width // 2, FLOOR_Y - 50 - fs.height
+            self.character(fr, nm, i, tt, who == nm, mouth, x, y, full=True, out=STAGE_OUT)
             p = self.pills[(nm, int(who == nm))]
-            fr.paste(p, (c["x"] + s.width // 2 - p.width // 2, CHAR_Y + 50), p)
+            fr.paste(p, (cx - p.width // 2, y + 36), p)
         fr.paste(fg, (0, FLOOR_Y - 40), fg)
         if seg["kind"] == "story":
             ln = seg["line"]
@@ -780,7 +802,8 @@ class Renderer:
         key = ("slide", seg["kind"], id(seg))
         cd = self.cached(key, lambda: self.slide_card(seg))
         self.fade(fr, cd, 50, 190 + max(0, (640 - cd.height) // 2), min(1, (tt - seg["start"]) / 0.2))
-        self.character(fr, "Mika", i, tt, who == "Mika", mouth, W - SPRITE_W - 90, 1000 - SPRITE_H + 20)
+        ms = sprite("Mika", 0, False, 0.74, True)
+        self.character(fr, "Mika", i, tt, who == "Mika", mouth, W - 90 - SPRITE_W // 2 - int(SPRITE_W * 0.74) // 2, 1000 - ms.height + 12, full=True, out=0.74)
         if seg["kind"] == "quiz" and seg["phase"] == "think":
             left = max(0.0, 5 - (tt - seg["t0"]))
             d = ImageDraw.Draw(fr); cx, cy, r = W - 90 - SPRITE_W // 2, 240, 95
