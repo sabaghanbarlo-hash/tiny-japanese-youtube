@@ -138,14 +138,14 @@ class ShortRenderer:
         fr = self.bg(scene).copy()
         if seg["kind"] == "story" and seg["prev_scene"] != scene and tt - seg["start"] < 0.5:
             fr = Image.blend(self.bg(seg["prev_scene"]), fr, min(1, (tt - seg["start"]) / 0.5))
-        for nm, x in (("Mika", 0), ("Alex", SW - 504)):
+        for nm, cx in (("Mika", 270), ("Alex", SW - 270)):
             speaking = who == nm
             bob = 6 * abs(math.sin(tt * 7)) if speaking and mouth else 2 * math.sin(tt * 2 + (0 if nm == "Mika" else 1.7))
             blink = ((i + (0 if nm == "Mika" else 41)) % 72) < 3
-            s = sprite(nm, int(mouth) if speaking else 0, blink)
-            fr.paste(s, (x, int(480 - bob)), s)
+            s = sprite(nm, int(mouth) if speaking else 0, blink, 0.8, True)
+            fr.paste(s, (cx - s.width // 2, int(470 - bob)), s)
             p = self.pills[(nm, int(speaking))]
-            fr.paste(p, (x + 252 - p.width // 2, 520), p)
+            fr.paste(p, (cx - p.width // 2, 520), p)
         key = ("c", seg["kind"], id(seg))
         cd = self.cached(key, lambda: self.card_for(seg))
         f = min(1, (tt - seg["start"]) / 0.2)
