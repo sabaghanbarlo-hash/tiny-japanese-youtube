@@ -11,13 +11,27 @@ Separate from the Instagram Reels project (`tiny-japanese-video`), but uses the 
 A lesson of about 12–16 story lines + 4 words + 2 grammar points + 3 quiz questions lands around 4–6 minutes.
 
 ## Make a video
-1. Add a script in `lessons/`, e.g. `02-at-the-station.txt` (copy `01-first-day-at-school.txt` as a template).
-2. Commit it. **Actions → Render YouTube lesson** renders it (or run the workflow by hand).
-3. Download the `youtube-lessons` artifact: `.mp4`, `.thumbnail.png`, `.srt`, `.description.txt` (title, chapters, vocab, hashtags – paste into YouTube).
+1. Open the studio page, paste a script, press **Make video** (or add a script in `lessons/` and run **Actions → Render YouTube lesson** with the file name).
+2. The job renders the video, uploads it to YouTube (if the secrets below are set) and publishes it on the site.
+3. Outputs: `.mp4`, `.thumbnail.png`, `.srt`, `.description.txt` (title, chapters, vocab, hashtags) and `.youtube.txt` (the YouTube link).
 
 Locally: `pip install -r requirements.txt` (plus ffmpeg and a Japanese font), then
 `python lesson.py lessons/01-first-day-at-school.txt`.
 Quick checks: `--preview folder/` saves one image per section, `--dummy-audio` skips the voices.
+
+## Automatic YouTube upload
+Uses your own Google Cloud OAuth app (no shared quota). Add these under **Settings → Secrets and variables → Actions**:
+
+| Kind | Name | Value |
+|---|---|---|
+| Secret | `YT_CLIENT_ID` | OAuth client ID |
+| Secret | `YT_CLIENT_SECRET` | OAuth client secret |
+| Secret | `YT_REFRESH_TOKEN` | refresh token (from the OAuth Playground, scope `youtube.upload`) |
+| Variable (optional) | `YT_PRIVACY` | `private` (default), `unlisted` or `public` |
+
+Keep the Google consent screen **In production**, otherwise the refresh token expires after 7 days.
+A lesson is uploaded once; its `docs/videos/<name>.youtube.txt` marks it as done. If the upload fails the video is still published on the site and the job is marked failed so you notice.
+Custom thumbnails need a phone-verified YouTube channel.
 
 ## Script format
 ```
