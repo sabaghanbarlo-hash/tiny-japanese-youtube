@@ -1,0 +1,34 @@
+title: Alex's First Day at School
+episode: 1
+scene: classroom
+
+[story]
+@scene home
+Mika: おはよう、アレックス！ | Good morning, Alex!
+Alex: おはよう、ミカ。きょうは がっこうの はじめての ひだね。 | Morning, Mika. Today is my first day at school.
+Mika: いっしょに いこう！ | Let's go together!
+@scene classroom
+Alex: ここが きょうしつ？ | Is this the classroom?
+Mika: そう。わたしの となりに すわって。 | Yes. Sit next to me.
+Alex: ありがとう。はじめまして、アレックスです。 | Thanks. Nice to meet you, I'm Alex.
+Mika: こちらこそ。ミカです。よろしくね。 | Likewise. I'm Mika. Please be nice to me.
+Alex: ミカは なにが すき？ | Mika, what do you like?
+Mika: わたしは にほんごが すきだよ。 | I like Japanese.
+Alex: ぼくも にほんごが すき！ | I like Japanese too!
+
+[vocab]
+vocab: きょうしつ | classroom
+example: きょうしつに せんせいが います。 | The teacher is in the classroom.
+vocab: となり | next to / beside
+example: ミカの となりに すわります。 | I sit next to Mika.
+vocab: すき | to like
+example: ねこが すきです。 | I like cats.
+
+[grammar]
+grammar: Noun + が すき | Use this to say you like something
+example: わたしは ねこが すきです。 | I like cats.
+example: アレックスは コーヒーが すきです。 | Alex likes coffee.
+
+[quiz]
+quiz: How do you say "I like Japanese"? | にほんごが すきです | にほんごを すきです | にほんごに すきです | A | が marks the thing you like.
+quiz: What does となり mean? | classroom | next to | teacher | B | Mika sat となり, next to Alex.
