@@ -35,6 +35,12 @@ jobs:
         run: |
           if [ -n "$LESSON" ]; then files="lessons/$LESSON"; else files=$(ls lessons/*.txt); fi
           for f in $files; do python lesson.py "$f" -o output; done
+      - name: Cover image
+        env:
+          LESSON: ${{ github.event.inputs.lesson }}
+        run: |
+          if [ -n "$LESSON" ]; then files="lessons/$LESSON"; else files=$(ls lessons/*.txt); fi
+          for f in $files; do b=$(basename "$f" .txt); python thumb.py "$f" "output/$b.thumbnail.png"; done
       - uses: actions/upload-artifact@v4
         with:
           name: youtube-lessons

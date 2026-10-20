@@ -1,0 +1,19 @@
+title: Alex's First Day
+episode: 1
+scene: classroom
+
+[story]
+Mika: おはよう、アレックス！ | Good morning, Alex!
+Alex: おはよう。きょうは がっこうの はじめての ひだね。 | Morning. Today is my first day at school.
+Mika: いっしょに いこう！ | Let's go together!
+Alex: ここが きょうしつ？ | Is this the classroom?
+Mika: そう。わたしの となりに すわって。 | Yes. Sit next to me.
+
+[vocab]
+vocab: きょうしつ | classroom
+example: きょうしつに せんせいが います。 | The teacher is in the classroom.
+vocab: となり | next to
+example: ミカの となりに すわります。 | I sit next to Mika.
+
+[quiz]
+quiz: What does となり mean? | classroom | next to | teacher | B | Sit となり, next to me!
