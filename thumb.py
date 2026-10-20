@@ -10,7 +10,19 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 import lesson as L
 from lesson import font, wrap
 
-TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "thumbnail_template.png")
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def _find_template():
+    """assets/thumbnail_template.png, else thumbnail_template.png, else any image in the repo root named like 'ChatGPT Image ....png'."""
+    for p in (os.path.join(HERE, "assets", "thumbnail_template.png"), os.path.join(HERE, "thumbnail_template.png")):
+        if os.path.exists(p):
+            return p
+    g = sorted(glob.glob(os.path.join(HERE, "ChatGPT*.png")) + glob.glob(os.path.join(HERE, "*template*.png")))
+    return g[0] if g else os.path.join(HERE, "assets", "thumbnail_template.png")
+
+
+TEMPLATE = _find_template()
 NAVY = (42, 67, 146)
 
 
@@ -74,10 +86,10 @@ def main():
     if len(sys.argv) != 3:
         sys.exit("usage: python thumb.py <script.txt> <out.png>")
     if not os.path.exists(TEMPLATE):
-        print("assets/thumbnail_template.png not found - keeping the default thumbnail"); return
+        print("thumbnail template image not found - keeping the default thumbnail"); return
     meta = L.parse_script(sys.argv[1])[0]
     thumbnail_from_template(meta, sys.argv[2])
-    print("Wrote", sys.argv[2])
+    print("Wrote", sys.argv[2], "from", os.path.basename(TEMPLATE))
 
 
 if __name__ == "__main__":
