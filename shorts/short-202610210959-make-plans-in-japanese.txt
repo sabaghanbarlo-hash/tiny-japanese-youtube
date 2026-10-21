@@ -1,0 +1,29 @@
+title: Make Plans in Japanese
+episode: Short 4
+scene: school entrance
+
+[hook]
+
+Alex: ともだちを あそびに さそいたい！ | Tomodachi o asobi ni sasoitai! | You want to invite a friend to hang out!
+
+Mika: そんなときは、こう いってみて！ | Sonna toki wa, kou itte mite! | In that case, try saying this!
+
+[story]
+
+Alex: きょう、ひま？ | Kyou, hima? | Are you free today?
+
+Mika: うん、ひまだよ！ | Un, hima da yo! | Yes, I'm free!
+
+Alex: いっしょに こうえんに いかない？ | Issho ni kouen ni ikanai? | Would you like to go to the park together?
+
+Mika: いいね！いこう！ | Ii ne! Ikou! | Sounds good! Let's go!
+
+[learning tip]
+
+Mika: 「ひま？」は「Are you free?」という いみだよ。 | “Hima?” wa “Are you free?” to iu imi da yo. | “Hima?” means “Are you free?”
+
+Alex: 「いかない？」は、カジュアルな さそいかただよ。 | “Ikanai?” wa, kajuaru na sasoikata da yo. | “Ikanai?” is a casual way to invite someone.
+
+[ending]
+
+Mika: ともだちに つかってみてね！ | Tomodachi ni tsukatte mite ne! | Try using it with a friend!
