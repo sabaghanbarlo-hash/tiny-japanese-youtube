@@ -1,0 +1,129 @@
+title: What Do You Like?
+episode: 2
+scene: classroom and school courtyard
+
+[story]
+
+@scene classroom
+
+Mika: アレックス、おはよう！ | Arekkusu, ohayou! | Good morning, Alex!
+
+Alex: おはよう、ミカ！ | Ohayou, Mika! | Good morning, Mika!
+
+Mika: きょうは しゅみについて はなそう！ | Kyou wa shumi ni tsuite hanasou! | Let's talk about hobbies today!
+
+Alex: しゅみ？ | Shumi? | Hobbies?
+
+Mika: うん！すきなことは なに？ | Un! Suki na koto wa nani? | Yes! What do you like to do?
+
+Alex: ぼくは おんがくが すきです。 | Boku wa ongaku ga suki desu. | I like music.
+
+Mika: いいね！どんな おんがくが すき？ | Ii ne! Donna ongaku ga suki? | Nice! What kind of music do you like?
+
+Alex: ポップスが すきです。ミカは？ | Poppusu ga suki desu. Mika wa? | I like pop music. What about you, Mika?
+
+Mika: わたしは えを かくことが すきです。 | Watashi wa e o kaku koto ga suki desu. | I like drawing pictures.
+
+Alex: すごい！ | Sugoi! | Amazing!
+
+Mika: アレックスは スポーツが すき？ | Arekkusu wa supootsu ga suki? | Alex, do you like sports?
+
+Alex: はい、サッカーが すきです！ | Hai, sakkaa ga suki desu! | Yes, I like soccer!
+
+Mika: わたしも サッカーが すき！ | Watashi mo sakkaa ga suki! | I like soccer too!
+
+Alex: ほんとう？いっしょに サッカーを しよう！ | Hontou? Issho ni sakkaa o shiyou! | Really? Let's play soccer together!
+
+@scene school courtyard
+
+Mika: でも、きょうは ちょっと さむいね。 | Demo, kyou wa chotto samui ne. | But it's a little cold today.
+
+Alex: そうだね。じゃあ、こうえんに いくのは どう？ | Sou da ne. Jaa, kouen ni iku no wa dou? | That's true. How about going to the park?
+
+Mika: いいね！こうえんで おんがくを きこう。 | Ii ne! Kouen de ongaku o kikou. | Sounds good! Let's listen to music at the park.
+
+Alex: いいよ！ぼくの すきな きょくを きかせるね。 | Ii yo! Boku no suki na kyoku o kikaseru ne. | Sure! I'll let you listen to my favorite song.
+
+Mika: たのしみ！ | Tanoshimi! | I'm looking forward to it!
+
+Alex: じゃあ、また あとで！ | Jaa, mata ato de! | Okay, see you later!
+
+Mika: またね！ | Mata ne! | See you!
+
+[vocab]
+
+vocab: しゅみ | shumi | hobby
+example: わたしの しゅみは えを かくことです。 | Watashi no shumi wa e o kaku koto desu. | My hobby is drawing.
+
+vocab: おんがく | ongaku | music
+example: おんがくが すきです。 | Ongaku ga suki desu. | I like music.
+
+vocab: え | e | picture; drawing
+example: えを かきます。 | E o kakimasu. | I draw pictures.
+
+vocab: かく | kaku | to draw; to write
+example: えを かくのが すきです。 | E o kaku no ga suki desu. | I like drawing pictures.
+
+vocab: サッカー | sakkaa | soccer
+example: サッカーが すきです。 | Sakkaa ga suki desu. | I like soccer.
+
+vocab: こうえん | kouen | park
+example: こうえんに いきます。 | Kouen ni ikimasu. | I go to the park.
+
+vocab: さむい | samui | cold (weather)
+example: きょうは さむいです。 | Kyou wa samui desu. | It's cold today.
+
+vocab: きょく | kyoku | song; musical piece
+example: この きょくが すきです。 | Kono kyoku ga suki desu. | I like this song.
+
+vocab: どんな | donna | what kind of
+example: どんな おんがくが すきですか？ | Donna ongaku ga suki desu ka? | What kind of music do you like?
+
+vocab: たのしみ | tanoshimi | something to look forward to; anticipation
+example: あしたが たのしみです。 | Ashita ga tanoshimi desu. | I'm looking forward to tomorrow.
+
+[grammar]
+
+grammar: Noun が すきです | noun ga suki desu | Use this to say you like something.
+example: おんがくが すきです。 | Ongaku ga suki desu. | I like music.
+example: サッカーが すきです。 | Sakkaa ga suki desu. | I like soccer.
+
+grammar: Noun は？ | noun wa? | Use this shortened question to ask “What about...?” when the rest is understood.
+example: ミカは？ | Mika wa? | What about you, Mika?
+example: アレックスは？ | Arekkusu wa? | What about you, Alex?
+
+grammar: どんな + noun | donna + noun | Use どんな to ask what kind of something a person likes or wants.
+example: どんな おんがくが すきですか？ | Donna ongaku ga suki desu ka? | What kind of music do you like?
+example: どんな えが すきですか？ | Donna e ga suki desu ka? | What kind of pictures do you like?
+
+grammar: Verb dictionary form + ことが すきです | verb + koto ga suki desu | Use this pattern to say you like doing an activity.
+example: えを かくことが すきです。 | E o kaku koto ga suki desu. | I like drawing pictures.
+example: ほんを よむことが すきです。 | Hon o yomu koto ga suki desu. | I like reading books.
+
+grammar: Verb ましょう / よう | mashou / you | These are ways to suggest doing something together. ましょう is polite; よう is a casual form.
+example: いっしょに べんきょうしましょう。 | Issho ni benkyou shimashou. | Let's study together.
+example: サッカーを しよう！ | Sakkaa o shiyou! | Let's play soccer!
+
+[quiz]
+
+quiz: What does しゅみ mean? | Hobby | Classroom | Song | A | しゅみ means hobby.
+
+quiz: How do you say “I like music”? | おんがくを すきです | おんがくが すきです | おんがくに すきです | B | Use が with すきです.
+
+quiz: What does どんな mean? | Where | When | What kind of | C | どんな asks about a type or kind.
+
+quiz: What does こうえん mean? | School | Park | Shop | B | こうえん means park.
+
+quiz: How can you say “Let's play soccer!” casually? | サッカーを しよう！ | サッカーが です！ | サッカーに すき！ | A | サッカーを しよう！ is a casual suggestion to play soccer.
+
+[ending]
+
+Mika: みんなの しゅみは なに？ | Minna no shumi wa nani? | What are your hobbies?
+
+Alex: コメントで おしえてね！ | Komento de oshiete ne! | Tell us in the comments!
+
+Mika: つぎは、いっしょに おでかけする よていを たてるよ！ | Tsugi wa, issho ni odekake suru yotei o tateru yo! | Next, we'll make plans to go out together!
+
+Alex: たのしみに していてね！ | Tanoshimi ni shite ite ne! | Look forward to it!
+
+Mika and Alex: またね！ | Mata ne! | See you!
