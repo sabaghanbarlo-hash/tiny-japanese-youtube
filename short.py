@@ -19,8 +19,7 @@ def parse_short(path):
     """Dialogue-style Short script: [hook] [story] [quiz] [ending] sections, each made of 'Mika: jp | romaji | English' lines.
     Returns None if the file is in the older format (use lesson.parse_script for that)."""
     raw = open(path, encoding="utf-8").read()
-    secs = re.findall(r"^\[(\w+)\]\s*$", raw, re.M)
-    if "hook" not in [x.lower() for x in secs] and not re.search(r"^\s*(Mika|Alex|Mika and Alex|Both)\s*:", raw.split("[quiz]")[-1] if "[quiz]" in raw else "", re.M | re.I):
+    if re.search(r"^\s*(vocab|quiz)\s*:", raw, re.M | re.I):
         return None
     meta = dict(title="Tiny Short", episode="", scene="auto")
     lines, sec, pending = [], None, None
@@ -28,11 +27,9 @@ def parse_short(path):
         s = line.strip()
         if not s or s.startswith("#"):
             continue
-        m = re.match(r"^\[(\w+)\]$", s)
+        m = re.match(r"^\[([^\]]+)\]$", s)
         if m:
-            sec = m[1].lower()
-            if sec not in ("hook", "story", "quiz", "ending"):
-                L.die(f"line {n}: unknown section [{m[1]}] in a Short. Use [hook] [story] [quiz] [ending]")
+            sec = m[1].strip().lower()
             continue
         if sec is None:
             m = re.match(r"^(title|episode|scene)\s*:\s*(.+)$", s, re.I)
@@ -78,6 +75,8 @@ def build_short_dialogue(meta, lines, rate, dummy, tmp):
         a, b = tr.say(ln["jp"], ln["speaker"]); ln.update(start=a, end=b)
         mark("story", a - 0.02, line=ln, scene=ln["scene"], prev_scene=prev)
         prev = ln["scene"]; tr.gap(0.45)
+        if re.search(r"your turn|say it|repeat after", ln["en"], re.I) and i < len(lines) - 1:   # pause so viewers can answer out loud
+            mark("think", tr.t, line=ln, t0=tr.t, scene=ln["scene"]); tr.gap(3)
     total = tr.t + 1.0
     if total > LIMIT:
         print(f"::warning::This short is {total:.0f}s long. Shorts under about 60s perform best; use fewer lines.", file=sys.stderr)
