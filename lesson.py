@@ -65,7 +65,7 @@ SCENE_KEYWORDS = {
 SCENE_ALIASES = {"supermarket": "store", "market": "store", "shop": "store", "shopping": "store", "convenience": "store",
                  "school": "classroom", "library": "bookstore", "house": "home", "kitchen": "home", "room": "home",
                  "night": "street", "city": "street", "festival": "street", "sea": "beach", "ocean": "beach",
-                 "garden": "park", "train": "station", "bus": "station", "clinic": "hospital", "bakery": "cafe", "coffee": "cafe"}
+                 "garden": "park", "courtyard": "park", "playground": "park", "schoolyard": "park", "train": "station", "bus": "station", "clinic": "hospital", "bakery": "cafe", "coffee": "cafe"}
 SCENE_ORDER = list(SCENES)
 
 
@@ -131,10 +131,8 @@ def resolve_scene(name):
     sc = SCENE_ALIASES.get(name.strip().lower(), name.strip().lower())
     if sc in SCENES:
         return sc
-    for key, val in list(SCENE_ALIASES.items()) + [(k, k) for k in SCENES]:
-        if key in sc:
-            return val
-    return None
+    hits = [(sc.rfind(key), val) for key, val in list(SCENE_ALIASES.items()) + [(k, k) for k in SCENES] if key in sc]
+    return max(hits, key=lambda h: h[0])[1] if hits else None
 
 
 def pick_scene(meta, lines):
@@ -400,7 +398,7 @@ def sub_blocks(jp, romaji, en, jp_size=66, ro_size=38, en_size=44):
 
 
 def story_card(ln):
-    return card(ln["speaker"], CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"]), cw=1560, min_h=250)
+    return card(ln.get("tag", ln["speaker"]), CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"]), cw=1560, min_h=250)
 
 
 def example_blocks(ex, big=False):
@@ -408,12 +406,56 @@ def example_blocks(ex, big=False):
 
 
 # ------------------------------------------------------------------ script parsing
-SECTIONS = ("story", "vocab", "grammar", "quiz")
+SECTIONS = ("story", "vocab", "grammar", "quiz", "ending")
+
+_ROMAJI = re.compile(r"(?:(?:[kgszjtdnhbpmr]y?|sh|ch|ts|f|w|y)?[aiueo]|n(?![aiueoy])|(?:kk|ss|tt|pp)(?=[aiueo]))+")
+
+
+def _norm(t):
+    return re.sub(r"[^a-z]", "", t.lower())
+
+
+def _romaji_like(t):
+    n = _norm(t)
+    return bool(n) and bool(_ROMAJI.fullmatch(n))
+
+
+def split_rom_en(jp, a, b):
+    """Given the two extra parts of 'jp | x | y', decide which is romaji and which is English (either order works)."""
+    ra = to_romaji(jp)
+    if ra:
+        import difflib
+        sa = difflib.SequenceMatcher(None, _norm(ra), _norm(a)).ratio()
+        sb = difflib.SequenceMatcher(None, _norm(ra), _norm(b)).ratio()
+        if abs(sa - sb) > 0.08:
+            return (a, b) if sa > sb else (b, a)
+    la, lb = _romaji_like(a), _romaji_like(b)
+    if la != lb:
+        return (a, b) if la else (b, a)
+    return a, b          # ambiguous: romaji first, English second
+
+
+def meaning_of(a, b):
+    """For 'pattern | x | y' pick the English explanation (the part that is not romaji)."""
+    la, lb = _romaji_like(a), _romaji_like(b)
+    if la and not lb:
+        return b
+    if lb and not la:
+        return a
+    return b
+
+
+def example_dict(p):
+    if len(p) > 2 and p[1] and p[2]:
+        rom, en = split_rom_en(p[0], p[1], p[2])
+    else:
+        rom, en = (to_romaji(p[0]), p[1] if len(p) > 1 else "")
+    return dict(jp=p[0], en=en, romaji=rom or to_romaji(p[0]))
 
 
 def parse_script(path):
     meta = dict(title="Tiny Lesson", episode="", scene="auto")
-    story, vocab, grammar, quiz = [], [], [], []
+    story, vocab, grammar, quiz, ending = [], [], [], [], []
     sec, cur = None, None
     pending_scene = None
     for n, raw in enumerate(open(path, encoding="utf-8"), 1):
@@ -433,7 +475,7 @@ def parse_script(path):
                 die(f"line {n}: put title/episode/scene first, then a [story] section: {s}")
             meta[m[1].lower()] = m[2].strip()
             continue
-        if sec == "story":
+        if sec in ("story", "ending"):
             m = re.match(r"^@scene\s+(.+)$", s, re.I)
             if m:
                 sc = resolve_scene(m[1])
@@ -441,12 +483,19 @@ def parse_script(path):
                     die(f"line {n}: unknown scene '{m[1]}'. Choose one of: {', '.join(SCENES)}")
                 pending_scene = sc
                 continue
-            m = re.match(r"^([A-Za-z]+)\s*[:：]\s*(.+)$", s)
-            if not m or m[1].capitalize() not in CHARS:
+            m = re.match(r"^([A-Za-z]+(?:\s+(?:and|&)\s+[A-Za-z]+)?)\s*[:：]\s*(.+)$", s)
+            who = m[1].strip().capitalize() if m else ""
+            tag = None
+            if m and (re.search(r"\s(and|&)\s", m[1]) or who == "Both"):
+                who, tag = "Mika", "Mika & Alex"
+            if not m or who not in CHARS:
                 die(f"line {n}: story lines look like 'Mika: こんにちは | Hello' (speakers: {', '.join(CHARS)})")
             p = [x.strip() for x in m[2].split("|")]
-            story.append(dict(speaker=m[1].capitalize(), jp=p[0], en=p[1] if len(p) > 1 else "",
-                              romaji=p[2] if len(p) > 2 and p[2] else to_romaji(p[0]), scene=pending_scene))
+            ex = example_dict(p)
+            ln = dict(speaker=who, jp=ex["jp"], en=ex["en"], romaji=ex["romaji"], scene=pending_scene)
+            if tag:
+                ln["tag"] = tag
+            (story if sec == "story" else ending).append(ln)
             pending_scene = None
         elif sec == "vocab":
             m = re.match(r"^(vocab|example)\s*:\s*(.+)$", s, re.I)
@@ -456,13 +505,13 @@ def parse_script(path):
             if m[1].lower() == "vocab":
                 if len(p) < 2:
                     die(f"line {n}: vocab needs 'word | meaning'")
-                cur = dict(jp=p[0], en=p[1], romaji=p[2] if len(p) > 2 and p[2] else to_romaji(p[0]), examples=[])
+                ex = example_dict(p)
+                cur = dict(jp=ex["jp"], en=ex["en"], romaji=ex["romaji"], examples=[])
                 vocab.append(cur)
             else:
                 if cur is None:
                     die(f"line {n}: 'example:' must come right after a 'vocab:' line")
-                cur["examples"].append(dict(jp=p[0], en=p[1] if len(p) > 1 else "",
-                                            romaji=p[2] if len(p) > 2 and p[2] else to_romaji(p[0])))
+                cur["examples"].append(example_dict(p))
         elif sec == "grammar":
             m = re.match(r"^(grammar|example)\s*:\s*(.+)$", s, re.I)
             if not m:
@@ -471,13 +520,12 @@ def parse_script(path):
             if m[1].lower() == "grammar":
                 if len(p) < 2:
                     die(f"line {n}: grammar needs 'pattern | meaning'")
-                cur = dict(pattern=p[0], meaning=p[1], examples=[])
+                cur = dict(pattern=p[0], meaning=meaning_of(p[1], p[2]) if len(p) > 2 and p[2] else p[1], examples=[])
                 grammar.append(cur)
             else:
                 if cur is None:
                     die(f"line {n}: 'example:' must come right after a 'grammar:' line")
-                cur["examples"].append(dict(jp=p[0], en=p[1] if len(p) > 1 else "",
-                                            romaji=p[2] if len(p) > 2 and p[2] else to_romaji(p[0])))
+                cur["examples"].append(example_dict(p))
         elif sec == "quiz":
             m = re.match(r"^quiz\s*:\s*(.+)$", s, re.I)
             if not m:
@@ -498,6 +546,10 @@ def parse_script(path):
     for ln in story:
         sc = ln["scene"] or sc
         ln["scene"] = sc
+    for ln in ending:
+        sc = ln["scene"] or sc
+        ln["scene"] = sc
+    meta["ending"] = ending
     return meta, story, vocab, grammar, quiz
 
 
@@ -681,6 +733,17 @@ def build(path, rate, dummy, tmp):
             if q["why"]:
                 tr.mixed(q["why"]); tr.gap(0.5)
             tr.gap(0.8)
+
+    # ending (optional [ending] section: closing lines by Mika & Alex)
+    ending = meta.get("ending") or []
+    if ending:
+        prev = story[-1]["scene"]
+        for ln in ending:
+            a, b = tr.say(ln["jp"], ln["speaker"]); ln.update(start=a, end=b)
+            mark("story", a - 0.02, line=ln, scene=ln["scene"], prev_scene=prev)
+            prev = ln["scene"]
+            tr.gap(0.6)
+        tr.gap(0.4)
 
     # outro
     chapters.append((tr.t, "Wrap-up"))
