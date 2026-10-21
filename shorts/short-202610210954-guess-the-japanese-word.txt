@@ -1,0 +1,29 @@
+title: Guess the Japanese Word
+episode: Short 3
+scene: school courtyard
+
+[hook]
+
+Mika: にほんご クイズ！この ことばの いみは なに？ | Nihongo kuizu! Kono kotoba no imi wa nani? | Japanese quiz! What does this word mean?
+
+Alex: こうえん！ | Kouen! | Park!
+
+[quiz]
+
+Mika: A、classroom！ B、park！ C、café！ | A, classroom! B, park! C, café!
+
+Alex: 5びょうで こたえてね！ | Go-byou de kotaete ne! | Answer in five seconds!
+
+Mika: 5、4、3、2、1！ | Go, yon, san, ni, ichi! | Five, four, three, two, one!
+
+Alex: こたえは B、park！ | Kotae wa B, park! | The answer is B, park!
+
+[learning]
+
+Mika: こうえんに いきます。 | Kouen ni ikimasu. | I go to the park.
+
+Alex: 「こうえん」は park、「いきます」は go！ | “Kouen” wa park, “ikimasu” wa go! | “Kouen” means park, and “ikimasu” means go!
+
+[ending]
+
+Mika: つぎの クイズも たのしみに してね！ | Tsugi no kuizu mo tanoshimi ni shite ne! | Look forward to the next quiz!
