@@ -1,0 +1,37 @@
+title: 3 Ways to Say Hello in Japanese
+episode: Short 1
+scene: school entrance
+
+[hook]
+
+Mika: にほんごで「Hello」って なんていうの？ | Nihongo de “hello” tte nante iu no? | How do you say “hello” in Japanese?
+
+Alex: じつは、いろいろ あるよ！ | Jitsu wa, iroiro aru yo! | Actually, there are several ways!
+
+[story]
+
+Mika: おはよう！ | Ohayou! | Good morning! (casual)
+
+Alex: おはようございます！ | Ohayou gozaimasu! | Good morning! (polite)
+
+Mika: こんにちは！ | Konnichiwa! | Hello! / Good afternoon!
+
+Alex: こんばんは！ | Konbanwa! | Good evening!
+
+Mika: ともだちには「おはよう」！ | Tomodachi ni wa “ohayou”! | Say “ohayou” to friends!
+
+Alex: ていねいに はなすときは「おはようございます」！ | Teinei ni hanasu toki wa “ohayou gozaimasu”! | Use “ohayou gozaimasu” when speaking politely!
+
+[quiz]
+
+Mika: ひるの あいさつは どれ？ | Hiru no aisatsu wa dore? | Which greeting do you use during the day?
+
+Alex: A、おはよう！ B、こんにちは！ C、こんばんは！ | A, ohayou! B, konnichiwa! C, konbanwa! | A, good morning! B, hello! C, good evening!
+
+Mika: こたえは B！こんにちは！ | Kotae wa B! Konnichiwa! | The answer is B! Konnichiwa!
+
+[ending]
+
+Alex: どれか ひとつ、コメントに かいてね！ | Doreka hitotsu, komento ni kaitene! | Write one of these in the comments!
+
+Mika and Alex: またね！ | Mata ne! | See you!
