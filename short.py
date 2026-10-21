@@ -5,7 +5,7 @@ One script file (.txt)  ->  one 1080x1920 vertical MP4 (about 45-58 seconds):
   hook -> mini story (Mika & Alex, Japanese / romaji / English) -> 1-2 key words -> 1 quiz question -> follow outro.
 Same script format as lesson.py ([story] [vocab] [quiz]; [grammar] is ignored). Uses lesson.py for voices and characters.
 """
-import argparse, bisect, math, os, random, subprocess, sys, tempfile
+import argparse, bisect, math, os, random, re, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFilter
 import lesson as L
 from lesson import CHARS, BRAND, INK, SOFT, ROMA, GREEN, FPS, font, card, sub_blocks, example_blocks, sprite, wrap
@@ -15,7 +15,85 @@ MAX_STORY, MAX_VOCAB, MAX_QUIZ = 8, 2, 1
 LIMIT = 58.0
 
 
+def parse_short(path):
+    """Dialogue-style Short script: [hook] [story] [quiz] [ending] sections, each made of 'Mika: jp | romaji | English' lines.
+    Returns None if the file is in the older format (use lesson.parse_script for that)."""
+    raw = open(path, encoding="utf-8").read()
+    secs = re.findall(r"^\[(\w+)\]\s*$", raw, re.M)
+    if "hook" not in [x.lower() for x in secs] and not re.search(r"^\s*(Mika|Alex|Mika and Alex|Both)\s*:", raw.split("[quiz]")[-1] if "[quiz]" in raw else "", re.M | re.I):
+        return None
+    meta = dict(title="Tiny Short", episode="", scene="auto")
+    lines, sec, pending = [], None, None
+    for n, line in enumerate(raw.splitlines(), 1):
+        s = line.strip()
+        if not s or s.startswith("#"):
+            continue
+        m = re.match(r"^\[(\w+)\]$", s)
+        if m:
+            sec = m[1].lower()
+            if sec not in ("hook", "story", "quiz", "ending"):
+                L.die(f"line {n}: unknown section [{m[1]}] in a Short. Use [hook] [story] [quiz] [ending]")
+            continue
+        if sec is None:
+            m = re.match(r"^(title|episode|scene)\s*:\s*(.+)$", s, re.I)
+            if not m:
+                L.die(f"line {n}: put title/episode/scene first, then [hook]: {s}")
+            meta[m[1].lower()] = m[2].strip()
+            continue
+        m = re.match(r"^@scene\s+(.+)$", s, re.I)
+        if m:
+            pending = L.resolve_scene(m[1]) or pending
+            continue
+        m = re.match(r"^([A-Za-z]+(?:\s+(?:and|&)\s+[A-Za-z]+)?)\s*[:：]\s*(.+)$", s)
+        who = m[1].strip().capitalize() if m else ""
+        tag = None
+        if m and (re.search(r"\s(and|&)\s", m[1]) or who == "Both"):
+            who, tag = "Mika", "Mika & Alex"
+        if not m or who not in CHARS:
+            L.die(f"line {n}: lines look like 'Mika: こんにちは | Konnichiwa | Hello' (speakers: {', '.join(CHARS)})")
+        ex = L.example_dict([x.strip() for x in m[2].split("|")])
+        ln = dict(speaker=who, jp=ex["jp"], en=ex["en"], romaji=ex["romaji"], scene=pending, sec=sec)
+        if tag:
+            ln["tag"] = tag
+        lines.append(ln); pending = None
+    if not lines:
+        L.die("no dialogue lines found in this Short.")
+    sc = L.resolve_scene(meta.get("scene", "")) or "classroom"
+    for ln in lines:
+        sc = ln["scene"] or sc
+        ln["scene"] = sc
+    return meta, lines
+
+
+def build_short_dialogue(meta, lines, rate, dummy, tmp):
+    tr = L.Track(tmp, rate, dummy)
+    segs = []
+    mark = lambda kind, start, **kw: segs.append(dict(kind=kind, start=start, **kw))
+    qidx = [i for i, ln in enumerate(lines) if ln["sec"] == "quiz"]
+    tr.gap(0.2)
+    prev = lines[0]["scene"]
+    for i, ln in enumerate(lines):
+        if qidx and i == qidx[-1] and len(qidx) >= 2:
+            mark("think", tr.t, line=lines[i - 1], t0=tr.t, scene=lines[i - 1]["scene"]); tr.gap(3)
+        a, b = tr.say(ln["jp"], ln["speaker"]); ln.update(start=a, end=b)
+        mark("story", a - 0.02, line=ln, scene=ln["scene"], prev_scene=prev)
+        prev = ln["scene"]; tr.gap(0.45)
+    total = tr.t + 1.0
+    if total > LIMIT:
+        print(f"::warning::This short is {total:.0f}s long. Shorts under about 60s perform best; use fewer lines.", file=sys.stderr)
+    audio = tr.audio(total); n = int(total * FPS)
+    mouth = L.mouth_levels(audio, n)
+    spk = [None] * n
+    for who, a, b in tr.talk:
+        for i in range(max(0, int(a * FPS) - 1), min(n, int(b * FPS) + 2)):
+            spk[i] = who
+    return dict(meta=meta, story=lines, vocab=[], quiz=[], segs=segs, audio=audio, n=n, total=total, mouth=mouth, spk=spk)
+
+
 def build_short(path, rate, dummy, tmp):
+    new = parse_short(path)
+    if new:
+        return build_short_dialogue(new[0], new[1], rate, dummy, tmp)
     meta, story, vocab, _grammar, quiz = L.parse_script(path)
     story, vocab, quiz = story[:MAX_STORY], vocab[:MAX_VOCAB], quiz[:MAX_QUIZ]
     tr = L.Track(tmp, rate, dummy)
@@ -81,7 +159,7 @@ class ShortRenderer:
             dd.rectangle((0, 1560, SW, SH), fill=(240, 214, 200))
             im = im.convert("RGBA")
             d = ImageDraw.Draw(im, "RGBA")
-            sz = 46; ttl = self.meta["title"]; ep = f"Ep.{self.meta['episode']}  ·  " if self.meta.get("episode") else ""
+            sz = 46; ttl = self.meta["title"]; ep = (f"Ep.{self.meta['episode']}  ·  " if str(self.meta["episode"]).strip().isdigit() else f"{self.meta['episode']}  ·  ") if self.meta.get("episode") else ""
             while sz > 28 and len(wrap(ep + ttl, font(sz), 860)) > 2:
                 sz -= 2
             lines = wrap(ep + ttl, font(sz), 860)
@@ -109,9 +187,12 @@ class ShortRenderer:
         if k == "outro":
             return card("Thanks for watching", BRAND, [("Follow for a new lesson every day!", 62, True, INK, 14),
                                                        ("また あした！ (mata ashita)", 40, False, SOFT, 0)], cw=980, min_h=420)
-        if k == "story":
+        if k in ("story", "think"):
             ln = seg["line"]
-            return card(ln["speaker"], CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"], 74, 42, 50), cw=980, min_h=470)
+            tag = ln.get("tag", ln["speaker"])
+            if ln.get("sec") == "quiz":
+                tag = "Quick quiz · " + tag
+            return card(tag, CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"], 70, 40, 46), cw=980, min_h=470)
         if k == "vocab":
             v = seg["v"]
             b = [(v["jp"], 110, True, INK, 8), (v["romaji"], 48, False, ROMA, 6), (v["en"], 58, False, SOFT, 14)]
@@ -152,7 +233,7 @@ class ShortRenderer:
         if f < 1:
             cd = cd.copy(); cd.putalpha(cd.getchannel("A").point(lambda v: int(v * f)))
         fr.paste(cd, ((SW - cd.width) // 2, 1170), cd)
-        if seg["kind"] == "quiz" and seg["phase"] == "think":
+        if seg["kind"] == "think" or (seg["kind"] == "quiz" and seg["phase"] == "think"):
             left = max(0.0, 3 - (tt - seg["t0"]))
             d = ImageDraw.Draw(fr); cx, cy, r = SW // 2, 930, 80
             d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(255, 255, 255), outline=BRAND, width=9)
