@@ -1,0 +1,144 @@
+title: Let's Make Plans!
+episode: 3
+scene: school entrance, street, and park
+
+[story]
+
+@scene school entrance
+
+Alex: ミカ、おはよう！ | Mika, ohayou! | Good morning, Mika!
+
+Mika: おはよう、アレックス！ | Ohayou, Arekkusu! | Good morning, Alex!
+
+Alex: きょう、ひま？ | Kyou, hima? | Are you free today?
+
+Mika: うん、ひまだよ。どうして？ | Un, hima da yo. Doushite? | Yes, I'm free. Why?
+
+Alex: いっしょに こうえんに いかない？ | Issho ni kouen ni ikanai? | Would you like to go to the park together?
+
+Mika: いいね！いこう！ | Ii ne! Ikou! | Sounds good! Let's go!
+
+Alex: なんじに あう？ | Nanji ni au? | What time shall we meet?
+
+Mika: ごご さんじは どう？ | Gogo sanji wa dou? | How about 3 PM?
+
+Alex: いいよ！ | Ii yo! | Sounds good!
+
+Mika: じゃあ、こうえんの いりぐちで あおう。 | Jaa, kouen no iriguchi de aou. | Then let's meet at the park entrance.
+
+Alex: わかった！また あとでね！ | Wakatta! Mata ato de ne! | Got it! See you later!
+
+@scene street
+
+Mika: アレックス！こっちだよ！ | Arekkusu! Kocchi da yo! | Alex! Over here!
+
+Alex: ごめん、おまたせ！ | Gomen, omatase! | Sorry to keep you waiting!
+
+Mika: だいじょうぶ！ | Daijoubu! | It's okay!
+
+Alex: こうえんまで あるこう！ | Kouen made arukou! | Let's walk to the park!
+
+Mika: うん！てんきが いいね。 | Un! Tenki ga ii ne. | Yeah! The weather is nice.
+
+Alex: そうだね。あ、あそこに カフェが あるよ。 | Sou da ne. A, asoko ni kafe ga aru yo. | That's right. Oh, there's a café over there.
+
+Mika: ちょっと やすまない？ | Chotto yasumanai? | Shall we take a little break?
+
+Alex: いいね！コーヒーを のみたいな。 | Ii ne! Kouhii o nomitai na. | Sounds good! I'd like to drink coffee.
+
+Mika: わたしは おちゃが いいな。 | Watashi wa ocha ga ii na. | I'd prefer tea.
+
+@scene cafe
+
+Mika: すみません。おちゃを ひとつ おねがいします。 | Sumimasen. Ocha o hitotsu onegaishimasu. | Excuse me. One tea, please.
+
+Alex: コーヒーを ひとつ おねがいします。 | Kouhii o hitotsu onegaishimasu. | One coffee, please.
+
+Mika: ありがとう ございます。 | Arigatou gozaimasu. | Thank you.
+
+Alex: いい いちにちだね！ | Ii ichinichi da ne! | It's a nice day!
+
+Mika: うん！また いっしょに おでかけしようね。 | Un! Mata issho ni odekake shiyou ne. | Yeah! Let's go out together again.
+
+Alex: もちろん！ | Mochiron! | Of course!
+
+[vocab]
+
+vocab: ひま | hima | free; having free time
+example: きょうは ひまです。 | Kyou wa hima desu. | I'm free today.
+
+vocab: どうして | doushite | why
+example: どうして にほんごを べんきょうしますか？ | Doushite nihongo o benkyou shimasu ka? | Why do you study Japanese?
+
+vocab: なんじ | nanji | what time
+example: なんじに おきますか？ | Nanji ni okimasu ka? | What time do you wake up?
+
+vocab: ごご | gogo | afternoon; PM
+example: ごご さんじです。 | Gogo sanji desu. | It's 3 PM.
+
+vocab: いりぐち | iriguchi | entrance
+example: こうえんの いりぐちで あいます。 | Kouen no iriguchi de aimasu. | I'll meet you at the park entrance.
+
+vocab: あるく | aruku | to walk
+example: こうえんまで あるきます。 | Kouen made arukimasu. | I walk to the park.
+
+vocab: てんき | tenki | weather
+example: きょうは てんきが いいです。 | Kyou wa tenki ga ii desu. | The weather is nice today.
+
+vocab: やすむ | yasumu | to rest; to take a break
+example: ちょっと やすみます。 | Chotto yasumimasu. | I'll take a short break.
+
+vocab: のむ | nomu | to drink
+example: おちゃを のみます。 | Ocha o nomimasu. | I drink tea.
+
+vocab: おちゃ | ocha | tea
+example: おちゃを おねがいします。 | Ocha o onegaishimasu. | Tea, please.
+
+vocab: もちろん | mochiron | of course
+example: もちろん、いきます！ | Mochiron, ikimasu! | Of course, I'll go!
+
+[grammar]
+
+grammar: Verb ない-form + ？ | nai-form + ? | Use the casual negative form of a verb to make a casual invitation or suggestion.
+example: いっしょに いかない？ | Issho ni ikanai? | Would you like to go together?
+example: ちょっと やすまない？ | Chotto yasumanai? | Shall we take a little break?
+
+grammar: Time + は どう？ | time + wa dou? | Use this to suggest a time.
+example: ごご さんじは どう？ | Gogo sanji wa dou? | How about 3 PM?
+example: あしたは どう？ | Ashita wa dou? | How about tomorrow?
+
+grammar: Place + で + action | place + de + action | Use で to mark the place where an action happens.
+example: カフェで コーヒーを のみます。 | Kafe de kouhii o nomimasu. | I drink coffee at a café.
+example: こうえんで あそびます。 | Kouen de asobimasu. | I play at the park.
+
+grammar: Verb たいです | verb tai desu | Add たいです to a verb stem to say what you want to do.
+example: コーヒーを のみたいです。 | Kouhii o nomitai desu. | I want to drink coffee.
+example: にほんに いきたいです。 | Nihon ni ikitai desu. | I want to go to Japan.
+
+grammar: Noun を ひとつ おねがいします | noun o hitotsu onegaishimasu | A useful way to order one item politely. ひとつ means one item.
+example: コーヒーを ひとつ おねがいします。 | Kouhii o hitotsu onegaishimasu. | One coffee, please.
+example: おちゃを ひとつ おねがいします。 | Ocha o hitotsu onegaishimasu. | One tea, please.
+
+[quiz]
+
+quiz: What does ひま mean? | Busy | Free; having free time | Tired | B | ひま means you are free or have time available.
+
+quiz: How do you ask “What time shall we meet?” | なんじに あう？ | どこが すき？ | だれですか？ | A | なんじ means what time, and あう means to meet.
+
+quiz: What does あるく mean? | To run | To eat | To walk | C | あるく means to walk.
+
+quiz: How do you order one coffee politely? | コーヒーが すき | コーヒーを ひとつ おねがいします | コーヒーに いきます | B | This is a natural way to order one coffee.
+
+quiz: What does のみたいです mean? | I want to drink | I want to sleep | I want to walk | A | のみたいです expresses the desire to drink.
+
+[ending]
+
+Mika: これで こんしゅうの にほんごは おしまい！ | Kore de konshuu no nihongo wa oshimai! | That's all for this week's Japanese!
+
+Alex: みんなは だれと こうえんに いきたい？ | Minna wa dare to kouen ni ikitai? | Who would you like to go to the park with?
+
+Mika: にほんごで コメントしてみてね！ | Nihongo de komento shite mite ne! | Try leaving a comment in Japanese!
+
+Alex: らいしゅうも いっしょに べんきょうしよう！ | Raishuu mo issho ni benkyou shiyou! | Let's study together next week too!
+
+Mika and Alex: またね！ | Mata ne! | See you!
