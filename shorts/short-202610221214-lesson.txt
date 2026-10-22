@@ -1,0 +1,37 @@
+Mika: こんにちは、アレックス！
+Konnichiwa, Arekkusu! | Hello, Alex!
+
+Alex: こんにちは、ミカ！
+Konnichiwa, Mika! | Hello, Mika!
+
+Mika: はじめまして！
+Hajimemashite! | Nice to meet you!
+
+Alex: はじめまして！わたしはアレックスです。
+Hajimemashite! Watashi wa Arekkusu desu. | Nice to meet you! I'm Alex.
+
+Mika: わたしはミカです。
+Watashi wa Mika desu. | I'm Mika.
+
+Alex: よろしくね！
+Yoroshiku ne! | It's nice to meet you!
+
+Mika: よろしくね！
+Yoroshiku ne! | It's nice to meet you!
+
+**わたしは ___ です。**
+Watashi wa ___ desu. | I'm ___.
+
+わたしはミカです。
+Watashi wa Mika desu. | I'm Mika.
+
+わたしはアレックスです。
+Watashi wa Arekkusu desu. | I'm Alex.
+
+**Question:** How do you say "I'm Alex" in Japanese?
+
+A. こんにちは！
+B. わたしはアレックスです。
+C. ありがとう！
+
+Answer: B!
