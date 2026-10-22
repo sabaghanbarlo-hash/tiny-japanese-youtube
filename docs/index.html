@@ -153,9 +153,11 @@ function hdr(){return{Authorization:"Bearer "+get("tjy_token"),Accept:"applicati
 async function gh(path,opt={}){const r=await fetch(API+path,{...opt,headers:hdr()});if(!r.ok){let m="";try{m=(await r.json()).message}catch(e){}throw new Error(`GitHub ${r.status}: ${m||r.statusText}`)}return r.status===204?null:r.json()}
 function slug(t){return (t||"lesson").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)||"lesson"}
 function check(text){
-  let n=0;
-  for(const raw of text.split("\n")){const l=raw.trim().replace(/^[*_\s]+/,"");if(!l||l.startsWith("#"))continue;
-    if(/^(mika|alex|both)(\s+(and|&)\s+(mika|alex))?\s*[:：]/i.test(l))n++}
+  let n=0,hasTitle=/^\s*title\s*:/im.test(text),ln=0;
+  for(const raw of text.split("\n")){ln++;const l=raw.trim().replace(/^[*_\s]+/,"");if(!l||l.startsWith("#"))continue;
+    if(/^(mika|alex|both)(\s+(and|&)\s+(mika|alex))?\s*[:：]/i.test(l)){n++;
+      if(l.split("|").length<2)throw new Error(`Line ${ln} has no | separator:\n${l}\nEach line must be ONE line:  Mika: こんにちは | Konnichiwa | Hello`)}}
+  if(!hasTitle)throw new Error("Add a title line at the very top, for example:  title: Nice to Meet You");
   if(!n)throw new Error("No dialogue lines found. Each line should look like:  Mika: こんにちは | Konnichiwa | Hello");
 }
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
