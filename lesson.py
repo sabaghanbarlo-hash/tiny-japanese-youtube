@@ -408,6 +408,17 @@ def example_blocks(ex, big=False):
 # ------------------------------------------------------------------ script parsing
 SECTIONS = ("story", "vocab", "grammar", "quiz", "ending")
 
+
+def norm_line(raw):
+    """Tidy a script line: drop markdown marks, accept 【story】 / **[story]** / bare 'Story:' as section headers."""
+    s = raw.strip().replace("【", "[").replace("】", "]").replace("［", "[").replace("］", "]")
+    s = s.strip("*_ \t").strip()
+    m = re.match(r"^(hook|story|vocab|vocabulary|grammar|quiz|ending|practice|learning tip|tip|outro|intro)\s*:?$", s, re.I)
+    return f"[{m[1]}]" if m else s
+
+
+DIALOGUE = re.compile(r"^(mika|alex|both)(\s+(?:and|&)\s+(?:mika|alex))?\s*[:：]", re.I)
+
 _ROMAJI = re.compile(r"(?:(?:[kgszjtdnhbpmr]y?|sh|ch|ts|f|w|y)?[aiueo]|n(?![aiueoy])|(?:kk|ss|tt|pp)(?=[aiueo]))+")
 
 
@@ -459,16 +470,20 @@ def parse_script(path):
     sec, cur = None, None
     pending_scene = None
     for n, raw in enumerate(open(path, encoding="utf-8"), 1):
-        s = raw.strip()
+        s = norm_line(raw)
         if not s or s.startswith("#"):
             continue
-        m = re.match(r"^\[(\w+)\]$", s)
+        m = re.match(r"^\[([^\]]+)\]$", s)
         if m:
-            sec = m[1].lower()
+            sec = m[1].strip().lower()
+            if sec == "vocabulary":
+                sec = "vocab"
             if sec not in SECTIONS:
-                die(f"line {n}: unknown section [{m[1]}]. Use: {', '.join('[' + x + ']' for x in SECTIONS)}")
+                sec = "story"        # any other heading ([learning tip], [practice], ...) holds more dialogue
             cur = None
             continue
+        if sec is None and DIALOGUE.match(s):
+            sec = "story"
         if sec is None:
             m = re.match(r"^(title|episode|scene)\s*:\s*(.+)$", s, re.I)
             if not m:

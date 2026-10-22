@@ -24,13 +24,15 @@ def parse_short(path):
     meta = dict(title="Tiny Short", episode="", scene="auto")
     lines, sec, pending = [], None, None
     for n, line in enumerate(raw.splitlines(), 1):
-        s = line.strip()
+        s = L.norm_line(line)
         if not s or s.startswith("#"):
             continue
         m = re.match(r"^\[([^\]]+)\]$", s)
         if m:
             sec = m[1].strip().lower()
             continue
+        if sec is None and L.DIALOGUE.match(s):
+            sec = "story"
         if sec is None:
             m = re.match(r"^(title|episode|scene)\s*:\s*(.+)$", s, re.I)
             if not m:

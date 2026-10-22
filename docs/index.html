@@ -153,12 +153,10 @@ function hdr(){return{Authorization:"Bearer "+get("tjy_token"),Accept:"applicati
 async function gh(path,opt={}){const r=await fetch(API+path,{...opt,headers:hdr()});if(!r.ok){let m="";try{m=(await r.json()).message}catch(e){}throw new Error(`GitHub ${r.status}: ${m||r.statusText}`)}return r.status===204?null:r.json()}
 function slug(t){return (t||"lesson").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)||"lesson"}
 function check(text){
-  const sec=/^\[[^\]]+\]$/;let n=0,any=false;
-  for(const raw of text.split("\n")){const l=raw.trim();if(!l||l.startsWith("#"))continue;
-    if(sec.test(l)){any=true;continue}
+  let n=0;
+  for(const raw of text.split("\n")){const l=raw.trim().replace(/^[*_\s]+/,"");if(!l||l.startsWith("#"))continue;
     if(/^(mika|alex|both)(\s+(and|&)\s+(mika|alex))?\s*[:：]/i.test(l))n++}
-  if(!any)throw new Error("Add section headers such as [story] (and optionally [vocab] [grammar] [quiz] [hook] [ending]).");
-  if(!n)throw new Error("No dialogue lines found. Use  Mika: こんにちは | Konnichiwa | Hello");
+  if(!n)throw new Error("No dialogue lines found. Each line should look like:  Mika: こんにちは | Konnichiwa | Hello");
 }
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
