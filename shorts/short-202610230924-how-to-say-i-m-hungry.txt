@@ -1,0 +1,26 @@
+title: How to Say I'm Hungry
+episode: Short 2
+scene: classroom
+
+[hook]
+Mika: アレックス、おなかが すいた！ | Arekkusu, onaka ga suita! | Alex, I'm hungry!
+Alex: えっ、にほんごで なんて いうの？ | E, nihongo de nante iu no? | Huh, how do you say that in Japanese?
+
+[story]
+Mika: おなかが すきました！ | Onaka ga sukimashita! | I'm hungry!
+Alex: おなかが すきました！ぼくも！ | Onaka ga sukimashita! Boku mo! | I'm hungry too!
+Mika: なにか たべたい？ | Nanika tabetai? | Do you want to eat something?
+Alex: うん！すし が たべたい！ | Un! Sushi ga tabetai! | Yes! I want to eat sushi!
+
+[practice]
+Mika: おなかが すきました！いって みて！ | Onaka ga sukimashita! Itte mite! | I'm hungry! Try saying it!
+Mika: あなたの ばん！ | Anata no ban! | Your turn!
+
+[quiz]
+Mika: おなかが すきました は どんな いみ？ | Onaka ga sukimashita wa donna imi? | What does "onaka ga sukimashita" mean?
+Alex: A、おなかが いっぱい B、ねむい C、おなかが すいた | A, onaka ga ippai B, nemui C, onaka ga suita | A, I'm full B, I'm sleepy C, I'm hungry
+Mika: こたえは C！おなかが すいた！ | Kotae wa C! Onaka ga suita! | The answer is C! I'm hungry!
+
+[ending]
+Alex: すし と ラーメン、どっちが すき？コメントしてね！ | Sushi to raamen, docchi ga suki? Komento shite ne! | Sushi or ramen—which do you like? Comment below!
+Mika and Alex: またね！ | Mata ne! | See you!
