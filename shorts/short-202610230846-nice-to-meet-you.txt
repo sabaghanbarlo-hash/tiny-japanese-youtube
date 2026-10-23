@@ -1,17 +1,27 @@
 title: Nice to Meet You
+episode: Short 3
+scene: classroom
 
+[hook]
+Mika: はじめて あう ひとに なんて いう？ | Hajimete au hito ni nante iu? | What do you say to someone you meet for the first time?
+Alex: いっしょに れんしゅう しよう！ | Issho ni renshuu shiyou! | Let's practice together!
+
+[story]
 Mika: こんにちは、アレックス！ | Konnichiwa, Arekkusu! | Hello, Alex!
 Alex: こんにちは、ミカ！ | Konnichiwa, Mika! | Hello, Mika!
 Mika: はじめまして！ | Hajimemashite! | Nice to meet you!
-Alex: はじめまして！わたしはアレックスです。 | Hajimemashite! Watashi wa Arekkusu desu. | Nice to meet you! I'm Alex.
-Mika: わたしはミカです。 | Watashi wa Mika desu. | I'm Mika.
+Alex: はじめまして！わたしは アレックスです。 | Hajimemashite! Watashi wa Arekkusu desu. | Nice to meet you! I'm Alex.
+Mika: わたしは ミカです。 | Watashi wa Mika desu. | I'm Mika.
 Alex: よろしくね！ | Yoroshiku ne! | It's nice to meet you!
-Mika: よろしくね！ | Yoroshiku ne! | It's nice to meet you!
-わたしは ___ です。 | Watashi wa ___ desu. | I'm ___.
-わたしはミカです。 | Watashi wa Mika desu. | I'm Mika.
-わたしはアレックスです。 | Watashi wa Arekkusu desu. | I'm Alex.
-Question: How do you say "I'm Alex" in Japanese?
-A. こんにちは！
-B. わたしはアレックスです。
-C. ありがとう！
-Answer: B!
+
+[practice]
+Mika: 「わたしは ○○です」と いってみよう！ | “Watashi wa ○○ desu” to itte miyou! | Try saying “Watashi wa ○○ desu”!
+Mika: あなたの ばん！ | Anata no ban! | Your turn!
+
+[quiz]
+Mika: 「I'm Alex」は にほんごで なんて いう？ | “I'm Alex” wa nihongo de nante iu? | How do you say “I'm Alex” in Japanese?
+Alex: A、こんにちは！ B、わたしは アレックスです。 C、ありがとう！ | A, konnichiwa! B, watashi wa Arekkusu desu. C, arigatou! | A, Hello! B, I'm Alex. C, Thank you!
+Mika: こたえは B！わたしは アレックスです。 | Kotae wa B! Watashi wa Arekkusu desu. | The answer is B! I'm Alex.
+
+[ending]
+Mika and Alex: またね！ | Mata ne! | See you!
