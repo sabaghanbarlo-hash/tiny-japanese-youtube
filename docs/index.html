@@ -150,7 +150,10 @@ function say(t,cls){const s=$("status");s.textContent=t;s.className=cls||""}
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const b64=s=>{const b=new TextEncoder().encode(s);let o="";b.forEach(c=>o+=String.fromCharCode(c));return btoa(o)};
 function hdr(){return{Authorization:"Bearer "+get("tjy_token"),Accept:"application/vnd.github+json","Content-Type":"application/json"}}
-async function gh(path,opt={}){const r=await fetch(API+path,{...opt,headers:hdr()});if(!r.ok){let m="";try{m=(await r.json()).message}catch(e){}throw new Error(`GitHub ${r.status}: ${m||r.statusText}`)}return r.status===204?null:r.json()}
+async function gh(path,opt={}){let r,last;
+  for(let k=0;k<4&&!r;k++){try{r=await fetch(API+path,{...opt,headers:hdr()})}catch(e){last=e;await sleep(2500*(k+1))}}
+  if(!r)throw new Error("Can't reach GitHub (network error). Check your internet or VPN and try again. If the job already started, it keeps running: look at the Actions tab on GitHub.");
+  if(!r.ok){let m="";try{m=(await r.json()).message}catch(e){}throw new Error(`GitHub ${r.status}: ${m||r.statusText}`)}return r.status===204?null:r.json()}
 function slug(t){return (t||"lesson").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40)||"lesson"}
 function check(text){
   let n=0,hasTitle=/^\s*title\s*:/im.test(text),ln=0;
