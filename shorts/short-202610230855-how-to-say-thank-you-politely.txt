@@ -1,0 +1,26 @@
+title: How to Say Thank You Politely
+episode: Short 1
+scene: classroom
+
+[hook]
+Mika: アレックス、ありがとう は しってる？ | Arekkusu, arigatou wa shitteru? | Alex, do you know how to say thank you?
+Alex: うん！ありがとう！ | Un! Arigatou! | Yes! Thank you!
+
+[story]
+Mika: でも、もっと ていねいな いいかた が あるよ！ | Demo, motto teinei na iikata ga aru yo! | But there's a more polite way to say it!
+Alex: えっ、なに？ | E, nani? | Huh, what is it?
+Mika: ありがとうございます！ | Arigatou gozaimasu! | Thank you very much!
+Alex: ありがとうございます！これで いい？ | Arigatou gozaimasu! Kore de ii? | Thank you very much! Is this right?
+
+[practice]
+Mika: ていねいに いって みて！ | Teinei ni itte mite! | Try saying it politely!
+Mika: あなたの ばん！ | Anata no ban! | Your turn!
+
+[quiz]
+Mika: どちらが ていねい？ | Dochira ga teinei? | Which one is polite?
+Alex: A、こんにちは B、ありがとうございます C、おやすみ | A, konnichiwa B, arigatou gozaimasu C, oyasumi | A, Hello B, Thank you very much C, Good night
+Mika: こたえは B！ありがとうございます！ | Kotae wa B! Arigatou gozaimasu! | The answer is B! Thank you very much!
+
+[ending]
+Alex: ほかの ありがとう も しってる？コメントしてね！ | Hoka no arigatou mo shitteru? Komento shite ne! | Do you know other ways to say thank you? Comment below!
+Mika and Alex: またね！ | Mata ne! | See you!
