@@ -1,0 +1,27 @@
+title: How to Say I Don't Understand
+episode: Short 3
+scene: classroom
+
+[hook]
+Mika: アレックス、わかった？ | Arekkusu, wakatta? | Alex, did you understand?
+Alex: ごめん！わからない！ | Gomen! Wakaranai! | Sorry! I don't understand!
+
+[story]
+Mika: わからない は とても べんりだよ！ | Wakaranai wa totemo benri da yo! | "Wakaranai" is really useful!
+Alex: どういう いみ？ | Dou iu imi? | What does it mean?
+Mika: わからない は I don't understand だよ！ | Wakaranai wa I don't understand da yo! | "Wakaranai" means "I don't understand"!
+Alex: ああ！わかった！ | Aa! Wakatta! | Oh! I understand now!
+Mika: もう いちど いって ください、も べんりだよ！ | Mou ichido itte kudasai, mo benri da yo! | "Please say it one more time" is useful too!
+
+[practice]
+Mika: わからない！いっしょに いって みて！ | Wakaranai! Issho ni itte mite! | I don't understand! Try saying it with me!
+Mika: あなたの ばん！ | Anata no ban! | Your turn!
+
+[quiz]
+Mika: わからない は どんな いみ？ | Wakaranai wa donna imi? | What does "wakaranai" mean?
+Alex: A、わかった B、わからない C、ありがとう | A, wakatta B, wakaranai C, arigatou | A, I understand B, I don't understand C, Thank you
+Mika: こたえは B！わからない！ | Kotae wa B! Wakaranai! | The answer is B! I don't understand!
+
+[ending]
+Alex: にほんごで わからない とき、つかって みてね！ | Nihongo de wakaranai toki, tsukatte mite ne! | Try using it when you don't understand Japanese!
+Mika and Alex: またね！ | Mata ne! | See you!
