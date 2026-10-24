@@ -216,8 +216,79 @@ def scene_generic(d, S, t, U):
     draw_prog(d, S, len(S) * ease(ph(t, 0.1, 0.9)), 60, BRAND, U)
 
 
+def scene_kite(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2; cx, cy = C, C - 40
+    if s > 0.01:
+        top, rgt, bot, lft = (cx, cy - 560 * s), (cx + 400 * s, cy - 20 * s), (cx, cy + 470 * s), (cx - 400 * s, cy - 20 * s)
+        d.polygon([top, rgt, bot, (cx, cy - 20 * s)], fill=(235, 80, 90)); d.polygon([top, (cx, cy - 20 * s), bot, lft], fill=(255, 190, 70))
+        d.line([top, bot], fill=(120, 70, 40), width=max(2, int(14 * s))); d.line([lft, rgt], fill=(120, 70, 40), width=max(2, int(14 * s)))
+        tail = [(cx + 40 * s * math.sin(k / 3.0), cy + 470 * s + k * 55 * s) for k in range(0, 17)]
+        d.line(tail, fill=(120, 70, 40), width=max(2, int(10 * s)))
+        for k in (4, 8, 12, 16):
+            x, y = tail[k]; d.polygon([(x - 50 * s, y - 28 * s), (x, y), (x - 50 * s, y + 28 * s)], fill=(60, 150, 220)); d.polygon([(x + 50 * s, y - 28 * s), (x, y), (x + 50 * s, y + 28 * s)], fill=(60, 150, 220))
+    p = ph(t, 0.3, 0.85)
+    if p > 0:
+        draw_prog(d, S, len(S) * ease(p), 84, (150, 40, 50), U); draw_prog(d, S, len(S) * ease(p), 58, (255, 255, 255), U)
+
+
+def scene_key(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2; gold = (240, 185, 40); dark = (190, 135, 20)
+    if s > 0.01:
+        cx = C
+        circle(d, cx, C - 480 * s, 250 * s, gold); circle(d, cx, C - 480 * s, 120 * s, (255, 255, 255))
+        d.rectangle((cx - 55 * s, C - 250 * s, cx + 55 * s, C + 600 * s), fill=gold)
+        for y0, w in ((300, 190), (450, 150)): d.rectangle((cx + 55 * s, C + y0 * s, cx + (55 + w) * s, C + (y0 + 80) * s), fill=gold)
+        d.ellipse((cx - 190 * s, C - 640 * s, cx - 110 * s, C - 560 * s), fill=(255, 225, 130))
+    p = ph(t, 0.3, 0.85)
+    if p > 0:
+        draw_prog(d, S, len(S) * ease(p), 84, (130, 90, 10), U); draw_prog(d, S, len(S) * ease(p), 58, (255, 255, 255), U)
+
+
+def scene_beak(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2
+    if s > 0.01:
+        circle(d, C + 190, C, 380 * s, (90, 140, 215)); circle(d, C + 200, C - 190 * s, 56 * s, (255, 255, 255)); circle(d, C + 212, C - 186 * s, 26 * s, (40, 40, 50))
+    f = ease(ph(t, 0.15, 0.7)); pts = S[0].upto(f)
+    line(d, pts, 150, (250, 150, 40), U); line(d, pts, 56, (255, 205, 120), U)
+    p = ph(t, 0.7, 1.0)
+    if p > 0:
+        for k, (nx, ny) in enumerate(((330, 260), (1180, 200))):
+            d.text((nx, ny - 40 * p), "ku!", font=font(120), fill=(230, 90, 140), anchor="mm")
+
+
+def scene_kettle(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2; cx, cy = C, C + 90
+    if s > 0.01:
+        d.line([(cx + 300 * s, cy - 40 * s), (cx + 560 * s, cy - 300 * s)], fill=(80, 130, 160), width=max(2, int(110 * s)))
+        d.arc((cx - 620 * s, cy - 380 * s, cx - 200 * s, cy + 120 * s), 95, 265, fill=(60, 60, 70), width=max(2, int(60 * s)))
+        circle(d, cx, cy, 440 * s, (110, 160, 190)); d.ellipse((cx - 200 * s, cy - 500 * s, cx + 200 * s, cy - 380 * s), fill=(80, 130, 160)); circle(d, cx, cy - 530 * s, 50 * s, (60, 60, 70))
+        circle(d, cx - 220 * s, cy - 150 * s, 80 * s, (170, 205, 225))
+    q = ph(t, 0.55, 1.0)
+    if q > 0:
+        for k in range(3):
+            y = C - 330 - ((q * 900 + k * 300) % 900) * 0.6; r = 60 + 25 * k
+            circle(d, C + 600 + 30 * math.sin(q * 6 + k), y, r, (225, 235, 240))
+    p = ph(t, 0.3, 0.85)
+    if p > 0:
+        draw_prog(d, S, len(S) * ease(p), 84, (40, 70, 95), U); draw_prog(d, S, len(S) * ease(p), 58, (255, 255, 255), U)
+
+
+def scene_coins(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); gold = (245, 190, 50)
+    if s > 0.01:
+        for cy in (390, 1060):
+            cxx = 740
+            d.ellipse((cxx - 540 * s, cy + 50 * s - 215 * s, cxx + 540 * s, cy + 50 * s + 215 * s), fill=(190, 135, 20))
+            d.ellipse((cxx - 540 * s, cy - 215 * s, cxx + 540 * s, cy + 215 * s), fill=gold)
+            d.ellipse((cxx - 460 * s, cy - 170 * s, cxx + 460 * s, cy + 170 * s), outline=(220, 150, 30), width=max(2, int(18 * s)))
+    p = ph(t, 0.3, 0.9)
+    if p > 0: draw_prog(d, S, len(S) * ease(p), 62, (110, 70, 10), U)
+
+
 SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hiragana", "u"): scene_hat,
-          ("hiragana", "e"): scene_bird, ("hiragana", "o"): scene_orange}
+          ("hiragana", "e"): scene_bird, ("hiragana", "o"): scene_orange,
+          ("hiragana", "ka"): scene_kite, ("hiragana", "ki"): scene_key, ("hiragana", "ku"): scene_beak,
+          ("hiragana", "ke"): scene_kettle, ("hiragana", "ko"): scene_coins}
 
 
 
@@ -249,7 +320,7 @@ def build(path, rate, dummy, tmp):
     mark("fonts", tr.t)
     tr.say("In real life you will see it in different fonts. Same character.", "Narrator"); tr.gap(0.6)
     mark("ghost", tr.t)
-    tr.say(f"{K} takes {len(S)} strokes. Watch the order.", "Narrator"); tr.gap(0.3)
+    tr.say(f"{K} takes {len(S)} stroke{'' if len(S) == 1 else 's'}. Watch the order.", "Narrator"); tr.gap(0.3)
     for i in range(len(S)):
         t0 = tr.t + 0.7
         mark("stroke", tr.t, idx=i, t0=t0, dur=durs[i])
@@ -380,7 +451,7 @@ class Renderer:
         if k == "fonts":
             return card("Same character", BRAND, [("Many fonts, one sound", 54, True, INK, 8)], cw=cw, min_h=260)
         if k == "ghost":
-            return card("Stroke order", BRAND, [(f"{len(self.S)} strokes", 76, True, INK, 8), ("Watch the order", 42, False, SOFT, 0)], cw=cw, min_h=mh)
+            return card("Stroke order", BRAND, [(f"{len(self.S)} stroke{'' if len(self.S) == 1 else 's'}", 76, True, INK, 8), ("Watch the order", 42, False, SOFT, 0)], cw=cw, min_h=mh)
         if k == "stroke":
             return card(f"Stroke {seg['idx'] + 1} of {len(self.S)}", BRAND, [(ORD[seg["idx"]] + " stroke", 68, True, INK, 8), ("Follow the pen", 42, False, SOFT, 0)], cw=cw, min_h=mh)
         if k == "write":

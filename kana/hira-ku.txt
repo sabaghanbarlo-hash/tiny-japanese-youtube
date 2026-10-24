@@ -1,0 +1,18 @@
+title: Hiragana KU
+kana: く
+script: hiragana
+romaji: ku
+sound: like the "coo" in cuckoo
+mnemonic_word: Cuckoo
+mnemonic: く looks like the open beak of a cuckoo bird. Ku ku!
+
+[words]
+くつ | kutsu | shoes
+くるま | kuruma | car
+くち | kuchi | mouth
+
+[similar]
+へ | he | く points left like a beak. へ is a gentle hill.
+
+[distractors]
+ka, ki
