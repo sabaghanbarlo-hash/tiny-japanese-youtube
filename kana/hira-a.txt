@@ -1,0 +1,19 @@
+title: Hiragana A
+kana: あ
+script: hiragana
+romaji: a
+sound: like the "a" in father
+strokes: 3
+mnemonic_word: Apple
+mnemonic: あ looks like an apple with a little stem. A for Apple!
+
+[words]
+あめ | ame | rain
+あり | ari | ant
+あさ | asa | morning
+
+[similar]
+お | o | あ has a crossing line on the left. お has a small dot at the top right.
+
+[distractors]
+i, u
