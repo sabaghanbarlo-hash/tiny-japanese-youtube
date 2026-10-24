@@ -1,0 +1,76 @@
+title: Mika and Alex Visit the Zoo
+episode: 1
+scene: zoo
+
+[story]
+@scene zoo
+> Mika enters left
+& Alex enters right
+> both walk to entrance
+> Mika looks excited
+Mika: わあ！ どうぶつえんだ！ | Wow! It's a zoo! | Waa! Doubutsuen da!
+Alex: たのしみだね！ | I'm excited! | Tanoshimi da ne!
+> both walk to giraffe
+> Mika looks at Alex
+Mika: あそこに きりんが いるよ！ | There's a giraffe over there! | Asoko ni kirin ga iru yo!
+Alex: きりんは せが たかいね！ | Giraffes are tall! | Kirin wa se ga takai ne!
+> both walk to elephant
+> Alex looks surprised
+Alex: わあ！ ぞうだ！ | Wow! It's an elephant! | Waa! Zou da!
+Mika: ぞうは おおきいね！ | Elephants are big! | Zou wa ookii ne!
+> both walk to fence
+> Mika looks happy
+Mika: あそこに なにが いるの？ | What's over there? | Asoko ni nani ga iru no?
+Alex: らいおんかな？ | Maybe it's a lion? | Raion kana?
+Mika: ううん、ぞうだよ！ | No, it's an elephant! | Uun, zou da yo!
+> Alex looks embarrassed
+Alex: あっ、ほんとうだ！ | Oh, you're right! | A, hontou da!
+> both walk to giraffe
+Alex: きりんが すき？ | Do you like giraffes? | Kirin ga suki?
+Mika: うん、きりんが だいすき！ | Yes, I love giraffes! | Un, kirin ga daisuki!
+> both look happy
+Alex: きょうは たくさん どうぶつを みたね！ | We saw lots of animals today! | Kyou wa takusan doubutsu o mita ne!
+Mika: また こようね！ | Let's come again! | Mata koyou ne!
+
+[vocab]
+1. どうぶつ (doubutsu) — animal
+   Example: どうぶつが すきです。 | I like animals.
+2. きりん (kirin) — giraffe
+   Example: きりんは せが たかいです。 | Giraffes are tall.
+3. ぞう (zou) — elephant
+   Example: ぞうは おおきいです。 | Elephants are big.
+4. おおきい (ookii) — big
+   Example: ぞうは おおきいです。 | Elephants are big.
+5. たかい (takai) — tall / high
+   Example: きりんは たかいです。 | Giraffes are tall.
+
+[grammar]
+1. ～は ～です / ～は ～だ — Talking about something
+   Example 1: ぞうは おおきいです。 | Elephants are big.
+   Example 2: きりんは せが たかいです。 | Giraffes are tall.
+
+2. ～が すき / だいすき — Saying what you like or love
+   Example 1: きりんが すきです。 | I like giraffes.
+   Example 2: どうぶつが だいすきです。 | I love animals.
+
+[quiz]
+1. What does きりん (kirin) mean?
+   A) Elephant
+   B) Giraffe
+   C) Animal
+   Answer: B
+   Explanation: きりん means giraffe.
+
+2. What does おおきい (ookii) mean?
+   A) Big
+   B) Tall
+   C) Small
+   Answer: A
+   Explanation: おおきい means big.
+
+3. How do you say "I love animals"?
+   A) どうぶつは おおきいです。
+   B) きりんが すきです。
+   C) どうぶつが だいすきです。
+   Answer: C
+   Explanation: だいすき means love or really like.

@@ -1,0 +1,62 @@
+# Tiny Japanese STORY - lesson script (see DIRECTING.md for every stage direction)
+title: A Day at the Amusement Park
+episode: 2
+scene: amusement park
+
+[story]
+@scene amusement park
+> Mika enters left
+& Alex enters left
+> Alex looks surprised
+Alex: わあ、ゆうえんちだ！ | Wow, an amusement park! | Waa, yuuenchi da!
+> Mika cheers
+Mika: ねえ、あれを みて！ わたあめだよ！ | Hey, look at that! It's cotton candy! | Nee, are o mite! Wataame da yo!
+> both walk to the cotton candy stall
+Alex: すみません、わたあめを ふたつ ください。 | Excuse me, two cotton candies, please. | Sumimasen, wataame o futatsu kudasai.
+> Alex buys cotton candy
+& Mika buys cotton candy
+Mika: ありがとうございます！ | Thank you very much! | Arigatou gozaimasu!
+> both eat
+Alex: おいしい！ | Delicious! | Oishii!
+Mika: あまいね！ | It's sweet! | Amai ne!
+> both drop
+> both walk to the ticket booth
+Mika: のりものの きっぷを かおう！ | Let's buy tickets for the rides! | Norimono no kippu o kaou!
+> Mika buys ticket
+& Alex buys ticket
+Alex: これで のれるね！ | Now we can ride! | Kore de noreru ne!
+> both ride the carousel
+Mika: たのしかった！ | That was fun! | Tanoshikatta!
+> Alex looks happy
+Alex: つぎは かんらんしゃに のろう！ | Next, let's ride the Ferris wheel! | Tsugi wa kanransha ni norou!
+> both ride the ferris wheel
+> both drop
+> Mika waves
+Mika: たかい！ すごい！ | So high! Amazing! | Takai! Sugoi!
+> both walk to home
+Alex: きょうは とても たのしかったね。 | Today was really fun. | Kyou wa totemo tanoshikatta ne.
+> Mika nods
+Mika: また こようね！ | Let's come again! | Mata koyou ne!
+
+[vocab]
+vocab: わたあめ | cotton candy | wataame
+example: わたあめが すきです。 | I like cotton candy. | Wataame ga suki desu.
+vocab: のりもの | ride / vehicle | norimono
+example: ゆうえんちの のりものは たのしいです。 | The rides at the amusement park are fun. | Yuuenchi no norimono wa tanoshii desu.
+vocab: たかい | high / tall | takai
+example: かんらんしゃは とても たかいです。 | The Ferris wheel is very high. | Kanransha wa totemo takai desu.
+vocab: たのしい | fun | tanoshii
+example: きょうは たのしかったです。 | Today was fun. | Kyou wa tanoshikatta desu.
+
+[grammar]
+grammar: Noun + を ください | Use this to ask for something politely
+example: わたあめを ひとつ ください。 | One cotton candy, please. | Wataame o hitotsu kudasai.
+example: みずを ください。 | Water, please. | Mizu o kudasai.
+grammar: Ride + に のる | Use this to say you ride something
+example: かんらんしゃに のります。 | I ride the Ferris wheel. | Kanransha ni norimasu.
+example: でんしゃに のります。 | I ride the train. | Densha ni norimasu.
+
+[quiz]
+quiz: How do you ask for cotton candy politely? | わたあめを ください | わたあめに ください | わたあめが ください | A | を marks the thing you ask for.
+quiz: What does のりもの mean? | ride / vehicle | cotton candy | ticket | A | Rides like the carousel are のりもの.
+quiz: Which one means "fun"? | たかい | たのしい | あまい | B | たのしい means fun.
