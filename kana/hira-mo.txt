@@ -1,0 +1,15 @@
+title: Hiragana MO
+kana: も
+script: hiragana
+romaji: mo
+sound: like the "mo" in more
+mnemonic_word: Moth
+mnemonic: も looks like a moth with fluttery wings. Mo for moth!
+
+[words]
+もも | momo | peach
+もり | mori | forest
+もち | mochi | rice cake
+
+[distractors]
+me, mu

@@ -1,0 +1,18 @@
+title: Hiragana HA
+kana: は
+script: hiragana
+romaji: ha
+sound: like the "ha" in hat
+mnemonic_word: Laugh
+mnemonic: は looks like someone laughing. Ha ha ha!
+
+[words]
+はな | hana | flower
+はし | hashi | chopsticks
+はる | haru | spring
+
+[similar]
+け | ke | は has a small loop at the bottom right. け has a simple hook.
+
+[distractors]
+hi, he

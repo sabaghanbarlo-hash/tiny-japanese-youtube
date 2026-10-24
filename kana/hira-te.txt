@@ -1,0 +1,15 @@
+title: Hiragana TE
+kana: て
+script: hiragana
+romaji: te
+sound: like the "te" in ten
+mnemonic_word: Hand
+mnemonic: て looks like a hand. Te means hand in Japanese!
+
+[words]
+てがみ | tegami | letter
+てら | tera | temple
+てんき | tenki | weather
+
+[distractors]
+to, ta

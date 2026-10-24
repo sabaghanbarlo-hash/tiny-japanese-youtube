@@ -1,0 +1,18 @@
+title: Hiragana SHI
+kana: し
+script: hiragana
+romaji: shi
+sound: like "she"
+mnemonic_word: Hook
+mnemonic: し looks like a fishing hook. She catches a fish!
+
+[words]
+しお | shio | salt
+しか | shika | deer
+しま | shima | island
+
+[similar]
+つ | tsu | し stands up like a hook. つ lies flat like a wave.
+
+[distractors]
+sa, su

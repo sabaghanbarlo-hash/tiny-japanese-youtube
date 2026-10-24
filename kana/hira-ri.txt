@@ -1,0 +1,18 @@
+title: Hiragana RI
+kana: り
+script: hiragana
+romaji: ri
+sound: like the "ree" in reed
+mnemonic_word: Reeds
+mnemonic: り looks like two reeds by the river. Ri for reed!
+
+[words]
+りんご | ringo | apple
+りす | risu | squirrel
+くり | kuri | chestnut
+
+[similar]
+い | i | り has a longer stroke on the right. い has two strokes of similar height.
+
+[distractors]
+ra, re

@@ -1,0 +1,18 @@
+title: Hiragana RA
+kana: ら
+script: hiragana
+romaji: ra
+sound: like the "ra" in rally, with a soft r
+mnemonic_word: Rabbit
+mnemonic: ら looks like a rabbit with long ears. Ra for rabbit!
+
+[words]
+らくだ | rakuda | camel
+らいおん | raion | lion
+さくら | sakura | cherry blossom
+
+[similar]
+う | u | ら has an extra curve at the bottom. う is just a tick and one curve.
+
+[distractors]
+ri, ru

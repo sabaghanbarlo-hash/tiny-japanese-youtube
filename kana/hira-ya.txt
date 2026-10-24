@@ -1,0 +1,15 @@
+title: Hiragana YA
+kana: や
+script: hiragana
+romaji: ya
+sound: like the "ya" in yacht
+mnemonic_word: Yak
+mnemonic: や looks like a yak with big horns. Ya for yak!
+
+[words]
+やま | yama | mountain
+やさい | yasai | vegetables
+やね | yane | roof
+
+[distractors]
+yu, yo

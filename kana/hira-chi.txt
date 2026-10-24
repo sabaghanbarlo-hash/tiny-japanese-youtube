@@ -1,0 +1,15 @@
+title: Hiragana CHI
+kana: ち
+script: hiragana
+romaji: chi
+sound: like the "chee" in cheese
+mnemonic_word: Chick
+mnemonic: ち looks like a little chick. Chi for chick!
+
+[words]
+ちず | chizu | map
+ちち | chichi | my father
+ちいさい | chiisai | small
+
+[distractors]
+ta, tsu

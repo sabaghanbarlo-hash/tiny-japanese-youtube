@@ -1,0 +1,15 @@
+title: Hiragana YO
+kana: よ
+script: hiragana
+romaji: yo
+sound: like the "yo" in yo-yo
+mnemonic_word: Yo-yo
+mnemonic: よ looks like a yo-yo on a string. Yo yo!
+
+[words]
+よる | yoru | night
+よこ | yoko | side
+よん | yon | four
+
+[distractors]
+ya, yu

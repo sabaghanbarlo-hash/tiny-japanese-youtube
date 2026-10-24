@@ -1,0 +1,15 @@
+title: Hiragana N
+kana: ん
+script: hiragana
+romaji: n
+sound: like the "n" at the end of "ten"
+mnemonic_word: Letter n
+mnemonic: ん looks like an n with a tail. It is the only kana that is just a consonant!
+
+[words]
+ほん | hon | book
+みかん | mikan | mandarin orange
+せんせい | sensei | teacher
+
+[distractors]
+na, nu

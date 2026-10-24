@@ -1,0 +1,18 @@
+title: Hiragana RE
+kana: れ
+script: hiragana
+romaji: re
+sound: like the "re" in red
+mnemonic_word: Ribbon
+mnemonic: れ looks like a red ribbon in the wind. Re for red!
+
+[words]
+れもん | remon | lemon
+れんが | renga | brick
+これ | kore | this
+
+[similar]
+ね | ne | れ has no loop at the end. ね has a loop.
+
+[distractors]
+ra, ro

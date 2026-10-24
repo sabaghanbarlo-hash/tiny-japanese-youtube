@@ -1,0 +1,15 @@
+title: Hiragana SE
+kana: せ
+script: hiragana
+romaji: se
+sound: like the "se" in set
+mnemonic_word: Seesaw
+mnemonic: せ looks like a seesaw. Se for seesaw!
+
+[words]
+せかい | sekai | world
+せみ | semi | cicada
+せんせい | sensei | teacher
+
+[distractors]
+so, sa

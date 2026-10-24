@@ -1,0 +1,15 @@
+title: Hiragana TO
+kana: と
+script: hiragana
+romaji: to
+sound: like the "to" in toe
+mnemonic_word: Toe
+mnemonic: と looks like a big toe. To for toe!
+
+[words]
+とり | tori | bird
+とけい | tokei | clock
+とまと | tomato | tomato
+
+[distractors]
+te, tsu

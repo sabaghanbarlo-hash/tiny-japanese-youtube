@@ -285,10 +285,301 @@ def scene_coins(d, S, t, U):
     if p > 0: draw_prog(d, S, len(S) * ease(p), 62, (110, 70, 10), U)
 
 
+
+# ---- object-behind-the-character scenes (S, T, N rows): object pops in, then the character is written on it
+def on_object(draw_obj, outline=(110, 40, 40), main=(255, 255, 255), pop=(0.0, 0.3), gl=(0.3, 0.85)):
+    def scene(d, S, t, U):
+        s = back(ph(t, *pop)); C = BOX * SS // 2
+        if s > 0.01: draw_obj(d, s, C, t)
+        p = ph(t, *gl)
+        if p > 0:
+            draw_prog(d, S, len(S) * ease(p), 84, outline, U); draw_prog(d, S, len(S) * ease(p), 58, main, U)
+    return scene
+
+
+def ob_sail(d, s, C, t):
+    d.polygon([(C - 520 * s, C + 330 * s), (C + 520 * s, C + 330 * s), (C + 380 * s, C + 520 * s), (C - 380 * s, C + 520 * s)], fill=(150, 95, 55))
+    d.rectangle((C - 20 * s, C - 560 * s, C + 20 * s, C + 330 * s), fill=(110, 70, 40))
+    d.polygon([(C + 40 * s, C - 540 * s), (C + 40 * s, C + 270 * s), (C + 480 * s, C + 270 * s)], fill=(150, 200, 245))
+    d.polygon([(C - 40 * s, C - 380 * s), (C - 40 * s, C + 270 * s), (C - 340 * s, C + 270 * s)], fill=(110, 170, 235))
+
+
+def ob_swing(d, s, C, t):
+    d.rectangle((C - 540 * s, C - 620 * s, C + 540 * s, C - 550 * s), fill=(120, 80, 45))
+    for x in (-330, 330): d.line([(C + x * s, C - 580 * s), (C + x * s, C + 380 * s)], fill=(150, 110, 70), width=max(2, int(22 * s)))
+    d.rounded_rectangle((C - 440 * s, C + 380 * s, C + 440 * s, C + 470 * s), radius=int(40 * s), fill=(220, 150, 70))
+
+
+def ob_seesaw(d, s, C, t):
+    d.polygon([(C - 140 * s, C + 440 * s), (C + 140 * s, C + 440 * s), (C, C + 60 * s)], fill=(120, 120, 140))
+    d.line([(C - 560 * s, C + 100 * s), (C + 560 * s, C - 100 * s)], fill=(190, 130, 60), width=max(2, int(70 * s)))
+    circle(d, C - 480 * s, C - 10 * s, 95 * s, (235, 80, 80)); circle(d, C + 480 * s, C - 190 * s, 95 * s, (80, 140, 230))
+
+
+def ob_taco(d, s, C, t):
+    d.pieslice((C - 520 * s, C - 320 * s, C + 520 * s, C + 720 * s), 0, 180, fill=(245, 200, 90))
+    for k in range(-4, 5): circle(d, C + k * 115 * s, C + 190 * s + (30 * s if k % 2 else 0), 70 * s, (90, 180, 90))
+    for x in (-300, 60, 330): circle(d, C + x * s, C + 150 * s, 55 * s, (225, 60, 55))
+
+
+def ob_chick(d, s, C, t):
+    circle(d, C, C + 80 * s, 430 * s, (255, 220, 80)); d.ellipse((C + 80 * s, C + 20 * s, C + 400 * s, C + 330 * s), fill=(250, 200, 50))
+    d.polygon([(C - 420 * s, C - 20 * s), (C - 580 * s, C + 50 * s), (C - 420 * s, C + 120 * s)], fill=(250, 140, 40))
+    circle(d, C - 230 * s, C - 150 * s, 38 * s, (40, 40, 50))
+    for x in (-130, 130): d.line([(C + x * s, C + 500 * s), (C + x * s, C + 600 * s)], fill=(250, 140, 40), width=max(2, int(26 * s)))
+
+
+def ob_hand(d, s, C, t):
+    skin = (250, 205, 170)
+    d.rounded_rectangle((C - 340 * s, C - 40 * s, C + 340 * s, C + 440 * s), radius=int(120 * s), fill=skin)
+    for k, x in enumerate((-270, -90, 90, 270)): d.rounded_rectangle((C + x * s - 70 * s, C - 520 * s + abs(k - 1.5) * 50 * s, C + x * s + 70 * s, C + 60 * s), radius=int(70 * s), fill=skin)
+    d.polygon([(C - 340 * s, C + 130 * s), (C - 560 * s, C - 40 * s), (C - 480 * s, C - 140 * s), (C - 300 * s, C - 10 * s)], fill=skin)
+
+
+def ob_toe(d, s, C, t):
+    skin = (250, 205, 170)
+    d.ellipse((C - 560 * s, C - 20 * s, C + 480 * s, C + 560 * s), fill=skin)
+    d.ellipse((C + 120 * s, C - 480 * s, C + 440 * s, C + 60 * s), fill=skin); d.ellipse((C + 190 * s, C - 440 * s, C + 380 * s, C - 270 * s), fill=(255, 232, 225))
+    for k, (x, y, r) in enumerate(((20, -240, 100), (-170, -170, 90), (-340, -80, 80))): circle(d, C + x * s, C + y * s, r * s, skin)
+
+
+def ob_nacho(d, s, C, t):
+    d.polygon([(C - 540 * s, C + 400 * s), (C + 540 * s, C + 400 * s), (C, C - 560 * s)], fill=(240, 195, 90))
+    d.polygon([(C - 270 * s, C - 90 * s), (C + 270 * s, C - 90 * s), (C, C - 560 * s)], fill=(255, 150, 30))
+    for x in (-200, 0, 200): circle(d, C + x * s, C - 80 * s, 62 * s, (255, 150, 30))
+    d.rectangle((C - 70 * s, C - 80 * s, C + 70 * s, C + 120 * s), fill=(255, 150, 30))
+
+
+def ob_knee(d, s, C, t):
+    skin = (245, 200, 160)
+    d.line([(C - 430 * s, C - 560 * s), (C - 20 * s, C + 60 * s), (C + 430 * s, C + 560 * s)], fill=skin, width=max(2, int(260 * s)), joint="curve")
+    circle(d, C - 20 * s, C + 60 * s, 210 * s, (240, 185, 145))
+    d.line([(C - 150 * s, C - 60 * s), (C + 110 * s, C + 180 * s)], fill=(255, 240, 220), width=max(2, int(90 * s)))
+    d.line([(C + 110 * s, C - 60 * s), (C - 150 * s, C + 180 * s)], fill=(255, 240, 220), width=max(2, int(90 * s)))
+
+
+def ob_bowl(d, s, C, t):
+    d.pieslice((C - 570 * s, C - 440 * s, C + 570 * s, C + 700 * s), 0, 180, fill=(210, 80, 70))
+    d.ellipse((C - 570 * s, C + 90 * s, C + 570 * s, C + 190 * s), fill=(150, 50, 45))
+    for x, w in ((140, 0), (310, 0)): d.line([(C + x * s, C - 600 * s), (C + (x - 140) * s, C + 110 * s)], fill=(120, 80, 45), width=max(2, int(34 * s)))
+    q = ph(t, 0.5, 1.0)
+    for k in range(3): circle(d, C - 300 * s + k * 280 * s, C - 380 * s - ((q * 500 + k * 170) % 400) * 0.5, 50 * s + 10 * k, (232, 238, 242))
+
+
+def ob_cat(d, s, C, t):
+    fur = (250, 170, 80)
+    d.polygon([(C - 400 * s, C - 150 * s), (C - 340 * s, C - 570 * s), (C - 80 * s, C - 340 * s)], fill=fur); d.polygon([(C + 400 * s, C - 150 * s), (C + 340 * s, C - 570 * s), (C + 80 * s, C - 340 * s)], fill=fur)
+    d.polygon([(C - 340 * s, C - 250 * s), (C - 310 * s, C - 460 * s), (C - 190 * s, C - 330 * s)], fill=(250, 190, 190)); d.polygon([(C + 340 * s, C - 250 * s), (C + 310 * s, C - 460 * s), (C + 190 * s, C - 330 * s)], fill=(250, 190, 190))
+    circle(d, C, C + 60 * s, 440 * s, fur)
+    for x in (-170, 170): circle(d, C + x * s, C - 40 * s, 52 * s, (40, 60, 40))
+    d.polygon([(C - 50 * s, C + 120 * s), (C + 50 * s, C + 120 * s), (C, C + 180 * s)], fill=(235, 120, 140))
+    for y in (150, 230):
+        for sg in (-1, 1): d.line([(C + sg * 200 * s, C + y * s), (C + sg * 520 * s, C + (y - 30 + (y - 190)) * s)], fill=(90, 60, 40), width=max(2, int(10 * s)))
+
+
+def sc_snail(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2
+    if s > 0.01:
+        d.ellipse((C - 560 * s, C + 330 * s, C + 560 * s, C + 540 * s), fill=(150, 200, 90)); circle(d, C + 480 * s, C + 290 * s, 140 * s, (150, 200, 90))
+        for x in (440, 540): d.line([(C + x * s, C + 220 * s), (C + (x + 50) * s, C + 40 * s)], fill=(120, 170, 70), width=max(2, int(26 * s))); circle(d, C + (x + 50) * s, C + 40 * s, 30 * s, (120, 170, 70))
+    f = ease(ph(t, 0.2, 0.85)); draw_prog(d, S, f * len(S), 130, (120, 70, 30), U); draw_prog(d, S, f * len(S), 60, (200, 140, 70), U)
+
+
+def sc_hook(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.6)); pts = S[0].upto(f)
+    p0 = S[0].pts[0]; d.line([(p0[0] * U, 0), (p0[0] * U, p0[1] * U)], fill=(90, 90, 100), width=18)
+    line(d, pts, 100, (120, 130, 150), U); line(d, pts, 40, (200, 210, 225), U)
+    q = back(ph(t, 0.55, 0.85)); e = S[0].pts[-1]; x, y = e[0] * U, e[1] * U
+    if q > 0.01:
+        d.ellipse((x - 110 * q, y - 190 * q, x + 150 * q, y - 10 * q), fill=(90, 160, 230)); d.polygon([(x + 150 * q, y - 100 * q), (x + 270 * q, y - 190 * q), (x + 270 * q, y + 0 * q)], fill=(90, 160, 230)); circle(d, x - 50 * q, y - 120 * q, 18 * q, (255, 255, 255))
+
+
+def sc_needle(d, S, t, U):
+    s = back(ph(t, 0.0, 0.25)); C = BOX * SS // 2
+    if s > 0.01:
+        d.line([(C - 520 * s, C + 560 * s), (C + 540 * s, C - 520 * s)], fill=(190, 195, 205), width=max(2, int(34 * s))); d.ellipse((C + 480 * s, C - 600 * s, C + 570 * s, C - 470 * s), outline=(120, 125, 140), width=max(2, int(14 * s)))
+    f = ease(ph(t, 0.2, 0.9)); draw_prog(d, S, f * len(S), 84, (150, 40, 90), U); draw_prog(d, S, f * len(S), 52, (240, 90, 150), U)
+
+
+def sc_wave(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.7)); pts = S[0].upto(f)
+    line(d, pts, 160, (40, 110, 200), U); line(d, pts, 60, (120, 190, 240), U)
+    for k in range(0, len(pts), 7): circle(d, pts[k][0] * U + 40, pts[k][1] * U - 70, 26, (255, 255, 255))
+    if f >= 1:
+        e = pts[-1]
+        for k in range(5): circle(d, e[0] * U + 90 * k - 100, e[1] * U + 60 + 30 * math.sin(k + t * 20), 34, (255, 255, 255))
+
+
+def ob_laugh(d, s, C, t):
+    circle(d, C, C, 520 * s, (255, 215, 70))
+    for x in (-200, 200): d.arc((C + (x - 100) * s, C - 300 * s, C + (x + 100) * s, C - 120 * s), 200, 340, fill=(90, 50, 30), width=max(2, int(32 * s)))
+    d.pieslice((C - 300 * s, C - 40 * s, C + 300 * s, C + 380 * s), 0, 180, fill=(150, 40, 50)); d.ellipse((C - 140 * s, C + 190 * s, C + 140 * s, C + 330 * s), fill=(240, 120, 130))
+
+
+def sc_smile(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2
+    if s > 0.01:
+        for x in (-190, 190): circle(d, C + x * s, C - 380 * s, 58 * s, (60, 45, 60))
+        for x in (-420, 420): circle(d, C + x * s, C - 120 * s, 70 * s, (250, 170, 180))
+    f = ease(ph(t, 0.2, 0.8)); pts = S[0].upto(f)
+    line(d, pts, 140, (200, 50, 80), U); line(d, pts, 50, (250, 130, 150), U)
+
+
+def ob_fuji(d, s, C, t):
+    d.polygon([(C - 620 * s, C + 520 * s), (C + 620 * s, C + 520 * s), (C + 140 * s, C - 440 * s), (C - 140 * s, C - 440 * s)], fill=(95, 125, 205))
+    d.polygon([(C - 140 * s, C - 440 * s), (C + 140 * s, C - 440 * s), (C + 235 * s, C - 250 * s), (C + 70 * s, C - 190 * s), (C - 50 * s, C - 290 * s), (C - 230 * s, C - 240 * s)], fill=(250, 250, 255))
+    circle(d, C - 470 * s, C - 480 * s, 90 * s, (240, 80, 70))
+    for x, y in ((-460, 180), (470, 90)): d.ellipse((C + x * s - 190 * s, C + y * s - 70 * s, C + x * s + 190 * s, C + y * s + 70 * s), fill=(235, 240, 250))
+
+
+def sc_hen(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.5)); line(d, S[0].upto(f), 190, (100, 180, 95), U); line(d, S[0].upto(f), 70, (150, 215, 130), U)
+    s = back(ph(t, 0.45, 0.8)); pk = min(S[0].pts, key=lambda p: p[1]); x, y = pk[0] * U, pk[1] * U - 90
+    if s > 0.01:
+        d.ellipse((x - 250 * s, y - 330 * s, x + 250 * s, y + 0 * s), fill=(252, 240, 220)); circle(d, x - 230 * s, y - 380 * s, 110 * s, (252, 240, 220))
+        d.polygon([(x - 320 * s, y - 400 * s), (x - 440 * s, y - 360 * s), (x - 320 * s, y - 320 * s)], fill=(250, 150, 50)); circle(d, x - 250 * s, y - 440 * s, 22 * s, (40, 40, 50))
+        for k in range(3): circle(d, x - 280 * s + k * 50 * s, y - 520 * s, 42 * s, (225, 60, 60))
+        d.polygon([(x + 220 * s, y - 280 * s), (x + 420 * s, y - 380 * s), (x + 360 * s, y - 120 * s)], fill=(235, 215, 190))
+
+
+def ob_cup(d, s, C, t):
+    d.rounded_rectangle((C - 380 * s, C - 200 * s, C + 380 * s, C + 440 * s), radius=int(110 * s), fill=(246, 246, 250)); d.rectangle((C - 380 * s, C - 20 * s, C + 380 * s, C + 70 * s), fill=(90, 140, 220))
+    d.arc((C + 250 * s, C - 100 * s, C + 570 * s, C + 300 * s), -90, 90, fill=(246, 246, 250), width=max(2, int(70 * s)))
+    d.ellipse((C - 380 * s, C - 270 * s, C + 380 * s, C - 130 * s), fill=(155, 95, 55))
+    q = ph(t, 0.4, 1.0)
+    for k in range(3): circle(d, C - 200 * s + k * 200 * s + 30 * math.sin(q * 8 + k), C - 380 * s - ((q * 600 + k * 200) % 500) * 0.6, 55 * s, (232, 238, 242))
+
+
+def ob_mama(d, s, C, t):
+    d.pieslice((C - 470 * s, C - 430 * s, C + 470 * s, C + 530 * s), 180, 360, fill=(95, 55, 35)); circle(d, C, C - 450 * s, 170 * s, (95, 55, 35))
+    circle(d, C, C + 70 * s, 430 * s, (250, 215, 185)); d.pieslice((C - 470 * s, C - 430 * s, C + 470 * s, C + 20 * s), 180, 360, fill=(95, 55, 35))
+    for x in (-250, 250): circle(d, C + x * s, C + 170 * s, 70 * s, (250, 170, 175))
+    d.arc((C - 150 * s, C + 150 * s, C + 150 * s, C + 330 * s), 20, 160, fill=(190, 60, 70), width=max(2, int(26 * s)))
+
+
+def ob_staff(d, s, C, t):
+    for k in range(5): d.line([(C - 590 * s, C + (k - 2) * 150 * s), (C + 590 * s, C + (k - 2) * 150 * s)], fill=(60, 60, 80), width=max(2, int(16 * s)))
+    for x, y in ((-300, 150), (330, -150)):
+        d.ellipse((C + x * s - 90 * s, C + y * s - 65 * s, C + x * s + 90 * s, C + y * s + 65 * s), fill=(60, 60, 80)); d.line([(C + (x + 82) * s, C + y * s), (C + (x + 82) * s, C + (y - 330) * s)], fill=(60, 60, 80), width=max(2, int(18 * s)))
+
+
+def ob_cow(d, s, C, t):
+    d.ellipse((C - 590 * s, C - 300 * s, C - 340 * s, C - 100 * s), fill=(245, 245, 245)); d.ellipse((C + 340 * s, C - 300 * s, C + 590 * s, C - 100 * s), fill=(245, 245, 245))
+    d.polygon([(C - 250 * s, C - 360 * s), (C - 190 * s, C - 560 * s), (C - 110 * s, C - 360 * s)], fill=(240, 225, 190)); d.polygon([(C + 250 * s, C - 360 * s), (C + 190 * s, C - 560 * s), (C + 110 * s, C - 360 * s)], fill=(240, 225, 190))
+    d.ellipse((C - 400 * s, C - 380 * s, C + 400 * s, C + 440 * s), fill=(248, 248, 248)); d.ellipse((C - 330 * s, C - 280 * s, C - 80 * s, C - 40 * s), fill=(50, 50, 55))
+    d.ellipse((C - 300 * s, C + 110 * s, C + 300 * s, C + 420 * s), fill=(245, 175, 185))
+    for x in (-110, 110): circle(d, C + x * s, C + 260 * s, 36 * s, (150, 70, 90))
+    circle(d, C + 150 * s, C - 130 * s, 40 * s, (40, 40, 50)); d.arc((C - 120 * s, C + 330 * s, C + 120 * s, C + 540 * s), 0, 180, fill=(235, 190, 60), width=max(2, int(28 * s)))
+
+
+def ob_eye(d, s, C, t):
+    d.ellipse((C - 570 * s, C - 290 * s, C + 570 * s, C + 290 * s), fill=(250, 250, 252), outline=(60, 50, 70), width=max(2, int(22 * s)))
+    circle(d, C, C, 250 * s, (90, 140, 200)); circle(d, C, C, 110 * s, (30, 30, 45)); circle(d, C - 80 * s, C - 90 * s, 50 * s, (255, 255, 255))
+    for k in range(-3, 4): d.line([(C + k * 150 * s, C - 280 * s + abs(k) * 25 * s), (C + k * 190 * s, C - 400 * s + abs(k) * 55 * s)], fill=(60, 50, 70), width=max(2, int(18 * s)))
+
+
+def ob_moth(d, s, C, t):
+    for sg in (-1, 1):
+        d.ellipse((C + (60 if sg > 0 else -620) * s, C - 400 * s, C + (620 if sg > 0 else -60) * s, C + 120 * s), fill=(190, 150, 230)); d.ellipse((C + (60 if sg > 0 else -520) * s, C + 20 * s, C + (520 if sg > 0 else -60) * s, C + 430 * s), fill=(160, 120, 210))
+        d.line([(C + sg * 20 * s, C - 330 * s), (C + sg * 190 * s, C - 560 * s)], fill=(90, 60, 40), width=max(2, int(18 * s)))
+    d.line([(C, C - 300 * s), (C, C + 460 * s)], fill=(110, 75, 50), width=max(2, int(100 * s))); circle(d, C, C - 330 * s, 75 * s, (110, 75, 50))
+
+
+def ob_yak(d, s, C, t):
+    for sg in (-1, 1): d.line([(C + sg * 300 * s, C - 210 * s), (C + sg * 530 * s, C - 300 * s), (C + sg * 600 * s, C - 520 * s)], fill=(240, 230, 200), width=max(2, int(70 * s)), joint="curve")
+    d.ellipse((C - 340 * s, C - 320 * s, C + 340 * s, C + 440 * s), fill=(90, 60, 40)); d.ellipse((C - 210 * s, C + 100 * s, C + 210 * s, C + 390 * s), fill=(140, 100, 70))
+    for x in (-150, 150): circle(d, C + x * s, C - 90 * s, 38 * s, (255, 255, 255)); circle(d, C + x * s, C - 90 * s, 18 * s, (30, 30, 30))
+    for k in range(-4, 5): d.polygon([(C + k * 80 * s - 40 * s, C + 380 * s), (C + k * 80 * s + 40 * s, C + 380 * s), (C + k * 80 * s, C + 560 * s)], fill=(90, 60, 40))
+
+
+def ob_onsen(d, s, C, t):
+    d.rounded_rectangle((C - 570 * s, C + 60 * s, C + 570 * s, C + 570 * s), radius=int(130 * s), fill=(110, 190, 235)); d.rounded_rectangle((C - 600 * s, C + 20 * s, C + 600 * s, C + 100 * s), radius=int(40 * s), fill=(160, 110, 70))
+    q = ph(t, 0.35, 1.0)
+    for k in range(4): circle(d, C - 420 * s + k * 280 * s + 30 * math.sin(q * 7 + k), C - 100 * s - ((q * 700 + k * 190) % 560) * 0.6, 60 * s, (232, 238, 242))
+
+
+def ob_yoyo(d, s, C, t):
+    d.line([(C, C - 640 * s), (C, C + 80 * s)], fill=(80, 80, 90), width=max(2, int(14 * s))); circle(d, C, C - 640 * s, 36 * s, (80, 80, 90))
+    circle(d, C, C + 120 * s, 420 * s, (230, 60, 70)); circle(d, C, C + 120 * s, 270 * s, (190, 40, 55)); circle(d, C, C + 120 * s, 110 * s, (245, 200, 70))
+
+
+def ob_rabbit(d, s, C, t):
+    for sg in (-1, 1):
+        d.ellipse((C + sg * 150 * s - 85 * s, C - 640 * s, C + sg * 150 * s + 85 * s, C - 180 * s), fill=(245, 245, 250)); d.ellipse((C + sg * 150 * s - 40 * s, C - 560 * s, C + sg * 150 * s + 40 * s, C - 260 * s), fill=(250, 190, 200))
+    d.ellipse((C - 360 * s, C + 20 * s, C + 360 * s, C + 600 * s), fill=(245, 245, 250)); circle(d, C, C - 60 * s, 270 * s, (245, 245, 250))
+    for x in (-100, 100): circle(d, C + x * s, C - 90 * s, 28 * s, (40, 40, 50))
+    d.polygon([(C - 36 * s, C - 20 * s), (C + 36 * s, C - 20 * s), (C, C + 30 * s)], fill=(240, 130, 150))
+
+
+def sc_reeds(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.7))
+    for i, s in enumerate(S):
+        ff = clamp((f * 1.3) - i * 0.3); pts = s.upto(ff)
+        if ff > 0:
+            line(d, pts, 80, (95, 150, 60), U); x, y = s.pts[0][0] * U, s.pts[0][1] * U
+            d.ellipse((x - 62, y - 230, x + 62, y + 10), fill=(120, 70, 40))
+
+
+def sc_ruby(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.7)); pts = S[0].upto(f)
+    line(d, pts, 120, (150, 105, 20), U); line(d, pts, 78, (245, 195, 55), U)
+    q = back(ph(t, 0.65, 0.95)); e = S[0].pts[-1]; x, y = e[0] * U, e[1] * U
+    if q > 0.01:
+        d.polygon([(x, y - 130 * q), (x + 105 * q, y), (x, y + 150 * q), (x - 105 * q, y)], fill=(220, 30, 70)); d.polygon([(x, y - 130 * q), (x + 50 * q, y - 20 * q), (x, y + 10 * q), (x - 50 * q, y - 20 * q)], fill=(250, 130, 150))
+
+
+def sc_ribbon(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.8)); draw_prog(d, S, f * len(S), 130, (200, 40, 60), U); draw_prog(d, S, f * len(S), 40, (250, 140, 150), U)
+
+
+def sc_road(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.8)); pts = S[0].upto(f)
+    line(d, pts, 190, (85, 90, 105), U)
+    for i in range(0, max(0, len(pts) - 3), 6): line(d, pts[i:i + 3], 22, (250, 230, 100), U)
+
+
+def ob_wheel(d, s, C, t):
+    for k in range(8):
+        a = k * math.pi / 4; d.line([(C, C), (C + 470 * s * math.cos(a), C + 470 * s * math.sin(a))], fill=(160, 110, 60), width=max(2, int(44 * s)))
+    d.ellipse((C - 500 * s, C - 500 * s, C + 500 * s, C + 500 * s), outline=(130, 85, 45), width=max(2, int(90 * s))); circle(d, C, C, 95 * s, (110, 70, 40))
+
+
+def sc_worm(d, S, t, U):
+    f = ease(ph(t, 0.0, 0.9)); k = 0
+    for i, s in enumerate(S):
+        pts = s.upto(clamp(f * len(S) - i))
+        for j in range(0, len(pts), 5): circle(d, pts[j][0] * U, pts[j][1] * U, 56, (110, 190, 90) if (j // 5 + k) % 2 == 0 else (150, 215, 120))
+        k += 1
+    if f > 0.05:
+        e = S[-1].upto(clamp(f * len(S) - (len(S) - 1)))[-1]; circle(d, e[0] * U - 18, e[1] * U - 14, 14, (40, 40, 50))
+
+
+def sc_nletter(d, S, t, U):
+    s = back(ph(t, 0.0, 0.3)); C = BOX * SS // 2
+    if s > 0.01: d.text((C, C + 40), "n", font=font(max(10, int(1250 * s))), fill=(205, 225, 248), anchor="mm")
+    p = ph(t, 0.3, 0.85)
+    if p > 0: draw_prog(d, S, len(S) * ease(p), 84, (255, 255, 255), U); draw_prog(d, S, len(S) * ease(p), 56, (40, 80, 160), U)
+
+
 SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hiragana", "u"): scene_hat,
           ("hiragana", "e"): scene_bird, ("hiragana", "o"): scene_orange,
           ("hiragana", "ka"): scene_kite, ("hiragana", "ki"): scene_key, ("hiragana", "ku"): scene_beak,
-          ("hiragana", "ke"): scene_kettle, ("hiragana", "ko"): scene_coins}
+          ("hiragana", "ke"): scene_kettle, ("hiragana", "ko"): scene_coins,
+          ("hiragana", "sa"): on_object(ob_sail, (30, 70, 130)), ("hiragana", "shi"): sc_hook, ("hiragana", "su"): on_object(ob_swing, (90, 50, 20)),
+          ("hiragana", "se"): on_object(ob_seesaw, (70, 50, 30)), ("hiragana", "so"): sc_needle,
+          ("hiragana", "ta"): on_object(ob_taco, (140, 90, 20)), ("hiragana", "chi"): on_object(ob_chick, (255, 255, 255), (130, 75, 20)),
+          ("hiragana", "tsu"): sc_wave, ("hiragana", "te"): on_object(ob_hand, (150, 90, 60)), ("hiragana", "to"): on_object(ob_toe, (150, 90, 60)),
+          ("hiragana", "na"): on_object(ob_nacho, (150, 90, 20)), ("hiragana", "ni"): on_object(ob_knee, (150, 90, 60)),
+          ("hiragana", "nu"): on_object(ob_bowl, (140, 100, 30), (255, 226, 150)), ("hiragana", "ne"): on_object(ob_cat, (120, 60, 20)), ("hiragana", "no"): sc_snail,
+          ("hiragana", "ha"): on_object(ob_laugh, (120, 60, 20)), ("hiragana", "hi"): sc_smile, ("hiragana", "fu"): on_object(ob_fuji, (30, 50, 120)),
+          ("hiragana", "he"): sc_hen, ("hiragana", "ho"): on_object(ob_cup, (255, 255, 255), (220, 60, 60)),
+          ("hiragana", "ma"): on_object(ob_mama, (255, 255, 255), (120, 60, 40)), ("hiragana", "mi"): on_object(ob_staff, (255, 255, 255), (220, 70, 110)),
+          ("hiragana", "mu"): on_object(ob_cow, (255, 255, 255), (60, 60, 70)), ("hiragana", "me"): on_object(ob_eye, (255, 255, 255), (30, 40, 70)),
+          ("hiragana", "mo"): on_object(ob_moth, (255, 255, 255), (70, 40, 100)),
+          ("hiragana", "ya"): on_object(ob_yak, (50, 30, 20)), ("hiragana", "yu"): on_object(ob_onsen, (40, 110, 170)), ("hiragana", "yo"): on_object(ob_yoyo, (120, 20, 35)),
+          ("hiragana", "ra"): on_object(ob_rabbit, (255, 255, 255), (190, 90, 120)), ("hiragana", "ri"): sc_reeds, ("hiragana", "ru"): sc_ruby,
+          ("hiragana", "re"): sc_ribbon, ("hiragana", "ro"): sc_road,
+          ("hiragana", "wa"): on_object(ob_wheel, (255, 255, 255), (60, 40, 30)), ("hiragana", "wo"): sc_worm, ("hiragana", "n"): sc_nletter}
 
 
 

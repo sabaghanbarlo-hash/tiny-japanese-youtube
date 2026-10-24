@@ -1,0 +1,18 @@
+title: Hiragana SU
+kana: す
+script: hiragana
+romaji: su
+sound: like the "soo" in soon
+mnemonic_word: Swing
+mnemonic: す looks like a swing hanging from a bar. Su for swing!
+
+[words]
+すし | sushi | sushi
+すいか | suika | watermelon
+すな | suna | sand
+
+[similar]
+む | mu | す has no dot. む has a small dot at the top right.
+
+[distractors]
+sa, se

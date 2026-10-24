@@ -1,0 +1,15 @@
+title: Hiragana MI
+kana: み
+script: hiragana
+romaji: mi
+sound: like the "mee" in meet
+mnemonic_word: Music
+mnemonic: み looks like a note on a music staff. Do re mi!
+
+[words]
+みず | mizu | water
+みみ | mimi | ear
+みち | michi | road
+
+[distractors]
+ma, me

@@ -1,0 +1,18 @@
+title: Hiragana MA
+kana: ま
+script: hiragana
+romaji: ma
+sound: like the "ma" in mama
+mnemonic_word: Mama
+mnemonic: ま looks like a mama with her hair up. Ma for mama!
+
+[words]
+まど | mado | window
+まち | machi | town
+まめ | mame | bean
+
+[similar]
+ほ | ho | ま has no line on the left. ほ has a vertical line on the left.
+
+[distractors]
+mi, mu

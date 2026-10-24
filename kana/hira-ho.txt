@@ -1,0 +1,18 @@
+title: Hiragana HO
+kana: ほ
+script: hiragana
+romaji: ho
+sound: like the "ho" in hope
+mnemonic_word: Hot
+mnemonic: ほ looks like a hot cup of tea. Ho for hot!
+
+[words]
+ほし | hoshi | star
+ほん | hon | book
+ほね | hone | bone
+
+[similar]
+は | ha | ほ has an extra line on the left side. は has no extra line.
+
+[distractors]
+ha, he

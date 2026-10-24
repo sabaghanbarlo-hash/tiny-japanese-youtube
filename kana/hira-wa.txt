@@ -1,0 +1,18 @@
+title: Hiragana WA
+kana: わ
+script: hiragana
+romaji: wa
+sound: like the "wa" in wagon
+mnemonic_word: Wheel
+mnemonic: わ looks like a wagon wheel. Wa for wagon!
+
+[words]
+わたし | watashi | I, me
+わに | wani | crocodile
+わかい | wakai | young
+
+[similar]
+ね | ne | わ is round at the bottom with no loop. ね has a loop at the end.
+
+[distractors]
+ra, wo

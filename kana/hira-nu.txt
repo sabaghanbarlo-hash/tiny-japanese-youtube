@@ -1,0 +1,18 @@
+title: Hiragana NU
+kana: ぬ
+script: hiragana
+romaji: nu
+sound: like the "noo" in noodle
+mnemonic_word: Noodles
+mnemonic: ぬ looks like noodles in a bowl. Nu for noodle!
+
+[words]
+ぬの | nuno | cloth
+いぬ | inu | dog
+ぬま | numa | swamp
+
+[similar]
+め | me | ぬ finishes with a small loop. め finishes with a simple curve.
+
+[distractors]
+na, ne

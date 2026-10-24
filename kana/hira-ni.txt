@@ -1,0 +1,18 @@
+title: Hiragana NI
+kana: に
+script: hiragana
+romaji: ni
+sound: like the "knee"
+mnemonic_word: Knee
+mnemonic: に looks like a bent knee with a bandage. Ni sounds like knee!
+
+[words]
+にく | niku | meat
+にわ | niwa | garden
+にじ | niji | rainbow
+
+[similar]
+こ | ko | に has an extra line on the left. こ has only two strokes.
+
+[distractors]
+na, ne
