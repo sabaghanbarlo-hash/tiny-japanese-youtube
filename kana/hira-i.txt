@@ -1,0 +1,19 @@
+title: Hiragana I
+kana: い
+script: hiragana
+romaji: i
+sound: like the "ee" in see
+strokes: 2
+mnemonic_word: Eels
+mnemonic: い looks like two eels swimming side by side. Eels say ee!
+
+[words]
+いぬ | inu | dog
+いし | ishi | stone
+いえ | ie | house
+
+[similar]
+り | ri | い has two strokes of about the same height. り has a longer stroke on the right.
+
+[distractors]
+a, u

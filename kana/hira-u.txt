@@ -1,0 +1,19 @@
+title: Hiragana U
+kana: う
+script: hiragana
+romaji: u
+sound: like the "oo" in moon, with relaxed lips
+strokes: 2
+mnemonic_word: Hat
+mnemonic: う looks like a little hat on top of a curved slide. Say oo, like you are blowing out a candle.
+
+[words]
+うみ | umi | sea
+うた | uta | song
+うま | uma | horse
+
+[similar]
+ら | ra | う has a small tick on top and one wide, open curve. ら curves back to the left at the bottom.
+
+[distractors]
+a, e

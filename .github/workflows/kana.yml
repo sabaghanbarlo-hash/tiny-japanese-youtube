@@ -1,0 +1,68 @@
+name: Render Kana Lesson
+
+on:
+  workflow_dispatch:
+    inputs:
+      kana:
+        description: "Kana script file name in kana/ (e.g. hira-a.txt). Leave empty to render all (no YouTube upload)."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-lesson
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Render
+        env:
+          STRICT_VOICE: "1"
+          KANA: ${{ github.event.inputs.kana }}
+        run: |
+          if [ -n "$KANA" ]; then files="kana/$KANA"; else files=$(ls kana/*.txt); fi
+          for f in $files; do python kana.py "$f" -o output; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kana-lessons
+          path: output/
+      - name: Upload to YouTube
+        id: yt
+        if: ${{ github.event.inputs.kana != '' }}
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube secrets are not set - skipping the upload"; exit 0; fi
+          for f in output/*.mp4; do python upload.py "$f"; done
+      - name: Publish to the website
+        run: |
+          mkdir -p docs/videos
+          cp output/* docs/videos/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/videos
+          git commit -m "Publish kana lesson" || exit 0
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+      - name: YouTube upload failed
+        if: ${{ steps.yt.outcome == 'failure' }}
+        run: |
+          echo "The lesson was rendered and published to the site, but the YouTube upload failed. See the 'Upload to YouTube' step above."
+          exit 1

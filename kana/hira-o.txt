@@ -1,0 +1,19 @@
+title: Hiragana O
+kana: お
+script: hiragana
+romaji: o
+sound: like the "o" in more, but short
+strokes: 3
+mnemonic_word: Orange
+mnemonic: お has a small dot at the top right, like an orange on a branch. O for orange!
+
+[words]
+おか | oka | hill
+おに | oni | demon
+おちゃ | ocha | tea
+
+[similar]
+あ | a | お has a small dot at the top right. あ has no dot, just one big loop.
+
+[distractors]
+a, u
