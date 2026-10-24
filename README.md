@@ -68,5 +68,15 @@ Everything except `[story]` is optional.
 - Voices are Microsoft Edge neural voices (Nanami, Keita, Aria). On Actions the render stops rather than using the low-quality fallback voice (`STRICT_VOICE=1`); just re-run.
 - Mika says each vocab/grammar example slowly; English is read by a narrator voice.
 
-## Story videos upload automatically
-Videos made by the story project (`tiny-japanese-story`, Mika and Alex acting out the story) are uploaded here too. The `Upload story videos` workflow (`.github/workflows/story-upload.yml`, script `story_upload.py`) checks that repository every 10 minutes (and when you run it by hand under **Actions**). Each new video in its `docs/videos/` is uploaded with the title, description and chapters from `<name>.description.txt` and the cover image, using the same secrets and `YT_PRIVACY` setting as above. The link is saved as `story-uploads/<name>.youtube.txt` (a `.failed.txt` file appears instead if an upload fails; it tries three times). Videos that existed before this was added are marked `skipped`; delete a marker to upload that video. Nothing here changes how lesson videos are made.
+## Three kinds of video
+The studio page has three tabs:
+
+| Tab | What you get | Script folder | Job |
+|---|---|---|---|
+| **Short** | vertical 1080x1920 Short, about 45 seconds | `shorts/` | Render YouTube Short |
+| **Long** | landscape lesson: story, vocabulary, grammar, quiz | `lessons/` | Render YouTube lesson |
+| **Story** | like Long, but Mika and Alex *act out* the story: they walk, react, hold things, change places; rain, snow, umbrellas, day and night, 26 places with several looks | `stories/` | Render story video |
+
+All three upload to YouTube the same way (see above) and publish on the studio page. The story engine lives in `story/` (`lesson.py`, `acting.py`, `atmos.py`, `scenery.py`, `make_cover.py`) and shares `thumb.py` and `upload.py` with the other two. How to write a directed story script: `story/DIRECTING.md`; the prompt to give Claude so it writes one for you is `story/DIRECTOR_PROMPT.md` (also on the Story tab of the studio page). Run it by hand: `python story/lesson.py stories/<name>.txt -o output`, then `python story/make_cover.py stories/<name>.txt output/<name>.thumbnail.png`.
+
+Story videos are made and uploaded from this repository only. The older `tiny-japanese-story` repository is no longer needed.

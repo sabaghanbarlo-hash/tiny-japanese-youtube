@@ -34,6 +34,7 @@ a{color:var(--pink)}
 .tab{width:auto;flex:1;background:transparent;color:var(--soft);border:1px solid var(--line);padding:10px 16px;font-size:1rem}
 .tab.on{background:var(--pink);color:#2a1219;border-color:var(--pink)}
 video.vert{max-width:340px}
+[hidden]{display:none!important}
 textarea.short{min-height:300px}
 </style>
 </head>
@@ -41,16 +42,175 @@ textarea.short{min-height:300px}
 <main>
 <h1>Tiny <span>Japanese</span> · YouTube Studio</h1>
 <p class="sub" id="sub"></p>
-<div class="tabs"><button class="tab" id="tabV" type="button">Lesson video</button><button class="tab" id="tabS" type="button">Short (vertical)</button></div>
+<div class="tabs"><button class="tab" id="tabS" type="button">Short</button><button class="tab" id="tabV" type="button">Long</button><button class="tab" id="tabT" type="button">Story</button></div>
 
 <div class="card">
-<label for="script">Lesson script</label>
+<label for="script" id="scriptLabel">Lesson script</label>
 <textarea id="script" spellcheck="false"></textarea>
 <p class="hint" id="hint"></p>
 <button id="run" style="margin-top:14px">Make video</button>
 </div>
 
 <div class="card"><div id="status">Ready.</div><div id="result"></div></div>
+
+<div class="card" id="dirCard" hidden>
+<details>
+<summary>Director prompt: copy it into a Claude chat with your story idea to get a directed script</summary>
+<p class="hint">Tell Claude the story ("Mika and Alex go to the park and it starts raining"), paste the answer into the box above. The characters then act it out: walking, reacting, rain, umbrellas, different places. Full vocabulary: <code>story/DIRECTING.md</code> in the repository.</p>
+<div class="row" style="margin:10px 0"><button class="ghost" id="copyDir" type="button">Copy director prompt</button><span class="hint" id="copyMsg"></span></div>
+<textarea id="dirText" class="out" readonly spellcheck="false">You are the director for &quot;Tiny Japanese Story&quot;: short animated Japanese-lesson videos starring two characters, Mika and Alex. I will give you a story idea (a place, what happens, what the lesson should teach). You reply with ONE finished script in the exact format below, ready to paste into the studio page. The studio plays your stage directions as animation, so use only the vocabulary listed here.
+
+# What to output
+- Reply with the script only, inside a single code block, then (outside the block) at most two short lines of notes, for example if you had to replace a place or item the library does not have.
+- Header: `title:`, `episode:`, `scene:` (the starting place). Then these sections in order: `[story]`, `[vocab]`, `[grammar]`, `[quiz]`.
+- Story: 12-16 spoken lines, simple beginner Japanese (mostly hiragana, short sentences, spaces between words), with stage directions that make the story move: people enter, walk to named spots, react, hold and use things, change place. Every line: `Mika: Japanese | English | Romaji` (romaji optional). Speakers are only Mika and Alex.
+- Vocab: 3-5 words, each with an example sentence. Grammar: 1-2 patterns, each with two examples. Quiz: 3 questions with 3 options, the answer letter and a short explanation.
+- Tell a real story with a beginning, a small event and an ending, and make the vocabulary and grammar come naturally from the dialogue.
+
+# Rules for stage directions
+- A direction line starts with `&gt;`. A line starting with `&amp;` happens at the same time as the line above it.
+- Directions run in order, then the next spoken line plays. Nobody can speak during a direction (a walk, a ride, eating), so put the comment on the line AFTER it.
+- Use `@scene &lt;place&gt;` to change place. Characters keep their position, so walk them off (`&gt; both exit right`) and back on (`&gt; both enter left`) around a change of place if they travel.
+- Expressions stay until you change them (`&gt; Mika looks neutral` resets). Items are not shown while riding. Drop items (`&gt; both drop`) before leaving a place or riding.
+- Only walk to spots that exist in the current place. Rides exist only in the amusement park.
+- Use variety so the video is not boring: in a story of 12-16 lines, go to two or three different places and vary the time of day or weather when it fits the story. When a story has rain, snow or a storm, say it in the dialogue (&quot;It's raining!&quot; / あめだ！) or set it with `@weather rain` right after the `@scene` line, and let one character get an umbrella (`&gt; Mika opens the umbrella`); close it (`&gt; Mika closes the umbrella`) when they go indoors.
+- Do not invent directions, items, places or spots. If the story needs something missing, use the closest one and mention it in the notes.
+
+# Vocabulary
+## Directions (who = Mika, Alex, both)
+| Direction | Notes |
+|---|---|
+| `enters left` / `enters right` / `enters left to center` | walks in from off-screen to home (or the spot) |
+| `walks to &lt;spot&gt;` / `runs to &lt;spot&gt;` | spot: left, center, right, home, `next to Alex`, a percent (40), or a named spot of the place |
+| `exits left` / `exits right` | walks off-screen |
+| `looks &lt;feeling&gt;` | confused, surprised, happy, sad, shy, neutral (also: excited, worried, embarrassed...) |
+| `faces &lt;name / left / right&gt;`, `looks at &lt;name&gt;` | |
+| `waves`, `jumps`, `laughs`, `nods`, `cheers` | |
+| `holds &lt;item&gt;`, `buys &lt;item&gt;`, `picks up &lt;item&gt;` | `buys` adds a little hop |
+| `eats`, `eats &lt;item&gt;`, `drinks` | edible: cotton candy, ice cream, popcorn (3 bites, the item shrinks) |
+| `drops` / `finishes` | puts the item away (an open umbrella stays open; `closes the umbrella` folds it) |
+| `gives &lt;item&gt; to &lt;name&gt;` | `gives it to Alex` also works |
+| `rides the carousel` / `rides the ferris wheel [for 8]` | amusement park only; walks to the ride, boards, rides, steps off |
+| `opens the umbrella` / `closes the umbrella` | umbrella shown open over the character(s), or folded in the hand; `gives the umbrella to Alex` hands it over |
+| `wait 1.5` | pause (seconds) |
+
+`both` does the same for both characters and spreads them out so they do not stand on the same spot. When two characters meet, they turn toward each other and the one already there gets a &quot;!&quot;. Expressions stay until changed (`looks neutral` resets).
+
+## Weather and time of day
+Rain, storm, snow, and time of day are drawn over any outdoor place (street, park, sakura, beach, amusement park, shrine, zoo, airport, town, mountain, river, schoolyard, bus stop, festival). Indoor places only get the light tint.
+
+| Direction | Effect |
+|---|---|
+| `@weather rain` / `storm` / `snow` / `clear` | falling rain (with ripples and a grey sky), a storm (heavier rain, lightning), snow, or back to dry; fades in and out over about a second |
+| `@time morning` / `day` / `sunset` / `night` | colour grading of the whole picture; night adds stars and a moon |
+| header lines `weather: rain` and `time: night` | same thing for the whole story from the first frame |
+
+**Automatic:** when you do not set weather yourself, the studio reads the story. A line that says &quot;It's raining!&quot; (or あめだ / あめが ふって いる) starts the rain a moment *before* that line, so it is already falling when someone notices it. &quot;The rain stopped!&quot; (あめが やんだ) ends it, &quot;It's snowing!&quot; starts snow, and words like &quot;night&quot;, &quot;sunset&quot; or &quot;morning&quot; change the light. If a character says &quot;I have an umbrella!&quot; or &quot;Let's share my umbrella&quot;, they open one in the rain, and both stay under it (no rain falls on them) until someone closes it. Anything you write with `@weather`, `@time` or `opens/closes the umbrella` wins over the automatic reading.
+
+Characters keep an open umbrella while walking and between places, so write `&gt; Mika closes the umbrella` when they go inside.
+
+## Items
+cotton candy, ice cream, balloon, ticket, drink, bag, book, popcorn, plush (prize toy), umbrella. Items are not drawn while riding.
+
+## Places and their spots
+| Place (`@scene ...`) | Named spots |
+|---|---|
+| amusement park (fair, funfair, carnival) | entrance, ticket booth, carousel, cotton candy stall, prize stall (game stall), ferris wheel, bench. Rides: carousel, ferris wheel |
+| shrine (temple, torii) | torii gate, offering box, lantern, steps |
+| zoo | entrance, giraffe, elephant, fence |
+| aquarium | big tank, jellyfish, shark, entrance (fish and jellyfish swim) |
+| classroom | door, blackboard, desk |
+| cafe | counter, window, door |
+| station | platform, ticket gate, ticket machine |
+| store | register, shelf, door |
+| town (shopping street) | vending machine, bakery, fruit shop, flower shop |
+| mountain (Mt. Fuji, lake) | pine tree, bench, lake |
+| river (riverside, bridge) | willow tree, bridge, riverbank |
+| train (subway) | door, window, seat (the scenery scrolls past the windows) |
+| bedroom | bed, window, desk |
+| kitchen | counter, stove, window, fridge (steam from the pot) |
+| schoolyard (playground, school gate) | gate, door, flagpole |
+| festival (matsuri, fireworks) | takoyaki stall, goldfish stall, shaved ice stall (night, fireworks) |
+| bus stop | bus stop, bench, sign, bus |
+| home, bookstore, restaurant, airport, street (night), park, beach, hospital, sakura | no named spots yet (use left / center / right / percent) |
+
+**Variety:** every place has three looks (normal, warm, cool). Which one is used depends on the story title and on how many times the place has been visited, so the same place does not look identical when the story comes back to it, and a different story gets different colours. Use two or three different places (and times of day) in one story so the video does not feel flat.
+
+# Exact format of the last three sections (the studio is strict about this)
+- Every line is ONE line. No numbering, no bullets, no bold, no blank lines inside a section.
+- `[vocab]`: `vocab: word | meaning | romaji` then, on the next line, `example: Japanese | English | romaji`.
+- `[grammar]`: `grammar: pattern | short explanation` then two lines `example: Japanese | English | romaji`.
+- `[quiz]`: `quiz: question | option A | option B | option C | A/B/C | short explanation` (exactly three options, then the answer letter).
+- Section names are exactly `[story]`, `[vocab]`, `[grammar]`, `[quiz]` on their own lines.
+
+# Example of a finished script (amusement park)
+```
+title: A Day at the Amusement Park
+episode: 2
+scene: amusement park
+
+[story]
+@scene amusement park
+&gt; Mika enters left
+&amp; Alex enters left
+&gt; Alex looks surprised
+Alex: わあ、ゆうえんちだ！ | Wow, an amusement park! | Waa, yuuenchi da!
+&gt; Mika cheers
+Mika: ねえ、あれを みて！ わたあめだよ！ | Hey, look at that! It's cotton candy! | Nee, are o mite! Wataame da yo!
+&gt; both walk to the cotton candy stall
+Alex: すみません、わたあめを ふたつ ください。 | Excuse me, two cotton candies, please. | Sumimasen, wataame o futatsu kudasai.
+&gt; Alex buys cotton candy
+&amp; Mika buys cotton candy
+Mika: ありがとうございます！ | Thank you very much! | Arigatou gozaimasu!
+&gt; both eat
+Alex: おいしい！ | Delicious! | Oishii!
+Mika: あまいね！ | It's sweet! | Amai ne!
+&gt; both drop
+&gt; both walk to the ticket booth
+Mika: のりものの きっぷを かおう！ | Let's buy tickets for the rides! | Norimono no kippu o kaou!
+&gt; Mika buys ticket
+&amp; Alex buys ticket
+Alex: これで のれるね！ | Now we can ride! | Kore de noreru ne!
+&gt; both ride the carousel
+Mika: たのしかった！ | That was fun! | Tanoshikatta!
+&gt; Alex looks happy
+Alex: つぎは かんらんしゃに のろう！ | Next, let's ride the Ferris wheel! | Tsugi wa kanransha ni norou!
+&gt; both ride the ferris wheel
+&gt; both drop
+&gt; Mika waves
+Mika: たかい！ すごい！ | So high! Amazing! | Takai! Sugoi!
+&gt; both walk to home
+Alex: きょうは とても たのしかったね。 | Today was really fun. | Kyou wa totemo tanoshikatta ne.
+&gt; Mika nods
+Mika: また こようね！ | Let's come again! | Mata koyou ne!
+
+[vocab]
+vocab: わたあめ | cotton candy | wataame
+example: わたあめが すきです。 | I like cotton candy. | Wataame ga suki desu.
+vocab: のりもの | ride / vehicle | norimono
+example: ゆうえんちの のりものは たのしいです。 | The rides at the amusement park are fun. | Yuuenchi no norimono wa tanoshii desu.
+vocab: たかい | high / tall | takai
+example: かんらんしゃは とても たかいです。 | The Ferris wheel is very high. | Kanransha wa totemo takai desu.
+vocab: たのしい | fun | tanoshii
+example: きょうは たのしかったです。 | Today was fun. | Kyou wa tanoshikatta desu.
+
+[grammar]
+grammar: Noun + を ください | Use this to ask for something politely
+example: わたあめを ひとつ ください。 | One cotton candy, please. | Wataame o hitotsu kudasai.
+example: みずを ください。 | Water, please. | Mizu o kudasai.
+grammar: Ride + に のる | Use this to say you ride something
+example: かんらんしゃに のります。 | I ride the Ferris wheel. | Kanransha ni norimasu.
+example: でんしゃに のります。 | I ride the train. | Densha ni norimasu.
+
+[quiz]
+quiz: How do you ask for cotton candy politely? | わたあめを ください | わたあめに ください | わたあめが ください | A | を marks the thing you ask for.
+quiz: What does のりもの mean? | ride / vehicle | cotton candy | ticket | A | Rides like the carousel are のりもの.
+quiz: Which one means &quot;fun&quot;? | たかい | たのしい | あまい | B | たのしい means fun.
+```
+
+Now wait for my story idea. If it is missing a place, a lesson goal or a length, make a sensible choice instead of asking questions.</textarea>
+</details>
+</div>
 
 <div class="card">
 <details id="setup">
@@ -73,8 +233,11 @@ const MODES={
   hint:"Header (title: episode: scene:), then [story] [vocab] [grammar] [quiz]. Speakers: Mika, Alex. Romaji is automatic. Aim for 12–16 story lines for a 5–6 minute video.",wait:"A 5–6 minute video takes about 10–20 minutes.",vert:false},
  short:{wf:"short.yml",dir:"shorts",input:"short",key:"tjy_short",btn:"Make Short",
   sub:"Paste a short script, get a vertical ~45 second Short: mini story + 2 key words + 1 quiz question.",
-  hint:"Same format, but keep it tiny: 4–6 story lines, 1–2 [vocab] words, one [quiz] question. [grammar] is ignored. Romaji is automatic.",wait:"A Short takes about 4–8 minutes.",vert:true}};
-let MODE=get0("tjy_mode")==="short"?"short":"video";
+  hint:"Same format, but keep it tiny: 4–6 story lines, 1–2 [vocab] words, one [quiz] question. [grammar] is ignored. Romaji is automatic.",wait:"A Short takes about 4–8 minutes.",vert:true},
+ story:{wf:"render-story.yml",dir:"stories",input:"story",key:"tjy_story",btn:"Make story video",
+  sub:"Paste a directed story script: Mika and Alex act it out (walk, react, rain, umbrellas, new places), then vocab + grammar + quiz.",
+  hint:"Like a long script, plus stage directions in [story]: lines starting with > (and & for 'at the same time'), @scene to change place, @weather / @time for rain or night. Easiest: copy the director prompt below into Claude, give it your story idea, paste the result here.",wait:"A story video takes about 10–25 minutes.",vert:false}};
+let MODE=["short","story"].includes(get0("tjy_mode"))?get0("tjy_mode"):"video";
 function get0(k){try{return localStorage.getItem(k)||""}catch(e){return ""}}
 const SAMPLE_VIDEO=`title: Alex's First Day at School
 episode: 1
@@ -133,13 +296,58 @@ example: ミカの となりに すわります。 | I sit next to Mika.
 [quiz]
 quiz: What does となり mean? | classroom | next to | teacher | B | Sit となり, next to me!
 `;
+const SAMPLE_STORY=`title: A Rainy Day in Tokyo
+episode: 1
+scene: street
+
+[story]
+@scene street
+> Mika enters left
+& Alex enters right
+> both walk to center
+> Alex looks surprised
+Alex: あっ！ あめだ！ | Oh! It's raining! | A! Ame da!
+> Mika looks happy
+Mika: かさが あるよ！ いっしょに はいろう！ | I have an umbrella! Let's share it! | Kasa ga aru yo! Issho ni hairou!
+> both walk to right
+Alex: ありがとう、ミカ！ | Thank you, Mika! | Arigatou, Mika!
+> both exit right
+@scene store
+> both enter left
+> both walk to shelf
+Mika: おちゃを ください！ | Tea, please! | Ocha o kudasai!
+> Mika picks up drink
+Alex: ぼくは みずを ください！ | Water, please! | Boku wa mizu o kudasai!
+> both exit left
+@scene park
+> both enter left
+> both walk to center
+Mika: あっ！ あめが やんだよ！ | Oh! The rain stopped! | A! Ame ga yanda yo!
+Alex: わあ、にじだ！ | Wow, a rainbow! | Waa, niji da!
+
+[vocab]
+vocab: あめ | rain | ame
+example: きょうは あめです。 | It's rain today.
+vocab: かさ | umbrella | kasa
+example: かさが あります。 | I have an umbrella.
+
+[grammar]
+grammar: Noun + を ください | Use this to ask for something politely
+example: おちゃを ください。 | Tea, please.
+example: みずを ください。 | Water, please.
+
+[quiz]
+quiz: What does かさ mean? | umbrella | rain | tea | A | かさ is an umbrella.
+`;
 function setMode(m){MODE=m;set("tjy_mode",m);const c=MODES[m];
-  $("tabV").classList.toggle("on",m==="video");$("tabS").classList.toggle("on",m==="short");
+  $("tabV").classList.toggle("on",m==="video");$("tabS").classList.toggle("on",m==="short");$("tabT").classList.toggle("on",m==="story");
+  $("dirCard").hidden=m!=="story";$("scriptLabel").textContent=m==="story"?"Story script (with stage directions)":m==="short"?"Short script":"Lesson script";
   $("sub").textContent=c.sub;$("hint").textContent=c.hint;$("run").textContent=c.btn;
-  $("script").value=get(c.key)||(m==="short"?SAMPLE_SHORT:SAMPLE_VIDEO);$("script").classList.toggle("short",m==="short");
+  $("script").value=get(c.key)||(m==="short"?SAMPLE_SHORT:m==="story"?SAMPLE_STORY:SAMPLE_VIDEO);$("script").classList.toggle("short",m==="short");
   $("result").innerHTML="";say("Ready.")}
 $("script").addEventListener("input",()=>set(MODES[MODE].key,$("script").value));
-$("tabV").onclick=()=>setMode("video");$("tabS").onclick=()=>setMode("short");
+$("tabV").onclick=()=>setMode("video");$("tabS").onclick=()=>setMode("short");$("tabT").onclick=()=>setMode("story");
+$("copyDir").onclick=async()=>{const t=$("dirText");let ok=false;try{await navigator.clipboard.writeText(t.value);ok=true}catch(e){try{t.select();ok=document.execCommand("copy")}catch(e2){}}$("copyMsg").textContent=ok?"Copied. Paste it into a Claude chat and add your story idea.":"Select the text below and copy it."};
 $("token").value=get("tjy_token");
 if(!get("tjy_token"))$("setup").open=true;
 setMode(MODE);
@@ -173,9 +381,9 @@ $("run").onclick=async()=>{
     btn.disabled=true;
     const title=(text.match(/^title\s*:\s*(.+)$/im)||[])[1]||"lesson";
     const stamp=new Date().toISOString().slice(0,16).replace(/[-:T]/g,"");
-    const stem=`${MODE==="short"?"short-":""}${stamp}-${slug(title)}`;
+    const stem=`${MODE==="short"?"short-":MODE==="story"?"story-":""}${stamp}-${slug(title)}`;
     say("Saving script…");
-    await gh(`/contents/${MODES[MODE].dir}/${stem}.txt`,{method:"PUT",body:JSON.stringify({message:"Add lesson: "+title,content:b64(text+"\n"),branch:BRANCH})});
+    await gh(`/contents/${MODES[MODE].dir}/${stem}.txt`,{method:"PUT",body:JSON.stringify({message:"Add "+(MODE==="story"?"story":MODE==="short"?"short":"lesson")+": "+title,content:b64(text+"\n"),branch:BRANCH})});
     const t0=Date.now()-5000;
     say("Starting the video job…");
     const WFX=MODES[MODE].wf;await gh(`/actions/workflows/${WFX}/dispatches`,{method:"POST",body:JSON.stringify({ref:BRANCH,inputs:{[MODES[MODE].input]:stem+".txt"}})});
