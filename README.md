@@ -67,3 +67,6 @@ Everything except `[story]` is optional.
 ## Notes
 - Voices are Microsoft Edge neural voices (Nanami, Keita, Aria). On Actions the render stops rather than using the low-quality fallback voice (`STRICT_VOICE=1`); just re-run.
 - Mika says each vocab/grammar example slowly; English is read by a narrator voice.
+
+## Story videos upload automatically
+Videos made by the story project (`tiny-japanese-story`, Mika and Alex acting out the story) are uploaded here too. The `Upload story videos` workflow (`.github/workflows/story-upload.yml`, script `story_upload.py`) checks that repository every 10 minutes (and when you run it by hand under **Actions**). Each new video in its `docs/videos/` is uploaded with the title, description and chapters from `<name>.description.txt` and the cover image, using the same secrets and `YT_PRIVACY` setting as above. The link is saved as `story-uploads/<name>.youtube.txt` (a `.failed.txt` file appears instead if an upload fails; it tries three times). Videos that existed before this was added are marked `skipped`; delete a marker to upload that video. Nothing here changes how lesson videos are made.
