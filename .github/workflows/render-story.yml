@@ -1,0 +1,74 @@
+name: Render story video
+
+on:
+  workflow_dispatch:
+    inputs:
+      story:
+        description: "Story script file name in stories/ (e.g. 202610231030-a-rainy-day-in-tokyo.txt). Leave empty to render all (no YouTube upload)."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-lesson
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Render
+        env:
+          STRICT_VOICE: "1"
+          STORY: ${{ github.event.inputs.story }}
+        run: |
+          if [ -n "$STORY" ]; then files="stories/$STORY"; else files=$(ls stories/*.txt); fi
+          for f in $files; do python story/lesson.py "$f" -o output; done
+      - name: Cover image
+        env:
+          STORY: ${{ github.event.inputs.story }}
+        run: |
+          if [ -n "$STORY" ]; then files="stories/$STORY"; else files=$(ls stories/*.txt); fi
+          for f in $files; do b=$(basename "$f" .txt); python story/make_cover.py "$f" "output/$b.thumbnail.png"; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: story-videos
+          path: output/
+      - name: Upload to YouTube
+        id: yt
+        if: ${{ github.event.inputs.story != '' }}
+        continue-on-error: true
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube secrets are not set - skipping the upload"; exit 0; fi
+          for f in output/*.mp4; do python upload.py "$f"; done
+      - name: Publish to the website
+        run: |
+          mkdir -p docs/videos
+          cp output/* docs/videos/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/videos
+          git commit -m "Publish story video" || exit 0
+          git pull --rebase origin main
+          git push
+      - name: YouTube upload failed
+        if: ${{ steps.yt.outcome == 'failure' }}
+        run: |
+          echo "The video was rendered and published to the site, but the YouTube upload failed. See the 'Upload to YouTube' step above."
+          exit 1
