@@ -944,6 +944,18 @@ def atmos_frame(R, name, variant, bg, fg, seg, tt):
 parse_weather, parse_tod = AT.parse_weather, AT.parse_tod
 
 
+SOLE_Y = 806     # the characters' soles rest here: just below the wall / floor line (L.FLOOR_Y), behind the front strip
+_PAD = {}
+
+
+def _sole_pad(nm):
+    """Transparent rows under each character's shoes (differs per character), so both stand on the same line."""
+    if nm not in _PAD:
+        s = rig(nm, 0, False, "neutral", 0, 0, L.STAGE_OUT)
+        _PAD[nm] = s.height - s.getchannel("A").getbbox()[3]
+    return _PAD[nm]
+
+
 def draw_characters(R, fr, seg, i, tt, who, mouth):
     """Draw moving scenery, riders, umbrellas, both characters and falling rain / snow for frame i using the stage timeline."""
     B, stage = R.B, R.B["stage"]
@@ -961,7 +973,6 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
     kind, k = AT.weather_state(seg, tt)
     wet = bool(kind) and scene in AT.OUTDOOR
     rainy = wet and k > 0.25
-    floor_y = L.FLOOR_Y - 50
     # riders first (they sit on the moving rides)
     for nm in order:
         st = states[nm]
@@ -971,6 +982,7 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         px, py, out, crop = ride_pos(kind_r, tt, t0, idx)
         s = _smooth(min((tt - t0) / 0.7, (t1 - tt) / 0.7))
         X = st["x"] + (px - st["x"]) * s
+        floor_y = SOLE_Y + _sole_pad(nm)          # where this character stands when not riding
         Y = floor_y + (py - floor_y) * s
         O = round((L.STAGE_OUT + (out - L.STAGE_OUT) * s) / 0.02) * 0.02
         arm = (1 + int(tt * 5) % 2) if (int(tt / 1.5) % 2 == 0 and s > 0.9) else 0
@@ -998,15 +1010,16 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         if st["mirror"]:
             s = ImageOps.mirror(s)
         if st["walking"]:
-            bob = (12 if st["speed"] < 500 else 22) * abs(math.sin(tt * 7 * sp_k * math.pi / 2))
+            bob = (5 if st["speed"] < 500 else 9) * abs(math.sin(tt * 7 * sp_k * math.pi / 2))
         elif speaking and mouth:
-            bob = 6 * abs(math.sin(tt * 7))
+            bob = 3 * abs(math.sin(tt * 7))
         else:
             bob = 2 * math.sin(tt * 2 + (0 if nm == "Mika" else 1.7))
         if st["hop"] is not None:
             u, amp = st["hop"]
             bob += amp * math.sin(math.pi * u)
-        lay.append(dict(nm=nm, st=st, s=s, x=int(st["x"] - s.width // 2), y=int(L.FLOOR_Y - 50 - s.height - bob),
+        y0 = SOLE_Y - (s.height - _sole_pad(nm))           # sprite top when the soles are on the ground
+        lay.append(dict(nm=nm, st=st, s=s, x=int(st["x"] - s.width // 2), y=int(y0 - bob), y0=int(y0),
                         cx=st["x"], mirror=st["mirror"], open=is_open, speaking=speaking))
     shelters = AT.draw_umbrellas(fr, lay) if rainy else []
     markers = []
@@ -1014,7 +1027,7 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         nm, st, s, x, y = e["nm"], e["st"], e["s"], e["x"], e["y"]
         fr.paste(s, (x, y), s)
         p = R.pills[(nm, int(e["speaking"]))]
-        fr.paste(p, (int(st["x"]) - p.width // 2, int(L.FLOOR_Y - 50 - s.height + 36)), p)
+        fr.paste(p, (int(st["x"]) - p.width // 2, e["y0"] + 36), p)
         mk = st["pop"] or {"confused": "?", "surprised": "!"}.get(st["expr"])
         if mk:
             markers.append((int(st["x"] + s.width * (0.26 if not st["mirror"] else -0.26)), y, mk, nm))

@@ -369,7 +369,7 @@ def pill(text, fill, fg=(255, 255, 255), size=32):
 
 
 # ------------------------------------------------------------------ cards
-def card(tag, tag_color, blocks, cw=1500, min_h=0):
+def card(tag, tag_color, blocks, cw=1500, min_h=0, vpad=110):
     """blocks: (text, size, bold, color, gap_after). Returns RGBA card with soft shadow (40px margin)."""
     pad = 52
     rows = []
@@ -379,7 +379,7 @@ def card(tag, tag_color, blocks, cw=1500, min_h=0):
         for k, ln in enumerate(ls):
             rows.append((ln, f, color, int(size * 1.3) + (gap if k == len(ls) - 1 else 0)))
     body = sum(r[3] for r in rows)
-    h = max(min_h, body + 110)
+    h = max(min_h, body + vpad)
     size = (cw + 80, h + 80)
     m = Image.new("L", size, 0); ImageDraw.Draw(m).rounded_rectangle((40, 52, 40 + cw, 52 + h), radius=56, fill=90)
     sh_ = Image.new("RGBA", size, (120, 80, 70, 0)); sh_.putalpha(m.filter(ImageFilter.GaussianBlur(16)))
@@ -403,7 +403,7 @@ def sub_blocks(jp, romaji, en, jp_size=66, ro_size=38, en_size=44):
 
 
 def story_card(ln):
-    return card(ln.get("tag", ln["speaker"]), CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"]), cw=1560, min_h=250)
+    return card(ln.get("tag", ln["speaker"]), CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"], 58, 34, 40), cw=1560, min_h=230, vpad=88)
 
 
 def example_blocks(ex, big=False):
@@ -841,7 +841,7 @@ class Renderer:
         if seg["kind"] == "story":
             ln = seg["line"]
             cd = self.cached(("story", id(ln)), lambda: story_card(ln))
-            self.fade(fr, cd, (W - cd.width) // 2, H - cd.height - 10, min(1, (tt - seg["start"]) / 0.2))
+            self.fade(fr, cd, (W - cd.width) // 2, H - cd.height + 10, min(1, (tt - seg["start"]) / 0.2))
         elif seg["kind"] == "act":
             pass
         elif seg["kind"] == "title":
