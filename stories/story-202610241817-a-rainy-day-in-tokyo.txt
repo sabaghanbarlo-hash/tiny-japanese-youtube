@@ -1,0 +1,42 @@
+title: A Rainy Day in Tokyo
+episode: 1
+scene: street
+
+[story]
+@scene street
+> Mika enters left
+& Alex enters right
+> both walk to center
+> Alex looks surprised
+Alex: あっ！ あめだ！ | Oh! It's raining! | A! Ame da!
+> Mika looks happy
+Mika: かさが あるよ！ いっしょに はいろう！ | I have an umbrella! Let's share it! | Kasa ga aru yo! Issho ni hairou!
+> both walk to right
+Alex: ありがとう、ミカ！ | Thank you, Mika! | Arigatou, Mika!
+> both exit right
+@scene store
+> both enter left
+> both walk to shelf
+Mika: おちゃを ください！ | Tea, please! | Ocha o kudasai!
+> Mika picks up drink
+Alex: ぼくは みずを ください！ | Water, please! | Boku wa mizu o kudasai!
+> both exit left
+@scene park
+> both enter left
+> both walk to center
+Mika: あっ！ あめが やんだよ！ | Oh! The rain stopped! | A! Ame ga yanda yo!
+Alex: わあ、にじだ！ | Wow, a rainbow! | Waa, niji da!
+
+[vocab]
+vocab: あめ | rain | ame
+example: きょうは あめです。 | It's rain today.
+vocab: かさ | umbrella | kasa
+example: かさが あります。 | I have an umbrella.
+
+[grammar]
+grammar: Noun + を ください | Use this to ask for something politely
+example: おちゃを ください。 | Tea, please.
+example: みずを ください。 | Water, please.
+
+[quiz]
+quiz: What does かさ mean? | umbrella | rain | tea | A | かさ is an umbrella.
