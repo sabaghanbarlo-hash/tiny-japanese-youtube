@@ -1,0 +1,85 @@
+title: A Rainy Day in Tokyo
+scene: street (night)
+
+[story]
+@scene street (night)
+> Mika enters left
+& Alex enters right
+> both walk to center
+> Alex looks surprised
+Alex: あっ！ あめだ！ | Oh! It's raining! | A! Ame da!
+> Mika looks happy
+Mika: かさが あるよ！ いっしょに はいろう！ | I have an umbrella! Let's share it! | Kasa ga aru yo! Issho ni hairou!
+> both walk to right
+Alex: ありがとう、みか！ | Thank you, Mika! | Arigatou, Mika!
+Mika: どういたしまして！ | You're welcome! | Dou itashimashite!
+> both walk to left
+> Mika looks at Alex
+Mika: のどが かわいたね。 | I'm thirsty. | Nodo ga kawaita ne.
+Alex: うん！ おみせに いこう！ | Yeah! Let's go to the store! | Un! Omise ni ikou!
+> both exit right
+@scene store
+> both enter left
+> both walk to shelf
+Alex: おちゃが あります！ | There's tea! | Ocha ga arimasu!
+Mika: わたしは おちゃを ください！ | Tea, please! | Watashi wa ocha o kudasai!
+> Mika picks up drink
+Alex: ぼくは みずを ください！ | Water, please! | Boku wa mizu o kudasai!
+> Alex picks up drink
+> both look happy
+Mika: あたたかい おちゃが すき！ | I like warm tea! | Atatakai ocha ga suki!
+Alex: みずも おいしいよ！ | Water is delicious too! | Mizu mo oishii yo!
+> both drop
+> both exit left
+@scene park
+> both enter left
+> both walk to center
+> Mika looks surprised
+Mika: あっ！ あめが やんだよ！ | Oh! The rain stopped! | A! Ame ga yanda yo!
+Alex: わあ！ にじだ！ | Wow! It's a rainbow! | Waa! Niji da!
+> both look happy
+Mika: きれいだね！ | It's beautiful! | Kirei da ne!
+Alex: きょうは いい ひ だね！ | Today is a good day! | Kyou wa ii hi da ne!
+
+[vocab]
+1. あめ (ame) — rain
+   Example: あめが ふっています。 | It's raining.
+2. かさ (kasa) — umbrella
+   Example: かさが あります。 | I have an umbrella.
+3. おちゃ (ocha) — tea
+   Example: おちゃを ください。 | Tea, please.
+4. みず (mizu) — water
+   Example: みずを ください。 | Water, please.
+5. にじ (niji) — rainbow
+   Example: にじが きれいです。 | The rainbow is beautiful.
+
+[grammar]
+1. ～が あります — There is / I have
+   Example 1: かさが あります。 | I have an umbrella.
+   Example 2: おちゃが あります。 | There is tea.
+
+2. ～を ください — Please give me
+   Example 1: みずを ください。 | Water, please.
+   Example 2: おちゃを ください。 | Tea, please.
+
+[quiz]
+1. What does かさ (kasa) mean?
+   A) Rain
+   B) Umbrella
+   C) Rainbow
+   Answer: B
+   Explanation: かさ means umbrella.
+
+2. How do you politely ask for water?
+   A) みずを ください。
+   B) みずが あります。
+   C) あめが ふっています。
+   Answer: A
+   Explanation: ～を ください means "Please give me..."
+
+3. What does にじ (niji) mean?
+   A) Tea
+   B) Rain
+   C) Rainbow
+   Answer: C
+   Explanation: にじ means rainbow.
