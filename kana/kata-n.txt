@@ -1,0 +1,18 @@
+title: Katakana N
+kana: ン
+script: katakana
+romaji: n
+sound: like the "n" at the end of "ten"
+mnemonic_word: the letter n
+mnemonic: Picture the letter n. Now watch ン get written on it! It is the only kana that is just a consonant.
+
+[words]
+ペン | pen | pen
+パン | pan | bread
+ラーメン | raamen | ramen
+
+[similar]
+ソ | so | ン sweeps up from the bottom left. ソ starts at the top and falls.
+
+[distractors]
+na, nu

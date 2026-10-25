@@ -1,0 +1,15 @@
+title: Katakana HI
+kana: ヒ
+script: katakana
+romaji: hi
+sound: like the "hee" in heel
+mnemonic_word: a hippo
+mnemonic: Picture a hippo for hi. Now watch ヒ get written on it!
+
+[words]
+ヒーター | hiitaa | heater
+コーヒー | koohii | coffee
+ヒント | hinto | hint
+
+[distractors]
+ha, fu

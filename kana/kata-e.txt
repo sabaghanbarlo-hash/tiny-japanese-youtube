@@ -1,0 +1,15 @@
+title: Katakana E
+kana: エ
+script: katakana
+romaji: e
+sound: like the "e" in bed
+mnemonic_word: an egg
+mnemonic: Picture an egg for e. Now watch エ get written on it!
+
+[words]
+エアコン | eakon | air conditioner
+エレベーター | erebeetaa | elevator
+エビ | ebi | shrimp
+
+[distractors]
+o, i

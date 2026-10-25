@@ -1,0 +1,15 @@
+title: Katakana NU
+kana: ヌ
+script: katakana
+romaji: nu
+sound: like the "noo" in noodle
+mnemonic_word: a bowl of noodles
+mnemonic: Picture a bowl of noodles for nu. Now watch ヌ get written on it!
+
+[words]
+ヌードル | nuudoru | noodle
+カヌー | kanuu | canoe
+ヌガー | nugaa | nougat
+
+[distractors]
+na, ne

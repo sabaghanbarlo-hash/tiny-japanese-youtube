@@ -1,0 +1,15 @@
+title: Katakana KE
+kana: ケ
+script: katakana
+romaji: ke
+sound: like the "ke" in kettle
+mnemonic_word: a kettle
+mnemonic: Picture a kettle for ke. Now watch ケ get written on it!
+
+[words]
+ケーキ | keeki | cake
+ケチャップ | kechappu | ketchup
+ケータイ | keetai | mobile phone
+
+[distractors]
+ka, ko

@@ -1,0 +1,18 @@
+title: Katakana TA
+kana: タ
+script: katakana
+romaji: ta
+sound: like the "ta" in taco
+mnemonic_word: a taco
+mnemonic: Picture a taco for ta. Now watch タ get written on it!
+
+[words]
+タクシー | takushii | taxi
+タオル | taoru | towel
+タイ | tai | Thailand
+
+[similar]
+ク | ku | タ has an extra short stroke inside. ク has only two strokes.
+
+[distractors]
+chi, te

@@ -1,0 +1,15 @@
+title: Katakana CHI
+kana: チ
+script: katakana
+romaji: chi
+sound: like the "chee" in cheese
+mnemonic_word: a baby chick
+mnemonic: Picture a baby chick for chi. Now watch チ get written on it!
+
+[words]
+チーズ | chiizu | cheese
+チョコ | choko | chocolate
+チケット | chiketto | ticket
+
+[distractors]
+ta, tsu

@@ -1,0 +1,15 @@
+title: Katakana I
+kana: イ
+script: katakana
+romaji: i
+sound: like the "ee" in see
+mnemonic_word: an ice-cream cone
+mnemonic: Picture an ice-cream cone for i. Now watch イ get written on it!
+
+[words]
+インク | inku | ink
+イタリア | itaria | Italy
+イルカ | iruka | dolphin
+
+[distractors]
+a, u

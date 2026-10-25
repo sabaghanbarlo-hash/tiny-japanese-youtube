@@ -1,0 +1,15 @@
+title: Katakana SU
+kana: ス
+script: katakana
+romaji: su
+sound: like the "soo" in soon
+mnemonic_word: a swing
+mnemonic: Picture a swing for su. Now watch ス get written on it!
+
+[words]
+スープ | suupu | soup
+スポーツ | supootsu | sports
+スマホ | sumaho | smartphone
+
+[distractors]
+sa, se

@@ -1,0 +1,15 @@
+title: Katakana SA
+kana: サ
+script: katakana
+romaji: sa
+sound: like the "sa" in salsa
+mnemonic_word: a sailboat
+mnemonic: Picture a sailboat for sa. Now watch サ get written on it!
+
+[words]
+サラダ | sarada | salad
+サッカー | sakkaa | soccer
+サンドイッチ | sandoicchi | sandwich
+
+[distractors]
+shi, su

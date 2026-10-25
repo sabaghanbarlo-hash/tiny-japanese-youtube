@@ -1,0 +1,15 @@
+title: Katakana TE
+kana: テ
+script: katakana
+romaji: te
+sound: like the "te" in ten
+mnemonic_word: a hand
+mnemonic: Picture a hand for te. Now watch テ get written on it!
+
+[words]
+テレビ | terebi | TV
+テスト | tesuto | test
+テニス | tenisu | tennis
+
+[distractors]
+to, ta

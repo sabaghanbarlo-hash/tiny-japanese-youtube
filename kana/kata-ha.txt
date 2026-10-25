@@ -1,0 +1,15 @@
+title: Katakana HA
+kana: ハ
+script: katakana
+romaji: ha
+sound: like the "ha" in hat
+mnemonic_word: a laughing face
+mnemonic: Picture a laughing face for ha. Now watch ハ get written on it!
+
+[words]
+ハンバーガー | hanbaagaa | hamburger
+ハム | hamu | ham
+ハート | haato | heart
+
+[distractors]
+hi, he

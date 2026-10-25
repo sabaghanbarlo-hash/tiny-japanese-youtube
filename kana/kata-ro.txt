@@ -1,0 +1,15 @@
+title: Katakana RO
+kana: ロ
+script: katakana
+romaji: ro
+sound: like the "ro" in row
+mnemonic_word: a winding road
+mnemonic: Picture a winding road for ro. Now watch ロ get written on it!
+
+[words]
+ロボット | robotto | robot
+ロケット | roketto | rocket
+ロンドン | rondon | London
+
+[distractors]
+ra, ru

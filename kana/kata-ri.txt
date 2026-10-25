@@ -1,0 +1,15 @@
+title: Katakana RI
+kana: リ
+script: katakana
+romaji: ri
+sound: like the "ree" in reed
+mnemonic_word: reeds by a river
+mnemonic: Picture reeds by a river for ri. Now watch リ get written on it!
+
+[words]
+リモコン | rimokon | remote control
+リンゴ | ringo | apple
+リボン | ribon | ribbon
+
+[distractors]
+ra, re

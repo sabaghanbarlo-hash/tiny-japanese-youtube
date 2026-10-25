@@ -1,0 +1,18 @@
+title: Katakana ME
+kana: メ
+script: katakana
+romaji: me
+sound: like the "me" in met
+mnemonic_word: an eye
+mnemonic: Picture an eye for me. Now watch メ get written on it!
+
+[words]
+メール | meeru | email
+メモ | memo | memo
+メニュー | menyuu | menu
+
+[similar]
+ナ | na | メ is two strokes crossing like an X. ナ has a flat bar crossing a falling stroke.
+
+[distractors]
+mi, mo

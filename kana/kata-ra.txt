@@ -1,0 +1,15 @@
+title: Katakana RA
+kana: ラ
+script: katakana
+romaji: ra
+sound: like the "ra" in rally, with a soft r
+mnemonic_word: a rabbit
+mnemonic: Picture a rabbit for ra. Now watch ラ get written on it!
+
+[words]
+ラジオ | rajio | radio
+ラーメン | raamen | ramen
+ライオン | raion | lion
+
+[distractors]
+ri, ru

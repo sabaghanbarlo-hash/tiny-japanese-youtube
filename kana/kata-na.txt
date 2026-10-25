@@ -1,0 +1,18 @@
+title: Katakana NA
+kana: ナ
+script: katakana
+romaji: na
+sound: like the "na" in nacho
+mnemonic_word: a nacho chip
+mnemonic: Picture a nacho chip for na. Now watch ナ get written on it!
+
+[words]
+ナイフ | naifu | knife
+ナース | naasu | nurse
+バナナ | banana | banana
+
+[similar]
+メ | me | ナ has a flat bar crossing a falling stroke. メ is two strokes crossing like an X.
+
+[distractors]
+ni, nu

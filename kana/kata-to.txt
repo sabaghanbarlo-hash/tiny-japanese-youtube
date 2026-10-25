@@ -1,0 +1,15 @@
+title: Katakana TO
+kana: ト
+script: katakana
+romaji: to
+sound: like the "to" in toe
+mnemonic_word: a big toe
+mnemonic: Picture a big toe for to. Now watch ト get written on it!
+
+[words]
+トマト | tomato | tomato
+トイレ | toire | toilet
+トラック | torakku | truck
+
+[distractors]
+te, tsu

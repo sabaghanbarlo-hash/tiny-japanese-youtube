@@ -1,11 +1,9 @@
-hira-gi.txt hira-gu.txt hira-ge.txt hira-go.txt hira-za.txt
-hira-ji.txt hira-zu.txt hira-ze.txt hira-zo.txt hira-da.txt
-hira-dzu.txt hira-de.txt hira-do.txt hira-ba.txt hira-bi.txt
-hira-bu.txt hira-be.txt hira-bo.txt hira-pi.txt hira-pu.txt
-hira-pe.txt hira-po.txt hira-kyu.txt hira-kyo.txt hira-sha.txt
-hira-shu.txt hira-sho.txt hira-cha.txt hira-chu.txt hira-cho.txt
-hira-nya.txt hira-nyu.txt hira-nyo.txt hira-hya.txt hira-hyu.txt
-hira-hyo.txt hira-mya.txt hira-myu.txt hira-myo.txt hira-rya.txt
-hira-ryu.txt hira-ryo.txt hira-gya.txt hira-gyu.txt hira-gyo.txt
-hira-ju.txt hira-jo.txt hira-bya.txt hira-byu.txt hira-byo.txt
-hira-pya.txt hira-pyu.txt hira-pyo.txt
+kata-a.txt kata-i.txt kata-u.txt kata-e.txt kata-o.txt
+kata-ka.txt kata-ki.txt kata-ku.txt kata-ke.txt kata-ko.txt
+kata-sa.txt kata-shi.txt kata-su.txt kata-se.txt kata-so.txt
+kata-ta.txt kata-chi.txt kata-tsu.txt kata-te.txt kata-to.txt
+kata-na.txt kata-ni.txt kata-nu.txt kata-ne.txt kata-no.txt
+kata-ha.txt kata-hi.txt kata-fu.txt kata-he.txt kata-ho.txt
+kata-ma.txt kata-mi.txt kata-mu.txt kata-me.txt kata-mo.txt
+kata-ya.txt kata-yu.txt kata-yo.txt kata-ra.txt kata-ri.txt
+kata-ru.txt kata-re.txt kata-ro.txt kata-wa.txt kata-wo.txt kata-n.txt

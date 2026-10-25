@@ -1,0 +1,18 @@
+title: Katakana SO
+kana: ソ
+script: katakana
+romaji: so
+sound: like the "so" in soda
+mnemonic_word: a needle with thread, for sew
+mnemonic: Picture a needle with thread, for sew for so. Now watch ソ get written on it!
+
+[words]
+ソファ | sofa | sofa
+ソース | soosu | sauce
+ソフト | sofuto | soft, software
+
+[similar]
+ン | n | ソ starts at the top and falls. ン sweeps up from the bottom left.
+
+[distractors]
+se, su

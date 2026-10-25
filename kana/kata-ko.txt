@@ -1,0 +1,18 @@
+title: Katakana KO
+kana: コ
+script: katakana
+romaji: ko
+sound: like the "co" in coat
+mnemonic_word: a pile of coins
+mnemonic: Picture a pile of coins for ko. Now watch コ get written on it!
+
+[words]
+コーヒー | koohii | coffee
+コップ | koppu | cup
+コンビニ | konbini | convenience store
+
+[similar]
+ユ | yu | コ has two lines and a corner. ユ has an extra line at the bottom that sticks out.
+
+[distractors]
+ka, ke

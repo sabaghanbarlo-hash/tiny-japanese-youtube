@@ -618,6 +618,76 @@ def pick_scene(meta):
     return scene_daku if kind == "daku" else scene_yoon if kind == "yoon" else scene_generic
 
 
+def ob_icecream(d, s, C, t):
+    d.polygon([(C - 270 * s, C - 40 * s), (C + 270 * s, C - 40 * s), (C, C + 570 * s)], fill=(225, 175, 105))
+    circle(d, C - 130 * s, C - 190 * s, 240 * s, (250, 190, 215)); circle(d, C + 150 * s, C - 280 * s, 215 * s, (255, 240, 205)); circle(d, C + 150 * s, C - 520 * s, 48 * s, (220, 40, 60))
+
+
+def ob_umbrella(d, s, C, t):
+    d.pieslice((C - 600 * s, C - 560 * s, C + 600 * s, C + 640 * s), 180, 360, fill=(230, 70, 90))
+    d.line([(C, C + 40 * s), (C, C + 480 * s)], fill=(110, 75, 45), width=max(2, int(38 * s))); d.arc((C - 120 * s, C + 380 * s, C + 120 * s, C + 600 * s), 0, 180, fill=(110, 75, 45), width=max(2, int(38 * s)))
+    for x in (-300, 0, 300): d.line([(C + x * s, C - 520 * s), (C + x * s * 0.9, C + 40 * s)], fill=(190, 40, 65), width=max(2, int(10 * s)))
+
+
+def ob_egg(d, s, C, t):
+    d.ellipse((C - 390 * s, C - 520 * s, C + 390 * s, C + 520 * s), fill=(250, 235, 200))
+    d.line([(C - 390 * s, C + 20 * s), (C - 220 * s, C - 80 * s), (C - 90 * s, C + 70 * s), (C + 60 * s, C - 80 * s), (C + 200 * s, C + 70 * s), (C + 390 * s, C - 20 * s)], fill=(150, 115, 70), width=max(2, int(18 * s)))
+    circle(d, C + 180 * s, C - 300 * s, 36 * s, (240, 215, 175))
+
+
+def ob_orangefruit(d, s, C, t):
+    circle(d, C, C + 70 * s, 470 * s, (250, 150, 30)); circle(d, C - 170 * s, C - 100 * s, 90 * s, (255, 205, 125))
+    d.rectangle((C - 20 * s, C - 480 * s, C + 20 * s, C - 400 * s), fill=(110, 75, 50)); d.ellipse((C + 20 * s, C - 560 * s, C + 270 * s, C - 440 * s), fill=(70, 170, 90))
+
+
+def ob_crown(d, s, C, t):
+    gold = (245, 195, 50)
+    d.polygon([(C - 480 * s, C + 260 * s), (C - 480 * s, C - 300 * s), (C - 240 * s, C - 60 * s), (C, C - 420 * s), (C + 240 * s, C - 60 * s), (C + 480 * s, C - 300 * s), (C + 480 * s, C + 260 * s)], fill=gold)
+    d.rectangle((C - 480 * s, C + 260 * s, C + 480 * s, C + 380 * s), fill=(215, 160, 30))
+    for x, y, col in ((-480, -300, (220, 50, 70)), (0, -420, (60, 130, 220)), (480, -300, (220, 50, 70)), (0, 80, (80, 190, 110))): circle(d, C + x * s, C + y * s, 55 * s, col)
+
+
+def ob_sushi(d, s, C, t):
+    d.rounded_rectangle((C - 480 * s, C - 60 * s, C + 480 * s, C + 400 * s), radius=int(150 * s), fill=(250, 250, 250))
+    d.rounded_rectangle((C - 520 * s, C - 330 * s, C + 520 * s, C + 80 * s), radius=int(120 * s), fill=(245, 120, 100))
+    for k in range(-3, 4): d.line([(C + k * 140 * s - 40 * s, C - 280 * s), (C + k * 140 * s + 40 * s, C + 30 * s)], fill=(252, 190, 170), width=max(2, int(16 * s)))
+    d.rectangle((C - 60 * s, C - 340 * s, C + 60 * s, C + 400 * s), fill=(40, 60, 50))
+
+
+def ob_bigwave(d, s, C, t):
+    blue = (60, 130, 210)
+    d.rectangle((C - 600 * s, C + 160 * s, C + 600 * s, C + 600 * s), fill=blue)
+    for x, y, r in ((-300, -20, 330), (-60, -230, 290), (190, -330, 250), (430, -120, 220)): circle(d, C + x * s, C + y * s, r * s, (80, 150, 225))
+    for x, y in ((-120, -420), (80, -520), (330, -480), (-330, -280)): circle(d, C + x * s, C + y * s, 40 * s, (255, 255, 255))
+
+
+def ob_nose(d, s, C, t):
+    skin = (245, 200, 160)
+    d.ellipse((C - 190 * s, C - 520 * s, C + 190 * s, C + 320 * s), fill=skin); d.ellipse((C - 340 * s, C + 90 * s, C + 340 * s, C + 440 * s), fill=(235, 180, 140))
+    for x in (-130, 130): d.ellipse((C + x * s - 70 * s, C + 250 * s, C + x * s + 70 * s, C + 380 * s), fill=(150, 90, 70))
+
+
+def ob_hippo(d, s, C, t):
+    g = (150, 160, 190)
+    for x in (-390, 390): circle(d, C + x * s, C - 200 * s, 110 * s, g)
+    d.ellipse((C - 530 * s, C - 150 * s, C + 530 * s, C + 540 * s), fill=g)
+    for x in (-250, 250): circle(d, C + x * s, C - 130 * s, 62 * s, (255, 255, 255)); circle(d, C + x * s, C - 130 * s, 28 * s, (40, 40, 55))
+    for x in (-210, 210): d.ellipse((C + x * s - 60 * s, C + 190 * s, C + x * s + 60 * s, C + 310 * s), fill=(90, 95, 120))
+
+
+def ob_ring(d, s, C, t):
+    d.ellipse((C - 390 * s, C - 160 * s, C + 390 * s, C + 600 * s), outline=(245, 195, 55), width=max(2, int(95 * s)))
+    d.polygon([(C, C - 620 * s), (C + 200 * s, C - 410 * s), (C, C - 190 * s), (C - 200 * s, C - 410 * s)], fill=(220, 30, 70)); d.polygon([(C, C - 620 * s), (C + 90 * s, C - 410 * s), (C, C - 330 * s), (C - 90 * s, C - 410 * s)], fill=(250, 140, 160))
+
+
+def ob_road(d, s, C, t):
+    pts = [(C - 300 * s, C + 620 * s), (C + 220 * s, C + 310 * s), (C - 220 * s, C), (C + 260 * s, C - 310 * s), (C - 100 * s, C - 620 * s)]
+    d.line(pts, fill=(85, 90, 105), width=max(2, int(230 * s)), joint="curve")
+    for a, b in zip(pts, pts[1:]):
+        for k in range(0, 8, 2):
+            p, q = k / 8.0, (k + 1) / 8.0; d.line([(a[0] + (b[0] - a[0]) * p, a[1] + (b[1] - a[1]) * p), (a[0] + (b[0] - a[0]) * q, a[1] + (b[1] - a[1]) * q)], fill=(250, 230, 100), width=max(2, int(22 * s)))
+
+
 SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hiragana", "u"): scene_hat,
           ("hiragana", "e"): scene_bird, ("hiragana", "o"): scene_orange,
           ("hiragana", "ka"): scene_kite, ("hiragana", "ki"): scene_key, ("hiragana", "ku"): scene_beak,
@@ -637,6 +707,17 @@ SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hirag
           ("hiragana", "ra"): on_object(ob_rabbit, (255, 255, 255), (190, 90, 120)), ("hiragana", "ri"): sc_reeds, ("hiragana", "ru"): sc_ruby,
           ("hiragana", "re"): sc_ribbon, ("hiragana", "ro"): sc_road,
           ("hiragana", "wa"): on_object(ob_wheel, (255, 255, 255), (60, 40, 30)), ("hiragana", "wo"): sc_worm, ("hiragana", "n"): sc_nletter}
+
+# Katakana: same sound-pictures as hiragana (picture the object for the sound, then the character is written on it)
+for _k in ("a ka ki ke ko sa su se so ta chi te to na ni nu ne ha fu he ho ma mi mu me mo ya yu yo ra ri re wa wo n").split():
+    SCENES[("katakana", _k)] = SCENES[("hiragana", _k)]
+SCENES.update({("katakana", "i"): on_object(ob_icecream, (150, 70, 100)), ("katakana", "u"): on_object(ob_umbrella, (120, 20, 40)),
+               ("katakana", "e"): on_object(ob_egg, (110, 80, 40), (255, 255, 255)), ("katakana", "o"): on_object(ob_orangefruit, (150, 70, 10)),
+               ("katakana", "ku"): on_object(ob_crown, (130, 90, 10)), ("katakana", "shi"): on_object(ob_sushi, (255, 255, 255), (150, 40, 40)),
+               ("katakana", "tsu"): on_object(ob_bigwave, (20, 60, 130)), ("katakana", "no"): on_object(ob_nose, (150, 90, 70)),
+               ("katakana", "hi"): on_object(ob_hippo, (255, 255, 255), (70, 70, 100)), ("katakana", "ru"): on_object(ob_ring, (150, 100, 20), (255, 255, 255)),
+               ("katakana", "ro"): on_object(ob_road, (255, 255, 255), (250, 230, 100))})
+
 
 
 

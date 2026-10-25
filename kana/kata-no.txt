@@ -1,0 +1,15 @@
+title: Katakana NO
+kana: ノ
+script: katakana
+romaji: no
+sound: like the "no" in note
+mnemonic_word: a nose
+mnemonic: Picture a nose for no. Now watch ノ get written on it!
+
+[words]
+ノート | nooto | notebook
+ノック | nokku | knock
+ピアノ | piano | piano
+
+[distractors]
+na, nu

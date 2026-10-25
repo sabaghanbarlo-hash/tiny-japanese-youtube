@@ -1,0 +1,15 @@
+title: Katakana O
+kana: オ
+script: katakana
+romaji: o
+sound: like the "o" in more
+mnemonic_word: an orange
+mnemonic: Picture an orange for o. Now watch オ get written on it!
+
+[words]
+オレンジ | orenji | orange
+オムレツ | omuretsu | omelet
+オーストラリア | oosutoraria | Australia
+
+[distractors]
+a, u

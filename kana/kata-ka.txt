@@ -1,0 +1,15 @@
+title: Katakana KA
+kana: カ
+script: katakana
+romaji: ka
+sound: like the "ka" in karate
+mnemonic_word: a kite
+mnemonic: Picture a kite for ka. Now watch カ get written on it!
+
+[words]
+カメラ | kamera | camera
+カレー | karee | curry
+カード | kaado | card
+
+[distractors]
+ki, ku
