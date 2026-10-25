@@ -1,0 +1,20 @@
+title: Katakana BO
+kana: ボ
+script: katakana
+romaji: bo
+key: bo
+base: ホ
+sound: like the "bo" in boat
+mnemonic_word: ho to bo
+mnemonic: ホ plus two little marks makes ボ. The marks make the sound buzz: ho turns into bo!
+
+[words]
+ボール | booru | ball
+ボタン | botan | button
+ボート | booto | boat
+
+[similar]
+ホ | ho | ボ has two small marks at the top right. ホ has none.
+
+[distractors]
+ho, ba

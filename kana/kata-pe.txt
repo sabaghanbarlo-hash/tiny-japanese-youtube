@@ -1,0 +1,20 @@
+title: Katakana PE
+kana: ペ
+script: katakana
+romaji: pe
+key: pe
+base: ヘ
+sound: like the "pe" in pen
+mnemonic_word: he to pe
+mnemonic: ヘ plus a little circle makes ペ. The circle turns the h sound into a puff of air: he becomes pe!
+
+[words]
+ペン | pen | pen
+ペット | petto | pet
+ページ | peeji | page
+
+[similar]
+ヘ | he | ペ has a small circle at the top right. ヘ has none.
+
+[distractors]
+he, po

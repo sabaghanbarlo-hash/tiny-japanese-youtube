@@ -1,0 +1,18 @@
+title: Katakana HYU
+kana: ヒュ
+script: katakana
+romaji: hyu
+sound: one quick sound, "hi" and "yu" blended
+mnemonic_word: hi + yu
+mnemonic: ヒ plus a small ュ makes ヒュ. Say hi and yu together as one quick sound: hyu!
+
+[words]
+ヒューズ | hyuuzu | fuse
+ヒューマン | hyuuman | human
+ヒュッテ | hyutte | mountain hut
+
+[similar]
+ヒ | hi | ヒュ has a small ュ at the bottom right. ヒ alone is just hi.
+
+[distractors]
+hya, hyo

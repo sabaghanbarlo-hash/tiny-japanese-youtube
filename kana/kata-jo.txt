@@ -1,0 +1,18 @@
+title: Katakana JO
+kana: ジョ
+script: katakana
+romaji: jo
+sound: one quick sound, "ji" and "yo" blended
+mnemonic_word: ji + yo
+mnemonic: ジ plus a small ョ makes ジョ. Say ji and yo together as one quick sound: jo!
+
+[words]
+ジョギング | jogingu | jogging
+ジョーク | jooku | joke
+ジョッキ | jokki | beer mug
+
+[similar]
+ジ | ji | ジョ has a small ョ at the bottom right. ジ alone is just ji.
+
+[distractors]
+ja, ju

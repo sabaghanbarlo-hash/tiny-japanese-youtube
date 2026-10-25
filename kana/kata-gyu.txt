@@ -1,0 +1,17 @@
+title: Katakana GYU
+kana: ギュ
+script: katakana
+romaji: gyu
+sound: one quick sound, "gi" and "yu" blended
+mnemonic_word: gi + yu
+mnemonic: ギ plus a small ュ makes ギュ. Say gi and yu together as one quick sound: gyu!
+
+[words]
+ギュッと | gyutto | tightly
+ギュウドン | gyuudon | beef bowl
+
+[similar]
+ギ | gi | ギュ has a small ュ at the bottom right. ギ alone is just gi.
+
+[distractors]
+gya, gyo

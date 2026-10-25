@@ -1,0 +1,20 @@
+title: Katakana ZA
+kana: ザ
+script: katakana
+romaji: za
+key: za
+base: サ
+sound: like the "za" in pizza
+mnemonic_word: sa to za
+mnemonic: サ plus two little marks makes ザ. The marks make the sound buzz: sa turns into za!
+
+[words]
+ピザ | piza | pizza
+ザリガニ | zarigani | crayfish
+ザック | zakku | backpack
+
+[similar]
+サ | sa | ザ has two small marks at the top right. サ has none.
+
+[distractors]
+sa, ji

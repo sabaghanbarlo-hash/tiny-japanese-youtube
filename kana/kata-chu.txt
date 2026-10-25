@@ -1,0 +1,18 @@
+title: Katakana CHU
+kana: チュ
+script: katakana
+romaji: chu
+sound: one quick sound, "chi" and "yu" blended
+mnemonic_word: chi + yu
+mnemonic: チ plus a small ュ makes チュ. Say chi and yu together as one quick sound: chu!
+
+[words]
+チューリップ | chuurippu | tulip
+チューブ | chuubu | tube
+チュニック | chunikku | tunic
+
+[similar]
+チ | chi | チュ has a small ュ at the bottom right. チ alone is just chi.
+
+[distractors]
+cha, cho

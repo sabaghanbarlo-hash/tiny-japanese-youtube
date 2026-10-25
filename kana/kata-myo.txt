@@ -1,0 +1,16 @@
+title: Katakana MYO
+kana: ミョ
+script: katakana
+romaji: myo
+sound: one quick sound, "mi" and "yo" blended
+mnemonic_word: mi + yo
+mnemonic: ミ plus a small ョ makes ミョ. Say mi and yo together as one quick sound: myo!
+
+[words]
+ミョウガ | myouga | Japanese ginger
+
+[similar]
+ミ | mi | ミョ has a small ョ at the bottom right. ミ alone is just mi.
+
+[distractors]
+mya, myu

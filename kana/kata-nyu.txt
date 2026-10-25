@@ -1,0 +1,18 @@
+title: Katakana NYU
+kana: ニュ
+script: katakana
+romaji: nyu
+sound: one quick sound, "ni" and "yu" blended
+mnemonic_word: ni + yu
+mnemonic: ニ plus a small ュ makes ニュ. Say ni and yu together as one quick sound: nyu!
+
+[words]
+ニュース | nyuusu | news
+メニュー | menyuu | menu
+ニューヨーク | nyuuyooku | New York
+
+[similar]
+ニ | ni | ニュ has a small ュ at the bottom right. ニ alone is just ni.
+
+[distractors]
+nya, nyo

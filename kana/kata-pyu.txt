@@ -1,0 +1,18 @@
+title: Katakana PYU
+kana: ピュ
+script: katakana
+romaji: pyu
+sound: one quick sound, "pi" and "yu" blended
+mnemonic_word: pi + yu
+mnemonic: ピ plus a small ュ makes ピュ. Say pi and yu together as one quick sound: pyu!
+
+[words]
+ピューマ | pyuuma | puma
+コンピュータ | konpyuuta | computer
+ピューレ | pyuure | puree
+
+[similar]
+ピ | pi | ピュ has a small ュ at the bottom right. ピ alone is just pi.
+
+[distractors]
+pya, pyo

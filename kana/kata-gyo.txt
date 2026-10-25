@@ -1,0 +1,17 @@
+title: Katakana GYO
+kana: ギョ
+script: katakana
+romaji: gyo
+sound: one quick sound, "gi" and "yo" blended
+mnemonic_word: gi + yo
+mnemonic: ギ plus a small ョ makes ギョ. Say gi and yo together as one quick sound: gyo!
+
+[words]
+ギョーザ | gyooza | dumplings
+ギョウザ | gyouza | dumplings
+
+[similar]
+ギ | gi | ギョ has a small ョ at the bottom right. ギ alone is just gi.
+
+[distractors]
+gya, gyu

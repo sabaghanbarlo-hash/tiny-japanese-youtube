@@ -1,0 +1,19 @@
+title: Katakana JI (ヂ)
+kana: ヂ
+script: katakana
+romaji: ji
+key: dji
+base: チ
+sound: exactly like ジ (ji)
+mnemonic_word: chi to ji
+mnemonic: チ plus two little marks makes ヂ. The marks make the sound buzz: chi turns into ji!
+
+[words]
+ヂ | ji | very rare spelling, same sound as ジ
+
+[similar]
+チ | chi | ヂ has two small marks at the top right. チ has none.
+ジ | ji | ヂ sounds exactly like ジ. ジ is used far more often.
+
+[distractors]
+da, zu

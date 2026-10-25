@@ -1,0 +1,18 @@
+title: Katakana JA
+kana: ジャ
+script: katakana
+romaji: ja
+sound: one quick sound, "ji" and "ya" blended
+mnemonic_word: ji + ya
+mnemonic: ジ plus a small ャ makes ジャ. Say ji and ya together as one quick sound: ja!
+
+[words]
+ジャム | jamu | jam
+ジャズ | jazu | jazz
+ジャケット | jaketto | jacket
+
+[similar]
+ジ | ji | ジャ has a small ャ at the bottom right. ジ alone is just ji.
+
+[distractors]
+ju, jo

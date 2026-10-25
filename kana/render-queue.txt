@@ -1,9 +1,12 @@
-kata-a.txt kata-i.txt kata-u.txt kata-e.txt kata-o.txt
-kata-ka.txt kata-ki.txt kata-ku.txt kata-ke.txt kata-ko.txt
-kata-sa.txt kata-shi.txt kata-su.txt kata-se.txt kata-so.txt
-kata-ta.txt kata-chi.txt kata-tsu.txt kata-te.txt kata-to.txt
-kata-na.txt kata-ni.txt kata-nu.txt kata-ne.txt kata-no.txt
-kata-ha.txt kata-hi.txt kata-fu.txt kata-he.txt kata-ho.txt
-kata-ma.txt kata-mi.txt kata-mu.txt kata-me.txt kata-mo.txt
-kata-ya.txt kata-yu.txt kata-yo.txt kata-ra.txt kata-ri.txt
-kata-ru.txt kata-re.txt kata-ro.txt kata-wa.txt kata-wo.txt kata-n.txt
+kata-ga.txt kata-gi.txt kata-gu.txt kata-ge.txt kata-go.txt
+kata-za.txt kata-ji.txt kata-zu.txt kata-ze.txt kata-zo.txt
+kata-da.txt kata-dji.txt kata-dzu.txt kata-de.txt kata-do.txt
+kata-ba.txt kata-bi.txt kata-bu.txt kata-be.txt kata-bo.txt
+kata-pa.txt kata-pi.txt kata-pu.txt kata-pe.txt kata-po.txt
+kata-kya.txt kata-kyu.txt kata-kyo.txt kata-sha.txt kata-shu.txt
+kata-sho.txt kata-cha.txt kata-chu.txt kata-cho.txt kata-nya.txt
+kata-nyu.txt kata-nyo.txt kata-hya.txt kata-hyu.txt kata-hyo.txt
+kata-mya.txt kata-myu.txt kata-myo.txt kata-rya.txt kata-ryu.txt
+kata-ryo.txt kata-gya.txt kata-gyu.txt kata-gyo.txt kata-ja.txt
+kata-ju.txt kata-jo.txt kata-bya.txt kata-byu.txt kata-byo.txt
+kata-pya.txt kata-pyu.txt kata-pyo.txt

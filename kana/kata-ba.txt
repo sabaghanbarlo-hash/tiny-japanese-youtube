@@ -1,0 +1,21 @@
+title: Katakana BA
+kana: バ
+script: katakana
+romaji: ba
+key: ba
+base: ハ
+sound: like the "ba" in bar
+mnemonic_word: ha to ba
+mnemonic: ハ plus two little marks makes バ. The marks make the sound buzz: ha turns into ba!
+
+[words]
+バス | basu | bus
+バナナ | banana | banana
+バイク | baiku | motorbike
+
+[similar]
+ハ | ha | バ has two small marks at the top right. ハ has none.
+パ | pa | バ has two small marks. パ has a small circle.
+
+[distractors]
+ha, bi

@@ -1,0 +1,20 @@
+title: Katakana DA
+kana: ダ
+script: katakana
+romaji: da
+key: da
+base: タ
+sound: like the "da" in dart
+mnemonic_word: ta to da
+mnemonic: タ plus two little marks makes ダ. The marks make the sound buzz: ta turns into da!
+
+[words]
+ダンス | dansu | dance
+ダイエット | daietto | diet
+ダム | damu | dam
+
+[similar]
+タ | ta | ダ has two small marks at the top right. タ has none.
+
+[distractors]
+ta, de

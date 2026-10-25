@@ -1,0 +1,20 @@
+title: Katakana ZO
+kana: ゾ
+script: katakana
+romaji: zo
+key: zo
+base: ソ
+sound: like the "zo" in zone
+mnemonic_word: so to zo
+mnemonic: ソ plus two little marks makes ゾ. The marks make the sound buzz: so turns into zo!
+
+[words]
+ゾウ | zou | elephant
+ゾーン | zoon | zone
+ゾンビ | zonbi | zombie
+
+[similar]
+ソ | so | ゾ has two small marks at the top right. ソ has none.
+
+[distractors]
+so, za

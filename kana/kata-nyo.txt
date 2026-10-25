@@ -1,0 +1,17 @@
+title: Katakana NYO
+kana: ニョ
+script: katakana
+romaji: nyo
+sound: one quick sound, "ni" and "yo" blended
+mnemonic_word: ni + yo
+mnemonic: ニ plus a small ョ makes ニョ. Say ni and yo together as one quick sound: nyo!
+
+[words]
+ニョッキ | nyokki | gnocchi
+ニョロニョロ | nyoronyoro | wriggling
+
+[similar]
+ニ | ni | ニョ has a small ョ at the bottom right. ニ alone is just ni.
+
+[distractors]
+nya, nyu

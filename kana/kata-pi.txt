@@ -1,0 +1,20 @@
+title: Katakana PI
+kana: ピ
+script: katakana
+romaji: pi
+key: pi
+base: ヒ
+sound: like the "pee"
+mnemonic_word: hi to pi
+mnemonic: ヒ plus a little circle makes ピ. The circle turns the h sound into a puff of air: hi becomes pi!
+
+[words]
+ピアノ | piano | piano
+ピザ | piza | pizza
+ピンク | pinku | pink
+
+[similar]
+ヒ | hi | ピ has a small circle at the top right. ヒ has none.
+
+[distractors]
+hi, pu

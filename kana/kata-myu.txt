@@ -1,0 +1,18 @@
+title: Katakana MYU
+kana: ミュ
+script: katakana
+romaji: myu
+sound: one quick sound, "mi" and "yu" blended
+mnemonic_word: mi + yu
+mnemonic: ミ plus a small ュ makes ミュ. Say mi and yu together as one quick sound: myu!
+
+[words]
+ミュージック | myuujikku | music
+ミュージカル | myuujikaru | musical
+ミュール | myuuru | mule
+
+[similar]
+ミ | mi | ミュ has a small ュ at the bottom right. ミ alone is just mi.
+
+[distractors]
+mya, myo

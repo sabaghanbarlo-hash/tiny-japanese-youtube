@@ -1,0 +1,17 @@
+title: Katakana PYO
+kana: ピョ
+script: katakana
+romaji: pyo
+sound: one quick sound, "pi" and "yo" blended
+mnemonic_word: pi + yo
+mnemonic: ピ plus a small ョ makes ピョ. Say pi and yo together as one quick sound: pyo!
+
+[words]
+ピョン | pyon | hop
+ピョンピョン | pyonpyon | hopping
+
+[similar]
+ピ | pi | ピョ has a small ョ at the bottom right. ピ alone is just pi.
+
+[distractors]
+pya, pyu

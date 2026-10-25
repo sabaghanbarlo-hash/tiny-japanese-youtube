@@ -1,0 +1,18 @@
+title: Katakana KYU
+kana: キュ
+script: katakana
+romaji: kyu
+sound: one quick sound, "ki" and "yu" blended
+mnemonic_word: ki + yu
+mnemonic: キ plus a small ュ makes キュ. Say ki and yu together as one quick sound: kyu!
+
+[words]
+キュウリ | kyuuri | cucumber
+キュート | kyuuto | cute
+キューブ | kyuubu | cube
+
+[similar]
+キ | ki | キュ has a small ュ at the bottom right. キ alone is just ki.
+
+[distractors]
+kya, kyo

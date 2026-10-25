@@ -1,0 +1,17 @@
+title: Katakana BYO
+kana: ビョ
+script: katakana
+romaji: byo
+sound: one quick sound, "bi" and "yo" blended
+mnemonic_word: bi + yo
+mnemonic: ビ plus a small ョ makes ビョ. Say bi and yo together as one quick sound: byo!
+
+[words]
+ビョーキ | byooki | illness (casual)
+ビョウイン | byouin | hospital
+
+[similar]
+ビ | bi | ビョ has a small ョ at the bottom right. ビ alone is just bi.
+
+[distractors]
+bya, byu

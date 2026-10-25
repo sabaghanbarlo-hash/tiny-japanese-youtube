@@ -1,0 +1,20 @@
+title: Katakana DE
+kana: デ
+script: katakana
+romaji: de
+key: de
+base: テ
+sound: like the "de" in den
+mnemonic_word: te to de
+mnemonic: テ plus two little marks makes デ. The marks make the sound buzz: te turns into de!
+
+[words]
+デザイン | dezain | design
+デパート | depaato | department store
+デート | deeto | date
+
+[similar]
+テ | te | デ has two small marks at the top right. テ has none.
+
+[distractors]
+te, da
