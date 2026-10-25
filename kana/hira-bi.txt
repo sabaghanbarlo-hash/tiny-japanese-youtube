@@ -1,0 +1,20 @@
+title: Hiragana BI
+kana: び
+script: hiragana
+romaji: bi
+key: bi
+base: ひ
+sound: like the "bee"
+mnemonic_word: hi to bi
+mnemonic: ひ plus two little marks makes び. The marks make the sound buzz: hi turns into bi!
+
+[words]
+くび | kubi | neck
+えび | ebi | shrimp
+びじん | bijin | beautiful woman
+
+[similar]
+ひ | hi | び has two small marks at the top right. ひ has none.
+
+[distractors]
+hi, bu

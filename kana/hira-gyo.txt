@@ -1,0 +1,18 @@
+title: Hiragana GYO
+kana: ぎょ
+script: hiragana
+romaji: gyo
+sound: one quick sound, "gi" and "yo" blended
+mnemonic_word: gi + yo
+mnemonic: ぎ plus a small ょ makes ぎょ. Say gi and yo together as one quick sound: gyo!
+
+[words]
+ぎょうざ | gyouza | dumplings
+ぎょうれつ | gyouretsu | line
+きんぎょ | kingyo | goldfish
+
+[similar]
+ぎ | gi | ぎょ has a small ょ at the bottom right. ぎ alone is just gi.
+
+[distractors]
+gya, gyu

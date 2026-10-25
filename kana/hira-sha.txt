@@ -1,0 +1,18 @@
+title: Hiragana SHA
+kana: しゃ
+script: hiragana
+romaji: sha
+sound: one quick sound, "shi" and "ya" blended
+mnemonic_word: shi + ya
+mnemonic: し plus a small ゃ makes しゃ. Say shi and ya together as one quick sound: sha!
+
+[words]
+しゃしん | shashin | photo
+しゃかい | shakai | society
+でんしゃ | densha | train
+
+[similar]
+し | shi | しゃ has a small ゃ at the bottom right. し alone is just shi.
+
+[distractors]
+shu, sho

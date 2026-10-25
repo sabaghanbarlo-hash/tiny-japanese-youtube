@@ -1,0 +1,18 @@
+title: Hiragana CHO
+kana: ちょ
+script: hiragana
+romaji: cho
+sound: one quick sound, "chi" and "yo" blended
+mnemonic_word: chi + yo
+mnemonic: ち plus a small ょ makes ちょ. Say chi and yo together as one quick sound: cho!
+
+[words]
+ちょっと | chotto | a little
+ちょうちょ | chouchou | butterfly
+ちょきん | chokin | savings
+
+[similar]
+ち | chi | ちょ has a small ょ at the bottom right. ち alone is just chi.
+
+[distractors]
+cha, chu

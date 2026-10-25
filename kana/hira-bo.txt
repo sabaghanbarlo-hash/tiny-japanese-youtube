@@ -1,0 +1,20 @@
+title: Hiragana BO
+kana: ぼ
+script: hiragana
+romaji: bo
+key: bo
+base: ほ
+sound: like the "bo" in boat
+mnemonic_word: ho to bo
+mnemonic: ほ plus two little marks makes ぼ. The marks make the sound buzz: ho turns into bo!
+
+[words]
+ぼうし | boushi | hat
+ぼく | boku | I (said by boys and men)
+ぼんさい | bonsai | bonsai
+
+[similar]
+ほ | ho | ぼ has two small marks at the top right. ほ has none.
+
+[distractors]
+ho, ba

@@ -1,0 +1,20 @@
+title: Hiragana GU
+kana: ぐ
+script: hiragana
+romaji: gu
+key: gu
+base: く
+sound: like the "goo" in goose
+mnemonic_word: ku to gu
+mnemonic: く plus two little marks makes ぐ. The marks make the sound buzz: ku turns into gu!
+
+[words]
+ぐあい | guai | condition
+ぐらい | gurai | about
+ぐち | guchi | complaint
+
+[similar]
+く | ku | ぐ has two small marks at the top right. く has none.
+
+[distractors]
+ku, ge

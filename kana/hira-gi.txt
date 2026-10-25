@@ -1,0 +1,20 @@
+title: Hiragana GI
+kana: ぎ
+script: hiragana
+romaji: gi
+key: gi
+base: き
+sound: like the "gee" in geese
+mnemonic_word: ki to gi
+mnemonic: き plus two little marks makes ぎ. The marks make the sound buzz: ki turns into gi!
+
+[words]
+ぎんこう | ginkou | bank
+みぎ | migi | right
+ぎもん | gimon | question
+
+[similar]
+き | ki | ぎ has two small marks at the top right. き has none.
+
+[distractors]
+ki, ga

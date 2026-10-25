@@ -1,0 +1,18 @@
+title: Hiragana JO
+kana: じょ
+script: hiragana
+romaji: jo
+sound: one quick sound, "ji" and "yo" blended
+mnemonic_word: ji + yo
+mnemonic: じ plus a small ょ makes じょ. Say ji and yo together as one quick sound: jo!
+
+[words]
+じょうず | jouzu | skilled
+じょせい | josei | woman
+じょうほう | jouhou | information
+
+[similar]
+じ | ji | じょ has a small ょ at the bottom right. じ alone is just ji.
+
+[distractors]
+ja, ju

@@ -1,0 +1,18 @@
+title: Hiragana NYA
+kana: にゃ
+script: hiragana
+romaji: nya
+sound: one quick sound, "ni" and "ya" blended
+mnemonic_word: ni + ya
+mnemonic: に plus a small ゃ makes にゃ. Say ni and ya together as one quick sound: nya!
+
+[words]
+こんにゃく | konnyaku | konjac
+にゃあ | nyaa | meow
+にゃんこ | nyanko | kitty
+
+[similar]
+に | ni | にゃ has a small ゃ at the bottom right. に alone is just ni.
+
+[distractors]
+nyu, nyo

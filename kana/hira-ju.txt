@@ -1,0 +1,18 @@
+title: Hiragana JU
+kana: じゅ
+script: hiragana
+romaji: ju
+sound: one quick sound, "ji" and "yu" blended
+mnemonic_word: ji + yu
+mnemonic: じ plus a small ゅ makes じゅ. Say ji and yu together as one quick sound: ju!
+
+[words]
+じゅうしょ | juusho | address
+じゅぎょう | jugyou | class
+じゅんび | junbi | preparation
+
+[similar]
+じ | ji | じゅ has a small ゅ at the bottom right. じ alone is just ji.
+
+[distractors]
+ja, jo

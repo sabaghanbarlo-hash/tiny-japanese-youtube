@@ -1,0 +1,17 @@
+title: Hiragana RYA
+kana: りゃ
+script: hiragana
+romaji: rya
+sound: one quick sound, "ri" and "ya" blended
+mnemonic_word: ri + ya
+mnemonic: り plus a small ゃ makes りゃ. Say ri and ya together as one quick sound: rya!
+
+[words]
+りゃく | ryaku | abbreviation
+しょうりゃく | shouryaku | omission
+
+[similar]
+り | ri | りゃ has a small ゃ at the bottom right. り alone is just ri.
+
+[distractors]
+ryu, ryo

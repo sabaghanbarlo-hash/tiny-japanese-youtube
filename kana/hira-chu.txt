@@ -1,0 +1,18 @@
+title: Hiragana CHU
+kana: ちゅ
+script: hiragana
+romaji: chu
+sound: one quick sound, "chi" and "yu" blended
+mnemonic_word: chi + yu
+mnemonic: ち plus a small ゅ makes ちゅ. Say chi and yu together as one quick sound: chu!
+
+[words]
+ちゅうごく | chuugoku | China
+ちゅうしゃ | chuusha | parking
+ちゅうい | chuui | caution
+
+[similar]
+ち | chi | ちゅ has a small ゅ at the bottom right. ち alone is just chi.
+
+[distractors]
+cha, cho

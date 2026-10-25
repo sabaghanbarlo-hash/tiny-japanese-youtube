@@ -1,0 +1,18 @@
+title: Hiragana BYA
+kana: びゃ
+script: hiragana
+romaji: bya
+sound: one quick sound, "bi" and "ya" blended
+mnemonic_word: bi + ya
+mnemonic: び plus a small ゃ makes びゃ. Say bi and ya together as one quick sound: bya!
+
+[words]
+さんびゃく | sanbyaku | 300
+びゃっこ | byakko | white tiger
+びゃくだん | byakudan | sandalwood
+
+[similar]
+び | bi | びゃ has a small ゃ at the bottom right. び alone is just bi.
+
+[distractors]
+byu, byo

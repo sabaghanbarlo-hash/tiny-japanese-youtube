@@ -1,0 +1,18 @@
+title: Hiragana RYU
+kana: りゅ
+script: hiragana
+romaji: ryu
+sound: one quick sound, "ri" and "yu" blended
+mnemonic_word: ri + yu
+mnemonic: り plus a small ゅ makes りゅ. Say ri and yu together as one quick sound: ryu!
+
+[words]
+りゅう | ryuu | dragon
+りゅうがく | ryuugaku | study abroad
+りゅうこう | ryuukou | trend
+
+[similar]
+り | ri | りゅ has a small ゅ at the bottom right. り alone is just ri.
+
+[distractors]
+rya, ryo

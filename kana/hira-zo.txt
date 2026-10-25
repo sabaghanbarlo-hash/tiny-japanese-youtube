@@ -1,0 +1,20 @@
+title: Hiragana ZO
+kana: ぞ
+script: hiragana
+romaji: zo
+key: zo
+base: そ
+sound: like the "zo" in zone
+mnemonic_word: so to zo
+mnemonic: そ plus two little marks makes ぞ. The marks make the sound buzz: so turns into zo!
+
+[words]
+ぞう | zou | elephant
+ぞうり | zouri | sandals
+かぞく | kazoku | family
+
+[similar]
+そ | so | ぞ has two small marks at the top right. そ has none.
+
+[distractors]
+so, za

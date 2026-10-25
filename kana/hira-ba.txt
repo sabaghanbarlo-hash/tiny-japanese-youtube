@@ -1,0 +1,21 @@
+title: Hiragana BA
+kana: ば
+script: hiragana
+romaji: ba
+key: ba
+base: は
+sound: like the "ba" in bar
+mnemonic_word: ha to ba
+mnemonic: は plus two little marks makes ば. The marks make the sound buzz: ha turns into ba!
+
+[words]
+ばなな | banana | banana
+ばしょ | basho | place
+ばん | ban | evening
+
+[similar]
+は | ha | ば has two small marks at the top right. は has none.
+ぱ | pa | ば has two small marks. ぱ has a small circle.
+
+[distractors]
+ha, bi

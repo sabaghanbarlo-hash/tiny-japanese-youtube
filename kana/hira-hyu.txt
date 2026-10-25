@@ -1,0 +1,17 @@
+title: Hiragana HYU
+kana: ひゅ
+script: hiragana
+romaji: hyu
+sound: one quick sound, "hi" and "yu" blended
+mnemonic_word: hi + yu
+mnemonic: ひ plus a small ゅ makes ひゅ. Say hi and yu together as one quick sound: hyu!
+
+[words]
+ひゅっと | hyutto | whoosh
+ひゅうひゅう | hyuuhyuu | whistling wind
+
+[similar]
+ひ | hi | ひゅ has a small ゅ at the bottom right. ひ alone is just hi.
+
+[distractors]
+hya, hyo

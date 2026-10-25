@@ -1,0 +1,18 @@
+title: Hiragana CHA
+kana: ちゃ
+script: hiragana
+romaji: cha
+sound: one quick sound, "chi" and "ya" blended
+mnemonic_word: chi + ya
+mnemonic: ち plus a small ゃ makes ちゃ. Say chi and ya together as one quick sound: cha!
+
+[words]
+おちゃ | ocha | tea
+ちゃわん | chawan | rice bowl
+ちゃいろ | chairo | brown
+
+[similar]
+ち | chi | ちゃ has a small ゃ at the bottom right. ち alone is just chi.
+
+[distractors]
+chu, cho

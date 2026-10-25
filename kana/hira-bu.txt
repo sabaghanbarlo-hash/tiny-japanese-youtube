@@ -1,0 +1,20 @@
+title: Hiragana BU
+kana: ぶ
+script: hiragana
+romaji: bu
+key: bu
+base: ふ
+sound: like the "boo" in boot
+mnemonic_word: fu to bu
+mnemonic: ふ plus two little marks makes ぶ. The marks make the sound buzz: fu turns into bu!
+
+[words]
+ぶた | buta | pig
+ぶどう | budou | grapes
+ぶんか | bunka | culture
+
+[similar]
+ふ | fu | ぶ has two small marks at the top right. ふ has none.
+
+[distractors]
+fu, be

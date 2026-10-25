@@ -1,0 +1,20 @@
+title: Hiragana GA
+kana: が
+script: hiragana
+romaji: ga
+key: ga
+base: か
+sound: like the "ga" in garage
+mnemonic_word: ka to ga
+mnemonic: か plus two little marks makes が. The marks make the sound buzz: ka turns into ga!
+
+[words]
+がくせい | gakusei | student
+がいこく | gaikoku | foreign country
+がっこう | gakkou | school
+
+[similar]
+か | ka | が has two small marks at the top right. か has none.
+
+[distractors]
+ka, gi

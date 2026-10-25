@@ -1,0 +1,18 @@
+title: Hiragana GYU
+kana: ぎゅ
+script: hiragana
+romaji: gyu
+sound: one quick sound, "gi" and "yu" blended
+mnemonic_word: gi + yu
+mnemonic: ぎ plus a small ゅ makes ぎゅ. Say gi and yu together as one quick sound: gyu!
+
+[words]
+ぎゅうにゅう | gyuunyuu | milk
+ぎゅうにく | gyuuniku | beef
+ぎゅうどん | gyuudon | beef bowl
+
+[similar]
+ぎ | gi | ぎゅ has a small ゅ at the bottom right. ぎ alone is just gi.
+
+[distractors]
+gya, gyo

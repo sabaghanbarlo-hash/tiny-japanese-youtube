@@ -1,0 +1,17 @@
+title: Hiragana GYA
+kana: ぎゃ
+script: hiragana
+romaji: gya
+sound: one quick sound, "gi" and "ya" blended
+mnemonic_word: gi + ya
+mnemonic: ぎ plus a small ゃ makes ぎゃ. Say gi and ya together as one quick sound: gya!
+
+[words]
+ぎゃく | gyaku | opposite
+ぎゃくてん | gyakuten | reversal
+
+[similar]
+ぎ | gi | ぎゃ has a small ゃ at the bottom right. ぎ alone is just gi.
+
+[distractors]
+gyu, gyo

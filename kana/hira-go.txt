@@ -1,0 +1,20 @@
+title: Hiragana GO
+kana: ご
+script: hiragana
+romaji: go
+key: go
+base: こ
+sound: like the "go" in go
+mnemonic_word: ko to go
+mnemonic: こ plus two little marks makes ご. The marks make the sound buzz: ko turns into go!
+
+[words]
+ごはん | gohan | rice, meal
+ごご | gogo | afternoon
+ごみ | gomi | trash
+
+[similar]
+こ | ko | ご has two small marks at the top right. こ has none.
+
+[distractors]
+ko, ga

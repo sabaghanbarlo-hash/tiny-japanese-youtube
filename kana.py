@@ -39,7 +39,7 @@ LAYOUTS = {
 
 
 def parse_kana(path):
-    meta = dict(title="", kana="", script="hiragana", romaji="", sound="", strokes="", mnemonic_word="", mnemonic="")
+    meta = dict(title="", kana="", script="hiragana", romaji="", sound="", strokes="", mnemonic_word="", mnemonic="", key="", base="", small="")
     words, similar, distractors, sec = [], [], [], None
     for n, raw in enumerate(open(path, encoding="utf-8").read().splitlines(), 1):
         s = raw.strip()
@@ -561,6 +561,63 @@ def sc_nletter(d, S, t, U):
     if p > 0: draw_prog(d, S, len(S) * ease(p), 84, (255, 255, 255), U); draw_prog(d, S, len(S) * ease(p), 56, (40, 80, 160), U)
 
 
+SCENE_CTX = {}
+
+
+_INFO = {}
+
+
+def get_info(script, key):
+    if not _INFO:
+        try: _INFO.update(json.load(open(os.path.join(HERE, "data", "strokes.json"), encoding="utf-8")).get("_info", {}))
+        except Exception: _INFO["_"] = {}
+    return _INFO.get(script, {}).get(key, {})
+
+
+def _shrink(S, sx, ox, oy):
+    return [Stroke([(x * sx + ox, y * sx + oy) for x, y in s.pts]) for s in S]
+
+
+def scene_daku(d, S, t, U):
+    meta, info = SCENE_CTX.get("meta", {}), SCENE_CTX.get("info", {}); nb = info.get("nbase", max(1, len(S) - 2))
+    S2 = _shrink(S, 0.8, 11, 3); base, marks = S2[:nb], S2[nb:]; C = BOX * SS // 2
+    draw_prog(d, base, nb * ease(ph(t, 0.0, 0.5)), 60, (60, 45, 48), U)
+    m = back(ph(t, 0.5, 0.75))
+    if m > 0.01:
+        for mk in marks:
+            cxm = sum(x for x, y in mk.pts) / len(mk.pts) * U; cym = sum(y for x, y in mk.pts) / len(mk.pts) * U
+            q = [(cxm + (x * U - cxm) * clamp(m, 0, 1.25), cym + (y * U - cym) * clamp(m, 0, 1.25)) for x, y in mk.pts]
+            w = int(76 * min(1.0, m)); d.line(q, fill=(230, 70, 110), width=max(2, w), joint="curve")
+            for e in (q[0], q[-1]): circle(d, e[0], e[1], w / 2, (230, 70, 110))
+            if 0.55 < t < 0.95:
+                for k in range(4):
+                    a = k * 1.57 + t * 6; rr = 450 * (t - 0.5); circle(d, cxm + math.cos(a) * rr, cym + math.sin(a) * rr, 16, (255, 200, 80))
+    if ph(t, 0.75, 0.95) > 0 and meta:
+        f = MK("sans", 190); y = 1330
+        d.text((C - 330, y), meta.get("base", ""), font=f, fill=(150, 130, 135), anchor="mm"); d.text((C + 330, y), meta.get("kana", ""), font=f, fill=(230, 70, 110), anchor="mm")
+        d.line([(C - 120, y), (C + 100, y)], fill=(60, 45, 48), width=22); d.polygon([(C + 70, y - 55), (C + 160, y), (C + 70, y + 55)], fill=(60, 45, 48))
+
+
+def scene_yoon(d, S, t, U):
+    meta, info = SCENE_CTX.get("meta", {}), SCENE_CTX.get("info", {}); nb = info.get("nbase", len(S) - 1); base, sm = S[:nb], S[nb:]
+    draw_prog(d, base, nb * ease(ph(t, 0.0, 0.45)), 58, (60, 45, 48), U)
+    q = ph(t, 0.45, 0.85)
+    if q > 0 and sm:
+        xs = [x for s in sm for x, y in s.pts]; ys = [y for s in sm for x, y in s.pts]
+        cx, cy = (min(xs) + max(xs)) / 2 * U, (min(ys) + max(ys)) / 2 * U; r = max(max(xs) - min(xs), max(ys) - min(ys)) / 2 * U + 80; mm = back(ph(t, 0.45, 0.6))
+        d.ellipse((cx - r * mm, cy - r * mm, cx + r * mm, cy + r * mm), outline=(255, 190, 110), width=18)
+        draw_prog(d, sm, len(sm) * ease(q), 58, (230, 70, 110), U)
+    if ph(t, 0.8, 0.95) > 0 and meta.get("mnemonic_word"):
+        d.text((1150, 230), meta["mnemonic_word"], font=font(120), fill=BRAND, anchor="mm")
+
+
+def pick_scene(meta):
+    key = meta.get("key") or meta["romaji"]; fn = SCENES.get((meta["script"], key))
+    if fn: return fn
+    kind = get_info(meta["script"], key).get("kind")
+    return scene_daku if kind == "daku" else scene_yoon if kind == "yoon" else scene_generic
+
+
 SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hiragana", "u"): scene_hat,
           ("hiragana", "e"): scene_bird, ("hiragana", "o"): scene_orange,
           ("hiragana", "ka"): scene_kite, ("hiragana", "ki"): scene_key, ("hiragana", "ku"): scene_beak,
@@ -584,13 +641,13 @@ SCENES = {("hiragana", "a"): scene_apple, ("hiragana", "i"): scene_eels, ("hirag
 
 
 # ---------------------------------------------------------------- timeline + audio
-ORD = ["First", "Second", "Third", "Fourth", "Fifth"]
+ORD = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"]
 ANIM = ("ghost", "stroke", "write", "mnemonic")
 
 
 def build(path, rate, dummy, tmp):
     meta, words, similar, distractors = parse_kana(path)
-    S = load_strokes(meta["script"], meta["romaji"])
+    S = load_strokes(meta["script"], meta["key"] or meta["romaji"])
     quiz = make_quiz(meta, words, distractors)
     K, R = meta["kana"], meta["romaji"]
     durs = [min(2.6, max(1.0, 0.6 + s.length / 90)) for s in S]
@@ -704,28 +761,31 @@ class Renderer:
     def panel(self, seg):
         lo = self.lo; im = Image.new("RGBA", (lo["SW"], lo["SH"]), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
         cx, cy = lo["pc"]; K, Rm, k = self.meta["kana"], self.meta["romaji"], seg["kind"]
+        m = 0.6 if len(K) > 1 else 1.0
         if k in ("title", "sound", "think"):
-            self.put(d, K, MK("sans", 520), cx, cy - 30, INK)
+            self.put(d, K, MK("sans", int(520 * m)), cx, cy - 30, INK)
             if k != "title": self.put(d, Rm, font(120), cx, cy + 330, BRAND)
         elif k == "fonts":
-            for dx, kind, lab in ((-290, "sans", "gothic"), (0, "serif", "mincho"), (290, "light", "light")):
-                self.put(d, K, MK(kind, 260), cx + dx, cy - 60, INK); self.put(d, lab, font(34, False), cx + dx, cy + 140, SOFT)
+            sp, fs = (290, 260) if m == 1 else (340, 150)
+            for dx, kind, lab in ((-sp, "sans", "gothic"), (0, "serif", "mincho"), (sp, "light", "light")):
+                self.put(d, K, MK(kind, fs), cx + dx, cy - 60, INK); self.put(d, lab, font(34, False), cx + dx, cy + 140, SOFT)
             self.put(d, Rm, font(120), cx, cy + 330, BRAND)
         elif k == "word":
-            w = seg["w"]["jp"]; f = MK("sans", 200 if len(w) <= 3 else 150)
-            x = cx - sum(f.getlength(c) for c in w) / 2
-            for c in w:
-                d.text((x, cy - 120), c, font=f, fill=BRAND if c == K else INK, anchor="lm"); x += f.getlength(c)
+            w = seg["w"]["jp"]; f = MK("sans", 200 if len(w) <= 3 else 150 if len(w) <= 5 else 115)
+            x = cx - sum(f.getlength(c) for c in w) / 2; i = 0
+            while i < len(w):
+                hit = w.startswith(K, i); n = len(K) if hit else 1; part = w[i:i + n]
+                d.text((x, cy - 120), part, font=f, fill=BRAND if hit else INK, anchor="lm"); x += f.getlength(part); i += n
             if seg["shown"]:
                 self.put(d, seg["w"]["romaji"], font(76), cx, cy + 70, ROMA); self.put(d, seg["w"]["en"], font(88), cx, cy + 190, SOFT)
         elif k == "similar":
             s = seg["s"]
-            self.put(d, K, MK("sans", 360), cx - 250, cy - 40, BRAND); self.put(d, s["kana"], MK("sans", 360), cx + 250, cy - 40, INK)
+            self.put(d, K, MK("sans", int(360 * m)), cx - 250, cy - 40, BRAND); self.put(d, s["kana"], MK("sans", int(360 * m)), cx + 250, cy - 40, INK)
             self.put(d, Rm, font(90), cx - 250, cy + 210, BRAND); self.put(d, s["romaji"], font(90), cx + 250, cy + 210, SOFT)
         elif k == "quiz":
-            g = seg["q"]["glyph"]; self.put(d, g, MK("sans", 400 if len(g) == 1 else 200), cx, cy - 20, INK)
+            g = seg["q"]["glyph"]; self.put(d, g, MK("sans", min(400, int(880 / len(g)))), cx, cy - 20, INK)
         elif k == "outro":
-            self.put(d, K, MK("sans", 380), cx, cy - 80, BRAND); self.put(d, "また あした！", font(80), cx, cy + 210, INK)
+            self.put(d, K, MK("sans", int(380 * m)), cx, cy - 80, BRAND); self.put(d, "また あした！", font(80), cx, cy + 210, INK)
             self.put(d, "Stroke order data: KanjiVG, CC BY-SA 3.0", font(28, False), cx, cy + 330, SOFT)
         return im
 
@@ -791,7 +851,8 @@ class Renderer:
             draw_prog(d, S, len(S), GW, ghost, U); draw_prog(d, S, prog, GW, BRAND, U)
         elif k == "mnemonic":
             t = clamp((tt - seg["t0"]) / seg["dur"])
-            SCENES.get((self.meta["script"], self.meta["romaji"]), scene_generic)(d, S, t, U)
+            SCENE_CTX.update(meta=self.meta, info=get_info(self.meta["script"], self.meta["key"] or self.meta["romaji"]))
+            pick_scene(self.meta)(d, S, t, U)
         small = layer.resize((BOX, BOX), Image.LANCZOS); ox, oy = self.lo["pc"][0] - BOX // 2, self.lo["pc"][1] - BOX // 2
         fr.alpha_composite(small, (ox, oy))
         if badges:

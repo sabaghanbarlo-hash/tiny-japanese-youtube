@@ -1,0 +1,17 @@
+title: Hiragana NYO
+kana: にょ
+script: hiragana
+romaji: nyo
+sound: one quick sound, "ni" and "yo" blended
+mnemonic_word: ni + yo
+mnemonic: に plus a small ょ makes にょ. Say ni and yo together as one quick sound: nyo!
+
+[words]
+にょろにょろ | nyoronyoro | wriggling
+にょうぼう | nyoubou | wife
+
+[similar]
+に | ni | にょ has a small ょ at the bottom right. に alone is just ni.
+
+[distractors]
+nya, nyu

@@ -1,0 +1,18 @@
+title: Hiragana HYA
+kana: ひゃ
+script: hiragana
+romaji: hya
+sound: one quick sound, "hi" and "ya" blended
+mnemonic_word: hi + ya
+mnemonic: ひ plus a small ゃ makes ひゃ. Say hi and ya together as one quick sound: hya!
+
+[words]
+ひゃく | hyaku | hundred
+ひゃくえん | hyakuen | 100 yen
+ひゃくにん | hyakunin | 100 people
+
+[similar]
+ひ | hi | ひゃ has a small ゃ at the bottom right. ひ alone is just hi.
+
+[distractors]
+hyu, hyo

@@ -1,0 +1,20 @@
+title: Hiragana PO
+kana: ぽ
+script: hiragana
+romaji: po
+key: po
+base: ほ
+sound: like the "po" in pole
+mnemonic_word: ho to po
+mnemonic: ほ plus a little circle makes ぽ. The circle turns the h sound into a puff of air: ho becomes po!
+
+[words]
+さんぽ | sanpo | walk
+ぽけっと | poketto | pocket
+ぽすと | posuto | mailbox
+
+[similar]
+ほ | ho | ぽ has a small circle at the top right. ほ has none.
+
+[distractors]
+ho, pa

@@ -1,0 +1,17 @@
+title: Hiragana PYA
+kana: ぴゃ
+script: hiragana
+romaji: pya
+sound: one quick sound, "pi" and "ya" blended
+mnemonic_word: pi + ya
+mnemonic: ぴ plus a small ゃ makes ぴゃ. Say pi and ya together as one quick sound: pya!
+
+[words]
+ろっぴゃく | roppyaku | 600
+はっぴゃく | happyaku | 800
+
+[similar]
+ぴ | pi | ぴゃ has a small ゃ at the bottom right. ぴ alone is just pi.
+
+[distractors]
+pyu, pyo

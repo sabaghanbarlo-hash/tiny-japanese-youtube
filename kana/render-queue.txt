@@ -1,4 +1,1 @@
-hira-ha.txt hira-hi.txt hira-fu.txt hira-he.txt hira-ho.txt
-hira-ma.txt hira-mi.txt hira-mu.txt hira-me.txt hira-mo.txt
-hira-ya.txt hira-yu.txt hira-yo.txt hira-ra.txt hira-ri.txt
-hira-ru.txt hira-re.txt hira-ro.txt hira-wa.txt hira-wo.txt hira-n.txt
+hira-ga.txt hira-kya.txt hira-pa.txt hira-dji.txt hira-ja.txt

@@ -1,0 +1,18 @@
+title: Hiragana SHO
+kana: しょ
+script: hiragana
+romaji: sho
+sound: one quick sound, "shi" and "yo" blended
+mnemonic_word: shi + yo
+mnemonic: し plus a small ょ makes しょ. Say shi and yo together as one quick sound: sho!
+
+[words]
+しょくじ | shokuji | meal
+しょうがつ | shougatsu | New Year
+しょるい | shorui | documents
+
+[similar]
+し | shi | しょ has a small ょ at the bottom right. し alone is just shi.
+
+[distractors]
+sha, shu
