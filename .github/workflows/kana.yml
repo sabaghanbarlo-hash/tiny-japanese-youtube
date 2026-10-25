@@ -4,21 +4,44 @@ on:
   workflow_dispatch:
     inputs:
       kana:
-        description: "Kana script file name in kana/ (e.g. hira-a.txt). Leave empty to render all (no YouTube upload)."
+        description: "Space-separated script files in kana/ (e.g. 'hira-a.txt hira-i.txt'). Empty = every script."
         required: false
         default: ""
+  push:
+    branches: [kana-lessons]
+    paths: ["kana/render-queue.txt"]
 
 permissions:
   contents: write
 
-concurrency:
-  group: render-lesson
-  cancel-in-progress: false
-
 jobs:
-  render:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    outputs:
+      groups: ${{ steps.p.outputs.groups }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env:
+          KANA: ${{ github.event.inputs.kana }}
+        run: |
+          if [ -n "$KANA" ]; then
+            echo "groups=$(jq -cn --arg k "$KANA" '[$k]')" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            echo "groups=$(grep -v '^[[:space:]]*$' kana/render-queue.txt | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
+          else
+            echo "groups=$(jq -cn --arg k "$(cd kana && ls *.txt | tr '\n' ' ')" '[$k]')" >> "$GITHUB_OUTPUT"
+          fi
+
+  render:
+    needs: plan
+    if: needs.plan.outputs.groups != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJson(needs.plan.outputs.groups) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,38 +54,24 @@ jobs:
       - name: Render
         env:
           STRICT_VOICE: "1"
-          KANA: ${{ github.event.inputs.kana }}
+          GROUP: ${{ matrix.group }}
         run: |
-          if [ -n "$KANA" ]; then files="kana/$KANA"; else files=$(ls kana/*.txt); fi
-          for f in $files; do python kana.py "$f" -o output; done
+          for f in $GROUP; do python kana.py "kana/$f" -o output; done
       - uses: actions/upload-artifact@v4
         with:
-          name: kana-lessons
+          name: kana-${{ strategy.job-index }}
           path: output/
-      - name: Upload to YouTube
-        id: yt
-        if: ${{ github.event.inputs.kana != '' }}
-        continue-on-error: true
-        env:
-          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
-          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-          YT_PRIVACY: ${{ vars.YT_PRIVACY }}
-        run: |
-          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube secrets are not set - skipping the upload"; exit 0; fi
-          for f in output/*.mp4; do python upload.py "$f"; done
-      - name: Publish to the website
+      - name: Publish to the repo (docs/videos)
         run: |
           mkdir -p docs/videos
           cp output/* docs/videos/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/videos
-          git commit -m "Publish kana lesson" || exit 0
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
-      - name: YouTube upload failed
-        if: ${{ steps.yt.outcome == 'failure' }}
-        run: |
-          echo "The lesson was rendered and published to the site, but the YouTube upload failed. See the 'Upload to YouTube' step above."
-          exit 1
+          git commit -m "Publish kana lessons: ${GROUP}" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && break
+            sleep $((RANDOM % 15 + 5))
+          done
+        env:
+          GROUP: ${{ matrix.group }}

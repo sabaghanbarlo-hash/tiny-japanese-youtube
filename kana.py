@@ -86,7 +86,7 @@ def make_mk():
     ser = sorted(glob.glob("/usr/share/fonts/**/NotoSerifCJK-Bold.ttc", recursive=True))
     def mk(kind, size):
         if kind == "serif" and ser:
-            try: return ImageFont.truetype(ser[0], size, index=2)
+            try: return ImageFont.truetype(ser[0], size, index=0)
             except Exception: pass
         return font(size, kind != "light")
     return mk
