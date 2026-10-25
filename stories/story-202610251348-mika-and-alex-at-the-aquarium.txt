@@ -1,0 +1,75 @@
+title: Mika and Alex at the Aquarium
+scene: aquarium
+
+[story]
+@scene aquarium
+> Mika enters left
+& Alex enters right
+> both walk to entrance
+> Mika looks excited
+Mika: わあ！ すいぞくかんだ！ | Wow! It's an aquarium! | Waa! Suizokukan da!
+Alex: はやく さかなを みたい！ | I want to see the fish! | Hayaku sakana o mitai!
+> both walk to big tank
+> Alex looks surprised
+Alex: みて！ おおきい さかなだ！ | Look! A big fish! | Mite! Ookii sakana da!
+Mika: きれいだね！ あおい さかなも いるよ！ | It's beautiful! There are blue fish too! | Kirei da ne! Aoi sakana mo iru yo!
+> both walk to jellyfish
+> Mika looks happy
+Mika: わあ！ くらげが いる！ | Wow! There are jellyfish! | Waa! Kurage ga iru!
+Alex: くらげは ふわふわ しているね！ | The jellyfish look soft and floaty! | Kurage wa fuwafuwa shite iru ne!
+> both walk to shark
+> Alex looks worried
+Alex: あっ！ さめだ！ こわい！ | Oh! It's a shark! Scary! | A! Same da! Kowai!
+> Mika looks happy
+Mika: だいじょうぶ！ みずの なかに いるよ！ | It's okay! It's in the water! | Daijoubu! Mizu no naka ni iru yo!
+Alex: さめは おおきいね！ | Sharks are big! | Same wa ookii ne!
+Mika: でも、わたしは くらげが すき！ | But I like jellyfish! | Demo, watashi wa kurage ga suki!
+> Alex looks surprised
+Alex: ぼくは さかなが すき！ | I like fish! | Boku wa sakana ga suki!
+> both walk to entrance
+> both look happy
+Mika: きょうは たくさん さかなを みたね！ | We saw lots of fish today! | Kyou wa takusan sakana o mita ne!
+Alex: また いっしょに こようね！ | Let's come together again! | Mata issho ni koyou ne!
+
+[vocab]
+1. さかな (sakana) — fish
+   Example: さかなが すきです。 | I like fish.
+2. くらげ (kurage) — jellyfish
+   Example: くらげは きれいです。 | Jellyfish are beautiful.
+3. さめ (same) — shark
+   Example: さめは おおきいです。 | Sharks are big.
+4. おおきい (ookii) — big
+   Example: さめは おおきいです。 | Sharks are big.
+5. こわい (kowai) — scary
+   Example: さめは こわいです。 | Sharks are scary.
+
+[grammar]
+1. ～は ～です — Describing something
+   Example 1: さめは おおきいです。 | Sharks are big.
+   Example 2: くらげは きれいです。 | Jellyfish are beautiful.
+
+2. ～が すき — Saying what you like
+   Example 1: さかなが すきです。 | I like fish.
+   Example 2: くらげが すきです。 | I like jellyfish.
+
+[quiz]
+1. What does くらげ (kurage) mean?
+   A) Fish
+   B) Jellyfish
+   C) Shark
+   Answer: B
+   Explanation: くらげ means jellyfish.
+
+2. What does こわい (kowai) mean?
+   A) Beautiful
+   B) Big
+   C) Scary
+   Answer: C
+   Explanation: こわい means scary or frightening.
+
+3. How do you say "I like fish" in Japanese?
+   A) さかなが すきです。
+   B) さめは おおきいです。
+   C) くらげは こわいです。
+   Answer: A
+   Explanation: ～が すき means "like something."
