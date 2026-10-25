@@ -1,1 +1,11 @@
-hira-ga.txt hira-kya.txt hira-pa.txt hira-dji.txt hira-ja.txt
+hira-gi.txt hira-gu.txt hira-ge.txt hira-go.txt hira-za.txt
+hira-ji.txt hira-zu.txt hira-ze.txt hira-zo.txt hira-da.txt
+hira-dzu.txt hira-de.txt hira-do.txt hira-ba.txt hira-bi.txt
+hira-bu.txt hira-be.txt hira-bo.txt hira-pi.txt hira-pu.txt
+hira-pe.txt hira-po.txt hira-kyu.txt hira-kyo.txt hira-sha.txt
+hira-shu.txt hira-sho.txt hira-cha.txt hira-chu.txt hira-cho.txt
+hira-nya.txt hira-nyu.txt hira-nyo.txt hira-hya.txt hira-hyu.txt
+hira-hyo.txt hira-mya.txt hira-myu.txt hira-myo.txt hira-rya.txt
+hira-ryu.txt hira-ryo.txt hira-gya.txt hira-gyu.txt hira-gyo.txt
+hira-ju.txt hira-jo.txt hira-bya.txt hira-byu.txt hira-byo.txt
+hira-pya.txt hira-pyu.txt hira-pyo.txt
