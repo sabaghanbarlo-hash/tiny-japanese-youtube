@@ -1,291 +1,292 @@
 #!/usr/bin/env python3
-"""Tiny Japanese - YouTube Shorts generator.
+"""Tiny Japanese - YouTube Shorts generator (Reels look).
 
-One script file (.txt)  ->  one 1080x1920 vertical MP4 (about 45-58 seconds):
-  hook -> mini story (Mika & Alex, Japanese / romaji / English) -> 1-2 key words -> 1 quiz question -> follow outro.
-Same script format as lesson.py ([story] [vocab] [quiz]; [grammar] is ignored). Uses lesson.py for voices and characters.
+One script file (.txt)  ->  one 1080x1920 vertical MP4 (about 30-58 seconds).
+Renders with the same engine as the Instagram Reels project (tinyvideo.py): 33 hand-drawn places,
+animated weather, 31 anime characters with their own voices, big Japanese / romaji / English cards.
+
+Script format (dialogue style, sections are optional):
+
+    title: 3 Japanese Phrases That Make You Sound Natural
+    scene: park                 # auto, a place name, or change mid-short with "@scene cafe" on its own line
+    weather: auto               # optional: petals leaves snow rain wind none
+    cast: mika, alex            # optional: any two characters from the roster
+
+    [hook]
+    Mika: にほんごを もっと はなしたい？ | Nihongo o motto hanashitai? | Want to speak more Japanese?
+    [story]
+    Alex: いいね！ | That's nice!               # romaji is added automatically when there are only 2 parts
+    [quiz]
+    ...
+    [ending]
+    Mika and Alex: またね！ | Mata ne! | See you!
+
+Older scripts that use `vocab:` / `quiz:` lines still render with the previous engine (short_legacy.py).
 """
-import argparse, bisect, math, os, random, re, subprocess, sys, tempfile
-from PIL import Image, ImageDraw, ImageFilter
-import lesson as L
-from lesson import CHARS, BRAND, INK, SOFT, ROMA, GREEN, FPS, font, card, sub_blocks, example_blocks, sprite, wrap
+import argparse, bisect, math, os, re, subprocess, sys, tempfile
+import numpy as np
+from PIL import Image, ImageDraw
+import tinyvideo as T
 
-SW, SH = 1080, 1920
-MAX_STORY, MAX_VOCAB, MAX_QUIZ = 8, 2, 1
+W, H, FPS, SR = T.W, T.H, T.FPS, T.SR
+LEAD, GAP, THINK = 0.3, 0.4, 3.0
 LIMIT = 58.0
+HAS_JP = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
+INK, SOFT, ROMA = (52, 40, 44), (90, 78, 80), (176, 110, 128)
+THINK_RE = re.compile(r"your turn|say it|repeat after", re.I)
+
+
+def die(msg):
+    sys.exit(f"::error::{msg}")
+
+
+def is_legacy(path):
+    raw = open(path, encoding="utf-8").read()
+    return bool(re.search(r"^\s*(vocab|quiz)\s*:", raw, re.M | re.I))
+
+
+# ---------- script parsing ----------
+def resolve_scene(name):
+    """A place name / alias -> a scene key, or None."""
+    sc = T.SCENE_ALIASES.get((name or "").strip().lower(), (name or "").strip().lower())
+    if sc in T.SCENES:
+        return sc
+    for key, val in list(T.SCENE_ALIASES.items()) + [(k, k) for k in T.SCENES]:
+        if sc and key in sc:
+            return val
+    return None
 
 
 def parse_short(path):
-    """Dialogue-style Short script: [hook] [story] [quiz] [ending] sections, each made of 'Mika: jp | romaji | English' lines.
-    Returns None if the file is in the older format (use lesson.parse_script for that)."""
-    raw = open(path, encoding="utf-8").read()
-    if re.search(r"^\s*(vocab|quiz)\s*:", raw, re.M | re.I):
-        return None
-    meta = dict(title="Tiny Short", episode="", scene="auto")
-    lines, sec, pending = [], None, None
-    for n, line in enumerate(raw.splitlines(), 1):
-        s = L.norm_line(line)
+    meta = dict(title="Tiny Short", scene="auto", episode="")
+    raw_lines, sec, pending = [], None, None
+    pat = re.compile(r"^([A-Za-z]+(?:\s+(?:and|&)\s+[A-Za-z]+)?)\s*[:：]\s*(.+)$")
+    for n, raw in enumerate(open(path, encoding="utf-8"), 1):
+        s = raw.replace("\ufeff", "").strip()
         if not s or s.startswith("#"):
             continue
         m = re.match(r"^\[([^\]]+)\]$", s)
         if m:
-            sec = m[1].strip().lower()
-            continue
-        if sec is None and L.DIALOGUE.match(s):
-            sec = "story"
-        if sec is None:
-            m = re.match(r"^(title|episode|scene)\s*:\s*(.+)$", s, re.I)
-            if not m:
-                L.die(f"line {n}: put title/episode/scene first, then [hook]: {s}")
-            meta[m[1].lower()] = m[2].strip()
-            continue
+            sec = m[1].strip().lower(); continue
+        m = re.match(r"^(title|episode|scene|weather|cast)\s*:\s*(.+)$", s, re.I)
+        if m and sec is None:
+            meta[m[1].lower()] = m[2].strip(); continue
         m = re.match(r"^@scene\s+(.+)$", s, re.I)
         if m:
-            pending = L.resolve_scene(m[1]) or pending
-            continue
-        m = re.match(r"^([A-Za-z]+(?:\s+(?:and|&)\s+[A-Za-z]+)?)\s*[:：]\s*(.+)$", s)
-        who = m[1].strip().capitalize() if m else ""
-        tag = None
-        if m and (re.search(r"\s(and|&)\s", m[1]) or who == "Both"):
-            who, tag = "Mika", "Mika & Alex"
-        if not m or who not in CHARS:
-            L.die(f"line {n}: lines look like 'Mika: こんにちは | Konnichiwa | Hello' (speakers: {', '.join(CHARS)})")
-        ex = L.example_dict([x.strip() for x in m[2].split("|")])
-        ln = dict(speaker=who, jp=ex["jp"], en=ex["en"], romaji=ex["romaji"], scene=pending, sec=sec)
-        if tag:
-            ln["tag"] = tag
-        lines.append(ln); pending = None
-    if not lines:
-        L.die("no dialogue lines found in this Short.")
-    sc = L.resolve_scene(meta.get("scene", "")) or "classroom"
-    for ln in lines:
-        sc = ln["scene"] or sc
-        ln["scene"] = sc
+            pending = resolve_scene(m[1]) or pending; continue
+        m = pat.match(s)
+        if not m:
+            die(f"line {n}: lines look like 'Mika: こんにちは | Konnichiwa | Hello' - got: {s}")
+        who = m[1].strip()
+        both = bool(re.search(r"\s(and|&)\s", who)) or who.lower() == "both"
+        parts = [x.strip() for x in m[2].split("|")]
+        if len(parts) >= 3:
+            jp, ro, en = parts[0], parts[1], parts[2]        # Shorts format: Japanese | romaji | English
+        elif len(parts) == 2:
+            jp, en = parts; ro = T.to_romaji(jp) if HAS_JP.search(jp) else ""
+        else:
+            jp, en, ro = parts[0], "", (T.to_romaji(parts[0]) if HAS_JP.search(parts[0]) else "")
+        raw_lines.append(dict(who=who, both=both, jp=jp, en=en, romaji=ro, scene=pending, sec=sec or "story"))
+        pending = None
+    if not raw_lines:
+        die("no dialogue lines found in this Short.")
+    # speakers -> left (Mika slot) / right (Alex slot), same rules as the Reels engine
+    order = []
+    for l in raw_lines:
+        if not l["both"] and l["who"].lower() not in order:
+            order.append(l["who"].lower())
+    for who in order:
+        if who not in T.ROSTER:
+            die(f"unknown speaker '{who}'. Use Mika, Alex or a character from the roster: {', '.join(T.ROSTER)}")
+    if len(order) > 2:
+        die("a Short can only have two speakers (left and right).")
+    if not meta.get("cast") and any(s not in ("mika", "alex") for s in order):
+        meta["cast"] = ", ".join(order)
+    left, right = T.cast_ids(meta)
+    slots = {"mika": "Mika", "alex": "Alex"} if all(s in ("mika", "alex") for s in order) else {"mika": "Mika", "alex": "Alex", left: "Mika", right: "Alex"}
+    used = {slots[s] for s in order if s in slots}
+    for s in order:
+        if s not in slots:
+            free = [x for x in ("Mika", "Alex") if x not in used]
+            slots[s] = free[0]; used.add(free[0])
+    T.apply_cast(meta)
+    lines = []
+    for l in raw_lines:
+        if l["both"]:
+            l["speaker"], l["tag"] = "Both", f"{T.CHARS['Mika']['label']} & {T.CHARS['Alex']['label']}"
+        else:
+            l["speaker"] = slots[l["who"].lower()]
+        lines.append(l)
+    base = resolve_scene(meta.get("scene", "")) or T.pick_scene(meta, lines)
+    sc = base
+    for l in lines:
+        sc = l["scene"] or sc
+        l["scene"] = sc
+    meta["scene"] = base
     return meta, lines
 
 
-def build_short_dialogue(meta, lines, rate, dummy, tmp):
-    tr = L.Track(tmp, rate, dummy)
-    segs = []
-    mark = lambda kind, start, **kw: segs.append(dict(kind=kind, start=start, **kw))
-    qidx = [i for i, ln in enumerate(lines) if ln["sec"] == "quiz"]
-    tr.gap(0.2)
-    prev = lines[0]["scene"]
+# ---------- audio / timing ----------
+def build(path, rate, dummy, tmp):
+    meta, lines = parse_short(path)
+    qidx = [i for i, l in enumerate(lines) if l["sec"] == "quiz"]
+    chunks, t = [np.zeros(int(LEAD * SR), np.float32)], LEAD
+    talk, thinks = [], []
     for i, ln in enumerate(lines):
-        if qidx and i == qidx[-1] and len(qidx) >= 2:
-            mark("think", tr.t, line=lines[i - 1], t0=tr.t, scene=lines[i - 1]["scene"]); tr.gap(3)
-        a, b = tr.say(ln["jp"], ln["speaker"]); ln.update(start=a, end=b)
-        mark("story", a - 0.02, line=ln, scene=ln["scene"], prev_scene=prev)
-        prev = ln["scene"]; tr.gap(0.45)
-        if re.search(r"your turn|say it|repeat after", ln["en"], re.I) and i < len(lines) - 1:   # pause so viewers can answer out loud
-            mark("think", tr.t, line=ln, t0=tr.t, scene=ln["scene"]); tr.gap(3)
-    total = tr.t + 1.0
+        if qidx and i == qidx[-1] and len(qidx) >= 2:            # give viewers a few seconds before the answer
+            thinks.append((t, t + THINK, i - 1))
+            chunks.append(np.zeros(int(THINK * SR), np.float32)); t += THINK
+        wav = os.path.join(tmp, f"l{i}.wav")
+        if HAS_JP.search(ln["jp"]):
+            T.synth(ln["jp"], "Mika" if ln["speaker"] == "Both" else ln["speaker"], wav, rate, dummy)
+        else:                                                    # English-only line (quiz options ...): narrator voice
+            T.synth(ln["jp"], "Narrator", wav, "+0%", dummy, voice="en-US-AriaNeural", lang="en")
+        x = T.read_wav(wav)
+        ln["start"], ln["end"] = t, t + len(x) / SR
+        talk.append(dict(speaker=ln["speaker"], start=ln["start"], end=ln["end"]))
+        chunks += [x, np.zeros(int(GAP * SR), np.float32)]; t = ln["end"] + GAP
+        if THINK_RE.search(ln["en"]) and i < len(lines) - 1:     # "your turn!" -> pause so viewers can answer out loud
+            thinks.append((t, t + THINK, i))
+            chunks.append(np.zeros(int(THINK * SR), np.float32)); t += THINK
+    total = t + 0.8
     if total > LIMIT:
         print(f"::warning::This short is {total:.0f}s long. Shorts under about 60s perform best; use fewer lines.", file=sys.stderr)
-    audio = tr.audio(total); n = int(total * FPS)
-    mouth = L.mouth_levels(audio, n)
-    spk = [None] * n
-    for who, a, b in tr.talk:
-        for i in range(max(0, int(a * FPS) - 1), min(n, int(b * FPS) + 2)):
-            spk[i] = who
-    return dict(meta=meta, story=lines, vocab=[], quiz=[], segs=segs, audio=audio, n=n, total=total, mouth=mouth, spk=spk)
+    chunks.append(np.zeros(int((total - t) * SR) + SR, np.float32))
+    audio = np.concatenate(chunks); audio = audio / max(0.01, np.abs(audio).max()) * 0.9
+    n = int(total * FPS)
+    return dict(meta=meta, lines=lines, audio=audio, n=n, total=total, talk=talk, thinks=thinks, mouth=T.mouth_levels(audio, n))
 
 
-def build_short(path, rate, dummy, tmp):
-    new = parse_short(path)
-    if new:
-        return build_short_dialogue(new[0], new[1], rate, dummy, tmp)
-    meta, story, vocab, _grammar, quiz = L.parse_script(path)
-    story, vocab, quiz = story[:MAX_STORY], vocab[:MAX_VOCAB], quiz[:MAX_QUIZ]
-    tr = L.Track(tmp, rate, dummy)
-    segs = []
-    mark = lambda kind, start, **kw: segs.append(dict(kind=kind, start=start, **kw))
-
-    tr.gap(0.2)
-    mark("title", 0.0, scene=story[0]["scene"])
-    tr.say(f"Learn Japanese in one minute! {meta['title']}.", "Narrator"); tr.gap(0.4)
-    prev = story[0]["scene"]
-    for ln in story:
-        a, b = tr.say(ln["jp"], ln["speaker"]); ln.update(start=a, end=b)
-        mark("story", a - 0.02, line=ln, scene=ln["scene"], prev_scene=prev)
-        prev = ln["scene"]; tr.gap(0.35)
-    tr.gap(0.2)
-    for i, v in enumerate(vocab):
-        mark("vocab", tr.t, v=v, i=i, n=len(vocab), shown=0)
-        if i == 0:
-            tr.say("Key words.", "Narrator"); tr.gap(0.2)
-        tr.say(v["jp"], "Mika", "-25%"); tr.gap(0.25)
-        tr.say(v["en"].replace("~", "something"), "Narrator"); tr.gap(0.3)
-        if v["examples"]:
-            mark("vocab", tr.t, v=v, i=i, n=len(vocab), shown=1)
-            tr.say(v["examples"][0]["jp"], "Mika", "-15%"); tr.gap(0.6)
-    for i, q in enumerate(quiz):
-        mark("quiz", tr.t, q=q, phase="ask")
-        tr.say("Quick quiz!", "Narrator"); tr.gap(0.1)
-        tr.mixed(q["q"]); tr.gap(0.25)
-        for k, o in enumerate(q["opts"]):
-            tr.say("ABCD"[k], "Narrator"); tr.gap(0.05); tr.mixed(o); tr.gap(0.25)
-        mark("quiz", tr.t, q=q, phase="think", t0=tr.t); tr.gap(3)
-        mark("quiz", tr.t, q=q, phase="answer")
-        tr.say(f"The answer is {'ABCD'[q['ans']]}.", "Narrator"); tr.gap(0.1)
-        tr.mixed(q["opts"][q["ans"]]); tr.gap(0.5)
-    mark("outro", tr.t, scene=story[-1]["scene"])
-    tr.say("Follow Tiny Japanese for a new lesson every day!", "Narrator")
-    total = tr.t + 1.0
-    if total > LIMIT:
-        print(f"::warning::This short is {total:.0f}s long. Shorts under about 60s perform best; use fewer story lines.", file=sys.stderr)
-    audio = tr.audio(total); n = int(total * FPS)
-    mouth = L.mouth_levels(audio, n)
-    spk = [None] * n
-    for who, a, b in tr.talk:
-        for i in range(max(0, int(a * FPS) - 1), min(n, int(b * FPS) + 2)):
-            spk[i] = who
-    return dict(meta=meta, story=story, vocab=vocab, quiz=quiz, segs=segs, audio=audio, n=n, total=total, mouth=mouth, spk=spk)
+# ---------- cards ----------
+def card_for(ln):
+    tag = ln.get("tag", T.CHARS[ln["speaker"]]["label"]) if ln["speaker"] != "Both" else ln["tag"]
+    color = T.CHARS["Mika" if ln["speaker"] == "Both" else ln["speaker"]]["accent"]
+    if ln["sec"] == "quiz":
+        tag = "Quick quiz · " + tag
+    maxw, jp = 840, ln["jp"]
+    if not HAS_JP.search(jp):                                    # English-only line, e.g. "A、Really? B、Goodbye. C、Thank you."
+        opts = [o.strip() for o in re.split(r"\s*(?=\b[A-D][、,.．:：])", jp) if o.strip()]
+        f = T.font(48)
+        if len(opts) >= 2:
+            parts = [(t, f, INK, 68) for o in opts for t in T.wrap(re.sub(r"^([A-D])[、,.．:：]\s*", r"\1.  ", o), f, maxw)]
+        else:
+            parts = [(t, f, INK, 64) for t in T.wrap(jp, f, maxw)]
+        return T.card_image(tag, color, parts)
+    jf = next((T.font(s) for s in (62, 56, 50) if T.font(s).getlength(jp) <= maxw), T.font(56))
+    ro, en = T.font(36, False), T.font(40, False)
+    parts = [(t, jf, INK, 82) for t in T.balanced(jp, jf, maxw)]
+    if ln["romaji"] and ln["romaji"].strip().lower() != jp.strip().lower():
+        parts += [("", None, None, 14)] + [(t, ro, ROMA, 49) for t in T.wrap(ln["romaji"], ro, maxw)]
+    if ln["en"] and ln["en"].strip().lower() not in (jp.strip().lower(), ln["romaji"].strip().lower()):
+        parts += [("", None, None, 18)] + [(t, en, SOFT, 54) for t in T.wrap(ln["en"], en, maxw)]
+    return T.card_image(tag, color, parts)
 
 
-class ShortRenderer:
+# ---------- frames ----------
+class Renderer:
     def __init__(self, B):
-        self.B, self.meta = B, B["meta"]
-        self.starts = [s["start"] for s in B["segs"]]
-        self.bgs, self.cards = {}, {}
-        self.pills = {(nm, a): L.pill(nm, CHARS[nm]["accent"] if a else (226, 214, 206),
-                                      (255, 255, 255) if a else (130, 112, 108), 36)
-                      for nm in CHARS for a in (0, 1)}
+        self.B, self.meta, self.lines = B, B["meta"], B["lines"]
+        self.starts = [l["start"] - 0.02 for l in self.lines]
+        self.cards = [card_for(l) for l in self.lines]
+        self.S = {}
+        for sc in dict.fromkeys(l["scene"] for l in self.lines):
+            m = dict(self.meta, scene=sc)
+            bg, fg = T.make_scene(sc, m)
+            wx = T.pick_weather(self.meta, self.lines, sc)
+            self.S[sc] = dict(bg=bg, fg=fg, wx=wx, wxp=T.make_weather(wx, sc) if wx else None)
+            print("Scene:", sc, "| Weather:", wx or "none")
+        self.pills = {(nm, a): T.pill(T.CHARS[nm]["label"], T.CHARS[nm]["accent"] if a else (226, 214, 206),
+                                      (255, 255, 255) if a else (130, 112, 108)) for nm in T.CHARS for a in (0, 1)}
 
-    def bg(self, name):
-        if name not in self.bgs:
-            im = L.vgrad(SW, SH, (255, 246, 238), (250, 220, 232)).convert("RGB")
-            dd = ImageDraw.Draw(im); rng = random.Random(4)
-            L.blossoms(dd, rng, (0, 0, SW, 520), 26); L.blossoms(dd, rng, (0, 1500, SW, SH), 16)
-            dd.rectangle((0, 1560, SW, SH), fill=(240, 214, 200))
-            im = im.convert("RGBA")
-            d = ImageDraw.Draw(im, "RGBA")
-            sz = 46; ttl = self.meta["title"]; ep = (f"Ep.{self.meta['episode']}  ·  " if str(self.meta["episode"]).strip().isdigit() else f"{self.meta['episode']}  ·  ") if self.meta.get("episode") else ""
-            while sz > 28 and len(wrap(ep + ttl, font(sz), 860)) > 2:
-                sz -= 2
-            lines = wrap(ep + ttl, font(sz), 860)
-            h = 96 + int(sz * 1.25) * len(lines)
-            d.rounded_rectangle((50, 90, SW - 50, 90 + h), radius=48, fill=(255, 255, 255, 238))
-            d.text((90, 112), "TINY JAPANESE", font=font(34), fill=BRAND)
-            for k2, ln in enumerate(lines):
-                d.text((90, 160 + k2 * int(sz * 1.25)), ln, font=font(sz), fill=(60, 45, 48))
-            self.bgs[name] = im
-        return self.bgs[name]
+    def back(self, sc, tt):
+        s = self.S[sc]; fr = s["bg"].copy()
+        if s["wx"]:
+            fr.alpha_composite(T.wx_layer(s["wx"], s["wxp"], tt, False), (0, T.WX_Y0))
+        return fr
 
-    def cached(self, key, fn):
-        if key not in self.cards:
-            self.cards[key] = fn()
-        return self.cards[key]
-
-    def seg_at(self, tt):
-        return self.B["segs"][max(0, bisect.bisect_right(self.starts, tt) - 1)]
-
-    def card_for(self, seg):
-        k = seg["kind"]
-        if k == "title":
-            return card("Mini lesson", BRAND, [(self.meta["title"], 76, True, INK, 14),
-                                               ("Story  ·  Words  ·  Quiz", 40, False, SOFT, 0)], cw=980, min_h=420)
-        if k == "outro":
-            return card("Thanks for watching", BRAND, [("Follow for a new lesson every day!", 62, True, INK, 14),
-                                                       ("また あした！ (mata ashita)", 40, False, SOFT, 0)], cw=980, min_h=420)
-        if k in ("story", "think"):
-            ln = seg["line"]
-            tag = ln.get("tag", ln["speaker"])
-            if ln.get("sec") == "quiz":
-                tag = "Quick quiz · " + tag
-            return card(tag, CHARS[ln["speaker"]]["accent"], sub_blocks(ln["jp"], ln["romaji"], ln["en"], 70, 40, 46), cw=980, min_h=470)
-        if k == "vocab":
-            v = seg["v"]
-            b = [(v["jp"], 110, True, INK, 8), (v["romaji"], 48, False, ROMA, 6), (v["en"], 58, False, SOFT, 14)]
-            if seg["shown"] and v["examples"]:
-                b += example_blocks(v["examples"][0])
-            return card(f"Word {seg['i'] + 1}/{seg['n']}", BRAND, b, cw=980, min_h=520)
-        q, ph = seg["q"], seg["phase"]
-        b = [(q["q"], 50, True, INK, 20)]
-        for j, o in enumerate(q["opts"]):
-            ro = L.to_romaji(o) if L.HAS_JP.search(o) else ""
-            label = f"{'ABCD'[j]}.  {o}" + (f"  ({ro})" if ro else "")
-            col = INK
-            if ph == "answer":
-                col = GREEN if j == q["ans"] else (170, 156, 162)
-            b.append((label, 44, ph != "answer" or j == q["ans"], col, 8))
-        return card("Quick quiz", BRAND, b, cw=980, min_h=520)
+    def line_at(self, tt):
+        return max(0, bisect.bisect_right(self.starts, tt) - 1)
 
     def frame(self, i):
-        tt = i / FPS; seg = self.seg_at(tt); B = self.B
-        j = min(i, B["n"] - 1); who, mouth = B["spk"][j], B["mouth"][j]
-        scene = seg.get("scene") or B["segs"][0]["scene"]
-        if seg["kind"] in ("vocab", "quiz"):
-            scene = B["story"][-1]["scene"]
-        fr = self.bg(scene).copy()
-        if seg["kind"] == "story" and seg["prev_scene"] != scene and tt - seg["start"] < 0.5:
-            fr = Image.blend(self.bg(seg["prev_scene"]), fr, min(1, (tt - seg["start"]) / 0.5))
-        for nm, cx in (("Mika", 270), ("Alex", SW - 270)):
-            speaking = who == nm
-            bob = 6 * abs(math.sin(tt * 7)) if speaking and mouth else 2 * math.sin(tt * 2 + (0 if nm == "Mika" else 1.7))
-            blink = ((i + (0 if nm == "Mika" else 41)) % 72) < 3
-            s = sprite(nm, int(mouth) if speaking else 0, blink, 0.8, True)
-            fr.paste(s, (cx - s.width // 2, int(470 - bob)), s)
-            p = self.pills[(nm, int(speaking))]
-            fr.paste(p, (cx - p.width // 2, 520), p)
-        key = ("c", seg["kind"], id(seg))
-        cd = self.cached(key, lambda: self.card_for(seg))
-        f = min(1, (tt - seg["start"]) / 0.2)
+        B, tt = self.B, i / FPS
+        j = min(i, B["n"] - 1)
+        k = self.line_at(tt); ln = self.lines[k]; sc = ln["scene"]
+        fr = self.back(sc, tt)
+        if k > 0 and self.lines[k - 1]["scene"] != sc and tt - ln["start"] < 0.5:      # crossfade between places
+            fr = Image.blend(self.back(self.lines[k - 1]["scene"], tt), fr, max(0.0, min(1.0, (tt - ln["start"] + 0.02) / 0.5)))
+        cur = next((q for q, tk in enumerate(B["talk"]) if tk["start"] - 0.02 <= tt <= tk["end"] + 0.1), None)
+        for nm, c in T.CHARS.items():
+            sp = cur is not None and B["talk"][cur]["speaker"] in (nm, "Both")
+            mo = int(B["mouth"][j]) if sp else 0
+            bob = 6 * abs(math.sin(tt * 7)) if sp and mo else 2 * math.sin(tt * 2 + (0 if nm == "Mika" else 1.7))
+            blink = ((i + (0 if nm == "Mika" else 41)) % 97) < 4
+            s = T.sprite(nm, mo, blink)
+            fr.paste(s, (c["x"], int(T.CHAR_Y - bob)), s)
+            p = self.pills[(nm, int(sp))]; fr.paste(p, (c["x"] + s.width // 2 - p.width // 2, 330), p)
+        S = self.S[sc]
+        fr.paste(S["fg"], (0, T.TABLE_TOP - 55), S["fg"])
+        if S["wx"]:
+            fr.alpha_composite(T.wx_layer(S["wx"], S["wxp"], tt, True), (0, T.WX_Y0))
+        cd = self.cards[k]; f = min(1, (tt - ln["start"]) / 0.2); dy = int(24 * (1 - f))
         if f < 1:
             cd = cd.copy(); cd.putalpha(cd.getchannel("A").point(lambda v: int(v * f)))
-        fr.paste(cd, ((SW - cd.width) // 2, 1170), cd)
-        if seg["kind"] == "think" or (seg["kind"] == "quiz" and seg["phase"] == "think"):
-            left = max(0.0, 3 - (tt - seg["t0"]))
-            d = ImageDraw.Draw(fr); cx, cy, r = SW // 2, 930, 80
-            d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(255, 255, 255), outline=BRAND, width=9)
-            d.arc((cx - r, cy - r, cx + r, cy + r), -90, -90 + 360 * (left / 3), fill=(255, 190, 110), width=9)
-            d.text((cx, cy), str(max(1, math.ceil(left))), font=font(92), fill=INK, anchor="mm")
+        fr.paste(cd, (20, T.CARD_Y - 40 + dy), cd)
+        for a, b, kk in B["thinks"]:                              # 3-2-1 timer while viewers think
+            if a <= tt < b:
+                left = max(0.0, b - tt); d = ImageDraw.Draw(fr); cx, cy, r = W // 2, 905, 74
+                d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(255, 255, 255), outline=T.BRAND, width=9)
+                d.arc((cx - r, cy - r, cx + r, cy + r), -90, -90 + 360 * (left / THINK), fill=(255, 190, 110), width=9)
+                d.text((cx, cy), str(max(1, math.ceil(left))), font=T.font(86), fill=INK, anchor="mm")
         return fr.convert("RGB")
 
 
 def write_extras(B, outdir, stem):
     m = B["meta"]
-    lines = [f"{m['title']} | Learn Japanese in 1 minute #Shorts", "",
-             "A tiny Japanese story, 1-2 key words and a quick quiz. Follow for a new lesson every day!", ""]
-    for ln in B["story"]:
-        lines.append(f"{ln['jp']} - {ln['en']}")
-    if B["vocab"]:
-        lines += ["", "WORDS"] + [f"{v['jp']} ({v['romaji']}) - {v['en']}" for v in B["vocab"]]
-    lines += ["", "#Shorts #learnjapanese #japanese #JLPT"]
-    open(os.path.join(outdir, stem + ".description.txt"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    out = [f"{m['title']} | Learn Japanese in 1 minute #Shorts", "",
+           "A tiny Japanese story and a quick quiz with Mika and Alex. Follow for a new lesson every day!", ""]
+    for ln in B["lines"]:
+        if HAS_JP.search(ln["jp"]):
+            out.append(f"{ln['jp']} - {ln['en']}")
+    out += ["", "#Shorts #learnjapanese #japanese #JLPT"]
+    open(os.path.join(outdir, stem + ".description.txt"), "w", encoding="utf-8").write("\n".join(out) + "\n")
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Tiny Japanese YouTube Shorts generator")
+    ap = argparse.ArgumentParser(description="Tiny Japanese YouTube Shorts generator (Reels look)")
     ap.add_argument("script"); ap.add_argument("-o", "--out", default="output")
     ap.add_argument("--rate", default="-12%"); ap.add_argument("--dummy-audio", action="store_true")
     ap.add_argument("--preview", metavar="DIR", help="save a few PNG frames and exit")
     a = ap.parse_args()
+    if is_legacy(a.script):                                       # old `vocab:` / `quiz:` scripts keep the previous look
+        import short_legacy
+        return short_legacy.main()
     stem = os.path.splitext(os.path.basename(a.script))[0]
     with tempfile.TemporaryDirectory() as tmp:
-        B = build_short(a.script, a.rate, a.dummy_audio, tmp)
-        R = ShortRenderer(B)
+        B = build(a.script, a.rate, a.dummy_audio, tmp)
+        R = Renderer(B)
         if a.preview:
             os.makedirs(a.preview, exist_ok=True); seen = set()
-            for seg in B["segs"]:
-                key = seg["kind"] + str(seg.get("phase", "")) + str(seg.get("shown", ""))
-                if key in seen:
+            for k, ln in enumerate(B["lines"]):
+                if ln["sec"] in seen:
                     continue
-                seen.add(key); R.frame(min(int((seg["start"] + 0.6) * FPS), B["n"] - 1)).save(os.path.join(a.preview, f"{len(seen):02d}-{key}.png"))
-            print(f"Wrote {len(seen)} preview frames (length {L.fmt_time(B['total'])})"); return
+                seen.add(ln["sec"]); R.frame(min(int((ln["start"] + 0.6) * FPS), B["n"] - 1)).save(os.path.join(a.preview, f"{len(seen):02d}-{ln['sec']}.png"))
+            for q, (x0, x1, kk) in enumerate(B["thinks"][:1]):
+                R.frame(min(int((x0 + 1.0) * FPS), B["n"] - 1)).save(os.path.join(a.preview, "99-think.png"))
+            print(f"Wrote preview frames (length {B['total']:.0f}s)"); return
         os.makedirs(a.out, exist_ok=True)
-        wav = os.path.join(tmp, "final.wav"); L.write_wav(wav, B["audio"])
+        wav = os.path.join(tmp, "final.wav"); T.write_wav(wav, B["audio"])
         out = os.path.join(a.out, stem + ".mp4")
-        p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{SW}x{SH}",
-                              "-r", str(FPS), "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "21",
-                              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", "-shortest", out],
+        p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                              "-r", str(FPS), "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                              "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", out],
                              stdin=subprocess.PIPE)
         for i in range(B["n"]):
             p.stdin.write(R.frame(i).tobytes())
         p.stdin.close(); p.wait()
         write_extras(B, a.out, stem)
-        R.frame(int(min(B["n"] - 1, 4 * FPS))).resize((540, 960), Image.LANCZOS).save(os.path.join(a.out, stem + ".thumbnail.png"))
-        print(f"Wrote {out} ({L.fmt_time(B['total'])})")
+        k1 = min(1, len(B["lines"]) - 1)
+        R.frame(min(B["n"] - 1, int((B["lines"][k1]["start"] + 0.5) * FPS))).resize((540, 960), Image.LANCZOS).save(os.path.join(a.out, stem + ".thumbnail.png"))
+        print(f"Wrote {out} ({B['total']:.0f}s)")
 
 
 if __name__ == "__main__":
