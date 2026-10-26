@@ -23,7 +23,27 @@ Quick checks: `--preview folder/` saves frames, `--dummy-audio` skips the voices
 Lesson thumbnails use the approved illustration in `assets/thumbnail_template.png` (chalkboard, Mika & Alex, brush-stroke banner). `thumb.py` paints each episode's `Ep.N · Title` onto it (the workflow runs it after rendering). Replace the template image to change the look for all future videos. If the file is missing, the built-in drawn cover is used.
 
 ## Shorts
-`short.py` makes a **vertical 1080×1920 Short** (about 45 seconds): hook → mini story (4–6 lines) → 1–2 key words → one quick quiz question (3-second timer) → "follow" outro. Same script format as lessons; `[grammar]` is ignored and the story is capped at 8 lines. Example: `shorts/short-01-first-day.txt`. Run it from the studio page's **Short** tab or via **Actions → Render YouTube Short**. The description includes `#Shorts`.
+`short.py` makes a **vertical 1080x1920 Short** (about 30-58 seconds) with the **same look as the Instagram Reels project** (`tiny-japanese-video`): the engine is `tinyvideo.py`, copied from that repo - 33 hand-drawn places, animated weather (petals, rain, snow ...), 31 anime characters with their own voices, and big Japanese / romaji / English cards.
+
+Script format (`shorts/*.txt`), sections `[hook] [story] [practice] [quiz] [ending]` are all optional:
+```
+title: 3 Japanese Phrases That Make You Sound Natural
+scene: park             # auto, a place name, or switch mid-short with "@scene cafe" on its own line
+weather: auto           # optional: petals leaves snow rain wind none
+cast: mika, alex        # optional: any two characters (e.g. kage, sayo)
+
+[hook]
+Mika: にほんごを もっと はなしたい？ | Nihongo o motto hanashitai? | Want to speak more Japanese?
+[quiz]
+Mika and Alex: またね！ | Mata ne! | See you!     # "Mika and Alex:" = both talk at once
+```
+- Lines are `Japanese | romaji | English`. With only two parts (`Japanese | English`) the romaji is added automatically.
+- In `[quiz]`, the last line (the answer) is preceded by a 3-second countdown. A line whose English contains "your turn", "say it" or "repeat after" is followed by one too.
+- A line with only English (quiz options such as `A、Really? B、Goodbye.`) is read by the English narrator voice and shown as a list.
+- Old scripts that use `vocab:` / `quiz:` lines still render with the previous look (`short_legacy.py`).
+- Quick check without voices: `python short.py shorts/<file>.txt --dummy-audio --preview frames/`.
+
+Run it from the studio page's **Short** tab or via **Actions -> Render YouTube Short**. The description includes `#Shorts`. Keep a short under about 58 seconds (the job prints a warning if it is longer).
 
 ## Automatic YouTube upload
 Uses your own Google Cloud OAuth app (no shared quota). Add these under **Settings → Secrets and variables → Actions**:
