@@ -1,0 +1,23 @@
+title: 3 Tiny Japanese Words
+scene: colorful vocabulary cards
+
+[story]
+Mika: きょうは みじかい ことばを みっつ！ | Today, three short words!
+Alex: もう！ | Already!
+Mika: まだ！ | Not yet!
+Alex: だいじょうぶ！ | It's okay!
+Mika: アレックス、もう ごはんを たべた？ | Alex, have you eaten already?
+Alex: ううん、まだ！ | No, not yet!
+Mika: だいじょうぶ！いっしょに たべよう！ | It's okay! Let's eat together!
+Alex: やったー！ | Yay!
+
+[vocab]
+vocab: もう | already
+example: もう たべました。 | I've already eaten.
+vocab: まだ | not yet / still
+example: まだ たべていません。 | I haven't eaten yet.
+vocab: だいじょうぶ | okay / all right
+example: だいじょうぶです。 | It's okay.
+
+[quiz]
+quiz: What does まだ mean in this conversation? | Already | Not yet | Thank you | B | Alex says まだ because he hasn't eaten yet.
