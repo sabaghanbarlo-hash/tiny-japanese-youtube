@@ -1,0 +1,26 @@
+name: Update Short thumbnails on YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      short:
+        description: "One Short (file name without .txt, e.g. short-202610261837-guess-the-japanese-word). Leave empty for all uploaded Shorts."
+        required: false
+        default: ""
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Set thumbnails
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          SHORT: ${{ github.event.inputs.short }}
+        run: python set_thumbnails.py $SHORT
