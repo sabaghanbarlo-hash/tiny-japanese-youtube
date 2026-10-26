@@ -1,0 +1,23 @@
+title: How to Order a Drink in Japanese
+scene: cafe
+
+[story]
+Mika: アレックス、なにを のみたい？ | Alex, what do you want to drink?
+Alex: コーヒーを のみたい！ | I want to drink coffee!
+Mika: わたしは おちゃが いいな。 | I'd like tea.
+Alex: じゃあ、ちゅうもんしよう！ | Then let's order!
+Mika: すみません。おちゃを ひとつ おねがいします。 | Excuse me. One tea, please.
+Alex: コーヒーを ひとつ おねがいします。 | One coffee, please.
+Mika: ありがとう ございます。 | Thank you very much.
+Alex: たのしみ！ | I'm looking forward to it!
+
+[vocab]
+vocab: のむ | to drink
+example: みずを のみます。 | I drink water.
+vocab: おちゃ | tea
+example: おちゃを おねがいします。 | Tea, please.
+vocab: すみません | excuse me / sorry
+example: すみません。みずを おねがいします。 | Excuse me. Water, please.
+
+[quiz]
+quiz: How do you politely order one coffee? | コーヒーを ひとつ おねがいします | コーヒーが すきです | コーヒーに いきます | A | コーヒーを ひとつ おねがいします means “One coffee, please.”
