@@ -41,6 +41,7 @@ Mika and Alex: またね！ | Mata ne! | See you!     # "Mika and Alex:" = both 
 - In `[quiz]`, the last line (the answer) is preceded by a 3-second countdown. A line whose English contains "your turn", "say it" or "repeat after" is followed by one too.
 - A line with only English (quiz options such as `A、Really? B、Goodbye.`) is read by the English narrator voice and shown as a list.
 - Scripts written as `[story]` + `[vocab]` (`vocab:` / `example:`) + `[quiz]` (`quiz:`) lines render in the same Reels look too (story, 1-2 key words, a quiz with a 3-second countdown, follow outro).
+- Every Short also gets its own **1280x720 thumbnail** (`short_thumb.py`): the Short's place behind Mika & Alex, a big title card, a speech bubble with the key phrase, a "word = meaning" chip and a "Learn Japanese in 1 minute" ribbon. `upload.py` sets it on YouTube automatically. Make just the thumbnail with `python short.py shorts/<file>.txt --thumb output/<file>.thumbnail.png`.
 - Quick check without voices: `python short.py shorts/<file>.txt --dummy-audio --preview frames/`.
 
 Run it from the studio page's **Short** tab or via **Actions -> Render YouTube Short**. The description includes `#Shorts`. Keep a short under about 58 seconds (the job prints a warning if it is longer).

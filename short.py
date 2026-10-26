@@ -336,7 +336,13 @@ def main():
     ap.add_argument("script"); ap.add_argument("-o", "--out", default="output")
     ap.add_argument("--rate", default="-12%"); ap.add_argument("--dummy-audio", action="store_true")
     ap.add_argument("--preview", metavar="DIR", help="save a few PNG frames and exit")
+    ap.add_argument("--thumb", metavar="FILE", help="only make the 1280x720 thumbnail (no voices, no video) and exit")
     a = ap.parse_args()
+    if a.thumb:
+        import short_thumb
+        meta, lines = parse_classic(a.script) if is_classic(a.script) else parse_short(a.script)
+        os.makedirs(os.path.dirname(a.thumb) or ".", exist_ok=True)
+        short_thumb.make_thumbnail(meta, lines, a.thumb); return
     stem = os.path.splitext(os.path.basename(a.script))[0]
     with tempfile.TemporaryDirectory() as tmp:
         B = build(a.script, a.rate, a.dummy_audio, tmp)
@@ -362,7 +368,8 @@ def main():
         p.stdin.close(); p.wait()
         write_extras(B, a.out, stem)
         k1 = min(1, len(B["lines"]) - 1)
-        R.frame(min(B["n"] - 1, int((B["lines"][k1]["start"] + 0.5) * FPS))).resize((540, 960), Image.LANCZOS).save(os.path.join(a.out, stem + ".thumbnail.png"))
+        import short_thumb
+        short_thumb.make_thumbnail(B["meta"], B["lines"], os.path.join(a.out, stem + ".thumbnail.png"))
         print(f"Wrote {out} ({B['total']:.0f}s)")
 
 
