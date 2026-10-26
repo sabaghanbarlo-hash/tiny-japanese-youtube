@@ -1,0 +1,23 @@
+title: How to Say I'm Hungry in Japanese
+scene: park bench
+
+[story]
+Alex: ミカ、おなかが すいた！ | Mika, I'm hungry!
+Mika: わたしも！なにを たべたい？ | Me too! What do you want to eat?
+Alex: サンドイッチを たべたい！ | I want to eat a sandwich!
+Mika: いいね！わたしは おにぎりが いいな。 | Sounds good! I'd like an onigiri.
+Alex: おなかが すいた とき、たべものが ほしくなるね。 | When we're hungry, we want food.
+Mika: そうだね！ | That's right!
+Alex: じゃあ、たべに いこう！ | Then let's go eat!
+Mika: うん、いこう！ | Yes, let's go!
+
+[vocab]
+vocab: おなか | stomach
+example: おなかが いたいです。 | My stomach hurts.
+vocab: たべる | to eat
+example: パンを たべます。 | I eat bread.
+vocab: おにぎり | rice ball
+example: おにぎりを たべたいです。 | I want to eat an onigiri.
+
+[quiz]
+quiz: What does おなかが すいた mean? | I'm hungry | I'm sleepy | I'm thirsty | A | おなかが すいた is a natural Japanese expression meaning “I'm hungry.”
