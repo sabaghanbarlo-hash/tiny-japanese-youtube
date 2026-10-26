@@ -1,0 +1,55 @@
+name: Upload Kana Lessons to YouTube
+
+on:
+  workflow_dispatch:
+    inputs:
+      videos:
+        description: "Space-separated names without extension (e.g. 'hira-a hira-i'). Leave empty to use kana/upload-queue.txt."
+        required: false
+        default: ""
+  push:
+    branches: [kana-lessons]
+    paths: ["kana/upload-queue.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Upload (stops at the first failure, e.g. the daily quota)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY }}
+          VIDEOS: ${{ github.event.inputs.videos }}
+        run: |
+          if [ -z "$VIDEOS" ]; then VIDEOS=$(cat kana/upload-queue.txt); fi
+          for name in $VIDEOS; do
+            f="docs/videos/${name}.mp4"
+            if [ ! -f "$f" ]; then echo "missing $f"; continue; fi
+            python upload.py "$f" || { echo "Stopping after a failure on $name"; break; }
+          done
+      - name: Save upload markers
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/videos/*.youtube.txt || true
+          git commit -m "Record YouTube uploads" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && break
+            sleep $((RANDOM % 15 + 5))
+          done

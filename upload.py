@@ -16,7 +16,7 @@ import requests
 TOKEN_URL = os.environ.get("YT_TOKEN_URL", "https://oauth2.googleapis.com/token")
 UPLOAD_API = os.environ.get("YT_UPLOAD_API", "https://www.googleapis.com/upload/youtube/v3")
 CHUNK = 8 * 1024 * 1024            # must be a multiple of 256 KiB
-TAGS = ["learn japanese", "japanese lesson", "japanese story", "JLPT", "beginner japanese", "tiny japanese"]
+TAGS = ["learn hiragana", "learn katakana", "learn japanese", "japanese for beginners", "japanese alphabet", "kana", "tiny japanese"]
 
 
 def fail(msg):
