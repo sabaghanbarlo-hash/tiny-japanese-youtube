@@ -21,7 +21,7 @@ Script format (dialogue style, sections are optional):
     [ending]
     Mika and Alex: またね！ | Mata ne! | See you!
 
-Older scripts that use `vocab:` / `quiz:` lines still render with the previous engine (short_legacy.py).
+Scripts written as [story] + [vocab] (vocab:/example:) + [quiz] (quiz: ...) also render in this look.
 """
 import argparse, bisect, math, os, re, subprocess, sys, tempfile
 import numpy as np
@@ -35,12 +35,62 @@ HAS_JP = re.compile(r"[\u3040-\u30ff\u3400-\u9fff]")
 INK, SOFT, ROMA = (52, 40, 44), (90, 78, 80), (176, 110, 128)
 THINK_RE = re.compile(r"your turn|say it|repeat after", re.I)
 
+JP_RUN = re.compile(r"([\u3040-\u30ff\u3400-\u9fff][\u3040-\u30ff\u3400-\u9fff、。！？ー・\s]*)")
+GREEN, MAX_STORY, MAX_VOCAB, MAX_QUIZ = (58, 158, 96), 8, 2, 1
+
+
+def default_segs(text, who):
+    """Japanese parts are spoken by the character, English parts by the narrator."""
+    segs = []
+    for k, run in enumerate(JP_RUN.split(text)):
+        if not run.strip() or not re.search(r"[A-Za-z0-9\u3040-\u30ff\u3400-\u9fff]", run):
+            continue
+        segs.append((run.strip(), who, None) if k % 2 else (run.strip(), "Narrator", None))
+    return segs
+
+
+def parse_classic(path):
+    """Scripts written as [story] + [vocab] (vocab:/example:) + [quiz] (quiz: ...) lines -> the same line model."""
+    import lesson as L
+    meta, story, vocab, _grammar, quiz = L.parse_script(path)
+    story, vocab, quiz = story[:MAX_STORY], vocab[:MAX_VOCAB], quiz[:MAX_QUIZ]
+    lines, sc = [], None
+    for ln in story:
+        sc = resolve_scene(ln.get("scene") or "") or sc
+        both = ln.get("tag") is not None
+        lines.append(dict(speaker="Both" if both else ln["speaker"], tag=ln.get("tag"), jp=ln["jp"], en=ln["en"],
+                          romaji=ln["romaji"], scene=sc, sec="story", segs=default_segs(ln["jp"], "Mika" if both else ln["speaker"])))
+    base = resolve_scene(meta.get("scene", "")) or T.pick_scene(meta, lines)
+    for ln in lines:
+        ln["scene"] = ln["scene"] or base
+    last = lines[-1]["scene"]
+    for i, v in enumerate(vocab):
+        segs = ([("Key words.", "Narrator", None)] if i == 0 else []) + [(v["jp"], "Mika", "-25%"), (v["en"].replace("~", "something"), "Narrator", None)]
+        lines.append(dict(speaker="Mika", jp=v["jp"], en=v["en"], romaji=v["romaji"], scene=last, sec="vocab", kind="vocab",
+                          tag=f"Word {i + 1}/{len(vocab)}", segs=segs))
+        if v["examples"]:
+            e = v["examples"][0]
+            lines.append(dict(speaker="Alex", jp=e["jp"], en=e["en"], romaji=e["romaji"], scene=last, sec="vocab", tag="Example",
+                              segs=[(e["jp"], "Alex", "-15%")]))
+    for q in quiz:
+        ask = [("Quick quiz!", "Narrator", None)] + default_segs(q["q"], "Mika")
+        for k, o in enumerate(q["opts"]):
+            ask += [("ABCD"[k], "Narrator", None)] + default_segs(o, "Mika")
+        lines.append(dict(speaker="Mika", jp=q["q"], en="", romaji="", scene=last, sec="quiz", kind="quizq", q=q, segs=ask))
+        ans = [(f"The answer is {'ABCD'[q['ans']]}.", "Narrator", None)] + default_segs(q["opts"][q["ans"]], "Alex")
+        lines.append(dict(speaker="Alex", jp=q["opts"][q["ans"]], en="", romaji="", scene=last, sec="quiz", kind="quizans", q=q, segs=ans))
+    lines.append(dict(speaker="Both", tag="Tiny Japanese", jp="Follow for a new lesson every day!", en="", romaji="", scene=last,
+                      sec="outro", kind="outro", segs=[("Follow Tiny Japanese for a new lesson every day!", "Narrator", None)]))
+    meta["scene"] = base
+    return meta, lines
+
+
 
 def die(msg):
     sys.exit(f"::error::{msg}")
 
 
-def is_legacy(path):
+def is_classic(path):
     raw = open(path, encoding="utf-8").read()
     return bool(re.search(r"^\s*(vocab|quiz)\s*:", raw, re.M | re.I))
 
@@ -127,8 +177,23 @@ def parse_short(path):
 
 
 # ---------- audio / timing ----------
+def speak(ln, tmp, i, rate, dummy):
+    xs = []
+    for k, (text, who, r) in enumerate(ln["segs"]):
+        wav = os.path.join(tmp, f"l{i}_{k}.wav")
+        if who == "Narrator":
+            T.synth(text, "Narrator", wav, "+0%", dummy, voice="en-US-AriaNeural", lang="en")
+        else:
+            T.synth(text, who, wav, r or rate, dummy)
+        xs += [T.read_wav(wav), np.zeros(int(0.12 * SR), np.float32)]
+    return np.concatenate(xs)
+
+
 def build(path, rate, dummy, tmp):
-    meta, lines = parse_short(path)
+    meta, lines = parse_classic(path) if is_classic(path) else parse_short(path)
+    for ln in lines:
+        if "segs" not in ln:
+            ln["segs"] = default_segs(ln["jp"], "Mika" if ln["speaker"] == "Both" else ln["speaker"])
     qidx = [i for i, l in enumerate(lines) if l["sec"] == "quiz"]
     chunks, t = [np.zeros(int(LEAD * SR), np.float32)], LEAD
     talk, thinks = [], []
@@ -136,12 +201,7 @@ def build(path, rate, dummy, tmp):
         if qidx and i == qidx[-1] and len(qidx) >= 2:            # give viewers a few seconds before the answer
             thinks.append((t, t + THINK, i - 1))
             chunks.append(np.zeros(int(THINK * SR), np.float32)); t += THINK
-        wav = os.path.join(tmp, f"l{i}.wav")
-        if HAS_JP.search(ln["jp"]):
-            T.synth(ln["jp"], "Mika" if ln["speaker"] == "Both" else ln["speaker"], wav, rate, dummy)
-        else:                                                    # English-only line (quiz options ...): narrator voice
-            T.synth(ln["jp"], "Narrator", wav, "+0%", dummy, voice="en-US-AriaNeural", lang="en")
-        x = T.read_wav(wav)
+        x = speak(ln, tmp, i, rate, dummy)
         ln["start"], ln["end"] = t, t + len(x) / SR
         talk.append(dict(speaker=ln["speaker"], start=ln["start"], end=ln["end"]))
         chunks += [x, np.zeros(int(GAP * SR), np.float32)]; t = ln["end"] + GAP
@@ -159,7 +219,24 @@ def build(path, rate, dummy, tmp):
 
 # ---------- cards ----------
 def card_for(ln):
-    tag = ln.get("tag", T.CHARS[ln["speaker"]]["label"]) if ln["speaker"] != "Both" else ln["tag"]
+    kind = ln.get("kind")
+    if kind == "vocab":
+        return T.card_image(ln["tag"], T.BRAND, [(ln["jp"], T.font(96), INK, 112), (ln["romaji"], T.font(46, False), ROMA, 62), ("", None, None, 8)]
+                            + [(x, T.font(54, False), SOFT, 68) for x in T.wrap(ln["en"], T.font(54, False), 840)])
+    if kind in ("quizq", "quizans"):
+        q, ans = ln["q"], kind == "quizans"
+        qf, of = T.font(50), T.font(44)
+        parts = [(x, qf, INK, 64) for x in T.wrap(q["q"], qf, 840)] + [("", None, None, 12)]
+        for j, o in enumerate(q["opts"]):
+            ro = T.to_romaji(o) if HAS_JP.search(o) else ""
+            lab = f"{'ABCD'[j]}.  {o}" + (f"  ({ro})" if ro else "")
+            col = INK if not ans else (GREEN if j == q["ans"] else (170, 156, 162))
+            parts += [(x, of, col, 60) for x in T.wrap(lab, of, 840)]
+        return T.card_image("Quick quiz", T.BRAND, parts)
+    if kind == "outro":
+        return T.card_image(ln["tag"], T.BRAND, [("New lesson", T.font(76), INK, 96), ("every day!", T.font(76), INK, 100),
+                                                 ("", None, None, 10), ("Follow Tiny Japanese", T.font(44, False), SOFT, 60)])
+    tag = ln.get("tag") or (T.CHARS[ln["speaker"]]["label"] if ln["speaker"] != "Both" else "Mika & Alex")
     color = T.CHARS["Mika" if ln["speaker"] == "Both" else ln["speaker"]]["accent"]
     if ln["sec"] == "quiz":
         tag = "Quick quiz · " + tag
@@ -245,8 +322,11 @@ def write_extras(B, outdir, stem):
     out = [f"{m['title']} | Learn Japanese in 1 minute #Shorts", "",
            "A tiny Japanese story and a quick quiz with Mika and Alex. Follow for a new lesson every day!", ""]
     for ln in B["lines"]:
-        if HAS_JP.search(ln["jp"]):
+        if ln["sec"] in ("hook", "story", "practice", "ending") and HAS_JP.search(ln["jp"]):
             out.append(f"{ln['jp']} - {ln['en']}")
+    words = [l for l in B["lines"] if l.get("kind") == "vocab"]
+    if words:
+        out += ["", "WORDS"] + [f"{l['jp']} ({l['romaji']}) - {l['en']}" for l in words]
     out += ["", "#Shorts #learnjapanese #japanese #JLPT"]
     open(os.path.join(outdir, stem + ".description.txt"), "w", encoding="utf-8").write("\n".join(out) + "\n")
 
@@ -257,9 +337,6 @@ def main():
     ap.add_argument("--rate", default="-12%"); ap.add_argument("--dummy-audio", action="store_true")
     ap.add_argument("--preview", metavar="DIR", help="save a few PNG frames and exit")
     a = ap.parse_args()
-    if is_legacy(a.script):                                       # old `vocab:` / `quiz:` scripts keep the previous look
-        import short_legacy
-        return short_legacy.main()
     stem = os.path.splitext(os.path.basename(a.script))[0]
     with tempfile.TemporaryDirectory() as tmp:
         B = build(a.script, a.rate, a.dummy_audio, tmp)

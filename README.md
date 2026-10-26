@@ -40,7 +40,7 @@ Mika and Alex: またね！ | Mata ne! | See you!     # "Mika and Alex:" = both 
 - Lines are `Japanese | romaji | English`. With only two parts (`Japanese | English`) the romaji is added automatically.
 - In `[quiz]`, the last line (the answer) is preceded by a 3-second countdown. A line whose English contains "your turn", "say it" or "repeat after" is followed by one too.
 - A line with only English (quiz options such as `A、Really? B、Goodbye.`) is read by the English narrator voice and shown as a list.
-- Old scripts that use `vocab:` / `quiz:` lines still render with the previous look (`short_legacy.py`).
+- Scripts written as `[story]` + `[vocab]` (`vocab:` / `example:`) + `[quiz]` (`quiz:`) lines render in the same Reels look too (story, 1-2 key words, a quiz with a 3-second countdown, follow outro).
 - Quick check without voices: `python short.py shorts/<file>.txt --dummy-audio --preview frames/`.
 
 Run it from the studio page's **Short** tab or via **Actions -> Render YouTube Short**. The description includes `#Shorts`. Keep a short under about 58 seconds (the job prints a warning if it is longer).
