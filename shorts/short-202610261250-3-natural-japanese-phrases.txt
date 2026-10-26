@@ -1,0 +1,23 @@
+title: 3 Natural Japanese Phrases
+scene: park
+
+[story]
+Mika: アレックス、サッカーが すきなの？ | Alex, do you like soccer?
+Alex: うん、だいすき！ | Yes, I love it!
+Mika: そうなんだ！ | Oh, I see!
+Alex: ミカは えを かくのが すき？ | Do you like drawing, Mika?
+Mika: うん、すきだよ！ | Yes, I do!
+Alex: いいね！ | That's nice!
+Mika: ほんとう？ | Really?
+Alex: うん、ほんとう！ | Yes, really!
+
+[vocab]
+vocab: そうなんだ | Oh, I see / Really
+example: そうなんだ！おもしろいね。 | Oh, I see! That's interesting.
+vocab: いいね | That's nice / Sounds good
+example: いいね！いっしょに いこう。 | Sounds good! Let's go together.
+vocab: ほんとう | really / truth
+example: ほんとう？うれしい！ | Really? I'm happy!
+
+[quiz]
+quiz: What does いいね mean? | Goodbye | That's nice | Thank you | B | いいね is a positive reaction meaning “That's nice” or “Sounds good.”
