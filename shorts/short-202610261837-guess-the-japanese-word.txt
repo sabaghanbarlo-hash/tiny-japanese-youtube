@@ -1,0 +1,22 @@
+title: Guess the Japanese Word
+scene: park
+
+[story]
+Mika: にほんご クイズ！ | Japanese quiz!
+Alex: この ことば、わかる？ | Do you know this word?
+Mika: 「こうえん」！ | “Kouen”!
+Alex: こうえんって なに？ | What does kouen mean?
+Mika: A、classroom！ B、park！ C、cafe！ | A, classroom! B, park! C, café!
+Alex: 5びょうで こたえてね！ | Answer in five seconds!
+Mika: 5、4、3、2、1！ | Five, four, three, two, one!
+Alex: こたえは B、park！ | The answer is B, park!
+Mika: こうえんで あそぼう！ | Let's play at the park!
+
+[vocab]
+vocab: こうえん | park
+example: こうえんに いきます。 | I go to the park.
+vocab: あそぶ | to play / hang out
+example: ともだちと あそびます。 | I hang out with my friends.
+
+[quiz]
+quiz: What does こうえん mean? | School | Park | Shop | B | こうえん means “park.”
