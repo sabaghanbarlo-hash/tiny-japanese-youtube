@@ -1,0 +1,63 @@
+name: Daily kana upload to YouTube
+
+# Uploads the next not-yet-uploaded lesson from kana/daily-order.txt (on the kana-lessons branch).
+# Runs every day; videos are private unless the repo variable YT_PRIVACY is set to unlisted or public.
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many videos to upload now (default 1)"
+        required: false
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+
+jobs:
+  upload-next:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: kana-lessons
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Upload the next video(s)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: ${{ vars.YT_PRIVACY }}
+          COUNT: ${{ github.event.inputs.count || '1' }}
+        run: |
+          n=0
+          for name in $(cat kana/daily-order.txt); do
+            if [ "$n" -ge "$COUNT" ]; then break; fi
+            if [ -f "docs/videos/${name}.youtube.txt" ]; then continue; fi
+            f="docs/videos/${name}.mp4"
+            if [ ! -f "$f" ]; then echo "missing $f"; continue; fi
+            python upload.py "$f" || { echo "Upload failed for $name"; exit 1; }
+            n=$((n + 1))
+          done
+          if [ "$n" -eq 0 ]; then echo "Nothing left to upload."; fi
+      - name: Record what was uploaded
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/videos/*.youtube.txt || true
+          git commit -m "Record YouTube upload" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin kana-lessons && git push origin HEAD:kana-lessons && break
+            sleep $((RANDOM % 15 + 5))
+          done
