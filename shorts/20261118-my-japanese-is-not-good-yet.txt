@@ -1,0 +1,18 @@
+title: How to Say “My Japanese Is Not Good Yet”
+scene: cafe
+
+[story]
+Mika: いらっしゃいませ！ なにに しますか？ | Welcome! What would you like?
+Alex: すみません、にほんごは まだ じょうずじゃ ありません。 | Sorry, my Japanese isn't good yet.
+Mika: だいじょうぶ ですよ！ | That's okay!
+Mika: ゆっくり はなしますね。 | I'll speak slowly.
+Alex: ありがとう ございます！ | Thank you very much!
+
+[vocab]
+vocab: まだ | not yet / still
+example: まだ たべて いません。 | I haven't eaten yet.
+vocab: ゆっくり | slowly
+example: ゆっくり おねがいします。 | Slowly, please.
+
+[quiz]
+quiz: Which one means “Slowly, please”? | ゆっくり おねがいします | こんにちは | またね | A | ゆっくり means “slowly.”

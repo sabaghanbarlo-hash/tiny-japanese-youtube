@@ -1,0 +1,18 @@
+title: 3 Ways to Say “Yes” in Japanese
+scene: classroom
+
+[story]
+Mika: にほんごが すき？ | Do you like Japanese?
+Alex: はい！ | Yes!
+Mika: ていねいに いうと「はい」、やわらかく「ええ」。 | Polite: “hai.” Softer: “ee.”
+Mika: ともだちには「うん」。 | With friends: “un.”
+Alex: うん！ | Yeah!
+
+[vocab]
+vocab: ええ | yes (soft, polite)
+example: ええ、そうです。 | Yes, that's right.
+vocab: うん | yeah (casual)
+example: うん、いいよ！ | Yeah, sure!
+
+[quiz]
+quiz: Which one is casual? | はい | ええ | うん | C | うん is casual, for friends.

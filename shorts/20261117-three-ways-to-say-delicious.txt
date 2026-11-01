@@ -1,0 +1,18 @@
+title: 3 Ways to Say “Delicious!” in Japanese
+scene: restaurant
+
+[story]
+Mika: たべて みて！ | Try it!
+Alex: おいしい！ | Delicious!
+Mika: ともだちには「うまい！」とも いうよ。 | With friends you can also say “umai!”
+Alex: めちゃくちゃ おいしい！ | Super delicious!
+Mika: すごい、すごい！ | Awesome!
+
+[vocab]
+vocab: おいしい | delicious
+example: このラーメンは おいしい。 | This ramen is delicious.
+vocab: うまい | tasty (casual)
+example: うまい！ もう ひとつ！ | Yum! One more!
+
+[quiz]
+quiz: Which one means “super delicious”? | めちゃくちゃ おいしい | おやすみ | いただきます | A | めちゃくちゃ adds “super / really.”

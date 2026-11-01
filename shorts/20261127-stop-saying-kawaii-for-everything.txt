@@ -1,0 +1,18 @@
+title: Stop Saying “Kawaii” for Everything! Say These
+scene: store
+
+[story]
+Alex: かわいい！ かわいい！ かわいい！ | Cute! Cute! Cute!
+Mika: ぜんぶ かわいい？ | Everything is cute?
+Mika: ふくは「すてき」。 | For clothes: “suteki” (lovely).
+Mika: くつは「かっこいい」。 | For shoes: “kakkoii” (cool).
+Alex: すてき！ かっこいい！ | Lovely! Cool!
+
+[vocab]
+vocab: すてき | lovely / stylish
+example: すてきな ぼうしですね。 | What a lovely hat!
+vocab: かっこいい | cool
+example: かっこいい くつですね。 | Those are cool shoes!
+
+[quiz]
+quiz: Which one means “cool”? | かっこいい | おいしい | すてき | A | かっこいい means cool or stylish.

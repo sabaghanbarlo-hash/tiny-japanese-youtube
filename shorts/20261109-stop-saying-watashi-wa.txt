@@ -1,0 +1,18 @@
+title: Stop Saying “Watashi wa” in Every Sentence
+scene: classroom
+
+[story]
+Alex: わたしは アレックスです。わたしは がくせいです。 | I'm Alex. I'm a student.
+Mika: アレックス、「わたしは」が おおいよ！ | Alex, so many “watashi wa”!
+Mika: にほんごでは ふつう いわないよ。 | In Japanese we usually leave it out.
+Alex: アレックスです。がくせいです。 | I'm Alex. A student.
+Mika: かんぺき！ | Perfect!
+
+[vocab]
+vocab: がくせい | student
+example: わたしは がくせいです。 | I'm a student.
+vocab: じこしょうかい | self-introduction
+example: じこしょうかいを します。 | I introduce myself.
+
+[quiz]
+quiz: What can you often leave out in Japanese? | わたし | です | ありがとう | A | Japanese often drops “watashi” when it's clear who you mean.

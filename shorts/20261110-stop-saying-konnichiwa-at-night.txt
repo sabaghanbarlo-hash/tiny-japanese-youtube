@@ -1,0 +1,18 @@
+title: Stop Saying “Konnichiwa” at Night!
+scene: street
+
+[story]
+Alex: こんにちは！ | Hello!
+Mika: アレックス、いまは よるだよ。 | Alex, it's night now.
+Mika: よるは「こんばんは」。 | At night: “konbanwa.”
+Alex: こんばんは！ | Good evening!
+Mika: そう！ あさは「おはよう」。 | Yes! In the morning: “ohayou.”
+
+[vocab]
+vocab: こんばんは | good evening
+example: こんばんは、ミカ！ | Good evening, Mika!
+vocab: おはよう | good morning
+example: おはよう！ げんき？ | Good morning! How are you?
+
+[quiz]
+quiz: It's 9 pm. What do you say? | おはよう | こんにちは | こんばんは | C | こんばんは is for the evening and night.

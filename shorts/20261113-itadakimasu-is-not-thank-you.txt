@@ -1,0 +1,18 @@
+title: “Itadakimasu” Does NOT Mean “Thank You”
+scene: restaurant
+
+[story]
+Alex: いただきます！ ありがとう！ | Itadakimasu! Thank you!
+Mika: いただきますは「ありがとう」じゃ ないよ。 | Itadakimasu isn't “thank you.”
+Mika: たべる まえに いうよ。 | We say it before eating.
+Alex: おわったら？ | And when I'm finished?
+Mika: ごちそうさまでした！ | Gochisousama deshita!
+
+[vocab]
+vocab: いただきます | said before eating
+example: みんなで「いただきます！」 | Everyone says “itadakimasu!”
+vocab: ごちそうさまでした | said after eating
+example: ごちそうさまでした。おいしかった！ | Thanks for the meal. It was delicious!
+
+[quiz]
+quiz: What do you say BEFORE eating? | ごちそうさまでした | いただきます | おやすみ | B | いただきます is said before the meal.

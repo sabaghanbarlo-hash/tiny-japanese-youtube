@@ -1,0 +1,73 @@
+title: Shopping in Town
+scene: town
+
+[story]
+@scene town
+> Mika enters left
+& Alex enters right
+> both walk to bakery
+> Alex looks happy
+Alex: いいにおい！ | It smells so good!
+Mika: ここが パンやさんだよ。 | This is the bakery.
+Mika: メロンパンを ふたつ おねがいします。 | Two melon breads, please.
+> Mika buys a bag
+Alex: ありがとう ございます！ | Thank you very much!
+> both walk to fruit shop
+Alex: りんごが やすい！ | The apples are cheap!
+Mika: いくつ ほしい？ | How many do you want?
+Alex: みっつ おねがいします。 | Three, please.
+> both walk to flower shop
+> Mika looks happy
+Mika: わあ、きれいな はな！ | Wow, pretty flowers!
+Alex: ほんとうに きれいだね。 | They really are pretty.
+> both walk to vending machine
+Alex: のみものを かおう！ | Let's buy drinks!
+> Alex buys a drink
+Alex: つめたい おちゃ、いい！ | A cold tea, nice!
+> Mika buys a drink
+Mika: きょうは たくさん かったね！ | We bought a lot today!
+> both look happy
+Alex: また こようね！ | Let's come again!
+
+[vocab]
+1. パンや (panya) — bakery
+   Example: パンやに いきます。 | I go to the bakery.
+2. やすい (yasui) — cheap
+   Example: りんごは やすいです。 | Apples are cheap.
+3. きれい (kirei) — pretty / clean
+   Example: きれいな はなですね。 | What a pretty flower!
+4. かう (kau) — to buy
+   Example: のみものを かいます。 | I buy a drink.
+5. のみもの (nomimono) — drink
+   Example: のみものは おちゃです。 | The drink is tea.
+
+[grammar]
+1. ～を ～つ おねがいします — Ordering a number of things
+   Example 1: メロンパンを ふたつ おねがいします。 | Two melon breads, please.
+   Example 2: りんごを みっつ おねがいします。 | Three apples, please.
+
+2. ～は やすい / たかい — Saying something is cheap or expensive
+   Example 1: りんごは やすいです。 | Apples are cheap.
+   Example 2: このはなは たかいです。 | These flowers are expensive.
+
+[quiz]
+1. What does やすい mean?
+   A) Cheap
+   B) Pretty
+   C) Cold
+   Answer: A
+   Explanation: やすい means cheap.
+
+2. How do you say "Two melon breads, please"?
+   A) メロンパンを かいました
+   B) メロンパンを ふたつ おねがいします
+   C) メロンパンが きれいです
+   Answer: B
+   Explanation: ～を ふたつ おねがいします = two, please.
+
+3. What does のみもの mean?
+   A) Bakery
+   B) Flower
+   C) Drink
+   Answer: C
+   Explanation: のみもの means drink.

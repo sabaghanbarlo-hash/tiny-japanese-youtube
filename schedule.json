@@ -1,0 +1,128 @@
+{
+ "_readme": "scheduler.py prepares everything listed here. paused=true stops it. lookahead_hours = how far ahead to render/upload. publish_at is UTC. Edit a publish_at or remove an item to change the plan; items whose docs/videos/<name>.youtube.txt exists are skipped.",
+ "paused": false,
+ "lookahead_hours": 120,
+ "min_lead_minutes": 20,
+ "items": [
+  {
+   "kind": "short",
+   "file": "20261102-kudasai-sounds-too-direct.txt",
+   "publish_at": "2026-11-02T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261103-stop-saying-sayonara.txt",
+   "publish_at": "2026-11-03T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261104-three-ways-to-say-excuse-me.txt",
+   "publish_at": "2026-11-04T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261106-daijoubu-yes-and-no.txt",
+   "publish_at": "2026-11-06T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261107-where-is-the-station.txt",
+   "publish_at": "2026-11-07T16:00:00Z"
+  },
+  {
+   "kind": "lesson",
+   "file": "20261108-ordering-at-a-cafe.txt",
+   "publish_at": "2026-11-08T14:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261109-stop-saying-watashi-wa.txt",
+   "publish_at": "2026-11-09T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261110-stop-saying-konnichiwa-at-night.txt",
+   "publish_at": "2026-11-10T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261111-three-ways-to-say-im-sorry.txt",
+   "publish_at": "2026-11-11T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261113-itadakimasu-is-not-thank-you.txt",
+   "publish_at": "2026-11-13T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261114-how-much-is-this.txt",
+   "publish_at": "2026-11-14T16:00:00Z"
+  },
+  {
+   "kind": "story",
+   "file": "20261115-a-night-at-the-festival.txt",
+   "publish_at": "2026-11-15T14:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261116-hai-doesnt-always-mean-yes.txt",
+   "publish_at": "2026-11-16T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261117-three-ways-to-say-delicious.txt",
+   "publish_at": "2026-11-17T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261118-my-japanese-is-not-good-yet.txt",
+   "publish_at": "2026-11-18T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261120-chotto-can-mean-no.txt",
+   "publish_at": "2026-11-20T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261121-where-is-the-toilet.txt",
+   "publish_at": "2026-11-21T16:00:00Z"
+  },
+  {
+   "kind": "lesson",
+   "file": "20261122-asking-for-directions.txt",
+   "publish_at": "2026-11-22T14:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261123-suki-can-sound-like-a-confession.txt",
+   "publish_at": "2026-11-23T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261124-how-to-say-im-full.txt",
+   "publish_at": "2026-11-24T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261125-three-ways-to-say-yes.txt",
+   "publish_at": "2026-11-25T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261127-stop-saying-kawaii-for-everything.txt",
+   "publish_at": "2026-11-27T22:00:00Z"
+  },
+  {
+   "kind": "short",
+   "file": "20261128-count-to-ten-in-japanese.txt",
+   "publish_at": "2026-11-28T16:00:00Z"
+  },
+  {
+   "kind": "story",
+   "file": "20261129-shopping-in-town.txt",
+   "publish_at": "2026-11-29T14:00:00Z"
+  }
+ ]
+}

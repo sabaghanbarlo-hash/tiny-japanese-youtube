@@ -1,0 +1,77 @@
+title: A Night at the Festival
+scene: festival
+
+[story]
+@scene festival
+> Mika enters left
+& Alex enters right
+> both walk to takoyaki stall
+> Mika looks excited
+Mika: わあ！ おまつりだ！ | Wow! It's a festival!
+Alex: ひとが たくさん いるね！ | There are so many people!
+> Alex looks at Mika
+Alex: おなかが すいた。 | I'm hungry.
+Mika: たこやきを たべよう！ | Let's eat takoyaki!
+> Alex eats
+> Alex looks surprised
+Alex: あつい！ でも、おいしい！ | Hot! But delicious!
+> both walk to goldfish stall
+Mika: きんぎょすくいを しよう！ | Let's try goldfish scooping!
+> Alex looks worried
+Alex: むずかしそう… | It looks hard...
+> Mika laughs
+> Alex looks happy
+Alex: やった！ ひとつ とれた！ | Yay! I caught one!
+Mika: すごい！ | Amazing!
+> both walk to shaved ice stall
+Mika: かきごおりを かおう！ | Let's buy shaved ice!
+Alex: いちごあじが いい！ | Strawberry flavor for me!
+Mika: わたしは メロンあじが いいな。 | I'd like melon.
+> both eat
+Alex: つめたくて おいしい！ | Cold and delicious!
+> both look happy
+Mika: らいねんも また こようね！ | Let's come again next year!
+Alex: うん、やくそく！ | Yes, promise!
+
+[vocab]
+1. おまつり (omatsuri) — festival
+   Example: おまつりに いきます。 | I go to the festival.
+2. きんぎょ (kingyo) — goldfish
+   Example: きんぎょが すきです。 | I like goldfish.
+3. かきごおり (kakigoori) — shaved ice
+   Example: かきごおりを たべます。 | I eat shaved ice.
+4. あつい (atsui) — hot
+   Example: たこやきは あついです。 | Takoyaki is hot.
+5. つめたい (tsumetai) — cold
+   Example: かきごおりは つめたいです。 | Shaved ice is cold.
+
+[grammar]
+1. ～を ～よう — Let's do something
+   Example 1: たこやきを たべよう！ | Let's eat takoyaki!
+   Example 2: きんぎょすくいを しよう！ | Let's try goldfish scooping!
+
+2. ～が いい — I'd like / that's the one I want
+   Example 1: いちごあじが いい。 | I want strawberry.
+   Example 2: メロンあじが いいな。 | I'd like melon.
+
+[quiz]
+1. What does おまつり mean?
+   A) Festival
+   B) Station
+   C) School
+   Answer: A
+   Explanation: おまつり means festival.
+
+2. How do you say "Let's eat takoyaki!"?
+   A) たこやきは あついです
+   B) たこやきが すきです
+   C) たこやきを たべよう！
+   Answer: C
+   Explanation: ～よう means "let's".
+
+3. What does つめたい mean?
+   A) Hot
+   B) Cold
+   C) Big
+   Answer: B
+   Explanation: つめたい means cold.

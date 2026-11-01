@@ -1,0 +1,19 @@
+title: Stop Saying “Sayonara” — Say This Instead
+scene: station
+
+[story]
+Alex: みんな、さようなら！ | Goodbye, everyone!
+Mika: えっ、さようならは ちょっと おおげさだよ。 | Huh, sayonara is a bit dramatic.
+Alex: ほんとう？ | Really?
+Mika: ふつうは「またね」か「じゃあね」。 | Usually it's “mata ne” or “jaa ne.”
+Alex: またね！ | See you!
+Mika: またね！ | See you!
+
+[vocab]
+vocab: またね | see you (later)
+example: あした、またね！ | See you tomorrow!
+vocab: じゃあね | bye (casual)
+example: じゃあね、ミカ！ | Bye, Mika!
+
+[quiz]
+quiz: What do friends say when they'll meet again soon? | さようなら | またね | はじめまして | B | またね means “see you.”

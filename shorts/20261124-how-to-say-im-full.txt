@@ -1,0 +1,18 @@
+title: How to Say “I’m Full!” in Japanese
+scene: restaurant
+
+[story]
+Mika: もっと たべる？ | Want more?
+Alex: もう おなかが いっぱい！ | I'm already full!
+Mika: デザートは？ | What about dessert?
+Alex: デザートは べつばら！ | Dessert goes in a separate stomach!
+Mika: ふふ、わたしも！ | Ha, me too!
+
+[vocab]
+vocab: おなかが いっぱい | full (stomach)
+example: おなかが いっぱいです。 | I'm full.
+vocab: もっと | more
+example: もっと おねがいします。 | More, please.
+
+[quiz]
+quiz: How do you say “I'm full”? | おなかが すいた | おなかが いっぱい | おなかが いたい | B | おなかが いっぱい means your stomach is full.

@@ -1,0 +1,19 @@
+title: 3 Ways to Say “Excuse Me” in Japanese
+scene: street
+
+[story]
+Alex: すみません、ちょっと いいですか。 | Excuse me, do you have a moment?
+Mika: 「すみません」には いろいろ あるよ。 | There are many kinds of “sumimasen.”
+Mika: ひとを よぶとき：すみません。 | To call someone: sumimasen.
+Mika: とおるとき：ちょっと すみません。 | To pass by: chotto sumimasen.
+Mika: へやに はいるとき：しつれいします。 | When entering a room: shitsurei shimasu.
+Alex: べんりだね！ | Handy!
+
+[vocab]
+vocab: すみません | excuse me / sorry
+example: すみません、えきは どこですか。 | Excuse me, where is the station?
+vocab: しつれいします | excuse me (polite)
+example: しつれいします。 | Excuse me. (entering a room)
+
+[quiz]
+quiz: You want to call a waiter. What do you say? | すみません | さようなら | いただきます | A | すみません is the easy way to get someone's attention.

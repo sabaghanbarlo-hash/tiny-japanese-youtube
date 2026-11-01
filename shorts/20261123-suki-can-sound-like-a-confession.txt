@@ -1,0 +1,18 @@
+title: “Suki” Can Sound Like a Confession!
+scene: park
+
+[story]
+Mika: すきな たべものは？ | What food do you like?
+Alex: すき！ | I like it!
+Mika: なにが？ 「すき」だけだと こくはく みたいだよ！ | What? Just “suki” sounds like a confession!
+Alex: えっ！ ラーメンが すき！ | Oh! I like ramen!
+Mika: そう！「〜が すき」と いおう。 | Yes! Say “...ga suki.”
+
+[vocab]
+vocab: すき | like
+example: ラーメンが すきです。 | I like ramen.
+vocab: だいすき | love / like a lot
+example: ねこが だいすき！ | I love cats!
+
+[quiz]
+quiz: Which sentence clearly says you like ramen? | ラーメンが すきです | すきです | ミカ、すき | A | Say what you like: 〜が すきです.

@@ -1,0 +1,41 @@
+title: Asking for Directions
+scene: station
+
+[story]
+Alex: あれ？ ここは どこ？ | Huh? Where is this?
+Mika: えきの まえだよ。 | It's in front of the station.
+Alex: コンビニは どこですか。 | Where is the convenience store?
+Mika: まっすぐ いって ください。 | Please go straight.
+Alex: まっすぐ ですね。 | Straight, right.
+Mika: ふたつめの かどを みぎに まがって ください。 | Turn right at the second corner, please.
+Alex: みぎ ですね。 | Right, got it.
+Mika: コンビニは ひだりに あります。 | The convenience store is on the left.
+Alex: ちかい ですか。 | Is it near?
+Mika: うん、ここから ごふん くらい。 | Yes, about five minutes from here.
+Alex: いっしょに いって くれる？ | Will you come with me?
+Mika: もちろん！ | Of course!
+Alex: ありがとう！ たすかる！ | Thanks! You're a lifesaver!
+Mika: どういたしまして！ | You're welcome!
+
+[vocab]
+vocab: まっすぐ | straight
+example: まっすぐ いって ください。 | Please go straight.
+vocab: みぎ | right
+example: みぎに まがります。 | I turn right.
+vocab: ひだり | left
+example: コンビニは ひだりに あります。 | The convenience store is on the left.
+vocab: かど | corner
+example: かどを まがります。 | I turn at the corner.
+
+[grammar]
+grammar: ～に まがって ください | Use this to tell someone to turn
+example: みぎに まがって ください。 | Please turn right.
+example: ひだりに まがって ください。 | Please turn left.
+grammar: ～は ～に あります | Use this to say where something is
+example: えきは あそこに あります。 | The station is over there.
+example: コンビニは ひだりに あります。 | The convenience store is on the left.
+
+[quiz]
+quiz: What does みぎ mean? | Left | Right | Straight | B | みぎ means “right.”
+quiz: What does まっすぐ mean? | Corner | Near | Straight | C | まっすぐ means “straight.”
+quiz: How do you say “It's on the left”? | ひだりに あります | みぎに あります | まっすぐ あります | A | ひだり = left.

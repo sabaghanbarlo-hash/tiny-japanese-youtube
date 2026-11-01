@@ -1,0 +1,18 @@
+title: 3 Ways to Say “I’m Sorry” in Japanese
+scene: classroom
+
+[story]
+Alex: あ、ごめん！ | Oh, sorry!
+Mika: ともだちには「ごめん」。 | To friends: gomen.
+Mika: ふつうは「ごめんなさい」。 | Normally: gomen nasai.
+Mika: おきゃくさんには「もうしわけ ありません」。 | To customers: moushiwake arimasen.
+Alex: むずかしい！ | Hard!
+
+[vocab]
+vocab: ごめんなさい | I'm sorry
+example: おくれて、ごめんなさい。 | Sorry I'm late.
+vocab: もうしわけ ありません | I'm very sorry (formal)
+example: もうしわけ ありません。 | I'm very sorry.
+
+[quiz]
+quiz: Which one is the most formal? | ごめん | ごめんなさい | もうしわけ ありません | C | もうしわけ ありません is used with customers and bosses.

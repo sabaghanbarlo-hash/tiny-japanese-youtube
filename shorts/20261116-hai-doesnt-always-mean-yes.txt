@@ -1,0 +1,19 @@
+title: “Hai” Doesn’t Always Mean “Yes” in Japanese
+scene: classroom
+
+[story]
+Mika: アレックス、わかった？ | Alex, did you get it?
+Alex: はい、はい！ | Hai, hai!
+Mika: ほんとうに？ | Really?
+Alex: …じつは、わかりません。 | ...Actually, I don't understand.
+Mika: 「はい」は「きいてるよ」の ときも あるよ。 | Sometimes “hai” means “I'm listening.”
+Alex: なるほど！ | I see!
+
+[vocab]
+vocab: はい | yes / I'm listening
+example: はい、わかりました。 | Yes, I understand.
+vocab: わかりません | I don't understand
+example: すみません、わかりません。 | Sorry, I don't understand.
+
+[quiz]
+quiz: What else can はい mean? | I'm listening | Goodbye | Thank you | A | In conversation, はい can just show you're listening.

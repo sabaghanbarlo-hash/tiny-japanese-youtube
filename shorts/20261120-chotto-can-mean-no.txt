@@ -1,0 +1,19 @@
+title: “Chotto” Can Mean NO in Japanese (Polite Refusal)
+scene: street
+
+[story]
+Alex: あした、いっしょに ごはん たべる？ | Want to eat together tomorrow?
+Mika: あしたは ちょっと… | Tomorrow is a little...
+Alex: ちょっと なに？ | A little what?
+Mika: 「ちょっと…」は やわらかい「ノー」だよ。 | “Chotto...” is a soft “no.”
+Alex: あ、わかった！ | Oh, I get it!
+Mika: また こんど ね！ | Next time!
+
+[vocab]
+vocab: ちょっと | a little / (soft no)
+example: ちょっと まって！ | Wait a moment!
+vocab: こんど | next time
+example: また こんど！ | Next time!
+
+[quiz]
+quiz: What does あしたは ちょっと… usually mean? | Yes, let's go | A soft no | I'm hungry | B | Japanese speakers often refuse softly without saying “no.”

@@ -1,0 +1,17 @@
+title: How to Ask “Where Is the Toilet?” in Japanese
+scene: station
+
+[story]
+Alex: すみません、トイレは どこですか。 | Excuse me, where is the toilet?
+Mika: あちらです。 | It's over there.
+Mika: まっすぐ いって、ひだりです。 | Go straight, then it's on the left.
+Alex: ひだりですね。ありがとう ございます！ | On the left. Thank you very much!
+
+[vocab]
+vocab: トイレ | toilet
+example: トイレは どこですか。 | Where is the toilet?
+vocab: ひだり | left
+example: ひだりに まがります。 | I turn left.
+
+[quiz]
+quiz: What does ひだり mean? | Right | Straight | Left | C | ひだり means “left.”

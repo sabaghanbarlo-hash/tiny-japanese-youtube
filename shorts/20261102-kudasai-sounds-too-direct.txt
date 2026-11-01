@@ -1,0 +1,19 @@
+title: “Kudasai” Sounds Too Direct! Say This Instead
+scene: cafe
+
+[story]
+Alex: コーヒーを ください！ | Give me a coffee!
+Mika: ストップ！ ちょっと ストレートだよ。 | Stop! That's a bit direct.
+Mika: おみせでは「おねがいします」が いいよ。 | In shops, “onegai shimasu” is better.
+Alex: コーヒーを おねがいします。 | Coffee, please.
+Mika: そう！ やさしい かんじ！ | Yes! It sounds gentle!
+Alex: ありがとう ございます！ | Thank you very much!
+
+[vocab]
+vocab: おねがいします | please / I'd like it
+example: みずを おねがいします。 | Water, please.
+vocab: ください | please give me
+example: これを ください。 | Please give me this.
+
+[quiz]
+quiz: Which sounds softer when you order? | コーヒーを ください | コーヒーを おねがいします | コーヒー！ | B | おねがいします is the gentle, polite way to ask.

@@ -1,0 +1,42 @@
+title: Ordering at a Cafe
+scene: cafe
+
+[story]
+Mika: カフェに ついたね！ | We're at the cafe!
+Alex: いいにおい！ | It smells good!
+Mika: なにを のむ？ | What will you drink?
+Alex: コーヒーを のみたい。 | I want to drink coffee.
+Mika: わたしは おちゃに する。 | I'll have tea.
+Alex: すみません！ | Excuse me!
+Mika: コーヒーを ひとつと、おちゃを ひとつ おねがいします。 | One coffee and one tea, please.
+Alex: ケーキも たべたいな。 | I want cake too.
+Mika: いいね！ ケーキも ひとつ おねがいします。 | Nice! One cake too, please.
+Alex: ぜんぶで いくらですか。 | How much is it altogether?
+Mika: せんごひゃくえんです。 | It's 1,500 yen.
+Alex: じゃあ、いっしょに はらおう！ | Then let's pay together!
+Mika: ありがとう ございます。 | Thank you very much.
+Alex: ケーキ、おいしそう！ | The cake looks delicious!
+Mika: いただきます！ | Let's eat!
+
+[vocab]
+vocab: のむ | to drink
+example: みずを のみます。 | I drink water.
+vocab: ひとつ | one (thing)
+example: ケーキを ひとつ おねがいします。 | One cake, please.
+vocab: いくら | how much
+example: これは いくらですか。 | How much is this?
+vocab: おいしそう | looks delicious
+example: おいしそうな ケーキですね。 | What a delicious-looking cake!
+
+[grammar]
+grammar: ～を おねがいします | Use this to order or ask for something politely
+example: コーヒーを おねがいします。 | Coffee, please.
+example: ケーキを ふたつ おねがいします。 | Two cakes, please.
+grammar: ～たい | Use this to say you want to do something
+example: ケーキを たべたい。 | I want to eat cake.
+example: おちゃを のみたいです。 | I want to drink tea.
+
+[quiz]
+quiz: How do you say “One coffee, please”? | コーヒーを ひとつ たべたい | コーヒーを ひとつ おねがいします | コーヒーが ひとつ すき | B | おねがいします is the polite way to order.
+quiz: What does いくら mean? | Where | When | How much | C | いくら means “how much.”
+quiz: Which means “I want to drink tea”? | おちゃを のみたい | おちゃを たべたい | おちゃは ひとつ | A | のみたい = want to drink.

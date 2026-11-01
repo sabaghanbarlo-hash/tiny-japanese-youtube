@@ -1,0 +1,19 @@
+title: How to Ask “Where Is the Station?” in Japanese
+scene: street
+
+[story]
+Alex: あれ？ みちに まよった… | Huh? I'm lost...
+Alex: すみません、えきは どこですか。 | Excuse me, where is the station?
+Mika: えきは あそこです。 | The station is over there.
+Mika: まっすぐ いって ください。 | Please go straight.
+Alex: ありがとう ございます！ | Thank you very much!
+Mika: どういたしまして！ | You're welcome!
+
+[vocab]
+vocab: どこ | where
+example: トイレは どこですか。 | Where is the toilet?
+vocab: えき | station
+example: えきに いきます。 | I go to the station.
+
+[quiz]
+quiz: What does どこ mean? | when | who | where | C | どこ means “where.”

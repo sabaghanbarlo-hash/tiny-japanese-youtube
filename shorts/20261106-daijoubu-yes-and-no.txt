@@ -1,0 +1,19 @@
+title: “Daijoubu” Can Mean Yes AND No!
+scene: cafe
+
+[story]
+Mika: おちゃ、のむ？ | Want some tea?
+Alex: だいじょうぶ！ | Daijoubu!
+Mika: え、のむ？ のまない？ | Huh, yes or no?
+Alex: えっと…のみたいです。 | Um... I want some.
+Mika: だいじょうぶは「いいよ」と「いらない」、りょうほう だよ。 | Daijoubu can mean “OK” and “no thanks.”
+Mika: はっきり いおう！「はい、おねがいします」か「いいえ、けっこうです」。 | Be clear: “Yes, please” or “No, thank you.”
+
+[vocab]
+vocab: だいじょうぶ | OK / no thanks (it depends!)
+example: だいじょうぶ ですか。 | Are you OK?
+vocab: けっこうです | no, thank you
+example: もう けっこうです。 | I'm fine, thank you. (no more)
+
+[quiz]
+quiz: How do you clearly say “yes, please”? | けっこうです | はい、おねがいします | だいじょうぶ | B | はい、おねがいします is a clear yes.

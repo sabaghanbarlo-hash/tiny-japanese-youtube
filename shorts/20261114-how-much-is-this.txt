@@ -1,0 +1,18 @@
+title: How to Ask “How Much Is This?” in Japanese
+scene: store
+
+[story]
+Mika: いらっしゃいませ！ | Welcome!
+Alex: すみません、これは いくらですか。 | Excuse me, how much is this?
+Mika: それは ごひゃくえんです。 | That's 500 yen.
+Alex: やすい！ これを おねがいします。 | Cheap! This one, please.
+Mika: ありがとう ございます！ | Thank you very much!
+
+[vocab]
+vocab: いくら | how much
+example: これは いくらですか。 | How much is this?
+vocab: ごひゃくえん | 500 yen
+example: ごひゃくえんです。 | It's 500 yen.
+
+[quiz]
+quiz: What does これは いくらですか mean? | How much is this? | Where is this? | Who is this? | A | いくら means “how much.”

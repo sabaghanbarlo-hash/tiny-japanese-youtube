@@ -1,11 +1,11 @@
 name: Daily kana upload to YouTube
 
 # Uploads the next not-yet-uploaded lesson from kana/daily-order.txt (on the kana-lessons branch).
-# Runs every day; videos are private unless the repo variable YT_PRIVACY is set to unlisted or public.
+# Runs once a week (Wednesdays; was daily until Nov 2026 - see PLAN.md); videos are private unless the repo variable YT_PRIVACY is set to unlisted or public.
 
 on:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 14 * * 3"
   workflow_dispatch:
     inputs:
       count:

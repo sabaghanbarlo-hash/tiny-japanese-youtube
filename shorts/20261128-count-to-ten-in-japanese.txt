@@ -1,0 +1,19 @@
+title: Count to 10 in Japanese in 30 Seconds
+scene: classroom
+
+[story]
+Mika: いっしょに かぞえよう！ | Let's count together!
+Mika: いち、に、さん、よん、ご！ | One, two, three, four, five!
+Mika: ろく、なな、はち、きゅう、じゅう！ | Six, seven, eight, nine, ten!
+Alex: いち、に、さん、よん、ご！ | One, two, three, four, five!
+Alex: ろく、なな、はち、きゅう、じゅう！ | Six, seven, eight, nine, ten!
+Mika: じょうず！ | Great job!
+
+[vocab]
+vocab: さん | three
+example: さんびゃくえん | 300 yen
+vocab: じゅう | ten
+example: じゅうえん | 10 yen
+
+[quiz]
+quiz: What number is ご? | Five | Six | Ten | A | ご means five.
