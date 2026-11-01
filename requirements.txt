@@ -4,3 +4,4 @@ Pillow>=10.0
 numpy
 pykakasi>=2.2
 requests
+resvg-py>=0.5
