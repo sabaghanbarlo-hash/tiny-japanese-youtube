@@ -221,6 +221,13 @@ def _get(name, c):
     return _CACHE[key]
 
 
+def skin_rgb(name, c=None):
+    """Skin colour (r, g, b) of a character, for the hand redrawn over a held item."""
+    if name.lower() in ("marinette", "adrien") or c is None:
+        return (253, 227, 203)
+    return tuple(int(v) for v in c["skin"])
+
+
 def available(name, c=None):
     return resvg_py is not None and _get(name, c) is not None
 

@@ -702,7 +702,7 @@ _RIG_CACHE = {}
 def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t):
     w, h = int(L.SPRITE_W * out), int(L.SPRITE_H * out * 960 / 760)
     held = bool(item or umb) and not arm
-    im = RS.render(name, L.CHARS[name], mouth, blink, expr, walk, arm, held, t, w, h)
+    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h)
     if im is not None and held:
         # held item / folded umbrella: drawn with the original helpers on a 2x layer (smooth edges), at the rig's right hand
         hx, hy = RS.held_hand(walk)
@@ -716,7 +716,7 @@ def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t):
         if item:
             _draw_item(d, ell, P, kk, item, bite, 0)
         r, cx, cy = 28 * kk, (hx + 12) * kk, (hy + 10) * kk
-        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=tuple(L.CHARS[name]["skin"]))
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=RS.skin_rgb(name, L.CHARS.get(name)))
         im = Image.alpha_composite(im, layer.resize((w, h), Image.LANCZOS))
     return im
 
