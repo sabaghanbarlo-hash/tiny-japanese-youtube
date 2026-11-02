@@ -47,7 +47,7 @@ jobs:
           path: output/
       - name: Upload to YouTube
         id: yt
-        if: ${{ github.event.inputs.story != '' }}
+        if: ${{ github.event.inputs.story != '' && github.ref_name == 'main' }}
         continue-on-error: true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -58,6 +58,7 @@ jobs:
           if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube secrets are not set - skipping the upload"; exit 0; fi
           for f in output/*.mp4; do python upload.py "$f"; done
       - name: Publish to the website
+        if: ${{ github.ref_name == 'main' }}
         run: |
           mkdir -p docs/videos
           cp output/* docs/videos/

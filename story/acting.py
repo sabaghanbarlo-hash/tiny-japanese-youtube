@@ -6,10 +6,14 @@ wheel). Every frame asks Stage.state() what each character is doing. Places have
 ("cotton candy stall") that directions can walk to. Characters are drawn by rig(): the same Mika and
 Alex art as lesson.py, parameterised (walk cycle, waving arm, expressions, held item).
 """
-import functools, math, re
+import functools, math, os, re
 from PIL import Image, ImageDraw, ImageOps
 import atmos as AT
 import scenery as SC
+try:
+    import rigsvg as RS      # rigged characters (needs: pip install resvg-py)
+except Exception:
+    RS = None
 
 L = None            # the lesson module, set by bind()
 SPEED = 380.0       # px / second when walking
@@ -595,7 +599,7 @@ def _draw_umbrella_closed(d, ell, P, S, swing):
 
 
 @functools.lru_cache(None)
-def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False):
+def _rig_original(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False):
     """Full-body Mika / Alex with a walk phase (0-3), a waving arm (0-2), an expression and a held item."""
     c, S = L.CHARS[name], 2 * L.CHAR_SCALE
     w, h = int(560 * S), int(960 * S)
@@ -688,6 +692,56 @@ def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False):
         ell((352, 505, 420, 585), top)
         ell((hx - 32, 380, hx + 32, 452), skin)
     return im.resize((int(L.SPRITE_W * out), int(L.SPRITE_H * out * 960 / 760)), Image.LANCZOS)
+
+
+RIG_SVG = os.environ.get("STORY_RIG", "svg").lower() != "classic"   # STORY_RIG=classic -> the old drawing
+_WARNED = set()
+_RIG_CACHE = {}
+
+
+def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t):
+    w, h = int(L.SPRITE_W * out), int(L.SPRITE_H * out * 960 / 760)
+    held = bool(item or umb) and not arm
+    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h)
+    if im is not None and held:
+        # held item / folded umbrella: drawn with the original helpers on a 2x layer (smooth edges), at the rig's right hand
+        hx, hy = RS.held_hand(walk)
+        kk = 2.0 * w / 583.0
+        layer = Image.new("RGBA", (2 * w, 2 * h), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
+        ox, oy = hx - 383 + 12, hy - 650 + 10
+        P = lambda *v: [int((x + (ox if i % 2 == 0 else oy)) * kk) for i, x in enumerate(v)]
+        ell = lambda box, fill: d.ellipse(P(*box), fill=fill)
+        if umb:
+            _draw_umbrella_closed(d, ell, P, kk, 0)
+        if item:
+            _draw_item(d, ell, P, kk, item, bite, 0)
+        r, cx, cy = 28 * kk, (hx + 12) * kk, (hy + 10) * kk
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=RS.skin_rgb(name, L.CHARS.get(name)))
+        im = Image.alpha_composite(im, layer.resize((w, h), Image.LANCZOS))
+    return im
+
+
+def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False, t=0.0):
+    """Rigged characters (separate head / eyes / mouth / two-joint arms / legs, see rigsvg.py).
+    Same call as before (plus the time t); falls back to the classic drawing if rigsvg or resvg is unavailable."""
+    if RIG_SVG and RS is not None:
+        try:
+            tq = round(t * 12) / 12
+            key = (name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq)
+            im = _RIG_CACHE.get(key)
+            if im is None:
+                im = _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq)
+                if im is None:
+                    raise ValueError("no rig for this character")
+                if len(_RIG_CACHE) > 48:
+                    _RIG_CACHE.pop(next(iter(_RIG_CACHE)))
+                _RIG_CACHE[key] = im
+            return im
+        except Exception as e:
+            if name not in _WARNED:
+                _WARNED.add(name)
+                print("rig: svg drawing failed for", name, "-", e, "- using the classic drawing")
+    return _rig_original(name, mouth, blink, expr, walk, arm, out, item, bite, umb)
 
 
 # ------------------------------------------------------------------ drawing: rides and moving scenery
@@ -986,7 +1040,7 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         Y = floor_y + (py - floor_y) * s
         O = round((L.STAGE_OUT + (out - L.STAGE_OUT) * s) / 0.02) * 0.02
         arm = (1 + int(tt * 5) % 2) if (int(tt / 1.5) % 2 == 0 and s > 0.9) else 0
-        sp = rig(nm, 2 if int(tt * 3) % 2 and s > 0.9 else 0, False, "happy", 0, arm, max(0.1, O))
+        sp = rig(nm, 2 if int(tt * 3) % 2 and s > 0.9 else 0, False, "happy", 0, arm, max(0.1, O), t=tt)
         if s > 0.5:
             sp = sp.crop((0, 0, sp.width, int(sp.height * crop)))
         fr.paste(sp, (int(X - sp.width // 2), int(Y - sp.height)), sp)
@@ -1006,7 +1060,7 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         mth = int(mouth) if speaking else (1 if st["eating"] and int(tt * 4) % 2 else 0)
         has_umb = bool(st.get("umb"))
         is_open = has_umb and rainy
-        s = rig(nm, mth, blink, st["expr"], walk, arm, L.STAGE_OUT, st["item"], min(3, st["bite"]), has_umb and not is_open)
+        s = rig(nm, mth, blink, st["expr"], walk, arm, L.STAGE_OUT, st["item"], min(3, st["bite"]), has_umb and not is_open, t=tt)
         if st["mirror"]:
             s = ImageOps.mirror(s)
         if st["walking"]:
