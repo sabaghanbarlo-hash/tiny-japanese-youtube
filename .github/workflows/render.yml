@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       lesson:
-        description: "Lesson script file name in lessons/ (e.g. 01-first-day-at-school.txt). Leave empty to render all (no YouTube upload)."
+        description: "Lesson script file name(s) in lessons/ (e.g. 01-first-day-at-school.txt). Several names separated by spaces render one after the other. Leave empty to render all (no YouTube upload)."
         required: false
         default: ""
 
@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: render-lesson
+  group: render-lesson-${{ github.event.inputs.lesson }}
   cancel-in-progress: false
 
 jobs:
@@ -33,13 +33,13 @@ jobs:
           STRICT_VOICE: "1"
           LESSON: ${{ github.event.inputs.lesson }}
         run: |
-          if [ -n "$LESSON" ]; then files="lessons/$LESSON"; else files=$(ls lessons/*.txt); fi
+          if [ -n "$LESSON" ]; then files=""; for n in $LESSON; do files="$files lessons/$n"; done; else files=$(ls lessons/*.txt); fi
           for f in $files; do python lesson.py "$f" -o output; done
       - name: Cover image
         env:
           LESSON: ${{ github.event.inputs.lesson }}
         run: |
-          if [ -n "$LESSON" ]; then files="lessons/$LESSON"; else files=$(ls lessons/*.txt); fi
+          if [ -n "$LESSON" ]; then files=""; for n in $LESSON; do files="$files lessons/$n"; done; else files=$(ls lessons/*.txt); fi
           for f in $files; do b=$(basename "$f" .txt); python story/make_cover.py "$f" "output/$b.thumbnail.png" || python thumb.py "$f" "output/$b.thumbnail.png"; done
       - uses: actions/upload-artifact@v4
         with:
@@ -65,8 +65,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/videos
           git commit -m "Publish lesson video" || exit 0
-          git pull --rebase origin main
-          git push
+          for i in 1 2 3 4 5 6; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 15 + 5)); done
       - name: YouTube upload failed
         if: ${{ steps.yt.outcome == 'failure' }}
         run: |
