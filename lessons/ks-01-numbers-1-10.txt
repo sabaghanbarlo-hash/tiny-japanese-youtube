@@ -1,0 +1,36 @@
+title: Numbers 一 to 十
+episode: KS1
+scene: classroom
+
+[story]
+Mika: なん人 ですか。 | Nannin desu ka. | How many people?
+Alex: 三人 です。ミカさんと わたしと ともだち です。 | Sannin desu. Mika-san to watashi to tomodachi desu. | Three. You, me and a friend.
+Mika: なん時に あいますか。 | Nanji ni aimasu ka. | What time shall we meet?
+Alex: 七時に あいます。 | Shichiji ni aimasu. | We'll meet at seven.
+
+[vocab]
+vocab: ひとり | one person (一人)
+example: ひとり | one person
+vocab: ふたり | two people (二人)
+example: ふたり | two people
+vocab: さんにん | three people (三人)
+example: 三人 です。ミカさんと わたしと ともだち です。 | Three. You, me and a friend.
+vocab: ごがつ | May (五月)
+example: ごがつ | May
+vocab: じゅうがつ | October (十月)
+example: じゅうがつ | October
+vocab: よじ | 4 o'clock (四時)
+example: よじ | 4 o'clock
+
+[grammar]
+grammar: Two readings for 4, 7 and 9 | 四 is よん or し, 七 is なな or しち, 九 is きゅう or く. Counting uses よん, なな and きゅう. But 4 o'clock, 7 o'clock and 9 o'clock use the older readings: よじ, しちじ, くじ.
+example: なん人 ですか。 | How many people?
+example: 三人 です。ミカさんと わたしと ともだち です。 | Three. You, me and a friend.
+grammar: Numbers combine by position | 十 is ten, so 二十 is two tens (20), 三十 is thirty and 十一 is eleven (ten + one). The kanji add up like arithmetic: 十二 = 12.
+example: なん人 ですか。 | How many people?
+example: 三人 です。ミカさんと わたしと ともだち です。 | Three. You, me and a friend.
+
+[quiz]
+quiz: What does 三 mean? | two | three | four | B | 三 has three lines.
+quiz: How do you read 十? | juu | ichi | roku | A | 十 is じゅう (juu) = ten.
+quiz: How do you read 四時 (4 o'clock)? | yoji | yonji | shiji | A | 4 o'clock is よじ.

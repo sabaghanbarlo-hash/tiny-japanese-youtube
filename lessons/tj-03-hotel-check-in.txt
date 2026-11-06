@@ -1,0 +1,40 @@
+title: Hotel Check-In
+episode: TJ3
+scene: auto
+
+[story]
+Alex: こんにちは。チェックインを おねがいします。 | Konnichiwa. Chekkuin o onegaishimasu. | Hello. Check-in, please.
+Mika: おなまえを おねがいします。 | Onamae o onegaishimasu. | Your name, please.
+Alex: アレックスです。 | Arekkusu desu. | It's Alex.
+Mika: はい、にはくの ごよやくですね。 | Hai, nihaku no goyoyaku desu ne. | Yes, a two-night reservation.
+Alex: あさごはんは なんじから ですか。 | Asagohan wa nanji kara desu ka. | From what time is breakfast?
+Mika: しちじから くじまで です。 | Shichiji kara kuji made desu. | From seven to nine.
+Alex: ワイファイの パスワードを おしえて ください。 | Waifai no pasuwaado o oshiete kudasai. | Please tell me the Wi-Fi password.
+Mika: これです。おへやは ごかいの ごひゃくにごうしつ です。 | Kore desu. Oheya wa gokai no gohyaku nigoushitsu desu. | Here it is. Your room is 502 on the fifth floor.
+
+[vocab]
+vocab: チェックイン | check-in / check-out
+example: こんにちは。チェックインを おねがいします。 | Hello. Check-in, please.
+vocab: よやく | reservation
+example: はい、にはくの ごよやくですね。 | Yes, a two-night reservation.
+vocab: はく | nights (にはく 2 nights)
+example: はい、にはくの ごよやくですね。 | Yes, a two-night reservation.
+vocab: あさごはん | breakfast
+example: あさごはんは なんじから ですか。 | From what time is breakfast?
+vocab: から まで | from ~ to ~
+example: から まで | from ~ to ~
+vocab: パスワード | password
+example: ワイファイの パスワードを おしえて ください。 | Please tell me the Wi-Fi password.
+
+[grammar]
+grammar: から and まで for ranges | から means “from” and まで means “until”: しちじから くじまで (from seven to nine). Use them for opening hours, breakfast times and check-out times.
+example: あさごはんは なんじから ですか。 | From what time is breakfast?
+example: しちじから くじまで です。 | From seven to nine.
+grammar: Counting nights and floors | Add はく for nights: いっぱく (1), にはく (2), さんぱく (3). Add かい for floors: いっかい (1st), にかい (2nd), ごかい (5th). Some counters change their sound, so learn them as they come.
+example: こんにちは。チェックインを おねがいします。 | Hello. Check-in, please.
+example: おなまえを おねがいします。 | Your name, please.
+
+[quiz]
+quiz: How do you ask for check-in? | チェックインに ありがとう。 | チェックインは いきます。 | チェックインを おねがいします。 | C | Thing + を + おねがいします.
+quiz: What does しちじから くじまで mean? | at seven or nine | seven times nine | from seven to nine o'clock | C | から = from, まで = until.
+quiz: What does にはく mean? | two nights | two rooms | two floors | A | 〜はく counts nights.

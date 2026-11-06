@@ -1,0 +1,38 @@
+title: の, も and と
+episode: GS3
+scene: classroom
+
+[story]
+Alex: これは わたしの かばん です。 | Kore wa watashi no kaban desu. | This is my bag.
+Mika: それも アレックスさんの ですか。 | Sore mo Arekkusu-san no desu ka. | Is that yours too?
+Alex: いいえ、それは ミカさんの です。 | Iie, sore wa Mika-san no desu. | No, that is Mika's.
+Mika: あ、そう です。わたしの ほん と ノート です。 | A, sou desu. Watashi no hon to nooto desu. | Oh, that's right. It's my book and notebook.
+Alex: これも ミカさんの ですか。 | Kore mo Mika-san no desu ka. | Is this Mika's too?
+Mika: いいえ、それは アレックスさんの です。 | Iie, sore wa Arekkusu-san no desu. | No, that's Alex's.
+
+[vocab]
+vocab: かばん | bag
+example: これは わたしの かばん です。 | This is my bag.
+vocab: ほん | book
+example: あ、そう です。わたしの ほん と ノート です。 | Oh, that's right. It's my book and notebook.
+vocab: ノート | notebook
+example: あ、そう です。わたしの ほん と ノート です。 | Oh, that's right. It's my book and notebook.
+vocab: ペン | pen
+example: ペン | pen
+vocab: さいふ | wallet
+example: さいふ | wallet
+vocab: けいたい | mobile phone
+example: けいたい | mobile phone
+
+[grammar]
+grammar: の links two nouns | A の B means “A's B” or “the B of A”: わたしの かばん (my bag), ミカさんの ほん (Mika's book), にほんごの ほん (a Japanese book). The order is the opposite of “book of Mika”: owner first.
+example: これは わたしの かばん です。 | This is my bag.
+example: それも アレックスさんの ですか。 | Is that yours too?
+grammar: の can replace the noun | When the noun is obvious you can drop it and keep の: それは アレックスさんの です。 means “That is Alex's.”
+example: これは わたしの かばん です。 | This is my bag.
+example: それも アレックスさんの ですか。 | Is that yours too?
+
+[quiz]
+quiz: How do you say “my bag”? | わたしと かばん | かばんの わたし | わたしの かばん | C | Owner first, then の, then the thing.
+quiz: Which particle means “also”? | も | の | と | A | も = also, too.
+quiz: Which particle means “and” between nouns? | と | も | は | A | と joins nouns.

@@ -1,0 +1,36 @@
+title: Days of the Week
+episode: KS3
+scene: classroom
+
+[story]
+Alex: 今日は 何曜日 ですか。 | Kyou wa nanyoubi desu ka. | What day of the week is it today?
+Mika: 火曜日 です。 | Kayoubi desu. | It's Tuesday.
+Alex: あしたは 水曜日 ですね。 | Ashita wa suiyoubi desu ne. | So tomorrow is Wednesday.
+Mika: はい。土曜日は やすみ です。 | Hai. Doyoubi wa yasumi desu. | Yes. Saturday is a day off.
+
+[vocab]
+vocab: にちようび | Sunday (日曜日)
+example: にちようび | Sunday
+vocab: げつようび | Monday (月曜日)
+example: げつようび | Monday
+vocab: かようび | Tuesday (火曜日)
+example: 火曜日 です。 | It's Tuesday.
+vocab: すいようび | Wednesday (水曜日)
+example: あしたは 水曜日 ですね。 | So tomorrow is Wednesday.
+vocab: もくようび | Thursday (木曜日)
+example: もくようび | Thursday
+vocab: きんようび | Friday (金曜日)
+example: きんようび | Friday
+
+[grammar]
+grammar: The pattern | Each day is one kanji + 曜日 (ようび). 日 (nichi) Sunday, 月 (getsu) Monday, 火 (ka) Tuesday, 水 (sui) Wednesday, 木 (moku) Thursday, 金 (kin) Friday, 土 (do) Saturday. The on readings are the ones you hear.
+example: 今日は 何曜日 ですか。 | What day of the week is it today?
+example: 火曜日 です。 | It's Tuesday.
+grammar: Kanji with more than one job | 日 also means “day” and “sun” (ひ), 月 means “moon” and “month” (つき, がつ), 水 is “water” (みず), 金 is “gold” or “money” (かね), 木 is “tree” (き), 土 is “earth” (つち). So 一月 is January, and お金 is money.
+example: 今日は 何曜日 ですか。 | What day of the week is it today?
+example: 火曜日 です。 | It's Tuesday.
+
+[quiz]
+quiz: What does 火 mean? | water | tree | fire | C | 火 looks like a flame.
+quiz: How do you read 月曜日? | getsuyoubi | gatsuyoubi | tsukiyoubi | A | 月曜日 = Monday = げつようび.
+quiz: Which day is 土曜日? | Sunday | Thursday | Saturday | C | 土 = earth = Saturday.

@@ -1,0 +1,38 @@
+title: This, That and Where
+episode: GS2
+scene: classroom
+
+[story]
+Alex: すみません、これは なん ですか。 | Sumimasen, kore wa nan desu ka. | Excuse me, what is this?
+Mika: それは けしゴム です。 | Sore wa keshigomu desu. | That is an eraser.
+Alex: あれは なん ですか。 | Are wa nan desu ka. | What is that over there?
+Mika: あれは とけい です。 | Are wa tokei desu. | That is a clock.
+Alex: トイレは どこ ですか。 | Toire wa doko desu ka. | Where is the restroom?
+Mika: あそこ です。あの ドアの よこ です。 | Asoko desu. Ano doa no yoko desu. | It's over there. It's next to that door.
+Alex: ありがとう ございます。 | Arigatou gozaimasu. | Thank you very much.
+
+[vocab]
+vocab: これ | this / that / that over there
+example: すみません、これは なん ですか。 | Excuse me, what is this?
+vocab: どれ | which one
+example: どれ | which one
+vocab: この | this / that / that over there (+ noun)
+example: この | this / that / that over there (+ noun)
+vocab: ここ | here / there / over there
+example: ここ | here / there / over there
+vocab: どこ | where
+example: トイレは どこ ですか。 | Where is the restroom?
+vocab: なん | what
+example: すみません、これは なん ですか。 | Excuse me, what is this?
+
+[grammar]
+grammar: The こそあど system | こ = close to the speaker, そ = close to the listener, あ = far from both, ど = question. これ, それ, あれ, どれ are things. ここ, そこ, あそこ, どこ are places.
+example: すみません、これは なん ですか。 | Excuse me, what is this?
+example: それは けしゴム です。 | That is an eraser.
+grammar: これ stands alone, この needs a noun | Use これ by itself: これは ほん です。 Use この with a noun right after it: この ほんは わたしの です。 The same goes for その and あの.
+example: すみません、これは なん ですか。 | Excuse me, what is this?
+
+[quiz]
+quiz: Which word means “that over there” (far from both)? | あれ | これ | それ | A | あ words are far from both speaker and listener.
+quiz: Which word means “here”? | そこ | ここ | あそこ | B | ここ is the こ (near me) place word.
+quiz: What does どこ mean? | who | what | where | C | どこ asks about a place.

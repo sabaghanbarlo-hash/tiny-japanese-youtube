@@ -1,0 +1,38 @@
+title: です and は: A is B
+episode: GS1
+scene: classroom
+
+[story]
+Mika: わたしは こうこうせい です。 | Watashi wa koukousei desu. | I am a high school student.
+Alex: そう ですか。わたしは エンジニア です。 | Sou desu ka. Watashi wa enjinia desu. | I see. I am an engineer.
+Mika: アレックスさんは にほんじん ですか。 | Arekkusu-san wa nihonjin desu ka. | Are you Japanese, Alex?
+Alex: いいえ、にほんじん じゃ ありません。アメリカじん です。 | Iie, nihonjin ja arimasen. Amerikajin desu. | No, I'm not Japanese. I'm American.
+Mika: ミカは がくせい です。アレックスさんは がくせい ですか。 | Mika wa gakusei desu. Arekkusu-san wa gakusei desu ka. | I'm a student. Are you a student?
+Alex: いいえ、わたしは がくせい じゃ ありません。 | Iie, watashi wa gakusei ja arimasen. | No, I'm not a student.
+
+[vocab]
+vocab: わたし | I, me
+example: わたしは こうこうせい です。 | I am a high school student.
+vocab: さん | Mr, Ms (added to names)
+example: アレックスさんは にほんじん ですか。 | Are you Japanese, Alex?
+vocab: がくせい | student
+example: ミカは がくせい です。アレックスさんは がくせい ですか。 | I'm a student. Are you a student?
+vocab: こうこうせい | high school student
+example: わたしは こうこうせい です。 | I am a high school student.
+vocab: せんせい | teacher
+example: せんせい | teacher
+vocab: かいしゃいん | office worker
+example: かいしゃいん | office worker
+
+[grammar]
+grammar: A は B です | Put the topic first, then は, then the noun, then です. です is the polite “is / am / are”. Notice that は is read “wa” when it is a particle: わたしは がくせい です (Watashi wa gakusei desu).
+example: わたしは こうこうせい です。 | I am a high school student.
+example: そう ですか。わたしは エンジニア です。 | I see. I am an engineer.
+grammar: か turns it into a question | Add か at the end: にほんじん ですか。 There is no need for a question mark, and your voice usually rises a little. Answer with はい (yes) or いいえ (no).
+example: そう ですか。わたしは エンジニア です。 | I see. I am an engineer.
+example: アレックスさんは にほんじん ですか。 | Are you Japanese, Alex?
+
+[quiz]
+quiz: How do you say “I am a student”? | わたしは がくせい か。 | わたしを がくせい です。 | わたしは がくせい です。 | C | A は B です: topic, は, noun, です.
+quiz: How is は read in わたしは? | ha | wa | o | B | As a particle, は is read “wa”.
+quiz: Which word turns a sentence into a question? | か | は | です | A | Add か at the end.

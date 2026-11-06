@@ -1,0 +1,38 @@
+title: Taking a Taxi
+episode: TJ2
+scene: auto
+
+[story]
+Alex: すみません、この じゅうしょまで おねがいします。 | Sumimasen, kono juusho made onegaishimasu. | Excuse me, to this address please.
+Mika: はい、わかりました。 | Hai, wakarimashita. | Yes, understood.
+Alex: どのくらい かかりますか。 | Dono kurai kakarimasu ka. | About how long will it take?
+Mika: じゅうごふん ぐらい です。 | Juugofun gurai desu. | About fifteen minutes.
+Alex: いくら ぐらい ですか。 | Ikura gurai desu ka. | About how much is it?
+Mika: せん ごひゃく えん ぐらい です。 | Sen gohyaku en gurai desu. | About 1,500 yen.
+Alex: ここで とめて ください。 | Koko de tomete kudasai. | Please stop here.
+
+[vocab]
+vocab: タクシー | taxi
+example: タクシー | taxi
+vocab: じゅうしょ | address
+example: すみません、この じゅうしょまで おねがいします。 | Excuse me, to this address please.
+vocab: おねがいします | please (a request)
+example: すみません、この じゅうしょまで おねがいします。 | Excuse me, to this address please.
+vocab: わかりました | I understand, understood
+example: はい、わかりました。 | Yes, understood.
+vocab: どのくらい | about how long / how much
+example: どのくらい かかりますか。 | About how long will it take?
+vocab: かかります | take (time or money)
+example: どのくらい かかりますか。 | About how long will it take?
+
+[grammar]
+grammar: Place + まで + おねがいします | The simplest taxi sentence is destination + まで おねがいします: えきまで おねがいします (To the station, please). Show an address on your phone to be safe.
+example: すみません、この じゅうしょまで おねがいします。 | Excuse me, to this address please.
+grammar: かかります and ぐらい | かかります means that time or money is needed: どのくらい かかりますか (How long does it take?). Add ぐらい after a number for “about”: じゅうごふん ぐらい (about fifteen minutes).
+example: どのくらい かかりますか。 | About how long will it take?
+example: じゅうごふん ぐらい です。 | About fifteen minutes.
+
+[quiz]
+quiz: How do you say “To the station, please”? | えきに ありがとう。 | えきまで おねがいします。 | えきを おねがいします。 | B | Destination + まで + おねがいします.
+quiz: What does どのくらい かかりますか ask? | Where is it? | How long does it take? | Who is it? | B | かかります = takes (time).
+quiz: What does ぐらい mean? | never | exactly | about | C | ぐらい = about, approximately.

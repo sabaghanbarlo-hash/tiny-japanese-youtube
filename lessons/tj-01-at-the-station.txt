@@ -1,0 +1,38 @@
+title: At the Station
+episode: TJ1
+scene: auto
+
+[story]
+Alex: すみません、とうきょうまで いくら ですか。 | Sumimasen, Toukyou made ikura desu ka. | Excuse me, how much is it to Tokyo?
+Mika: せん にひゃく えん です。 | Sen nihyaku en desu. | It's 1,200 yen.
+Alex: なんばんせん ですか。 | Nanbansen desu ka. | Which platform is it?
+Mika: さんばんせん です。 | Sanbansen desu. | Platform 3.
+Alex: なんじに でますか。 | Nanji ni demasu ka. | What time does it leave?
+Mika: じゅうじ じゅうごふんに でます。 | Juuji juugofun ni demasu. | It leaves at 10:15.
+Alex: ありがとう ございます。 | Arigatou gozaimasu. | Thank you very much.
+
+[vocab]
+vocab: きっぷ | ticket
+example: きっぷ | ticket
+vocab: まで | to, as far as, until
+example: すみません、とうきょうまで いくら ですか。 | Excuse me, how much is it to Tokyo?
+vocab: いくら | how much
+example: すみません、とうきょうまで いくら ですか。 | Excuse me, how much is it to Tokyo?
+vocab: ばんせん | platform number ~
+example: なんばんせん ですか。 | Which platform is it?
+vocab: でます | leave, depart
+example: なんじに でますか。 | What time does it leave?
+vocab: つきます | arrive
+example: つきます | arrive
+
+[grammar]
+grammar: 〜まで: as far as | Put the destination before まで: とうきょうまで (to Tokyo). Add いくら ですか for the price: とうきょうまで いくら ですか。 Ask the time with なんじに でますか。
+example: すみません、とうきょうまで いくら ですか。 | Excuse me, how much is it to Tokyo?
+grammar: Platform numbers | Add ばんせん after a number: いちばんせん (1), にばんせん (2), さんばんせん (3). Ask with なんばんせん ですか。
+example: すみません、とうきょうまで いくら ですか。 | Excuse me, how much is it to Tokyo?
+example: せん にひゃく えん です。 | It's 1,200 yen.
+
+[quiz]
+quiz: How do you ask “How much is it to Tokyo?” | とうきょうまで いくら ですか。 | とうきょうまで なんじ ですか。 | とうきょうを いくら ですか。 | A | 〜まで marks the destination.
+quiz: What does さんばんせん mean? | platform 3 | 3 yen | train 3 | A | 〜ばんせん = platform number.
+quiz: How do you ask what time it leaves? | なんばんせん でますか。 | なんじに でますか。 | なんじ いきますか。 | B | なんじに = at what time.
