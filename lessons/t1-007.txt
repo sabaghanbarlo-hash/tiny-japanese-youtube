@@ -1,0 +1,47 @@
+title: Tiny 1000 · Lesson 7 · Places and things
+episode: T1-007
+scene: classroom
+
+[story]
+Mika: アレックスさん、会社 は どこ ですか。 | Arekkusu-san, kaisha wa doko desu ka. | Alex, where is your company?
+Alex: 会社 は 駅 の 近く です。 | Kaisha wa eki no chikaku desu. | The company is near the station.
+Mika: 車 で 会社 に 行きますか。 | Kuruma de kaisha ni ikimasu ka. | Do you go to the company by car?
+Alex: いいえ、電車 で 行きます。 | Iie, densha de ikimasu. | No, I go by train.
+Mika: 店 で 水 と お茶 を 買いますか。 | Mise de mizu to ocha o kaimasu ka. | Do you buy water and tea at the shop?
+Alex: はい、店 で 水 と お茶 を 買います。 | Hai, mise de mizu to ocha o kaimasu. | Yes, I buy water and tea at the shop.
+Mika: 家 に 本 が ありますか。 | Ie ni hon ga arimasu ka. | Is there a book at home?
+Alex: はい、家 に 本 と 電話 が あります。 | Hai, ie ni hon to denwa ga arimasu. | Yes, there is a book and a phone at home.
+
+[vocab]
+vocab: いえ | house; home (家)
+example: 家はここです。 | The house is here.
+vocab: がっこう | school (学校)
+example: 学校は大きいです。 | The school is big.
+vocab: かいしゃ | company (会社)
+example: 会社は駅の前です。 | The company is in front of the station.
+vocab: えき | station (駅)
+example: 駅に行きます。 | I go to the station.
+vocab: みせ | shop (店)
+example: 新しい店があります。 | There is a new shop.
+vocab: みず | water (水)
+example: 水をください。 | Water, please.
+vocab: おちゃ | tea (お茶)
+example: お茶を飲みます。 | I drink tea.
+vocab: ほん | book (本)
+example: 本を読みます。 | I read a book.
+vocab: くるま | car (車)
+example: 車があります。 | I have a car.
+vocab: でんわ | phone; call (電話)
+example: 電話が来ます。 | A call comes in.
+
+[grammar]
+grammar: あります for Things | Use あります to say that something exists or is located somewhere. Put the place before に and the thing before が.
+example: 家 に 本 が ありますか。 | Is there a book at home?
+example: はい、家 に 本 と 電話 が あります。 | Yes, there is a book and a phone at home.
+
+[quiz]
+quiz: What does 水 mean? | tea | car | water | C | 水 (みず) means water.
+quiz: What does 会社 mean? | tea | company | station | B | 会社 (かいしゃ) means company.
+quiz: What does お茶 mean? | company | school | tea | C | お茶 (おちゃ) means tea.
+quiz: Review - What does 高い mean? | delicious | high | big | B | 高い (たかい) means high.
+quiz: Review - What does 朝 mean? | night | morning | yesterday | B | 朝 (あさ) means morning.
