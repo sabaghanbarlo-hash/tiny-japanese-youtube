@@ -1,0 +1,46 @@
+title: Tiny 1000 · Lesson 3 · First everyday verbs
+episode: T1-003
+scene: classroom
+
+[story]
+Mika: アレックスさん、毎日 なにを しますか。 | Arekkusu-san, mainichi nani o shimasu ka. | Alex, what do you do every day?
+Alex: 朝は パンを 食べて、水を 飲みます。 | Asa wa pan o tabete, mizu o nomimasu. | In the morning, I eat bread and drink water.
+Mika: 今日、学校へ 行きますか。 | Kyō, gakkō e ikimasu ka. | Are you going to school today?
+Alex: はい。学校へ 行きます。ミカさんも 来ますか。 | Hai. Gakkō e ikimasu. Mika-san mo kimasu ka. | Yes. I’m going to school. Are you coming too, Mika?
+Mika: はい。いっしょに 映画を 見ますか。 | Hai. Issho ni eiga o mimasu ka. | Yes. Shall we watch a movie together?
+Alex: いいですね。「movie」は 日本語で なんと 言いますか。 | Ii desu ne. “Movie” wa Nihongo de nan to iimasu ka. | Sounds good. How do you say “movie” in Japanese?
+Mika: 「映画」と 言います。おもしろいと 思います。 | “Eiga” to iimasu. Omoshiroi to omoimasu. | We say “eiga.” I think it’s interesting.
+Alex: はい、分かりました。日本の 映画を 知っています。 | Hai, wakarimashita. Nihon no eiga o shitte imasu. | Yes, I understand. I know Japanese movies.
+
+[vocab]
+vocab: する | to do
+example: 勉強をします。 | I study.
+vocab: いく | to go (行く)
+example: 学校に行きます。 | I go to school.
+vocab: くる | to come (来る)
+example: 友達が来ます。 | My friend is coming.
+vocab: みる | to see, to watch (見る)
+example: 映画を見ます。 | I watch a movie.
+vocab: たべる | to eat (食べる)
+example: ご飯を食べます。 | I eat a meal.
+vocab: のむ | to drink (飲む)
+example: 水を飲みます。 | I drink water.
+vocab: いう | to say (言う)
+example: 何と言いますか。 | What do you say?
+vocab: おもう | to think (思う)
+example: いいと思います。 | I think it's good.
+vocab: しる | to know (知る)
+example: 知っています。 | I know.
+vocab: わかる | to understand (分かる)
+example: 分かります。 | I understand.
+
+[grammar]
+grammar: Polite Questions with ますか | Use the polite verb ending ます for statements. Add か to make a polite question.
+example: 毎日 なにを しますか。 | What do you do every day?
+example: 今日、学校へ 行きますか。 | Are you going to school today?
+
+[quiz]
+quiz: What does 見る mean? | to come | to eat | to see, to watch | C | 見る (みる) means to see, to watch.
+quiz: What does 知る mean? | to do | to know | to go | B | 知る (しる) means to know.
+quiz: What does 来る mean? | to come | to eat | to drink | A | 来る (くる) means to come.
+quiz: Review - What does いつ mean? | there | when | where | B | いつ means when.
