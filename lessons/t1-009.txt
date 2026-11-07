@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 9 · Numbers one to ten
+episode: T1-009
+scene: classroom
+
+[story]
+Mika: アレックスさん、数を 数えましょう。 | Arakkusu-san, kazu o kazoemashou. | Alex, let’s count.
+Alex: はい、お願いします。 | Hai, onegaishimasu. | Yes, please.
+Mika: 一、二、三 の 次は なんですか。 | Ichi, ni, san no tsugi wa nan desu ka? | What comes after one, two, three?
+Alex: 四 です。 | Yon desu. | Four.
+Mika: そうです。五、六、七 の 次は なんですか。 | Sou desu. Go, roku, nana no tsugi wa nan desu ka? | That’s right. What comes after five, six, seven?
+Alex: 八 です。 | Hachi desu. | Eight.
+Mika: 正解です。九 の 次は なんですか。 | Seikai desu. Kyuu no tsugi wa nan desu ka? | Correct. What comes after nine?
+Alex: 十 です。 | Juu desu. | Ten.
+
+[vocab]
+vocab: いち | one (一)
+example: 一つください。 | One, please.
+vocab: に | two (二)
+example: 二人います。 | There are two people.
+vocab: さん | three (三)
+example: 三時です。 | It's three o'clock.
+vocab: よん | four (四)
+example: 四月です。 | It's April.
+vocab: ご | five (五)
+example: 五分待ちます。 | I'll wait for five minutes.
+vocab: ろく | six (六)
+example: 六時に行きます。 | I'll go at six.
+vocab: なな | seven (七)
+example: 七人います。 | There are seven people.
+vocab: はち | eight (八)
+example: 八つあります。 | There are eight.
+vocab: きゅう | nine (九)
+example: 九時に会います。 | We meet at nine.
+vocab: じゅう | ten (十)
+example: 十分です。 | It's ten minutes.
+
+[grammar]
+grammar: Polite です | Add です after a number to make a polite statement. Alex uses it to give each answer politely.
+example: 四 です。 | Four.
+example: 八 です。 | Eight.
+
+[quiz]
+quiz: What does 八 mean? | two | five | eight | C | 八 (はち) means eight.
+quiz: What does 六 mean? | five | six | nine | B | 六 (ろく) means six.
+quiz: What does 五 mean? | seven | ten | five | C | 五 (ご) means five.
+quiz: Review - What does 書く mean? | to hold | to write | to speak | B | 書く (かく) means to write.
+quiz: Review - What does いい mean? | good | new | small | A | いい means good.
+quiz: Review - What does そこ mean? | excuse me | there | who | B | そこ means there.
