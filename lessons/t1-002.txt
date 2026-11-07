@@ -1,0 +1,46 @@
+title: Tiny 1000 · Lesson 2 · Question words and polite phrases
+episode: T1-002
+scene: classroom
+
+[story]
+Mika: すみません、この 人 は 誰 ですか。 | Sumimasen, kono hito wa dare desu ka. | Excuse me, who is this person?
+Alex: その 人 は 新しい 先生 です。 | Sono hito wa atarashii sensei desu. | That person is a new teacher.
+Mika: 先生 は どこ に いますか。 | Sensei wa doko ni imasu ka. | Where is the teacher?
+Alex: 先生 は そこ に います。 | Sensei wa soko ni imasu. | The teacher is there.
+Mika: いつ 授業 が 始まりますか。 | Itsu jugyou ga hajimarimasu ka. | When does class start?
+Alex: ９時 に 始まります。ここ で 待ちます。 | Kuji ni hajimarimasu. Koko de machimasu. | It starts at nine. We’ll wait here.
+Mika: ありがとう ございます。 | Arigatou gozaimasu. | Thank you.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[vocab]
+vocab: ここ | here
+example: ここにいます。 | I'm here.
+vocab: そこ | there
+example: そこにあります。 | It's there.
+vocab: どこ | where
+example: 駅はどこですか。 | Where is the station?
+vocab: だれ | who (誰)
+example: あの人は誰ですか。 | Who is that person?
+vocab: いつ | when
+example: いつですか。 | When is it?
+vocab: どう | how
+example: どうですか。 | How is it?
+vocab: この | this (+noun)
+example: この本はいいです。 | This book is good.
+vocab: その | that (+noun)
+example: その人は誰ですか。 | Who is that person?
+vocab: ありがとう | thank you
+example: どうもありがとう。 | Thank you very much.
+vocab: すみません | excuse me; sorry
+example: すみません、トイレはどこですか。 | Excuse me, where is the toilet?
+
+[grammar]
+grammar: この and その | この means “this” and comes before a noun. その means “that” and also comes before a noun.
+example: この 人 は 誰 ですか。 | Who is this person?
+example: その 人 は 新しい 先生 です。 | That person is a new teacher.
+
+[quiz]
+quiz: What does ここ mean? | there | where | here | C | ここ means here.
+quiz: What does そこ mean? | here | where | there | C | そこ means there.
+quiz: What does ありがとう mean? | that (+noun) | when | thank you | C | ありがとう means thank you.
+quiz: Review - What does それ mean? | to be (things) | to be (living things) | that | C | それ means that.
