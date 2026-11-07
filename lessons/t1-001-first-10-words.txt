@@ -1,0 +1,36 @@
+title: Tiny 1000 · Lesson 1 · First 10 Words
+episode: T1-001
+scene: classroom
+
+[story]
+Mika: これは なん ですか。 | Kore wa nan desu ka. | What is this?
+Alex: それは わたしの です。 | Sore wa watashi no desu. | That is mine.
+Mika: あなたは? | Anata wa? | And you?
+Alex: わたしは アレックス です。 | Watashi wa Arekkusu desu. | I'm Alex.
+Mika: ひとが いますか。 | Hito ga imasu ka. | Is anyone there?
+Alex: はい、います。 | Hai, imasu. | Yes, there is.
+Mika: これは ありますか。 | Kore wa arimasu ka. | Do you have this?
+Alex: いいえ、ありません。 | Iie, arimasen. | No, I don't.
+
+[vocab]
+vocab: わたし | I, me (私)
+vocab: あなた | you
+vocab: これ | this
+vocab: それ | that
+vocab: なに / なん | what (何)
+vocab: ひと | person (人)
+vocab: はい | yes
+vocab: いいえ | no
+vocab: いる | to be (people, animals) (居る)
+vocab: ある | to be, to have (things)
+example: これは なん ですか。 | What is this?
+
+[grammar]
+grammar: います vs あります | いる is for living things, ある is for things. ひとが います. ほんが あります.
+example: ひとが いますか。 | Is anyone there?
+example: これは ありますか。 | Do you have this?
+
+[quiz]
+quiz: What does ひと mean? | thing | person | what | B | ひと (人) = person.
+quiz: Which word is for living things? | いる | ある | これ | A | いる is for people and animals.
+quiz: How do you say "no"? | はい | いいえ | それ | B | いいえ = no.
