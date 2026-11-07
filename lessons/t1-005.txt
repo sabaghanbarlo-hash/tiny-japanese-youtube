@@ -1,0 +1,47 @@
+title: Tiny 1000 · Lesson 5 · People
+episode: T1-005
+scene: classroom
+
+[story]
+Mika: アレックスさんの 名前は なんですか。 | Arekkusu-san no namae wa nan desu ka? | What is your name, Alex?
+Alex: わたしの 名前は アレックスです。学生です。 | Watashi no namae wa Arekkusu desu. Gakusei desu. | My name is Alex. I’m a student.
+Mika: あの 男の人は 先生ですか。 | Ano otoko no hito wa sensei desu ka? | Is that man a teacher?
+Alex: はい、先生です。あの 女の人は 友達です。 | Hai, sensei desu. Ano onna no hito wa tomodachi desu. | Yes, he is a teacher. That woman is my friend.
+Mika: この 子供は だれですか。 | Kono kodomo wa dare desu ka? | Who is this child?
+Alex: この 子供は わたしの おいです。 | Kono kodomo wa watashi no oi desu. | This child is my nephew.
+Mika: 写真に お母さんと お父さんも いますか。 | Shashin ni okaasan to otousan mo imasu ka? | Are your mother and father in the picture too?
+Alex: はい、写真に 母と 父も います。家族の 写真です。 | Hai, shashin ni haha to chichi mo imasu. Kazoku no shashin desu. | Yes, my mother and father are in the picture too. It’s a family picture.
+
+[vocab]
+vocab: ともだち | friend (友達)
+example: 友達と話します。 | I talk with a friend.
+vocab: せんせい | teacher (先生)
+example: 先生は優しいです。 | The teacher is kind.
+vocab: がくせい | student (学生)
+example: 学生が多いです。 | There are many students.
+vocab: かぞく | family (家族)
+example: 家族は四人です。 | There are four people in my family.
+vocab: はは | mother (my) (母)
+example: 母は料理が上手です。 | My mother is good at cooking.
+vocab: ちち | father (my) (父)
+example: 父は会社に行きます。 | My father goes to work.
+vocab: おとこ | man (男)
+example: 男の人がいます。 | There is a man.
+vocab: おんな | woman (女)
+example: 女の人が来ます。 | A woman is coming.
+vocab: こども | child (子供)
+example: 子供が好きです。 | I like children.
+vocab: なまえ | name (名前)
+example: お名前は何ですか。 | What is your name?
+
+[grammar]
+grammar: Topic は and polite です | Use は to mark the topic and です to make a polite statement. Add か at the end to make a polite yes-or-no question.
+example: わたしの 名前は アレックスです。 | My name is Alex.
+example: あの 男の人は 先生ですか。 | Is that man a teacher?
+
+[quiz]
+quiz: What does 名前 mean? | mother (my) | name | student | B | 名前 (なまえ) means name.
+quiz: What does 母 mean? | name | mother (my) | student | B | 母 (はは) means mother (my).
+quiz: What does 父 mean? | name | father (my) | mother (my) | B | 父 (ちち) means father (my).
+quiz: Review - What does 今 mean? | before | now | night | B | 今 (いま) means now.
+quiz: Review - What does この mean? | that (+noun) | this (+noun) | thank you | B | この means this (+noun).
