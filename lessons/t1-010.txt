@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 10 · Connectors and degree words
+episode: T1-010
+scene: classroom
+
+[story]
+Mika: コーヒーは とても おいしいですか。 | Koohii wa totemo oishii desu ka. | Is the coffee very good?
+Alex: はい、とても おいしいです。でも、少し あついです。 | Hai, totemo oishii desu. Demo, sukoshi atsui desu. | Yes, it’s very good. But it’s a little hot.
+Mika: ミルクを もっと 入れますか。 | Miruku o motto iremasu ka. | Would you like more milk?
+Alex: はい、ミルクを たくさん 入れてください。 | Hai, miruku o takusan irete kudasai. | Yes, please add a lot of milk.
+Mika: もう 飲みましたか。 | Mou nomimashita ka. | Have you already had a drink?
+Alex: まだです。少し さましてから 飲みます。 | Mada desu. Sukoshi samashite kara nomimasu. | Not yet. I’ll let it cool a little, then drink it.
+Mika: だから、ゆっくり 飲んでくださいね。 | Dakara, yukkuri nonde kudasai ne. | So, please drink it slowly.
+Alex: はい。そして、また あした 飲みます。 | Hai. Soshite, mata ashita nomimasu. | Yes. And then, I’ll drink it again tomorrow.
+
+[vocab]
+vocab: とても | very
+example: とてもおいしいです。 | It's very delicious.
+vocab: もっと | more
+example: もっと食べます。 | I'll eat more.
+vocab: すこし | a little (少し)
+example: 少し待ちます。 | I'll wait a little.
+vocab: たくさん | a lot
+example: たくさんあります。 | There's a lot.
+vocab: でも | but
+example: でも、高いです。 | But it's expensive.
+vocab: そして | and then
+example: そして、行きます。 | And then I go.
+vocab: だから | so, therefore
+example: だから行きません。 | So I'm not going.
+vocab: また | again
+example: また来ます。 | I'll come again.
+vocab: まだ | still; not yet
+example: まだ分かりません。 | I don't understand yet.
+vocab: もう | already; more
+example: もう食べました。 | I already ate.
+
+[grammar]
+grammar: Using でも for contrast | でも means “but” and often starts a sentence that contrasts with the idea before it. In polite conversation, it can connect two simple statements.
+example: はい、とても おいしいです。 | Yes, it’s very good.
+example: でも、少し あついです。 | But it’s a little hot.
+
+[quiz]
+quiz: What does もう mean? | already | still | so, therefore | A | もう means already.
+quiz: What does とても mean? | and then | but | very | C | とても means very.
+quiz: What does だから mean? | but | more | so, therefore | C | だから means so, therefore.
+quiz: Review - What does 三 mean? | seven | three | two | B | 三 (さん) means three.
+quiz: Review - What does 駅 mean? | station | phone | house | A | 駅 (えき) means station.
+quiz: Review - What does 知る mean? | to understand | to say | to know | C | 知る (しる) means to know.
