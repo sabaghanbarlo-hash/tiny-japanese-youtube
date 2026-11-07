@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 8 · Everyday verbs 2
+episode: T1-008
+scene: classroom
+
+[story]
+Mika: アレックスさんは どこに 住んで いますか。 | Arekkusu-san wa doko ni sunde imasu ka? | Alex, where do you live?
+Alex: 東京に 住んで います。カフェで 働いて います。 | Tōkyō ni sunde imasu. Kafe de hataraite imasu. | I live in Tokyo. I work at a café.
+Mika: 仕事で 日本語を 話しますか。 | Shigoto de Nihongo o hanashimasu ka? | Do you speak Japanese at work?
+Alex: はい。日本語を 話します。お客さんの 話を 聞きます。 | Hai. Nihongo o hanashimasu. Okyaku-san no hanashi o kikimasu. | Yes. I speak Japanese. I listen to customers.
+Mika: 休みの日に 本を 読みますか。 | Yasumi no hi ni hon o yomimasu ka? | Do you read books on your days off?
+Alex: はい。本を 読みます。ノートに ことばを 書きます。 | Hai. Hon o yomimasu. Nōto ni kotoba o kakimasu. | Yes. I read books. I write words in a notebook.
+Mika: その ペンを 使いますか。ノートを 持っていますか。 | Sono pen o tsukaimasu ka? Nōto o motte imasu ka? | Do you use that pen? Do you have a notebook?
+Alex: はい、ペンを 使います。ノートを 持っています。あとで コーヒーを 買って、ここで 待ちます。 | Hai, pen o tsukaimasu. Nōto o motte imasu. Ato de kōhī o katte, koko de machimasu. | Yes, I use a pen. I have a notebook. I’ll buy coffee later and wait here.
+
+[vocab]
+vocab: かう | to buy (買う)
+example: 本を買います。 | I buy a book.
+vocab: はなす | to speak (話す)
+example: 日本語を話します。 | I speak Japanese.
+vocab: きく | to listen; to ask (聞く)
+example: 音楽を聞きます。 | I listen to music.
+vocab: よむ | to read (読む)
+example: 新聞を読みます。 | I read the newspaper.
+vocab: かく | to write (書く)
+example: 名前を書きます。 | I write my name.
+vocab: つかう | to use (使う)
+example: 電話を使います。 | I use the phone.
+vocab: まつ | to wait (待つ)
+example: 駅で待ちます。 | I wait at the station.
+vocab: もつ | to hold; to have (持つ)
+example: 本を持っています。 | I have a book.
+vocab: すむ | to live (reside) (住む)
+example: 東京に住んでいます。 | I live in Tokyo.
+vocab: はたらく | to work (働く)
+example: 会社で働きます。 | I work at a company.
+
+[grammar]
+grammar: 〜ています for states | Use 〜ています to describe a continuing situation or state. It can tell where someone lives or what they have.
+example: 東京に 住んで います。 | I live in Tokyo.
+example: ノートを 持っています。 | I have a notebook.
+
+[quiz]
+quiz: What does 読む mean? | to read | to live (reside) | to work | A | 読む (よむ) means to read.
+quiz: What does 使う mean? | to use | to listen | to buy | A | 使う (つかう) means to use.
+quiz: What does 待つ mean? | to speak | to work | to wait | C | 待つ (まつ) means to wait.
+quiz: Review - What does 学校 mean? | tea | station | school | C | 学校 (がっこう) means school.
+quiz: Review - What does 女 mean? | woman | father (my) | child | A | 女 (おんな) means woman.
+quiz: Review - What does これ mean? | yes | you | this | C | これ means this.
