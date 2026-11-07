@@ -1,0 +1,47 @@
+title: Tiny 1000 · Lesson 6 · First adjectives
+episode: T1-006
+scene: classroom
+
+[story]
+Mika: これは 新しい 店 ですか。 | Kore wa atarashii mise desu ka. | Is this a new shop?
+Alex: はい、新しい 店 です。店は 大きい です。 | Hai, atarashii mise desu. Mise wa ookii desu. | Yes, it’s a new shop. The shop is big.
+Mika: ケーキは おいしい ですか。 | Keeki wa oishii desu ka. | Is the cake delicious?
+Alex: はい、とても おいしい です。いい ですね。 | Hai, totemo oishii desu. Ii desu ne. | Yes, it’s very delicious. It’s nice.
+Mika: コーヒーは 高い ですか。 | Koohii wa takai desu ka. | Is the coffee expensive?
+Alex: いいえ、安い です。この カップは 小さい です。 | Iie, yasui desu. Kono kappu wa chiisai desu. | No, it’s cheap. This cup is small.
+Mika: この 店は 楽しい ですか。 | Kono mise wa tanoshii desu ka. | Is this shop fun?
+Alex: はい、楽しい です。この 店が 好き です。でも、少し 忙しい です。 | Hai, tanoshii desu. Kono mise ga suki desu. Demo, sukoshi isogashii desu. | Yes, it’s fun. I like this shop. But I’m a little busy.
+
+[vocab]
+vocab: いい | good
+example: 天気がいいです。 | The weather is nice.
+vocab: おおきい | big (大きい)
+example: 大きい家です。 | It's a big house.
+vocab: ちいさい | small (小さい)
+example: 小さい犬です。 | It's a small dog.
+vocab: あたらしい | new (新しい)
+example: 新しい車です。 | It's a new car.
+vocab: たかい | high; expensive (高い)
+example: この本は高いです。 | This book is expensive.
+vocab: やすい | cheap (安い)
+example: 安い店です。 | It's a cheap shop.
+vocab: おいしい | delicious
+example: ご飯がおいしいです。 | The food is delicious.
+vocab: たのしい | fun (楽しい)
+example: 日本語は楽しいです。 | Japanese is fun.
+vocab: いそがしい | busy (忙しい)
+example: 今日は忙しいです。 | I'm busy today.
+vocab: すき | to like; liked (好き)
+example: 猫が好きです。 | I like cats.
+
+[grammar]
+grammar: Polite い-Adjectives | Many い-adjectives can be followed by です to make a polite statement. The adjective stays in its plain form before です.
+example: 店は 大きい です。 | The shop is big.
+example: とても おいしい です。 | It’s very delicious.
+
+[quiz]
+quiz: What does 好き mean? | to like | delicious | cheap | A | 好き (すき) means to like.
+quiz: What does 大きい mean? | delicious | new | big | C | 大きい (おおきい) means big.
+quiz: What does 楽しい mean? | fun | to like | high | A | 楽しい (たのしい) means fun.
+quiz: Review - What does 先生 mean? | student | father (my) | teacher | C | 先生 (せんせい) means teacher.
+quiz: Review - What does 見る mean? | to see, to watch | to eat | to go | A | 見る (みる) means to see, to watch.
