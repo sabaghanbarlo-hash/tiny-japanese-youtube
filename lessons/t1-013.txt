@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 13 · Days of the week and date words
+episode: T1-013
+scene: classroom
+
+[story]
+Mika: 今日の 日付は 何日ですか。 | Kyou no hizuke wa nan-nichi desu ka. | What is today’s date?
+Alex: 今日は 五月 五日です。 | Kyou wa gogatsu itsuka desu. | Today is May 5th.
+Mika: 今日は 何曜日ですか。 | Kyou wa nan-youbi desu ka. | What day is it today?
+Alex: 今日は 月曜日です。 | Kyou wa getsuyoubi desu. | Today is Monday.
+Mika: 火曜日と 水曜日は 何を しますか。 | Kayoubi to suiyoubi wa nani o shimasu ka. | What do you do on Tuesday and Wednesday?
+Alex: 火曜日は 勉強します。水曜日は 休みます。 | Kayoubi wa benkyou shimasu. Suiyoubi wa yasumimasu. | I study on Tuesday. I rest on Wednesday.
+Mika: 先月は 木曜日に 旅行しましたか。 | Sengetsu wa mokuyoubi ni ryokou shimashita ka. | Did you travel on a Thursday last month?
+Alex: はい。来月は 金曜日と 土曜日に 旅行します。日曜日は 家に います。 | Hai. Raigetsu wa kinyoubi to doyoubi ni ryokou shimasu. Nichiyoubi wa ie ni imasu. | Yes. Next month, I’ll travel on Friday and Saturday. On Sunday, I’ll be at home.
+
+[vocab]
+vocab: げつようび | Monday (月曜日)
+example: 月曜日は休みです。 | Monday is a day off.
+vocab: かようび | Tuesday (火曜日)
+example: 火曜日に日本語を勉強します。 | I study Japanese on Tuesday.
+vocab: すいようび | Wednesday (水曜日)
+example: 水曜日に泳ぎます。 | I swim on Wednesday.
+vocab: もくようび | Thursday (木曜日)
+example: 木曜日は雨です。 | It is rainy on Thursday.
+vocab: きんようび | Friday (金曜日)
+example: 金曜日に帰ります。 | I go home on Friday.
+vocab: どようび | Saturday (土曜日)
+example: 土曜日に映画を見ます。 | I watch a movie on Saturday.
+vocab: にちようび | Sunday (日曜日)
+example: 日曜日に料理をします。 | I cook on Sunday.
+vocab: ひづけ | date (日付)
+example: 日付を紙に書きます。 | I write the date on paper.
+vocab: せんげつ | last month (先月)
+example: 先月、日本へ行きました。 | I went to Japan last month.
+vocab: らいげつ | next month (来月)
+example: 来月、日本へ行きます。 | I will go to Japan next month.
+
+[grammar]
+grammar: Topic marker は | は marks the topic of a sentence. It often follows the person, thing, or time being discussed.
+example: 今日は 何曜日ですか。 | What day is it today?
+example: 今日は 月曜日です。 | Today is Monday.
+
+[quiz]
+quiz: What does 金曜日 mean? | next month | last month | Friday | C | 金曜日 (きんようび) means Friday.
+quiz: What does 来月 mean? | next month | Thursday | Wednesday | A | 来月 (らいげつ) means next month.
+quiz: What does 水曜日 mean? | Monday | Saturday | Wednesday | C | 水曜日 (すいようび) means Wednesday.
+quiz: Review - What does 着る mean? | brush | put on | wake up | B | 着る (きる) means put on.
+quiz: Review - What does まだ mean? | very | still | a lot | B | まだ means still.
+quiz: Review - What does 好き mean? | to like | good | cheap | A | 好き (すき) means to like.
