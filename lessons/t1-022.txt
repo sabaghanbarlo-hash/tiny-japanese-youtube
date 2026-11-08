@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 22 · Clothes and accessories
+episode: T1-022
+scene: classroom
+
+[story]
+Mika: 今日 は どんな 服 ですか。 | Kyou wa donna fuku desu ka? | What are you wearing today?
+Alex: シャツ と ズボン です。 | Shatsu to zubon desu. | A shirt and pants.
+Mika: 靴下 と 靴 を 履きますか。 | Kutsushita to kutsu o hakimasu ka? | Are you wearing socks and shoes?
+Alex: はい、靴下 と 靴 を 履きます。 | Hai, kutsushita to kutsu o hakimasu. | Yes, I’m wearing socks and shoes.
+Mika: その 帽子 は すてきですね。 | Sono boushi wa suteki desu ne. | That hat is lovely.
+Alex: ありがとうございます。バッグ と コート も あります。 | Arigatou gozaimasu. Baggu to kooto mo arimasu. | Thank you. I also have a bag and a coat.
+Mika: ネクタイ も しますか。 | Nekutai mo shimasu ka? | Do you wear a tie too?
+Alex: はい、ネクタイ も します。 | Hai, nekutai mo shimasu. | Yes, I wear a tie too.
+
+[vocab]
+vocab: ふく | clothes (服)
+example: 服は黒いです。 | The clothes are black.
+vocab: シャツ | shirt
+example: シャツを着ます。 | I wear a shirt.
+vocab: ズボン | pants
+example: ズボンを履きます。 | I put on pants.
+vocab: くつ | shoes (靴)
+example: 靴を履きます。 | I put on shoes.
+vocab: くつした | socks (靴下)
+example: 靴下を履きます。 | I put on socks.
+vocab: ぼうし | hat (帽子)
+example: 帽子をかぶります。 | I put on a hat.
+vocab: コート | coat
+example: コートを着ます。 | I wear a coat.
+vocab: バッグ | bag
+example: バッグは黒いです。 | The bag is black.
+vocab: はく | to wear (lower body, shoes) (履く)
+example: 靴を履きます。 | I put on shoes.
+vocab: ねくたい | tie (ネクタイ)
+example: ネクタイを買います。 | I’ll buy a tie.
+
+[grammar]
+grammar: Connecting Nouns with と | Use と between nouns to mean “and.” In the dialogue, it connects clothing items.
+example: シャツ と ズボン です。 | A shirt and pants.
+example: 靴下 と 靴 を 履きます。 | I wear socks and shoes.
+
+[quiz]
+quiz: What does ズボン mean? | pants | shirt | hat | A | ズボン means pants.
+quiz: What does 靴 mean? | socks | shoes | shirt | B | 靴 (くつ) means shoes.
+quiz: What does 服 mean? | tie | pants | clothes | C | 服 (ふく) means clothes.
+quiz: Review - What does 現金 mean? | to pay | money | cash | C | 現金 (げんきん) means cash.
+quiz: Review - What does ジュース mean? | boxed lunch | lunch | juice | C | ジュース (じゅうす) means juice.
+quiz: Review - What does 足 mean? | face | hand | leg | C | 足 (あし) means leg.
