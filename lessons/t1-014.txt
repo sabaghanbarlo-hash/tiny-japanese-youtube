@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 14 · Colors and shapes
+episode: T1-014
+scene: classroom
+
+[story]
+Mika: これは 何 ですか。 | Kore wa nan desu ka? | What is this?
+Alex: 赤い 丸 です。 | Akai maru desu. | It's a red circle.
+Mika: あの 四角 は 何色 ですか。 | Ano shikaku wa nani-iro desu ka? | What color is that square?
+Alex: 青い 四角 です。 | Aoi shikaku desu. | It's a blue square.
+Mika: 白い 三角 も ありますね。 | Shiroi sankaku mo arimasu ne. | There is a white triangle too.
+Alex: はい。黒い 三角 も あります。 | Hai. Kuroi sankaku mo arimasu. | Yes. There is a black triangle too.
+Mika: 黄色い 丸 と 緑 の 丸 も ありますか。 | Kiiroi maru to midori no maru mo arimasu ka? | Are there yellow and green circles too?
+Alex: はい、あります。とても きれい です。 | Hai, arimasu. Totemo kirei desu. | Yes, there are. They are very pretty.
+
+[vocab]
+vocab: いろ | color (色)
+example: 色は青です。 | The color is blue.
+vocab: あかい | red (赤い)
+example: 花は赤いです。 | The flower is red.
+vocab: あおい | blue (青い)
+example: 空は青いです。 | The sky is blue.
+vocab: しろい | white (白い)
+example: 白い紙です。 | It's white paper.
+vocab: くろい | black (黒い)
+example: 猫は黒いです。 | The cat is black.
+vocab: きいろい | yellow (黄色い)
+example: バナナは黄色いです。 | The banana is yellow.
+vocab: みどり | green (緑)
+example: 葉っぱは緑です。 | The leaves are green.
+vocab: まる | circle (丸)
+example: 形は丸です。 | The shape is a circle.
+vocab: しかく | square (四角)
+example: 窓は四角です。 | The window is square.
+vocab: さんかく | triangle (三角)
+example: 形は三角です。 | The shape is a triangle.
+
+[grammar]
+grammar: Polite です Statements | Use です at the end of a sentence to make a simple statement polite. In this dialogue, it follows descriptions of shapes and colors.
+example: 赤い 丸 です。 | It's a red circle.
+example: 青い 四角 です。 | It's a blue square.
+
+[quiz]
+quiz: What does 赤い mean? | square | circle | red | C | 赤い (あかい) means red.
+quiz: What does 四角 mean? | white | color | square | C | 四角 (しかく) means square.
+quiz: What does 白い mean? | circle | white | black | B | 白い (しろい) means white.
+quiz: Review - What does 金曜日 mean? | Tuesday | Sunday | Friday | C | 金曜日 (きんようび) means Friday.
+quiz: Review - What does 兄 mean? | grandfather | older brother (one's own) | older sister (one's own) | B | 兄 (あに) means older brother (one's own).
+quiz: Review - What does 車 mean? | car | station | book | A | 車 (くるま) means car.
