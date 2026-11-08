@@ -7,6 +7,10 @@ on:
         description: "Lesson script file name(s) in lessons/ (e.g. 01-first-day-at-school.txt). Several names separated by spaces render one after the other. Leave empty to render all (no YouTube upload)."
         required: false
         default: ""
+      upload:
+        description: "Upload to YouTube? yes or no (use no for bulk renders: YouTube has a small daily upload quota)"
+        required: false
+        default: "yes"
 
 permissions:
   contents: write
@@ -47,7 +51,7 @@ jobs:
           path: output/
       - name: Upload to YouTube
         id: yt
-        if: ${{ github.event.inputs.lesson != '' }}
+        if: ${{ github.event.inputs.lesson != '' && github.event.inputs.upload != 'no' }}
         continue-on-error: true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
