@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 29 · Hobbies and free time
+episode: T1-029
+scene: classroom
+
+[story]
+Mika: アレックスさんの 趣味は 何ですか。 | Arekkusu-san no shumi wa nan desu ka. | Alex, what are your hobbies?
+Alex: 私は 音楽が 好きです。 | Watashi wa ongaku ga suki desu. | I like music.
+Mika: 映画や スポーツも 好きですか。 | Eiga ya supootsu mo suki desu ka. | Do you like movies and sports too?
+Alex: はい。ゲームも 好きです。休みの日は 旅行します。 | Hai. Geemu mo suki desu. Yasumi no hi wa ryokou shimasu. | Yes. I like games too. I travel on my days off.
+Mika: 旅行で 写真を 撮りますか。 | Ryokou de shashin o torimasu ka. | Do you take photos when you travel?
+Alex: はい。友だちと 遊びます。時々 歌います。 | Hai. Tomodachi to asobimasu. Tokidoki utaimasu. | Yes. I hang out with friends. Sometimes I sing.
+Mika: いいですね。家でも よく 休みますか。 | Ii desu ne. Ie demo yoku yasumimasu ka. | That sounds nice. Do you often rest at home too?
+Alex: はい。家で ゆっくり 休みます。 | Hai. Ie de yukkuri yasumimasu. | Yes. I relax at home.
+
+[vocab]
+vocab: しゅみ | hobby (趣味)
+example: 趣味は写真です。 | My hobby is photography.
+vocab: おんがく | music (音楽)
+example: 音楽を楽しみます。 | I enjoy music.
+vocab: えいが | movie; film (映画)
+example: 映画を楽しみます。 | I enjoy movies.
+vocab: スポーツ | sports
+example: スポーツを楽しみます。 | I enjoy sports.
+vocab: ゲーム | game
+example: ゲームで遊びます。 | I play games.
+vocab: りょこう | travel; trip (旅行)
+example: 旅行を楽しみます。 | I enjoy traveling.
+vocab: しゃしん | photo (写真)
+example: 写真を撮ります。 | I take photos.
+vocab: うたう | to sing (歌う)
+example: カラオケで歌います。 | I sing karaoke.
+vocab: あそぶ | to play; to hang out (遊ぶ)
+example: 週末に遊びます。 | I hang out on weekends.
+vocab: やすむ | to rest; to take time off (休む)
+example: 日曜日に休みます。 | I rest on Sundays.
+
+[grammar]
+grammar: Polite Likes with 好きです | Use 好きです after a thing to say you like it. Add か to make it a polite question.
+example: 私は 音楽が 好きです。 | I like music.
+example: 映画や スポーツも 好きですか。 | Do you like movies and sports too?
+
+[quiz]
+quiz: What does 遊ぶ mean? | to play | travel | to sing | A | 遊ぶ (あそぶ) means to play.
+quiz: What does 音楽 mean? | music | movie | to sing | A | 音楽 (おんがく) means music.
+quiz: What does 旅行 mean? | hobby | travel | photo | B | 旅行 (りょこう) means travel.
+quiz: Review - What does 借りる mean? | give | give (to me) | borrow | C | 借りる (かりる) means borrow.
+quiz: Review - What does 島 mean? | island | park | mountain | A | 島 (しま) means island.
+quiz: Review - What does ズボン mean? | coat | clothes | pants | C | ズボン means pants.
