@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 16 · Directions and positions
+episode: T1-016
+scene: classroom
+
+[story]
+Mika: えき は どこ ですか。 | Eki wa doko desu ka? | Where is the station?
+Alex: えき は ここ の 右 です。 | Eki wa koko no migi desu. | The station is to the right of here.
+Mika: 銀行 は えき の どこ ですか。 | Ginkō wa eki no doko desu ka? | Where is the bank in relation to the station?
+Alex: 銀行 は えき の 左 です。カフェ は えき の 隣 です。 | Ginkō wa eki no hidari desu. Kafe wa eki no tonari desu. | The bank is to the left of the station. The café is next to the station.
+Mika: 公園 は どこ ですか。 | Kōen wa doko desu ka? | Where is the park?
+Alex: 公園 は えき の 近く です。木 の 後ろ です。 | Kōen wa eki no chikaku desu. Ki no ushiro desu. | The park is near the station. It is behind a tree.
+Mika: ねこ は どこ ですか。 | Neko wa doko desu ka? | Where is the cat?
+Alex: ねこ は かばん の 中 です。かばん は 机 の 下 です。本 は 机 の 上 です。 | Neko wa kaban no naka desu. Kaban wa tsukue no shita desu. Hon wa tsukue no ue desu. | The cat is inside the bag. The bag is under the desk. The book is on the desk.
+
+[vocab]
+vocab: みぎ | right (右)
+example: 出口は右です。 | The exit is on the right.
+vocab: ひだり | left (左)
+example: 入口は左です。 | The entrance is on the left.
+vocab: うえ | above; on top (上)
+example: 猫は箱の上です。 | The cat is on the box.
+vocab: した | below; under (下)
+example: 鍵は箱の下です。 | The key is under the box.
+vocab: なか | inside (中)
+example: 鍵は箱の中です。 | The key is inside the box.
+vocab: そと | outside (外)
+example: 犬は庭の外です。 | The dog is outside the yard.
+vocab: となり | next to; neighboring (隣)
+example: 銀行は郵便局の隣です。 | The bank is next to the post office.
+vocab: うしろ | behind; back (後ろ)
+example: 自転車は木の後ろです。 | The bicycle is behind the tree.
+vocab: ちかく | near; nearby (近く)
+example: 公園は川の近くです。 | The park is near the river.
+vocab: よこ | beside; side (横)
+example: 自転車は壁の横です。 | The bicycle is beside the wall.
+
+[grammar]
+grammar: Using の With Positions | Put の between a place and a position word to show where something is. The pattern is [thing] は [place] の [position] です.
+example: えき は ここ の 右 です。 | The station is to the right of here.
+example: 銀行 は えき の 左 です。 | The bank is to the left of the station.
+
+[quiz]
+quiz: What does 外 mean? | near | outside | beside | B | 外 (そと) means outside.
+quiz: What does 後ろ mean? | near | below | behind | C | 後ろ (うしろ) means behind.
+quiz: What does 近く mean? | near | behind | outside | A | 近く (ちかく) means near.
+quiz: Review - What does 手 mean? | tooth | leg | hand | C | 手 (て) means hand.
+quiz: Review - What does 来月 mean? | next month | Tuesday | Thursday | A | 来月 (らいげつ) means next month.
+quiz: Review - What does 五 mean? | six | five | ten | B | 五 (ご) means five.
