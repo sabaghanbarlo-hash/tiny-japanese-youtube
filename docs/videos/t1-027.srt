@@ -1,0 +1,39 @@
+1
+00:00:14,568 --> 00:00:19,724
+アレックスさん、駅まで どうやって 向かいますか。
+Alex, how will you get to the station?
+
+2
+00:00:19,824 --> 00:00:23,204
+まず 公園まで 歩きます。
+First, I walk to the park.
+
+3
+00:00:23,304 --> 00:00:27,932
+橋を 渡って、右に 曲がりますか。
+Do you cross the bridge and turn right?
+
+4
+00:00:28,032 --> 00:00:32,828
+はい。それから まっすぐ 進みます。
+Yes. Then I go straight ahead.
+
+5
+00:00:32,928 --> 00:00:36,380
+どの道を 通りますか。
+Which road do you take?
+
+6
+00:00:36,480 --> 00:00:41,012
+小さい店に 寄って、駅に 着きます。
+I stop by a small shop and arrive at the station.
+
+7
+00:00:41,112 --> 00:00:45,476
+駅に 近づいたら、走りますか。
+When you get close to the station, do you run?
+
+8
+00:00:45,576 --> 00:00:51,188
+いいえ、走りません。ゆっくり 歩きます。
+No, I don't run. I walk slowly.

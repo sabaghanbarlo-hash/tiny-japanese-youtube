@@ -1,0 +1,39 @@
+1
+00:00:14,472 --> 00:00:17,948
+今日は どこへ 行きますか。
+Where are you going today?
+
+2
+00:00:18,048 --> 00:00:22,940
+空港へ 行きます。バスに 乗ります。
+I’m going to the airport. I’ll take the bus.
+
+3
+00:00:23,040 --> 00:00:26,588
+切符は もう 買いましたか。
+Have you bought a ticket yet?
+
+4
+00:00:26,688 --> 00:00:31,172
+はい。バスの 切符を 買いました。
+Yes. I bought a bus ticket.
+
+5
+00:00:31,272 --> 00:00:35,180
+空港で 飛行機に 乗りますか。
+Will you board a plane at the airport?
+
+6
+00:00:35,280 --> 00:00:41,324
+はい。空港で バスを 降りて、飛行機に 乗ります。
+Yes. I’ll get off the bus at the airport and board a plane.
+
+7
+00:00:41,424 --> 00:00:45,284
+電車や 地下鉄で 行きますか。
+Are you going by train or subway?
+
+8
+00:00:45,384 --> 00:00:49,820
+いいえ。今日は バスで 行きます。
+No. I’m going by bus today.

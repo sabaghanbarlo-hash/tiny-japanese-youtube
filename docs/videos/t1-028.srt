@@ -1,0 +1,39 @@
+1
+00:00:16,008 --> 00:00:20,228
+アレックスさんは 何を 作りますか。
+Alex, what will you make?
+
+2
+00:00:20,328 --> 00:00:26,180
+友だちに ケーキを 作ります。写真も 送ります。
+I’ll make a cake for my friend. I’ll send a photo too.
+
+3
+00:00:26,280 --> 00:00:32,420
+ケーキを あげますか。友だちは 何を くれますか。
+Will you give them the cake? What will your friend give you?
+
+4
+00:00:32,520 --> 00:00:39,116
+はい。本を くれます。私も 本を もらいます。
+Yes. They’ll give me a book. I’ll receive a book too.
+
+5
+00:00:39,216 --> 00:00:44,684
+いいですね。私が お皿を 貸します。
+That’s nice. I’ll lend you a plate.
+
+6
+00:00:44,784 --> 00:00:49,940
+ありがとうございます。お皿を 借ります。
+Thank you. I’ll borrow the plate.
+
+7
+00:00:50,040 --> 00:00:53,756
+ケーキ作りを 手伝いますか。
+Will you help make the cake?
+
+8
+00:00:53,856 --> 00:00:59,684
+はい、できます。あとで 皿洗いも やります。
+Yes, I can. I’ll do the dishes later too.

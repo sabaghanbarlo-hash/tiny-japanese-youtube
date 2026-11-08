@@ -1,0 +1,39 @@
+1
+00:00:14,808 --> 00:00:18,332
+今日の 気持ちは どうですか。
+How are you feeling today?
+
+2
+00:00:18,432 --> 00:00:23,516
+とても 嬉しいです。友だちに 会いました。
+I’m very happy. I met a friend.
+
+3
+00:00:23,616 --> 00:00:29,900
+よかったですね。試験のことを 心配しましたか。
+That’s good. Were you worried about the exam?
+
+4
+00:00:30,000 --> 00:00:37,148
+はい。試験は 怖かったです。でも 今は 安心しました。
+Yes. The exam was scary. But now I feel relieved.
+
+5
+00:00:37,248 --> 00:00:42,812
+そうですか。昨日は 寂しかったですか。
+I see. Were you lonely yesterday?
+
+6
+00:00:42,912 --> 00:00:49,220
+いいえ、悲しく なかったです。でも 少し 疲れました。
+No, I wasn’t sad. But I got a little tired.
+
+7
+00:00:49,320 --> 00:00:55,364
+今日は 怒っていますか。それとも 眠いですか。
+Are you angry today? Or are you sleepy?
+
+8
+00:00:55,464 --> 00:01:00,332
+怒っていません。少し 眠いです。
+I’m not angry. I’m a little sleepy.

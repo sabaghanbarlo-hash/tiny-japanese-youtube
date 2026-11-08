@@ -1,0 +1,39 @@
+1
+00:00:15,120 --> 00:00:20,276
+アレックスさんは この 映画を どう 考えますか。
+Alex, what do you think of this movie?
+
+2
+00:00:20,376 --> 00:00:25,748
+おもしろいと 思います。音楽も 好きです。
+I think it’s interesting. I like the music, too.
+
+3
+00:00:25,848 --> 00:00:31,844
+本当に おもしろいですか。理由は 何ですか。
+Is it really interesting? What’s the reason?
+
+4
+00:00:31,944 --> 00:00:38,396
+はい、そうです。多分、音楽が いいからです。
+Yes, that’s right. Probably because the music is good.
+
+5
+00:00:38,496 --> 00:00:43,748
+もちろん。音楽は いいと 思います。
+Of course. I think the music is good.
+
+6
+00:00:43,848 --> 00:00:48,956
+そうですか。あなたの 意見を 信じます。
+I see. I believe your opinion.
+
+7
+00:00:49,056 --> 00:00:53,108
+では、この 映画を 見ますか。
+So, will you watch this movie?
+
+8
+00:00:53,208 --> 00:00:57,884
+はい。この 映画を 見ると 決めました。
+Yes. I’ve decided to watch this movie.

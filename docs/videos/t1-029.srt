@@ -1,0 +1,39 @@
+1
+00:00:14,856 --> 00:00:18,884
+アレックスさんの 趣味は 何ですか。
+Alex, what are your hobbies?
+
+2
+00:00:18,984 --> 00:00:22,388
+私は 音楽が 好きです。
+I like music.
+
+3
+00:00:22,488 --> 00:00:26,372
+映画や スポーツも 好きですか。
+Do you like movies and sports too?
+
+4
+00:00:26,472 --> 00:00:33,404
+はい。ゲームも 好きです。休みの日は 旅行します。
+Yes. I like games too. I travel on my days off.
+
+5
+00:00:33,504 --> 00:00:37,244
+旅行で 写真を 撮りますか。
+Do you take photos when you travel?
+
+6
+00:00:37,344 --> 00:00:43,868
+はい。友だちと 遊びます。時々 歌います。
+Yes. I hang out with friends. Sometimes I sing.
+
+7
+00:00:43,968 --> 00:00:49,532
+いいですね。家でも よく 休みますか。
+That sounds nice. Do you often rest at home too?
+
+8
+00:00:49,632 --> 00:00:54,164
+はい。家で ゆっくり 休みます。
+Yes. I relax at home.
