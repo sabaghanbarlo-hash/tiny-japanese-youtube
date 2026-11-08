@@ -1,0 +1,39 @@
+1
+00:00:14,424 --> 00:00:17,372
+これは 何 ですか。
+What is this?
+
+2
+00:00:17,472 --> 00:00:20,132
+赤い 丸 です。
+It's a red circle.
+
+3
+00:00:20,232 --> 00:00:23,948
+あの 四角 は 何色 ですか。
+What color is that square?
+
+4
+00:00:24,048 --> 00:00:26,804
+青い 四角 です。
+It's a blue square.
+
+5
+00:00:26,904 --> 00:00:30,572
+白い 三角 も ありますね。
+There is a white triangle too.
+
+6
+00:00:30,672 --> 00:00:35,156
+はい。黒い 三角 も あります。
+Yes. There is a black triangle too.
+
+7
+00:00:35,256 --> 00:00:39,764
+黄色い 丸 と 緑 の 丸 も ありますか。
+Are there yellow and green circles too?
+
+8
+00:00:39,864 --> 00:00:44,996
+はい、あります。とても きれい です。
+Yes, there are. They are very pretty.

@@ -1,0 +1,39 @@
+1
+00:00:14,568 --> 00:00:19,412
+アレックスさん、今日の 天気は どうですか。
+Alex, how is the weather today?
+
+2
+00:00:19,512 --> 00:00:24,212
+今日は 雨です。午後は 晴れます。
+It’s rainy today. It will clear up in the afternoon.
+
+3
+00:00:24,312 --> 00:00:27,884
+春は どんな 天気ですか。
+What is the weather like in spring?
+
+4
+00:00:27,984 --> 00:00:33,188
+春は 暖かいです。夏は 暑いです。
+Spring is warm. Summer is hot.
+
+5
+00:00:33,288 --> 00:00:38,780
+秋は どうですか。冬は 寒いですか。
+How is autumn? Is winter cold?
+
+6
+00:00:38,880 --> 00:00:44,900
+秋は 涼しいです。はい、冬は 寒いです。
+Autumn is cool. Yes, winter is cold.
+
+7
+00:00:45,000 --> 00:00:48,284
+明日は 曇りますか。
+Will it be cloudy tomorrow?
+
+8
+00:00:48,384 --> 00:00:52,052
+いいえ、明日は 晴れます。
+No, it will be sunny tomorrow.

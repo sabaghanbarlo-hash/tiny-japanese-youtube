@@ -1,0 +1,39 @@
+1
+00:00:14,568 --> 00:00:19,364
+アレックスさんは 毎朝 何時に 起きますか。
+What time do you get up every morning?
+
+2
+00:00:19,464 --> 00:00:25,388
+毎朝 七時に 起きます。それから 顔を 洗います。
+I get up at seven every morning. Then I wash my face.
+
+3
+00:00:25,488 --> 00:00:29,924
+朝ごはんの あと、何を しますか。
+What do you do after breakfast?
+
+4
+00:00:30,024 --> 00:00:33,908
+歯を 磨いて、服を 着ます。
+I brush my teeth and get dressed.
+
+5
+00:00:34,008 --> 00:00:37,292
+何時に 家を 出ますか。
+What time do you leave home?
+
+6
+00:00:37,392 --> 00:00:43,028
+八時に 家を 出ます。六時に 家に 帰ります。
+I leave home at eight. I return home at six.
+
+7
+00:00:43,128 --> 00:00:46,484
+夜は 何を しますか。
+What do you do in the evening?
+
+8
+00:00:46,584 --> 00:00:51,044
+お風呂に 入って、十一時に 寝ます。
+I take a bath and go to bed at eleven.

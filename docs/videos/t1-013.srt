@@ -1,0 +1,39 @@
+1
+00:00:15,072 --> 00:00:18,908
+今日の 日付は 何日ですか。
+What is today’s date?
+
+2
+00:00:19,008 --> 00:00:22,196
+今日は 五月 五日です。
+Today is May 5th.
+
+3
+00:00:22,296 --> 00:00:25,676
+今日は 何曜日ですか。
+What day is it today?
+
+4
+00:00:25,776 --> 00:00:28,796
+今日は 月曜日です。
+Today is Monday.
+
+5
+00:00:28,896 --> 00:00:33,356
+火曜日と 水曜日は 何を しますか。
+What do you do on Tuesday and Wednesday?
+
+6
+00:00:33,456 --> 00:00:39,284
+火曜日は 勉強します。水曜日は 休みます。
+I study on Tuesday. I rest on Wednesday.
+
+7
+00:00:39,384 --> 00:00:44,036
+先月は 木曜日に 旅行しましたか。
+Did you travel on a Thursday last month?
+
+8
+00:00:44,136 --> 00:00:52,700
+はい。来月は 金曜日と 土曜日に 旅行します。日曜日は 家に います。
+Yes. Next month, I’ll travel on Friday and Saturday. On Sunday, I’ll be at home.
