@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 20 · Common adjectives
+episode: T1-020
+scene: classroom
+
+[story]
+Mika: この お茶は 熱い ですか。 | Kono ocha wa atsui desu ka. | Is this tea hot?
+Alex: はい、熱い です。水は 冷たい です。 | Hai, atsui desu. Mizu wa tsumetai desu. | Yes, it’s hot. The water is cold.
+Mika: この 道は 長い ですか、短い ですか。 | Kono michi wa nagai desu ka, mijikai desu ka. | Is this road long or short?
+Alex: 長い です。でも、あの 道は 短い です。駅は 近い です。 | Nagai desu. Demo, ano michi wa mijikai desu. Eki wa chikai desu. | It’s long. But that road is short. The station is near.
+Mika: 学校は 遠い ですか。出発は 早い ですか。 | Gakkou wa tooi desu ka. Shuppatsu wa hayai desu ka. | Is the school far? Is the departure early?
+Alex: はい、学校は 遠い です。出発は 早い です。 | Hai, gakkou wa tooi desu. Shuppatsu wa hayai desu. | Yes, the school is far. The departure is early.
+Mika: バスは 遅い ですか、速い ですか。川は 浅い ですか。 | Basu wa osoi desu ka, hayai desu ka. Kawa wa asai desu ka. | Is the bus slow or fast? Is the river shallow?
+Alex: バスは 遅い です。でも、この 川は 浅い です。 | Basu wa osoi desu. Demo, kono kawa wa asai desu. | The bus is slow. But this river is shallow.
+
+[vocab]
+vocab: あつい | hot (to the touch) (熱い)
+example: スープが熱いです。 | The soup is hot.
+vocab: つめたい | cold (to the touch) (冷たい)
+example: 牛乳は冷たいです。 | The milk is cold.
+vocab: ながい | long (長い)
+example: 道は長いです。 | The road is long.
+vocab: みじかい | short (短い)
+example: 髪は短いです。 | The hair is short.
+vocab: はやい | early (早い)
+example: 早く寝ます。 | I go to bed early.
+vocab: おそい | late; slow (遅い)
+example: バスが遅いです。 | The bus is late.
+vocab: とおい | far (遠い)
+example: 海は遠いです。 | The sea is far away.
+vocab: ちかい | near (近い)
+example: 海は近いです。 | The sea is nearby.
+vocab: はやい | fast (速い)
+example: この車は速いです。 | This car is fast.
+vocab: あさい | shallow (浅い)
+example: この川は浅いです。 | This river is shallow.
+
+[grammar]
+grammar: Polite adjective sentences | Use an い-adjective with です to make a polite statement. Add か to make a polite question.
+example: この お茶は 熱い ですか。 | Is this tea hot?
+example: 水は 冷たい です。 | The water is cold.
+
+[quiz]
+quiz: What does 長い mean? | cold (to the touch) | long | fast | B | 長い (ながい) means long.
+quiz: What does 早い mean? | early | short | hot (to the touch) | A | 早い (はやい) means early.
+quiz: What does 冷たい mean? | short | cold (to the touch) | far | B | 冷たい (つめたい) means cold (to the touch).
+quiz: Review - What does 食事 mean? | boxed lunch | black tea | meal | C | 食事 (しょくじ) means meal.
+quiz: Review - What does 曇る mean? | winter | summer | to become cloudy | C | 曇る (くもる) means to become cloudy.
+quiz: Review - What does 来月 mean? | next month | Tuesday | Sunday | A | 来月 (らいげつ) means next month.
