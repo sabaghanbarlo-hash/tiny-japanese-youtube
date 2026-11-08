@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 18 · Basic foods
+episode: T1-018
+scene: classroom
+
+[story]
+Mika: アレックスさん、何 が 好き ですか。 | Arekkusu-san, nani ga suki desu ka? | Alex, what do you like?
+Alex: ご飯 と 魚 が 好き です。 | Gohan to sakana ga suki desu. | I like rice and fish.
+Mika: パン と 卵 は 好き ですか。 | Pan to tamago wa suki desu ka? | Do you like bread and eggs?
+Alex: はい、好き です。野菜 も 好き です。 | Hai, suki desu. Yasai mo suki desu. | Yes, I do. I like vegetables, too.
+Mika: 肉 と 豆腐 は どう ですか。 | Niku to tōfu wa dō desu ka? | How about meat and tofu?
+Alex: 肉 は 好き です。豆腐 も 好き です。 | Niku wa suki desu. Tōfu mo suki desu. | I like meat. I like tofu, too.
+Mika: 果物 と 牛乳 も 好き ですか。 | Kudamono to gyūnyū mo suki desu ka? | Do you like fruit and milk, too?
+Alex: はい。麺 も 好き です。 | Hai. Men mo suki desu. | Yes. I like noodles, too.
+
+[vocab]
+vocab: ごはん | rice (ご飯)
+example: ご飯を食べます。 | I eat rice.
+vocab: パン | bread
+example: パンを食べます。 | I eat bread.
+vocab: にく | meat (肉)
+example: 肉を買います。 | I buy meat.
+vocab: さかな | fish (魚)
+example: 魚を食べます。 | I eat fish.
+vocab: たまご | egg (卵)
+example: 卵を使います。 | I use eggs.
+vocab: やさい | vegetables (野菜)
+example: 野菜を食べます。 | I eat vegetables.
+vocab: くだもの | fruit (果物)
+example: 果物を買います。 | I buy fruit.
+vocab: ぎゅうにゅう | milk (牛乳)
+example: 牛乳を飲みます。 | I drink milk.
+vocab: めん | noodles (麺)
+example: 麺を食べます。 | I eat noodles.
+vocab: とうふ | tofu (豆腐)
+example: 豆腐を食べます。 | I eat tofu.
+
+[grammar]
+grammar: Using も for “also” | Put も after a noun to mean “also” or “too.” It adds another thing to the same idea.
+example: 野菜 も 好き です。 | I like vegetables, too.
+example: 豆腐 も 好き です。 | I like tofu, too.
+
+[quiz]
+quiz: What does 肉 mean? | rice | meat | fish | B | 肉 (にく) means meat.
+quiz: What does パン mean? | noodles | bread | tofu | B | パン means bread.
+quiz: What does 牛乳 mean? | milk | rice | egg | A | 牛乳 (ぎゅうにゅう) means milk.
+quiz: Review - What does 寒い mean? | weather | cold (weather) | rain | B | 寒い (さむい) means cold (weather).
+quiz: Review - What does お腹 mean? | head | stomach | ear | B | お腹 (おなか) means stomach.
+quiz: Review - What does 夫 mean? | younger sister | grandmother | husband | C | 夫 (おっと) means husband.
