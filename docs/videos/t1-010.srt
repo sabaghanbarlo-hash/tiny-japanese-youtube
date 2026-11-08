@@ -1,0 +1,39 @@
+1
+00:00:14,640 --> 00:00:18,644
+コーヒーは とても おいしいですか。
+Is the coffee very good?
+
+2
+00:00:18,744 --> 00:00:25,316
+はい、とても おいしいです。でも、少し あついです。
+Yes, it’s very good. But it’s a little hot.
+
+3
+00:00:25,416 --> 00:00:28,940
+ミルクを もっと 入れますか。
+Would you like more milk?
+
+4
+00:00:29,040 --> 00:00:33,284
+はい、ミルクを たくさん 入れてください。
+Yes, please add a lot of milk.
+
+5
+00:00:33,384 --> 00:00:36,428
+もう 飲みましたか。
+Have you already had a drink?
+
+6
+00:00:36,528 --> 00:00:41,612
+まだです。少し さましてから 飲みます。
+Not yet. I’ll let it cool a little, then drink it.
+
+7
+00:00:41,712 --> 00:00:45,956
+だから、ゆっくり 飲んでくださいね。
+So, please drink it slowly.
+
+8
+00:00:46,056 --> 00:00:51,308
+はい。そして、また あした 飲みます。
+Yes. And then, I’ll drink it again tomorrow.

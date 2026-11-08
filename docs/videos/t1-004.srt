@@ -1,0 +1,39 @@
+1
+00:00:13,944 --> 00:00:17,324
+今日 は 何曜日 ですか。
+What day is it today?
+
+2
+00:00:17,424 --> 00:00:22,964
+今日 は 月曜日 です。昨日 は 日曜日 でした。
+Today is Monday. Yesterday was Sunday.
+
+3
+00:00:23,064 --> 00:00:26,516
+明日 は 何を しますか。
+What will you do tomorrow?
+
+4
+00:00:26,616 --> 00:00:32,756
+明日 は 朝 に 勉強します。毎日 勉強します。
+Tomorrow, I’ll study in the morning. I study every day.
+
+5
+00:00:32,856 --> 00:00:36,548
+今、時間 が ありますか。
+Do you have time now?
+
+6
+00:00:36,648 --> 00:00:41,732
+はい、あります。夜 は ひまです。
+Yes, I do. I’m free at night.
+
+7
+00:00:41,832 --> 00:00:45,524
+一週間 は 何日 ですか。
+How many days are in a week?
+
+8
+00:00:45,624 --> 00:00:48,956
+一週間 は 七日 です。
+There are seven days in a week.

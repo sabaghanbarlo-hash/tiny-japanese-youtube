@@ -1,0 +1,39 @@
+1
+00:00:13,656 --> 00:00:17,660
+アレックスさんの 名前は なんですか。
+What is your name, Alex?
+
+2
+00:00:17,760 --> 00:00:23,276
+わたしの 名前は アレックスです。学生です。
+My name is Alex. I’m a student.
+
+3
+00:00:23,376 --> 00:00:27,380
+あの 男の人は 先生ですか。
+Is that man a teacher?
+
+4
+00:00:27,480 --> 00:00:33,956
+はい、先生です。あの 女の人は 友達です。
+Yes, he is a teacher. That woman is my friend.
+
+5
+00:00:34,056 --> 00:00:37,460
+この 子供は だれですか。
+Who is this child?
+
+6
+00:00:37,560 --> 00:00:41,084
+この 子供は わたしの おいです。
+This child is my nephew.
+
+7
+00:00:41,184 --> 00:00:46,028
+写真に お母さんと お父さんも いますか。
+Are your mother and father in the picture too?
+
+8
+00:00:46,128 --> 00:00:52,700
+はい、写真に 母と 父も います。家族の 写真です。
+Yes, my mother and father are in the picture too. It’s a family picture.

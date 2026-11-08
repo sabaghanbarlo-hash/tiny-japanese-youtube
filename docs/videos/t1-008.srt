@@ -1,0 +1,39 @@
+1
+00:00:14,400 --> 00:00:18,836
+アレックスさんは どこに 住んで いますか。
+Alex, where do you live?
+
+2
+00:00:18,936 --> 00:00:24,452
+東京に 住んで います。カフェで 働いて います。
+I live in Tokyo. I work at a café.
+
+3
+00:00:24,552 --> 00:00:28,556
+仕事で 日本語を 話しますか。
+Do you speak Japanese at work?
+
+4
+00:00:28,656 --> 00:00:35,972
+はい。日本語を 話します。お客さんの 話を 聞きます。
+Yes. I speak Japanese. I listen to customers.
+
+5
+00:00:36,072 --> 00:00:40,028
+休みの日に 本を 読みますか。
+Do you read books on your days off?
+
+6
+00:00:40,128 --> 00:00:46,700
+はい。本を 読みます。ノートに ことばを 書きます。
+Yes. I read books. I write words in a notebook.
+
+7
+00:00:46,800 --> 00:00:52,892
+その ペンを 使いますか。ノートを 持っていますか。
+Do you use that pen? Do you have a notebook?
+
+8
+00:00:52,992 --> 00:01:02,852
+はい、ペンを 使います。ノートを 持っています。あとで コーヒーを 買って、ここで 待ちます。
+Yes, I use a pen. I have a notebook. I’ll buy coffee later and wait here.

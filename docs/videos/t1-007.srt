@@ -1,0 +1,39 @@
+1
+00:00:14,304 --> 00:00:18,668
+アレックスさん、会社 は どこ ですか。
+Alex, where is your company?
+
+2
+00:00:18,768 --> 00:00:22,076
+会社 は 駅 の 近く です。
+The company is near the station.
+
+3
+00:00:22,176 --> 00:00:25,844
+車 で 会社 に 行きますか。
+Do you go to the company by car?
+
+4
+00:00:25,944 --> 00:00:29,660
+いいえ、電車 で 行きます。
+No, I go by train.
+
+5
+00:00:29,760 --> 00:00:33,668
+店 で 水 と お茶 を 買いますか。
+Do you buy water and tea at the shop?
+
+6
+00:00:33,768 --> 00:00:38,012
+はい、店 で 水 と お茶 を 買います。
+Yes, I buy water and tea at the shop.
+
+7
+00:00:38,112 --> 00:00:41,468
+家 に 本 が ありますか。
+Is there a book at home?
+
+8
+00:00:41,568 --> 00:00:45,884
+はい、家 に 本 と 電話 が あります。
+Yes, there is a book and a phone at home.
