@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 17 · Weather and seasons
+episode: T1-017
+scene: classroom
+
+[story]
+Mika: アレックスさん、今日の 天気は どうですか。 | Arekkusu-san, kyō no tenki wa dō desu ka. | Alex, how is the weather today?
+Alex: 今日は 雨です。午後は 晴れます。 | Kyō wa ame desu. Gogo wa haremasu. | It’s rainy today. It will clear up in the afternoon.
+Mika: 春は どんな 天気ですか。 | Haru wa donna tenki desu ka. | What is the weather like in spring?
+Alex: 春は 暖かいです。夏は 暑いです。 | Haru wa atatakai desu. Natsu wa atsui desu. | Spring is warm. Summer is hot.
+Mika: 秋は どうですか。冬は 寒いですか。 | Aki wa dō desu ka. Fuyu wa samui desu ka. | How is autumn? Is winter cold?
+Alex: 秋は 涼しいです。はい、冬は 寒いです。 | Aki wa suzushii desu. Hai, fuyu wa samui desu. | Autumn is cool. Yes, winter is cold.
+Mika: 明日は 曇りますか。 | Ashita wa kumorimasu ka. | Will it be cloudy tomorrow?
+Alex: いいえ、明日は 晴れます。 | Iie, ashita wa haremasu. | No, it will be sunny tomorrow.
+
+[vocab]
+vocab: てんき | weather (天気)
+example: 天気は晴れです。 | The weather is clear.
+vocab: あめ | rain (雨)
+example: 雨が降っています。 | It is raining.
+vocab: はれる | to clear up (晴れる)
+example: 午後は晴れます。 | It will be sunny this afternoon.
+vocab: くもる | to become cloudy (曇る)
+example: 午後は曇ります。 | It will be cloudy this afternoon.
+vocab: あつい | hot (weather) (暑い)
+example: 夏は暑いです。 | Summer is hot.
+vocab: さむい | cold (weather) (寒い)
+example: 冬は寒いです。 | Winter is cold.
+vocab: はる | spring (春)
+example: 春は暖かいです。 | Spring is warm.
+vocab: なつ | summer (夏)
+example: 夏は暑いです。 | Summer is hot.
+vocab: あき | autumn (秋)
+example: 秋は涼しいです。 | Autumn is cool.
+vocab: ふゆ | winter (冬)
+example: 冬は寒いです。 | Winter is cold.
+
+[grammar]
+grammar: い-Adjectives with です | Use い-adjectives before です to make polite descriptions. The adjective keeps its い ending.
+example: 夏は 暑いです。 | Summer is hot.
+example: 冬は 寒いです。 | Winter is cold.
+
+[quiz]
+quiz: What does 秋 mean? | autumn | to become cloudy | spring | A | 秋 (あき) means autumn.
+quiz: What does 春 mean? | cold (weather) | spring | rain | B | 春 (はる) means spring.
+quiz: What does 暑い mean? | hot (weather) | summer | autumn | A | 暑い (あつい) means hot (weather).
+quiz: Review - What does 横 mean? | outside | below | beside | C | 横 (よこ) means beside.
+quiz: Review - What does 黄色い mean? | circle | red | yellow | C | 黄色い (きいろい) means yellow.
+quiz: Review - What does たくさん mean? | more | a lot | but | B | たくさん means a lot.
