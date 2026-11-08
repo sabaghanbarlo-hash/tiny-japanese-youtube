@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 23 · Rooms and household items
+episode: T1-023
+scene: classroom
+
+[story]
+Mika: アレックスさん、これは あなたの 部屋ですか。 | Arekkusu-san, kore wa anata no heya desu ka. | Alex, is this your room?
+Alex: はい、わたしの 部屋です。 | Hai, watashi no heya desu. | Yes, it’s my room.
+Mika: 部屋に 何が ありますか。 | Heya ni nani ga arimasu ka. | What is in the room?
+Alex: 机と 椅子が あります。 | Tsukue to isu ga arimasu. | There is a desk and a chair.
+Mika: 窓の そばに ベッドが ありますか。 | Mado no soba ni beddo ga arimasu ka. | Is there a bed by the window?
+Alex: はい、窓の そばに ベッドが あります。 | Hai, mado no soba ni beddo ga arimasu. | Yes, there is a bed by the window.
+Mika: 台所に テーブルと 冷蔵庫が ありますか。 | Daidokoro ni teeburu to reizouko ga arimasu ka. | Are there a table and a refrigerator in the kitchen?
+Alex: はい、台所に テーブルと 冷蔵庫が あります。 | Hai, daidokoro ni teeburu to reizouko ga arimasu. | Yes, there are a table and a refrigerator in the kitchen.
+
+[vocab]
+vocab: へや | room (部屋)
+example: 部屋で休みます。 | I rest in my room.
+vocab: だいどころ | kitchen (台所)
+example: 台所で料理します。 | I cook in the kitchen.
+vocab: つくえ | desk (机)
+example: 机で勉強します。 | I study at my desk.
+vocab: いす | chair (椅子)
+example: 椅子に座ります。 | I sit on the chair.
+vocab: まど | window (窓)
+example: 窓を開けます。 | I open the window.
+vocab: どあ | door (ドア)
+example: ドアを閉めます。 | I close the door.
+vocab: べっど | bed (ベッド)
+example: ベッドで寝ます。 | I sleep in bed.
+vocab: てーぶる | table (テーブル)
+example: テーブルに花を飾ります。 | I put flowers on the table.
+vocab: てれび | TV (テレビ)
+example: テレビをつけます。 | I turn on the TV.
+vocab: れいぞうこ | refrigerator (冷蔵庫)
+example: 冷蔵庫に牛乳を入れます。 | I put milk in the refrigerator.
+
+[grammar]
+grammar: あります for Things | Use あります to say that an inanimate thing exists or is located somewhere. Put the place before に and the thing before が.
+example: 机と 椅子が あります。 | There is a desk and a chair.
+example: はい、台所に テーブルと 冷蔵庫が あります。 | Yes, there are a table and a refrigerator in the kitchen.
+
+[quiz]
+quiz: What does 窓 mean? | TV | window | room | B | 窓 (まど) means window.
+quiz: What does 台所 mean? | kitchen | chair | desk | A | 台所 (だいどころ) means kitchen.
+quiz: What does 部屋 mean? | door | window | room | C | 部屋 (へや) means room.
+quiz: Review - What does ネクタイ mean? | shirt | clothes | tie | C | ネクタイ (ねくたい) means tie.
+quiz: Review - What does 近い mean? | late | shallow | near | C | 近い (ちかい) means near.
+quiz: Review - What does 横 mean? | inside | behind | beside | C | 横 (よこ) means beside.
