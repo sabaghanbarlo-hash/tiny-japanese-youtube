@@ -1,0 +1,39 @@
+1
+00:00:14,112 --> 00:00:18,476
+アレックスさん、職場は どこですか。
+Alex, where is your workplace?
+
+2
+00:00:18,576 --> 00:00:23,492
+工場です。ここで 働いています。
+It’s a factory. I work here.
+
+3
+00:00:23,592 --> 00:00:27,068
+シフトは 何時からですか。
+What time does your shift start?
+
+4
+00:00:27,168 --> 00:00:32,156
+朝からです。昼に 休憩します。
+It starts in the morning. I take a break at noon.
+
+5
+00:00:32,256 --> 00:00:36,476
+店長と 先輩は 親切ですか。
+Are the manager and your senior coworker kind?
+
+6
+00:00:36,576 --> 00:00:40,532
+はい、二人とも 親切です。
+Yes, they are both kind.
+
+7
+00:00:40,632 --> 00:00:44,636
+社長は よく 出張しますか。
+Does the company president travel for work often?
+
+8
+00:00:44,736 --> 00:00:48,452
+はい、よく 出張します。
+Yes, the president travels for work often.

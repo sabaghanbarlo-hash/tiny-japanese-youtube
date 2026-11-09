@@ -1,0 +1,39 @@
+1
+00:00:14,280 --> 00:00:17,636
+朝は 何を しますか。
+What do you do in the morning?
+
+2
+00:00:17,736 --> 00:00:22,172
+父を 起こして、部屋を 掃除します。
+I wake my father up and clean my room.
+
+3
+00:00:22,272 --> 00:00:25,460
+テーブルも 拭きますか。
+Do you wipe the table too?
+
+4
+00:00:25,560 --> 00:00:31,316
+はい、洗濯します。テーブルも 拭きます。
+Yes, I do the laundry. I wipe the table too.
+
+5
+00:00:31,416 --> 00:00:35,564
+それから、どこへ 出かけますか。
+Then, where do you go out?
+
+6
+00:00:35,664 --> 00:00:38,708
+スーパーへ 出かけます。
+I go out to the supermarket.
+
+7
+00:00:38,808 --> 00:00:43,292
+家に 帰ったあと、何を しますか。
+After you get home, what do you do?
+
+8
+00:00:43,392 --> 00:00:51,572
+部屋を 片付けます。ごみを 捨てます。それから、いすに 座ります。
+I tidy my room. I throw away the trash. Then I sit in a chair.

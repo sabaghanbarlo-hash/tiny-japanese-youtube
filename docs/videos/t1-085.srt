@@ -1,0 +1,39 @@
+1
+00:00:14,112 --> 00:00:18,668
+アレックスさん、クラスは 何人ですか。
+Alex, how many students are in your class?
+
+2
+00:00:18,768 --> 00:00:21,932
+クラスは 20人です。
+There are 20 students in my class.
+
+3
+00:00:22,032 --> 00:00:25,724
+今日の 給食は 何ですか。
+What is today’s school lunch?
+
+4
+00:00:25,824 --> 00:00:29,252
+今日の 給食は カレーです。
+Today’s school lunch is curry.
+
+5
+00:00:29,352 --> 00:00:33,788
+黒板に 数学の 問題が ありますね。
+There’s a math problem on the blackboard.
+
+6
+00:00:33,888 --> 00:00:39,092
+はい。休み時間に 筆箱を 使います。
+Yes. I use my pencil case during break time.
+
+7
+00:00:39,192 --> 00:00:42,452
+放課後は 理科ですか。
+Is science after school?
+
+8
+00:00:42,552 --> 00:00:46,268
+はい、放課後は 理科です。
+Yes, science is after school.

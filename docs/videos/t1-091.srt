@@ -1,0 +1,39 @@
+1
+00:00:14,376 --> 00:00:17,732
+朝は 何を しますか。
+What do you do in the morning?
+
+2
+00:00:17,832 --> 00:00:24,332
+朝ごはんを 料理します。それから、お湯を 沸かします。
+I cook breakfast. Then I boil water.
+
+3
+00:00:24,432 --> 00:00:30,452
+スープを 温めますか。水を 冷やしますか。
+Do you warm the soup? Do you chill the water?
+
+4
+00:00:30,552 --> 00:00:35,828
+スープを 温めます。水は 冷やします。
+I warm the soup. I chill the water.
+
+5
+00:00:35,928 --> 00:00:41,180
+出かける 前に、髪を とかして 支度しますか。
+Before you go out, do you comb your hair and get ready?
+
+6
+00:00:41,280 --> 00:00:47,252
+はい。髪を とかして、出かける 支度を します。
+Yes. I comb my hair and get ready to go out.
+
+7
+00:00:47,352 --> 00:00:53,732
+洗濯物を 乾かしますか。服を 畳みますか。
+Do you dry the laundry? Do you fold your clothes?
+
+8
+00:00:53,832 --> 00:00:59,444
+はい。服を 畳んで、たんすに しまいます。
+Yes. I fold my clothes and put them away in the dresser.
