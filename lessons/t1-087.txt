@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 87 · Verbs 8
+episode: T1-087
+scene: classroom
+
+[story]
+Mika: 朝は 何を しますか。 | Asa wa nani o shimasu ka? | What do you do in the morning?
+Alex: 父を 起こして、部屋を 掃除します。 | Chichi o okoshite, heya o souji shimasu. | I wake my father up and clean my room.
+Mika: テーブルも 拭きますか。 | Teeburu mo fukimasu ka? | Do you wipe the table too?
+Alex: はい、洗濯します。テーブルも 拭きます。 | Hai, sentaku shimasu. Teeburu mo fukimasu. | Yes, I do the laundry. I wipe the table too.
+Mika: それから、どこへ 出かけますか。 | Sorekara, doko e dekakemasu ka? | Then, where do you go out?
+Alex: スーパーへ 出かけます。 | Suupaa e dekakemasu. | I go out to the supermarket.
+Mika: 家に 帰ったあと、何を しますか。 | Ie ni kaetta ato, nani o shimasu ka? | After you get home, what do you do?
+Alex: 部屋を 片付けます。ごみを 捨てます。それから、いすに 座ります。 | Heya o katazukemasu. Gomi o sutemasu. Sorekara, isu ni suwarimasu. | I tidy my room. I throw away the trash. Then I sit in a chair.
+
+[vocab]
+vocab: たつ | to stand (立つ)
+example: 電車で立ちます。 | I stand on the train.
+vocab: すわる | to sit (座る)
+example: ここに座ります。 | I sit here.
+vocab: そうじする | to clean (掃除する)
+example: 日曜日に部屋を掃除します。 | I clean the room on Sunday.
+vocab: せんたくする | to do laundry (洗濯する)
+example: 毎日、服を洗濯します。 | I do laundry every day.
+vocab: でかける | to go out (出かける)
+example: 日曜日に出かけます。 | I go out on Sunday.
+vocab: かたづける | to tidy up (片付ける)
+example: 部屋を片付けます。 | I tidy up the room.
+vocab: すてる | to throw away (捨てる)
+example: ごみを捨てます。 | I throw away the trash.
+vocab: おこす | to wake someone up (起こす)
+example: 母が私を起こします。 | My mother wakes me up.
+vocab: ふく | to wipe (拭く)
+example: テーブルを拭きます。 | I wipe the table.
+vocab: そる | to shave (剃る)
+example: 毎朝、ひげを剃ります。 | I shave every morning.
+
+[grammar]
+grammar: The polite ます form | The ます form makes a verb polite. It is often used in everyday conversations.
+example: スーパーへ 出かけます。 | I go out to the supermarket.
+example: はい、洗濯します。 | Yes, I do the laundry.
+
+[quiz]
+quiz: What does 掃除する mean? | to wake someone up | to clean | to go out | B | 掃除する (そうじする) means to clean.
+quiz: What does 洗濯する mean? | to throw away | to clean | to do laundry | C | 洗濯する (せんたくする) means to do laundry.
+quiz: What does 座る mean? | to sit | to wake someone up | to wipe | A | 座る (すわる) means to sit.
+quiz: Review - What does 着物 mean? | Japanese food | Kyoto | kimono | C | 着物 (きもの) means kimono.
+quiz: Review - What does 辞める mean? | senior | to go on a business trip | to quit | C | 辞める (やめる) means to quit.
+quiz: Review - What does 渡す mean? | keep | hand | reply | B | 渡す (わたす) means hand.
