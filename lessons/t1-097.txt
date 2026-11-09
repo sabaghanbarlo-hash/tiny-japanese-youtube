@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 97 · Nouns 5
+episode: T1-097
+scene: classroom
+
+[story]
+Mika: この 家に お風呂が ありますか。 | Kono ie ni ofuro ga arimasu ka? | Is there a bath in this house?
+Alex: はい、あります。 お風呂は 広いです。 | Hai, arimasu. Ofuro wa hiroi desu. | Yes, there is. The bath is spacious.
+Mika: 壁と 床は 何色ですか。 | Kabe to yuka wa naniiro desu ka? | What color are the wall and floor?
+Alex: 壁は 白いです。 床は 茶色です。 | Kabe wa shiroi desu. Yuka wa chairo desu. | The wall is white. The floor is brown.
+Mika: 庭に 橋が ありますか。 | Niwa ni hashi ga arimasu ka? | Is there a bridge in the garden?
+Alex: はい、庭に 小さい 橋が あります。 | Hai, niwa ni chiisai hashi ga arimasu. | Yes, there is a small bridge in the garden.
+Mika: この 場所は いいですね。 空気も きれいです。 | Kono basho wa ii desu ne. Kuuki mo kirei desu. | This place is nice. The air is clean too.
+Alex: はい。鳥の 声と 水の 音が 聞こえます。 | Hai. Tori no koe to mizu no oto ga kikoemasu. | Yes. I can hear birds' voices and the sound of water.
+
+[vocab]
+vocab: おふろ | bath (お風呂)
+example: 毎晩、お風呂に入ります。 | I take a bath every night.
+vocab: かべ | wall (壁)
+example: 壁に時計があります。 | There is a clock on the wall.
+vocab: ゆか | floor (床)
+example: 床が汚いです。 | The floor is dirty.
+vocab: にわ | garden (庭)
+example: 庭に花があります。 | There are flowers in the garden.
+vocab: はし | bridge (橋)
+example: あの橋は長いです。 | That bridge is long.
+vocab: ばしょ | place (場所)
+example: この場所は広いです。 | This place is spacious.
+vocab: こえ | voice (声)
+example: 彼女の声が聞こえます。 | I can hear her voice.
+vocab: おと | sound (音)
+example: 大きな音が聞こえます。 | I can hear a loud sound.
+vocab: くうき | air (空気)
+example: 空気がきれいです。 | The air is clean.
+vocab: どうぐ | tool (道具)
+example: この道具を使います。 | I use this tool.
+
+[grammar]
+grammar: Saying Something Exists | Use あります to say that something exists or is present. Use に to name the place where it exists.
+example: この 家に お風呂が ありますか。 | Is there a bath in this house?
+example: 庭に 小さい 橋が あります。 | There is a small bridge in the garden.
+
+[quiz]
+quiz: What does 庭 mean? | garden | sound | bridge | A | 庭 (にわ) means garden.
+quiz: What does 声 mean? | voice | garden | bridge | A | 声 (こえ) means voice.
+quiz: What does 場所 mean? | tool | place | garden | B | 場所 (ばしょ) means place.
+quiz: Review - What does 開く mean? | to push | to open | to sell | B | 開く (あく) means to open.
+quiz: Review - What does 生活 mean? | rule | result | daily life | C | 生活 (せいかつ) means daily life.
+quiz: Review - What does 眼鏡 mean? | box | entrance | glasses | C | 眼鏡 (めがね) means glasses.
