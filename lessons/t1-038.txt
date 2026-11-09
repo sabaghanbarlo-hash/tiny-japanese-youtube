@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 38 · Polite expressions and greetings
+episode: T1-038
+scene: classroom
+
+[story]
+Mika: おはようございます、アレックスさん。朝の あいさつは 何ですか。 | Ohayou gozaimasu, Arekkusu-san. Asa no aisatsu wa nan desu ka. | Good morning, Alex. What is the morning greeting?
+Alex: おはようございます、ミカさん。初めまして。 | Ohayou gozaimasu, Mika-san. Hajimemashite. | Good morning, Mika. Nice to meet you.
+Mika: 初めまして。よろしくお願いします。昼の あいさつは 何ですか。 | Hajimemashite. Yoroshiku onegaishimasu. Hiru no aisatsu wa nan desu ka. | Nice to meet you. Please treat me well. What is the daytime greeting?
+Alex: 「こんにちは」です。夕方は「こんばんは」です。 | “Konnichiwa” desu. Yuugata wa “konbanwa” desu. | It is “hello.” In the evening, it is “good evening.”
+Mika: 仕事では「お疲れ様です」と言います。わかりますか。 | Shigoto de wa “otsukaresama desu” to iimasu. Wakarimasu ka. | At work, people say “thanks for your hard work.” Do you understand?
+Alex: ごめんなさい、まだ わかりません。もう一度 お願いします。 | Gomennasai, mada wakarimasen. Mou ichido onegaishimasu. | I'm sorry, I don't understand yet. Please say it one more time.
+Mika: 大丈夫です。帰る時は「失礼します」や「さようなら」です。 | Daijoubu desu. Kaeru toki wa “shitsurei shimasu” ya “sayounara” desu. | That's okay. When leaving, say “excuse me” or “goodbye.”
+Alex: はい。夜は「おやすみなさい」です。 | Hai. Yoru wa “oyasuminasai” desu. | Yes. At night, say “good night.”
+
+[vocab]
+vocab: おはようございます | good morning
+example: おはようございます。元気ですか。 | Good morning. How are you?
+vocab: こんにちは | hello; good afternoon
+example: こんにちは。田中です。 | Hello. I'm Tanaka.
+vocab: こんばんは | good evening
+example: こんばんは。寒いですね。 | Good evening. It's cold, isn't it?
+vocab: おやすみなさい | good night
+example: おやすみなさい。ゆっくり休んでください。 | Good night. Please get some rest.
+vocab: はじめまして | nice to meet you (初めまして)
+example: 初めまして、山田と申します。 | Nice to meet you. I'm Yamada.
+vocab: よろしくおねがいします | please treat me well (よろしくお願いします)
+example: よろしくお願いします。 | It's nice to meet you.
+vocab: おつかれさまです | thank you for your hard work; good work (お疲れ様です)
+example: お疲れ様です。先に帰ります。 | Thanks for your hard work. I'm heading home before you.
+vocab: ごめんなさい | I'm sorry
+example: ごめんなさい。次から気をつけます。 | I'm sorry. I'll be more careful next time.
+vocab: しつれいします | excuse me; goodbye (失礼します)
+example: 失礼します。先に帰ります。 | Excuse me. I'll head home before you.
+vocab: さようなら | goodbye
+example: さようなら。お気をつけください。 | Goodbye. Please take care.
+
+[grammar]
+grammar: Asking What Something Is | Use 何ですか to politely ask what something is. The pattern is a topic, followed by 何ですか.
+example: 朝の あいさつは 何ですか。 | What is the morning greeting?
+example: 昼の あいさつは 何ですか。 | What is the daytime greeting?
+
+[quiz]
+quiz: What does お疲れ様です mean? | goodbye | I'm sorry | thank you for your hard work | C | お疲れ様です (おつかれさまです) means thank you for your hard work.
+quiz: What does さようなら mean? | good night | goodbye | good morning | B | さようなら means goodbye.
+quiz: What does こんにちは mean? | hello | good night | thank you for your hard work | A | こんにちは means hello.
+quiz: Review - What does じゃあ mean? | like | well then | in other words | B | じゃあ means well then.
+quiz: Review - What does 時々 mean? | sometimes | almost | often | A | 時々 (ときどき) means sometimes.
+quiz: Review - What does 心配する mean? | to worry | happy | scary | A | 心配する (しんぱいする) means to worry.
