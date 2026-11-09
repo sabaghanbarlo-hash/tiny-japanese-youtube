@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 89 · Adverbs 2
+episode: T1-089
+scene: classroom
+
+[story]
+Mika: アレックスさん、たいてい いつ 日本語を 勉強しますか。 | Arekkusu-san, taitei itsu Nihongo o benkyou shimasu ka. | Alex, when do you usually study Japanese?
+Alex: たいてい 夜に 勉強します。 | Taitei yoru ni benkyou shimasu. | I usually study at night.
+Mika: いいですね。ゆっくり 練習すると、だんだん 上手に なりますよ。 | Ii desu ne. Yukkuri renshuu suru to, dandan jouzu ni narimasu yo. | That’s nice. If you practice slowly, you’ll gradually get better.
+Alex: はい。きょうは はっきり 発音します。 | Hai. Kyou wa hakkiri hatsuon shimasu. | Yes. Today I’ll pronounce the words clearly.
+Mika: もし わからない 言葉が あったら、すぐ 聞いて ください。 | Moshi wakaranai kotoba ga attara, sugu kiite kudasai. | If there’s a word you don’t understand, please ask right away.
+Alex: はい、ちゃんと メモします。先生の 話を しっかり 聞きます。 | Hai, chanto memo shimasu. Sensei no hanashi o shikkari kikimasu. | Yes, I’ll take proper notes. I’ll listen carefully to the teacher.
+Mika: そろそろ 休みましょうか。 | Sorosoro yasumimashou ka. | Shall we take a break soon?
+Alex: はい。きっと 明日も がんばれます。 | Hai. Kitto ashita mo ganbaremasu. | Yes. I’m sure I can do my best tomorrow too.
+
+[vocab]
+vocab: すぐ | right away; soon
+example: すぐ戻ります。 | I'll be right back.
+vocab: ゆっくり | slowly; at your leisure
+example: ゆっくり進みます。 | I proceed slowly.
+vocab: きっと | surely; probably
+example: きっと成功します。 | I'm sure it'll be a success.
+vocab: ちゃんと | properly; reliably
+example: ちゃんと確認します。 | I'll check properly.
+vocab: だんだん | gradually
+example: だんだん暗くなります。 | It's gradually getting dark.
+vocab: そろそろ | soon; about time
+example: そろそろ出発します。 | It's about time to leave.
+vocab: たいてい | usually; generally (大抵)
+example: 大抵、七時に起きます。 | I usually get up at seven.
+vocab: もし | if
+example: もし晴れたら、出かけます。 | If it's sunny, I'll go out.
+vocab: しっかり | firmly; thoroughly
+example: しっかり準備します。 | I'll prepare thoroughly.
+vocab: はっきり | clearly
+example: 名前をはっきり言ってください。 | Please say your name clearly.
+
+[grammar]
+grammar: Adverbs Before Verbs | Japanese adverbs often come before the verbs they describe. They tell you how an action is done.
+example: はい。きょうは はっきり 発音します。 | Yes. Today I’ll pronounce the words clearly.
+example: はい、ちゃんと メモします。 | Yes, I’ll take proper notes.
+
+[quiz]
+quiz: What does ゆっくり mean? | soon | slowly | right away | B | ゆっくり means slowly.
+quiz: What does だんだん mean? | usually | surely | gradually | C | だんだん means gradually.
+quiz: What does きっと mean? | clearly | surely | usually | B | きっと means surely.
+quiz: Review - What does うるさい mean? | free | narrow | noisy | C | うるさい means noisy.
+quiz: Review - What does 和食 mean? | history | culture | Japanese food | C | 和食 (わしょく) means Japanese food.
+quiz: Review - What does 喉 mean? | body | throat | arm | B | 喉 (のど) means throat.
