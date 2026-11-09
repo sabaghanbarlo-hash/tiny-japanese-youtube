@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 68 · Verbs: try, decide, choose, change, prepare, practice...
+episode: T1-068
+scene: classroom
+
+[story]
+Mika: 新しい 勉強法を 試しますか。 | Atarashii benkyouhou o tameshimasu ka? | Will you try a new way to study?
+Alex: はい。コースを 選んで、今日 申し込みます。 | Hai. Koosu o erande, kyou moushikomimasu. | Yes. I’ll choose a course and apply today.
+Mika: 始める 日は もう 決定しましたか。 | Hajimeru hi wa mou kettei shimashita ka? | Have you decided when to start?
+Alex: はい。毎朝 練習することを 決定しました。 | Hai. Maiasa renshuu suru koto o kettei shimashita. | Yes. I decided to practice every morning.
+Mika: 勉強の 時間を 変えますか。 | Benkyou no jikan o kaemasu ka? | Will you change your study time?
+Alex: はい。ノートを 用意して、練習の 準備を します。 | Hai. Nooto o youi shite, renshuu no junbi o shimasu. | Yes. I’ll prepare my notebook and get ready to practice.
+Mika: 毎日 続けて、一緒に 頑張りましょう。 | Mainichi tsuzukete, issho ni ganbarimashou. | Let’s keep going every day and do our best together.
+Alex: はい。少しずつ 慣れると 思います。 | Hai. Sukoshi zutsu nareru to omoimasu. | Yes. I think I’ll get used to it little by little.
+
+[vocab]
+vocab: ためす | to try (試す)
+example: 別の方法を試します。 | I’ll try a different method.
+vocab: けっていする | to decide (決定する)
+example: 日程を決定します。 | I’ll decide on the schedule.
+vocab: えらぶ | to choose (選ぶ)
+example: 品物を選びます。 | I’ll choose an item.
+vocab: かえる | to change (変える)
+example: 設定を変えます。 | I’ll change the settings.
+vocab: よういする | to prepare (用意する)
+example: 昼食を用意します。 | I’ll prepare lunch.
+vocab: じゅんびする | to get ready (準備する)
+example: 出発の準備をします。 | I’ll get ready to leave.
+vocab: もうしこむ | to apply (申し込む)
+example: 教室に申し込みます。 | I’ll sign up for the class.
+vocab: つづける | to continue (続ける)
+example: 最後まで続けます。 | I’ll continue to the end.
+vocab: がんばる | to do one's best (頑張る)
+example: 今日は仕事を頑張ります。 | I’ll do my best at work today.
+vocab: なれる | to get used to (慣れる)
+example: 新しい仕事に慣れました。 | I got used to the new job.
+
+[grammar]
+grammar: Connecting Actions with て | The て-form can connect two actions in sequence. It often means “and” or “then.”
+example: コースを 選んで、今日 申し込みます。 | I’ll choose a course and apply today.
+example: ノートを 用意して、練習の 準備を します。 | I’ll prepare my notebook and get ready to practice.
+
+[quiz]
+quiz: What does 続ける mean? | to decide | to continue | to try | B | 続ける (つづける) means to continue.
+quiz: What does 頑張る mean? | to change | to do one's best | to decide | B | 頑張る (がんばる) means to do one's best.
+quiz: What does 決定する mean? | to get used to | to apply | to decide | C | 決定する (けっていする) means to decide.
+quiz: Review - What does 発音 mean? | word | pronunciation | dictionary | B | 発音 (はつおん) means pronunciation.
+quiz: Review - What does 太陽 mean? | sun | temperature | snow | A | 太陽 (たいよう) means sun.
+quiz: Review - What does 何月 mean? | year-end | what month | what day of the month | B | 何月 (なんがつ) means what month.
