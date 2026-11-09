@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 65 · Nature and weather 2
+episode: T1-065
+scene: classroom
+
+[story]
+Mika: 今日は 風 が つよい ですね。雲 も ありますか。 | Kyou wa kaze ga tsuyoi desu ne. Kumo mo arimasu ka. | The wind is strong today, isn’t it? Are there clouds too?
+Alex: はい、風 が つよい です。雲 も あります。 | Hai, kaze ga tsuyoi desu. Kumo mo arimasu. | Yes, the wind is strong. There are clouds too.
+Mika: 雪 は ふっていますか。 | Yuki wa futte imasu ka. | Is it snowing?
+Alex: いいえ、雪 は ありません。太陽 が 出ています。 | Iie, yuki wa arimasen. Taiyou ga dete imasu. | No, there is no snow. The sun is out.
+Mika: 気温 は どうですか。暖かい ですか。 | Kion wa dou desu ka. Atatakai desu ka. | How is the temperature? Is it warm?
+Alex: はい、昼 は 暖かい です。でも、夜 は 涼しい です。 | Hai, hiru wa atatakai desu. Demo, yoru wa suzushii desu. | Yes, it’s warm during the day. But it’s cool at night.
+Mika: 夜 に 星 が 見えますか。雷 は ありますか。 | Yoru ni hoshi ga miemasu ka. Kaminari wa arimasu ka. | Can you see stars at night? Is there thunder?
+Alex: 星 が 見えます。雷 は ありません。台風 も ありません。 | Hoshi ga miemasu. Kaminari wa arimasen. Taifuu mo arimasen. | I can see stars. There is no thunder. There is no typhoon either.
+
+[vocab]
+vocab: かぜ | wind (風)
+example: 風が強いです。 | The wind is strong.
+vocab: ゆき | snow (雪)
+example: 冬に雪が降ります。 | It snows in winter.
+vocab: くも | cloud (雲)
+example: 雲が多いです。 | There are many clouds.
+vocab: たいふう | typhoon (台風)
+example: 台風が近づいています。 | A typhoon is approaching.
+vocab: きおん | temperature (気温)
+example: 気温は二十度です。 | The temperature is twenty degrees.
+vocab: かみなり | thunder (雷)
+example: 雷が鳴っています。 | Thunder is rumbling.
+vocab: たいよう | sun (太陽)
+example: 太陽がまぶしいです。 | The sun is dazzling.
+vocab: ほし | star (星)
+example: 星がきれいです。 | The stars are beautiful.
+vocab: あたたかい | warm (暖かい)
+example: 今日は暖かいです。 | It is warm today.
+vocab: すずしい | cool; pleasantly cool (涼しい)
+example: 夜は涼しいです。 | It is cool at night.
+
+[grammar]
+grammar: Using も for “also” | も adds the meaning “also” or “too” to a noun. It shows that something is true as well.
+example: 雲 も あります。 | There are clouds too.
+example: 台風 も ありません。 | There is no typhoon either.
+
+[quiz]
+quiz: What does 太陽 mean? | wind | snow | sun | C | 太陽 (たいよう) means sun.
+quiz: What does 気温 mean? | sun | wind | temperature | C | 気温 (きおん) means temperature.
+quiz: What does 暖かい mean? | cloud | warm | thunder | B | 暖かい (あたたかい) means warm.
+quiz: Review - What does 硬い mean? | hard | round | dirty | A | 硬い (かたい) means hard.
+quiz: Review - What does 場合 mean? | purpose | case | method | B | 場合 (ばあい) means case.
+quiz: Review - What does 待ち合わせる mean? | recall | meet up | meet | B | 待ち合わせる (まちあわせる) means meet up.
