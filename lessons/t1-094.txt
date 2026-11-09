@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 94 · Abstract nouns 2
+episode: T1-094
+scene: classroom
+
+[story]
+Mika: アレックスさん、生活 は どうですか。 | Arekkusu-san, seikatsu wa dou desu ka. | Alex, how is your daily life?
+Alex: 生活 は たのしいです。自由 な 時間 も あります。 | Seikatsu wa tanoshii desu. Jiyuu na jikan mo arimasu. | My daily life is fun. I also have free time.
+Mika: いいですね。夢 は ありますか。 | Ii desu ne. Yume wa arimasu ka. | That’s nice. Do you have a dream?
+Alex: はい。先生 に なる 夢 が あります。 | Hai. Sensei ni naru yume ga arimasu. | Yes. I have a dream of becoming a teacher.
+Mika: すてきですね。未来 は どうですか。 | Suteki desu ne. Mirai wa dou desu ka. | That’s wonderful. What about the future?
+Alex: 未来 は 明るいです。夢 の ために 努力します。 | Mirai wa akarui desu. Yume no tame ni doryoku shimasu. | The future is bright. I work hard for my dream.
+Mika: いいですね。習慣 は ありますか。 | Ii desu ne. Shuukan wa arimasu ka. | That’s nice. Do you have a habit?
+Alex: はい。毎朝 本 を 読みます。その 結果、気分 が いいです。 | Hai. Maiasa hon o yomimasu. Sono kekka, kibun ga ii desu. | Yes. I read a book every morning. As a result, I feel good.
+
+[vocab]
+vocab: せいかつ | daily life (生活)
+example: 生活は大変です。 | Daily life is hard.
+vocab: ゆめ | dream (夢)
+example: 私には夢があります。 | I have a dream.
+vocab: きぶん | mood (気分)
+example: 今日は気分がいいです。 | I feel good today.
+vocab: じゆう | freedom (自由)
+example: 自由な時間があります。 | I have free time.
+vocab: しゅうかん | habit (習慣)
+example: これはいい習慣です。 | This is a good habit.
+vocab: みらい | future (未来)
+example: 未来は明るいです。 | The future is bright.
+vocab: かこ | past (過去)
+example: 過去の写真を見ます。 | I look at photos from the past.
+vocab: ルール | rule
+example: このルールは簡単です。 | This rule is simple.
+vocab: けっか | result; outcome (結果)
+example: テストの結果はよかったです。 | The test results were good.
+vocab: どりょく | effort (努力)
+example: 毎日努力しています。 | I make an effort every day.
+
+[grammar]
+grammar: Topic marker は | は marks the topic of a sentence. It often comes after the thing you are talking about.
+example: 生活 は たのしいです。 | My daily life is fun.
+example: 未来 は 明るいです。 | The future is bright.
+
+[quiz]
+quiz: What does 結果 mean? | future | rule | result | C | 結果 (けっか) means result.
+quiz: What does 気分 mean? | future | mood | past | B | 気分 (きぶん) means mood.
+quiz: What does 夢 mean? | future | habit | dream | C | 夢 (ゆめ) means dream.
+quiz: Review - What does 歯ブラシ mean? | toothbrush | calendar | curtain | A | 歯ブラシ (はぶらし) means toothbrush.
+quiz: Review - What does 料理する mean? | to warm something | to comb | to cook | C | 料理する (りょうりする) means to cook.
+quiz: Review - What does 起こす mean? | to sit | to wake someone up | to wipe | B | 起こす (おこす) means to wake someone up.
