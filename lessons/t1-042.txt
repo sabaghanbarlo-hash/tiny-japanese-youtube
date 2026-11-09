@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 42 · School and study
+episode: T1-042
+scene: classroom
+
+[story]
+Mika: アレックスさん、きょうは 何を 勉強しますか。 | Arekkusu-san, kyō wa nani o benkyō shimasu ka. | Alex, what are you studying today?
+Alex: 日本語を 勉強します。宿題も します。 | Nihongo o benkyō shimasu. Shukudai mo shimasu. | I’m studying Japanese. I’ll do homework too.
+Mika: 授業は 何時ですか。教室は あそこです。 | Jugyō wa nanji desu ka. Kyōshitsu wa asoko desu. | What time is class? The classroom is over there.
+Alex: 授業は ９時です。教科書と ノートが あります。 | Jugyō wa kuji desu. Kyōkasho to nōto ga arimasu. | Class is at nine. I have a textbook and a notebook.
+Mika: テストは ありますか。鉛筆を 持っていますか。 | Tesuto wa arimasu ka. Enpitsu o motte imasu ka. | Is there a test? Do you have a pencil?
+Alex: はい、鉛筆が あります。大学の 図書館で 勉強します。 | Hai, enpitsu ga arimasu. Daigaku no toshokan de benkyō shimasu. | Yes, I have a pencil. I study in the university library.
+Mika: いいですね。図書館は 静かですか。 | Ii desu ne. Toshokan wa shizuka desu ka. | That’s nice. Is the library quiet?
+Alex: はい、とても 静かです。 | Hai, totemo shizuka desu. | Yes, it’s very quiet.
+
+[vocab]
+vocab: べんきょうする | to study (勉強する)
+example: 日本語を勉強します。 | I study Japanese.
+vocab: しゅくだい | homework (宿題)
+example: 宿題が多いです。 | There is a lot of homework.
+vocab: じゅぎょう | class; lesson (授業)
+example: 授業が始まります。 | Class is starting.
+vocab: きょうしつ | classroom (教室)
+example: 教室は静かです。 | The classroom is quiet.
+vocab: きょうかしょ | textbook (教科書)
+example: 教科書を開きます。 | I open the textbook.
+vocab: ノート | notebook
+example: ノートに書きます。 | I write in my notebook.
+vocab: テスト | test
+example: テストを受けます。 | I take a test.
+vocab: えんぴつ | pencil (鉛筆)
+example: 鉛筆で書きます。 | I write with a pencil.
+vocab: だいがく | university (大学)
+example: 大学で学びます。 | I study at university.
+vocab: としょかん | library (図書館)
+example: 図書館で勉強します。 | I study at the library.
+
+[grammar]
+grammar: Using は for the topic | は marks what the sentence is about. It is pronounced wa when used as a topic marker.
+example: 授業は ９時です。 | Class is at nine.
+example: 教室は あそこです。 | The classroom is over there.
+
+[quiz]
+quiz: What does 宿題 mean? | pencil | homework | university | B | 宿題 (しゅくだい) means homework.
+quiz: What does 勉強する mean? | pencil | university | to study | C | 勉強する (べんきょうする) means to study.
+quiz: What does 教科書 mean? | pencil | textbook | library | B | 教科書 (きょうかしょ) means textbook.
+quiz: Review - What does 社員 mean? | nurse | shop clerk | company employee | C | 社員 (しゃいん) means company employee.
+quiz: Review - What does 答える mean? | reply | call | answer | C | 答える (こたえる) means answer.
+quiz: Review - What does よく mean? | quite | often | very | B | よく means often.
