@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 73 · Transportation and traffic 2
+episode: T1-073
+scene: classroom
+
+[story]
+Mika: 交差点の 信号は どこですか。 | Kōsaten no shingō wa doko desu ka. | Where is the traffic light at the intersection?
+Alex: 横断歩道の 近くです。 | Ōdan hodō no chikaku desu. | It’s near the crosswalk.
+Mika: 道路は 渋滞していますか。 | Dōro wa jūtai shite imasu ka. | Is there a traffic jam on the road?
+Alex: はい、道路は 渋滞しています。でも、歩道は 安全です。 | Hai, dōro wa jūtai shite imasu. Demo, hodō wa anzen desu. | Yes, there’s a traffic jam. But the sidewalk is safe.
+Mika: 駐車場まで 車を 運転しますか。 | Chūshajō made kuruma o unten shimasu ka. | Will you drive to the parking lot?
+Alex: はい、車を 運転します。 | Hai, kuruma o unten shimasu. | Yes, I’ll drive.
+Mika: バスの 運賃は いくらですか。 | Basu no unchin wa ikura desu ka. | How much is the bus fare?
+Alex: 300円です。駅で 電車に 乗り換えます。 | Sanbyaku-en desu. Eki de densha ni norikaemasu. | It’s 300 yen. I’ll transfer to a train at the station.
+
+[vocab]
+vocab: しんごう | traffic light (信号)
+example: 信号は赤です。 | The traffic light is red.
+vocab: おうだんほどう | crosswalk (横断歩道)
+example: 横断歩道を渡ります。 | I cross at the crosswalk.
+vocab: こうさてん | intersection (交差点)
+example: 交差点で右に曲がります。 | I turn right at the intersection.
+vocab: じゅうたい | traffic jam (渋滞)
+example: 道が渋滞しています。 | The road is congested.
+vocab: どうろ | road (道路)
+example: この道路は広いです。 | This road is wide.
+vocab: ほどう | sidewalk (歩道)
+example: 歩道を歩きます。 | I walk on the sidewalk.
+vocab: ちゅうしゃじょう | parking lot (駐車場)
+example: 駐車場はあそこです。 | The parking lot is over there.
+vocab: のりかえる | to transfer (乗り換える)
+example: ここで地下鉄に乗り換えます。 | I transfer to the subway here.
+vocab: うんてんする | to drive (運転する)
+example: 私は車を運転します。 | I drive a car.
+vocab: うんちん | fare (運賃)
+example: バスの運賃はいくらですか。 | How much is the bus fare?
+
+[grammar]
+grammar: Asking with ですか | Add ですか to make a polite question. It often follows a question word or a statement.
+example: 交差点の 信号は どこですか。 | Where is the traffic light at the intersection?
+example: バスの 運賃は いくらですか。 | How much is the bus fare?
+
+[quiz]
+quiz: What does 道路 mean? | road | to transfer | parking lot | A | 道路 (どうろ) means road.
+quiz: What does 横断歩道 mean? | parking lot | crosswalk | intersection | B | 横断歩道 (おうだんほどう) means crosswalk.
+quiz: What does 乗り換える mean? | traffic jam | to transfer | to drive | B | 乗り換える (のりかえる) means to transfer.
+quiz: Review - What does スカート mean? | makeup | skirt | jacket | B | スカート means skirt.
+quiz: Review - What does 最低 mean? | most | the worst | as much as | B | 最低 (さいてい) means the worst.
+quiz: Review - What does 町 mean? | government | town | prefecture | B | 町 (まち) means town.
