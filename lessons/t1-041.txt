@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 41 · Work and jobs
+episode: T1-041
+scene: classroom
+
+[story]
+Mika: どんな 仕事 を して いますか。 | Donna shigoto o shite imasu ka? | What kind of work do you do?
+Alex: 店員 です。カフェ で バイト を して います。 | Ten'in desu. Kafe de baito o shite imasu. | I’m a shop clerk. I work part-time at a café.
+Mika: 給料 は いい ですか。 | Kyūryō wa ii desu ka? | Is the pay good?
+Alex: はい、いい です。面接 は かんたん でした。 | Hai, ii desu. Mensetsu wa kantan deshita. | Yes, it is. The interview was easy.
+Mika: 上司 は やさしい ですか。 | Jōshi wa yasashii desu ka? | Is your boss kind?
+Alex: はい。社員 も やさしい です。 | Hai. Shain mo yasashii desu. | Yes. The employees are kind, too.
+Mika: 残業 は ありますか。 | Zangyō wa arimasu ka? | Do you have overtime?
+Alex: いいえ、ありません。 | Iie, arimasen. | No, I don’t.
+
+[vocab]
+vocab: しごと | work; job (仕事)
+example: 今日は仕事があります。 | I have work today.
+vocab: バイト | part-time job
+example: 週末はカフェでバイトをします。 | I work part-time at a café on weekends.
+vocab: しゃいん | company employee (社員)
+example: 兄は社員です。 | My older brother is an employee.
+vocab: てんいん | shop clerk (店員)
+example: 母は店員です。 | My mother is a shop clerk.
+vocab: いしゃ | doctor (医者)
+example: 父は医者です。 | My father is a doctor.
+vocab: かんごし | nurse (看護師)
+example: 姉は看護師です。 | My older sister is a nurse.
+vocab: きゅうりょう | salary (給料)
+example: 給料は毎月出ます。 | I get paid every month.
+vocab: めんせつ | interview (面接)
+example: 明日は面接があります。 | I have an interview tomorrow.
+vocab: じょうし | boss; supervisor (上司)
+example: 上司は親切な人です。 | My boss is a kind person.
+vocab: ざんぎょう | overtime (残業)
+example: 今日は残業があります。 | I have to work overtime today.
+
+[grammar]
+grammar: Talking About Current Work | The pattern ています can describe something you do regularly or are doing now. It can be used to ask and answer about someone’s current work.
+example: どんな 仕事 を して いますか。 | What kind of work do you do?
+example: カフェ で バイト を して います。 | I work part-time at a café.
+
+[quiz]
+quiz: What does 給料 mean? | work | salary | shop clerk | B | 給料 (きゅうりょう) means salary.
+quiz: What does 看護師 mean? | work | nurse | doctor | B | 看護師 (かんごし) means nurse.
+quiz: What does 店員 mean? | doctor | boss | shop clerk | C | 店員 (てんいん) means shop clerk.
+quiz: Review - What does 始まる mean? | begin | start | end | A | 始まる (はじまる) means begin.
+quiz: Review - What does さようなら mean? | nice to meet you | hello | goodbye | C | さようなら means goodbye.
+quiz: Review - What does ので mean? | because | only | by | A | ので means because.
