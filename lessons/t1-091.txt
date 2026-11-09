@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 91 · Verbs 9
+episode: T1-091
+scene: classroom
+
+[story]
+Mika: 朝は 何を しますか。 | Asa wa nani o shimasu ka? | What do you do in the morning?
+Alex: 朝ごはんを 料理します。それから、お湯を 沸かします。 | Asagohan o ryōri shimasu. Sorekara, oyu o wakashimasu. | I cook breakfast. Then I boil water.
+Mika: スープを 温めますか。水を 冷やしますか。 | Sūpu o atatamemasu ka? Mizu o hiyashimasu ka? | Do you warm the soup? Do you chill the water?
+Alex: スープを 温めます。水は 冷やします。 | Sūpu o atatamemasu. Mizu wa hiyashimasu. | I warm the soup. I chill the water.
+Mika: 出かける 前に、髪を とかして 支度しますか。 | Dekakeru mae ni, kami o tokashite shitaku shimasu ka? | Before you go out, do you comb your hair and get ready?
+Alex: はい。髪を とかして、出かける 支度を します。 | Hai. Kami o tokashite, dekakeru shitaku o shimasu. | Yes. I comb my hair and get ready to go out.
+Mika: 洗濯物を 乾かしますか。服を 畳みますか。 | Sentakumono o kawakashimasu ka? Fuku o tatamimasu ka? | Do you dry the laundry? Do you fold your clothes?
+Alex: はい。服を 畳んで、たんすに しまいます。 | Hai. Fuku o tatande, tansu ni shimaimasu. | Yes. I fold my clothes and put them away in the dresser.
+
+[vocab]
+vocab: りょうりする | to cook (料理する)
+example: 家で料理します。 | I cook at home.
+vocab: かわかす | to dry something (乾かす)
+example: 髪を乾かします。 | I dry my hair.
+vocab: たたむ | to fold (畳む)
+example: タオルを畳みます。 | I fold the towel.
+vocab: しまう | to put away
+example: 服をしまいます。 | I put away my clothes.
+vocab: わかす | to boil (沸かす)
+example: 水を沸かします。 | I boil water.
+vocab: あたためる | to warm something (温める)
+example: スープを温めます。 | I warm up the soup.
+vocab: ひやす | to chill something (冷やす)
+example: 飲み物を冷やします。 | I chill the drinks.
+vocab: ながす | to run or flush water (流す)
+example: 水を流します。 | I run the water.
+vocab: したくする | to get ready (支度する)
+example: 毎朝、支度します。 | I get ready every morning.
+vocab: とかす | to comb
+example: 毎朝、髪をとかします。 | I comb my hair every morning.
+
+[grammar]
+grammar: Connecting Actions with て-Form | Use the て-form to connect actions done in sequence. The final verb shows what happens last.
+example: 髪を とかして、出かける 支度を します。 | I comb my hair and get ready to go out.
+example: 服を 畳んで、たんすに しまいます。 | I fold my clothes and put them away in the dresser.
+
+[quiz]
+quiz: What does 乾かす mean? | to put away | to dry something | to cook | B | 乾かす (かわかす) means to dry something.
+quiz: What does 畳む mean? | to put away | to comb | to fold | C | 畳む (たたむ) means to fold.
+quiz: What does 支度する mean? | to get ready | to dry something | to fold | A | 支度する (したくする) means to get ready.
+quiz: Review - What does ティッシュ mean? | pillow | tissue | charger | B | ティッシュ means tissue.
+quiz: Review - What does まずい mean? | narrow | low | bad-tasting | C | まずい means bad-tasting.
+quiz: Review - What does 辞める mean? | company president | to quit | to apply | B | 辞める (やめる) means to quit.
