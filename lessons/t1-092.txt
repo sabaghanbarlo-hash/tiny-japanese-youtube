@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 92 · Adjectives 4
+episode: T1-092
+scene: classroom
+
+[story]
+Mika: この ケーキは 甘い ですか。 | Kono kēki wa amai desu ka? | Is this cake sweet?
+Alex: はい、甘い です。でも、コーヒーは 苦い です。 | Hai, amai desu. Demo, kōhī wa nigai desu. | Yes, it’s sweet. But the coffee is bitter.
+Mika: この カレーは 辛い ですか。 | Kono karē wa karai desu ka? | Is this curry spicy?
+Alex: はい、辛い です。スープは しょっぱい です。 | Hai, karai desu. Sūpu wa shoppai desu. | Yes, it’s spicy. The soup is salty.
+Mika: この レモンは 酸っぱい ですか。 | Kono remon wa suppai desu ka? | Is this lemon sour?
+Alex: はい、酸っぱい です。水は ぬるい です。 | Hai, suppai desu. Mizu wa nurui desu. | Yes, it’s sour. The water is lukewarm.
+Mika: この 部屋は 暗い ですね。 | Kono heya wa kurai desu ne. | This room is dark, isn’t it?
+Alex: はい。でも、ミカさんは 料理が 上手 です。 | Hai. Demo, Mika-san wa ryōri ga jōzu desu. | Yes. But you’re good at cooking, Mika.
+
+[vocab]
+vocab: あまい | sweet (甘い)
+example: このケーキは甘いです。 | This cake is sweet.
+vocab: からい | spicy (辛い)
+example: このカレーは辛いです。 | This curry is spicy.
+vocab: くらい | dark (暗い)
+example: この部屋は暗いです。 | This room is dark.
+vocab: じょうず | skillful; good at (上手)
+example: 姉は料理が上手です。 | My older sister is good at cooking.
+vocab: にがい | bitter (苦い)
+example: この薬は苦いです。 | This medicine is bitter.
+vocab: しょっぱい | salty
+example: このスープはしょっぱいです。 | This soup is salty.
+vocab: すっぱい | sour (酸っぱい)
+example: このレモンは酸っぱいです。 | This lemon is sour.
+vocab: ぬるい | lukewarm
+example: お茶がぬるいです。 | The tea is lukewarm.
+vocab: ひどい | terrible; severe
+example: 雨がひどいです。 | The rain is heavy.
+vocab: きつい | tight
+example: この靴はきついです。 | These shoes are tight.
+
+[grammar]
+grammar: Adjectives with です | Add です after an adjective to make a polite statement. Add か to ask a polite yes-or-no question.
+example: この ケーキは 甘い ですか。 | Is this cake sweet?
+example: 水は ぬるい です。 | The water is lukewarm.
+
+[quiz]
+quiz: What does 酸っぱい mean? | skillful | sour | lukewarm | B | 酸っぱい (すっぱい) means sour.
+quiz: What does ひどい mean? | sweet | bitter | terrible | C | ひどい means terrible.
+quiz: What does 苦い mean? | salty | sour | bitter | C | 苦い (にがい) means bitter.
+quiz: Review - What does しまう mean? | to comb | to chill something | to put away | C | しまう means to put away.
+quiz: Review - What does だんだん mean? | gradually | surely | properly | A | だんだん means gradually.
+quiz: Review - What does 放課後 mean? | after school | blackboard | Japanese language | A | 放課後 (ほうかご) means after school.
