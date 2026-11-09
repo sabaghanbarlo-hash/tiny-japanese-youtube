@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 72 · Fashion and appearance
+episode: T1-072
+scene: classroom
+
+[story]
+Mika: 今日は おしゃれ ですね。髪 も きれい ですね。 | Kyō wa oshare desu ne. Kami mo kirei desu ne. | You look stylish today. Your hair is nice, too.
+Alex: ありがとうございます。鏡 で 髪 を 見ました。 | Arigatō gozaimasu. Kagami de kami o mimashita. | Thank you. I looked at my hair in the mirror.
+Mika: その セーター は かっこいい ですね。サイズ は どう ですか。 | Sono sētā wa kakkoii desu ne. Saizu wa dō desu ka. | That sweater looks cool. How is the size?
+Alex: ちょうど いい です。スカート も 好き です。 | Chōdo ii desu. Sukāto mo suki desu. | It’s just right. I like the skirt, too.
+Mika: 化粧 は しますか。上着 も 着ますか。 | Keshō wa shimasu ka. Uwagi mo kimasu ka. | Do you wear makeup? Will you wear a jacket, too?
+Alex: はい、化粧 を します。あとで 着替えます。 | Hai, keshō o shimasu. Ato de kigaemasu. | Yes, I wear makeup. I’ll change clothes later.
+Mika: どの 上着 が いい ですか。 | Dono uwagi ga ii desu ka. | Which jacket is good?
+Alex: この 上着 が いい です。ありがとうございます。 | Kono uwagi ga ii desu. Arigatō gozaimasu. | This jacket is good. Thank you.
+
+[vocab]
+vocab: かみ | hair (髪)
+example: 髪が長いです。 | My hair is long.
+vocab: かがみ | mirror (鏡)
+example: 鏡を見ます。 | I look in the mirror.
+vocab: おしゃれ | stylish
+example: その服はおしゃれです。 | Those clothes are stylish.
+vocab: かっこいい | cool; good-looking
+example: この靴はかっこいいです。 | These shoes look cool.
+vocab: スカート | skirt
+example: スカートを買います。 | I will buy a skirt.
+vocab: セーター | sweater
+example: セーターを着ます。 | I wear a sweater.
+vocab: うわぎ | jacket; outerwear (上着)
+example: 上着を着ます。 | I put on a jacket.
+vocab: けしょう | makeup (化粧)
+example: 毎朝、化粧をします。 | I put on makeup every morning.
+vocab: サイズ | size
+example: このサイズは小さいです。 | This size is small.
+vocab: きがえる | to change clothes (着替える)
+example: 家で着替えます。 | I change clothes at home.
+
+[grammar]
+grammar: Friendly ですね | Add ですね to a statement to sound friendly and invite agreement. It is a polite way to make a warm observation.
+example: 今日は おしゃれ ですね。 | You look stylish today.
+example: その セーター は かっこいい ですね。 | That sweater looks cool.
+
+[quiz]
+quiz: What does 鏡 mean? | mirror | skirt | hair | A | 鏡 (かがみ) means mirror.
+quiz: What does おしゃれ mean? | stylish | to change clothes | sweater | A | おしゃれ means stylish.
+quiz: What does セーター mean? | sweater | makeup | skirt | A | セーター means sweater.
+quiz: Review - What does 消費税 mean? | coins | budget | consumption tax | C | 消費税 (しょうひぜい) means consumption tax.
+quiz: Review - What does 欲しがる mean? | want to | want (third person) | not good at | B | 欲しがる (ほしがる) means want (third person).
+quiz: Review - What does 気温 mean? | snow | temperature | sun | B | 気温 (きおん) means temperature.
