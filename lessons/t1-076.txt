@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 76 · News and information
+episode: T1-076
+scene: classroom
+
+[story]
+Mika: アレックス さん、ニュース を 見ましたか。 | Arekkusu-san, nyūsu o mimashita ka? | Alex, did you watch the news?
+Alex: はい、朝 新聞 を 読みました。 | Hai, asa shinbun o yomimashita. | Yes, I read the newspaper this morning.
+Mika: どんな 記事 を 読みましたか。 | Donna kiji o yomimashita ka? | What kind of article did you read?
+Alex: 事件 の 情報 を 確認しました。 | Jiken no jōhō o kakunin shimashita. | I checked the information about the incident.
+Mika: 事件 の 内容 は どうでしたか。 | Jiken no naiyō wa dō deshita ka? | What were the details of the incident?
+Alex: まだ わかりません。新しい 知らせ は ありますか。 | Mada wakarimasen. Atarashii shirase wa arimasu ka? | I don’t know yet. Is there any new information?
+Mika: 警察 は 今日、事件 の 内容 を 発表します。 | Keisatsu wa kyō, jiken no naiyō o happyō shimasu. | The police will announce the details of the incident today.
+Alex: はい、夜 の 放送 を 見ます。 | Hai, yoru no hōsō o mimasu. | Yes, I’ll watch the broadcast tonight.
+
+[vocab]
+vocab: ニュース | news
+example: 今朝、ニュースを見ました。 | I watched the news this morning.
+vocab: しんぶん | newspaper (新聞)
+example: 父は新聞を読みます。 | My father reads the newspaper.
+vocab: きじ | article (記事)
+example: 新しい記事を読みました。 | I read a new article.
+vocab: じょうほう | information (情報)
+example: 新しい情報があります。 | There is new information.
+vocab: しらせ | notice; news (知らせ)
+example: 大事なお知らせです。 | It is an important notice.
+vocab: はっぴょうする | to announce (発表する)
+example: 市が結果を発表します。 | The city announces the results.
+vocab: かくにんする | to check; confirm (確認する)
+example: 内容を確認します。 | I will check the details.
+vocab: ほうそう | broadcast (放送)
+example: ラジオでニュースを放送します。 | They broadcast the news on the radio.
+vocab: じけん | incident; case (事件)
+example: 大きな事件が起きました。 | A major incident happened.
+vocab: ないよう | content; details (内容)
+example: 内容を説明します。 | I will explain the details.
+
+[grammar]
+grammar: The particle を | を marks the direct object of an action. It comes after the thing someone sees, reads, or checks.
+example: ニュース を 見ましたか。 | Did you watch the news?
+example: どんな 記事 を 読みましたか。 | What kind of article did you read?
+
+[quiz]
+quiz: What does 発表する mean? | to announce | broadcast | to check | A | 発表する (はっぴょうする) means to announce.
+quiz: What does 放送 mean? | broadcast | news | notice | A | 放送 (ほうそう) means broadcast.
+quiz: What does 確認する mean? | newspaper | to check | content | B | 確認する (かくにんする) means to check.
+quiz: Review - What does 赤ちゃん mean? | baby | to give birth | to move house | A | 赤ちゃん (あかちゃん) means baby.
+quiz: Review - What does 乗り換える mean? | to transfer | fare | sidewalk | A | 乗り換える (のりかえる) means to transfer.
+quiz: Review - What does てもいい mean? | want (something) | may | must | B | てもいい means may.
