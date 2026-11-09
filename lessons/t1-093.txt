@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 93 · Nouns 4
+episode: T1-093
+scene: classroom
+
+[story]
+Mika: 週末 は 何 を しますか。 | Shuumatsu wa nani o shimasu ka. | What do you do on the weekend?
+Alex: 夕方 に 風呂 に 入ります。 | Yuugata ni furo ni hairimasu. | I take a bath in the early evening.
+Mika: お湯 と 石鹸 は ありますか。 | Oyu to sekken wa arimasu ka. | Do you have hot water and soap?
+Alex: はい、お湯 と 石鹸 が あります。 | Hai, oyu to sekken ga arimasu. | Yes, I have hot water and soap.
+Mika: 歯ブラシ は どこ ですか。 | Haburashi wa doko desu ka. | Where is the toothbrush?
+Alex: 歯ブラシ は 袋 の 中 に あります。 | Haburashi wa fukuro no naka ni arimasu. | The toothbrush is inside the bag.
+Mika: 電気 は ついていますか。カレンダー は どこ ですか。 | Denki wa tsuite imasu ka. Kaarendaa wa doko desu ka. | Is the light on? Where is the calendar?
+Alex: はい、ついています。カレンダー は カーテン の そば に あります。 | Hai, tsuite imasu. Kaarendaa wa kaaten no soba ni arimasu. | Yes, it is. The calendar is beside the curtain.
+
+[vocab]
+vocab: でんき | light; electricity (電気)
+example: 電気をつけます。 | I turn on the light.
+vocab: おゆ | hot water (お湯)
+example: お湯を使います。 | I use hot water.
+vocab: しゅうまつ | weekend (週末)
+example: 週末は家で休みます。 | I rest at home on the weekend.
+vocab: ふろ | bath (風呂)
+example: 風呂に入ります。 | I take a bath.
+vocab: ゆうがた | early evening (夕方)
+example: 夕方に帰ります。 | I go home in the early evening.
+vocab: ふくろ | bag (袋)
+example: これを袋に入れます。 | I put this in a bag.
+vocab: せっけん | soap (石鹸)
+example: 石鹸で手を洗います。 | I wash my hands with soap.
+vocab: はぶらし | toothbrush (歯ブラシ)
+example: 歯ブラシを買います。 | I will buy a toothbrush.
+vocab: かれんだー | calendar (カレンダー)
+example: カレンダーは壁にあります。 | The calendar is on the wall.
+vocab: かーてん | curtain (カーテン)
+example: 朝、カーテンを開けます。 | I open the curtains in the morning.
+
+[grammar]
+grammar: Saying Where Things Are | Use に あります to say where an inanimate thing is. Put the place before に, then say あります.
+example: 歯ブラシ は 袋 の 中 に あります。 | The toothbrush is inside the bag.
+example: カレンダー は カーテン の そば に あります。 | The calendar is beside the curtain.
+
+[quiz]
+quiz: What does 歯ブラシ mean? | weekend | calendar | toothbrush | C | 歯ブラシ (はぶらし) means toothbrush.
+quiz: What does 袋 mean? | bag | bath | weekend | A | 袋 (ふくろ) means bag.
+quiz: What does お湯 mean? | bath | toothbrush | hot water | C | お湯 (おゆ) means hot water.
+quiz: Review - What does 辛い mean? | spicy | bitter | sour | A | 辛い (からい) means spicy.
+quiz: Review - What does 枕 mean? | remote control | battery | pillow | C | 枕 (まくら) means pillow.
+quiz: Review - What does 温泉 mean? | hot spring | manga | Kyoto | A | 温泉 (おんせん) means hot spring.
