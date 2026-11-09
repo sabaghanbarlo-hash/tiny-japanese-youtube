@@ -1,0 +1,39 @@
+1
+00:00:14,328 --> 00:00:17,996
+週末 は 何 を しますか。
+What do you do on the weekend?
+
+2
+00:00:18,096 --> 00:00:21,452
+夕方 に 風呂 に 入ります。
+I take a bath in the early evening.
+
+3
+00:00:21,552 --> 00:00:25,172
+お湯 と 石鹸 は ありますか。
+Do you have hot water and soap?
+
+4
+00:00:25,272 --> 00:00:29,252
+はい、お湯 と 石鹸 が あります。
+Yes, I have hot water and soap.
+
+5
+00:00:29,352 --> 00:00:32,636
+歯ブラシ は どこ ですか。
+Where is the toothbrush?
+
+6
+00:00:32,736 --> 00:00:36,452
+歯ブラシ は 袋 の 中 に あります。
+The toothbrush is inside the bag.
+
+7
+00:00:36,552 --> 00:00:42,716
+電気 は ついていますか。カレンダー は どこ ですか。
+Is the light on? Where is the calendar?
+
+8
+00:00:42,816 --> 00:00:49,460
+はい、ついています。カレンダー は カーテン の そば に あります。
+Yes, it is. The calendar is beside the curtain.

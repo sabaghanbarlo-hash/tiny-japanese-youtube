@@ -1,0 +1,39 @@
+1
+00:00:14,496 --> 00:00:18,284
+この 家に お風呂が ありますか。
+Is there a bath in this house?
+
+2
+00:00:18,384 --> 00:00:23,660
+はい、あります。 お風呂は 広いです。
+Yes, there is. The bath is spacious.
+
+3
+00:00:23,760 --> 00:00:27,500
+壁と 床は 何色ですか。
+What color are the wall and floor?
+
+4
+00:00:27,600 --> 00:00:32,612
+壁は 白いです。 床は 茶色です。
+The wall is white. The floor is brown.
+
+5
+00:00:32,712 --> 00:00:36,164
+庭に 橋が ありますか。
+Is there a bridge in the garden?
+
+6
+00:00:36,264 --> 00:00:40,580
+はい、庭に 小さい 橋が あります。
+Yes, there is a small bridge in the garden.
+
+7
+00:00:40,680 --> 00:00:46,388
+この 場所は いいですね。 空気も きれいです。
+This place is nice. The air is clean too.
+
+8
+00:00:46,488 --> 00:00:51,644
+はい。鳥の 声と 水の 音が 聞こえます。
+Yes. I can hear birds' voices and the sound of water.
