@@ -1,0 +1,39 @@
+1
+00:00:15,600 --> 00:00:19,964
+アレックスさん、スマホを 使いますか。
+Alex, do you use a smartphone?
+
+2
+00:00:20,064 --> 00:00:26,060
+はい、毎日 使います。アプリも 使います。
+Yes, I use it every day. I use apps too.
+
+3
+00:00:26,160 --> 00:00:30,284
+インターネットは どこで 使いますか。
+Where do you use the internet?
+
+4
+00:00:30,384 --> 00:00:33,764
+家で Wi-Fiを 使います。
+I use Wi-Fi at home.
+
+5
+00:00:33,864 --> 00:00:38,012
+パソコンの 画面は 大きいですか。
+Is the computer screen big?
+
+6
+00:00:38,112 --> 00:00:43,964
+はい、大きいです。スマホを 充電します。
+Yes, it’s big. I charge my smartphone.
+
+7
+00:00:44,064 --> 00:00:49,340
+店の 電話番号を インターネットで 調べますか。
+Do you look up the store’s phone number on the internet?
+
+8
+00:00:49,440 --> 00:00:53,180
+はい、スマホで 調べます。
+Yes, I look it up on my smartphone.

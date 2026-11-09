@@ -1,0 +1,39 @@
+1
+00:00:15,408 --> 00:00:20,828
+アレックスさん は いつも 日本語 を 勉強しますか。
+Alex, do you always study Japanese?
+
+2
+00:00:20,928 --> 00:00:25,172
+はい、毎日 よく 勉強します。
+Yes, I study often every day.
+
+3
+00:00:25,272 --> 00:00:30,044
+日本語 の 音楽 は 時々 聞きますか。
+Do you sometimes listen to Japanese music?
+
+4
+00:00:30,144 --> 00:00:36,308
+はい、たまに 聞きます。歌 は すごく 楽しいです。
+Yes, once in a while. The songs are really fun.
+
+5
+00:00:36,408 --> 00:00:40,052
+日本 の ドラマ は どうですか。
+How are Japanese dramas?
+
+6
+00:00:40,152 --> 00:00:46,844
+かなり 好きです。でも、字幕 なし では ほとんど 分かりません。
+I like them quite a lot. But I understand almost nothing without subtitles.
+
+7
+00:00:46,944 --> 00:00:52,652
+そうですか。漢字 は あまり 読みませんか。
+I see. Do you not read kanji very much?
+
+8
+00:00:52,752 --> 00:00:58,820
+はい、全然 読めません。ちょっと 難しいです。
+Yes, I can't read them at all. They're a little difficult.

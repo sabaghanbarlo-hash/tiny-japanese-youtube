@@ -1,0 +1,39 @@
+1
+00:00:14,976 --> 00:00:18,188
+事務所 は どこ ですか。
+Where is the office?
+
+2
+00:00:18,288 --> 00:00:23,300
+あそこ です。会議室 は 二階 です。
+It’s over there. The meeting room is on the second floor.
+
+3
+00:00:23,400 --> 00:00:27,308
+今日、会議 は どこ ですか。
+Where is the meeting today?
+
+4
+00:00:27,408 --> 00:00:31,076
+会議 は 二階 の 会議室 です。
+The meeting is in the meeting room on the second floor.
+
+5
+00:00:31,176 --> 00:00:35,420
+会議 の 資料 と 書類 は ありますか。
+Do you have the meeting materials and documents?
+
+6
+00:00:35,520 --> 00:00:41,396
+はい、資料 と 書類 を メール で 部長 と 同僚 に 送りました。
+Yes, I sent the materials and documents by email to the department manager and my coworker.
+
+7
+00:00:41,496 --> 00:00:44,636
+名刺 は どこ ですか。
+Where is your business card?
+
+8
+00:00:44,736 --> 00:00:48,020
+名刺 は 机 の 上 です。
+My business card is on the desk.

@@ -1,0 +1,39 @@
+1
+00:00:14,928 --> 00:00:20,084
+アレックスさん、先生に 何を 尋ねますか。
+Alex, what will you ask the teacher?
+
+2
+00:00:20,184 --> 00:00:24,332
+新しい言葉の 意味を 質問します。
+I’ll ask about the meaning of a new word.
+
+3
+00:00:24,432 --> 00:00:29,132
+先生は その言葉を 説明しますか。
+Will the teacher explain that word?
+
+4
+00:00:29,232 --> 00:00:35,708
+はい。先生は 意味を 教えて、例を 説明します。
+Yes. The teacher tells me the meaning and explains an example.
+
+5
+00:00:35,808 --> 00:00:40,556
+わからない時、先生を 呼びますか。
+When you don’t understand, do you call the teacher?
+
+6
+00:00:40,656 --> 00:00:46,772
+はい。先生に 連絡して、助けを 頼みます。
+Yes. I contact the teacher and ask for help.
+
+7
+00:00:46,872 --> 00:00:52,124
+先生から 連絡が 来たら、返事を しますか。
+If the teacher contacts you, will you reply?
+
+8
+00:00:52,224 --> 00:00:58,052
+はい。質問に 答えて、お礼を 伝えます。
+Yes. I answer the question and say thank you.
