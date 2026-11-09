@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 95 · Useful fixed expressions
+episode: T1-095
+scene: classroom
+
+[story]
+Mika: でかける ときは「いってきます」と いいますか。 | Dekakeru toki wa “ittekimasu” to iimasu ka. | When you leave, do you say “ittekimasu”? 
+Alex: はい。かぞくは「いってらっしゃい」と いいます。 | Hai. Kazoku wa “itterasshai” to iimasu. | Yes. My family says “itterasshai.”
+Mika: たべる まえは、なん と いいますか。 | Taberu mae wa, nan to iimasu ka. | What do you say before eating?
+Alex: 「いただきます」と いいます。あとで「ごちそうさまでした」と いいます。 | “Itadakimasu” to iimasu. Ato de “gochisousama deshita” to iimasu. | I say “itadakimasu.” Afterward, I say “gochisousama deshita.”
+Mika: うちに かえった ときは、なん と いいますか。 | Uchi ni kaetta toki wa, nan to iimasu ka. | What do you say when you get home?
+Alex: 「ただいま」と いいます。 | “Tadaima” to iimasu. | I say “tadaima.”
+Mika: びょうきの ともだちには、なん と いいますか。おいわいの ときは？ | Byouki no tomodachi ni wa, nan to iimasu ka. Oiwai no toki wa? | What do you say to a sick friend? What about for a celebration?
+Alex: 「お大事に」と いいます。「おめでとうございます」と いいます。 | “Odaiji ni” to iimasu. “Omedetou gozaimasu” to iimasu. | I say “odaiji ni.” I say “omedetou gozaimasu.”
+
+[vocab]
+vocab: いただきます | said before eating
+example: では、いただきます。 | Well then, let’s eat.
+vocab: ごちそうさまでした | said after a meal
+example: ごちそうさまでした。おいしかったです。 | Thank you for the meal. It was delicious.
+vocab: ただいま | I'm home
+example: ただいま。今、帰りました。 | I'm home. I just got back.
+vocab: おかえりなさい | welcome home
+example: おかえりなさい。今日は早かったですね。 | Welcome home. You got back early today.
+vocab: いってきます | I'm off
+example: いってきます。夕方に帰ります。 | I'm off. I'll be back in the evening.
+vocab: いってらっしゃい | have a good day
+example: いってらっしゃい。気をつけてください。 | Have a good day. Please be careful.
+vocab: どういたしまして | you're welcome
+example: どういたしまして。気にしないでください。 | You're welcome. Please don't worry about it.
+vocab: おだいじに | get well soon (お大事に)
+example: お大事にしてください。 | Please take care of yourself.
+vocab: おめでとうございます | congratulations
+example: 合格おめでとうございます。 | Congratulations on passing.
+vocab: おまたせしました | sorry to keep you waiting (お待たせしました)
+example: お待たせしました。こちらです。 | Sorry to keep you waiting. Here it is.
+
+[grammar]
+grammar: Quoting with と いいます | Put と after a quoted phrase to say what someone says. いいます means “say,” and this pattern is useful for learning fixed expressions.
+example: かぞくは「いってらっしゃい」と いいます。 | My family says “itterasshai.”
+example: 「いただきます」と いいます。 | I say “itadakimasu.”
+
+[quiz]
+quiz: What does おめでとうございます mean? | you're welcome | congratulations | welcome home | B | おめでとうございます means congratulations.
+quiz: What does お待たせしました mean? | sorry to keep you waiting | I'm off | get well soon | A | お待たせしました (おまたせしました) means sorry to keep you waiting.
+quiz: What does ただいま mean? | said before eating | get well soon | I'm home | C | ただいま means I'm home.
+quiz: Review - What does 結果 mean? | result | past | habit | A | 結果 (けっか) means result.
+quiz: Review - What does ひどい mean? | bitter | terrible | sweet | B | ひどい means terrible.
+quiz: Review - What does まずい mean? | free | narrow | bad-tasting | C | まずい means bad-tasting.
