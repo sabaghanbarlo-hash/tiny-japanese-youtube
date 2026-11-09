@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 39 · Verbs of communication
+episode: T1-039
+scene: classroom
+
+[story]
+Mika: アレックスさん、先生に 何を 尋ねますか。 | Arekkusu-san, sensei ni nani o tazunemasu ka. | Alex, what will you ask the teacher?
+Alex: 新しい言葉の 意味を 質問します。 | Atarashii kotoba no imi o shitsumon shimasu. | I’ll ask about the meaning of a new word.
+Mika: 先生は その言葉を 説明しますか。 | Sensei wa sono kotoba o setsumei shimasu ka. | Will the teacher explain that word?
+Alex: はい。先生は 意味を 教えて、例を 説明します。 | Hai. Sensei wa imi o oshiete, rei o setsumei shimasu. | Yes. The teacher tells me the meaning and explains an example.
+Mika: わからない時、先生を 呼びますか。 | Wakaranai toki, sensei o yobimasu ka. | When you don’t understand, do you call the teacher?
+Alex: はい。先生に 連絡して、助けを 頼みます。 | Hai. Sensei ni renraku shite, tasuke o tanomimasu. | Yes. I contact the teacher and ask for help.
+Mika: 先生から 連絡が 来たら、返事を しますか。 | Sensei kara renraku ga kitara, henji o shimasu ka. | If the teacher contacts you, will you reply?
+Alex: はい。質問に 答えて、お礼を 伝えます。 | Hai. Shitsumon ni kotaete, orei o tsutaemasu. | Yes. I answer the question and say thank you.
+
+[vocab]
+vocab: こたえる | answer (答える)
+example: 質問に答えます。 | I answer the question.
+vocab: おしえる | teach; tell (教える)
+example: 道を教えてください。 | Please tell me the way.
+vocab: しつもんする | ask a question (質問する)
+example: 店員に質問します。 | I ask the clerk a question.
+vocab: たずねる | ask; inquire (尋ねる)
+example: 店員に場所を尋ねます。 | I ask the clerk about the location.
+vocab: せつめいする | explain (説明する)
+example: 道を説明します。 | I explain the way.
+vocab: つたえる | tell; convey (伝える)
+example: 予定を伝えます。 | I will convey the plan.
+vocab: よぶ | call; summon (呼ぶ)
+example: 店員を呼びます。 | I call the clerk.
+vocab: たのむ | ask; request (頼む)
+example: 彼に手伝いを頼みます。 | I ask him for help.
+vocab: れんらくする | contact (連絡する)
+example: あとで連絡します。 | I will get in touch later.
+vocab: へんじをする | reply (返事をする)
+example: すぐ返事をします。 | I will reply soon.
+
+[grammar]
+grammar: Connecting Actions with て | The て-form can connect two actions in one sentence. The last verb shows the tense and politeness for the whole sequence.
+example: 先生は 意味を 教えて、例を 説明します。 | The teacher tells me the meaning and explains an example.
+example: 質問に 答えて、お礼を 伝えます。 | I answer the question and say thank you.
+
+[quiz]
+quiz: What does 尋ねる mean? | tell | call | ask | C | 尋ねる (たずねる) means ask.
+quiz: What does 説明する mean? | teach | explain | ask | B | 説明する (せつめいする) means explain.
+quiz: What does 呼ぶ mean? | tell | call | answer | B | 呼ぶ (よぶ) means call.
+quiz: Review - What does 初めまして mean? | please treat me well | good night | nice to meet you | C | 初めまして (はじめまして) means nice to meet you.
+quiz: Review - What does 最近 mean? | the month after next | recently | last year | B | 最近 (さいきん) means recently.
+quiz: Review - What does もちろん mean? | opinion | reason | of course | C | もちろん means of course.
