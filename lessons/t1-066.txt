@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 66 · Society
+episode: T1-066
+scene: classroom
+
+[story]
+Mika: アレックスさん の 国 は どこ ですか。 | Arekkusu-san no kuni wa doko desu ka. | Alex, what country are you from?
+Alex: 私 の 国 は アメリカ です。 | Watashi no kuni wa Amerika desu. | My country is the United States.
+Mika: 日本 の 社会 に 興味 が ありますか。 | Nihon no shakai ni kyōmi ga arimasu ka. | Are you interested in Japanese society?
+Alex: はい。日本 の 町 や 地域 を 見たい です。 | Hai. Nihon no machi ya chiiki o mitai desu. | Yes. I want to see Japanese towns and regions.
+Mika: どの 県 の 市 に 行きたい ですか。 | Dono ken no shi ni ikitai desu ka. | Which prefecture's city would you like to visit?
+Alex: 長野県 の 松本市 に 行きたい です。 | Nagano-ken no Matsumoto-shi ni ikitai desu. | I want to visit Matsumoto City in Nagano Prefecture.
+Mika: 外国 の 政府 や 世界 の 国 に 興味 が ありますか。 | Gaikoku no seifu ya sekai no kuni ni kyōmi ga arimasu ka. | Are you interested in foreign governments and countries around the world?
+Alex: はい、世界 の 国 と 社会 を 勉強 します。 | Hai, sekai no kuni to shakai o benkyō shimasu. | Yes, I study countries and societies around the world.
+
+[vocab]
+vocab: くに | country (国)
+example: どの国から来ましたか。 | Which country did you come from?
+vocab: せかい | world (世界)
+example: 世界は広いです。 | The world is wide.
+vocab: にほん | Japan (日本)
+example: 日本の食べ物が好きです。 | I like Japanese food.
+vocab: がいこく | foreign country (外国)
+example: 外国の友達がいます。 | I have a friend from another country.
+vocab: しゃかい | society (社会)
+example: 社会のニュースを見ます。 | I watch news about society.
+vocab: せいふ | government (政府)
+example: 政府は新しい計画を発表しました。 | The government announced a new plan.
+vocab: し | city; municipality (市)
+example: 市の図書館は大きいです。 | The city library is big.
+vocab: まち | town (町)
+example: 町に小さな店があります。 | There is a small shop in town.
+vocab: けん | prefecture (県)
+example: この県は海に近いです。 | This prefecture is near the sea.
+vocab: ちいき | region; area (地域)
+example: この地域は静かです。 | This area is quiet.
+
+[grammar]
+grammar: は marks the topic | は marks the topic of a sentence. It is pronounced wa, even though it is written は.
+example: 私 の 国 は アメリカ です。 | My country is the United States.
+example: 日本 の 社会 に 興味 が ありますか。 | Are you interested in Japanese society?
+
+[quiz]
+quiz: What does 世界 mean? | world | Japan | region | A | 世界 (せかい) means world.
+quiz: What does 社会 mean? | world | society | government | B | 社会 (しゃかい) means society.
+quiz: What does 市 mean? | government | city | Japan | B | 市 (し) means city.
+quiz: Review - What does 星 mean? | star | wind | sun | A | 星 (ほし) means star.
+quiz: Review - What does 真面目 mean? | kind, helpful | serious, diligent | bright | B | 真面目 (まじめ) means serious, diligent.
+quiz: Review - What does そば mean? | side | near | corner | B | そば means near.
