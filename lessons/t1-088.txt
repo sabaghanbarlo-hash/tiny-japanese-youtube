@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 88 · Adjectives 3
+episode: T1-088
+scene: classroom
+
+[story]
+Mika: この カフェ は 有名 ですか。 | Kono kafe wa yūmei desu ka? | Is this café famous?
+Alex: はい、有名 です。でも、少し うるさい です。 | Hai, yūmei desu. Demo, sukoshi urusai desu. | Yes, it’s famous. But it’s a little noisy.
+Mika: あの 店 の 料理 は どう ですか。 | Ano mise no ryōri wa dō desu ka? | How is the food at that restaurant?
+Alex: まずい です。テーブル も 低い です。 | Mazui desu. Tēburu mo hikui desu. | It tastes bad. The tables are low, too.
+Mika: この コンビニ は 便利 ですか。 | Kono konbini wa benri desu ka? | Is this convenience store convenient?
+Alex: はい。店内 は 広い です。でも、通路 は 狭い です。 | Hai. Tennai wa hiroi desu. Demo, tsūro wa semai desu. | Yes. The inside is spacious. But the aisles are narrow.
+Mika: 今日 は 暇 ですか。日本語 は 簡単 ですか。 | Kyō wa hima desu ka? Nihongo wa kantan desu ka? | Are you free today? Is Japanese easy?
+Alex: はい、暇 です。でも、日本語 は 簡単 では ありません。大変 です。 | Hai, hima desu. Demo, Nihongo wa kantan dewa arimasen. Taihen desu. | Yes, I’m free. But Japanese isn’t easy. It’s hard.
+
+[vocab]
+vocab: うるさい | noisy; annoying
+example: ここはうるさいです。 | It is noisy here.
+vocab: まずい | bad-tasting
+example: このコーヒーはまずいです。 | This coffee tastes bad.
+vocab: ひくい | low (低い)
+example: この椅子は低いです。 | This chair is low.
+vocab: べんり | convenient (便利)
+example: このアプリは便利です。 | This app is convenient.
+vocab: ゆうめい | famous (有名)
+example: 京都は有名です。 | Kyoto is famous.
+vocab: ひま | free; not busy (暇)
+example: 今日は暇です。 | I am free today.
+vocab: かんたん | easy; simple (簡単)
+example: この問題は簡単です。 | This question is easy.
+vocab: たいへん | tough; hard (大変)
+example: この仕事は大変です。 | This job is tough.
+vocab: せまい | narrow; cramped (狭い)
+example: この部屋は狭いです。 | This room is small.
+vocab: ひろい | wide; spacious (広い)
+example: 公園は広いです。 | The park is spacious.
+
+[grammar]
+grammar: Adjectives with です | Put です after an adjective to make a polite statement. Both い-adjectives and な-adjectives can be used this way.
+example: 店内 は 広い です。 | The inside is spacious.
+example: 日本語 は 大変 です。 | Japanese is hard.
+
+[quiz]
+quiz: What does 簡単 mean? | bad-tasting | easy | tough | B | 簡単 (かんたん) means easy.
+quiz: What does 便利 mean? | convenient | narrow | noisy | A | 便利 (べんり) means convenient.
+quiz: What does 暇 mean? | tough | free | easy | B | 暇 (ひま) means free.
+quiz: Review - What does 掃除する mean? | to wake someone up | to do laundry | to clean | C | 掃除する (そうじする) means to clean.
+quiz: Review - What does 数学 mean? | after school | mathematics | blackboard | B | 数学 (すうがく) means mathematics.
+quiz: Review - What does 月 mean? | rock | rainbow | moon | C | 月 (つき) means moon.
