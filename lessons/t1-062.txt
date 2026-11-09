@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 62 · Abstract nouns
+episode: T1-062
+scene: classroom
+
+[story]
+Mika: この 問題の 意味は 何ですか。 | Kono mondai no imi wa nan desu ka. | What is the meaning of this problem?
+Alex: 「問題」は 困った ことです。 | “Mondai” wa komatta koto desu. | A “problem” is something troublesome.
+Mika: 問題を 解く 方法は ありますか。 | Mondai o toku houhou wa arimasu ka. | Is there a way to solve the problem?
+Alex: はい、いい 考えが あります。 | Hai, ii kangae ga arimasu. | Yes, I have a good idea.
+Mika: 目的と 方法の 関係は 何ですか。 | Mokuteki to houhou no kankei wa nan desu ka. | What is the relationship between purpose and method?
+Alex: 目的に 合う 方法が 必要です。 | Mokuteki ni au houhou ga hitsuyou desu. | A method that fits the purpose is necessary.
+Mika: どんな 場合に 経験が 必要ですか。 | Donna baai ni keiken ga hitsuyou desu ka. | In what situations is experience necessary?
+Alex: 問題の 原因を 見つける 場合です。 | Mondai no gen'in o mitsukeru baai desu. | When finding the cause of a problem.
+
+[vocab]
+vocab: もんだい | problem; question (問題)
+example: この問題は難しいです。 | This problem is difficult.
+vocab: いみ | meaning (意味)
+example: この言葉の意味は何ですか。 | What does this word mean?
+vocab: ほうほう | method; way (方法)
+example: この方法は簡単です。 | This method is easy.
+vocab: かんがえ | idea; thought (考え)
+example: いい考えですね。 | That's a good idea.
+vocab: ばあい | case; situation (場合)
+example: 雨の場合は、家にいます。 | If it rains, I'll stay home.
+vocab: ひつよう | necessary; need (必要)
+example: パスポートが必要です。 | A passport is necessary.
+vocab: かんけい | relationship; connection (関係)
+example: これは仕事と関係があります。 | This is related to work.
+vocab: けいけん | experience (経験)
+example: 日本での経験があります。 | I have experience in Japan.
+vocab: もくてき | purpose; goal (目的)
+example: 目的は日本語の勉強です。 | The goal is studying Japanese.
+vocab: げんいん | cause; reason (原因)
+example: 原因は何ですか。 | What is the cause?
+
+[grammar]
+grammar: Asking “What is it?” | Use “X は 何ですか” to ask what X is. Put the topic before は.
+example: この 問題の 意味は 何ですか。 | What is the meaning of this problem?
+example: 目的と 方法の 関係は 何ですか。 | What is the relationship between purpose and method?
+
+[quiz]
+quiz: What does 原因 mean? | problem | cause | purpose | B | 原因 (げんいん) means cause.
+quiz: What does 方法 mean? | method | purpose | cause | A | 方法 (ほうほう) means method.
+quiz: What does 意味 mean? | relationship | meaning | purpose | B | 意味 (いみ) means meaning.
+quiz: Review - What does 毎年 mean? | this year | every year | what month | B | 毎年 (まいとし) means every year.
+quiz: Review - What does そば mean? | corner | near | between | B | そば means near.
+quiz: Review - What does ペン mean? | key | pen | umbrella | B | ペン means pen.
