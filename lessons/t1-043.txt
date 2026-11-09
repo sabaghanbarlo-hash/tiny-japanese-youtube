@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 43 · Office and business words
+episode: T1-043
+scene: classroom
+
+[story]
+Mika: 事務所 は どこ ですか。 | Jimusho wa doko desu ka? | Where is the office?
+Alex: あそこ です。会議室 は 二階 です。 | Asoko desu. Kaigishitsu wa nikai desu. | It’s over there. The meeting room is on the second floor.
+Mika: 今日、会議 は どこ ですか。 | Kyou, kaigi wa doko desu ka? | Where is the meeting today?
+Alex: 会議 は 二階 の 会議室 です。 | Kaigi wa nikai no kaigishitsu desu. | The meeting is in the meeting room on the second floor.
+Mika: 会議 の 資料 と 書類 は ありますか。 | Kaigi no shiryou to shorui wa arimasu ka? | Do you have the meeting materials and documents?
+Alex: はい、資料 と 書類 を メール で 部長 と 同僚 に 送りました。 | Hai, shiryou to shorui o meeru de buchou to douryou ni okurimashita. | Yes, I sent the materials and documents by email to the department manager and my coworker.
+Mika: 名刺 は どこ ですか。 | Meishi wa doko desu ka? | Where is your business card?
+Alex: 名刺 は 机 の 上 です。 | Meishi wa tsukue no ue desu. | My business card is on the desk.
+
+[vocab]
+vocab: かいぎ | meeting (会議)
+example: 午後に会議があります。 | There is a meeting in the afternoon.
+vocab: メール | email
+example: メールを送ります。 | I will send an email.
+vocab: しょるい | documents; paperwork (書類)
+example: 書類を見せてください。 | Please show me the documents.
+vocab: どうりょう | coworker (同僚)
+example: 同僚と昼ご飯を食べます。 | I eat lunch with a coworker.
+vocab: めいし | business card (名刺)
+example: 名刺をください。 | Please give me your business card.
+vocab: かいぎしつ | meeting room (会議室)
+example: 会議室は二階です。 | The meeting room is on the second floor.
+vocab: ざんぎょうする | to work overtime (残業する)
+example: 今日は残業します。 | I will work overtime today.
+vocab: じむしょ | office (事務所)
+example: 事務所に行きます。 | I go to the office.
+vocab: しりょう | materials; documents (資料)
+example: 資料を見ます。 | I look at the materials.
+vocab: ぶちょう | department manager (部長)
+example: 部長は忙しいです。 | The department manager is busy.
+
+[grammar]
+grammar: Asking Where Something Is | Use は to mark the thing you are asking about. Add どこ ですか to ask where it is.
+example: 事務所 は どこ ですか。 | Where is the office?
+example: 名刺 は どこ ですか。 | Where is your business card?
+
+[quiz]
+quiz: What does 会議 mean? | documents | meeting room | meeting | C | 会議 (かいぎ) means meeting.
+quiz: What does 名刺 mean? | meeting | business card | to work overtime | B | 名刺 (めいし) means business card.
+quiz: What does 書類 mean? | coworker | meeting room | documents | C | 書類 (しょるい) means documents.
+quiz: Review - What does 図書館 mean? | library | university | homework | A | 図書館 (としょかん) means library.
+quiz: Review - What does 終わる mean? | start | increase | end | C | 終わる (おわる) means end.
+quiz: Review - What does 最近 mean? | recently | later | morning | A | 最近 (さいきん) means recently.
