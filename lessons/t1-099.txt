@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 99 · Verbs 11
+episode: T1-099
+scene: classroom
+
+[story]
+Mika: 今日は 何を しますか。 | Kyō wa nani o shimasu ka. | What will you do today?
+Alex: 午前に 運動して、散歩します。 | Gozen ni undō shite, sanpo shimasu. | I’ll exercise and take a walk in the morning.
+Mika: 午後は 何を しますか。 | Gogo wa nani o shimasu ka. | What will you do in the afternoon?
+Alex: 買い物リストを コピーして、買い物します。 | Kaimono risuto o kopī shite, kaimono shimasu. | I’ll copy the shopping list and go shopping.
+Mika: 旅行の 前に、友だちに 電話しますか。 | Ryokō no mae ni, tomodachi ni denwa shimasu ka. | Will you call your friend before the trip?
+Alex: はい。友だちと 相談して、朝に 出発します。 | Hai. Tomodachi to sōdan shite, asa ni shuppatsu shimasu. | Yes. I’ll discuss it with my friend and depart in the morning.
+Mika: 旅行で 友だちを 案内しますか。 | Ryokō de tomodachi o annai shimasu ka. | Will you show your friend around on the trip?
+Alex: はい。町を 案内して、いっしょに 食事します。 | Hai. Machi o annai shite, issho ni shokuji shimasu. | Yes. I’ll show them around town and have a meal together.
+
+[vocab]
+vocab: さんぽする | to take a walk (散歩する)
+example: 公園を散歩します。 | I take a walk in the park.
+vocab: うんどうする | to exercise (運動する)
+example: 毎朝、家で運動します。 | I exercise at home every morning.
+vocab: かいものする | to go shopping (買い物する)
+example: 友達と買い物をします。 | I go shopping with a friend.
+vocab: コピーする | to copy
+example: この紙をコピーします。 | I copy this paper.
+vocab: しゅっぱつする | to depart (出発する)
+example: 電車は八時に出発します。 | The train departs at eight.
+vocab: そうだんする | to consult; to discuss (相談する)
+example: 先生に相談します。 | I’ll consult my teacher.
+vocab: でんわする | to call; to phone (電話する)
+example: 明日、電話します。 | I’ll call tomorrow.
+vocab: しょうかいする | to introduce (紹介する)
+example: 友達を紹介します。 | I’ll introduce my friend.
+vocab: あんないする | to guide; to show around (案内する)
+example: 駅まで案内します。 | I’ll show you to the station.
+vocab: しょくじする | to have a meal (食事する)
+example: 家で食事します。 | I’ll eat at home.
+
+[grammar]
+grammar: Connecting Actions with て | Use the verb て-form to connect actions in order. The last verb gives the sentence its polite ending.
+example: 午前に 運動して、散歩します。 | I’ll exercise and take a walk in the morning.
+example: 町を 案内して、いっしょに 食事します。 | I’ll show them around town and have a meal together.
+
+[quiz]
+quiz: What does 電話する mean? | to consult | to depart | to call | C | 電話する (でんわする) means to call.
+quiz: What does 食事する mean? | to go shopping | to take a walk | to have a meal | C | 食事する (しょくじする) means to have a meal.
+quiz: What does コピーする mean? | to introduce | to copy | to depart | B | コピーする means to copy.
+quiz: Review - What does それとも mean? | or | however | usually | A | それとも means or.
+quiz: Review - What does 似合う mean? | to push | to open | to suit | C | 似合う (にあう) means to suit.
+quiz: Review - What does ひどい mean? | terrible | bitter | salty | A | ひどい means terrible.
