@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 57 · Verbs: open, close, put, take, bring, carry, turn on...
+episode: T1-057
+scene: classroom
+
+[story]
+Mika: 窓を 開けますか。 | Mado o akemasu ka? | Will you open the window?
+Alex: はい、窓を 開けます。 | Hai, mado o akemasu. | Yes, I’ll open the window.
+Mika: 本を 取って、かばんに 入れますか。 | Hon o totte, kaban ni iremasu ka? | Will you take the book and put it in your bag?
+Alex: はい。本を 取って、かばんに 入れます。 | Hai. Hon o totte, kaban ni iremasu. | Yes. I’ll take the book and put it in my bag.
+Mika: かばんを 友だちに 届けますか。 | Kaban o tomodachi ni todokemasu ka? | Will you deliver the bag to your friend?
+Alex: はい。かばんを 運んで、友だちに 届けます。 | Hai. Kaban o hakonde, tomodachi ni todokemasu. | Yes. I’ll carry the bag and deliver it to my friend.
+Mika: 電気を つけて、窓を 閉めますか。 | Denki o tsukete, mado o shimemasu ka? | Will you turn on the light and close the window?
+Alex: はい。電気を つけて、窓を 閉めます。それから、電気を 消します。 | Hai. Denki o tsukete, mado o shimemasu. Sorekara, denki o keshimasu. | Yes. I’ll turn on the light and close the window. Then I’ll turn off the light.
+
+[vocab]
+vocab: あける | open (開ける)
+example: ドアを開けます。 | I open the door.
+vocab: しめる | close (閉める)
+example: 窓を閉めます。 | I close the window.
+vocab: おく | put; place (置く)
+example: ここに箱を置きます。 | I put a box here.
+vocab: とる | take; get (取る)
+example: 鍵を取ります。 | I take the key.
+vocab: いれる | put in (入れる)
+example: 箱に本を入れます。 | I put a book in the box.
+vocab: だす | take out (出す)
+example: かばんから本を出します。 | I take a book out of my bag.
+vocab: つける | turn on
+example: 電気をつけます。 | I turn on the light.
+vocab: けす | turn off (消す)
+example: 電気を消します。 | I turn off the light.
+vocab: はこぶ | carry (運ぶ)
+example: 荷物を運びます。 | I carry the luggage.
+vocab: とどける | deliver; bring (届ける)
+example: 友達に本を届けます。 | I bring a book to my friend.
+
+[grammar]
+grammar: Polite Yes-or-No Questions | Add か to a polite ます-form verb to make a yes-or-no question. The dialogue uses this pattern to ask what Alex will do.
+example: 窓を 開けますか。 | Will you open the window?
+example: かばんを 友だちに 届けますか。 | Will you deliver the bag to your friend?
+
+[quiz]
+quiz: What does 開ける mean? | put | carry | open | C | 開ける (あける) means open.
+quiz: What does 出す mean? | close | carry | take out | C | 出す (だす) means take out.
+quiz: What does 届ける mean? | take out | open | deliver | C | 届ける (とどける) means deliver.
+quiz: Review - What does 油 mean? | oil | to grill | kitchen knife | A | 油 (あぶら) means oil.
+quiz: Review - What does チケット mean? | TV drama | program | ticket | C | チケット (ちけっと) means ticket.
+quiz: Review - What does 非常口 mean? | emergency exit | fire | to escape | A | 非常口 (ひじょうぐち) means emergency exit.
