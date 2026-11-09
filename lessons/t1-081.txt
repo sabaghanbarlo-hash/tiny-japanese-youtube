@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 81 · Nature 3
+episode: T1-081
+scene: classroom
+
+[story]
+Mika: 月 が 見えますか。 | Tsuki ga miemasu ka? | Can you see the moon?
+Alex: はい。月 が とても きれい です。 | Hai. Tsuki ga totemo kirei desu. | Yes. The moon is very beautiful.
+Mika: 草 と 木 が ありますね。葉っぱ は どこ ですか。 | Kusa to ki ga arimasu ne. Happa wa doko desu ka? | There is grass and a tree. Where are the leaves?
+Alex: 木 の 枝 に あります。 | Ki no eda ni arimasu. | They are on the tree branch.
+Mika: この 石 は どこ に ありますか。 | Kono ishi wa doko ni arimasu ka? | Where is this stone?
+Alex: 土 の 上 です。 | Tsuchi no ue desu. | It is on the soil.
+Mika: あそこ に 虹 が 見えますか。 | Asoko ni niji ga miemasu ka? | Can you see a rainbow over there?
+Alex: はい。砂 と 波 も 見えます。 | Hai. Suna to nami mo miemasu. | Yes. I can see sand and waves too.
+
+[vocab]
+vocab: つき | moon (月)
+example: 月が出ています。 | The moon is out.
+vocab: くさ | grass (草)
+example: 草があります。 | There is grass.
+vocab: はっぱ | leaf (葉っぱ)
+example: 葉っぱが落ちました。 | A leaf fell.
+vocab: えだ | branch (枝)
+example: 枝が折れました。 | A branch broke.
+vocab: いし | stone (石)
+example: 石を拾いました。 | I picked up a stone.
+vocab: つち | soil (土)
+example: 土がぬれています。 | The soil is wet.
+vocab: にじ | rainbow (虹)
+example: 虹が見えます。 | I can see a rainbow.
+vocab: すな | sand (砂)
+example: 靴に砂が入っています。 | There is sand in my shoe.
+vocab: なみ | wave (波)
+example: 波が高いです。 | The waves are high.
+vocab: いわ | rock (岩)
+example: 岩があります。 | There is a rock.
+
+[grammar]
+grammar: 〜が見えます | Use 〜が見えます to say that something is visible. Add か to make it a question.
+example: 月 が 見えますか。 | Can you see the moon?
+example: あそこ に 虹 が 見えますか。 | Can you see a rainbow over there?
+
+[quiz]
+quiz: What does 波 mean? | leaf | wave | soil | B | 波 (なみ) means wave.
+quiz: What does 砂 mean? | stone | rainbow | sand | C | 砂 (すな) means sand.
+quiz: What does 土 mean? | soil | stone | moon | A | 土 (つち) means soil.
+quiz: Review - What does 預かる mean? | return (something) | keep | return | B | 預かる (あずかる) means keep.
+quiz: Review - What does よろしい mean? | by all means | all right | to decline | B | よろしい means all right.
+quiz: Review - What does 家賃 mean? | building | rent | condominium | B | 家賃 (やちん) means rent.
