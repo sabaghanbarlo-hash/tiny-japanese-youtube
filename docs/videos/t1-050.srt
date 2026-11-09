@@ -1,0 +1,39 @@
+1
+00:00:15,264 --> 00:00:18,092
+どうしましたか。
+What happened?
+
+2
+00:00:18,192 --> 00:00:22,892
+地震 です。ここは 危ない です。
+It’s an earthquake. It’s dangerous here.
+
+3
+00:00:22,992 --> 00:00:26,420
+非常口 は どこ ですか。
+Where is the emergency exit?
+
+4
+00:00:26,520 --> 00:00:31,196
+あそこ です。いっしょに 逃げましょう。
+It’s over there. Let’s escape together.
+
+5
+00:00:31,296 --> 00:00:37,172
+けが人 が いますか。救急車 を 呼びますか。
+Is anyone injured? Shall I call an ambulance?
+
+6
+00:00:37,272 --> 00:00:41,876
+はい。けが人 を 助けて ください。
+Yes. Please help the injured person.
+
+7
+00:00:41,976 --> 00:00:45,500
+警察 に 電話 しますか。
+Shall I call the police?
+
+8
+00:00:45,600 --> 00:00:50,012
+はい。みんな で 避難 しましょう。
+Yes. Let’s all evacuate.

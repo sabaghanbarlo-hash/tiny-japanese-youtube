@@ -1,0 +1,39 @@
+1
+00:00:14,640 --> 00:00:19,796
+アレックスさん、週末の 予定は ありますか。
+Alex, do you have plans for the weekend?
+
+2
+00:00:19,896 --> 00:00:25,580
+はい。友だちの 誕生日 パーティーに 参加します。
+Yes. I’m attending a friend’s birthday party.
+
+3
+00:00:25,680 --> 00:00:32,180
+いいですね。だれが アレックスさんを 招待しましたか。
+That sounds nice. Who invited you?
+
+4
+00:00:32,280 --> 00:00:38,372
+友だちです。来月、結婚式も あります。
+A friend did. There’s also a wedding next month.
+
+5
+00:00:38,472 --> 00:00:44,540
+そうですか。結婚式の 日程は いつですか。
+I see. When is the wedding date?
+
+6
+00:00:44,640 --> 00:00:50,492
+来月の 十日です。祭りの 計画も あります。
+It’s the tenth of next month. I also have plans for a festival.
+
+7
+00:00:50,592 --> 00:00:56,540
+楽しそうですね。ほかに 約束は ありますか。
+That sounds fun. Do you have any other appointments?
+
+8
+00:00:56,640 --> 00:01:02,180
+はい。日曜日に 友だちと 約束が あります。
+Yes. I have plans with a friend on Sunday.

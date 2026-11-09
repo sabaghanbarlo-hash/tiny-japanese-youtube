@@ -1,0 +1,39 @@
+1
+00:00:15,720 --> 00:00:18,788
+アニメ が 好き ですか。
+Do you like anime?
+
+2
+00:00:18,888 --> 00:00:24,644
+はい、アニメ が 好き です。映画 も 好き です。
+Yes, I like anime. I like movies too.
+
+3
+00:00:24,744 --> 00:00:28,100
+どんな 歌 が 好き ですか。
+What kind of songs do you like?
+
+4
+00:00:28,200 --> 00:00:31,484
+この 歌手 の 歌 が 好き です。
+I like this singer’s songs.
+
+5
+00:00:31,584 --> 00:00:35,012
+好きな 俳優 は いますか。
+Is there an actor you like?
+
+6
+00:00:35,112 --> 00:00:40,004
+はい、います。ドラマ で 見ました。
+Yes, there is. I saw him in a TV drama.
+
+7
+00:00:40,104 --> 00:00:46,004
+コンサート に 行きますか。チケット は ありますか。
+Are you going to the concert? Do you have a ticket?
+
+8
+00:00:46,104 --> 00:00:53,996
+はい、行きます。チケット が あります。音楽 番組 も 見ます。
+Yes, I’m going. I have a ticket. I watch music shows too.

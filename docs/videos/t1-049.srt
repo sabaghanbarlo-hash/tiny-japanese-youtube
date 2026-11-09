@@ -1,0 +1,39 @@
+1
+00:00:15,288 --> 00:00:19,076
+美容院を 予約しましたか。
+Did you make a reservation at the hair salon?
+
+2
+00:00:19,176 --> 00:00:23,780
+はい。美容院を 予約しました。
+Yes. I made a reservation at the hair salon.
+
+3
+00:00:23,880 --> 00:00:28,028
+受付で 荷物を 受け取りますか。
+Will you pick up the package at reception?
+
+4
+00:00:28,128 --> 00:00:33,524
+はい。今日、荷物が 配達されます。
+Yes. The package will be delivered today.
+
+5
+00:00:33,624 --> 00:00:38,372
+それから ATMと 窓口へ 行きますか。
+After that, will you go to the ATM and service counter?
+
+6
+00:00:38,472 --> 00:00:43,772
+はい。窓口で 切手と 封筒を 買います。
+Yes. I’ll buy stamps and an envelope at the service counter.
+
+7
+00:00:43,872 --> 00:00:47,300
+クリーニングも ありますか。
+Do you also have dry cleaning to take care of?
+
+8
+00:00:47,400 --> 00:00:52,100
+はい。クリーニングを 取りに 行きます。
+Yes. I’m going to pick up my dry cleaning.

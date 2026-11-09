@@ -1,0 +1,39 @@
+1
+00:00:14,616 --> 00:00:18,500
+アレックスさん、元気ですか。
+Alex, are you feeling well?
+
+2
+00:00:18,600 --> 00:00:23,780
+いいえ、風邪です。熱が あります。
+No, I have a cold. I have a fever.
+
+3
+00:00:23,880 --> 00:00:26,900
+咳も ありますか。
+Do you have a cough too?
+
+4
+00:00:27,000 --> 00:00:33,308
+はい、咳と 鼻水が あります。頭が 痛いです。
+Yes, I have a cough and a runny nose. My head hurts.
+
+5
+00:00:33,408 --> 00:00:38,732
+たいへんですね。薬を 飲みましたか。
+That sounds rough. Did you take medicine?
+
+6
+00:00:38,832 --> 00:00:45,308
+はい、薬を 飲みました。でも、まだ 病気です。
+Yes, I took medicine. But I am still sick.
+
+7
+00:00:45,408 --> 00:00:49,148
+今日は 家で 休んで ください。
+Please rest at home today.
+
+8
+00:00:49,248 --> 00:00:53,060
+はい、ありがとうございます。
+Yes, thank you.
