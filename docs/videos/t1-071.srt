@@ -1,0 +1,39 @@
+1
+00:00:14,832 --> 00:00:18,980
+この 店の 料金は いくらですか。
+How much is the charge at this restaurant?
+
+2
+00:00:19,080 --> 00:00:21,932
+一人 千円です。
+It’s 1,000 yen per person.
+
+3
+00:00:22,032 --> 00:00:25,580
+消費税は いくらですか。
+How much is the sales tax?
+
+4
+00:00:25,680 --> 00:00:30,620
+はい。合計は 二千百円です。
+Yes. The total is 2,100 yen.
+
+5
+00:00:30,720 --> 00:00:34,268
+二人で 割り勘に しますか。
+Shall we split the bill between us?
+
+6
+00:00:34,368 --> 00:00:38,900
+はい。一人 千五十円です。
+Yes. It’s 1,050 yen per person.
+
+7
+00:00:39,000 --> 00:00:44,684
+お札で はらいますか。小銭も ありますか。
+Will you pay with a banknote? Do you have coins too?
+
+8
+00:00:44,784 --> 00:00:53,108
+はい、お札で はらいます。領収書を おねがいします。予算内です。
+Yes, I’ll pay with a banknote. A receipt, please. It’s within my budget.

@@ -1,0 +1,39 @@
+1
+00:00:14,904 --> 00:00:19,220
+アレックス さん、ニュース を 見ましたか。
+Alex, did you watch the news?
+
+2
+00:00:19,320 --> 00:00:23,228
+はい、朝 新聞 を 読みました。
+Yes, I read the newspaper this morning.
+
+3
+00:00:23,328 --> 00:00:26,924
+どんな 記事 を 読みましたか。
+What kind of article did you read?
+
+4
+00:00:27,024 --> 00:00:30,836
+事件 の 情報 を 確認しました。
+I checked the information about the incident.
+
+5
+00:00:30,936 --> 00:00:34,844
+事件 の 内容 は どうでしたか。
+What were the details of the incident?
+
+6
+00:00:34,944 --> 00:00:40,484
+まだ わかりません。新しい 知らせ は ありますか。
+I don’t know yet. Is there any new information?
+
+7
+00:00:40,584 --> 00:00:46,004
+警察 は 今日、事件 の 内容 を 発表します。
+The police will announce the details of the incident today.
+
+8
+00:00:46,104 --> 00:00:50,012
+はい、夜 の 放送 を 見ます。
+Yes, I’ll watch the broadcast tonight.

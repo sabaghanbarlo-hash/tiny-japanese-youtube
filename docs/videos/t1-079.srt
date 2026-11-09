@@ -1,0 +1,39 @@
+1
+00:00:15,384 --> 00:00:19,676
+アレックスさんは どんな 性格ですか。
+Alex, what kind of personality do you have?
+
+2
+00:00:19,776 --> 00:00:25,700
+私は おとなしいです。でも、正直です。
+I’m quiet. But I’m honest.
+
+3
+00:00:25,800 --> 00:00:30,548
+人前で 話すとき、緊張しますか。
+Do you get nervous when you speak in front of people?
+
+4
+00:00:30,648 --> 00:00:37,916
+はい、少し 不安です。でも、友だちと いると 幸せです。
+Yes, I feel a little anxious. But I’m happy when I’m with friends.
+
+5
+00:00:38,016 --> 00:00:44,084
+昨日、急に 歌って と 言われて、びっくりしましたか。
+Yesterday, were you surprised when someone suddenly asked you to sing?
+
+6
+00:00:44,184 --> 00:00:50,156
+はい、びっくりしました。少し 緊張しました。
+Yes, I was surprised. I felt a little nervous.
+
+7
+00:00:50,256 --> 00:00:56,012
+恥ずかしかったですか。みんな 笑いましたか。
+Were you embarrassed? Did everyone laugh?
+
+8
+00:00:56,112 --> 00:01:03,308
+はい、恥ずかしかったです。でも、みんなも 笑って 歌いました。
+Yes, I was embarrassed. But everyone laughed and sang too.

@@ -1,0 +1,39 @@
+1
+00:00:17,664 --> 00:00:21,476
+荷物は もう 届きましたか。
+Has the package arrived yet?
+
+2
+00:00:21,576 --> 00:00:25,268
+はい、さっき 受け取りました。
+Yes, I received it a little while ago.
+
+3
+00:00:25,368 --> 00:00:29,300
+友だちに 電話を かけましたか。
+Did you call your friend?
+
+4
+00:00:29,400 --> 00:00:35,564
+はい。でも 出られなかったので、あとで 折り返します。
+Yes. But they couldn’t answer, so I’ll call back later.
+
+5
+00:00:35,664 --> 00:00:39,452
+メールにも 返信しましたか。
+Did you reply to the email too?
+
+6
+00:00:39,552 --> 00:00:44,324
+はい。借りた 本は 明日 返します。
+Yes. I’ll return the book I borrowed tomorrow.
+
+7
+00:00:44,424 --> 00:00:49,172
+では、駅で お母さんを 迎えますか。
+Then, will you meet your mother at the station?
+
+8
+00:00:49,272 --> 00:00:54,164
+はい。荷物も しばらく 預かります。
+Yes. I’ll look after her luggage for a while too.
