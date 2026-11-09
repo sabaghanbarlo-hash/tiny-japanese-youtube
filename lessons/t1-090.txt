@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 90 · Nouns: miscellaneous everyday
+episode: T1-090
+scene: classroom
+
+[story]
+Mika: これは なん ですか。 | Kore wa nan desu ka? | What is this?
+Alex: リモコン です。電子レンジの となりです。 | Rimokon desu. Denshirenji no tonari desu. | It’s a remote control. It’s next to the microwave.
+Mika: 箱の 中に なにが ありますか。 | Hako no naka ni nani ga arimasu ka? | What’s inside the box?
+Alex: 電池と 充電器が あります。 | Denchi to juudенki ga arimasu. | There are batteries and a charger.
+Mika: 眼鏡は どこ ですか。 | Megane wa doko desu ka? | Where are the glasses?
+Alex: 枕の 上です。 | Makura no ue desu. | They’re on the pillow.
+Mika: ティッシュは どこ ですか。 | Tisshu wa doko desu ka? | Where are the tissues?
+Alex: 入口の 近くです。 | Iriguchi no chikaku desu. | They’re near the entrance.
+
+[vocab]
+vocab: でんち | battery (電池)
+example: 電池を買います。 | I buy batteries.
+vocab: はこ | box (箱)
+example: この箱を使います。 | I use this box.
+vocab: めがね | glasses (眼鏡)
+example: 眼鏡をかけます。 | I put on my glasses.
+vocab: いりぐち | entrance (入口)
+example: ここが入口です。 | This is the entrance.
+vocab: でぐち | exit (出口)
+example: 出口はあそこです。 | The exit is over there.
+vocab: ティッシュ | tissue
+example: ティッシュを一枚ください。 | One tissue, please.
+vocab: リモコン | remote control
+example: リモコンはテーブルの上です。 | The remote control is on the table.
+vocab: まくら | pillow (枕)
+example: 枕を使います。 | I use a pillow.
+vocab: じゅうでんき | charger (充電器)
+example: 充電器を探しています。 | I am looking for a charger.
+vocab: でんしれんじ | microwave (電子レンジ)
+example: 電子レンジで温めます。 | I heat it in the microwave.
+
+[grammar]
+grammar: Polite Questions with ですか | Add ですか to make a polite question. The question word どこ asks where.
+example: これは なん ですか。 | What is this?
+example: 眼鏡は どこ ですか。 | Where are the glasses?
+
+[quiz]
+quiz: What does 入口 mean? | battery | entrance | charger | B | 入口 (いりぐち) means entrance.
+quiz: What does 箱 mean? | pillow | box | tissue | B | 箱 (はこ) means box.
+quiz: What does 枕 mean? | pillow | entrance | charger | A | 枕 (まくら) means pillow.
+quiz: Review - What does ゆっくり mean? | soon | gradually | slowly | C | ゆっくり means slowly.
+quiz: Review - What does 起こす mean? | to stand | to wake someone up | to do laundry | B | 起こす (おこす) means to wake someone up.
+quiz: Review - What does チョコレート mean? | ramen | soy sauce | chocolate | C | チョコレート means chocolate.
