@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 36 · Time expressions
+episode: T1-036
+scene: classroom
+
+[story]
+Mika: 去年、日本へ 行きましたか。 | Kyonen, Nihon e ikimashita ka? | Did you go to Japan last year?
+Alex: はい、去年 日本へ 行きました。 | Hai, kyonen Nihon e ikimashita. | Yes, I went to Japan last year.
+Mika: 最近、何を していますか。 | Saikin, nani o shite imasu ka? | What have you been doing recently?
+Alex: 午前は 日本語を 勉強します。午後は 仕事です。 | Gozen wa Nihongo o benkyou shimasu. Gogo wa shigoto desu. | I study Japanese in the morning. I work in the afternoon.
+Mika: もうすぐ 昼ですね。あとで 食べませんか。 | Mou sugu hiru desu ne. Ato de tabemasen ka? | It’s almost noon. Would you like to eat later?
+Alex: さっき 食べました。今度 いっしょに 食べましょう。 | Sakki tabemashita. Kondo issho ni tabemashou. | I ate just now. Let’s eat together next time.
+Mika: 来年は 旅行しますか。 | Rainen wa ryokou shimasu ka? | Will you travel next year?
+Alex: はい。来年も 旅行します。再来月は 京都へ 行きます。 | Hai. Rainen mo ryokou shimasu. Saraigetsu wa Kyouto e ikimasu. | Yes. I’ll travel next year too. The month after next, I’m going to Kyoto.
+
+[vocab]
+vocab: きょねん | last year (去年)
+example: 去年は寒かったです。 | It was cold last year.
+vocab: らいねん | next year (来年)
+example: 来年は大学生です。 | I will be a university student next year.
+vocab: さっき | just now
+example: さっき、雨が降りました。 | It rained just now.
+vocab: あとで | later
+example: あとでメールを送ります。 | I'll send an email later.
+vocab: もうすぐ | soon
+example: もうすぐ春です。 | Spring is coming soon.
+vocab: さいきん | recently (最近)
+example: 最近、よく歩きます。 | I've been walking a lot recently.
+vocab: ごぜん | morning; a.m. (午前)
+example: 午前は仕事です。 | I work in the morning.
+vocab: ごご | afternoon; p.m. (午後)
+example: 午後は休みです。 | I have the afternoon off.
+vocab: こんど | next time; this time (今度)
+example: 今度、映画を見ましょう。 | Let's watch a movie next time.
+vocab: さらいげつ | the month after next (再来月)
+example: 再来月、京都へ行きます。 | I'm going to Kyoto the month after next.
+
+[grammar]
+grammar: Polite Past Tense | Use ました for a polite past-tense statement. Add か to make it a question.
+example: 去年、日本へ 行きましたか。 | Did you go to Japan last year?
+example: はい、去年 日本へ 行きました。 | Yes, I went to Japan last year.
+
+[quiz]
+quiz: What does 最近 mean? | afternoon | recently | just now | B | 最近 (さいきん) means recently.
+quiz: What does 去年 mean? | last year | later | next year | A | 去年 (きょねん) means last year.
+quiz: What does 今度 mean? | recently | morning | next time | C | 今度 (こんど) means next time.
+quiz: Review - What does すごく mean? | very | almost | quite | A | すごく means very.
+quiz: Review - What does 安全 mean? | safe | dangerous | deep | A | 安全 (あんぜん) means safe.
+quiz: Review - What does スポーツ mean? | to sing | sports | to play | B | スポーツ means sports.
