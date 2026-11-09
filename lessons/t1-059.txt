@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 59 · Nouns of place and direction 2
+episode: T1-059
+scene: classroom
+
+[story]
+Mika: この 公園の 真ん中に 何が ありますか。 | Kono kōen no mannaka ni nani ga arimasu ka. | What is in the middle of this park?
+Alex: 真ん中に 大きい 木が あります。 | Mannaka ni ōkii ki ga arimasu. | There is a big tree in the middle.
+Mika: 木の そばに ベンチが ありますか。 | Ki no soba ni benchi ga arimasu ka. | Is there a bench near the tree?
+Alex: はい、ベンチは 木と 池の 間に あります。 | Hai, benchi wa ki to ike no aida ni arimasu. | Yes, the bench is between the tree and the pond.
+Mika: 池の 向こうの 端に 花が ありますか。 | Ike no mukō no hashi ni hana ga arimasu ka. | Are there flowers at the far edge of the pond?
+Alex: はい、向こうの 角に 花が あります。 | Hai, mukō no kado ni hana ga arimasu. | Yes, there are flowers at the corner on the other side.
+Mika: 公園の 奥の 隅に 何が ありますか。 | Kōen no oku no sumi ni nani ga arimasu ka. | What is in the back corner of the park?
+Alex: 奥の 隅に 小さい 池が あります。 | Oku no sumi ni chiisai ike ga arimasu. | There is a small pond in the back corner.
+
+[vocab]
+vocab: まんなか | center; middle (真ん中)
+example: 人が部屋の真ん中にいます。 | There is a person in the middle of the room.
+vocab: かど | corner (角)
+example: 店は角にあります。 | The shop is on the corner.
+vocab: すみ | corner; nook (隅)
+example: 猫は部屋の隅にいます。 | The cat is in the corner of the room.
+vocab: はし | edge; end (端)
+example: テーブルの端に座ります。 | I sit at the edge of the table.
+vocab: おく | back; inner part (奥)
+example: 出口は奥です。 | The exit is at the back.
+vocab: てまえ | this side; just before (手前)
+example: 駅の手前で止まります。 | I stop just before the station.
+vocab: むこう | other side; over there (向こう)
+example: 駅は道の向こうです。 | The station is on the other side of the road.
+vocab: あいだ | between (間)
+example: 駅と学校の間です。 | It is between the station and the school.
+vocab: がわ | side (側)
+example: 海側の席です。 | It is a seat on the sea side.
+vocab: そば | near; beside
+example: 駅のそばです。 | It is near the station.
+
+[grammar]
+grammar: Saying Where Things Are | Use にあります to say where something is. Put the place before にあります.
+example: 真ん中に 大きい 木が あります。 | There is a big tree in the middle.
+example: ベンチは 木と 池の 間に あります。 | The bench is between the tree and the pond.
+
+[quiz]
+quiz: What does 端 mean? | back | edge | other side | B | 端 (はし) means edge.
+quiz: What does 角 mean? | corner | center | this side | A | 角 (かど) means corner.
+quiz: What does 間 mean? | back | edge | between | C | 間 (あいだ) means between.
+quiz: Review - What does 覚える mean? | finish | forget | remember | C | 覚える (おぼえる) means remember.
+quiz: Review - What does 包丁 mean? | pot | to mix | kitchen knife | C | 包丁 (ほうちょう) means kitchen knife.
+quiz: Review - What does 計画 mean? | to invite | birthday | plan | C | 計画 (けいかく) means plan.
