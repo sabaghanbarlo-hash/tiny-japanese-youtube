@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 86 · Culture and japan
+episode: T1-086
+scene: classroom
+
+[story]
+Mika: 日本の 文化が 好きですか。 | Nihon no bunka ga suki desu ka? | Do you like Japanese culture?
+Alex: はい、好きです。京都の 歴史に 興味が あります。 | Hai, suki desu. Kyoto no rekishi ni kyōmi ga arimasu. | Yes, I do. I’m interested in Kyoto’s history.
+Mika: 京都で 神社や お寺を 見ましたか。 | Kyōto de jinja ya otera o mimashita ka? | Did you see shrines and temples in Kyoto?
+Alex: はい、着物を 見て、和食も 食べました。 | Hai, kimono o mite, washoku mo tabemashita. | Yes, I saw kimono and ate Japanese food, too.
+Mika: 温泉は どうでしたか。 | Onsen wa dō deshita ka? | How was the hot spring?
+Alex: とても よかったです。温泉が 好きです。日本の 伝統は おもしろいです。 | Totemo yokatta desu. Onsen ga suki desu. Nihon no dentō wa omoshiroi desu. | It was very nice. I like hot springs. Japanese traditions are interesting.
+Mika: 漫画も 読みますか。 | Manga mo yomimasu ka? | Do you read manga, too?
+Alex: はい、漫画を 読みます。日本の 文化が 好きです。 | Hai, manga o yomimasu. Nihon no bunka ga suki desu. | Yes, I read manga. I like Japanese culture.
+
+[vocab]
+vocab: ぶんか | culture (文化)
+example: 日本の文化は面白いです。 | Japanese culture is interesting.
+vocab: じんじゃ | Shinto shrine (神社)
+example: 神社に行きます。 | I go to a shrine.
+vocab: おてら | Buddhist temple (お寺)
+example: お寺は古いです。 | The temple is old.
+vocab: きもの | kimono (着物)
+example: 着物を着ます。 | I wear a kimono.
+vocab: わしょく | Japanese food (和食)
+example: 和食が好きです。 | I like Japanese food.
+vocab: おんせん | hot spring (温泉)
+example: 温泉に入ります。 | I bathe in a hot spring.
+vocab: まんが | manga (漫画)
+example: 漫画を読みます。 | I read manga.
+vocab: でんとう | tradition (伝統)
+example: 伝統を守ります。 | We preserve traditions.
+vocab: れきし | history (歴史)
+example: 日本の歴史を勉強します。 | I study Japanese history.
+vocab: きょうと | Kyoto (京都)
+example: 京都は有名です。 | Kyoto is famous.
+
+[grammar]
+grammar: 〜が好きです | Use が before 好きです to say what you like. You can use this pattern to talk about people, places, or things.
+example: 温泉が 好きです。 | I like hot springs.
+example: 日本の 文化が 好きです。 | I like Japanese culture.
+
+[quiz]
+quiz: What does 文化 mean? | history | culture | tradition | B | 文化 (ぶんか) means culture.
+quiz: What does 歴史 mean? | history | hot spring | Japanese food | A | 歴史 (れきし) means history.
+quiz: What does 温泉 mean? | culture | hot spring | Kyoto | B | 温泉 (おんせん) means hot spring.
+quiz: Review - What does 筆箱 mean? | Japanese language | pencil case | school lunch | B | 筆箱 (ふでばこ) means pencil case.
+quiz: Review - What does 味噌 mean? | miso | apple | chocolate | A | 味噌 (みそ) means miso.
+quiz: Review - What does 恥ずかしい mean? | personality | to feel nervous | embarrassed | C | 恥ずかしい (はずかしい) means embarrassed.
