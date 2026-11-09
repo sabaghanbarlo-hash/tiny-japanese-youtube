@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 100 · Review-friendly high-frequency leftovers
+episode: T1-100
+scene: classroom
+
+[story]
+Mika: どうして 日本語を 勉強しますか。 | Dōshite nihongo o benkyō shimasu ka? | Why do you study Japanese?
+Alex: いつか 日本へ 行きたいです。 | Itsuka Nihon e ikitai desu. | I want to go to Japan someday.
+Mika: どれが 好きですか。 | Dore ga suki desu ka? | Which one do you like?
+Alex: いろいろな 本が 好きです。 | Iroiro na hon ga suki desu. | I like various books.
+Mika: みんなの 声が 聞こえますか。 | Minna no koe ga kikoemasu ka? | Can you hear everyone’s voices?
+Alex: はい、よく 聞こえます。 | Hai, yoku kikoemasu. | Yes, I can hear them well.
+Mika: 駅まで 真っ直ぐ 行きますか。 | Eki made massugu ikimasu ka? | Are you going straight to the station?
+Alex: はい、二人で 行きます。 | Hai, futari de ikimasu. | Yes, we’re going together.
+
+[vocab]
+vocab: どうして | why
+example: どうして今日は休みですか。 | Why is today a day off?
+vocab: どれ | which one
+example: どれを買いますか。 | Which one will you buy?
+vocab: いろいろ | various; many kinds
+example: いろいろな店を見ました。 | I looked at various shops.
+vocab: きこえる | to be heard (聞こえる)
+example: 外から音が聞こえます。 | I can hear a sound from outside.
+vocab: みんな | everyone
+example: みんなは来ます。 | Everyone is coming.
+vocab: まっすぐ | straight (真っ直ぐ)
+example: 真っ直ぐ行ってください。 | Please go straight.
+vocab: やっと | finally
+example: やっと終わりました。 | It finally ended.
+vocab: いつか | someday
+example: いつか日本へ行きたいです。 | I want to visit Japan someday.
+vocab: ひとり | one person; alone (一人)
+example: 一人で食べます。 | I eat alone.
+vocab: ふたり | two people (二人)
+example: 二人で行きます。 | We are going together.
+
+[grammar]
+grammar: Polite Questions with か | Add か to the end of a sentence to make a polite question. The question word can come earlier in the sentence.
+example: どうして 日本語を 勉強しますか。 | Why do you study Japanese?
+example: どれが 好きですか。 | Which one do you like?
+
+[quiz]
+quiz: What does いろいろ mean? | various | straight | which one | A | いろいろ means various.
+quiz: What does いつか mean? | two people | someday | to be heard | B | いつか means someday.
+quiz: What does 一人 mean? | why | straight | one person | C | 一人 (ひとり) means one person.
+quiz: Review - What does 電話する mean? | to have a meal | to call | to introduce | B | 電話する (でんわする) means to call.
+quiz: Review - What does お風呂 mean? | wall | place | bath | C | お風呂 (おふろ) means bath.
+quiz: Review - What does カーテン mean? | light | curtain | hot water | B | カーテン (かーてん) means curtain.
