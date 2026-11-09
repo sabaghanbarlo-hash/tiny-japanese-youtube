@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 78 · Requests, permission and invitations
+episode: T1-078
+scene: classroom
+
+[story]
+Mika: アレックスさん、土曜日は 空いていますか。 | Arekkusu-san, doyōbi wa aite imasu ka. | Alex, are you free on Saturday?
+Alex: はい、土曜日は 大丈夫です。 | Hai, doyōbi wa daijōbu desu. | Yes, Saturday is fine.
+Mika: 週末、カフェに 誘いたいです。一緒に 行きませんか。 | Shūmatsu, kafe ni sasoitai desu. Issho ni ikimasen ka. | I’d like to invite you to a café this weekend. Would you like to go together?
+Alex: ぜひ 行きたいです。 | Zehi ikitai desu. | I’d definitely like to go.
+Mika: ここに 座っても よろしいですか。 | Koko ni suwatte mo yoroshii desu ka. | May I sit here?
+Alex: はい、どうぞ。 | Hai, dōzo. | Yes, please do.
+Mika: コーヒーを いただいても いいですか。 | Kōhī o itadaite mo ii desu ka. | May I have some coffee?
+Alex: もちろんです。どうぞ。 | Mochiron desu. Dōzo. | Of course. Please do.
+
+[vocab]
+vocab: さそう | to invite (誘う)
+example: 友達を昼ご飯に誘います。 | I’ll invite my friend to lunch.
+vocab: どうぞ | please; go ahead
+example: どうぞ、先に入っても大丈夫です。 | Please, you can go in first.
+vocab: ぜひ | by all means; definitely
+example: ぜひ、私も参加します。 | I’ll definitely join too.
+vocab: いっしょに | together (一緒に)
+example: 一緒に昼ご飯を食べませんか。 | Would you like to have lunch together?
+vocab: だいじょうぶ | okay; all right (大丈夫)
+example: この席に座っても大丈夫ですか。 | Is it okay to sit in this seat?
+vocab: いただく | to receive (humble)
+example: 少し待っていただけますか。 | Could you wait a little?
+vocab: よろしい | all right; acceptable (polite)
+example: ここで写真を撮ってもよろしいですか。 | May I take a photo here?
+vocab: あく | to be free; to become available (空く)
+example: 明日の夜は空いています。 | I’m free tomorrow evening.
+vocab: ことわる | to decline; to turn down (断る)
+example: その誘いを断りました。 | I turned down that invitation.
+vocab: ませんか | would you like to…?
+example: 一緒に映画を見ませんか。 | Would you like to watch a movie together?
+
+[grammar]
+grammar: Asking Permission | Use ても いいですか to ask if an action is allowed. よろしいですか is a more polite way to ask.
+example: ここに 座っても よろしいですか。 | May I sit here?
+example: コーヒーを いただいても いいですか。 | May I have some coffee?
+
+[quiz]
+quiz: What does 一緒に mean? | would you like to…? | to decline | together | C | 一緒に (いっしょに) means together.
+quiz: What does どうぞ mean? | to decline | okay | please | C | どうぞ means please.
+quiz: What does 大丈夫 mean? | to receive (humble) | okay | please | B | 大丈夫 (だいじょうぶ) means okay.
+quiz: Review - What does 忘れ物 mean? | to break | to be troubled | forgotten item | C | 忘れ物 (わすれもの) means forgotten item.
+quiz: Review - What does 結婚する mean? | to graduate | to get married | coming-of-age ceremony | B | 結婚する (けっこんする) means to get married.
+quiz: Review - What does 合計 mean? | total | fee | banknote | A | 合計 (ごうけい) means total.
