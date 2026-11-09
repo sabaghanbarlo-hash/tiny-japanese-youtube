@@ -1,0 +1,48 @@
+title: Tiny 1000 · Lesson 53 · Sports and games
+episode: T1-053
+scene: classroom
+
+[story]
+Mika: アレックスさん は サッカー が 好き ですか。 | Arekkusu-san wa sakkā ga suki desu ka? | Alex, do you like soccer?
+Alex: はい、サッカー が 好き です。チーム で 練習 します。 | Hai, sakkā ga suki desu. Chīmu de renshū shimasu. | Yes, I like soccer. I practice with my team.
+Mika: どんな スポーツ の 試合 が 好き ですか。 | Donna supōtsu no shiai ga suki desu ka? | What kind of sports games do you like?
+Alex: 野球 と テニス の 試合 が 好き です。 | Yakyū to tenisu no shiai ga suki desu. | I like baseball and tennis games.
+Mika: ボール を 使う スポーツ は 好き ですか。 | Bōru o tsukau supōtsu wa suki desu ka? | Do you like sports that use a ball?
+Alex: はい。試合 に 勝ちたい です。でも、時々 負けます。 | Hai. Shiai ni kachitai desu. Demo, tokidoki makemasu. | Yes. I want to win games. But sometimes I lose.
+Mika: 練習 の あと、泳ぎますか。 | Renshū no ato, oyogimasu ka? | Do you swim after practice?
+Alex: はい、時々 泳ぎます。スポーツ は 楽しい です。 | Hai, tokidoki oyogimasu. Supōtsu wa tanoshii desu. | Yes, I swim sometimes. Sports are fun.
+
+[vocab]
+vocab: しあい | match; game (試合)
+example: 試合は三時です。 | The match is at three.
+vocab: サッカー | soccer
+example: サッカーが好きです。 | I like soccer.
+vocab: やきゅう | baseball (野球)
+example: 野球を見ます。 | I watch baseball.
+vocab: テニス | tennis
+example: テニスをします。 | I play tennis.
+vocab: ボール | ball
+example: ボールを使います。 | I use a ball.
+vocab: チーム | team
+example: チームは強いです。 | The team is strong.
+vocab: れんしゅう | practice (練習)
+example: 毎日練習します。 | I practice every day.
+vocab: かつ | to win (勝つ)
+example: 試合に勝ちます。 | I win the match.
+vocab: まける | to lose (負ける)
+example: 試合に負けます。 | I lose the match.
+vocab: およぐ | to swim (泳ぐ)
+example: 夏に泳ぎます。 | I swim in summer.
+
+[grammar]
+grammar: Saying You Like Something | Use が before 好きです to say what someone likes. Add か to make it a polite question.
+example: アレックスさん は サッカー が 好き ですか。 | Alex, do you like soccer?
+example: はい、サッカー が 好き です。 | Yes, I like soccer.
+
+[quiz]
+quiz: What does 泳ぐ mean? | match | to swim | soccer | B | 泳ぐ (およぐ) means to swim.
+quiz: What does テニス mean? | tennis | ball | to win | A | テニス means tennis.
+quiz: What does 勝つ mean? | to win | team | match | A | 勝つ (かつ) means to win.
+quiz: Review - What does 結婚式 mean? | plan | wedding | plan | B | 結婚式 (けっこんしき) means wedding.
+quiz: Review - What does 助ける mean? | to escape | to help | accident | B | 助ける (たすける) means to help.
+quiz: Review - What does 地図 mean? | map | scenery | to reserve | A | 地図 (ちず) means map.
