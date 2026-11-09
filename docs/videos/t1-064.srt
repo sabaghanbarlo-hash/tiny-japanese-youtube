@@ -1,0 +1,39 @@
+1
+00:00:14,664 --> 00:00:18,548
+この ボール は どんな 形 ですか。
+What shape is this ball?
+
+2
+00:00:18,648 --> 00:00:23,156
+丸い です。色 も 綺麗 です。
+It is round. Its color is beautiful, too.
+
+3
+00:00:23,256 --> 00:00:26,708
+この 石 は 綺麗 ですか。
+Is this stone clean?
+
+4
+00:00:26,808 --> 00:00:33,188
+いいえ、汚い です。でも、とても 硬い です。
+No, it is dirty. But it is very hard.
+
+5
+00:00:33,288 --> 00:00:36,836
+この ロープ は 強い ですか。
+Is this rope strong?
+
+6
+00:00:36,936 --> 00:00:43,364
+はい、強い です。でも、この 糸 は 弱い です。
+Yes, it is strong. But this thread is weak.
+
+7
+00:00:43,464 --> 00:00:46,916
+この 本 は 厚い ですか。
+Is this book thick?
+
+8
+00:00:47,016 --> 00:00:52,628
+はい、厚い です。この 紙 は 薄い です。
+Yes, it is thick. This paper is thin.

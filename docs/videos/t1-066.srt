@@ -1,0 +1,39 @@
+1
+00:00:14,256 --> 00:00:18,308
+アレックスさん の 国 は どこ ですか。
+Alex, what country are you from?
+
+2
+00:00:18,408 --> 00:00:21,860
+私 の 国 は アメリカ です。
+My country is the United States.
+
+3
+00:00:21,960 --> 00:00:26,276
+日本 の 社会 に 興味 が ありますか。
+Are you interested in Japanese society?
+
+4
+00:00:26,376 --> 00:00:31,508
+はい。日本 の 町 や 地域 を 見たい です。
+Yes. I want to see Japanese towns and regions.
+
+5
+00:00:31,608 --> 00:00:35,372
+どの 県 の 市 に 行きたい ですか。
+Which prefecture's city would you like to visit?
+
+6
+00:00:35,472 --> 00:00:39,476
+長野県 の 松本市 に 行きたい です。
+I want to visit Matsumoto City in Nagano Prefecture.
+
+7
+00:00:39,576 --> 00:00:45,068
+外国 の 政府 や 世界 の 国 に 興味 が ありますか。
+Are you interested in foreign governments and countries around the world?
+
+8
+00:00:45,168 --> 00:00:50,060
+はい、世界 の 国 と 社会 を 勉強 します。
+Yes, I study countries and societies around the world.

@@ -1,0 +1,39 @@
+1
+00:00:15,456 --> 00:00:20,012
+この 公園の 真ん中に 何が ありますか。
+What is in the middle of this park?
+
+2
+00:00:20,112 --> 00:00:23,660
+真ん中に 大きい 木が あります。
+There is a big tree in the middle.
+
+3
+00:00:23,760 --> 00:00:27,620
+木の そばに ベンチが ありますか。
+Is there a bench near the tree?
+
+4
+00:00:27,720 --> 00:00:32,324
+はい、ベンチは 木と 池の 間に あります。
+Yes, the bench is between the tree and the pond.
+
+5
+00:00:32,424 --> 00:00:37,076
+池の 向こうの 端に 花が ありますか。
+Are there flowers at the far edge of the pond?
+
+6
+00:00:37,176 --> 00:00:41,492
+はい、向こうの 角に 花が あります。
+Yes, there are flowers at the corner on the other side.
+
+7
+00:00:41,592 --> 00:00:46,028
+公園の 奥の 隅に 何が ありますか。
+What is in the back corner of the park?
+
+8
+00:00:46,128 --> 00:00:50,036
+奥の 隅に 小さい 池が あります。
+There is a small pond in the back corner.

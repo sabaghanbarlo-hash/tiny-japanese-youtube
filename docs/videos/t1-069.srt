@@ -1,0 +1,39 @@
+1
+00:00:18,048 --> 00:00:22,220
+アレックスさん、何を したい ですか。
+Alex, what do you want to do?
+
+2
+00:00:22,320 --> 00:00:25,556
+日本語を 話したい です。
+I want to speak Japanese.
+
+3
+00:00:25,656 --> 00:00:30,548
+いいですね。辞書が 要りますか。
+That sounds nice. Do you need a dictionary?
+
+4
+00:00:30,648 --> 00:00:34,268
+はい、辞書が 欲しい です。
+Yes, I want a dictionary.
+
+5
+00:00:34,368 --> 00:00:38,420
+日本語を 話すのは 可能ですか。
+Is it possible to speak Japanese?
+
+6
+00:00:38,520 --> 00:00:45,308
+はい。でも、漢字は 苦手ですが、会話は 得意です。
+Yes. But I’m not good at kanji, though I’m good at conversation.
+
+7
+00:00:45,408 --> 00:00:50,468
+では、ここで 日本語を 話しても いいですよ。
+Then you may speak Japanese here.
+
+8
+00:00:50,568 --> 00:00:57,020
+ありがとうございます。毎日 勉強しなければ なりませんね。
+Thank you. I have to study every day.

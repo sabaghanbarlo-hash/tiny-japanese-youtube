@@ -1,0 +1,39 @@
+1
+00:00:15,000 --> 00:00:18,596
+りんごは いくつ 買いますか。
+How many apples will you buy?
+
+2
+00:00:18,696 --> 00:00:22,364
+りんごを 全部で 六つ 買います。
+I’ll buy six apples in all.
+
+3
+00:00:22,464 --> 00:00:26,948
+六つは 多いですか、少ないですか。
+Is six a lot, or a little?
+
+4
+00:00:27,048 --> 00:00:32,444
+ちょうど いいです。半分は 家族に あげます。
+That’s just right. I’ll give half to my family.
+
+5
+00:00:32,544 --> 00:00:36,092
+お金は いくら ありますか。
+How much money do you have?
+
+6
+00:00:36,192 --> 00:00:38,948
+１０００円 あります。
+I have 1,000 yen.
+
+7
+00:00:39,048 --> 00:00:42,596
+それで お金は 足りますか。
+Will that be enough money?
+
+8
+00:00:42,696 --> 00:00:47,300
+はい。少し お金が 余ります。
+Yes. I’ll have a little money left over.

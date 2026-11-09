@@ -1,0 +1,39 @@
+1
+00:00:15,000 --> 00:00:20,324
+アレックスさん、東京と 大阪を 比べますか。
+Alex, shall we compare Tokyo and Osaka?
+
+2
+00:00:20,424 --> 00:00:26,036
+はい。東京は 大阪より ずっと 大きいです。
+Yes. Tokyo is much bigger than Osaka.
+
+3
+00:00:26,136 --> 00:00:30,092
+町の 雰囲気は 同じですか。
+Are the cities' atmospheres the same?
+
+4
+00:00:30,192 --> 00:00:37,916
+いいえ、別です。大阪の 食べ物は 東京の 食べ物より 安いです。
+No, they're different. Osaka's food is cheaper than Tokyo's.
+
+5
+00:00:38,016 --> 00:00:41,684
+どちらが 一番 好きですか。
+Which one do you like best?
+
+6
+00:00:41,784 --> 00:00:47,612
+大阪が 一番 好きです。たこ焼きは 最高です。
+I like Osaka best. Takoyaki is the best.
+
+7
+00:00:47,712 --> 00:00:53,444
+東京の 食べ物は 大阪の 食べ物に 似ていますか。
+Is Tokyo's food similar to Osaka's food?
+
+8
+00:00:53,544 --> 00:01:00,500
+いいえ、あまり 似ていません。でも、どちらも おいしいです。
+No, they aren't very similar. But both are delicious.
