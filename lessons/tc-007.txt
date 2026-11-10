@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 7 · What Do You Do?
+episode: TC-007
+scene: classroom
+
+[story]
+Mika: こんにちは。初めまして。 | Konnichiwa. Hajimemashite. | Hello. Nice to meet you.
+Alex: こんにちは。初めまして。 | Konnichiwa. Hajimemashite. | Hello. Nice to meet you.
+Mika: 私は Mika です。名前は 何 ですか。 | Watashi wa Mika desu. Namae wa nan desu ka. | I’m Mika. What is your name?
+Alex: Alex です。よろしくお願いします。 | Alex desu. Yoroshiku onegaishimasu. | I’m Alex. Nice to meet you.
+Mika: 仕事は 何 ですか。 | Shigoto wa nan desu ka. | What do you do for work?
+Alex: 私は 会社の 社員 です。会社で 働いています。 | Watashi wa kaisha no shain desu. Kaisha de hataraite imasu. | I’m a company employee. I work at a company.
+Mika: そうですか。私は 学校の 先生 です。 | Sou desu ka. Watashi wa gakkou no sensei desu. | I see. I’m a teacher at a school.
+Alex: 先生の 仕事は 忙しい ですか。 | Sensei no shigoto wa isogashii desu ka. | Is a teacher’s job busy?
+Mika: はい、でも とても 楽しい です。 | Hai, demo totemo tanoshii desu. | Yes, but it’s very fun.
+Alex: いいですね。私も 仕事が 好き です。 | Ii desu ne. Watashi mo shigoto ga suki desu. | That’s nice. I like my job too.
+Mika: 今日 ここで 話せて 嬉しい です。 | Kyou koko de hanasete ureshii desu. | I’m happy we could talk here today.
+Alex: 私も 嬉しい です。また 話しましょう。 | Watashi mo ureshii desu. Mata hanashimashou. | I’m happy too. Let’s talk again.
+
+[grammar]
+grammar: Asking what someone does | 仕事は 何 ですか asks what someone’s job is. The topic marker は follows 仕事.
+
+[quiz]
+quiz: What is Alex’s job? | A teacher | A company employee | A doctor | B | Alex says he is a 社員 at a company.
+quiz: Where does Mika work? | At a school | At a company | At a hospital | A | Mika says she is a teacher at a school.
+quiz: How does Mika describe her work? | It is boring | It is very busy | It is very fun | C | She says it is very fun.
