@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 10 · See You Again
+episode: TC-010
+scene: classroom
+
+[story]
+Mika: こんにちは、 Alex。 駅で 会いましたね。 | Konnichiwa, Alex. Eki de aimashita ne. | Hello, Alex. We met at the station, didn’t we?
+Alex: こんにちは、 Mika。 今日、会えて 嬉しい です。 | Konnichiwa, Mika. Kyou, aete ureshii desu. | Hello, Mika. I’m happy we met today.
+Mika: 今日 は 楽しかった です。 どこへ 行きますか。 | Kyou wa tanoshikatta desu. Doko e ikimasu ka. | Today was fun. Where are you going?
+Alex: 家へ 帰ります。 あなた は どこへ 行きますか。 | Ie e kaerimasu. Anata wa doko e ikimasu ka. | I’m going home. Where are you going?
+Mika: 私 も 家へ 帰ります。 今日 は いい 天気 です ね。 | Watashi mo ie e kaerimasu. Kyou wa ii tenki desu ne. | I’m going home too. The weather is nice today, isn’t it?
+Alex: そう です ね。 また 会いましょう。 | Sou desu ne. Mata aimashou. | That’s right. Let’s meet again.
+Mika: はい。 来週、駅で 会いませんか。 | Hai. Raishuu, eki de aimasen ka. | Yes. Would you like to meet at the station next week?
+Alex: もちろん。 来週 は 大丈夫 です。 | Mochiron. Raishuu wa daijoubu desu. | Of course. Next week works for me.
+Mika: よかった です。 じゃあ、また 来週。 | Yokatta desu. Jaa, mata raishuu. | Great. See you next week, then.
+Alex: はい。 さようなら。 | Hai. Sayounara. | Yes. Goodbye.
+
+[grammar]
+grammar: Asking where someone is going | Use どこへ 行きますか to ask where someone is going. Example: どこへ 行きますか。
+
+[quiz]
+quiz: Where is Alex going? | Home | To the station | To school | A | Alex says 家へ 帰ります, meaning “I’m going home.”
+quiz: When does Mika suggest meeting again? | Today | Next week | Tomorrow | B | Mika suggests meeting 来週, meaning “next week.”
+quiz: Does Alex agree to meet next week? | Yes | No | Alex does not answer | A | Alex says 来週 は 大丈夫 です, meaning next week works.
