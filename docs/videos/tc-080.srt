@@ -1,0 +1,49 @@
+1
+00:00:14,712 --> 00:00:22,268
+すみません。道に 迷いました。交番は どこ ですか。
+Excuse me. I’m lost. Where is the police box?
+
+2
+00:00:22,368 --> 00:00:25,868
+交番は ここから 近い です。
+The police box is close to here.
+
+3
+00:00:25,968 --> 00:00:29,612
+交番まで どう 行きますか。
+How do I get to the police box?
+
+4
+00:00:29,712 --> 00:00:34,556
+真っ直ぐ 行って、角で 右に 曲がって ください。
+Go straight, then turn right at the corner.
+
+5
+00:00:34,656 --> 00:00:37,652
+角は どこ ですか。
+Where is the corner?
+
+6
+00:00:37,752 --> 00:00:43,532
+駅の 前です。交番は 駅の 隣に あります。
+It’s in front of the station. The police box is next to the station.
+
+7
+00:00:43,632 --> 00:00:46,652
+駅は どこ ですか。
+Where is the station?
+
+8
+00:00:46,752 --> 00:00:49,124
+そこ です。
+It’s there.
+
+9
+00:00:49,224 --> 00:00:53,732
+分かりました。ありがとう。
+I understand. Thank you.
+
+10
+00:00:53,832 --> 00:00:56,516
+どういたしまして。
+You’re welcome.

@@ -1,0 +1,59 @@
+1
+00:00:14,808 --> 00:00:20,876
+すみません。歩道で 自転車の 事故が ありました。
+Excuse me. There was a bicycle accident on the sidewalk.
+
+2
+00:00:20,976 --> 00:00:25,844
+大丈夫ですか。足は 痛いですか。
+Are you okay? Does your foot hurt?
+
+3
+00:00:25,944 --> 00:00:32,276
+はい、少し 痛いです。でも、大丈夫です。
+Yes, it hurts a little. But I’m okay.
+
+4
+00:00:32,376 --> 00:00:35,684
+自転車は 大丈夫ですか。
+Is the bicycle okay?
+
+5
+00:00:35,784 --> 00:00:41,036
+はい。自転車は 少し 壊れました。
+Yes. The bicycle is a little broken.
+
+6
+00:00:41,136 --> 00:00:43,796
+怪我は ありますか。
+Are you injured?
+
+7
+00:00:43,896 --> 00:00:47,612
+いいえ、怪我は ありません。
+No, I’m not injured.
+
+8
+00:00:47,712 --> 00:00:52,796
+よかったです。ここで 少し 休みますか。
+That’s good. Would you like to rest here a little?
+
+9
+00:00:52,896 --> 00:00:57,860
+ありがとう。少し 休みます。
+Thank you. I’ll rest a little.
+
+10
+00:00:57,960 --> 00:01:00,812
+病院に 行きますか。
+Will you go to the hospital?
+
+11
+00:01:00,912 --> 00:01:06,788
+いいえ、大丈夫です。家に 帰ります。
+No, I’m okay. I’ll go home.
+
+12
+00:01:06,888 --> 00:01:10,796
+じゃあ、ゆっくり 帰ってください。
+Then please go home slowly.
