@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 17 · The Wrong Turn
+episode: TC-017
+scene: classroom
+
+[story]
+Mika: すみません。駅は どこ ですか。 | Sumimasen. Eki wa doko desu ka? | Excuse me. Where is the station?
+Alex: 駅は そこ です。ここから まっすぐ 行って ください。 | Eki wa soko desu. Koko kara massugu itte kudasai. | The station is there. Please go straight from here.
+Mika: ありがとう。私は 道を 間違えました。 | Arigatou. Watashi wa michi o machigaemashita. | Thank you. I took the wrong road.
+Alex: どこから 来ましたか。 | Doko kara kimashita ka? | Where did you come from?
+Mika: あの 交差点で 左に 曲がりました。 | Ano kousaten de hidari ni magarimashita. | I turned left at that intersection.
+Alex: そこは 違います。駅は 右です。 | Soko wa chigaimasu. Eki wa migi desu. | That is the wrong way. The station is to the right.
+Mika: すみません。ここから 駅まで 遠いですか。 | Sumimasen. Koko kara eki made tooi desu ka? | Excuse me. Is the station far from here?
+Alex: いいえ、近いです。交差点で 右に 曲がって ください。 | Iie, chikai desu. Kousaten de migi ni magatte kudasai. | No, it’s close. Please turn right at the intersection.
+Mika: はい。右に 曲がって、まっすぐ 行きます。 | Hai. Migi ni magatte, massugu ikimasu. | Okay. I’ll turn right and go straight.
+Alex: そうです。駅の 隣に 店が あります。 | Sou desu. Eki no tonari ni mise ga arimasu. | That’s right. There’s a shop next to the station.
+Mika: はい、分かりました。ありがとう。 | Hai, wakarimashita. Arigatou. | Okay, I understand. Thank you.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[grammar]
+grammar: Ask where something is | Use 「〜は どこ ですか」 to ask where something is. Example: 「駅は どこ ですか。」
+
+[quiz]
+quiz: Where did Mika turn at the intersection? | Left | Right | Straight | A | Mika says she turned left at the intersection.
+quiz: Which way should Mika turn now? | Left | Right | Straight | B | Alex tells her to turn right.
+quiz: What is next to the station? | A shop | A school | A park | A | Alex says there is a shop next to the station.
