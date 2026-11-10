@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 89 · Choosing a Meeting Place
+episode: TC-089
+scene: classroom
+
+[story]
+Mika: 今日 コンサートですね。どこで 待ち合わせますか。 | Kyou konsaato desu ne. Doko de machiawasemasu ka? | The concert is today. Where shall we meet?
+Alex: 駅は どうですか。 | Eki wa dou desu ka? | How about the station?
+Mika: 駅は 人が 多いです。公園は どうですか。 | Eki wa hito ga ooi desu. Kouen wa dou desu ka? | The station is crowded. How about the park?
+Alex: いいですね。公園の 入口で 待ち合わせませんか。 | Ii desu ne. Kouen no iriguchi de machiawasemasen ka? | Sounds good. Shall we meet at the park entrance?
+Mika: 入口は 駅の 近くですか。 | Iriguchi wa eki no chikaku desu ka? | Is the entrance near the station?
+Alex: はい、駅の 近くです。公園は 静かです。 | Hai, eki no chikaku desu. Kouen wa shizuka desu. | Yes, it’s near the station. The park is quiet.
+Mika: じゃあ、駅から 公園まで 一緒に 歩きませんか。 | Jaa, eki kara kouen made issho ni arukimasen ka? | Then, shall we walk together from the station to the park?
+Alex: もちろん。コンサートは 夜ですから、時間が あります。 | Mochiron. Konsaato wa yoru desu kara, jikan ga arimasu. | Of course. The concert is at night, so we have time.
+Mika: そうですね。公園で お茶を 飲みませんか。 | Sou desu ne. Kouen de ocha o nomimasen ka? | That’s right. Shall we have tea in the park?
+Alex: いいですね。公園の 入口で 会いましょう。 | Ii desu ne. Kouen no iriguchi de aimashou. | Sounds good. Let’s meet at the park entrance.
+
+[grammar]
+grammar: Asking where to meet | Use どこで with an action to ask where it will happen. Example: どこで 待ち合わせますか。 — Where shall we meet?
+
+[quiz]
+quiz: Where do Mika and Alex decide to meet? | At the park entrance | At the station | At a restaurant | A | They agree to meet at the park entrance.
+quiz: Why does Mika suggest the park instead of the station? | The station is crowded | The park is far away | The station is closed | A | Mika says there are many people at the station.
+quiz: What do they suggest doing in the park? | Reading a book | Having tea | Playing a game | B | Mika asks if they should have tea in the park.
