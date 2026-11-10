@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 65 · Lunch Break
+episode: TC-065
+scene: classroom
+
+[story]
+Mika: 今日 の 昼ご飯 は どこ で 食べますか。 | Kyou no hirugohan wa doko de tabemasu ka? | Where shall we eat lunch today?
+Alex: 会社 の 近く に レストラン が あります。 | Kaisha no chikaku ni resutoran ga arimasu. | There’s a restaurant near the office.
+Mika: そこ は おいしい ですか。 | Soko wa oishii desu ka? | Is it good?
+Alex: はい、料理 は とても おいしい です。 | Hai, ryouri wa totemo oishii desu. | Yes, the food is very good.
+Mika: でも、今日 は うどん を 食べたい です。 | Demo, kyou wa udon o tabetai desu. | But today, I want to eat udon.
+Alex: うどん の 店 は どこ ですか。 | Udon no mise wa doko desu ka? | Where is the udon shop?
+Mika: 駅 の 近く です。 | Eki no chikaku desu. | It’s near the station.
+Alex: じゃあ、一緒に 行きませんか。 | Jaa, issho ni ikimasen ka? | Then, shall we go together?
+Mika: はい、ぜひ。今 行きますか。 | Hai, zehi. Ima ikimasu ka? | Yes, definitely. Shall we go now?
+Alex: はい、今 行きましょう。 | Hai, ima ikimashou. | Yes, let’s go now.
+
+[grammar]
+grammar: どこで〜ますか | Ask where someone does an action. Example: どこ で 食べますか。
+
+[quiz]
+quiz: Where is the restaurant? | Near the office | Near the station | At the company | A | Alex says the restaurant is near the office.
+quiz: What does Mika want to eat today? | Lunch | Udon | 料理 | B | Mika says she wants to eat udon today.
+quiz: Where is the udon shop? | Near the office | At the station | Near the station | C | Mika says the udon shop is near the station.
