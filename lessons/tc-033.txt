@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 33 · Trying on Shoes
+episode: TC-033
+scene: classroom
+
+[story]
+Mika: すみません、この 靴を 見ても いいですか。 | Sumimasen, kono kutsu o mite mo ii desu ka. | Excuse me, may I look at these shoes?
+Alex: はい、どうぞ。 | Hai, douzo. | Yes, go ahead.
+Mika: この 靴を 履いても いいですか。 | Kono kutsu o haite mo ii desu ka. | May I try these shoes on?
+Alex: もちろん、どうぞ。 | Mochiron, douzo. | Of course, go ahead.
+Mika: ちょっと 小さいです。 | Chotto chiisai desu. | They're a little small.
+Alex: もう 少し 大きい 靴も あります。 | Mou sukoshi ookii kutsu mo arimasu. | We also have slightly larger shoes.
+Mika: これを 履いても いいですか。 | Kore o haite mo ii desu ka. | May I try these on?
+Alex: はい、サイズは どうですか。 | Hai, saizu wa dou desu ka. | Yes. How is the size?
+Mika: ちょうど いいです。 | Choudo ii desu. | They're just right.
+Alex: その 靴は とても 似合います。 | Sono kutsu wa totemo niaimasu. | Those shoes look very good on you.
+Mika: じゃあ、これを 買います。 | Jaa, kore o kaimasu. | Then I'll buy these.
+Alex: ありがとう。 | Arigatou. | Thank you.
+
+[grammar]
+grammar: Asking permission | Use verb ても いいですか to ask if something is okay. Example: この 靴を 履いても いいですか。
+
+[quiz]
+quiz: What does Mika say about the first shoes? | They're a little small. | They're just right. | They're very expensive. | A | Mika says ちょっと 小さいです, meaning they're a little small.
+quiz: What does Alex offer after Mika says the shoes are small? | A larger pair of shoes | A smaller pair of shoes | A new bag | A | Alex says there are slightly larger shoes too.
+quiz: What does Mika decide to do at the end? | Buy the shoes | Look at another shop | Wait until tomorrow | A | Mika says これを 買います, meaning I'll buy these.
