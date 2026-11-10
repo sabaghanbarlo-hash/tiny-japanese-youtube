@@ -1,0 +1,59 @@
+1
+00:00:14,712 --> 00:00:20,612
+アレックス、今日 家を 掃除するのを 手伝ってください。
+Alex, please help clean the house today.
+
+2
+00:00:20,712 --> 00:00:24,572
+はい。何を しますか。
+Okay. What should I do?
+
+3
+00:00:24,672 --> 00:00:28,916
+まず、部屋を 片付けてください。
+First, please tidy the room.
+
+4
+00:00:29,016 --> 00:00:32,108
+何を どこに 置きますか。
+What should I put where?
+
+5
+00:00:32,208 --> 00:00:36,308
+本を 机の 上に 置いてください。
+Please put the book on the desk.
+
+6
+00:00:36,408 --> 00:00:41,180
+はい。本を 机の 上に 置きます。
+Okay. I’ll put the book on the desk.
+
+7
+00:00:41,280 --> 00:00:45,428
+それから、皿を 洗ってください。
+Then, please wash the dishes.
+
+8
+00:00:45,528 --> 00:00:49,580
+はい。皿を 洗います。
+Okay. I’ll wash the dishes.
+
+9
+00:00:49,680 --> 00:00:52,964
+洗濯も してください。
+Please do the laundry too.
+
+10
+00:00:53,064 --> 00:00:57,044
+はい。洗濯します。
+Okay. I’ll do the laundry.
+
+11
+00:00:57,144 --> 00:01:03,164
+ありがとう。終わったら、休んでも いいです。
+Thanks. When you’re finished, you can rest.
+
+12
+00:01:03,264 --> 00:01:09,188
+はい、ありがとうございます。すぐ 始めます。
+Okay, thank you. I’ll start right away.
