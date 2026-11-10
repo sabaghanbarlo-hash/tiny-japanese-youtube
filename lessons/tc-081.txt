@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 81 · A Walk in the Park
+episode: TC-081
+scene: classroom
+
+[story]
+Mika: 今日 公園で 散歩しませんか。 | Kyou kouen de sanpo shimasen ka. | Would you like to take a walk in the park today?
+Alex: いいですね。いつ ですか。 | Ii desu ne. Itsu desu ka. | That sounds nice. When?
+Mika: 今日の 夕方は どうですか。 | Kyou no yuugata wa dou desu ka. | How about this evening?
+Alex: すみません、今日 は 忙しいです。 | Sumimasen, kyou wa isogashii desu. | Sorry, I’m busy today.
+Mika: じゃあ、明日の 朝は どうですか。 | Jaa, ashita no asa wa dou desu ka. | Then how about tomorrow morning?
+Alex: 明日の 朝は 大丈夫です。 | Ashita no asa wa daijoubu desu. | Tomorrow morning works for me.
+Mika: 公園は 私の 家の 近くに あります。 | Kouen wa watashi no ie no chikaku ni arimasu. | The park is near my home.
+Alex: それは いいですね。公園で 会いましょう。 | Sore wa ii desu ne. Kouen de aimashou. | That’s nice. Let’s meet at the park.
+Mika: 一緒に ゆっくり 歩きましょう。 | Issho ni yukkuri arukimashou. | Let’s walk together at a relaxed pace.
+Alex: はい、もちろんです。 | Hai, mochiron desu. | Yes, of course.
+
+[grammar]
+grammar: Inviting someone | Use a verb in the ませんか form to make a polite invitation. 散歩しませんか means “Would you like to take a walk?”
+
+[quiz]
+quiz: When do Mika and Alex decide to take their walk? | Tomorrow morning | This evening | Tomorrow evening | A | Alex says tomorrow morning works for them.
+quiz: Why can’t Alex walk today? | Alex is busy | Alex is tired | Alex is at the park | A | Alex says they are busy today.
+quiz: Where will Mika and Alex meet? | At the park | At Mika’s home | At the station | A | Alex suggests meeting at the park.
