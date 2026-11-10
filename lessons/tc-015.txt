@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 15 · A Street Name
+episode: TC-015
+scene: classroom
+
+[story]
+Mika: すみません。この道の名前にある漢字は どう読みますか。 | Sumimasen. Kono michi no namae ni aru kanji wa dou yomimasu ka? | Excuse me. How do you read the kanji in this street name?
+Alex: 「山」は「やま」と読みます。 | “Yama” wa “yama” to yomimasu. | 山 is read as yama.
+Mika: 「山」は やま ですか。 | “Yama” wa yama desu ka? | Is 山 yama?
+Alex: はい、そうです。 | Hai, sou desu. | Yes, that's right.
+Mika: この漢字は 難しいですか。 | Kono kanji wa muzukashii desu ka? | Is this kanji difficult?
+Alex: いいえ、簡単です。 | Iie, kantan desu. | No, it's easy.
+Mika: ありがとうございます。よく分かりました。 | Arigatou gozaimasu. Yoku wakarimashita. | Thank you. I understand now.
+Alex: どういたしまして。 | Dou itashimashite. | You're welcome.
+Mika: この道は 駅の近くですか。 | Kono michi wa eki no chikaku desu ka? | Is this street near the station?
+Alex: はい、駅の近くです。 | Hai, eki no chikaku desu. | Yes, it's near the station.
+
+[grammar]
+grammar: Ask how to read a word | Use 「X」はどう読みますか to ask how to read something. Example: 「山」はどう読みますか。
+
+[quiz]
+quiz: How does Alex say 山 is read? | yama | eki | michi | A | Alex says 山 is read as yama.
+quiz: Does Alex say the kanji is difficult? | Yes, it is difficult. | No, it is easy. | Alex does not answer. | B | Alex answers いいえ、簡単です (No, it's easy).
+quiz: What is near the street? | A school | A station | A shop | B | Alex says the street is near the station.
