@@ -1,0 +1,49 @@
+1
+00:00:14,304 --> 00:00:20,012
+すみません、この シャツは 小さい サイズも ありますか。
+Excuse me, do you have this shirt in a small size?
+
+2
+00:00:20,112 --> 00:00:25,100
+はい、小さい サイズも 大きい サイズも あります。
+Yes, we have small and large sizes.
+
+3
+00:00:25,200 --> 00:00:29,252
+小さい サイズを 見ても いいですか。
+May I see the small size?
+
+4
+00:00:29,352 --> 00:00:32,372
+はい、これです。
+Yes, here it is.
+
+5
+00:00:32,472 --> 00:00:39,572
+これは 少し 大きいです。もっと 小さい サイズは ありますか。
+This is a little big. Do you have a smaller size?
+
+6
+00:00:39,672 --> 00:00:44,204
+はい、これより 小さい サイズも あります。
+Yes, we have a size smaller than this one.
+
+7
+00:00:44,304 --> 00:00:48,260
+じゃあ、これを 着ても いいですか。
+Then, may I wear this?
+
+8
+00:00:48,360 --> 00:00:52,028
+もちろん。どうぞ。
+Of course. Go ahead.
+
+9
+00:00:52,128 --> 00:00:57,500
+これは ちょうど いいです。これを 買います。
+This is just right. I’ll buy this one.
+
+10
+00:00:57,600 --> 00:01:01,652
+はい。レジは そこです。
+Yes. The register is over there.
