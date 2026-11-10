@@ -1,0 +1,49 @@
+1
+00:00:15,000 --> 00:00:21,044
+今日 コンサートですね。どこで 待ち合わせますか。
+The concert is today. Where shall we meet?
+
+2
+00:00:21,144 --> 00:00:23,876
+駅は どうですか。
+How about the station?
+
+3
+00:00:23,976 --> 00:00:29,852
+駅は 人が 多いです。公園は どうですか。
+The station is crowded. How about the park?
+
+4
+00:00:29,952 --> 00:00:35,804
+いいですね。公園の 入口で 待ち合わせませんか。
+Sounds good. Shall we meet at the park entrance?
+
+5
+00:00:35,904 --> 00:00:39,932
+入口は 駅の 近くですか。
+Is the entrance near the station?
+
+6
+00:00:40,032 --> 00:00:46,100
+はい、駅の 近くです。公園は 静かです。
+Yes, it’s near the station. The park is quiet.
+
+7
+00:00:46,200 --> 00:00:51,620
+じゃあ、駅から 公園まで 一緒に 歩きませんか。
+Then, shall we walk together from the station to the park?
+
+8
+00:00:51,720 --> 00:00:57,980
+もちろん。コンサートは 夜ですから、時間が あります。
+Of course. The concert is at night, so we have time.
+
+9
+00:00:58,080 --> 00:01:03,764
+そうですね。公園で お茶を 飲みませんか。
+That’s right. Shall we have tea in the park?
+
+10
+00:01:03,864 --> 00:01:08,996
+いいですね。公園の 入口で 会いましょう。
+Sounds good. Let’s meet at the park entrance.

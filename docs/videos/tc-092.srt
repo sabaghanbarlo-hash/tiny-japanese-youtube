@@ -1,0 +1,54 @@
+1
+00:00:14,496 --> 00:00:19,436
+昼ご飯 に おすすめ の レストラン は ありますか。
+Is there a restaurant you recommend for lunch?
+
+2
+00:00:19,536 --> 00:00:24,308
+はい、駅 の 近く に いい レストラン が あります。
+Yes, there’s a good restaurant near the station.
+
+3
+00:00:24,408 --> 00:00:28,148
+料理 は 何 が おいしい ですか。
+What dishes are good?
+
+4
+00:00:28,248 --> 00:00:32,180
+魚 の 料理 が とても おいしい です。
+The fish dishes are very good.
+
+5
+00:00:32,280 --> 00:00:35,540
+値段 は 高い ですか。
+Is it expensive?
+
+6
+00:00:35,640 --> 00:00:41,036
+いいえ、安い です。野菜 も あります。
+No, it’s inexpensive. They have vegetables, too.
+
+7
+00:00:41,136 --> 00:00:46,460
+私 の おすすめ は 会社 の 近く の レストラン です。
+My recommendation is a restaurant near the office.
+
+8
+00:00:46,560 --> 00:00:49,940
+そこ で 何 が おいしい ですか。
+What’s good there?
+
+9
+00:00:50,040 --> 00:00:54,212
+麺 と 野菜 の 料理 が おいしい です。
+The noodle and vegetable dishes are good.
+
+10
+00:00:54,312 --> 00:00:58,364
+じゃあ、今日 一緒に 行きませんか。
+Then, would you like to go together today?
+
+11
+00:00:58,464 --> 00:01:04,052
+はい、ぜひ。昼ご飯 に 行きましょう。
+Yes, definitely. Let’s go for lunch.
