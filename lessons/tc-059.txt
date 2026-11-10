@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 59 · Helping with Chores
+episode: TC-059
+scene: classroom
+
+[story]
+Mika: アレックス、今日 家を 掃除するのを 手伝ってください。 | Arekkusu, kyō ie o sōji suru no o tetsudatte kudasai. | Alex, please help clean the house today.
+Alex: はい。何を しますか。 | Hai. Nani o shimasu ka. | Okay. What should I do?
+Mika: まず、部屋を 片付けてください。 | Mazu, heya o katazukete kudasai. | First, please tidy the room.
+Alex: 何を どこに 置きますか。 | Nani o doko ni okimasu ka. | What should I put where?
+Mika: 本を 机の 上に 置いてください。 | Hon o tsukue no ue ni oite kudasai. | Please put the book on the desk.
+Alex: はい。本を 机の 上に 置きます。 | Hai. Hon o tsukue no ue ni okimasu. | Okay. I’ll put the book on the desk.
+Mika: それから、皿を 洗ってください。 | Sorekara, sara o aratte kudasai. | Then, please wash the dishes.
+Alex: はい。皿を 洗います。 | Hai. Sara o araimasu. | Okay. I’ll wash the dishes.
+Mika: 洗濯も してください。 | Sentaku mo shite kudasai. | Please do the laundry too.
+Alex: はい。洗濯します。 | Hai. Sentaku shimasu. | Okay. I’ll do the laundry.
+Mika: ありがとう。終わったら、休んでも いいです。 | Arigatō. Owattara, yasunde mo ii desu. | Thanks. When you’re finished, you can rest.
+Alex: はい、ありがとうございます。すぐ 始めます。 | Hai, arigatō gozaimasu. Sugu hajimemasu. | Okay, thank you. I’ll start right away.
+
+[grammar]
+grammar: Polite requests with 〜てください | Use the て-form plus ください to make a polite request. Example: 部屋を 片付けてください。
+
+[quiz]
+quiz: What does Mika ask Alex to do first? | Tidy the room | Wash the dishes | Do the laundry | A | Mika says 部屋を 片付けてください, asking Alex to tidy the room.
+quiz: Where should Alex put the book? | On the bed | On the desk | In the kitchen | B | Mika asks Alex to put the book on the desk.
+quiz: What can Alex do after finishing the chores? | Go to the store | Take a rest | Read a book | B | Mika says Alex can rest after finishing.
