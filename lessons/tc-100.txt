@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 100 · Plans for the Future
+episode: TC-100
+scene: classroom
+
+[story]
+Mika: コーヒーを 飲みましょう。来年の 予定について 話しませんか。 | Koohii o nomimashou. Rainen no yotei ni tsuite hanashimasen ka? | Let’s have coffee. Would you like to talk about next year’s plans?
+Alex: はい。来年は 日本語を 勉強します。 | Hai. Rainen wa nihongo o benkyou shimasu. | Yes. I’ll study Japanese next year.
+Mika: いいですね。ここで 勉強する 予定ですか。 | Ii desu ne. Koko de benkyou suru yotei desu ka? | That sounds nice. Are you planning to study here?
+Alex: はい。京都も 見ます。 | Hai. Kyouto mo mimasu. | Yes. I’ll see Kyoto, too.
+Mika: 私は いつか 先生に なりたいです。 | Watashi wa itsuka sensei ni naritai desu. | I want to become a teacher someday.
+Alex: どうして 先生に なりたいですか。 | Doushite sensei ni naritai desu ka? | Why do you want to become a teacher?
+Mika: 子供に 日本語を 教えたいです。 | Kodomo ni nihongo o oshietai desu. | I want to teach Japanese to children.
+Alex: 私は 医者に なります。人を 助けます。 | Watashi wa isha ni narimasu. Hito o tasukemasu. | I’ll become a doctor. I’ll help people.
+Mika: 医者の 仕事は 大変ですか。 | Isha no shigoto wa taihen desu ka? | Is a doctor’s job difficult?
+Alex: 大変ですが、好きです。 | Taihen desu ga, suki desu. | It’s difficult, but I like it.
+
+[grammar]
+grammar: 〜たいです | Use this form to say what you want to do. Example: 先生に なりたいです means “I want to become a teacher.”
+
+[quiz]
+quiz: What does Alex plan to study next year? | Japanese | English | History | A | Alex says 日本語を 勉強します, meaning he will study Japanese.
+quiz: What does Mika want to become? | A doctor | A teacher | A student | B | Mika says she wants to become a 先生, or teacher.
+quiz: What does Alex say about a doctor’s job? | It is easy, but boring. | It is difficult, but he likes it. | It is difficult, and he dislikes it. | B | Alex says 大変ですが、好きです: it is difficult, but he likes it.
