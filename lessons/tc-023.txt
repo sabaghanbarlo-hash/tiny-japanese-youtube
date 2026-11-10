@@ -1,0 +1,24 @@
+title: Tiny Conversations · Lesson 23 · A Simple Lunch
+episode: TC-023
+scene: classroom
+
+[story]
+Mika: 今日 昼ご飯は 何に しますか。 | Kyou hirugohan wa nani ni shimasu ka. | What shall we have for lunch today?
+Alex: メニューを 見ます。 ご飯と 肉が ありますね。 | Menyuu o mimasu. Gohan to niku ga arimasu ne. | I’ll look at the menu. They have rice and meat.
+Mika: はい。 魚の 料理も あります。 | Hai. Sakana no ryouri mo arimasu. | Yes. They have fish dishes, too.
+Alex: 魚は おいしいですか。 | Sakana wa oishii desu ka. | Is the fish good?
+Mika: はい、とても おいしいです。 野菜も あります。 | Hai, totemo oishii desu. Yasai mo arimasu. | Yes, it’s very good. They have vegetables, too.
+Alex: じゃあ、魚と ご飯を お願いします。 | Jaa, sakana to gohan o onegaishimasu. | Then, fish and rice, please.
+Mika: いいですね。 私は 肉と ご飯に します。 | Ii desu ne. Watashi wa niku to gohan ni shimasu. | Sounds good. I’ll have meat and rice.
+Alex: お茶は どうですか。 | Ocha wa dou desu ka. | How about tea?
+Mika: はい。 冷たい お茶を 飲みます。 | Hai. Tsumetai ocha o nomimasu. | Yes. I’ll have cold tea.
+Alex: 私も お茶を お願いします。 | Watashi mo ocha o onegaishimasu. | I’ll have tea, too.
+Mika: じゃあ、これを 注文します。 | Jaa, kore o chuumon shimasu. | Then, I’ll order this.
+
+[grammar]
+grammar: Choosing what to have | 何にしますか means “What will you have?” Example: 今日 昼ご飯は 何に しますか。
+
+[quiz]
+quiz: What does Alex order? | Fish and rice | Meat and rice | Rice and vegetables | A | Alex says 魚と ご飯を お願いします, meaning fish and rice, please.
+quiz: What does Mika choose to eat? | Fish and rice | Meat and rice | Fish and vegetables | B | Mika says she will have meat and rice.
+quiz: What drink do Mika and Alex choose? | Tea | Coffee | Milk | A | Mika chooses cold tea, and Alex orders tea too.
