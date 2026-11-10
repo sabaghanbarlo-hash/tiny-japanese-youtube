@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 6 · Meeting a Friend's Friend
+episode: TC-006
+scene: classroom
+
+[story]
+Mika: こんにちは。 私は Mika です。 | Konnichiwa. Watashi wa Mika desu. | Hello. I'm Mika.
+Alex: 初めまして。 Alex です。 よろしくお願いします。 | Hajimemashite. Alex desu. Yoroshiku onegaishimasu. | Nice to meet you. I'm Alex. Pleased to meet you.
+Mika: 友達から 聞きました。 | Tomodachi kara kikimashita. | I heard about you from our friend.
+Alex: 私も 友達から 聞きました。 | Watashi mo tomodachi kara kikimashita. | I heard about you from our friend too.
+Mika: この 店の コーヒーは おいしいですか。 | Kono mise no koohii wa oishii desu ka. | Is the coffee at this shop good?
+Alex: はい、とても おいしいです。 お茶も あります。 | Hai, totemo oishii desu. Ocha mo arimasu. | Yes, it's very good. They have tea too.
+Mika: じゃあ、何か 飲みませんか。 | Jaa, nanika nomimasen ka. | Well then, would you like something to drink?
+Alex: いいですね。 私は お茶を 飲みます。 | Ii desu ne. Watashi wa ocha o nomimasu. | Sounds good. I'll have tea.
+Mika: お茶が 好きですか。 | Ocha ga suki desu ka. | Do you like tea?
+Alex: はい、好きです。 コーヒーも 好きです。 | Hai, suki desu. Koohii mo suki desu. | Yes, I do. I like coffee too.
+Mika: そうですか。 一緒に 飲みましょう。 | Sou desu ka. Issho ni nomimashou. | I see. Let's have a drink together.
+Alex: はい。 ありがとう。 | Hai. Arigatou. | Sure. Thanks.
+
+[grammar]
+grammar: Asking about something | Add ですか to make a polite question. Example: お茶が 好きですか。 means “Do you like tea?”
+
+[quiz]
+quiz: How did Mika and Alex hear about each other? | From their friend | At school | On the phone | A | Both say they heard about each other from a friend.
+quiz: What does Alex say they will drink? | Coffee | Tea | Water | B | Alex says 私は お茶を 飲みます, meaning “I'll have tea.”
+quiz: What does Mika suggest doing together? | Drinking | Reading | Walking | A | Mika says 一緒に 飲みましょう, meaning “Let's have a drink together.”
