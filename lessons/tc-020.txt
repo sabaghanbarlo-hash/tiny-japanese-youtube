@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 20 · Meeting Outside
+episode: TC-020
+scene: classroom
+
+[story]
+Mika: こんにちは。アレックス、どこに いますか。 | Konnichiwa. Arekkusu, doko ni imasu ka? | Hi, Alex. Where are you?
+Alex: こんにちは。図書館の 外に います。 | Konnichiwa. Toshokan no soto ni imasu. | Hi. I’m outside the library.
+Mika: 私も 図書館の 外に います。どこですか。 | Watashi mo toshokan no soto ni imasu. Doko desu ka? | I’m outside the library too. Where are you?
+Alex: 入口の 近くです。青い バッグを 持っています。 | Iriguchi no chikaku desu. Aoi baggu o motte imasu. | I’m near the entrance. I have a blue bag.
+Mika: 見つけました。青い バッグですね。 | Mitsukemashita. Aoi baggu desu ne. | I found you. That’s the blue bag, right?
+Alex: はい。ミカも ここに いますね。 | Hai. Mika mo koko ni imasu ne. | Yes. You’re here too, Mika.
+Mika: 今日、図書館で 本を 読みますか。 | Kyou, toshokan de hon o yomimasu ka? | Are you going to read a book at the library today?
+Alex: はい、ミカと 本を 読みます。 | Hai, Mika to hon o yomimasu. | Yes, I’ll read a book with you.
+Mika: じゃあ、一緒に 入りますか。 | Jaa, issho ni hairimasu ka? | Then, shall we go in together?
+Alex: はい、入りましょう。 | Hai, hairimashou. | Yes, let’s go in.
+
+[grammar]
+grammar: Asking where someone is | Use 「どこに いますか」 to ask where a person is. Example: 「アレックス、どこに いますか。」
+
+[quiz]
+quiz: Where is Alex? | Near the library entrance | At the station | Inside the library | A | Alex says he is near the entrance.
+quiz: What color is Alex’s bag? | Red | Blue | White | B | Mika identifies Alex by his blue bag.
+quiz: What do Mika and Alex plan to do together? | Read a book | Eat lunch | Walk in the park | A | They say they will read a book together.
