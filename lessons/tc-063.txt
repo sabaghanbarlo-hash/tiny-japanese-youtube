@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 63 · Borrowing a Pen
+episode: TC-063
+scene: classroom
+
+[story]
+Mika: すみません、ペンを 貸して ください。 | Sumimasen, pen o kashite kudasai. | Excuse me, please lend me a pen.
+Alex: はい、どうぞ。 | Hai, douzo. | Sure, here you go.
+Mika: ありがとう。これを 使っても いいですか。 | Arigatou. Kore o tsukattemo ii desu ka. | Thank you. May I use this?
+Alex: もちろん。授業で 使いますか。 | Mochiron. Jugyou de tsukaimasu ka. | Of course. Will you use it in class?
+Mika: はい、ノートに 書きます。 | Hai, nooto ni kakimasu. | Yes, I’ll write in my notebook.
+Alex: 授業で 使って ください。 | Jugyou de tsukatte kudasai. | Please use it in class.
+Mika: はい、あとで 返します。 | Hai, atode kaeshimasu. | Okay, I’ll return it later.
+Alex: はい、お願いします。 | Hai, onegaishimasu. | Okay, please do.
+Mika: ありがとう。 | Arigatou. | Thank you.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[grammar]
+grammar: Making a polite request | Use a verb in the て form + ください to ask someone to do something. Example: 「ペンを 貸して ください。」 means “Please lend me a pen.”
+
+[quiz]
+quiz: What does Mika ask Alex to lend her? | A pen | A notebook | A book | A | Mika asks Alex to lend her a pen.
+quiz: What does Mika want to do with the pen? | Read a book | Write in her notebook | Use it tomorrow | B | Mika says she will write in her notebook.
+quiz: When does Mika say she will return the pen? | Later | Tomorrow morning | After class tomorrow | A | Mika says 「あとで 返します」, meaning she will return it later.
