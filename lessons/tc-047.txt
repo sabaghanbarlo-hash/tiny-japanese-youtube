@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 47 · Luggage on the Bus
+episode: TC-047
+scene: classroom
+
+[story]
+Mika: すみません、荷物は どこに 置けば いいですか。 | Sumimasen, nimotsu wa doko ni okeba ii desu ka. | Excuse me, where should I put my luggage?
+Alex: 後ろに 置いてください。 | Ushiro ni oite kudasai. | Please put it in the back.
+Mika: この 荷物は 大きいです。後ろは どこですか。 | Kono nimotsu wa ookii desu. Ushiro wa doko desu ka. | This luggage is big. Where is the back?
+Alex: ここです。窓の 隣です。 | Koko desu. Mado no tonari desu. | Here. It’s next to the window.
+Mika: そこに 置いても いいですか。 | Soko ni oite mo ii desu ka. | May I put it there?
+Alex: はい、大丈夫です。 | Hai, daijoubu desu. | Yes, that’s fine.
+Mika: 荷物は 重いです。手伝って ください。 | Nimotsu wa omoi desu. Tetsudatte kudasai. | The luggage is heavy. Please help me.
+Alex: はい、私が 運びます。 | Hai, watashi ga hakobimasu. | Yes, I’ll carry it.
+Mika: はい、お願いします。 | Hai, onegaishimasu. | Yes, please.
+Alex: ゆっくり 運びます。 | Yukkuri hakobimasu. | I’ll carry it slowly.
+Mika: ここに 置いてください。 | Koko ni oite kudasai. | Please put it here.
+Alex: はい、ここに 置きます。 | Hai, koko ni okimasu. | Yes, I’ll put it here.
+
+[grammar]
+grammar: Ask where to put something | Use 「どこに … 置けば いいですか」 to ask where you should put something. Example: 「荷物は どこに 置けば いいですか。」
+
+[quiz]
+quiz: Where does Alex first tell Mika to put her luggage? | In the back | Next to the door | Under the seat | A | Alex says, 「後ろに 置いてください。」
+quiz: What does Alex offer to do when Mika says the luggage is heavy? | Carry it | Open it | Hold it | A | Alex says, 「私が 運びます。」
+quiz: Where does Alex point out a place for the luggage? | Next to the window | Near the door | Outside | A | Alex says the spot is next to the window.
