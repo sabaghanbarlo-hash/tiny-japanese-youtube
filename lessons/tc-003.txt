@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 3 · Where Are You From?
+episode: TC-003
+scene: classroom
+
+[story]
+Mika: こんばんは。初めまして。私は Mika です。 | Konbanwa. Hajimemashite. Watashi wa Mika desu. | Good evening. Nice to meet you. I’m Mika.
+Alex: こんばんは。Alex です。よろしくお願いします。 | Konbanwa. Alex desu. Yoroshiku onegaishimasu. | Good evening. I’m Alex. Nice to meet you.
+Mika: Alex は どこから 来ましたか。 | Alex wa doko kara kimashita ka. | Where are you from, Alex?
+Alex: 外国から 来ました。町は 大きいです。 | Gaikoku kara kimashita. Machi wa ookii desu. | I’m from another country. My town is big.
+Mika: そうですか。私は 京都から 来ました。 | Sou desu ka. Watashi wa Kyouto kara kimashita. | I see. I’m from Kyoto.
+Alex: 京都は どうですか。 | Kyouto wa dou desu ka. | What is Kyoto like?
+Mika: 京都は とても きれいで、楽しい 町です。 | Kyouto wa totemo kirei de, tanoshii machi desu. | Kyoto is a very beautiful, fun town.
+Alex: 京都の 和食は おいしいですか。 | Kyouto no washoku wa oishii desu ka. | Is the Japanese food in Kyoto good?
+Mika: はい、とても おいしいです。私は 和食が 好きです。 | Hai, totemo oishii desu. Watashi wa washoku ga suki desu. | Yes, it’s very good. I like Japanese food.
+Alex: 私も 和食が 好きです。京都に 行きたいです。 | Watashi mo washoku ga suki desu. Kyouto ni ikitai desu. | I like Japanese food too. I want to go to Kyoto.
+Mika: 明日 京都に 行きます。Alex も 行きますか。 | Ashita Kyouto ni ikimasu. Alex mo ikimasu ka. | I’m going to Kyoto tomorrow. Are you going too, Alex?
+Alex: はい、私も 明日 京都に 行きます。 | Hai, watashi mo ashita Kyouto ni ikimasu. | Yes, I’m going to Kyoto tomorrow too.
+
+[grammar]
+grammar: Ask where someone came from | Use 「どこから 来ましたか」 to ask where someone is from. Example: 「Alex は どこから 来ましたか。」
+
+[quiz]
+quiz: Where is Mika from? | Kyoto | A big town in another country | Japan | A | Mika says she came from Kyoto.
+quiz: How does Mika describe Kyoto? | Small and quiet | Beautiful and fun | Cold and busy | B | She says Kyoto is very beautiful and a fun town.
+quiz: Where are Mika and Alex going tomorrow? | A big town | Kyoto | A restaurant | B | Mika says she is going to Kyoto tomorrow, and Alex says he is too.
