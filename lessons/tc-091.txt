@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 91 · Favorite Seasons
+episode: TC-091
+scene: classroom
+
+[story]
+Mika: こんにちは。今日は いい 天気ですね。 | Konnichiwa. Kyou wa ii tenki desu ne. | Hello. The weather is nice today.
+Alex: そうですね。公園を 歩いています。 | Sou desu ne. Kouen o aruite imasu. | It is. I’m walking in the park.
+Mika: 春と 秋、好きなのは 春ですか、秋ですか。 | Haru to aki, suki na no wa haru desu ka, aki desu ka. | Between spring and fall, do you like spring or fall?
+Alex: 春が 好きです。暖かいです。 | Haru ga suki desu. Atatakai desu. | I like spring. It’s warm.
+Mika: 春は 花が きれいですね。 | Haru wa hana ga kirei desu ne. | Flowers are beautiful in spring.
+Alex: はい。でも、秋も 好きです。 | Hai. Demo, aki mo suki desu. | Yes. But I like fall too.
+Mika: どうして 秋が 好きですか。 | Doushite aki ga suki desu ka. | Why do you like fall?
+Alex: 涼しいです。散歩も 楽しいです。 | Suzushii desu. Sanpo mo tanoshii desu. | It’s cool. Walking is fun, too.
+Mika: 私も 秋が 一番 好きです。 | Watashi mo aki ga ichiban suki desu. | I like fall best, too.
+Alex: そうですか。春も いいですね。 | Sou desu ka. Haru mo ii desu ne. | Is that so? Spring is nice, too.
+
+[grammar]
+grammar: 好きです | Use が to mark what you like. Example: 春が 好きです。 (I like spring.)
+
+[quiz]
+quiz: Which season does Alex say is warm? | Spring | Fall | Winter | A | Alex says 春が 好きです and describes it as 暖かい (warm).
+quiz: Why does Alex also like fall? | It is cool and walking is fun. | The flowers are beautiful. | It is warm. | A | Alex says fall is cool and walking is fun.
+quiz: Which season does Mika like best? | Summer | Fall | Spring | B | Mika says 秋が 一番 好きです (I like fall best).
