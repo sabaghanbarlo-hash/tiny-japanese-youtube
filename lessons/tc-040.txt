@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 40 · At the Supermarket
+episode: TC-040
+scene: classroom
+
+[story]
+Mika: すみません、卵は どこ ですか。 | Sumimasen, tamago wa doko desu ka. | Excuse me, where are the eggs?
+Alex: 卵は 野菜の 隣 です。 | Tamago wa yasai no tonari desu. | The eggs are next to the vegetables.
+Mika: えっと、ここ ですね。 | Etto, koko desu ne. | Um, right here.
+Alex: はい、そこ です。 | Hai, soko desu. | Yes, they’re there.
+Mika: この 卵は 安い ですか。 | Kono tamago wa yasui desu ka. | Are these eggs inexpensive?
+Alex: たぶん 安い です。 | Tabun yasui desu. | They’re probably inexpensive.
+Mika: じゃあ、これを 買います。 | Jaa, kore o kaimasu. | Then I’ll buy these.
+Alex: いい と 思います。 | Ii to omoimasu. | I think that’s good.
+Mika: ありがとう。 | Arigatou. | Thank you.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[grammar]
+grammar: Ask where something is | Use 「卵は どこ ですか。」 to ask where the eggs are.
+
+[quiz]
+quiz: Where are the eggs? | Next to the vegetables | By the register | At the entrance | A | Alex says the eggs are next to the vegetables.
+quiz: What does Mika ask about the eggs? | If they are inexpensive | If they are fresh | If they are heavy | A | Mika asks whether the eggs are inexpensive.
+quiz: What will Mika buy? | Vegetables | Eggs | Milk | B | Mika says she will buy these eggs.
