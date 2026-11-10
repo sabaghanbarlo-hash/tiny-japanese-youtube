@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 2 · At the Language Exchange
+episode: TC-002
+scene: classroom
+
+[story]
+Mika: 初めまして。Mikaです。よろしくお願いします。 | Hajimemashite. Mika desu. Yoroshiku onegaishimasu. | Nice to meet you. I'm Mika. I look forward to getting to know you.
+Alex: 初めまして。Alexです。今日、ここに 来ました。 | Hajimemashite. Alex desu. Kyou, koko ni kimashita. | Nice to meet you. I'm Alex. I came here today.
+Mika: 日本語を 勉強しますか。 | Nihongo o benkyou shimasu ka. | Do you study Japanese?
+Alex: はい、少し 勉強します。英語も 勉強しますか。 | Hai, sukoshi benkyou shimasu. Eigo mo benkyou shimasu ka. | Yes, I study a little. Do you study English too?
+Mika: はい、大学で 英語を 勉強します。 | Hai, daigaku de eigo o benkyou shimasu. | Yes, I study English at university.
+Alex: 日本語は 難しいです。でも、とても 楽しいです。 | Nihongo wa muzukashii desu. Demo, totemo tanoshii desu. | Japanese is difficult. But it's a lot of fun.
+Mika: 英語は どうですか。 | Eigo wa dou desu ka. | How about English?
+Alex: 英語も 楽しいです。日本語を 少し 話します。 | Eigo mo tanoshii desu. Nihongo o sukoshi hanashimasu. | English is fun too. I speak a little Japanese.
+Mika: じゃあ、一緒に 日本語と 英語を 話しませんか。 | Jaa, issho ni Nihongo to Eigo o hanashimasen ka. | Then, would you like to speak Japanese and English together?
+Alex: はい、ぜひ。今日から 友達です。 | Hai, zehi. Kyou kara tomodachi desu. | Yes, I'd love to. We're friends starting today.
+
+[grammar]
+grammar: Ask if someone studies something | Use a subject + を + 勉強しますか to ask whether someone studies that subject. Example: 日本語を 勉強しますか。
+
+[quiz]
+quiz: Where did Alex come today? | To the place where they are meeting | To the university | To a restaurant | A | Alex says 今日、ここに 来ました (I came here today).
+quiz: What does Mika study at university? | Japanese | English | Both Japanese and English | B | Mika says she studies English at university.
+quiz: What does Mika invite Alex to do? | Study at university | Speak Japanese and English together | Come back tomorrow | B | Mika invites Alex to speak both languages together.
