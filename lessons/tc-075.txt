@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 75 · Feeling Unwell
+episode: TC-075
+scene: classroom
+
+[story]
+Mika: 公園の椅子に 座っています。少し 気分がよくないです。 | Kouen no isu ni suwatte imasu. Sukoshi kibun ga yoku nai desu. | I'm sitting on a chair in the park. I don't feel very well.
+Alex: 大丈夫ですか。頭が 痛いですか。 | Daijoubu desu ka. Atama ga itai desu ka. | Are you okay? Does your head hurt?
+Mika: いいえ、頭が 重いです。立つと 危ないです。 | Iie, atama ga omoi desu. Tatsu to abunai desu. | No, my head feels heavy. It's dangerous to stand.
+Alex: ここで 少し 休んでください。 | Koko de sukoshi yasunde kudasai. | Please rest here for a little while.
+Mika: ありがとう。少し 心配です。 | Arigatou. Sukoshi shinpai desu. | Thank you. I'm a little worried.
+Alex: 水を 飲みますか。 | Mizu o nomimasu ka. | Would you like some water?
+Mika: はい、少し 飲みたいです。 | Hai, sukoshi nomitai desu. | Yes, I'd like to drink a little.
+Alex: どうぞ。ゆっくり 飲んでください。 | Douzo. Yukkuri nonde kudasai. | Here you go. Please drink slowly.
+Mika: ありがとう。少し 安心しました。 | Arigatou. Sukoshi anshin shimashita. | Thank you. I feel a little better.
+Alex: まだ 頭が 重いですか。 | Mada atama ga omoi desu ka. | Does your head still feel heavy?
+Mika: はい、病院に 行きたいです。 | Hai, byouin ni ikitai desu. | Yes, I want to go to the hospital.
+Alex: じゃあ、病院に 行きましょう。 | Jaa, byouin ni ikimashou. | Then, let's go to the hospital.
+
+[grammar]
+grammar: Saying you don't feel well | Use 気分がよくないです to say you don't feel well. Example: 少し 気分がよくないです。
+
+[quiz]
+quiz: Where is Mika sitting? | On a chair in the park | At a hospital | At a school | A | Mika says she is sitting on a chair in the park.
+quiz: What does Alex offer Mika? | Tea | Water | Juice | B | Alex asks if Mika would like water.
+quiz: Where does Mika want to go? | Home | The store | The hospital | C | Mika says she wants to go to the hospital.
