@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 9 · A Shared Hobby
+episode: TC-009
+scene: classroom
+
+[story]
+Mika: こんにちは。 趣味は 何ですか。 | Konnichiwa. Shumi wa nan desu ka. | Hello. What is your hobby?
+Alex: 私は 音楽が 好きです。 歌うのも 好きです。 | Watashi wa ongaku ga suki desu. Utau no mo suki desu. | I like music. I like singing, too.
+Mika: 私も 音楽が 好きです。 歌うのは 楽しいですね。 | Watashi mo ongaku ga suki desu. Utau no wa tanoshii desu ne. | I like music, too. Singing is fun, isn't it?
+Alex: 本当ですか。 ここで 歌いますか。 | Hontou desu ka. Koko de utaimasu ka. | Really? Do you sing here?
+Mika: はい、ここで よく 歌います。 | Hai, koko de yoku utaimasu. | Yes, I often sing here.
+Alex: 週末も ここに 来ます。 | Shuumatsu mo koko ni kimasu. | I come here on weekends, too.
+Mika: いつも 一人で 歌いますか。 | Itsumo hitori de utaimasu ka. | Do you always sing alone?
+Alex: いいえ、友達と 歌います。 | Iie, tomodachi to utaimasu. | No, I sing with friends.
+Mika: じゃあ、一緒に 歌いませんか。 | Jaa, issho ni utaimasen ka. | Then, would you like to sing together?
+Alex: ぜひ。 とても 嬉しいです。 | Zehi. Totemo ureshii desu. | I’d love to. I’m very happy.
+
+[grammar]
+grammar: 〜が好きです | Use this to say you like something. Example: 音楽が 好きです。
+
+[quiz]
+quiz: What hobby do Mika and Alex both enjoy? | Music and singing | Reading books | Playing tennis | A | They both say they like music, and they talk about singing.
+quiz: Where does Mika often sing? | At home | Here | At school | B | Mika says she often sings here.
+quiz: What does Mika invite Alex to do? | Sing together | Eat together | Go to the station | A | Mika asks Alex if they would like to sing together.
