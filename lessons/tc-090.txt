@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 90 · After the Concert
+episode: TC-090
+scene: classroom
+
+[story]
+Mika: コンサートは どうでしたか。 | Konsaato wa dou deshita ka. | How was the concert?
+Alex: とても 楽しかったです。 | Totemo tanoshikatta desu. | It was a lot of fun.
+Mika: 音楽は よかったですか。 | Ongaku wa yokatta desu ka. | Was the music good?
+Alex: はい、歌も とても よかったです。 | Hai, uta mo totemo yokatta desu. | Yes, the songs were very good too.
+Mika: 外は ちょっと 寒いですね。 | Soto wa chotto samui desu ne. | It’s a little cold outside, isn’t it?
+Alex: そうですね。夜は 少し 寒いです。 | Sou desu ne. Yoru wa sukoshi samui desu. | That’s true. The night is a little cold.
+Mika: 友達と 来て、よかったです。 | Tomodachi to kite, yokatta desu. | I’m glad I came with a friend.
+Alex: 私も そう 思います。 | Watashi mo sou omoimasu. | I think so too.
+Mika: この コンサートの 歌を また 聞きたいです。 | Kono konsaato no uta o mata kikitai desu. | I want to hear the songs from this concert again.
+Alex: いいですね。今度は 一緒に 行きませんか。 | Ii desu ne. Kondo wa issho ni ikimasen ka. | Sounds good. Shall we go together next time?
+Mika: はい、ぜひ。嬉しいです。 | Hai, zehi. Ureshii desu. | Yes, definitely. I’m happy.
+Alex: じゃあ、また 会いましょう。 | Jaa, mata aimashou. | Then, let’s meet again.
+
+[grammar]
+grammar: Asking how something was | Use 「〜は どうでしたか」 to ask how something was. Example: 「コンサートは どうでしたか。」
+
+[quiz]
+quiz: How did Alex feel about the concert? | It was a lot of fun. | It was too cold. | It was boring. | A | Alex says 「とても 楽しかったです」, meaning it was a lot of fun.
+quiz: What does Mika want to do again? | See a movie. | Hear the songs. | Visit a friend. | B | Mika says she wants to hear the concert songs again.
+quiz: What does Alex suggest? | Going together next time. | Going home now. | Meeting at the station. | A | Alex invites Mika to go together next time.
