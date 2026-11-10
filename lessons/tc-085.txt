@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 85 · Inviting a Friend
+episode: TC-085
+scene: classroom
+
+[story]
+Mika: 今度、祭りに 行きませんか。 | Kondo, matsuri ni ikimasen ka? | Would you like to go to a festival sometime soon?
+Alex: いいですね。祭りは どこですか。 | Ii desu ne. Matsuri wa doko desu ka? | That sounds nice. Where is the festival?
+Mika: 駅の 近くです。 | Eki no chikaku desu. | It’s near the station.
+Alex: いつですか。 | Itsu desu ka? | When is it?
+Mika: 今度の 土曜日です。 | Kondo no doyoubi desu. | It’s this coming Saturday.
+Alex: 何が ありますか。 | Nani ga arimasu ka? | What will be there?
+Mika: おいしい 食事が あります。 | Oishii shokuji ga arimasu. | There will be delicious food.
+Alex: ぜひ 行きたいです。 | Zehi ikitai desu. | I’d definitely like to go.
+Mika: 一緒に 行きましょう。 | Issho ni ikimashou. | Let’s go together.
+Alex: はい、楽しそうです。 | Hai, tanoshisou desu. | Yes, it sounds fun.
+Mika: じゃあ、駅で 会いましょう。 | Jaa, eki de aimashou. | Then, let’s meet at the station.
+Alex: はい、ありがとうございます。 | Hai, arigatou gozaimasu. | Yes, thank you.
+
+[grammar]
+grammar: Polite invitation | 行きませんか asks someone politely if they would like to go. Example: 祭りに 行きませんか。
+
+[quiz]
+quiz: Where is the festival? | Near the station | At a school | At a restaurant | A | Mika says 駅の 近くです, meaning it is near the station.
+quiz: When is the festival? | This coming Saturday | Tomorrow morning | Next Sunday | A | Mika says 今度の 土曜日です.
+quiz: What does Alex say he would like to do? | Go to the festival | Eat at home | Meet at the school | A | Alex says ぜひ 行きたいです, meaning he would definitely like to go.
