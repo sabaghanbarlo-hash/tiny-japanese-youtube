@@ -1,0 +1,24 @@
+title: Tiny Conversations · Lesson 14 · Finding a Restroom
+episode: TC-014
+scene: classroom
+
+[story]
+Mika: すみません、トイレは どこ ですか。 | Sumimasen, toire wa doko desu ka. | Excuse me, where is the restroom?
+Alex: トイレは 店の 奥 です。 | Toire wa mise no oku desu. | The restroom is at the back of the shop.
+Mika: 奥 ですか。 | Oku desu ka. | At the back?
+Alex: はい。真っ直ぐ 行って ください。 | Hai. Massugu itte kudasai. | Yes. Please go straight.
+Mika: 真っ直ぐ 行って、右 ですか。 | Massugu itte, migi desu ka. | Go straight, and it’s on the right?
+Alex: はい、右に あります。 | Hai, migi ni arimasu. | Yes, it’s on the right.
+Mika: 近い ですか。 | Chikai desu ka. | Is it close?
+Alex: はい、すぐ そこ です。 | Hai, sugu soko desu. | Yes, it’s right there.
+Mika: 分かりました。ありがとうございます。 | Wakarimashita. Arigatou gozaimasu. | I understand. Thank you.
+Alex: どういたしまして。 | Douitashimashite. | You’re welcome.
+Mika: 失礼します。 | Shitsurei shimasu. | Excuse me.
+
+[grammar]
+grammar: Ask where something is | Use 「〜は どこ ですか」 to ask where something is. Example: 「トイレは どこ ですか。」
+
+[quiz]
+quiz: Where is the restroom? | At the back of the shop | Outside the shop | Next to the station | A | Alex says the restroom is at the back of the shop.
+quiz: Which way should Mika go? | Turn left right away | Go straight, then right | Go outside | B | Alex says to go straight, and Mika confirms it is on the right.
+quiz: Is the restroom far away? | Yes, it is far | No, it is nearby | Alex does not say | B | Alex says 「すぐ そこ です」, meaning it is right there.
