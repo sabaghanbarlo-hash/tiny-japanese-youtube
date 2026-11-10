@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 34 · At the Fruit Stand
+episode: TC-034
+scene: classroom
+
+[story]
+Mika: こんにちは。 | Konnichiwa. | Hello.
+Alex: こんにちは。 | Konnichiwa. | Hello.
+Mika: すみません、りんごは いくらですか。 | Sumimasen, ringo wa ikura desu ka. | Excuse me, how much are the apples?
+Alex: りんごは 一つ 十円です。 | Ringo wa hitotsu juu-en desu. | Apples are ten yen each.
+Mika: みかんも 十円ですか。 | Mikan mo juu-en desu ka. | Are the mandarins ten yen too?
+Alex: はい、みかんも 一つ 十円です。 | Hai, mikan mo hitotsu juu-en desu. | Yes, mandarins are ten yen each too.
+Mika: りんごを 二つ ください。 | Ringo o futatsu kudasai. | Two apples, please.
+Alex: はい、二つですね。 | Hai, futatsu desu ne. | Sure, two, right?
+Mika: はい、お願いします。 | Hai, onegaishimasu. | Yes, please.
+Alex: はい、どうぞ。 | Hai, douzo. | Here you are.
+
+[grammar]
+grammar: Ask the price | いくらですか means “How much is it?” Example: りんごは いくらですか。
+
+[quiz]
+quiz: How much does one apple cost? | Ten yen | Two yen | The price is not mentioned | A | Alex says one apple is ten yen.
+quiz: How much does one mandarin cost? | Two yen | Ten yen | The price is not mentioned | B | Alex says one mandarin is also ten yen.
+quiz: How many apples does Mika ask for? | One | Two | Ten | B | Mika asks for 二つ, meaning two.
