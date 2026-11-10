@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 96 · Morning or Night?
+episode: TC-096
+scene: classroom
+
+[story]
+Mika: おはようございます。朝、図書館で 勉強しますか。 | Ohayou gozaimasu. Asa, toshokan de benkyou shimasu ka. | Good morning. Do you study in the library in the morning?
+Alex: はい、勉強します。朝が 好きですか、夜が 好きですか。 | Hai, benkyou shimasu. Asa ga suki desu ka, yoru ga suki desu ka. | Yes, I do. Do you like mornings or nights?
+Mika: 朝が 好きです。図書館は 静かです。 | Asa ga suki desu. Toshokan wa shizuka desu. | I like mornings. The library is quiet.
+Alex: そうですか。私は 夜が 好きです。 | Sou desu ka. Watashi wa yoru ga suki desu. | I see. I like nights.
+Mika: 夜ですか。どうしてですか。 | Yoru desu ka. Doushite desu ka. | At night? Why?
+Alex: 夜は 人が 少ないです。だから、よく 勉強します。 | Yoru wa hito ga sukunai desu. Dakara, yoku benkyou shimasu. | There are fewer people at night. So I study often.
+Mika: いいですね。私は 朝、図書館に 行きます。 | Ii desu ne. Watashi wa asa, toshokan ni ikimasu. | That sounds nice. I go to the library in the morning.
+Alex: 朝は 早く 図書館に 行きますか。 | Asa wa hayaku toshokan ni ikimasu ka. | Do you go to the library early in the morning?
+Mika: はい、朝は 早く 行きます。夜は 行きません。 | Hai, asa wa hayaku ikimasu. Yoru wa ikimasen. | Yes, I go early in the morning. I don’t go at night.
+Alex: そうですか。私は 夜、図書館で 勉強します。 | Sou desu ka. Watashi wa yoru, toshokan de benkyou shimasu. | I see. I study in the library at night.
+Mika: 朝も 夜も、図書館は 静かですか。 | Asa mo yoru mo, toshokan wa shizuka desu ka. | Is the library quiet in the morning and at night?
+Alex: はい、静かです。でも、夜は 人が 少ないです。 | Hai, shizuka desu. Demo, yoru wa hito ga sukunai desu. | Yes, it is quiet. But there are fewer people at night.
+
+[grammar]
+grammar: Saying what you like | Use 「が 好きです」 after the thing you like. Example: 「朝が 好きです。」 means “I like mornings.”
+
+[quiz]
+quiz: When does Mika like to go to the library? | In the morning | At night | At home | A | Mika says 「朝が 好きです」—she likes mornings.
+quiz: Why does Alex often study at night? | The library is new | There are fewer people | The library is big | B | Alex says there are fewer people at night.
+quiz: Does Mika go to the library at night? | Yes, every night | Yes, sometimes | No | C | Mika says 「夜は 行きません」—she doesn’t go at night.
