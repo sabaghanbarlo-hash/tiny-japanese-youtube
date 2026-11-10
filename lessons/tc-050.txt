@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 50 · Changing a Reservation
+episode: TC-050
+scene: classroom
+
+[story]
+Mika: すみません。ホテルの 予約を 変えたいです。 | Sumimasen. Hoteru no yoyaku o kaetai desu. | Excuse me. I’d like to change my hotel reservation.
+Alex: はい。ホテルの 受付です。どうしましたか。 | Hai. Hoteru no uketsuke desu. Dou shimashita ka. | Yes. This is the hotel desk. How can I help?
+Mika: 今日の 予約を 明日に 変えたいです。 | Kyou no yoyaku o ashita ni kaetai desu. | I’d like to change today’s reservation to tomorrow.
+Alex: 明日の 部屋は あります。 | Ashita no heya wa arimasu. | There is a room available tomorrow.
+Mika: ありがとうございます。じゃあ、お願いします。 | Arigatou gozaimasu. Jaa, onegaishimasu. | Thank you. Then, please do that.
+Alex: 予約の 名前は 何ですか。 | Yoyaku no namae wa nan desu ka. | What is the name on the reservation?
+Mika: Mikaです。 | Mika desu. | It’s Mika.
+Alex: 分かりました。予約を 変えます。 | Wakarimashita. Yoyaku o kaemasu. | Understood. I’ll change the reservation.
+Mika: 料金は 同じですか。 | Ryoukin wa onaji desu ka. | Is the price the same?
+Alex: はい、同じです。 | Hai, onaji desu. | Yes, it’s the same.
+Mika: ありがとうございます。よろしくお願いします。 | Arigatou gozaimasu. Yoroshiku onegaishimasu. | Thank you. I appreciate your help.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[grammar]
+grammar: Ask to change something | Use “〜を 〜に 変えたいです” to say you’d like to change something to something else. Example: 今日の 予約を 明日に 変えたいです。
+
+[quiz]
+quiz: When does Mika want to move the reservation to? | Tomorrow | Today | Next week | A | Mika says she wants to change today’s reservation to tomorrow.
+quiz: What name is on the reservation? | Alex | Mika | The name is not given | B | Mika answers, “Mikaです。”
+quiz: Is the price the same? | No | Yes | Alex does not know | B | Alex says the price is the same.
