@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 44 · Missing the Bus
+episode: TC-044
+scene: classroom
+
+[story]
+Mika: すみません。バスは いつ 来ますか。 | Sumimasen. Basu wa itsu kimasu ka. | Excuse me. When will the bus come?
+Alex: あと 十分 くらい です。 | Ato juppun kurai desu. | In about ten minutes.
+Mika: そうですか。ここで 待ちます。 | Sou desu ka. Koko de machimasu. | I see. I’ll wait here.
+Alex: はい。ここで 待って ください。 | Hai. Koko de matte kudasai. | Yes. Please wait here.
+Mika: この バスは 駅に 行きますか。 | Kono basu wa eki ni ikimasu ka. | Does this bus go to the station?
+Alex: はい、駅に 行きます。 | Hai, eki ni ikimasu. | Yes, it goes to the station.
+Mika: ありがとう。バスは まだ ですか。 | Arigatou. Basu wa mada desu ka. | Thank you. Is the bus still not here?
+Alex: もうすぐ 来ます。そこを 見て ください。 | Mou sugu kimasu. Soko o mite kudasai. | It’ll come soon. Please look over there.
+Mika: バスが 来ましたね。 | Basu ga kimashita ne. | The bus has arrived, hasn’t it?
+Alex: はい。バスに 乗って ください。 | Hai. Basu ni notte kudasai. | Yes. Please get on the bus.
+
+[grammar]
+grammar: Asking when something will happen | Use いつ before a polite verb to ask when something will happen. Example: バスは いつ 来ますか。
+
+[quiz]
+quiz: About how long does Alex say the bus will take? | About ten minutes | About one minute | About an hour | A | Alex says あと 十分 くらい です, meaning “in about ten minutes.”
+quiz: Where does Mika ask whether the bus goes? | The airport | The station | The school | B | Mika asks whether this bus goes to 駅, the station.
+quiz: What does Alex ask Mika to do when the bus arrives? | Wait at home | Look over there | Get on the bus | C | Alex says バスに 乗って ください, or “Please get on the bus.”
