@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 86 · Weekend Sports
+episode: TC-086
+scene: classroom
+
+[story]
+Mika: Alex、週末に テニスを しませんか。 | Alex, shuumatsu ni tenisu o shimasen ka? | Alex, would you like to play tennis this weekend?
+Alex: いいですね。会社の 近くで テニスを しましょう。 | Ii desu ne. Kaisha no chikaku de tenisu o shimashou. | Sounds good. Let’s play tennis near the company.
+Mika: 土曜日は どうですか。 | Doyoubi wa dou desu ka? | How about Saturday?
+Alex: 大丈夫です。午後 二時は どうですか。 | Daijoubu desu. Gogo ni-ji wa dou desu ka? | That works. How about two in the afternoon?
+Mika: はい。テニスを する場所は 会社の 近くですか。 | Hai. Tenisu o suru basho wa kaisha no chikaku desu ka? | Yes. Is the place where we’ll play tennis near the company?
+Alex: はい、会社の 近くに あります。 | Hai, kaisha no chikaku ni arimasu. | Yes, it’s near the company.
+Mika: じゃあ、そこに 二時に 行きます。 | Jaa, soko ni ni-ji ni ikimasu. | Then I’ll go there at two.
+Alex: 私も 行きます。テニスの ボールを 持って 行きます。 | Watashi mo ikimasu. Tenisu no booru o motte ikimasu. | I’ll go too. I’ll bring a tennis ball.
+Mika: ありがとう。週末の テニスは とても 好きです。 | Arigatou. Shuumatsu no tenisu wa totemo suki desu. | Thanks. I really like weekend tennis.
+Alex: 私も 好きです。土曜日に 会いましょう。 | Watashi mo suki desu. Doyoubi ni aimashou. | I like it too. See you Saturday.
+
+[grammar]
+grammar: Inviting someone | Use 〜ませんか to invite someone politely. Example: テニスを しませんか。
+
+[quiz]
+quiz: What does Mika invite Alex to do? | Play tennis | Read a book | Have lunch | A | Mika asks Alex to play tennis this weekend.
+quiz: When do they plan to meet? | Saturday at two in the afternoon | Sunday morning | Friday night | A | They agree on Saturday at two in the afternoon.
+quiz: Where is the sports place? | Near the company | Near the station | At Mika’s home | A | Alex says it is near the company.
