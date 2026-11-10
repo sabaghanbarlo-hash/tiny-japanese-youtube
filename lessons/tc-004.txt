@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 4 · Names and Countries
+episode: TC-004
+scene: classroom
+
+[story]
+Mika: こんばんは。初めまして。Mikaです。 | Konbanwa. Hajimemashite. Mika desu. | Good evening. Nice to meet you. I’m Mika.
+Alex: こんばんは。初めまして。Alexです。 | Konbanwa. Hajimemashite. Alex desu. | Good evening. Nice to meet you. I’m Alex.
+Mika: Alexは どこの 国から 来ましたか。 | Alex wa doko no kuni kara kimashita ka. | What country did you come from, Alex?
+Alex: 私は 外国から 来ました。Mikaは？ | Watashi wa gaikoku kara kimashita. Mika wa? | I came from abroad. How about you, Mika?
+Mika: 私は 日本から 来ました。 | Watashi wa Nihon kara kimashita. | I came from Japan.
+Alex: 日本ですか。日本は いい 国ですね。 | Nihon desu ka. Nihon wa ii kuni desu ne. | Japan? Japan is a nice country.
+Mika: はい。日本は とても いい 国です。 | Hai. Nihon wa totemo ii kuni desu. | Yes. Japan is a very nice country.
+Alex: パーティーは 楽しいですか。 | Paatii wa tanoshii desu ka. | Is the party fun?
+Mika: はい、とても 楽しいです。Alexは？ | Hai, totemo tanoshii desu. Alex wa? | Yes, it’s very fun. How about you, Alex?
+Alex: はい。パーティーは 好きです。 | Hai. Paatii wa suki desu. | Yes. I like parties.
+Mika: そうですか。よろしくお願いします。 | Sou desu ka. Yoroshiku onegaishimasu. | I see. It’s nice to meet you.
+Alex: ありがとう。よろしくお願いします。 | Arigatoo. Yoroshiku onegaishimasu. | Thank you. It’s nice to meet you.
+
+[grammar]
+grammar: Asking where someone is from | Use 「どこの 国から 来ましたか」 to ask what country someone came from. Example: 「Alexは どこの 国から 来ましたか。」
+
+[quiz]
+quiz: Where does Mika say she came from? | Japan | A foreign country | The party | A | Mika says 「私は 日本から 来ました」, meaning she came from Japan.
+quiz: How does Alex describe where he came from? | Japan | A foreign country | Mika’s country | B | Alex says 「私は 外国から 来ました」, meaning he came from abroad.
+quiz: Does Mika think the party is fun? | Yes, very fun | No, not fun | She doesn’t say | A | Mika says 「はい、とても 楽しいです」, meaning yes, it is very fun.
