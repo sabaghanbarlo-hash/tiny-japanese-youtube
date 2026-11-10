@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 27 · Paying the Bill
+episode: TC-027
+scene: classroom
+
+[story]
+Mika: すみません、お会計 お願いします。 | Sumimasen, okaikei onegaishimasu. | Excuse me, the bill, please.
+Alex: はい、店員を 呼びます。 | Hai, ten'in o yobimasu. | Sure, I’ll call the server.
+Mika: 料理は とても おいしかったです。 | Ryouri wa totemo oishikatta desu. | The food was very delicious.
+Alex: そうですね。食事は 楽しかったです。 | Sou desu ne. Shokuji wa tanoshikatta desu. | That’s right. The meal was enjoyable.
+Mika: お会計は いくらですか。 | Okaikei wa ikura desu ka. | How much is the bill?
+Alex: えっと、まだ 分かりません。 | Etto, mada wakarimasen. | Um, I don’t know yet.
+Mika: 割り勘に しますか。 | Warikan ni shimasu ka. | Shall we split the bill?
+Alex: はい、割り勘に しましょう。 | Hai, warikan ni shimashou. | Yes, let’s split it.
+Mika: 私は 現金で 払います。 | Watashi wa genkin de haraimasu. | I’ll pay in cash.
+Alex: 私は クレジットカードで 払います。 | Watashi wa kurejitto kaado de haraimasu. | I’ll pay by credit card.
+
+[grammar]
+grammar: 〜お願いします | Use this polite phrase to make a request. Example: お会計 お願いします。
+
+[quiz]
+quiz: Who asks for the bill? | Mika | Alex | Both diners | A | Mika says お会計 お願いします。
+quiz: What does Alex say he will do? | Call the server | Pay in cash | Order food | A | Alex says 店員を 呼びます。
+quiz: How will Alex pay? | In cash | By credit card | He does not say | B | Alex says クレジットカードで 払います。
