@@ -1,0 +1,24 @@
+title: Tiny Conversations · Lesson 1 · First Introductions
+episode: TC-001
+scene: classroom
+
+[story]
+Mika: 初めまして。私は Mika です。 | Hajimemashite. Watashi wa Mika desu. | Nice to meet you. I’m Mika.
+Alex: 初めまして。私は Alex です。 | Hajimemashite. Watashi wa Alex desu. | Nice to meet you. I’m Alex.
+Mika: Alexは 学生ですか。 | Alex wa gakusei desu ka. | Are you a student, Alex?
+Alex: はい、学生です。Mikaも 学生ですか。 | Hai, gakusei desu. Mika mo gakusei desu ka. | Yes, I am. Are you a student too, Mika?
+Mika: はい、私も 学生です。今日の 授業は 日本語ですか。 | Hai, watashi mo gakusei desu. Kyou no jugyou wa nihongo desu ka. | Yes, I’m a student too. Is today’s class Japanese?
+Alex: はい、日本語の 授業です。 | Hai, nihongo no jugyou desu. | Yes, it’s a Japanese class.
+Mika: 日本語は 好きですか。 | Nihongo wa suki desu ka. | Do you like Japanese?
+Alex: はい、とても 好きです。Mikaは どうですか。 | Hai, totemo suki desu. Mika wa dou desu ka. | Yes, I like it a lot. How about you, Mika?
+Mika: 私も 好きです。授業は 楽しいです。 | Watashi mo suki desu. Jugyou wa tanoshii desu. | I like it too. The class is fun.
+Alex: そうですか。よろしくお願いします。 | Sou desu ka. Yoroshiku onegaishimasu. | I see. I look forward to getting to know you.
+Mika: よろしくお願いします。 | Yoroshiku onegaishimasu. | I look forward to getting to know you too.
+
+[grammar]
+grammar: Introducing yourself | Say 私は plus your name plus です to introduce yourself. Example: 私は Mika です。
+
+[quiz]
+quiz: What are the classmates’ names? | Mika and Alex | Mika and Mika | Alex and Alex | A | They introduce themselves as Mika and Alex.
+quiz: What subject is the class? | Japanese | English | Math | A | Alex says it is a Japanese class.
+quiz: Does Alex like Japanese? | Yes, a lot | No | Alex does not say | A | Alex says はい、とても好きです, meaning yes, very much.
