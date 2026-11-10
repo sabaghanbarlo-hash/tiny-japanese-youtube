@@ -1,0 +1,24 @@
+title: Tiny Conversations · Lesson 73 · A Sore Throat
+episode: TC-073
+scene: classroom
+
+[story]
+Mika: こんにちは。喉が 痛いです。 | Konnichiwa. Nodo ga itai desu. | Hello. My throat hurts.
+Alex: こんにちは。いつから 痛いですか。 | Konnichiwa. Itsu kara itai desu ka. | Hello. Since when has it hurt?
+Mika: 昨日からです。咳も あります。 | Kinou kara desu. Seki mo arimasu. | Since yesterday. I also have a cough.
+Alex: 熱は ありますか。 | Netsu wa arimasu ka. | Do you have a fever?
+Mika: いいえ、熱は ありません。咳は 少し あります。 | Iie, netsu wa arimasen. Seki wa sukoshi arimasu. | No, I don’t have a fever. I have a little cough.
+Alex: 喉を 見ても いいですか。 | Nodo o mite mo ii desu ka. | May I look at your throat?
+Mika: はい、どうぞ。 | Hai, douzo. | Yes, please.
+Alex: 喉が 赤いです。水を たくさん 飲んでください。 | Nodo ga akai desu. Mizu o takusan nonde kudasai. | Your throat is red. Please drink plenty of water.
+Mika: 薬も 要りますか。 | Kusuri mo irimasu ka. | Do I need medicine too?
+Alex: はい、薬を 飲んでください。お大事に。 | Hai, kusuri o nonde kudasai. Odaiji ni. | Yes, please take medicine. Get well soon.
+Mika: ありがとうございます。 | Arigatou gozaimasu. | Thank you very much.
+
+[grammar]
+grammar: Describing a symptom | Use “〜が 痛いです” to say that something hurts. Example: 喉が 痛いです。
+
+[quiz]
+quiz: What is bothering Mika? | Her throat | Her head | Her back | A | Mika says her throat hurts.
+quiz: When did the pain start? | Today | Yesterday | Last week | B | Mika says 昨日からです, “since yesterday.”
+quiz: What does Alex ask Mika to drink? | Tea | Milk | Water | C | Alex asks her to drink plenty of water.
