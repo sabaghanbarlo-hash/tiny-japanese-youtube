@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 16 · At the Information Desk
+episode: TC-016
+scene: classroom
+
+[story]
+Mika: すみません。駅の近くに 神社や お寺は ありますか。 | Sumimasen. Eki no chikaku ni jinja ya otera wa arimasu ka? | Excuse me. Are there any shrines or temples near the station?
+Alex: はい。近くに 神社と お寺が あります。 | Hai. Chikaku ni jinja to otera ga arimasu. | Yes. There is a shrine and a temple nearby.
+Mika: 神社は どこですか。 | Jinja wa doko desu ka? | Where is the shrine?
+Alex: この道を 真っ直ぐ 行くと 神社が あります。 | Kono michi o massugu iku to jinja ga arimasu. | If you go straight on this road, there is a shrine.
+Mika: 歩いて 行けますか。 | Aruite ikemasu ka? | Can I walk there?
+Alex: はい。歩いて 行けます。神社は 近いです。お寺は 少し 遠いです。 | Hai. Aruite ikemasu. Jinja wa chikai desu. Otera wa sukoshi tooi desu. | Yes, you can walk there. The shrine is close. The temple is a little far.
+Mika: 公園も 近くに ありますか。 | Kouen mo chikaku ni arimasu ka? | Is there also a park nearby?
+Alex: はい。公園は 駅の 隣です。 | Hai. Kouen wa eki no tonari desu. | Yes. The park is next to the station.
+Mika: ありがとうございます。景色は いいですか。 | Arigatou gozaimasu. Keshiki wa ii desu ka? | Thank you. Is the scenery nice?
+Alex: はい、とても きれいです。ぜひ 見てください。 | Hai, totemo kirei desu. Zehi mite kudasai. | Yes, it’s very beautiful. Please be sure to see it.
+
+[grammar]
+grammar: Ask where something is | Use “〜は どこですか” to ask where a place or thing is. Example: 神社は どこですか。
+
+[quiz]
+quiz: Which sights does Alex say are nearby? | A shrine and a temple | A park and a library | A hotel and a restaurant | A | Alex says there is a shrine and a temple nearby.
+quiz: How does Alex tell Mika to get to the shrine? | Turn left | Go straight on this road | Take the train | B | Alex says to go straight on this road.
+quiz: Where is the park? | Next to the station | Behind the temple | Far from the station | A | Alex says the park is next to the station.
