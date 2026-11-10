@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 93 · Is This Town Busy?
+episode: TC-093
+scene: classroom
+
+[story]
+Mika: この町は 人が 多い ですか。 | Kono machi wa hito ga ooi desu ka? | Are there many people in this town?
+Alex: はい、人が たくさん います。 | Hai, hito ga takusan imasu. | Yes, there are a lot of people.
+Mika: 駅の 前は 人が 多い です。 | Eki no mae wa hito ga ooi desu. | There are a lot of people in front of the station.
+Alex: でも、ここは 静か です。 | Demo, koko wa shizuka desu. | But it’s quiet here.
+Mika: コーヒーは おいしい です。 | Koohii wa oishii desu. | The coffee is delicious.
+Alex: この店は いい です。 | Kono mise wa ii desu. | This place is nice.
+Mika: 町は 大きい ですか。 | Machi wa ookii desu ka? | Is the town big?
+Alex: はい、とても 大きい です。そして、店も たくさん あります。 | Hai, totemo ookii desu. Soshite, mise mo takusan arimasu. | Yes, it’s very big. And there are lots of shops, too.
+Mika: 夜は どう ですか。 | Yoru wa dou desu ka? | What is it like at night?
+Alex: 夜は 静か です。 | Yoru wa shizuka desu. | It’s quiet at night.
+Mika: この町が 好き です。 | Kono machi ga suki desu. | I like this town.
+Alex: 私も 好き です。 | Watashi mo suki desu. | I like it, too.
+
+[grammar]
+grammar: Ask whether a town has many people | Use 「place は 人が 多い ですか」 to ask whether there are many people in a place. Example: 「この町は 人が 多い ですか。」
+
+[quiz]
+quiz: What does Mika say about the area in front of the station? | There are many people. | It is quiet. | There are many shops. | A | Mika says there are many people in front of the station.
+quiz: What does Alex say about the place where they are? | It is busy. | It is quiet. | It is big. | B | Alex says, 「ここは 静か です。」
+quiz: What does Alex say about the town at night? | It is quiet. | It is busy. | It is small. | A | Alex says it is quiet at night.
