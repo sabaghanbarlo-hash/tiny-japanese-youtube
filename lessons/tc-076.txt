@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 76 · Calling for Help
+episode: TC-076
+scene: classroom
+
+[story]
+Mika: すみません、助けて ください。家で 父が 怪我を しました。 | Sumimasen, tasukete kudasai. Ie de chichi ga kega o shimashita. | Excuse me, please help. My father is injured at home.
+Alex: どう しましたか。父は 大丈夫ですか。 | Dou shimashita ka. Chichi wa daijoubu desu ka. | What happened? Is your father all right?
+Mika: 父は 頭が 痛いです。今、家に います。 | Chichi wa atama ga itai desu. Ima, ie ni imasu. | My father has a headache. He is at home now.
+Alex: 住所は どこですか。家は 駅の 近くですか。 | Juusho wa doko desu ka. Ie wa eki no chikaku desu ka. | What is your address? Is your home near the station?
+Mika: はい、駅の 近くです。私も 家に います。 | Hai, eki no chikaku desu. Watashi mo ie ni imasu. | Yes, it is near the station. I am at home too.
+Alex: 名前を 教えて ください。 | Namae o oshiete kudasai. | Please tell me your name.
+Mika: Mikaです。救急車を お願いします。 | Mika desu. Kyuukyuusha o onegai shimasu. | I'm Mika. Please send an ambulance.
+Alex: はい、救急車が 来ます。ここで 待って ください。 | Hai, kyuukyuusha ga kimasu. Koko de matte kudasai. | Yes, an ambulance is coming. Please wait here.
+Mika: ありがとう ございます。父は まだ 頭が 痛いです。 | Arigatou gozaimasu. Chichi wa mada atama ga itai desu. | Thank you. My father still has a headache.
+Alex: 大丈夫です。救急車が もうすぐ 来ます。 | Daijoubu desu. Kyuukyuusha ga mousugu kimasu. | It's all right. The ambulance will be here soon.
+
+[grammar]
+grammar: Asking what happened | どうしましたか means “What happened?” or “What’s wrong?” Example: どう しましたか。
+
+[quiz]
+quiz: What is wrong with Mika’s father? | His head hurts. | He is lost. | He is hungry. | A | Mika says her father’s head hurts.
+quiz: Where is Mika’s home? | Near the station. | At the hospital. | Near the school. | A | Mika says her home is near the station.
+quiz: What is Alex sending? | A taxi. | An ambulance. | A friend. | B | Alex says an ambulance is coming.
