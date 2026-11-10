@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 66 · A Meeting Time
+episode: TC-066
+scene: classroom
+
+[story]
+Mika: お疲れ様です。明日 会議を しませんか。 | Otsukaresama desu. Ashita kaigi o shimasen ka. | Hello. Would you like to have a meeting tomorrow?
+Alex: はい。明日 午後 二時は どうですか。 | Hai. Ashita gogo ni-ji wa dou desu ka. | Sure. How about two tomorrow afternoon?
+Mika: 午後 二時は 忙しいです。午後 三時は どうですか。 | Gogo ni-ji wa isogashii desu. Gogo san-ji wa dou desu ka. | I’m busy at two. How about three?
+Alex: はい、午後 三時は 大丈夫です。 | Hai, gogo san-ji wa daijoubu desu. | Yes, three in the afternoon works.
+Mika: 会社の 会議室で 会議を しますか。 | Kaisha no kaigishitsu de kaigi o shimasu ka. | Shall we have the meeting in the company meeting room?
+Alex: はい、会議室で します。 | Hai, kaigishitsu de shimasu. | Yes, let's have it in the meeting room.
+Mika: じゃあ、明日 午後 三時に 会議を します。 | Jaa, ashita gogo san-ji ni kaigi o shimasu. | Okay, we’ll have the meeting tomorrow at three in the afternoon.
+Alex: はい。資料を 用意します。 | Hai. Shiryou o youi shimasu. | Yes. I’ll prepare the materials.
+Mika: ありがとうございます。会議室は どこですか。 | Arigatou gozaimasu. Kaigishitsu wa doko desu ka. | Thank you. Where is the meeting room?
+Alex: 会議室は ここです。 | Kaigishitsu wa koko desu. | The meeting room is here.
+
+[grammar]
+grammar: Suggesting a time | Use 「〜は どうですか」 to suggest an option. Example: 「明日 午後 二時は どうですか。」
+
+[quiz]
+quiz: What time do Mika and Alex agree to meet? | Two in the afternoon | Three in the afternoon | Tomorrow morning | B | They agree on 午後 三時, or three in the afternoon.
+quiz: Where will they have the meeting? | In the meeting room | At the station | At home | A | They agree to meet in the 会議室, the meeting room.
+quiz: What will Alex prepare? | A book | The materials | Tea | B | Alex says 資料を 用意します, meaning he will prepare the materials.
