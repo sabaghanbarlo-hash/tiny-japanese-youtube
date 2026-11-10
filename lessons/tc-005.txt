@@ -1,0 +1,24 @@
+title: Tiny Conversations · Lesson 5 · A New Neighbor
+episode: TC-005
+scene: classroom
+
+[story]
+Mika: こんにちは。最近 引っ越しましたか。 | Konnichiwa. Saikin hikkoshimashita ka. | Hello. Did you move in recently?
+Alex: はい、昨日 ここに 引っ越しました。 | Hai, kinou koko ni hikkoshimashita. | Yes, I moved in here yesterday.
+Mika: 私は ミカです。隣に 住んでいます。 | Watashi wa Mika desu. Tonari ni sunde imasu. | I’m Mika. I live next door.
+Alex: アレックスです。よろしくお願いします。 | Arekkusu desu. Yoroshiku onegaishimasu. | I’m Alex. Nice to meet you.
+Mika: どこから 来ましたか。 | Doko kara kimashita ka. | Where did you come from?
+Alex: 外国から 来ました。日本語を 少し 話します。 | Gaikoku kara kimashita. Nihongo o sukoshi hanashimasu. | I came from another country. I speak a little Japanese.
+Mika: この アパートは 静かです。 | Kono apaato wa shizuka desu. | This apartment is quiet.
+Alex: そうですね。とても いいです。 | Sou desu ne. Totemo ii desu. | That’s right. It’s very nice.
+Mika: 近くに 店が あります。 | Chikaku ni mise ga arimasu. | There’s a store nearby.
+Alex: ありがとう。店は どこですか。 | Arigatou. Mise wa doko desu ka. | Thank you. Where is the store?
+Mika: ここから 真っ直ぐ 行くと 店が あります。 | Koko kara massugu iku to mise ga arimasu. | Go straight from here and there’s a store.
+
+[grammar]
+grammar: Ask whether something happened | Add か to a polite past-tense question. Example: 「最近 引っ越しましたか。」 means “Did you move recently?”
+
+[quiz]
+quiz: When did Alex move in? | Yesterday | Today | Last month | A | Alex says 昨日, meaning “yesterday.”
+quiz: Where does Mika live in relation to Alex? | At a store nearby | Next door | At the station | B | Mika says 隣に住んでいます, meaning “I live next door.”
+quiz: What direction does Mika give to reach the store? | Go straight from here | Turn left at the station | Go upstairs | A | Mika says to go straight from here.
