@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 97 · The Weather Today
+episode: TC-097
+scene: classroom
+
+[story]
+Mika: こんにちは。今日は 天気が いいですね。 | Konnichiwa. Kyou wa tenki ga ii desu ne. | Hello. The weather is nice today, isn’t it?
+Alex: こんにちは。はい、よく 晴れていますね。 | Konnichiwa. Hai, yoku harete imasu ne. | Hello. Yes, it’s nice and sunny.
+Mika: 昨日は 雨でしたね。今日は 暖かいです。 | Kinou wa ame deshita ne. Kyou wa atatakai desu. | It was rainy yesterday, wasn’t it? It’s warm today.
+Alex: そうですね。少し 暑いです。 | Sou desu ne. Sukoshi atsui desu. | That’s right. It’s a little hot.
+Mika: 雲が 少ないですね。空も きれいです。 | Kumo ga sukunai desu ne. Sora mo kirei desu. | There aren’t many clouds. The sky is pretty, too.
+Alex: でも、午後は 曇る かもしれませんね。 | Demo, gogo wa kumoru kamoshiremasen ne. | But it might get cloudy this afternoon.
+Mika: そうですか。傘は ありますか。 | Sou desu ka. Kasa wa arimasu ka. | Really? Do you have an umbrella?
+Alex: はい、傘が あります。 | Hai, kasa ga arimasu. | Yes, I have an umbrella.
+Mika: よかったです。バスは もうすぐ 来ますか。 | Yokatta desu. Basu wa mousugu kimasu ka. | That’s good. Is the bus coming soon?
+Alex: 多分、もうすぐ 来ます。 | Tabun, mousugu kimasu. | It’ll probably come soon.
+
+[grammar]
+grammar: Soft observations with ですね | Add ですね to an observation to sound friendly and invite agreement. Example: 今日は 天気が いいですね。
+
+[quiz]
+quiz: What was the weather like yesterday? | It was rainy. | It snowed. | It was hot. | A | Mika says 昨日は 雨でした, meaning it was rainy yesterday.
+quiz: What does Alex have? | A book | An umbrella | A hat | B | Alex says 傘が あります, meaning Alex has an umbrella.
+quiz: What might happen in the afternoon? | It might get cloudy. | It might get cold. | It might rain. | A | Alex says it might get cloudy in the afternoon.
