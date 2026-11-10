@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 8 · When Did You Get Here?
+episode: TC-008
+scene: classroom
+
+[story]
+Mika: こんにちは。ここに いつ 来ましたか。 | Konnichiwa. Koko ni itsu kimashita ka? | Hello. When did you come here?
+Alex: 三時間 前に 来ました。あなたは？ | San-jikan mae ni kimashita. Anata wa? | I came three hours ago. How about you?
+Mika: 私は 今日の 朝に 来ました。 | Watashi wa kyou no asa ni kimashita. | I came this morning.
+Alex: そうですか。公園は いいですね。 | Sou desu ka. Kouen wa ii desu ne. | I see. The park is nice.
+Mika: はい。ここは 静かで、気持ちが いいです。 | Hai. Koko wa shizuka de, kimochi ga ii desu. | Yes. It’s quiet here, and it feels nice.
+Alex: 公園に よく 来ますか。 | Kouen ni yoku kimasu ka? | Do you come to the park often?
+Mika: いいえ。今日 来ました。 | Iie. Kyou kimashita. | No. I came today.
+Alex: 私も 今日 来ました。 | Watashi mo kyou kimashita. | I came today too.
+Mika: ここは 大きいですね。 | Koko wa ookii desu ne. | It’s big here.
+Alex: そうですね。木が たくさん あります。 | Sou desu ne. Ki ga takusan arimasu. | That’s right. There are lots of trees.
+Mika: 一緒に 散歩しませんか。 | Issho ni sanpo shimasen ka? | Would you like to take a walk together?
+Alex: はい、ぜひ。歩きましょう。 | Hai, zehi. Arukimashou. | Yes, gladly. Let’s walk.
+
+[grammar]
+grammar: 〜時間前に来ました | Say how many hours ago you arrived: number + 時間前に + 来ました. Example: 三時間 前に 来ました。
+
+[quiz]
+quiz: How long ago did Alex arrive? | One hour ago | Three hours ago | This morning | B | Alex says 「三時間 前に 来ました」, meaning he came three hours ago.
+quiz: When did Mika arrive? | This morning | Yesterday | Three hours ago | A | Mika says 「今日の 朝に 来ました」, meaning she came this morning.
+quiz: What does Mika invite Alex to do? | Read a book | Take a walk together | Go to the station | B | Mika asks 「一緒に 散歩しませんか」, inviting Alex to take a walk together.
