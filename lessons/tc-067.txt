@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 67 · Using the Printer
+episode: TC-067
+scene: classroom
+
+[story]
+Mika: すみません、これで 書類を コピーしますか。 | Sumimasen, kore de shorui o kopii shimasu ka. | Excuse me, do I copy documents with this?
+Alex: はい、書類を ここに 置いてください。 | Hai, shorui o koko ni oite kudasai. | Yes, please put the documents here.
+Mika: それから、どう しますか。 | Sorekara, dou shimasu ka. | Then, what do I do?
+Alex: これを 押します。すぐ 始まります。 | Kore o oshimasu. Sugu hajimarimasu. | Press this. It starts right away.
+Mika: 書類を 何枚も コピーできますか。 | Shorui o nanmai mo kopii dekimasu ka. | Can I copy many documents?
+Alex: はい、たくさん コピーできます。 | Hai, takusan kopii dekimasu. | Yes, you can copy a lot.
+Mika: 書類は どこから 出ますか。 | Shorui wa doko kara demasu ka. | Where do the documents come out?
+Alex: ここから 出ます。 | Koko kara demasu. | They come out here.
+Mika: ありがとう。これで 分かりました。 | Arigatou. Kore de wakarimashita. | Thanks. I understand now.
+Alex: どういたしまして。困った場合は 聞いてください。 | Dou itashimashite. Komatta baai wa kiite kudasai. | You’re welcome. If you have trouble, please ask.
+
+[grammar]
+grammar: これで〜しますか | Use this to ask whether something is used to do an action. Example: これで 書類を コピーしますか。
+
+[quiz]
+quiz: What does Alex say Mika should do with the documents first? | Put them here | Press this | Take them outside | A | Alex says 書類を ここに 置いてください, meaning to put the documents here.
+quiz: What does Alex say Mika should press? | The documents | This | The copies | B | Alex says これを 押します, meaning press this.
+quiz: Where do the documents come out? | Here | At the office | Outside | A | Alex says ここから 出ます, meaning they come out here.
