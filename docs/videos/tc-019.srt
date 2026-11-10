@@ -1,0 +1,54 @@
+1
+00:00:14,520 --> 00:00:19,964
+すみません。交差点は 危ないです。
+Excuse me. The intersection is dangerous.
+
+2
+00:00:20,064 --> 00:00:24,092
+あの、横断歩道は どこですか。
+Um, where is the crosswalk?
+
+3
+00:00:24,192 --> 00:00:30,908
+ここです。車が 多いですから、ここで 待ってください。
+It's here. There are many cars, so please wait here.
+
+4
+00:00:31,008 --> 00:00:35,396
+はい。信号は 赤いですか。
+Okay. Is the traffic light red?
+
+5
+00:00:35,496 --> 00:00:41,612
+はい、まだ 赤いです。信号を 見てください。
+Yes, it's still red. Please watch the traffic light.
+
+6
+00:00:41,712 --> 00:00:47,684
+分かりました。青くなったら、渡っても いいですか。
+I understand. When it turns green, may I cross?
+
+7
+00:00:47,784 --> 00:00:54,332
+はい。右と 左を 見てから、ゆっくり 渡りましょう。
+Yes. Let's look right and left, then cross slowly.
+
+8
+00:00:54,432 --> 00:00:59,660
+車は ありません。今、青いです。
+There are no cars. It's green now.
+
+9
+00:00:59,760 --> 00:01:05,444
+そうですね。じゃあ、一緒に 渡りましょう。
+That's right. Then let's cross together.
+
+10
+00:01:05,544 --> 00:01:10,028
+ありがとう。安心しました。
+Thank you. I feel relieved.
+
+11
+00:01:10,128 --> 00:01:16,844
+どういたしまして。横断歩道を ゆっくり 歩いてください。
+You're welcome. Please walk slowly across the crosswalk.

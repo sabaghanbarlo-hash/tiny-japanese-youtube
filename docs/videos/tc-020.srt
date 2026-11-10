@@ -1,0 +1,49 @@
+1
+00:00:14,352 --> 00:00:20,132
+こんにちは。アレックス、どこに いますか。
+Hi, Alex. Where are you?
+
+2
+00:00:20,232 --> 00:00:25,052
+こんにちは。図書館の 外に います。
+Hi. I’m outside the library.
+
+3
+00:00:25,152 --> 00:00:31,196
+私も 図書館の 外に います。どこですか。
+I’m outside the library too. Where are you?
+
+4
+00:00:31,296 --> 00:00:37,004
+入口の 近くです。青い バッグを 持っています。
+I’m near the entrance. I have a blue bag.
+
+5
+00:00:37,104 --> 00:00:42,164
+見つけました。青い バッグですね。
+I found you. That’s the blue bag, right?
+
+6
+00:00:42,264 --> 00:00:46,556
+はい。ミカも ここに いますね。
+Yes. You’re here too, Mika.
+
+7
+00:00:46,656 --> 00:00:51,068
+今日、図書館で 本を 読みますか。
+Are you going to read a book at the library today?
+
+8
+00:00:51,168 --> 00:00:55,004
+はい、ミカと 本を 読みます。
+Yes, I’ll read a book with you.
+
+9
+00:00:55,104 --> 00:00:58,772
+じゃあ、一緒に 入りますか。
+Then, shall we go in together?
+
+10
+00:00:58,872 --> 00:01:02,156
+はい、入りましょう。
+Yes, let’s go in.

@@ -1,0 +1,49 @@
+1
+00:00:14,496 --> 00:00:17,396
+地図を 見ますか。
+Shall we look at the map?
+
+2
+00:00:17,496 --> 00:00:22,124
+はい、ここから その 建物まで 歩きます。
+Yes, we’ll walk from here to that building.
+
+3
+00:00:22,224 --> 00:00:27,092
+まず、この 道を 真っ直ぐ 進みますか。
+First, do we go straight on this road?
+
+4
+00:00:27,192 --> 00:00:31,244
+はい、交差点まで 歩きます。
+Yes, we walk to the intersection.
+
+5
+00:00:31,344 --> 00:00:35,300
+交差点で 右に 曲がりますか。
+Do we turn right at the intersection?
+
+6
+00:00:35,400 --> 00:00:39,188
+いいえ、左に 曲がります。
+No, we turn left.
+
+7
+00:00:39,288 --> 00:00:43,340
+それから、川を 渡りますか。
+Then, do we cross the river?
+
+8
+00:00:43,440 --> 00:00:47,036
+はい、橋を 渡ります。
+Yes, we cross the bridge.
+
+9
+00:00:47,136 --> 00:00:50,900
+その 建物は 近いですか。
+Is that building close?
+
+10
+00:00:51,000 --> 00:00:54,620
+はい、もうすぐ 着きます。
+Yes, we’ll arrive soon.

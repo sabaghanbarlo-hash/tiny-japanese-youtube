@@ -1,0 +1,49 @@
+1
+00:00:14,544 --> 00:00:19,004
+こんにちは。二人 ですか。
+Hello. A party of two?
+
+2
+00:00:19,104 --> 00:00:24,332
+はい、二人 です。席 は ありますか。
+Yes, there are two of us. Do you have a table?
+
+3
+00:00:24,432 --> 00:00:29,204
+はい。この テーブル は どう ですか。
+Yes. How about this table?
+
+4
+00:00:29,304 --> 00:00:32,900
+窓 の 近く の 席 が いい です。
+A seat near the window would be nice.
+
+5
+00:00:33,000 --> 00:00:37,484
+はい、窓 の 近く に 席 が あります。
+Yes, there is a seat near the window.
+
+6
+00:00:37,584 --> 00:00:40,772
+その 席 は 空いていますか。
+Is that seat available?
+
+7
+00:00:40,872 --> 00:00:45,860
+はい、空いています。ここ です。
+Yes, it is available. It’s here.
+
+8
+00:00:45,960 --> 00:00:50,396
+すみません、ここ に 座っても いい ですか。
+Excuse me, may we sit here?
+
+9
+00:00:50,496 --> 00:00:53,276
+はい、どうぞ。
+Yes, please.
+
+10
+00:00:53,376 --> 00:00:57,692
+ありがとう。いい 席 です。
+Thank you. It’s a nice seat.
