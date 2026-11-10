@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 18 · Walking to the Building
+episode: TC-018
+scene: classroom
+
+[story]
+Mika: 地図を 見ますか。 | Chizu o mimasu ka? | Shall we look at the map?
+Alex: はい、ここから その 建物まで 歩きます。 | Hai, koko kara sono tatemono made arukimasu. | Yes, we’ll walk from here to that building.
+Mika: まず、この 道を 真っ直ぐ 進みますか。 | Mazu, kono michi o massugu susumimasu ka? | First, do we go straight on this road?
+Alex: はい、交差点まで 歩きます。 | Hai, kousaten made arukimasu. | Yes, we walk to the intersection.
+Mika: 交差点で 右に 曲がりますか。 | Kousaten de migi ni magarimasu ka? | Do we turn right at the intersection?
+Alex: いいえ、左に 曲がります。 | Iie, hidari ni magarimasu. | No, we turn left.
+Mika: それから、川を 渡りますか。 | Sore kara, kawa o watarimasu ka? | Then, do we cross the river?
+Alex: はい、橋を 渡ります。 | Hai, hashi o watarimasu. | Yes, we cross the bridge.
+Mika: その 建物は 近いですか。 | Sono tatemono wa chikai desu ka? | Is that building close?
+Alex: はい、もうすぐ 着きます。 | Hai, mou sugu tsukimasu. | Yes, we’ll arrive soon.
+
+[grammar]
+grammar: 〜まで 歩きます | Use this to say you’ll walk to a place. Example: 交差点まで 歩きます。
+
+[quiz]
+quiz: Which way do they turn at the intersection? | Right | Left | They do not turn | B | Alex says they turn left.
+quiz: What do they cross? | A river | A road | A park | A | Mika asks if they cross the river, and Alex says they cross a bridge.
+quiz: Is the building far away? | Yes, it is far | No, it is close | They do not know | B | Mika asks if it is close, and Alex says they will arrive soon.
