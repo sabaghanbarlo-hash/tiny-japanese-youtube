@@ -1,0 +1,54 @@
+1
+00:00:14,760 --> 00:00:21,476
+おはようございます、Alex。宿題を 見ましたか。
+Good morning, Alex. Did you look at the homework?
+
+2
+00:00:21,576 --> 00:00:27,980
+はい、見ました。一番の 問題に 何 と 答えましたか。
+Yes, I did. What did you answer for the first question?
+
+3
+00:00:28,080 --> 00:00:33,884
+三 と 答えました。Alexは どう ですか。
+I answered three. How about you, Alex?
+
+4
+00:00:33,984 --> 00:00:39,188
+私は 四 と 答えました。どうしてですか。
+I answered four. Why?
+
+5
+00:00:39,288 --> 00:00:45,500
+問題を よく 見ませんでした。三 と 思いました。
+I didn’t look at the question carefully. I thought it was three.
+
+6
+00:00:45,600 --> 00:00:49,004
+一緒に 問題を 見ませんか。
+Shall we look at the question together?
+
+7
+00:00:49,104 --> 00:00:54,404
+はい、お願いします。四 ですね。
+Yes, please. It’s four, isn’t it?
+
+8
+00:00:54,504 --> 00:00:59,660
+そうです。宿題は もう 終わりましたか。
+That’s right. Have you finished the homework?
+
+9
+00:00:59,760 --> 00:01:06,212
+はい、終わりました。問題は 難しかったですか。
+Yes, I have. Was the question difficult?
+
+10
+00:01:06,312 --> 00:01:09,692
+いいえ、簡単でした。
+No, it was easy.
+
+11
+00:01:09,792 --> 00:01:14,924
+よかったです。ありがとうございます。
+That’s good. Thank you.

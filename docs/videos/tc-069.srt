@@ -1,0 +1,59 @@
+1
+00:00:15,048 --> 00:00:22,460
+お疲れ様です。今日の 内容について 意見を 聞いても いいですか。
+Hello. May I ask your opinion about today’s content?
+
+2
+00:00:22,560 --> 00:00:26,708
+はい。とても よかったです。
+Yes. It was very good.
+
+3
+00:00:26,808 --> 00:00:32,420
+ありがとうございます。声は どうでしたか。
+Thank you. How was my voice?
+
+4
+00:00:32,520 --> 00:00:35,828
+声は はっきり 聞こえました。
+Your voice was clear.
+
+5
+00:00:35,928 --> 00:00:41,948
+よかったです。もっと ゆっくり 話すと いいですか。
+That’s good. Should I speak more slowly?
+
+6
+00:00:42,048 --> 00:00:48,332
+そうですね。少し ゆっくり 話すと、もっと いいです。
+Yes. It would be even better if you spoke a little more slowly.
+
+7
+00:00:48,432 --> 00:00:51,716
+資料は どうでしたか。
+How were the materials?
+
+8
+00:00:51,816 --> 00:00:58,100
+資料も よかったです。内容は とても 面白かったです。
+The materials were good too. The content was very interesting.
+
+9
+00:00:58,200 --> 00:01:04,772
+ありがとうございます。今度も 同じ 内容で いいですか。
+Thank you. Is the same content okay next time too?
+
+10
+00:01:04,872 --> 00:01:11,252
+はい。資料を もう 少し 用意すると、もっと いいです。
+Yes. It would be even better if you prepared a little more material.
+
+11
+00:01:11,352 --> 00:01:18,140
+はい、分かりました。今度は 資料を もっと 用意します。
+Yes, I understand. I’ll prepare more materials next time.
+
+12
+00:01:18,240 --> 00:01:22,676
+いいですね。頑張ってください。
+Sounds good. Please do your best.

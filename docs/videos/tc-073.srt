@@ -1,0 +1,54 @@
+1
+00:00:14,592 --> 00:00:19,436
+こんにちは。喉が 痛いです。
+Hello. My throat hurts.
+
+2
+00:00:19,536 --> 00:00:24,092
+こんにちは。いつから 痛いですか。
+Hello. Since when has it hurt?
+
+3
+00:00:24,192 --> 00:00:29,204
+昨日からです。咳も あります。
+Since yesterday. I also have a cough.
+
+4
+00:00:29,304 --> 00:00:32,036
+熱は ありますか。
+Do you have a fever?
+
+5
+00:00:32,136 --> 00:00:38,564
+いいえ、熱は ありません。咳は 少し あります。
+No, I don’t have a fever. I have a little cough.
+
+6
+00:00:38,664 --> 00:00:41,756
+喉を 見ても いいですか。
+May I look at your throat?
+
+7
+00:00:41,856 --> 00:00:44,636
+はい、どうぞ。
+Yes, please.
+
+8
+00:00:44,736 --> 00:00:50,276
+喉が 赤いです。水を たくさん 飲んでください。
+Your throat is red. Please drink plenty of water.
+
+9
+00:00:50,376 --> 00:00:53,372
+薬も 要りますか。
+Do I need medicine too?
+
+10
+00:00:53,472 --> 00:00:58,940
+はい、薬を 飲んでください。お大事に。
+Yes, please take medicine. Get well soon.
+
+11
+00:00:59,040 --> 00:01:02,132
+ありがとうございます。
+Thank you very much.

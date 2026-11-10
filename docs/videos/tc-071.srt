@@ -1,0 +1,49 @@
+1
+00:00:14,616 --> 00:00:21,860
+すみません。頭が 痛いです。薬を ください。
+Excuse me. My head hurts. Please give me some medicine.
+
+2
+00:00:21,960 --> 00:00:25,268
+いつから 頭が 痛いですか。
+Since when has your head hurt?
+
+3
+00:00:25,368 --> 00:00:31,052
+昨日からです。頭が とても 痛いです。
+Since yesterday. My head hurts a lot.
+
+4
+00:00:31,152 --> 00:00:33,884
+熱は ありますか。
+Do you have a fever?
+
+5
+00:00:33,984 --> 00:00:37,676
+いいえ、熱は ありません。
+No, I don't have a fever.
+
+6
+00:00:37,776 --> 00:00:40,844
+この 薬は どうですか。
+How about this medicine?
+
+7
+00:00:40,944 --> 00:00:44,612
+この 薬を どう 飲みますか。
+How do I take this medicine?
+
+8
+00:00:44,712 --> 00:00:47,636
+水で 飲んでください。
+Please take it with water.
+
+9
+00:00:47,736 --> 00:00:50,900
+はい、分かりました。
+Yes, I understand.
+
+10
+00:00:51,000 --> 00:00:53,372
+お大事に。
+Take care.

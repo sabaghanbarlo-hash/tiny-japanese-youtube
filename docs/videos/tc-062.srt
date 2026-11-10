@@ -1,0 +1,49 @@
+1
+00:00:14,856 --> 00:00:20,972
+すみません、先生。教室は どこ ですか。
+Excuse me, teacher. Where is the classroom?
+
+2
+00:00:21,072 --> 00:00:24,044
+教室は そこです。
+The classroom is there.
+
+3
+00:00:24,144 --> 00:00:29,324
+そこですか。学校の 中ですか。
+There? Is it inside the school?
+
+4
+00:00:29,424 --> 00:00:33,116
+はい、学校の 中です。
+Yes, it is inside the school.
+
+5
+00:00:33,216 --> 00:00:37,700
+教室は 右ですか、左ですか。
+Is the classroom on the right or the left?
+
+6
+00:00:37,800 --> 00:00:42,284
+右です。ドアの 隣です。
+It’s on the right. It’s next to the door.
+
+7
+00:00:42,384 --> 00:00:45,596
+ここから 近いですか。
+Is it close to here?
+
+8
+00:00:45,696 --> 00:00:49,100
+はい、すぐ そこです。
+Yes, it’s right there.
+
+9
+00:00:49,200 --> 00:00:54,140
+ありがとう。教室へ 行きます。
+Thank you. I’ll go to the classroom.
+
+10
+00:00:54,240 --> 00:00:56,612
+どうぞ。
+Go ahead.

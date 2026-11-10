@@ -1,0 +1,49 @@
+1
+00:00:14,592 --> 00:00:20,396
+お疲れ様です。明日 会議を しませんか。
+Hello. Would you like to have a meeting tomorrow?
+
+2
+00:00:20,496 --> 00:00:25,220
+はい。明日 午後 二時は どうですか。
+Sure. How about two tomorrow afternoon?
+
+3
+00:00:25,320 --> 00:00:31,796
+午後 二時は 忙しいです。午後 三時は どうですか。
+I’m busy at two. How about three?
+
+4
+00:00:31,896 --> 00:00:36,140
+はい、午後 三時は 大丈夫です。
+Yes, three in the afternoon works.
+
+5
+00:00:36,240 --> 00:00:40,700
+会社の 会議室で 会議を しますか。
+Shall we have the meeting in the company meeting room?
+
+6
+00:00:40,800 --> 00:00:44,492
+はい、会議室で します。
+Yes, let's have it in the meeting room.
+
+7
+00:00:44,592 --> 00:00:49,628
+じゃあ、明日 午後 三時に 会議を します。
+Okay, we’ll have the meeting tomorrow at three in the afternoon.
+
+8
+00:00:49,728 --> 00:00:54,020
+はい。資料を 用意します。
+Yes. I’ll prepare the materials.
+
+9
+00:00:54,120 --> 00:00:59,996
+ありがとうございます。会議室は どこですか。
+Thank you. Where is the meeting room?
+
+10
+00:01:00,096 --> 00:01:03,164
+会議室は ここです。
+The meeting room is here.
