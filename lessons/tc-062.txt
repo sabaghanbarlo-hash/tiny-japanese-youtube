@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 62 · Finding the Classroom
+episode: TC-062
+scene: classroom
+
+[story]
+Mika: すみません、先生。教室は どこ ですか。 | Sumimasen, sensei. Kyoushitsu wa doko desu ka. | Excuse me, teacher. Where is the classroom?
+Alex: 教室は そこです。 | Kyoushitsu wa soko desu. | The classroom is there.
+Mika: そこですか。学校の 中ですか。 | Soko desu ka. Gakkou no naka desu ka. | There? Is it inside the school?
+Alex: はい、学校の 中です。 | Hai, gakkou no naka desu. | Yes, it is inside the school.
+Mika: 教室は 右ですか、左ですか。 | Kyoushitsu wa migi desu ka, hidari desu ka. | Is the classroom on the right or the left?
+Alex: 右です。ドアの 隣です。 | Migi desu. Doa no tonari desu. | It’s on the right. It’s next to the door.
+Mika: ここから 近いですか。 | Koko kara chikai desu ka. | Is it close to here?
+Alex: はい、すぐ そこです。 | Hai, sugu soko desu. | Yes, it’s right there.
+Mika: ありがとう。教室へ 行きます。 | Arigatou. Kyoushitsu e ikimasu. | Thank you. I’ll go to the classroom.
+Alex: どうぞ。 | Douzo. | Go ahead.
+
+[grammar]
+grammar: Asking where something is | Use 「〜は どこ ですか」 to ask where something is. Example: 「教室は どこ ですか。」
+
+[quiz]
+quiz: Where is the classroom? | Inside the school | At the station | At home | A | Alex says the classroom is inside the school.
+quiz: Is the classroom on the right or the left? | On the left | On the right | Straight ahead | B | Alex answers 「右です」, meaning it is on the right.
+quiz: What is the classroom next to? | A desk | A door | A window | B | Alex says it is next to the door.
