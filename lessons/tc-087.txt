@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 87 · A Museum Visit
+episode: TC-087
+scene: classroom
+
+[story]
+Mika: 今度 写真を 見に 行きませんか。 | Kondo shashin o mi ni ikimasen ka. | Would you like to go see photographs sometime?
+Alex: いいですね。どこに 行きますか。 | Ii desu ne. Doko ni ikimasu ka. | Sounds good. Where shall we go?
+Mika: 駅の 近くです。写真が たくさん あります。 | Eki no chikaku desu. Shashin ga takusan arimasu. | It’s near the station. There are lots of photographs.
+Alex: そうですか。何を 見ますか。 | Sou desu ka. Nani o mimasu ka. | I see. What will we look at?
+Mika: きれいな 色の 写真を 見たいです。 | Kirei na iro no shashin o mitai desu. | I want to see photographs with beautiful colors.
+Alex: 私も 見たいです。今日 時間が ありますか。 | Watashi mo mitai desu. Kyou jikan ga arimasu ka. | I want to see them too. Do you have time today?
+Mika: はい、午後は 暇です。 | Hai, gogo wa hima desu. | Yes, I’m free in the afternoon.
+Alex: じゃあ、午後 二時に 駅で 会いませんか。 | Jaa, gogo ni-ji ni eki de aimasen ka. | Then, shall we meet at the station at 2 p.m.?
+Mika: はい。そこから 近いですか。 | Hai. Soko kara chikai desu ka. | Yes. Is it nearby?
+Alex: はい、近いです。歩いて 行けます。 | Hai, chikai desu. Aruite ikemasu. | Yes, it’s close. We can walk there.
+Mika: いいですね。一緒に 行きましょう。 | Ii desu ne. Issho ni ikimashou. | Sounds good. Let’s go together.
+Alex: はい。午後 二時に 会いましょう。 | Hai. Gogo ni-ji ni aimashou. | Yes. Let’s meet at 2 p.m.
+
+[grammar]
+grammar: Inviting someone | Use 「〜ませんか」 to make a polite invitation. Example: 写真を 見に 行きませんか。(Would you like to go see photographs?)
+
+[quiz]
+quiz: What does Mika want to see? | Photographs with beautiful colors | A movie | A station | A | Mika says she wants to see photographs with beautiful colors.
+quiz: When are Mika and Alex both available to meet? | In the morning | In the afternoon | At night | B | Mika says she is free in the afternoon.
+quiz: How will they get there from the station? | By bus | By train | On foot | C | Alex says they can walk there.
