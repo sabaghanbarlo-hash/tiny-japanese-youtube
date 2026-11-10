@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 38 · On Sale Today
+episode: TC-038
+scene: classroom
+
+[story]
+Mika: すみません、この お菓子 は 今日 割引 ですか。 | Sumimasen, kono okashi wa kyou waribiki desu ka. | Excuse me, is this snack on sale today?
+Alex: はい、今日 は 割引 です。 | Hai, kyou wa waribiki desu. | Yes, it’s on sale today.
+Mika: 値札 の 値段 は いくら ですか。 | Nefuda no nedan wa ikura desu ka. | How much is the price on the tag?
+Alex: 五十 円 です。 | Gojuu en desu. | It’s 50 yen.
+Mika: 今日 は いくら ですか。 | Kyou wa ikura desu ka. | How much is it today?
+Alex: 三十 円 です。 | Sanjuu en desu. | It’s 30 yen.
+Mika: いつも より 安い ですか。 | Itsumo yori yasui desu ka. | Is it cheaper than usual?
+Alex: はい、今日 は もっと 安い です。 | Hai, kyou wa motto yasui desu. | Yes, it’s even cheaper today.
+Mika: そう ですか。じゃあ、これ を 買います。 | Sou desu ka. Jaa, kore o kaimasu. | I see. Then I’ll buy this.
+Alex: ありがとうございます。 | Arigatou gozaimasu. | Thank you very much.
+
+[grammar]
+grammar: Ask if something is on sale | Put the item before は and ask 今日 割引 ですか。 Example: この お菓子 は 今日 割引 ですか。
+
+[quiz]
+quiz: What is the price on the tag? | 30 yen | 50 yen | 10 yen | B | Alex says the tag price is 五十円, or 50 yen.
+quiz: How much does the snack cost today? | 30 yen | 50 yen | It is free | A | Alex says today’s price is 三十円, or 30 yen.
+quiz: What does Mika decide to do? | Buy it | Ask for a different snack | Leave the store | A | Mika says これ を 買います, meaning “I’ll buy this.”
