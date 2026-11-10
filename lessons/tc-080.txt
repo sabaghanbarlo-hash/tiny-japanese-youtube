@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 80 · Finding the Police Box
+episode: TC-080
+scene: classroom
+
+[story]
+Mika: すみません。道に 迷いました。交番は どこ ですか。 | Sumimasen. Michi ni mayoimashita. Kooban wa doko desu ka? | Excuse me. I’m lost. Where is the police box?
+Alex: 交番は ここから 近い です。 | Kooban wa koko kara chikai desu. | The police box is close to here.
+Mika: 交番まで どう 行きますか。 | Kooban made dou ikimasu ka? | How do I get to the police box?
+Alex: 真っ直ぐ 行って、角で 右に 曲がって ください。 | Massugu itte, kado de migi ni magatte kudasai. | Go straight, then turn right at the corner.
+Mika: 角は どこ ですか。 | Kado wa doko desu ka? | Where is the corner?
+Alex: 駅の 前です。交番は 駅の 隣に あります。 | Eki no mae desu. Kooban wa eki no tonari ni arimasu. | It’s in front of the station. The police box is next to the station.
+Mika: 駅は どこ ですか。 | Eki wa doko desu ka? | Where is the station?
+Alex: そこ です。 | Soko desu. | It’s there.
+Mika: 分かりました。ありがとう。 | Wakarimashita. Arigatou. | I understand. Thank you.
+Alex: どういたしまして。 | Dou itashimashite. | You’re welcome.
+
+[grammar]
+grammar: Ask where something is | Use “X は どこ ですか” to ask where a place or thing is. Example: 交番は どこ ですか。
+
+[quiz]
+quiz: Where is the police box? | Next to the station | Inside the station | Far from the station | A | Alex says the police box is next to the station.
+quiz: What directions does Alex give? | Turn left at the station | Go straight and turn right at the corner | Go back to the hotel | B | Alex says to go straight and turn right at the corner.
+quiz: Where is the corner? | Behind the station | In front of the station | Next to the police box | B | Alex says the corner is in front of the station.
