@@ -1,0 +1,25 @@
+title: Tiny Conversations · Lesson 55 · Who Does the Dishes?
+episode: TC-055
+scene: classroom
+
+[story]
+Mika: 今日の 皿は 誰が 洗いますか。 | Kyou no sara wa dare ga araimasu ka? | Who will wash today's dishes?
+Alex: 私は 今 ちょっと 忙しいです。 | Watashi wa ima chotto isogashii desu. | I'm a little busy right now.
+Mika: 今日 暇ですから、私が 洗います。 | Kyou hima desu kara, watashi ga araimasu. | I'm free today, so I'll wash them.
+Alex: ありがとう。じゃあ、お願いします。 | Arigatou. Jaa, onegaishimasu. | Thanks. Then, please do.
+Mika: でも、明日の 皿は 誰が 洗いますか。 | Demo, ashita no sara wa dare ga araimasu ka? | But who will wash tomorrow's dishes?
+Alex: 明日は 私が 洗います。 | Ashita wa watashi ga araimasu. | I'll wash them tomorrow.
+Mika: 本当ですか。嬉しいです。 | Hontou desu ka? Ureshii desu. | Really? I'm glad.
+Alex: はい。今日の 皿は たくさん ありますか。 | Hai. Kyou no sara wa takusan arimasu ka? | Yes. Are there a lot of dishes today?
+Mika: いいえ、少しだけです。 | Iie, sukoshi dake desu. | No, just a few.
+Alex: じゃあ、私も 洗います。 | Jaa, watashi mo araimasu. | Then I'll wash them too.
+Mika: ありがとう。 | Arigatou. | Thanks.
+Alex: どういたしまして。 | Dou itashimashite. | You're welcome.
+
+[grammar]
+grammar: Asking who will do something | Use 誰が (dare ga) to ask who will do an action. Example: 今日の 皿は 誰が 洗いますか。
+
+[quiz]
+quiz: Who says they are busy right now? | Mika | Alex | Both | B | Alex says, 私は 今 ちょっと 忙しいです。
+quiz: Who volunteers to wash today's dishes first? | Mika | Alex | Neither | A | Mika says she is free today and will wash them.
+quiz: Who agrees to wash the dishes tomorrow? | Mika | Alex | Both | B | Alex says, 明日は 私が 洗います。
