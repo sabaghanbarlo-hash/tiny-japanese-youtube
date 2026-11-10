@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 26 · One More Coffee
+episode: TC-026
+scene: classroom
+
+[story]
+Mika: こんにちは。コーヒーを 飲みますか。 | Konnichiwa. Koohii o nomimasu ka. | Hi. Would you like coffee?
+Alex: はい、コーヒーを 一つ お願いします。 | Hai, koohii o hitotsu onegaishimasu. | Yes, one coffee, please.
+Mika: 私も コーヒーを 一つ お願いします。 | Watashi mo koohii o hitotsu onegaishimasu. | I’ll have one coffee too, please.
+Alex: お茶も ありますか。 | Ocha mo arimasu ka. | Do they have tea too?
+Mika: はい、お茶も あります。 | Hai, ocha mo arimasu. | Yes, they have tea too.
+Alex: ありがとう。じゃあ、お茶を お願いします。 | Arigatou. Jaa, ocha o onegaishimasu. | Thanks. Then, tea, please.
+Mika: コーヒーは とても おいしいですね。 | Koohii wa totemo oishii desu ne. | Coffee is really delicious, isn’t it?
+Alex: コーヒーを もう一つ 飲みますか。 | Koohii o mou hitotsu nomimasu ka. | Would you like one more coffee?
+Mika: はい、もう一つ お願いします。 | Hai, mou hitotsu onegaishimasu. | Yes, one more, please.
+Alex: 私も コーヒーを もう一つ お願いします。 | Watashi mo koohii o mou hitotsu onegaishimasu. | I’ll have one more coffee too, please.
+
+[grammar]
+grammar: Ordering politely | Use 「飲みますか」 to ask if someone drinks or would like a drink. Example: 「コーヒーを 飲みますか。」
+
+[quiz]
+quiz: What does Mika order first? | Coffee | Tea | Water | A | Mika asks for one coffee.
+quiz: What does Alex ask about? | Tea | Coffee prices | The weather | A | Alex asks whether tea is available too.
+quiz: Who asks for one more coffee at the end? | Mika only | Alex only | Both Mika and Alex | C | Mika asks for one more, and Alex does too.
