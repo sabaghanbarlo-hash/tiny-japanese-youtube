@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 35 · Paying by Card
+episode: TC-035
+scene: classroom
+
+[story]
+Mika: すみません、クレジットカードは 使えますか。 | Sumimasen, kurejitto kaado wa tsukaemasu ka? | Excuse me, can I use a credit card?
+Alex: はい、使えます。 | Hai, tsukaemasu. | Yes, you can.
+Mika: じゃあ、クレジットカードで 払います。 | Jaa, kurejitto kaado de haraimasu. | Then I’ll pay by credit card.
+Alex: はい、どうぞ。 | Hai, douzo. | Certainly. Here you go.
+Mika: ここに 入れますか。 | Koko ni iremasu ka? | Do I put it in here?
+Alex: はい、ここに 入れてください。 | Hai, koko ni irete kudasai. | Yes, please put it in here.
+Mika: これで いいですか。 | Kore de ii desu ka? | Is this okay?
+Alex: はい、大丈夫です。 | Hai, daijoubu desu. | Yes, that’s fine.
+Mika: もう できましたか。 | Mou dekimashita ka? | Is it done now?
+Alex: はい、できました。 | Hai, dekimashita. | Yes, it’s done now.
+
+[grammar]
+grammar: Asking if something is possible | Use a verb in ます form plus か to ask politely. With the potential form, クレジットカードは 使えますか asks whether a credit card can be used.
+
+[quiz]
+quiz: Can Mika pay by credit card? | Yes | No | Alex doesn’t know | A | Alex says はい、使えます, meaning yes, it can be used.
+quiz: How does Mika choose to pay? | With cash | By credit card | With a card and cash | B | Mika says she will pay by credit card.
+quiz: What does Alex ask Mika to do with the card? | Put it in there | Take it home | Give it to Mika | A | Alex says ここに 入れてください, or “Please put it in here.”
