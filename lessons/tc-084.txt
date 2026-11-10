@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 84 · A Rainy Day Plan
+episode: TC-084
+scene: classroom
+
+[story]
+Mika: 駅 の 外 は 雨 です ね。 | Eki no soto wa ame desu ne. | It’s raining outside the station, isn’t it?
+Alex: そう です ね。公園 を 歩く 予定 でした。 | Sou desu ne. Kouen o aruku yotei deshita. | That’s right. We planned to walk in the park.
+Mika: 雨 なので、公園 は ちょっと 難しい です。 | Ame na node, kouen wa chotto muzukashii desu. | Because of the rain, the park is a little difficult.
+Alex: じゃあ、レストラン で 食事 しませんか。 | Jaa, resutoran de shokuji shimasen ka. | Then, would you like to eat at a restaurant?
+Mika: いい です ね。駅 の 近く ですか。 | Ii desu ne. Eki no chikaku desu ka. | Sounds good. Is it near the station?
+Alex: はい、ここ の レストラン は おいしい です。 | Hai, koko no resutoran wa oishii desu. | Yes, this restaurant is delicious.
+Mika: 今 は どう ですか。 | Ima wa dou desu ka. | How about now?
+Alex: 今 は まだ 早い です。 | Ima wa mada hayai desu. | It’s still early now.
+Mika: じゃあ、駅 で 少し 待ちます。 | Jaa, eki de sukoshi machimasu. | Then, I’ll wait at the station for a little.
+Alex: はい、そう しましょう。 | Hai, sou shimashou. | Yes, let’s do that.
+
+[grammar]
+grammar: Giving a reason with ～ので | Use ～ので to explain why something is the case. Example: 雨 なので、公園 は ちょっと 難しい です。 (Because of the rain, the park is a little difficult.)
+
+[quiz]
+quiz: What did Mika and Alex originally plan to do? | Walk in the park | Eat at a restaurant | Wait at the station | A | Alex says they planned to walk in the park.
+quiz: Why do they change their plan? | It is too early | It is raining | The restaurant is far away | B | Mika says it is raining, so the park plan is difficult.
+quiz: Where will Mika wait? | At the restaurant | At the park | At the station | C | Mika says she will wait a little at the station.
