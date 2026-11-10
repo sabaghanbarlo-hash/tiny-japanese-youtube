@@ -1,0 +1,23 @@
+title: Tiny Conversations · Lesson 70 · A Group Project
+episode: TC-070
+scene: classroom
+
+[story]
+Mika: Alex、今日 図書館で 資料を 調べますか。 | Alex, kyou toshokan de shiryou o shirabemasu ka? | Alex, will you research materials at the library today?
+Alex: はい、今日 図書館で 調べます。 | Hai, kyou toshokan de shirabemasu. | Yes, I’ll research at the library today.
+Mika: 私は 本を 読みます。Alexは 内容を 書きますか。 | Watashi wa hon o yomimasu. Alex wa naiyou o kakimasu ka? | I’ll read a book. Alex, will you write the content?
+Alex: はい、私が 内容を 書きます。 | Hai, watashi ga naiyou o kakimasu. | Yes, I’ll write the content.
+Mika: じゃあ、私は 資料を 作ります。 | Jaa, watashi wa shiryou o tsukurimasu. | Then I’ll make the materials.
+Alex: いいですね。どれを 使いますか。 | Ii desu ne. Dore o tsukaimasu ka? | Sounds good. Which one will we use?
+Mika: この 本です。内容は 易しいです。 | Kono hon desu. Naiyou wa yasashii desu. | This book. The content is easy.
+Alex: 明日、資料を 一緒に 見ませんか。 | Ashita, shiryou o issho ni mimasen ka? | Shall we look at the materials together tomorrow?
+Mika: はい、明日 図書館で 見ましょう。 | Hai, ashita toshokan de mimashou. | Yes, let’s look at them at the library tomorrow.
+Alex: ありがとう。じゃあ、明日 図書館で 会いましょう。 | Arigatou. Jaa, ashita toshokan de aimashou. | Thank you. Then let’s meet at the library tomorrow.
+
+[grammar]
+grammar: Assigning tasks with 私は | Use 私は (watashi wa) to say what you will do. Example: 私は 資料を 作ります。— “I’ll make the materials.”
+
+[quiz]
+quiz: What will Mika do? | Read a book and make materials | Write the content | Research at home | A | Mika says she will read a book and make the materials.
+quiz: What will Alex write? | The content | A book | A question | A | Alex says, 私が 内容を 書きます (I’ll write the content).
+quiz: Where will they meet tomorrow? | At school | At the library | At home | B | They agree to meet at the library tomorrow.
