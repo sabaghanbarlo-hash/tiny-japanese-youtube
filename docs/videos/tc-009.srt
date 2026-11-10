@@ -1,0 +1,49 @@
+1
+00:00:14,304 --> 00:00:19,220
+こんにちは。 趣味は 何ですか。
+Hello. What is your hobby?
+
+2
+00:00:19,320 --> 00:00:25,028
+私は 音楽が 好きです。 歌うのも 好きです。
+I like music. I like singing, too.
+
+3
+00:00:25,128 --> 00:00:31,796
+私も 音楽が 好きです。 歌うのは 楽しいですね。
+I like music, too. Singing is fun, isn't it?
+
+4
+00:00:31,896 --> 00:00:36,548
+本当ですか。 ここで 歌いますか。
+Really? Do you sing here?
+
+5
+00:00:36,648 --> 00:00:40,580
+はい、ここで よく 歌います。
+Yes, I often sing here.
+
+6
+00:00:40,680 --> 00:00:43,964
+週末も ここに 来ます。
+I come here on weekends, too.
+
+7
+00:00:44,064 --> 00:00:47,660
+いつも 一人で 歌いますか。
+Do you always sing alone?
+
+8
+00:00:47,760 --> 00:00:51,596
+いいえ、友達と 歌います。
+No, I sing with friends.
+
+9
+00:00:51,696 --> 00:00:55,556
+じゃあ、一緒に 歌いませんか。
+Then, would you like to sing together?
+
+10
+00:00:55,656 --> 00:00:59,948
+ぜひ。 とても 嬉しいです。
+I’d love to. I’m very happy.

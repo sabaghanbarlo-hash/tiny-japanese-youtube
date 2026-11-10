@@ -1,0 +1,59 @@
+1
+00:00:14,544 --> 00:00:19,484
+すみません。駅は どこですか。
+Excuse me. Where is the station?
+
+2
+00:00:19,584 --> 00:00:23,636
+はい。駅は そこです。
+Yes. The station is there.
+
+3
+00:00:23,736 --> 00:00:27,500
+ここから 駅まで 近いですか。
+Is the station near here?
+
+4
+00:00:27,600 --> 00:00:30,812
+はい、近いです。
+Yes, it’s close.
+
+5
+00:00:30,912 --> 00:00:34,676
+駅まで どうやって 行きますか。
+How do I get to the station?
+
+6
+00:00:34,776 --> 00:00:38,012
+まず 真っ直ぐ 行ってください。
+First, please go straight.
+
+7
+00:00:38,112 --> 00:00:42,164
+交差点で 左に 曲がりますか。
+Do I turn left at the intersection?
+
+8
+00:00:42,264 --> 00:00:46,844
+はい、交差点で 左に 曲がってください。
+Yes, please turn left at the intersection.
+
+9
+00:00:46,944 --> 00:00:50,108
+駅は 左ですか。
+Is the station on the left?
+
+10
+00:00:50,208 --> 00:00:54,068
+はい、左に 駅が あります。
+Yes, the station is on the left.
+
+11
+00:00:54,168 --> 00:00:59,276
+ありがとうございます。分かりました。
+Thank you. I understand.
+
+12
+00:00:59,376 --> 00:01:02,060
+どういたしまして。
+You’re welcome.

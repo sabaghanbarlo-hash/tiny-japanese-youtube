@@ -1,0 +1,59 @@
+1
+00:00:14,400 --> 00:00:20,732
+こんばんは。初めまして。Mikaです。
+Good evening. Nice to meet you. I’m Mika.
+
+2
+00:00:20,832 --> 00:00:26,972
+こんばんは。初めまして。Alexです。
+Good evening. Nice to meet you. I’m Alex.
+
+3
+00:00:27,072 --> 00:00:31,460
+Alexは どこの 国から 来ましたか。
+What country did you come from, Alex?
+
+4
+00:00:31,560 --> 00:00:36,500
+私は 外国から 来ました。Mikaは？
+I came from abroad. How about you, Mika?
+
+5
+00:00:36,600 --> 00:00:40,268
+私は 日本から 来ました。
+I came from Japan.
+
+6
+00:00:40,368 --> 00:00:45,332
+日本ですか。日本は いい 国ですね。
+Japan? Japan is a nice country.
+
+7
+00:00:45,432 --> 00:00:50,612
+はい。日本は とても いい 国です。
+Yes. Japan is a very nice country.
+
+8
+00:00:50,712 --> 00:00:53,900
+パーティーは 楽しいですか。
+Is the party fun?
+
+9
+00:00:54,000 --> 00:00:59,876
+はい、とても 楽しいです。Alexは？
+Yes, it’s very fun. How about you, Alex?
+
+10
+00:00:59,976 --> 00:01:04,148
+はい。パーティーは 好きです。
+Yes. I like parties.
+
+11
+00:01:04,248 --> 00:01:09,476
+そうですか。よろしくお願いします。
+I see. It’s nice to meet you.
+
+12
+00:01:09,576 --> 00:01:14,492
+ありがとう。よろしくお願いします。
+Thank you. It’s nice to meet you.

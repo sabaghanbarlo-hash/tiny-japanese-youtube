@@ -1,0 +1,59 @@
+1
+00:00:14,088 --> 00:00:20,996
+こんばんは。初めまして。私は Mika です。
+Good evening. Nice to meet you. I’m Mika.
+
+2
+00:00:21,096 --> 00:00:27,884
+こんばんは。Alex です。よろしくお願いします。
+Good evening. I’m Alex. Nice to meet you.
+
+3
+00:00:27,984 --> 00:00:31,892
+Alex は どこから 来ましたか。
+Where are you from, Alex?
+
+4
+00:00:31,992 --> 00:00:37,172
+外国から 来ました。町は 大きいです。
+I’m from another country. My town is big.
+
+5
+00:00:37,272 --> 00:00:42,908
+そうですか。私は 京都から 来ました。
+I see. I’m from Kyoto.
+
+6
+00:00:43,008 --> 00:00:45,788
+京都は どうですか。
+What is Kyoto like?
+
+7
+00:00:45,888 --> 00:00:50,804
+京都は とても きれいで、楽しい 町です。
+Kyoto is a very beautiful, fun town.
+
+8
+00:00:50,904 --> 00:00:54,524
+京都の 和食は おいしいですか。
+Is the Japanese food in Kyoto good?
+
+9
+00:00:54,624 --> 00:01:01,340
+はい、とても おいしいです。私は 和食が 好きです。
+Yes, it’s very good. I like Japanese food.
+
+10
+00:01:01,440 --> 00:01:07,148
+私も 和食が 好きです。京都に 行きたいです。
+I like Japanese food too. I want to go to Kyoto.
+
+11
+00:01:07,248 --> 00:01:13,316
+明日 京都に 行きます。Alex も 行きますか。
+I’m going to Kyoto tomorrow. Are you going too, Alex?
+
+12
+00:01:13,416 --> 00:01:17,804
+はい、私も 明日 京都に 行きます。
+Yes, I’m going to Kyoto tomorrow too.

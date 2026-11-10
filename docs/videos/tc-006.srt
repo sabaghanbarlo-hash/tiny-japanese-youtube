@@ -1,0 +1,59 @@
+1
+00:00:14,688 --> 00:00:19,556
+こんにちは。 私は Mika です。
+Hello. I'm Mika.
+
+2
+00:00:19,656 --> 00:00:26,612
+初めまして。 Alex です。 よろしくお願いします。
+Nice to meet you. I'm Alex. Pleased to meet you.
+
+3
+00:00:26,712 --> 00:00:30,020
+友達から 聞きました。
+I heard about you from our friend.
+
+4
+00:00:30,120 --> 00:00:33,668
+私も 友達から 聞きました。
+I heard about you from our friend too.
+
+5
+00:00:33,768 --> 00:00:38,132
+この 店の コーヒーは おいしいですか。
+Is the coffee at this shop good?
+
+6
+00:00:38,232 --> 00:00:43,940
+はい、とても おいしいです。 お茶も あります。
+Yes, it's very good. They have tea too.
+
+7
+00:00:44,040 --> 00:00:47,804
+じゃあ、何か 飲みませんか。
+Well then, would you like something to drink?
+
+8
+00:00:47,904 --> 00:00:52,844
+いいですね。 私は お茶を 飲みます。
+Sounds good. I'll have tea.
+
+9
+00:00:52,944 --> 00:00:55,916
+お茶が 好きですか。
+Do you like tea?
+
+10
+00:00:56,016 --> 00:01:01,292
+はい、好きです。 コーヒーも 好きです。
+Yes, I do. I like coffee too.
+
+11
+00:01:01,392 --> 00:01:06,404
+そうですか。 一緒に 飲みましょう。
+I see. Let's have a drink together.
+
+12
+00:01:06,504 --> 00:01:10,196
+はい。 ありがとう。
+Sure. Thanks.

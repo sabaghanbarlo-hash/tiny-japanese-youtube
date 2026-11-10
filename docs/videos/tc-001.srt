@@ -1,0 +1,54 @@
+1
+00:00:14,544 --> 00:00:19,604
+初めまして。私は Mika です。
+Nice to meet you. I’m Mika.
+
+2
+00:00:19,704 --> 00:00:24,692
+初めまして。私は Alex です。
+Nice to meet you. I’m Alex.
+
+3
+00:00:24,792 --> 00:00:28,436
+Alexは 学生ですか。
+Are you a student, Alex?
+
+4
+00:00:28,536 --> 00:00:34,172
+はい、学生です。Mikaも 学生ですか。
+Yes, I am. Are you a student too, Mika?
+
+5
+00:00:34,272 --> 00:00:41,300
+はい、私も 学生です。今日の 授業は 日本語ですか。
+Yes, I’m a student too. Is today’s class Japanese?
+
+6
+00:00:41,400 --> 00:00:45,260
+はい、日本語の 授業です。
+Yes, it’s a Japanese class.
+
+7
+00:00:45,360 --> 00:00:48,596
+日本語は 好きですか。
+Do you like Japanese?
+
+8
+00:00:48,696 --> 00:00:54,308
+はい、とても 好きです。Mikaは どうですか。
+Yes, I like it a lot. How about you, Mika?
+
+9
+00:00:54,408 --> 00:01:00,044
+私も 好きです。授業は 楽しいです。
+I like it too. The class is fun.
+
+10
+00:01:00,144 --> 00:01:04,988
+そうですか。よろしくお願いします。
+I see. I look forward to getting to know you.
+
+11
+00:01:05,088 --> 00:01:08,372
+よろしくお願いします。
+I look forward to getting to know you too.

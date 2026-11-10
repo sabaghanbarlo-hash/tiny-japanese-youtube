@@ -1,0 +1,59 @@
+1
+00:00:14,112 --> 00:00:18,596
+こんにちは。初めまして。
+Hello. Nice to meet you.
+
+2
+00:00:18,696 --> 00:00:22,892
+こんにちは。初めまして。
+Hello. Nice to meet you.
+
+3
+00:00:22,992 --> 00:00:28,484
+私は Mika です。名前は 何 ですか。
+I’m Mika. What is your name?
+
+4
+00:00:28,584 --> 00:00:33,692
+Alex です。よろしくお願いします。
+I’m Alex. Nice to meet you.
+
+5
+00:00:33,792 --> 00:00:36,932
+仕事は 何 ですか。
+What do you do for work?
+
+6
+00:00:37,032 --> 00:00:43,100
+私は 会社の 社員 です。会社で 働いています。
+I’m a company employee. I work at a company.
+
+7
+00:00:43,200 --> 00:00:49,100
+そうですか。私は 学校の 先生 です。
+I see. I’m a teacher at a school.
+
+8
+00:00:49,200 --> 00:00:53,204
+先生の 仕事は 忙しい ですか。
+Is a teacher’s job busy?
+
+9
+00:00:53,304 --> 00:00:57,404
+はい、でも とても 楽しい です。
+Yes, but it’s very fun.
+
+10
+00:00:57,504 --> 00:01:02,588
+いいですね。私も 仕事が 好き です。
+That’s nice. I like my job too.
+
+11
+00:01:02,688 --> 00:01:06,620
+今日 ここで 話せて 嬉しい です。
+I’m happy we could talk here today.
+
+12
+00:01:06,720 --> 00:01:11,900
+私も 嬉しい です。また 話しましょう。
+I’m happy too. Let’s talk again.

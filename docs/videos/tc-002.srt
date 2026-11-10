@@ -1,0 +1,49 @@
+1
+00:00:14,640 --> 00:00:21,812
+初めまして。Mikaです。よろしくお願いします。
+Nice to meet you. I'm Mika. I look forward to getting to know you.
+
+2
+00:00:21,912 --> 00:00:29,156
+初めまして。Alexです。今日、ここに 来ました。
+Nice to meet you. I'm Alex. I came here today.
+
+3
+00:00:29,256 --> 00:00:32,900
+日本語を 勉強しますか。
+Do you study Japanese?
+
+4
+00:00:33,000 --> 00:00:39,428
+はい、少し 勉強します。英語も 勉強しますか。
+Yes, I study a little. Do you study English too?
+
+5
+00:00:39,528 --> 00:00:44,180
+はい、大学で 英語を 勉強します。
+Yes, I study English at university.
+
+6
+00:00:44,280 --> 00:00:50,756
+日本語は 難しいです。でも、とても 楽しいです。
+Japanese is difficult. But it's a lot of fun.
+
+7
+00:00:50,856 --> 00:00:53,876
+英語は どうですか。
+How about English?
+
+8
+00:00:53,976 --> 00:00:59,828
+英語も 楽しいです。日本語を 少し 話します。
+English is fun too. I speak a little Japanese.
+
+9
+00:00:59,928 --> 00:01:05,300
+じゃあ、一緒に 日本語と 英語を 話しませんか。
+Then, would you like to speak Japanese and English together?
+
+10
+00:01:05,400 --> 00:01:10,556
+はい、ぜひ。今日から 友達です。
+Yes, I'd love to. We're friends starting today.

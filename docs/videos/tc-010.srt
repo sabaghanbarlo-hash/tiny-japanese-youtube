@@ -1,0 +1,49 @@
+1
+00:00:14,064 --> 00:00:20,084
+こんにちは、 Alex。 駅で 会いましたね。
+Hello, Alex. We met at the station, didn’t we?
+
+2
+00:00:20,184 --> 00:00:26,348
+こんにちは、 Mika。 今日、会えて 嬉しい です。
+Hello, Mika. I’m happy we met today.
+
+3
+00:00:26,448 --> 00:00:32,156
+今日 は 楽しかった です。 どこへ 行きますか。
+Today was fun. Where are you going?
+
+4
+00:00:32,256 --> 00:00:37,556
+家へ 帰ります。 あなた は どこへ 行きますか。
+I’m going home. Where are you going?
+
+5
+00:00:37,656 --> 00:00:43,988
+私 も 家へ 帰ります。 今日 は いい 天気 です ね。
+I’m going home too. The weather is nice today, isn’t it?
+
+6
+00:00:44,088 --> 00:00:48,404
+そう です ね。 また 会いましょう。
+That’s right. Let’s meet again.
+
+7
+00:00:48,504 --> 00:00:53,924
+はい。 来週、駅で 会いませんか。
+Yes. Would you like to meet at the station next week?
+
+8
+00:00:54,024 --> 00:00:58,844
+もちろん。 来週 は 大丈夫 です。
+Of course. Next week works for me.
+
+9
+00:00:58,944 --> 00:01:04,244
+よかった です。 じゃあ、また 来週。
+Great. See you next week, then.
+
+10
+00:01:04,344 --> 00:01:08,012
+はい。 さようなら。
+Yes. Goodbye.
