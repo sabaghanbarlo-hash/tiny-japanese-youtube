@@ -1,0 +1,49 @@
+1
+00:00:14,544 --> 00:00:19,532
+すみません、この 電車は まだ 来ませんか。
+Excuse me, is this train still not coming?
+
+2
+00:00:19,632 --> 00:00:23,828
+はい、十分 くらい 遅れて います。
+Yes, it’s about ten minutes late.
+
+3
+00:00:23,928 --> 00:00:28,940
+そうですか。理由は 何ですか。
+I see. What’s the reason?
+
+4
+00:00:29,040 --> 00:00:32,420
+事故が 理由かもしれません。
+An accident might be the reason.
+
+5
+00:00:32,520 --> 00:00:37,268
+そうですか。ここで 待ちます。
+I see. I’ll wait here.
+
+6
+00:00:37,368 --> 00:00:40,220
+私も 待ちます。
+I’ll wait too.
+
+7
+00:00:40,320 --> 00:00:43,532
+電車は いつ 来ますか。
+When will the train come?
+
+8
+00:00:43,632 --> 00:00:46,844
+もうすぐ 来ると 思います。
+I think it will come soon.
+
+9
+00:00:46,944 --> 00:00:52,820
+ありがとうございます。少し 安心しました。
+Thank you. I feel a little relieved.
+
+10
+00:00:52,920 --> 00:00:57,908
+どういたしまして。駅は 寒いですね。
+You’re welcome. The station is cold, isn’t it?

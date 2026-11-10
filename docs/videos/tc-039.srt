@@ -1,0 +1,49 @@
+1
+00:00:14,496 --> 00:00:21,788
+すみません、この コート は 黒い です。別の 色 も ありますか。
+Excuse me, this coat is black. Do you have another color?
+
+2
+00:00:21,888 --> 00:00:26,420
+はい、赤い コート と 青い コート が あります。
+Yes, we have red coats and blue coats.
+
+3
+00:00:26,520 --> 00:00:30,356
+青い コート を 見ても いい ですか。
+May I see the blue coat?
+
+4
+00:00:30,456 --> 00:00:34,124
+もちろん。どうぞ。
+Of course. Here you are.
+
+5
+00:00:34,224 --> 00:00:39,380
+ありがとう。青い コート が 好き です。
+Thank you. I like the blue coat.
+
+6
+00:00:39,480 --> 00:00:42,860
+青い コート が よく 似合います。
+The blue coat suits you very well.
+
+7
+00:00:42,960 --> 00:00:46,220
+値段 は 高い ですか。
+Is the price high?
+
+8
+00:00:46,320 --> 00:00:49,628
+いいえ、安い です。
+No, it’s inexpensive.
+
+9
+00:00:49,728 --> 00:00:53,108
+じゃあ、これ を 買います。
+Then I’ll buy this one.
+
+10
+00:00:53,208 --> 00:00:55,604
+ありがとう。
+Thank you.
