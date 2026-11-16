@@ -1,0 +1,61 @@
+name: Cross-post reels as Shorts
+
+# Takes the Practice and Mistake & fix Reels from the Instagram system and uploads the same video to this YouTube channel
+# as a Short. Runs every 3 hours (and by hand: Actions -> this workflow -> Run workflow).
+# Each video is uploaded once. Set dry_run=true to only see what would be uploaded.
+
+on:
+  schedule:
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "true = only print the plan"
+        default: "false"
+      only_stem:
+        description: "Force one video (its file name without .mp4)"
+        default: ""
+      publish_at:
+        description: "Optional UTC time (YYYY-MM-DDTHH:MM:SSZ) to publish at"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crosspost-reels
+  cancel-in-progress: false
+
+jobs:
+  crosspost:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Upload what is waiting
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: public
+          GITHUB_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+          ONLY_STEM: ${{ github.event.inputs.only_stem }}
+          PUBLISH_AT: ${{ github.event.inputs.publish_at }}
+        run: python crosspost.py
+      - name: Record the uploads
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p docs/videos
+          git add docs/videos/xp-*.youtube.txt 2>/dev/null || true
+          git commit -m "Cross-post: record uploads" || exit 0
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep $((RANDOM % 15 + 5))
+          done
