@@ -81,8 +81,9 @@ def main():
     per_run = int(os.environ.get("MAX_PER_RUN", "2") or 2)
     budget = int(os.environ.get("MAX_PER_DAY", "3") or 3) - uploaded_today()
     todo = [c for c in candidates() if (c["stem"] == only if only else not os.path.exists(marker(c["stem"])))]
-    if only and not todo:
-        print(f"{only} is not a candidate (already posted before cross-posting started, or not found)."); return
+    if only and not todo:     # forced by hand: allow any video that exists, even one that is not queued/posted yet
+        sub = "output" if KIND == "jp" else "queue/videos"
+        todo = [dict(stem=only, post_at=None, video=[raw(f"{sub}/{only}.mp4")], caption=[raw(f"{sub}/{only}.caption.txt")])]
     limit = len(todo) if only else max(0, min(per_run, budget))
     print(f"{len(todo)} video(s) waiting; uploading up to {limit} now (today's budget left: {budget}).")
     if not todo or not limit or dry:
