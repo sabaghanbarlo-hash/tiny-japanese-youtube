@@ -1,0 +1,12 @@
+title: Alex Touched the Wrong Thing at the Shrine
+scene: shrine
+cast: mika, alex
+
+[hook]
+Alex: Oops! Was I not supposed to touch that?
+[story]
+Mika: さわらないで ください！ | Please don't touch!
+Alex: ごめんなさい！ | I'm sorry!
+Mika: だいじょうぶ です。 | It's okay.
+[ending]
+Mika: Comment 1 if you knew this one!

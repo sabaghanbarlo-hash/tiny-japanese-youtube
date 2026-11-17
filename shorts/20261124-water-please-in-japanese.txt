@@ -1,0 +1,12 @@
+title: Need Water in Japan? Say This
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Alex: Thirsty in Japan? Say this!
+[story]
+Alex: すみません、おみずを おねがいします。 | Excuse me, water please.
+Mika: はい、どうぞ！ | Here you go!
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

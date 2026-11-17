@@ -100,3 +100,22 @@ month. Move hiragana back to more frequent only if the weekly ones reach 20+ vie
 ## Things to do by hand
 - Nothing for the schedule itself. Check YouTube Studio > Content once a week for failed uploads (the GitHub Actions run turns red).
 - Keep the Google OAuth app "In production" or the upload login expires after 7 days.
+
+## Growth update (17 Nov 2026): English-first test and two Shorts a day
+
+Why: Tiny Japanese grows slowly next to Instagram. What the data showed:
+- 93% of views the country report attributes (2,181 of 2,343) come from Japan; Shorts are 98% of all views; the 7 long videos got 76 views in total. Hypothesis: the Shorts are mostly Japanese audio and text, so YouTube tests them on viewers in Japan.
+- In the niche, the Shorts that broke out run 12-40 seconds around one situation or contrast and have English titles. Ours run 59-88 seconds.
+
+What this change does:
+- Adds 8 test Shorts (`shorts/20261118-...` to `shorts/20261125-...`), one a day at 14:00 UTC (9:00 ET), as a second daily Short next to the existing 22:00 UTC slot.
+- Each opens with an English hook (the narrator voice speaks the English parts), runs about 20-40 seconds and ends with a comment question.
+- Sets the upload language to English (`defaultLanguage` and `defaultAudioLanguage` in `upload.py`).
+- 2 unpublished long videos moved from `items` to `held_items` in schedule.json (nothing deleted): 20261122-asking-for-directions.txt, 20261129-shopping-in-town.txt. Move one back into `items` with a new `publish_at` to publish it.
+- Lowers `lookahead_hours` from 120 to 48. As far as I know the YouTube API allows about 6 uploads a day per Google project (1,600 units each on a 10,000 default), and a 120-hour window would try about 10 at once.
+
+Checkpoints:
+- 24 Nov: share of views outside the home country (Studio > Analytics > Audience > Geography). Keep the English-first openings if 25% or more of views come from outside Japan (Tiny Japanese) or the target countries.
+- 1 Dec: median views per format, 10 Shorts each. Keep a format at 3x today's median (about 400 Japanese, 65 French) and above 50% viewed; cut one under 1x.
+
+Not done here: weekly listen-and-repeat compilation videos (needs a new script type); the existing queued Shorts keep their current length and titles; the weekly hiragana workflow (`kana-daily-upload.yml`) still runs on Wednesdays, disable it in Actions to stop it.

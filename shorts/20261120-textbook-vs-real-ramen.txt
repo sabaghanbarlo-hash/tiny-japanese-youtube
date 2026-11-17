@@ -1,0 +1,14 @@
+title: Textbook Japanese vs Real Japanese at a Ramen Shop
+scene: ramen
+cast: mika, alex
+
+[hook]
+Alex: Textbook Japanese versus real Japanese, at a ramen shop!
+[story]
+Alex: わたしは ラーメンを たべたい です。 | I would like to eat ramen.
+Mika: ふふ。ふつうは こう いうよ。 | Hehe. Normally we say this.
+Mika: すみません、ラーメン ひとつ！ | Excuse me, one ramen!
+Alex: ラーメン ひとつ！ | One ramen!
+Mika: いいね！ | Nice!
+[ending]
+Alex: Which one sounds more natural? Comment A or B!

@@ -1,0 +1,12 @@
+title: Say It Like an Anime Hero: "I Will Never Give Up!"
+scene: park
+cast: mika, alex
+
+[hook]
+Mika: Want to sound like a hero? Say this!
+[story]
+Alex: ぜったい あきらめない！ | I will never give up!
+Mika: かっこいい！ | So cool!
+Alex: かんたんな ことば でしょ？ | It's an easy phrase, right?
+[ending]
+Mika: Say it out loud, then comment your favorite hero line!

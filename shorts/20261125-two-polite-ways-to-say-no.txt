@@ -1,0 +1,14 @@
+title: 2 Polite Ways Japanese People Say No Without Saying No
+scene: cafe
+cast: mika, alex
+
+[hook]
+Mika: Japanese people often avoid the word no. Here are two ways!
+[story]
+Mika: むずかしい ですね。 | That's difficult.
+Alex: It really means no?
+Mika: かんがえて おきます。 | I'll think about it.
+Alex: That one means no too?
+Mika: そう！ いいえ という いみ です。 | Yes! It means no.
+[ending]
+Alex: Have you heard these before? Comment yes or no!
