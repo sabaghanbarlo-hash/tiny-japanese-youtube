@@ -1,0 +1,13 @@
+title: Mika Asks "Are You Full?" What Do You Answer?
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: What do you say when someone asks if you are full?
+[story]
+Mika: おなか いっぱい？ | Are you full?
+Alex: はい、いっぱい です。 | Yes, I'm full.
+Mika: デザートは？ | How about dessert?
+Alex: べつばら です！ | Dessert has its own stomach!
+[ending]
+Mika: Did you know that one? Comment yes or no!

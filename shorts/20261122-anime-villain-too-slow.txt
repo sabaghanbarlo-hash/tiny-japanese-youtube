@@ -1,0 +1,13 @@
+title: Say It Like an Anime Villain: "You're Too Slow!"
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Your friend is late again? Say this!
+[story]
+Mika: おそいよ！ | You're too slow!
+Alex: ええっ！ | Huh?!
+Mika: もっと はやく！ | Faster!
+Alex: むり！ | Impossible!
+[ending]
+Alex: Would you say this to a friend? Comment yes or no!

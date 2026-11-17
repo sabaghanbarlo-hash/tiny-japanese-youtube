@@ -1,0 +1,15 @@
+title: Thank You in Japanese: Friend, Teacher, Boss
+scene: classroom
+cast: mika, alex
+
+[hook]
+Alex: Three ways to say thank you in Japanese!
+[story]
+Alex: To a friend.
+Alex: ありがとう！ | Thanks!
+Mika: To a teacher.
+Mika: ありがとう ございます。 | Thank you.
+Mika: To your boss.
+Mika: ほんとうに ありがとう ございました。 | Thank you so much.
+[ending]
+Alex: Which one do you use most? Comment 1, 2 or 3!
