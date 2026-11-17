@@ -1,0 +1,18 @@
+title: Hiragana BYO
+kana: びょ
+script: hiragana
+romaji: byo
+sound: one quick sound, "bi" and "yo" blended
+mnemonic_word: bi + yo
+mnemonic: び plus a small ょ makes びょ. Say bi and yo together as one quick sound: byo!
+
+[words]
+びょうき | byouki | illness
+びょういん | byouin | hospital
+びょうどう | byoudou | equality
+
+[similar]
+び | bi | びょ has a small ょ at the bottom right. び alone is just bi.
+
+[distractors]
+bya, byu

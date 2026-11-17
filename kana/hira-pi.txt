@@ -1,0 +1,20 @@
+title: Hiragana PI
+kana: ぴ
+script: hiragana
+romaji: pi
+key: pi
+base: ひ
+sound: like the "pee"
+mnemonic_word: hi to pi
+mnemonic: ひ plus a little circle makes ぴ. The circle turns the h sound into a puff of air: hi becomes pi!
+
+[words]
+えんぴつ | enpitsu | pencil
+ぴかぴか | pikapika | shiny
+ぴったり | pittari | exactly
+
+[similar]
+ひ | hi | ぴ has a small circle at the top right. ひ has none.
+
+[distractors]
+hi, pu

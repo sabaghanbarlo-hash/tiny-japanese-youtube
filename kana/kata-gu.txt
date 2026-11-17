@@ -1,0 +1,20 @@
+title: Katakana GU
+kana: グ
+script: katakana
+romaji: gu
+key: gu
+base: ク
+sound: like the "goo" in goose
+mnemonic_word: ku to gu
+mnemonic: ク plus two little marks makes グ. The marks make the sound buzz: ku turns into gu!
+
+[words]
+グラス | gurasu | drinking glass
+グループ | guruupu | group
+グラム | guramu | gram
+
+[similar]
+ク | ku | グ has two small marks at the top right. ク has none.
+
+[distractors]
+ku, ge

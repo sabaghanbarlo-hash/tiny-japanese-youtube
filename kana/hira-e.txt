@@ -1,0 +1,16 @@
+title: Hiragana E
+kana: え
+script: hiragana
+romaji: e
+sound: like the "e" in bed
+strokes: 2
+mnemonic_word: Energy
+mnemonic: え looks like an energetic bird dancing with its head up. E for energy!
+
+[words]
+えき | eki | station
+えび | ebi | shrimp
+えん | en | yen
+
+[distractors]
+o, i

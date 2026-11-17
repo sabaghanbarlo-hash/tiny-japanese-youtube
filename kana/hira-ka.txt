@@ -1,0 +1,15 @@
+title: Hiragana KA
+kana: か
+script: hiragana
+romaji: ka
+sound: like the "ka" in karate
+mnemonic_word: Kite
+mnemonic: か looks like a kite flying with a tail. K for kite!
+
+[words]
+かさ | kasa | umbrella
+かめ | kame | turtle
+かお | kao | face
+
+[distractors]
+ki, ku

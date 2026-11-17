@@ -1,0 +1,15 @@
+title: Hiragana SO
+kana: そ
+script: hiragana
+romaji: so
+sound: like the "so" in soda
+mnemonic_word: Sew
+mnemonic: そ looks like a needle with a zigzag thread. So for sew!
+
+[words]
+そら | sora | sky
+そば | soba | buckwheat noodles
+そと | soto | outside
+
+[distractors]
+se, su

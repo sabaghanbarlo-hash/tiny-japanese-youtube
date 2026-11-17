@@ -1,0 +1,18 @@
+title: Hiragana KYO
+kana: きょ
+script: hiragana
+romaji: kyo
+sound: one quick sound, "ki" and "yo" blended
+mnemonic_word: ki + yo
+mnemonic: き plus a small ょ makes きょ. Say ki and yo together as one quick sound: kyo!
+
+[words]
+きょう | kyou | today
+きょうしつ | kyoushitsu | classroom
+きょねん | kyonen | last year
+
+[similar]
+き | ki | きょ has a small ょ at the bottom right. き alone is just ki.
+
+[distractors]
+kya, kyu

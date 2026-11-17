@@ -1,0 +1,63 @@
+name: Render Kana Lesson
+
+on:
+  workflow_dispatch:
+    inputs:
+      kana:
+        description: "Space-separated script files in kana/ (e.g. 'hira-a.txt hira-i.txt'). Empty = every script."
+        required: false
+        default: ""
+  push:
+    branches: [kana-source]
+    paths: ["kana/render-queue.txt"]
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      groups: ${{ steps.p.outputs.groups }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        env:
+          KANA: ${{ github.event.inputs.kana }}
+        run: |
+          if [ -n "$KANA" ]; then
+            echo "groups=$(jq -cn --arg k "$KANA" '[$k]')" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            echo "groups=$(grep -v '^[[:space:]]*$' kana/render-queue.txt | jq -R . | jq -cs .)" >> "$GITHUB_OUTPUT"
+          else
+            echo "groups=$(jq -cn --arg k "$(cd kana && ls *.txt | tr '\n' ' ')" '[$k]')" >> "$GITHUB_OUTPUT"
+          fi
+
+  render:
+    needs: plan
+    if: needs.plan.outputs.groups != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJson(needs.plan.outputs.groups) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Render
+        env:
+          STRICT_VOICE: "1"
+          GROUP: ${{ matrix.group }}
+        run: |
+          for f in $GROUP; do python kana.py "kana/$f" -o output; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kana-${{ strategy.job-index }}
+          path: output/

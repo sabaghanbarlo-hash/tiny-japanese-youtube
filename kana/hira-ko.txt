@@ -1,0 +1,18 @@
+title: Hiragana KO
+kana: こ
+script: hiragana
+romaji: ko
+sound: like the "co" in coat
+mnemonic_word: Coins
+mnemonic: こ looks like two stacked coins. Ko for coin!
+
+[words]
+こえ | koe | voice
+こい | koi | carp
+ここ | koko | here
+
+[similar]
+に | ni | こ has only two strokes. に has an extra line on the left.
+
+[distractors]
+ka, ke

@@ -1,0 +1,18 @@
+title: Hiragana RYO
+kana: りょ
+script: hiragana
+romaji: ryo
+sound: one quick sound, "ri" and "yo" blended
+mnemonic_word: ri + yo
+mnemonic: り plus a small ょ makes りょ. Say ri and yo together as one quick sound: ryo!
+
+[words]
+りょこう | ryokou | travel
+りょうり | ryouri | cooking
+りょうしん | ryoushin | parents
+
+[similar]
+り | ri | りょ has a small ょ at the bottom right. り alone is just ri.
+
+[distractors]
+rya, ryu

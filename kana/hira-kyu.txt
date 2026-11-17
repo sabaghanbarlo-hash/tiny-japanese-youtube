@@ -1,0 +1,18 @@
+title: Hiragana KYU
+kana: きゅ
+script: hiragana
+romaji: kyu
+sound: one quick sound, "ki" and "yu" blended
+mnemonic_word: ki + yu
+mnemonic: き plus a small ゅ makes きゅ. Say ki and yu together as one quick sound: kyu!
+
+[words]
+きゅうり | kyuuri | cucumber
+きゅうけい | kyuukei | break
+きゅう | kyuu | nine
+
+[similar]
+き | ki | きゅ has a small ゅ at the bottom right. き alone is just ki.
+
+[distractors]
+kya, kyo

@@ -1,0 +1,18 @@
+title: Hiragana NE
+kana: ね
+script: hiragana
+romaji: ne
+sound: like the "ne" in net
+mnemonic_word: Cat
+mnemonic: ね looks like a cat. Neko means cat in Japanese!
+
+[words]
+ねこ | neko | cat
+ねずみ | nezumi | mouse
+ねる | neru | to sleep
+
+[similar]
+れ | re | ね has a loop at the end. れ has no loop.
+
+[distractors]
+na, no

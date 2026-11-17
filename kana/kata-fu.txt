@@ -1,0 +1,15 @@
+title: Katakana FU
+kana: フ
+script: katakana
+romaji: fu
+sound: like "foo" with soft lips
+mnemonic_word: Mount Fuji
+mnemonic: Picture Mount Fuji for fu. Now watch フ get written on it!
+
+[words]
+フォーク | fooku | fork
+フランス | furansu | France
+ファン | fan | fan
+
+[distractors]
+ha, he

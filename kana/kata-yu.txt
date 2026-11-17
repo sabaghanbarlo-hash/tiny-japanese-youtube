@@ -1,0 +1,18 @@
+title: Katakana YU
+kana: ユ
+script: katakana
+romaji: yu
+sound: like the "you" in youth
+mnemonic_word: a hot spring
+mnemonic: Picture a hot spring for yu. Now watch ユ get written on it!
+
+[words]
+ユーモア | yuumoa | humor
+ユニフォーム | yunifoomu | uniform
+ユーザー | yuuzaa | user
+
+[similar]
+コ | ko | ユ has an extra line at the bottom that sticks out. コ has two lines and a corner.
+
+[distractors]
+ya, yo

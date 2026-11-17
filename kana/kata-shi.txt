@@ -1,0 +1,18 @@
+title: Katakana SHI
+kana: シ
+script: katakana
+romaji: shi
+sound: like "she"
+mnemonic_word: a piece of sushi
+mnemonic: Picture a piece of sushi for shi. Now watch シ get written on it!
+
+[words]
+シャツ | shatsu | shirt
+シャワー | shawaa | shower
+システム | shisutemu | system
+
+[similar]
+ツ | tsu | シ has two dots that lie sideways. ツ has two strokes that stand upright.
+
+[distractors]
+sa, su

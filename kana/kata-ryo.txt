@@ -1,0 +1,16 @@
+title: Katakana RYO
+kana: リョ
+script: katakana
+romaji: ryo
+sound: one quick sound, "ri" and "yo" blended
+mnemonic_word: ri + yo
+mnemonic: リ plus a small ョ makes リョ. Say ri and yo together as one quick sound: ryo!
+
+[words]
+リョウリ | ryouri | cooking (katakana for emphasis)
+
+[similar]
+リ | ri | リョ has a small ョ at the bottom right. リ alone is just ri.
+
+[distractors]
+rya, ryu

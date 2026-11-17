@@ -1,0 +1,18 @@
+title: Hiragana MU
+kana: む
+script: hiragana
+romaji: mu
+sound: like the "moo" in moon
+mnemonic_word: Cow
+mnemonic: む looks like a cow with a ring in its nose. Moo!
+
+[words]
+むし | mushi | insect
+むら | mura | village
+むね | mune | chest
+
+[similar]
+す | su | む has a small dot at the top right. す has no dot.
+
+[distractors]
+ma, mo

@@ -1,0 +1,17 @@
+title: Katakana HYO
+kana: ヒョ
+script: katakana
+romaji: hyo
+sound: one quick sound, "hi" and "yo" blended
+mnemonic_word: hi + yo
+mnemonic: ヒ plus a small ョ makes ヒョ. Say hi and yo together as one quick sound: hyo!
+
+[words]
+ヒョウ | hyou | leopard
+ヒョロヒョロ | hyorohyoro | spindly
+
+[similar]
+ヒ | hi | ヒョ has a small ョ at the bottom right. ヒ alone is just hi.
+
+[distractors]
+hya, hyu

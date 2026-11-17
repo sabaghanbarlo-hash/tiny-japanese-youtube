@@ -1,0 +1,20 @@
+title: Katakana BI
+kana: ビ
+script: katakana
+romaji: bi
+key: bi
+base: ヒ
+sound: like the "bee"
+mnemonic_word: hi to bi
+mnemonic: ヒ plus two little marks makes ビ. The marks make the sound buzz: hi turns into bi!
+
+[words]
+ビール | biiru | beer
+ビル | biru | building
+ビデオ | bideo | video
+
+[similar]
+ヒ | hi | ビ has two small marks at the top right. ヒ has none.
+
+[distractors]
+hi, bu

@@ -1,0 +1,15 @@
+title: Katakana RU
+kana: ル
+script: katakana
+romaji: ru
+sound: like the "roo" in kangaroo
+mnemonic_word: a ruby ring
+mnemonic: Picture a ruby ring for ru. Now watch ル get written on it!
+
+[words]
+ルール | ruuru | rule
+ルビー | rubii | ruby
+タオル | taoru | towel
+
+[distractors]
+ro, re

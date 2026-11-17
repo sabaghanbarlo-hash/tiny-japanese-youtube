@@ -1,0 +1,18 @@
+title: Hiragana TSU
+kana: つ
+script: hiragana
+romaji: tsu
+sound: like the "tsu" in tsunami
+mnemonic_word: Wave
+mnemonic: つ looks like a big tsunami wave. Tsu for tsunami!
+
+[words]
+つき | tsuki | moon
+つくえ | tsukue | desk
+つめ | tsume | nail
+
+[similar]
+し | shi | つ lies flat like a wave. し stands up like a hook.
+
+[distractors]
+ta, te

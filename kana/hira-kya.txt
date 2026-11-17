@@ -1,0 +1,17 @@
+title: Hiragana KYA
+kana: きゃ
+script: hiragana
+romaji: kya
+sound: one quick sound, "ki" and "ya" blended
+mnemonic_word: ki + ya
+mnemonic: き plus a small ゃ makes きゃ. Say ki and ya together as one quick sound: kya!
+
+[words]
+きゃく | kyaku | guest
+きゃべつ | kyabetsu | cabbage
+
+[similar]
+き | ki | きゃ has a small ゃ at the bottom right. き alone is just ki.
+
+[distractors]
+kyu, kyo

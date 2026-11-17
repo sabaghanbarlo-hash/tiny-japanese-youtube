@@ -1,0 +1,15 @@
+title: Katakana KI
+kana: キ
+script: katakana
+romaji: ki
+sound: like the word "key"
+mnemonic_word: a key
+mnemonic: Picture a key for ki. Now watch キ get written on it!
+
+[words]
+キウイ | kiui | kiwi
+キャベツ | kyabetsu | cabbage
+キス | kisu | kiss
+
+[distractors]
+ka, ku

@@ -1,0 +1,18 @@
+title: Hiragana KE
+kana: け
+script: hiragana
+romaji: ke
+sound: like the "ke" in kettle
+mnemonic_word: Kettle
+mnemonic: け looks like a kettle with a spout and steam. Ke for kettle!
+
+[words]
+けむり | kemuri | smoke
+けさ | kesa | this morning
+いけ | ike | pond
+
+[similar]
+は | ha | け has a simple hook on the right. は has a small loop at the bottom right.
+
+[distractors]
+ka, ko

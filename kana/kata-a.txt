@@ -1,0 +1,18 @@
+title: Katakana A
+kana: ア
+script: katakana
+romaji: a
+sound: like the "a" in father
+mnemonic_word: an apple
+mnemonic: Picture an apple for a. Now watch ア get written on it!
+
+[words]
+アイス | aisu | ice cream
+アメリカ | amerika | America
+アニメ | anime | anime
+
+[similar]
+マ | ma | ア has a short stroke on the top left and a long falling stroke. マ has a small triangle at the bottom.
+
+[distractors]
+i, u

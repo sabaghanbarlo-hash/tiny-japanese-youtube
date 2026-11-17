@@ -1,0 +1,18 @@
+title: Katakana MA
+kana: マ
+script: katakana
+romaji: ma
+sound: like the "ma" in mama
+mnemonic_word: a mama
+mnemonic: Picture a mama for ma. Now watch マ get written on it!
+
+[words]
+マスク | masuku | mask
+マンガ | manga | comics
+マラソン | marason | marathon
+
+[similar]
+ア | a | マ has a small triangle at the bottom. ア has a short stroke on the top left.
+
+[distractors]
+mi, mu

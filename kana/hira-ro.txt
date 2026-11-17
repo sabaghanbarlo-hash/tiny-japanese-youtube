@@ -1,0 +1,18 @@
+title: Hiragana RO
+kana: ろ
+script: hiragana
+romaji: ro
+sound: like the "ro" in row
+mnemonic_word: Road
+mnemonic: ろ looks like a winding road. Ro for road!
+
+[words]
+ろく | roku | six
+くろ | kuro | black
+しろ | shiro | white
+
+[similar]
+る | ru | ろ has no loop at the end. る has a small loop.
+
+[distractors]
+ra, ru

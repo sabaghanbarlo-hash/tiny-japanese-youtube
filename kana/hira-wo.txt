@@ -1,0 +1,15 @@
+title: Hiragana WO
+kana: を
+script: hiragana
+romaji: wo
+sound: like a short "o"
+mnemonic_word: Worm
+mnemonic: を looks like a wiggly worm. Wo for worm!
+
+[words]
+ほんをよむ | hon o yomu | read a book
+みずをのむ | mizu o nomu | drink water
+てをあらう | te o arau | wash your hands
+
+[distractors]
+o, wa

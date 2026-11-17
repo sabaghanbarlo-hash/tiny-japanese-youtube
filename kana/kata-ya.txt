@@ -1,0 +1,15 @@
+title: Katakana YA
+kana: ヤ
+script: katakana
+romaji: ya
+sound: like the "ya" in yacht
+mnemonic_word: a yak
+mnemonic: Picture a yak for ya. Now watch ヤ get written on it!
+
+[words]
+ヤード | yaado | yard
+ヤギ | yagi | goat
+タイヤ | taiya | tire
+
+[distractors]
+yu, yo

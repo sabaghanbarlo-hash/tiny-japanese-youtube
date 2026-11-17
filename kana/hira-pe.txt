@@ -1,0 +1,20 @@
+title: Hiragana PE
+kana: ぺ
+script: hiragana
+romaji: pe
+key: pe
+base: へ
+sound: like the "pe" in pen
+mnemonic_word: he to pe
+mnemonic: へ plus a little circle makes ぺ. The circle turns the h sound into a puff of air: he becomes pe!
+
+[words]
+ぺん | pen | pen
+ぺらぺら | perapera | fluent
+ぺこぺこ | pekopeko | very hungry
+
+[similar]
+へ | he | ぺ has a small circle at the top right. へ has none.
+
+[distractors]
+he, po

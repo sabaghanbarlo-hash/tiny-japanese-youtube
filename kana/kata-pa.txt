@@ -1,0 +1,21 @@
+title: Katakana PA
+kana: パ
+script: katakana
+romaji: pa
+key: pa
+base: ハ
+sound: like the "pa" in papa
+mnemonic_word: ha to pa
+mnemonic: ハ plus a little circle makes パ. The circle turns the h sound into a puff of air: ha becomes pa!
+
+[words]
+パン | pan | bread
+パーティー | paatii | party
+パソコン | pasokon | computer
+
+[similar]
+ハ | ha | パ has a small circle at the top right. ハ has none.
+バ | ba | パ has a small circle. バ has two small marks.
+
+[distractors]
+ha, pi

@@ -1,0 +1,17 @@
+title: Hiragana BYU
+kana: びゅ
+script: hiragana
+romaji: byu
+sound: one quick sound, "bi" and "yu" blended
+mnemonic_word: bi + yu
+mnemonic: び plus a small ゅ makes びゅ. Say bi and yu together as one quick sound: byu!
+
+[words]
+びゅうびゅう | byuubyuu | howling wind
+びゅっと | byutto | whoosh
+
+[similar]
+び | bi | びゅ has a small ゅ at the bottom right. び alone is just bi.
+
+[distractors]
+bya, byo

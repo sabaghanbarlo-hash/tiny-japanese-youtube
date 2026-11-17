@@ -1,0 +1,18 @@
+title: Katakana SHO
+kana: ショ
+script: katakana
+romaji: sho
+sound: one quick sound, "shi" and "yo" blended
+mnemonic_word: shi + yo
+mnemonic: シ plus a small ョ makes ショ. Say shi and yo together as one quick sound: sho!
+
+[words]
+ショップ | shoppu | shop
+ショー | shoo | show
+ショッピング | shoppingu | shopping
+
+[similar]
+シ | shi | ショ has a small ョ at the bottom right. シ alone is just shi.
+
+[distractors]
+sha, shu

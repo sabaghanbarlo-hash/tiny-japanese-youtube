@@ -9,7 +9,6 @@ Optional:
   YT_PRIVACY   private (default) | unlisted | public
   YT_CATEGORY  YouTube category id (default 27 = Education)
   FORCE_UPLOAD 1 = upload even if this lesson was already uploaded
-  PUBLISH_AT   UTC time (YYYY-MM-DDTHH:MM:SSZ): upload as private and let YouTube publish it then
 """
 import json, os, re, sys, time
 import requests
@@ -17,7 +16,7 @@ import requests
 TOKEN_URL = os.environ.get("YT_TOKEN_URL", "https://oauth2.googleapis.com/token")
 UPLOAD_API = os.environ.get("YT_UPLOAD_API", "https://www.googleapis.com/upload/youtube/v3")
 CHUNK = 8 * 1024 * 1024            # must be a multiple of 256 KiB
-TAGS = ["learn japanese", "japanese lesson", "japanese story", "JLPT", "beginner japanese", "tiny japanese"]
+TAGS = ["learn hiragana", "learn katakana", "learn japanese", "japanese for beginners", "japanese alphabet", "kana", "tiny japanese"]
 
 
 def fail(msg):
@@ -124,17 +123,13 @@ def main():
         fail(f"YT_PRIVACY must be private, unlisted or public (got '{privacy}')")
     token = access_token()
     snippet = {"title": title, "description": description, "tags": TAGS,
-               "categoryId": os.environ.get("YT_CATEGORY") or "27",
-               "defaultLanguage": "en", "defaultAudioLanguage": "en"}
+               "categoryId": os.environ.get("YT_CATEGORY") or "27"}
     status = {"privacyStatus": privacy, "selfDeclaredMadeForKids": False}
-    publish_at = (os.environ.get("PUBLISH_AT") or "").strip()
-    if publish_at:
-        status = {"privacyStatus": "private", "publishAt": publish_at, "selfDeclaredMadeForKids": False}
-    print(f"Uploading '{title}' as {status['privacyStatus']}" + (f" (goes public {publish_at})" if publish_at else "") + f" ({os.path.getsize(video) / 1e6:.1f} MB)…")
+    print(f"Uploading '{title}' as {privacy} ({os.path.getsize(video) / 1e6:.1f} MB)…")
     vid = upload_video(token, video, snippet, status)
     thumb = set_thumbnail(token, vid, os.path.join(folder, stem + ".thumbnail.png"))
     url = f"https://youtu.be/{vid}"
-    open(os.path.join(folder, stem + ".youtube.txt"), "w", encoding="utf-8").write(f"{url}\nprivacy: {status['privacyStatus']}\n" + (f"publishAt: {publish_at}\n" if publish_at else "") + f"thumbnail: {thumb}\n")
+    open(os.path.join(folder, stem + ".youtube.txt"), "w", encoding="utf-8").write(f"{url}\nprivacy: {privacy}\nthumbnail: {thumb}\n")
     print(f"Uploaded: {url} (thumbnail {thumb})")
 
 

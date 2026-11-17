@@ -1,0 +1,20 @@
+title: Hiragana GE
+kana: げ
+script: hiragana
+romaji: ge
+key: ge
+base: け
+sound: like the "ge" in get
+mnemonic_word: ke to ge
+mnemonic: け plus two little marks makes げ. The marks make the sound buzz: ke turns into ge!
+
+[words]
+げんき | genki | healthy
+げつようび | getsuyoubi | Monday
+げた | geta | wooden sandals
+
+[similar]
+け | ke | げ has two small marks at the top right. け has none.
+
+[distractors]
+ke, go

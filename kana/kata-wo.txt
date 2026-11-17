@@ -1,0 +1,13 @@
+title: Katakana WO
+kana: ヲ
+script: katakana
+romaji: wo
+sound: like a short "o"
+mnemonic_word: a wiggly worm
+mnemonic: Picture a wiggly worm for wo. Now watch ヲ get written on it!
+
+[words]
+ヲタク | wotaku | fan, geek
+
+[distractors]
+o, wa

@@ -1,0 +1,20 @@
+title: Katakana GI
+kana: ギ
+script: katakana
+romaji: gi
+key: gi
+base: キ
+sound: like the "gee" in geese
+mnemonic_word: ki to gi
+mnemonic: キ plus two little marks makes ギ. The marks make the sound buzz: ki turns into gi!
+
+[words]
+ギター | gitaa | guitar
+ギフト | gifuto | gift
+ギリシャ | girisha | Greece
+
+[similar]
+キ | ki | ギ has two small marks at the top right. キ has none.
+
+[distractors]
+ki, ga

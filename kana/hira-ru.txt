@@ -1,0 +1,18 @@
+title: Hiragana RU
+kana: る
+script: hiragana
+romaji: ru
+sound: like the "roo" in kangaroo
+mnemonic_word: Ruby
+mnemonic: る looks like a ring with a red ruby. Ru for ruby!
+
+[words]
+くるま | kuruma | car
+ある | aru | there is
+さる | saru | monkey
+
+[similar]
+ろ | ro | る has a small loop at the end. ろ has no loop.
+
+[distractors]
+ro, re

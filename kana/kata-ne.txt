@@ -1,0 +1,15 @@
+title: Katakana NE
+kana: ネ
+script: katakana
+romaji: ne
+sound: like the "ne" in net
+mnemonic_word: a cat
+mnemonic: Picture a cat for ne. Now watch ネ get written on it!
+
+[words]
+ネクタイ | nekutai | necktie
+ネット | netto | net
+インターネット | intaanetto | internet
+
+[distractors]
+na, no

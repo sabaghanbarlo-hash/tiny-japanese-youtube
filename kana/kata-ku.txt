@@ -1,0 +1,18 @@
+title: Katakana KU
+kana: ク
+script: katakana
+romaji: ku
+sound: like the "coo" in cuckoo
+mnemonic_word: a crown
+mnemonic: Picture a crown for ku. Now watch ク get written on it!
+
+[words]
+クッキー | kukkii | cookie
+クラス | kurasu | class
+クリスマス | kurisumasu | Christmas
+
+[similar]
+タ | ta | ク has two strokes. タ has an extra short stroke inside.
+
+[distractors]
+ka, ke

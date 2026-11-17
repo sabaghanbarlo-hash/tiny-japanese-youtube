@@ -1,0 +1,18 @@
+title: Katakana CHO
+kana: チョ
+script: katakana
+romaji: cho
+sound: one quick sound, "chi" and "yo" blended
+mnemonic_word: chi + yo
+mnemonic: チ plus a small ョ makes チョ. Say chi and yo together as one quick sound: cho!
+
+[words]
+チョコレート | chokoreeto | chocolate
+チョーク | chooku | chalk
+チョコ | choko | choco
+
+[similar]
+チ | chi | チョ has a small ョ at the bottom right. チ alone is just chi.
+
+[distractors]
+cha, chu

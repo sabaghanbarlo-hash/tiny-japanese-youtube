@@ -1,0 +1,18 @@
+title: Hiragana ME
+kana: め
+script: hiragana
+romaji: me
+sound: like the "me" in met
+mnemonic_word: Eye
+mnemonic: め looks like an eye. Me means eye in Japanese!
+
+[words]
+めがね | megane | glasses
+さめ | same | shark
+うめ | ume | plum
+
+[similar]
+ぬ | nu | め finishes with a simple curve. ぬ finishes with a small loop.
+
+[distractors]
+mi, mo

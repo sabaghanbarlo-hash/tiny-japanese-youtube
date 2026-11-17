@@ -1,0 +1,21 @@
+title: Hiragana ZU (づ)
+kana: づ
+script: hiragana
+romaji: zu
+key: dzu
+base: つ
+sound: exactly like ず (zu)
+mnemonic_word: tsu to zu
+mnemonic: つ plus two little marks makes づ. The marks make the sound buzz: tsu turns into zu!
+
+[words]
+つづく | tsuzuku | to continue
+みかづき | mikazuki | crescent moon
+こづつみ | kozutsumi | parcel
+
+[similar]
+つ | tsu | づ has two small marks at the top right. つ has none.
+ず | zu | づ sounds exactly like ず. ず is used far more often.
+
+[distractors]
+da, ji

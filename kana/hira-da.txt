@@ -1,0 +1,20 @@
+title: Hiragana DA
+kana: だ
+script: hiragana
+romaji: da
+key: da
+base: た
+sound: like the "da" in dart
+mnemonic_word: ta to da
+mnemonic: た plus two little marks makes だ. The marks make the sound buzz: ta turns into da!
+
+[words]
+だいがく | daigaku | university
+だいどころ | daidokoro | kitchen
+だれ | dare | who
+
+[similar]
+た | ta | だ has two small marks at the top right. た has none.
+
+[distractors]
+ta, de

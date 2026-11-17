@@ -1,0 +1,20 @@
+title: Hiragana DE
+kana: で
+script: hiragana
+romaji: de
+key: de
+base: て
+sound: like the "de" in den
+mnemonic_word: te to de
+mnemonic: て plus two little marks makes で. The marks make the sound buzz: te turns into de!
+
+[words]
+でんわ | denwa | telephone
+でぐち | deguchi | exit
+でんしゃ | densha | train
+
+[similar]
+て | te | で has two small marks at the top right. て has none.
+
+[distractors]
+te, da

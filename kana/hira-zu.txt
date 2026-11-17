@@ -1,0 +1,21 @@
+title: Hiragana ZU
+kana: ず
+script: hiragana
+romaji: zu
+key: zu
+base: す
+sound: like the "zoo"
+mnemonic_word: su to zu
+mnemonic: す plus two little marks makes ず. The marks make the sound buzz: su turns into zu!
+
+[words]
+ずぼん | zubon | trousers
+ちず | chizu | map
+ずっと | zutto | all along
+
+[similar]
+す | su | ず has two small marks at the top right. す has none.
+づ | zu | ず and づ sound the same. ず is used far more often.
+
+[distractors]
+su, ze

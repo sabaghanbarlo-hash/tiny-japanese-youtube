@@ -1,0 +1,17 @@
+title: Hiragana MYU
+kana: みゅ
+script: hiragana
+romaji: myu
+sound: one quick sound, "mi" and "yu" blended
+mnemonic_word: mi + yu
+mnemonic: み plus a small ゅ makes みゅ. Say mi and yu together as one quick sound: myu!
+
+[words]
+みゅう | myuu | mew sound
+みゅうみゅう | myuumyuu | mewing
+
+[similar]
+み | mi | みゅ has a small ゅ at the bottom right. み alone is just mi.
+
+[distractors]
+mya, myo

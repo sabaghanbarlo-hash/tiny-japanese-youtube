@@ -1,0 +1,21 @@
+title: Hiragana PA
+kana: ぱ
+script: hiragana
+romaji: pa
+key: pa
+base: は
+sound: like the "pa" in papa
+mnemonic_word: ha to pa
+mnemonic: は plus a little circle makes ぱ. The circle turns the h sound into a puff of air: ha becomes pa!
+
+[words]
+ぱん | pan | bread
+ぱんだ | panda | panda
+ぱぱ | papa | dad
+
+[similar]
+は | ha | ぱ has a small circle at the top right. は has none.
+ば | ba | ぱ has a small circle. ば has two small marks.
+
+[distractors]
+ha, pi

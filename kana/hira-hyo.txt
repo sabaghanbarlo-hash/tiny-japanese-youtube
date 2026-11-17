@@ -1,0 +1,18 @@
+title: Hiragana HYO
+kana: ひょ
+script: hiragana
+romaji: hyo
+sound: one quick sound, "hi" and "yo" blended
+mnemonic_word: hi + yo
+mnemonic: ひ plus a small ょ makes ひょ. Say hi and yo together as one quick sound: hyo!
+
+[words]
+ひょう | hyou | leopard
+ひょうげん | hyougen | expression
+ひょうしき | hyoushiki | sign
+
+[similar]
+ひ | hi | ひょ has a small ょ at the bottom right. ひ alone is just hi.
+
+[distractors]
+hya, hyu

@@ -1,0 +1,15 @@
+title: Katakana YO
+kana: ヨ
+script: katakana
+romaji: yo
+sound: like the "yo" in yo-yo
+mnemonic_word: a yo-yo
+mnemonic: Picture a yo-yo for yo. Now watch ヨ get written on it!
+
+[words]
+ヨーロッパ | yooroppa | Europe
+ヨガ | yoga | yoga
+ヨット | yotto | sailing yacht
+
+[distractors]
+ya, yu

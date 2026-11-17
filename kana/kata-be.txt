@@ -1,0 +1,20 @@
+title: Katakana BE
+kana: ベ
+script: katakana
+romaji: be
+key: be
+base: ヘ
+sound: like the "be" in bed
+mnemonic_word: he to be
+mnemonic: ヘ plus two little marks makes ベ. The marks make the sound buzz: he turns into be!
+
+[words]
+ベッド | beddo | bed
+ベル | beru | bell
+ベンチ | benchi | bench
+
+[similar]
+ヘ | he | ベ has two small marks at the top right. ヘ has none.
+
+[distractors]
+he, bo

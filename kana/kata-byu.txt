@@ -1,0 +1,18 @@
+title: Katakana BYU
+kana: ビュ
+script: katakana
+romaji: byu
+sound: one quick sound, "bi" and "yu" blended
+mnemonic_word: bi + yu
+mnemonic: ビ plus a small ュ makes ビュ. Say bi and yu together as one quick sound: byu!
+
+[words]
+ビュッフェ | byuffe | buffet
+ビューティー | byuutii | beauty
+ビュー | byuu | view
+
+[similar]
+ビ | bi | ビュ has a small ュ at the bottom right. ビ alone is just bi.
+
+[distractors]
+bya, byo

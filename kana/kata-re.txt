@@ -1,0 +1,15 @@
+title: Katakana RE
+kana: レ
+script: katakana
+romaji: re
+sound: like the "re" in red
+mnemonic_word: a red ribbon
+mnemonic: Picture a red ribbon for re. Now watch レ get written on it!
+
+[words]
+レモン | remon | lemon
+レストラン | resutoran | restaurant
+レシピ | reshipi | recipe
+
+[distractors]
+ra, ro

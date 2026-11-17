@@ -1,0 +1,16 @@
+title: Katakana PYA
+kana: ピャ
+script: katakana
+romaji: pya
+sound: one quick sound, "pi" and "ya" blended
+mnemonic_word: pi + ya
+mnemonic: ピ plus a small ャ makes ピャ. Say pi and ya together as one quick sound: pya!
+
+[words]
+ピャーピャー | pyaapyaa | chirping
+
+[similar]
+ピ | pi | ピャ has a small ャ at the bottom right. ピ alone is just pi.
+
+[distractors]
+pyu, pyo

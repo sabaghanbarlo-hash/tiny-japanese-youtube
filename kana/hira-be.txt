@@ -1,0 +1,20 @@
+title: Hiragana BE
+kana: べ
+script: hiragana
+romaji: be
+key: be
+base: へ
+sound: like the "be" in bed
+mnemonic_word: he to be
+mnemonic: へ plus two little marks makes べ. The marks make the sound buzz: he turns into be!
+
+[words]
+べんきょう | benkyou | study
+べんとう | bentou | lunch box
+たべる | taberu | to eat
+
+[similar]
+へ | he | べ has two small marks at the top right. へ has none.
+
+[distractors]
+he, bo

@@ -1,0 +1,20 @@
+title: Katakana GE
+kana: ゲ
+script: katakana
+romaji: ge
+key: ge
+base: ケ
+sound: like the "ge" in get
+mnemonic_word: ke to ge
+mnemonic: ケ plus two little marks makes ゲ. The marks make the sound buzz: ke turns into ge!
+
+[words]
+ゲーム | geemu | game
+ゲスト | gesuto | guest
+ゲート | geeto | gate
+
+[similar]
+ケ | ke | ゲ has two small marks at the top right. ケ has none.
+
+[distractors]
+ke, go

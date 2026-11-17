@@ -1,0 +1,18 @@
+title: Katakana KYA
+kana: キャ
+script: katakana
+romaji: kya
+sound: one quick sound, "ki" and "ya" blended
+mnemonic_word: ki + ya
+mnemonic: キ plus a small ャ makes キャ. Say ki and ya together as one quick sound: kya!
+
+[words]
+キャベツ | kyabetsu | cabbage
+キャンプ | kyanpu | camp
+キャッシュ | kyasshu | cash
+
+[similar]
+キ | ki | キャ has a small ャ at the bottom right. キ alone is just ki.
+
+[distractors]
+kyu, kyo

@@ -1,0 +1,18 @@
+title: Katakana WA
+kana: ワ
+script: katakana
+romaji: wa
+sound: like the "wa" in wagon
+mnemonic_word: a wagon wheel
+mnemonic: Picture a wagon wheel for wa. Now watch ワ get written on it!
+
+[words]
+ワイン | wain | wine
+ワンピース | wanpiisu | dress
+ワニ | wani | crocodile
+
+[similar]
+ウ | u | ワ has no dot. ウ has a small dot on top.
+
+[distractors]
+ra, wo

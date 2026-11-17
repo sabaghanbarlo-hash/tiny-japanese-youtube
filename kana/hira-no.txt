@@ -1,0 +1,15 @@
+title: Hiragana NO
+kana: の
+script: hiragana
+romaji: no
+sound: like the "no" in note
+mnemonic_word: Snail
+mnemonic: の looks like the shell of a snail. No, no, slow down little snail!
+
+[words]
+のり | nori | seaweed
+のど | nodo | throat
+のみもの | nomimono | drink
+
+[distractors]
+na, nu

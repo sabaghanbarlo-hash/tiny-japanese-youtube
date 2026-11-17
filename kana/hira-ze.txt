@@ -1,0 +1,20 @@
+title: Hiragana ZE
+kana: ぜ
+script: hiragana
+romaji: ze
+key: ze
+base: せ
+sound: like the "ze" in zebra
+mnemonic_word: se to ze
+mnemonic: せ plus two little marks makes ぜ. The marks make the sound buzz: se turns into ze!
+
+[words]
+ぜんぶ | zenbu | all
+ぜひ | zehi | by all means
+ぜいきん | zeikin | tax
+
+[similar]
+せ | se | ぜ has two small marks at the top right. せ has none.
+
+[distractors]
+se, zo

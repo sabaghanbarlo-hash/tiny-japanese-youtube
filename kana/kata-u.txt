@@ -1,0 +1,18 @@
+title: Katakana U
+kana: ウ
+script: katakana
+romaji: u
+sound: like the "oo" in moon
+mnemonic_word: an umbrella
+mnemonic: Picture an umbrella for u. Now watch ウ get written on it!
+
+[words]
+ウサギ | usagi | rabbit
+ウール | uuru | wool
+ウイルス | uirusu | virus
+
+[similar]
+ワ | wa | ウ has a small dot on top. ワ has no dot.
+
+[distractors]
+a, e

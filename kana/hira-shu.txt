@@ -1,0 +1,18 @@
+title: Hiragana SHU
+kana: しゅ
+script: hiragana
+romaji: shu
+sound: one quick sound, "shi" and "yu" blended
+mnemonic_word: shi + yu
+mnemonic: し plus a small ゅ makes しゅ. Say shi and yu together as one quick sound: shu!
+
+[words]
+しゅくだい | shukudai | homework
+しゅみ | shumi | hobby
+しゅうまつ | shuumatsu | weekend
+
+[similar]
+し | shi | しゅ has a small ゅ at the bottom right. し alone is just shi.
+
+[distractors]
+sha, sho

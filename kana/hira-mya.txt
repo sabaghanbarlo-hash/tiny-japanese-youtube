@@ -1,0 +1,17 @@
+title: Hiragana MYA
+kana: みゃ
+script: hiragana
+romaji: mya
+sound: one quick sound, "mi" and "ya" blended
+mnemonic_word: mi + ya
+mnemonic: み plus a small ゃ makes みゃ. Say mi and ya together as one quick sound: mya!
+
+[words]
+みゃく | myaku | pulse
+さんみゃく | sanmyaku | mountain range
+
+[similar]
+み | mi | みゃ has a small ゃ at the bottom right. み alone is just mi.
+
+[distractors]
+myu, myo

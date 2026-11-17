@@ -1,0 +1,20 @@
+title: Hiragana ZA
+kana: ざ
+script: hiragana
+romaji: za
+key: za
+base: さ
+sound: like the "za" in pizza
+mnemonic_word: sa to za
+mnemonic: さ plus two little marks makes ざ. The marks make the sound buzz: sa turns into za!
+
+[words]
+ざっし | zasshi | magazine
+ざる | zaru | colander
+ざぶとん | zabuton | floor cushion
+
+[similar]
+さ | sa | ざ has two small marks at the top right. さ has none.
+
+[distractors]
+sa, ji

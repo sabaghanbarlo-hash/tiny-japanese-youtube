@@ -1,0 +1,18 @@
+title: Katakana JU
+kana: ジュ
+script: katakana
+romaji: ju
+sound: one quick sound, "ji" and "yu" blended
+mnemonic_word: ji + yu
+mnemonic: ジ plus a small ュ makes ジュ. Say ji and yu together as one quick sound: ju!
+
+[words]
+ジュース | juusu | juice
+ジュエリー | juerii | jewelry
+ジュニア | junia | junior
+
+[similar]
+ジ | ji | ジュ has a small ュ at the bottom right. ジ alone is just ji.
+
+[distractors]
+ja, jo

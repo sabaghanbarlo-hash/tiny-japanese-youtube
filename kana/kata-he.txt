@@ -1,0 +1,15 @@
+title: Katakana HE
+kana: ヘ
+script: katakana
+romaji: he
+sound: like the "he" in hen
+mnemonic_word: a hen
+mnemonic: Picture a hen for he. Now watch ヘ get written on it!
+
+[words]
+ヘルメット | herumetto | helmet
+ヘア | hea | hair
+ヘリコプター | herikoputaa | helicopter
+
+[distractors]
+hi, ho

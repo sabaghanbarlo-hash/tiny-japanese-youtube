@@ -1,0 +1,18 @@
+title: Hiragana HE
+kana: へ
+script: hiragana
+romaji: he
+sound: like the "he" in hen
+mnemonic_word: Hen
+mnemonic: へ looks like a hill with a hen on top. He for hen!
+
+[words]
+へや | heya | room
+へび | hebi | snake
+へそ | heso | belly button
+
+[similar]
+く | ku | へ is a gentle hill. く points left like a beak.
+
+[distractors]
+hi, ho

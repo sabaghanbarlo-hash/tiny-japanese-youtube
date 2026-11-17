@@ -1,0 +1,20 @@
+title: Hiragana PU
+kana: ぷ
+script: hiragana
+romaji: pu
+key: pu
+base: ふ
+sound: like the "poo" in pool
+mnemonic_word: fu to pu
+mnemonic: ふ plus a little circle makes ぷ. The circle turns the h sound into a puff of air: fu becomes pu!
+
+[words]
+ぷりん | purin | pudding
+てんぷら | tenpura | tempura
+ぷくぷく | pukupuku | puffy
+
+[similar]
+ふ | fu | ぷ has a small circle at the top right. ふ has none.
+
+[distractors]
+fu, pe

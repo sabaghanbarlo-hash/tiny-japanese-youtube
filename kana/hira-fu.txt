@@ -1,0 +1,15 @@
+title: Hiragana FU
+kana: ふ
+script: hiragana
+romaji: fu
+sound: like "foo" with soft lips
+mnemonic_word: Fuji
+mnemonic: ふ looks like Mount Fuji with clouds. Fu for Fuji!
+
+[words]
+ふゆ | fuyu | winter
+ふね | fune | boat
+ふく | fuku | clothes
+
+[distractors]
+ha, he

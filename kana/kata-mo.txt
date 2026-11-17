@@ -1,0 +1,15 @@
+title: Katakana MO
+kana: モ
+script: katakana
+romaji: mo
+sound: like the "mo" in more
+mnemonic_word: a moth
+mnemonic: Picture a moth for mo. Now watch モ get written on it!
+
+[words]
+モデル | moderu | model
+モノレール | monoreeru | monorail
+メモ | memo | memo
+
+[distractors]
+me, mu

@@ -1,0 +1,21 @@
+title: Hiragana JI
+kana: じ
+script: hiragana
+romaji: ji
+key: ji
+base: し
+sound: like the "jee" in jeep
+mnemonic_word: shi to ji
+mnemonic: し plus two little marks makes じ. The marks make the sound buzz: shi turns into ji!
+
+[words]
+じしょ | jisho | dictionary
+じかん | jikan | time
+じてんしゃ | jitensha | bicycle
+
+[similar]
+し | shi | じ has two small marks at the top right. し has none.
+ぢ | ji | じ and ぢ sound the same. じ is used far more often.
+
+[distractors]
+shi, zu

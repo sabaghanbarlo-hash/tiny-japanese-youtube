@@ -1,0 +1,20 @@
+title: Hiragana JI (ぢ)
+kana: ぢ
+script: hiragana
+romaji: ji
+key: dji
+base: ち
+sound: exactly like じ (ji)
+mnemonic_word: chi to ji
+mnemonic: ち plus two little marks makes ぢ. The marks make the sound buzz: chi turns into ji!
+
+[words]
+はなぢ | hanaji | nosebleed
+ちぢむ | chijimu | to shrink
+
+[similar]
+ち | chi | ぢ has two small marks at the top right. ち has none.
+じ | ji | ぢ sounds exactly like じ. じ is used far more often.
+
+[distractors]
+da, zu

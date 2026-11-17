@@ -1,0 +1,15 @@
+title: Hiragana YU
+kana: ゆ
+script: hiragana
+romaji: yu
+sound: like the "you" in youth
+mnemonic_word: Hot spring
+mnemonic: ゆ looks like a hot spring with steam. Yu means hot water!
+
+[words]
+ゆき | yuki | snow
+ゆめ | yume | dream
+ゆび | yubi | finger
+
+[distractors]
+ya, yo

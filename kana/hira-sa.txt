@@ -1,0 +1,18 @@
+title: Hiragana SA
+kana: さ
+script: hiragana
+romaji: sa
+sound: like the "sa" in salsa
+mnemonic_word: Sail
+mnemonic: さ looks like a sail on a boat. Sa for sail!
+
+[words]
+さかな | sakana | fish
+さくら | sakura | cherry blossom
+さる | saru | monkey
+
+[similar]
+き | ki | さ has one horizontal line. き has two.
+
+[distractors]
+shi, su

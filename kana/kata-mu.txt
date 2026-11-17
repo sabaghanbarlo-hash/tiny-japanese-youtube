@@ -1,0 +1,15 @@
+title: Katakana MU
+kana: ム
+script: katakana
+romaji: mu
+sound: like the "moo" in moon
+mnemonic_word: a cow
+mnemonic: Picture a cow for mu. Now watch ム get written on it!
+
+[words]
+ゲーム | geemu | game
+ムード | muudo | mood
+ムース | muusu | mousse
+
+[distractors]
+ma, mo

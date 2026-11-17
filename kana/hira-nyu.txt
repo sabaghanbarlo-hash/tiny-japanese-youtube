@@ -1,0 +1,18 @@
+title: Hiragana NYU
+kana: にゅ
+script: hiragana
+romaji: nyu
+sound: one quick sound, "ni" and "yu" blended
+mnemonic_word: ni + yu
+mnemonic: に plus a small ゅ makes にゅ. Say ni and yu together as one quick sound: nyu!
+
+[words]
+ぎゅうにゅう | gyuunyuu | milk
+にゅうがく | nyuugaku | school entrance
+にゅういん | nyuuin | hospital stay
+
+[similar]
+に | ni | にゅ has a small ゅ at the bottom right. に alone is just ni.
+
+[distractors]
+nya, nyo

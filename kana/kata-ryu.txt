@@ -1,0 +1,18 @@
+title: Katakana RYU
+kana: リュ
+script: katakana
+romaji: ryu
+sound: one quick sound, "ri" and "yu" blended
+mnemonic_word: ri + yu
+mnemonic: リ plus a small ュ makes リュ. Say ri and yu together as one quick sound: ryu!
+
+[words]
+リュック | ryukku | backpack
+リュート | ryuuto | lute
+リュウ | ryuu | dragon
+
+[similar]
+リ | ri | リュ has a small ュ at the bottom right. リ alone is just ri.
+
+[distractors]
+rya, ryo

@@ -1,0 +1,21 @@
+title: Katakana ZU
+kana: ズ
+script: katakana
+romaji: zu
+key: zu
+base: ス
+sound: like the "zoo"
+mnemonic_word: su to zu
+mnemonic: ス plus two little marks makes ズ. The marks make the sound buzz: su turns into zu!
+
+[words]
+ズボン | zubon | trousers
+ズーム | zuumu | zoom
+パズル | pazuru | puzzle
+
+[similar]
+ス | su | ズ has two small marks at the top right. ス has none.
+ヅ | zu | ズ and ヅ sound the same. ズ is used far more often.
+
+[distractors]
+su, ze

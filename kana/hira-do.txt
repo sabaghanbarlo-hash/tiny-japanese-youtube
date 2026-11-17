@@ -1,0 +1,20 @@
+title: Hiragana DO
+kana: ど
+script: hiragana
+romaji: do
+key: do
+base: と
+sound: like the "do" in dough
+mnemonic_word: to to do
+mnemonic: と plus two little marks makes ど. The marks make the sound buzz: to turns into do!
+
+[words]
+どうぶつ | doubutsu | animal
+どこ | doko | where
+どようび | doyoubi | Saturday
+
+[similar]
+と | to | ど has two small marks at the top right. と has none.
+
+[distractors]
+to, de

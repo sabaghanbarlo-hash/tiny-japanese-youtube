@@ -1,0 +1,15 @@
+title: Katakana SE
+kana: セ
+script: katakana
+romaji: se
+sound: like the "se" in set
+mnemonic_word: a seesaw
+mnemonic: Picture a seesaw for se. Now watch セ get written on it!
+
+[words]
+セーター | seetaa | sweater
+セット | setto | set
+センター | sentaa | center
+
+[distractors]
+so, sa

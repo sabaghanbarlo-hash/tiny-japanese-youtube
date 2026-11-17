@@ -1,0 +1,18 @@
+title: Katakana SHU
+kana: シュ
+script: katakana
+romaji: shu
+sound: one quick sound, "shi" and "yu" blended
+mnemonic_word: shi + yu
+mnemonic: シ plus a small ュ makes シュ. Say shi and yu together as one quick sound: shu!
+
+[words]
+シュート | shuuto | shot
+シュークリーム | shuukuriimu | cream puff
+シュガー | shugaa | sugar
+
+[similar]
+シ | shi | シュ has a small ュ at the bottom right. シ alone is just shi.
+
+[distractors]
+sha, sho

@@ -1,0 +1,18 @@
+title: Hiragana TA
+kana: た
+script: hiragana
+romaji: ta
+sound: like the "ta" in taco
+mnemonic_word: Taco
+mnemonic: た looks like a taco full of lettuce. Ta for taco!
+
+[words]
+たまご | tamago | egg
+たこ | tako | octopus
+たな | tana | shelf
+
+[similar]
+な | na | た ends with two short lines. な ends with a small loop.
+
+[distractors]
+chi, te

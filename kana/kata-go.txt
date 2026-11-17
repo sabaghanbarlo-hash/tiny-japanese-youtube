@@ -1,0 +1,20 @@
+title: Katakana GO
+kana: ゴ
+script: katakana
+romaji: go
+key: go
+base: コ
+sound: like the "go" in go
+mnemonic_word: ko to go
+mnemonic: コ plus two little marks makes ゴ. The marks make the sound buzz: ko turns into go!
+
+[words]
+ゴール | gooru | goal
+ゴルフ | gorufu | golf
+ゴリラ | gorira | gorilla
+
+[similar]
+コ | ko | ゴ has two small marks at the top right. コ has none.
+
+[distractors]
+ko, ga

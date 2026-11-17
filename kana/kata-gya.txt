@@ -1,0 +1,18 @@
+title: Katakana GYA
+kana: ギャ
+script: katakana
+romaji: gya
+sound: one quick sound, "gi" and "ya" blended
+mnemonic_word: gi + ya
+mnemonic: ギ plus a small ャ makes ギャ. Say gi and ya together as one quick sound: gya!
+
+[words]
+ギャグ | gyagu | gag
+ギャラリー | gyararii | gallery
+ギャル | gyaru | young fashionable girl (slang)
+
+[similar]
+ギ | gi | ギャ has a small ャ at the bottom right. ギ alone is just gi.
+
+[distractors]
+gyu, gyo

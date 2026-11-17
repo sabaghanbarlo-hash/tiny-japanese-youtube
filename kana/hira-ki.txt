@@ -1,0 +1,18 @@
+title: Hiragana KI
+kana: き
+script: hiragana
+romaji: ki
+sound: like the word "key"
+mnemonic_word: Key
+mnemonic: き looks like a key with two teeth. K for key!
+
+[words]
+きつね | kitsune | fox
+きた | kita | north
+あき | aki | autumn
+
+[similar]
+さ | sa | き has two horizontal lines. さ has only one.
+
+[distractors]
+ka, ku

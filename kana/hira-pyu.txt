@@ -1,0 +1,17 @@
+title: Hiragana PYU
+kana: ぴゅ
+script: hiragana
+romaji: pyu
+sound: one quick sound, "pi" and "yu" blended
+mnemonic_word: pi + yu
+mnemonic: ぴ plus a small ゅ makes ぴゅ. Say pi and yu together as one quick sound: pyu!
+
+[words]
+ぴゅうぴゅう | pyuupyuu | whistling
+ぴゅっと | pyutto | whoosh
+
+[similar]
+ぴ | pi | ぴゅ has a small ゅ at the bottom right. ぴ alone is just pi.
+
+[distractors]
+pya, pyo

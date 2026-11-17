@@ -1,0 +1,18 @@
+title: Hiragana MYO
+kana: みょ
+script: hiragana
+romaji: myo
+sound: one quick sound, "mi" and "yo" blended
+mnemonic_word: mi + yo
+mnemonic: み plus a small ょ makes みょ. Say mi and yo together as one quick sound: myo!
+
+[words]
+みょうじ | myouji | family name
+みょうにち | myounichi | tomorrow (formal)
+みょうが | myouga | Japanese ginger
+
+[similar]
+み | mi | みょ has a small ょ at the bottom right. み alone is just mi.
+
+[distractors]
+mya, myu

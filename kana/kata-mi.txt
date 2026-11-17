@@ -1,0 +1,15 @@
+title: Katakana MI
+kana: ミ
+script: katakana
+romaji: mi
+sound: like the "mee" in meet
+mnemonic_word: a music staff
+mnemonic: Picture a music staff for mi. Now watch ミ get written on it!
+
+[words]
+ミルク | miruku | milk
+ミス | misu | mistake
+ミニ | mini | mini
+
+[distractors]
+ma, me

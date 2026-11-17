@@ -1,0 +1,5 @@
+hira-a.txt hira-i.txt hira-u.txt hira-e.txt hira-o.txt
+hira-ka.txt hira-ki.txt hira-ku.txt hira-ke.txt hira-ko.txt
+hira-sa.txt hira-shi.txt hira-su.txt hira-se.txt hira-so.txt
+hira-ta.txt hira-chi.txt hira-tsu.txt hira-te.txt hira-to.txt
+hira-na.txt hira-ni.txt hira-nu.txt hira-ne.txt hira-no.txt

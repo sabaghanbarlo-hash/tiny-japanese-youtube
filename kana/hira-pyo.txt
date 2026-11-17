@@ -1,0 +1,17 @@
+title: Hiragana PYO
+kana: ぴょ
+script: hiragana
+romaji: pyo
+sound: one quick sound, "pi" and "yo" blended
+mnemonic_word: pi + yo
+mnemonic: ぴ plus a small ょ makes ぴょ. Say pi and yo together as one quick sound: pyo!
+
+[words]
+ぴょんぴょん | pyonpyon | hopping
+ぴょん | pyon | hop
+
+[similar]
+ぴ | pi | ぴょ has a small ょ at the bottom right. ぴ alone is just pi.
+
+[distractors]
+pya, pyu

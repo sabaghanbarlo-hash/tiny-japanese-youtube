@@ -1,0 +1,15 @@
+title: Hiragana HI
+kana: ひ
+script: hiragana
+romaji: hi
+sound: like the "hee" in heel
+mnemonic_word: Smile
+mnemonic: ひ looks like a big smile. Hee hee hee!
+
+[words]
+ひと | hito | person
+ひかり | hikari | light
+ひだり | hidari | left
+
+[distractors]
+ha, fu

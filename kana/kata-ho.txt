@@ -1,0 +1,15 @@
+title: Katakana HO
+kana: ホ
+script: katakana
+romaji: ho
+sound: like the "ho" in hope
+mnemonic_word: a hot cup of tea
+mnemonic: Picture a hot cup of tea for ho. Now watch ホ get written on it!
+
+[words]
+ホテル | hoteru | hotel
+ホーム | hoomu | platform, home
+ホットドッグ | hottodoggu | hot dog
+
+[distractors]
+ha, he

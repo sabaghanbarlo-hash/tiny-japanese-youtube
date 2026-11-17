@@ -1,0 +1,18 @@
+title: Katakana TSU
+kana: ツ
+script: katakana
+romaji: tsu
+sound: like the "tsu" in tsunami
+mnemonic_word: a tsunami wave
+mnemonic: Picture a tsunami wave for tsu. Now watch ツ get written on it!
+
+[words]
+ツアー | tsuaa | tour
+ツナ | tsuna | tuna
+ツリー | tsurii | tree
+
+[similar]
+シ | shi | ツ has two strokes that stand upright. シ has two dots that lie sideways.
+
+[distractors]
+ta, te

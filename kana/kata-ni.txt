@@ -1,0 +1,15 @@
+title: Katakana NI
+kana: ニ
+script: katakana
+romaji: ni
+sound: like the "knee"
+mnemonic_word: a bent knee
+mnemonic: Picture a bent knee for ni. Now watch ニ get written on it!
+
+[words]
+ニュース | nyuusu | news
+ニット | nitto | knitwear
+メニュー | menyuu | menu
+
+[distractors]
+na, ne
