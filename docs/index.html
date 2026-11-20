@@ -36,12 +36,25 @@ a{color:var(--pink)}
 video.vert{max-width:340px}
 [hidden]{display:none!important}
 textarea.short{min-height:300px}
+.q-day{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--soft);margin:14px 0 2px}
+.q-row{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line)}
+.q-time{flex:none;width:74px;font-variant-numeric:tabular-nums;color:var(--soft);font-size:.9rem;padding-top:1px}
+.q-main{flex:1;min-width:0}.q-title{overflow-wrap:anywhere}
+.q-meta{font-size:.8rem;color:var(--soft);margin-top:2px}
+.q-ok{color:var(--ok)}.q-warn{color:var(--err)}
+.q-banner{margin:0 0 8px;font-weight:600}
 </style>
 </head>
 <body>
 <main>
 <h1>Tiny <span>Japanese</span> · YouTube Studio</h1>
 <p class="sub" id="sub"></p>
+<div class="card" id="queueCard">
+<div class="row" style="justify-content:space-between;margin-bottom:4px"><label style="margin:0">Up next <span class="hint" id="queueMeta" style="font-weight:400"></span></label><button class="ghost" id="queueRefresh" type="button">Refresh</button></div>
+<div id="queueList"><p class="hint">Loading the queue…</p></div>
+<div class="row" style="margin-top:10px"><button class="ghost" id="queueMore" type="button" hidden>Show all</button></div>
+<details id="heldBox" style="margin-top:12px" hidden><summary id="heldSum"></summary><div id="heldList"></div></details>
+</div>
 <div class="tabs"><button class="tab" id="tabS" type="button">Short</button><button class="tab" id="tabV" type="button">Long</button><button class="tab" id="tabT" type="button">Story</button></div>
 
 <div class="card">
@@ -418,6 +431,66 @@ $("run").onclick=async()=>{
   }catch(e){say(String(e.message||e),"err")}
   finally{btn.disabled=false}
 };
+
+/* ---- Up next: the publishing queue from schedule.json ---- */
+(function(){
+const TOK="tjy_token",KIND={short:"Short",lesson:"Long video",story:"Story"};
+let all=[],held=[],paused=false,minLead=20,showAll=false;
+const titleOf=i=>i.title||(i.file.replace(/\.txt$/,"").replace(/^\d{8,12}-/,"").replace(/-/g," ").replace(/^./,c=>c.toUpperCase()));
+const stem=i=>i.file.replace(/\.txt$/,"");
+const day=d=>{const t=new Date(),n=new Date(t.getFullYear(),t.getMonth(),t.getDate()),x=new Date(d.getFullYear(),d.getMonth(),d.getDate()),k=Math.round((x-n)/864e5);
+  const s=d.toLocaleDateString([],{weekday:"short",month:"short",day:"numeric"});return k===0?"Today · "+s:k===1?"Tomorrow · "+s:s};
+const hm=d=>d.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});
+const rel=ms=>{const m=Math.round(ms/6e4);if(m<60)return "in "+Math.max(m,1)+" min";const h=Math.round(m/60);return h<48?"in "+h+" h":"in "+Math.round(h/24)+" days"};
+async function loadSchedule(){
+  const tok=get(TOK);let r=null;
+  if(tok){try{r=await fetch(`${API}/contents/schedule.json?ref=${BRANCH}`,{headers:{Authorization:"Bearer "+tok,Accept:"application/vnd.github.raw+json"},cache:"no-store"});if(!r.ok)r=null}catch(e){r=null}}
+  if(!r)r=await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/schedule.json?t=${Date.now()}`,{cache:"no-store"});
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return r.json();
+}
+async function isUploaded(i){try{const r=await fetch("videos/"+stem(i)+".youtube.txt",{method:"HEAD",cache:"no-store"});return r.ok}catch(e){return false}}
+function render(){
+  const now=Date.now(),list=$("queueList");
+  const up=all.filter(i=>i.when>now);
+  const tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";
+  $("queueMeta").textContent=up.length?`· ${up.length} queued · times in ${tz.replace(/_/g," ")}`:"";
+  if(!up.length){list.innerHTML=(paused?'<p class="q-banner q-warn">Publishing is paused.</p>':"")+'<p class="hint">Nothing queued. Add items to <code>schedule.json</code>.</p>';$("queueMore").hidden=true}
+  else{
+    const shown=showAll?up:up.slice(0,8);let out=paused?'<p class="q-banner q-warn">Publishing is paused (<code>paused: true</code> in schedule.json). Nothing below will upload.</p>':"",last="";
+    shown.forEach(i=>{
+      const d=new Date(i.when),dl=day(d);if(dl!==last){out+=`<div class="q-day">${esc(dl)}</div>`;last=dl}
+      let st;
+      if(i.done)st='<span class="q-ok">Scheduled on YouTube</span>';
+      else if(i.when<now+minLead*6e4)st='<span class="q-warn">Too close to upload – set a new time</span>';
+      else st="Waiting to render";
+      out+=`<div class="q-row"><div class="q-time">${esc(hm(d))}</div><div class="q-main"><div class="q-title">${esc(titleOf(i))}</div><div class="q-meta">${esc(KIND[i.kind]||i.kind)} · ${st} · ${esc(rel(i.when-now))}</div></div></div>`});
+    list.innerHTML=out;
+    const more=$("queueMore");more.hidden=up.length<=8;more.textContent=showAll?"Show fewer":`Show all ${up.length}`;
+  }
+  const hb=$("heldBox");hb.hidden=!held.length;
+  if(held.length){$("heldSum").textContent=`On hold (${held.length}) – not publishing`;
+    $("heldList").innerHTML=held.map(i=>`<div class="q-row"><div class="q-time">${esc(new Date(i.when).toLocaleDateString([],{month:"short",day:"numeric"}))}</div><div class="q-main"><div class="q-title">${esc(titleOf(i))}</div><div class="q-meta">${esc(KIND[i.kind]||i.kind)}</div></div></div>`).join("")}
+}
+async function refresh(){
+  const btn=$("queueRefresh");btn.disabled=true;
+  try{
+    const s=await loadSchedule();paused=!!s.paused;minLead=s.min_lead_minutes||20;
+    const mk=(i,extra)=>Object.assign({},i,{when:Date.parse(i.publish_at)},extra);
+    const done=(s.already_uploaded_private||[]).map(i=>mk({kind:"lesson",file:(i.video_id||"x")+".txt",title:i.title,publish_at:i.publish_at},{done:true}));
+    const items=(s.items||[]).map(i=>mk(i));
+    held=(s.held_items||[]).map(i=>mk(i)).sort((a,b)=>a.when-b.when);
+    const now=Date.now();
+    await Promise.all(items.filter(i=>i.when>now).map(async i=>{i.done=await isUploaded(i)}));
+    all=[...done,...items].sort((a,b)=>a.when-b.when);
+    render();
+  }catch(e){$("queueList").innerHTML='<p class="q-warn">Couldn\'t load the queue ('+esc(String(e.message||e))+').</p>'}
+  finally{btn.disabled=false}
+}
+$("queueRefresh").onclick=refresh;
+$("queueMore").onclick=()=>{showAll=!showAll;render()};
+refresh();setInterval(refresh,5*60*1000);
+})();
 </script>
 </body>
 </html>
