@@ -81,3 +81,35 @@ cotton candy, ice cream, balloon, ticket, drink, bag, book, popcorn, plush (priz
 - New item: draw it in `_draw_item` and add it to `ITEMS` (and `EDIBLE` if it can be eaten).
 - New ride: moving scenery goes in `draw_dynamic`, rider position in `ride_pos`, spot in `RIDES`.
 - New verb: add the word to `VERBS`, then handle it in `Stage._one`.
+
+
+## Camera (`@camera`)
+
+By default the camera is a fixed wide shot. Put an `@camera` line before a direction or a spoken line to change it. Cuts are instant; pan, push and pull move smoothly. The subtitle card is never zoomed.
+
+```
+@camera wide                  # whole scene (default)
+@camera medium                # a little closer, centred on both characters
+@camera medium on Mika        # centred on one character
+@camera close on Alex         # close-up on a face and chest (use `close` alone to follow whoever is speaking)
+@camera two shot              # medium shot of both
+@camera pan to Alex           # smooth move (1.4 s) to a medium shot of Alex
+@camera push in on Mika       # slow 7 s zoom in (to 1.2x)
+@camera pull out              # smooth return to the wide shot
+```
+
+- Targets follow the characters while they walk.
+- A new `@scene` starts on the wide shot again (if the camera was zoomed in).
+- Zoomed shots are scaled up from the normal frame, so keep close-ups for short moments.
+
+Zoom levels are deliberately gentle: medium = 1.15x, close = 1.4x. Change `CAM_Z` in `story/acting.py` if you want them stronger.
+
+
+## Back to the viewer
+
+```
+> Mika faces away          # seen from behind: hair and back only, no face (also: turns away / looks away)
+> Mika turns around        # back to the front (also: faces front / faces us)
+```
+
+Characters keep speaking while turned away. Facial expressions are not visible from behind.

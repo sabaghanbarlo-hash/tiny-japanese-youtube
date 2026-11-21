@@ -7,7 +7,7 @@ wheel). Every frame asks Stage.state() what each character is doing. Places have
 Alex art as lesson.py, parameterised (walk cycle, waving arm, expressions, held item).
 """
 import functools, math, os, re
-from PIL import Image, ImageDraw, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageOps
 import atmos as AT
 import scenery as SC
 try:
@@ -20,18 +20,22 @@ SPEED = 380.0       # px / second when walking
 RUN_SPEED = 720.0
 EXPRS = {"neutral": "neutral", "confused": "confused", "puzzled": "confused", "nervous": "confused",
          "lost": "confused", "surprised": "surprised", "shocked": "surprised", "amazed": "surprised",
-         "happy": "happy", "excited": "happy", "smiling": "happy", "glad": "happy", "laughing": "happy",
-         "sad": "sad", "worried": "sad", "disappointed": "sad", "shy": "shy", "embarrassed": "shy"}
+         "happy": "happy", "excited": "excited", "smiling": "happy", "glad": "happy", "laughing": "laugh",
+         "sad": "sad", "disappointed": "sad", "shy": "shy", "embarrassed": "shy",
+         "worried": "worried", "anxious": "worried", "annoyed": "annoyed", "bored": "annoyed", "unimpressed": "annoyed",
+         "angry": "angry", "mad": "angry", "furious": "angry", "smirking": "smirk", "smug": "smirk", "cheeky": "smirk", "playful": "smirk",
+         "joyful": "joy", "delighted": "joy", "thrilled": "excited", "thinking": "thinking", "curious": "thinking", "determined": "determined", "serious": "determined"}
 
 # ------------------------------------------------------------------ items
 EDIBLE = {"cotton_candy", "ice_cream", "popcorn"}
-ITEMS = {"cotton_candy", "ice_cream", "balloon", "ticket", "drink", "bag", "book", "popcorn", "plush", "umbrella"}
+ITEMS = {"cotton_candy", "ice_cream", "balloon", "ticket", "drink", "bag", "book", "popcorn", "plush", "umbrella", "phone", "broom", "box", "cake_box"}
+RIGPROPS = {"phone", "broom", "box", "cake_box"}     # drawn by rigsvg (move with the hands), not by _draw_item
 ITEM_ALIASES = {"cotton candy": "cotton_candy", "candyfloss": "cotton_candy", "candy floss": "cotton_candy",
                 "fairy floss": "cotton_candy", "ice cream": "ice_cream", "icecream": "ice_cream", "ice-cream": "ice_cream",
                 "tickets": "ticket", "juice": "drink", "soda": "drink", "tea": "drink", "coffee": "drink", "cup": "drink",
                 "shopping bag": "bag", "gift": "bag", "present": "bag", "teddy": "plush", "teddy bear": "plush",
                 "prize": "plush", "stuffed animal": "plush", "toy": "plush", "bear": "plush", "plushie": "plush",
-                "balloons": "balloon", "brolly": "umbrella", "umbrellas": "umbrella", "rain umbrella": "umbrella", "parasol": "umbrella"}
+                "smartphone": "phone", "mobile": "phone", "cell phone": "phone", "food box": "box", "bento": "box", "parcel": "box", "cake": "cake_box", "cake box": "cake_box", "balloons": "balloon", "brolly": "umbrella", "umbrellas": "umbrella", "rain umbrella": "umbrella", "parasol": "umbrella"}
 
 
 def item_name(text):
@@ -93,6 +97,62 @@ def _names():
     return {k.lower(): k for k in L.CHARS}
 
 
+CAM_Z = {"wide": 1.0, "medium": 1.15, "close": 1.4}
+
+
+def parse_camera(text):
+    """'@camera ...' -> dict(z, tgt, dur). Cuts are instant; pan / push / pull move smoothly.
+    wide | medium [on X] | close [on X] | two shot | pan to X | push in [on X] | pull out.  X = a character, 'both' or 'speaker'."""
+    t = re.sub(r"\s+", " ", text.strip().lower())
+    who = {n.lower(): n for n in L.CHARS}
+
+    def tgt(s, default):
+        s = (s or "").strip()
+        if not s:
+            return default
+        if s in ("both", "them", "everyone", "all", "two", "both of them"):
+            return "both"
+        if s in ("speaker", "whoever speaks", "the speaker"):
+            return "speaker"
+        if s in who:
+            return who[s]
+        raise ValueError(f"camera: don't know '{s}'. Use {', '.join(L.CHARS)}, both or speaker. Example: @camera close on {next(iter(L.CHARS))}")
+    m = re.match(r"^(?:cut to )?(wide|medium|close)(?:[- ]?up)?(?: (?:on|of) (.+))?$", t)
+    if m:
+        return dict(z=CAM_Z[m[1]], tgt=tgt(m[2], "speaker" if m[1] == "close" else "both"), dur=0.0)
+    if t in ("two shot", "two-shot"):
+        return dict(z=CAM_Z["medium"], tgt="both", dur=0.0)
+    m = re.match(r"^pan(?: to)?(?: (.+))?$", t)
+    if m:
+        return dict(z=CAM_Z["medium"], tgt=tgt(m[1], "speaker"), dur=1.4)
+    m = re.match(r"^(?:push|zoom)(?: in)?(?: (?:on|to) (.+))?$", t)
+    if m:
+        return dict(z=1.2, tgt=tgt(m[1], "speaker"), dur=7.0)
+    if re.match(r"^(?:pull|zoom)(?: |-)?out$", t) or t in ("reset", "pull back"):
+        return dict(z=1.0, tgt="both", dur=2.0)
+    raise ValueError(f"camera: don't understand '{text}'. Try: wide | medium on Mika | close on Alex | two shot | pan to Alex | push in on both | pull out")
+
+
+def apply_camera(R, fr, seg, tt):
+    """Crop + scale the composed scene (characters, scenery) for the current camera move; no-op until a @camera line is used."""
+    stage = R.B["stage"]
+    if not stage.cam or seg["kind"] not in ("story", "act"):
+        return fr
+    z, cx, cy = stage.cam_state(tt, getattr(R, "_lay", {}), getattr(R, "_who", None))
+    if z <= 1.002:
+        return fr
+    W, H = fr.size
+    cw, ch = W / z, H / z
+    x0 = min(max(cx - cw / 2, 0), W - cw); y0 = min(max(cy - ch / 2, 0), H - ch)
+    out = fr.transform((W, H), Image.EXTENT, (x0, y0, x0 + cw, y0 + ch), Image.BICUBIC)
+    return out.filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2))
+
+
+BACK_ON = {"away", "back", "backwards", "away from us", "away from the camera", "back to us", "back to the camera", "to the window"}
+BACK_OFF = {"around", "front", "forward", "us", "the front", "the camera", "us again", "round", "to us"}
+GESTURES = {"point": "point", "shrug": "shrug", "think": "think", "bow": "bow", "cross": "cross", "cover": "cover", "phone": "phone",
+            "show": "show", "clasp": "clasp", "hips": "hips"}
+GESTURE_SECS = {"point": 1.8, "shrug": 1.6, "think": 2.4, "bow": 1.5, "cross": 2.4, "cover": 1.8, "phone": 5.0, "show": 2.2, "clasp": 2.0, "hips": 2.4}
 VERBS = {}
 for _v, _ws in {
     "enter": "enters enter", "walk": "walks walk goes go moves move steps step heads", "run": "runs run dashes dash hurries hurry rushes rush",
@@ -102,6 +162,9 @@ for _v, _ws in {
     "buy": "buys buy", "eat": "eats eat licks lick nibbles nibble", "drink": "drinks drink sips sip",
     "drop": "drops drop finishes finish puts put throws throw closes close folds fold", "give": "gives give hands hand passes pass shares share",
     "ride": "rides ride", "laugh": "laughs laugh giggles giggle", "nod": "nods nod", "cheer": "cheers cheer",
+    "point": "points point", "shrug": "shrugs shrug", "think": "thinks think ponders ponder", "bow": "bows bow", "cross": "crosses cross",
+    "cover": "covers cover", "phone": "phones phone calls call", "show": "shows show presents present", "clasp": "clasps clasp pleads plead",
+    "hips": "akimbo",
 }.items():
     for _w in _ws.split():
         VERBS[_w] = _v
@@ -119,20 +182,27 @@ def parse_dir(text):
         raise ValueError(f"can't read the stage direction '{text}'. Use e.g. 'Mika enters left', 'Alex walks to center', "
                          f"'Mika looks confused', 'Mika buys cotton candy', 'both ride the carousel', 'wait 1'")
     who = m[1].lower()
-    whos = list(L.CHARS) if who in ("both", "everyone", "they") else [names[who]]
+    whos = [n for n in L.CHARS if not L.CHARS[n].get("extra")] if who in ("both", "everyone", "they") else [names[who]]
     verb_w, arg = m[2].lower(), m[3].strip()
     if verb_w not in VERBS:
         raise ValueError(f"unknown action '{verb_w}' in '{text}'. Actions: enters, walks to, runs to, exits, looks <feeling>, faces, "
-                         f"waves, jumps, laughs, nods, cheers, holds/buys <item>, eats, drinks, drops, gives <item> to <name>, rides, wait")
+                         f"waves, jumps, laughs, nods, cheers, points, shrugs, thinks, bows, crosses arms, covers mouth, phones, shows, clasps hands, "
+                         f"puts hands on hips, holds/buys <item>, eats, drinks, drops, gives <item> to <name>, rides, wait")
     verb = VERBS[verb_w]
+    if verb == "drop" and verb_w in ("puts", "put") and re.search(r"hands?\s+on\s+(her\s+|his\s+|their\s+)?hips", arg, re.I):
+        verb, arg = "hips", ""
     if verb == "look":
         a = re.sub(r"^(at\s+)", "", arg, flags=re.I).strip()
         if arg.lower().startswith("at "):
             verb, arg = "face", a
+        elif a.lower() in BACK_ON | BACK_OFF:
+            verb, arg = "face", a.lower()
         else:
             if a.lower() not in EXPRS:
                 raise ValueError(f"unknown feeling '{arg}' in '{text}'. Feelings: {', '.join(sorted(set(EXPRS)))}")
             arg = a.lower()
+    elif verb == "hold" and re.search(r"phone.*\bear\b|\bear\b.*phone", arg, re.I):
+        verb, arg = "phone", ""
     elif verb in ("hold", "buy"):
         arg = item_name(arg)
     elif verb == "eat":
@@ -174,12 +244,15 @@ class Stage:
         self.moves, self.vis, self.expr, self.face = mk(), mk(), mk(), mk()
         self.wave, self.hop, self.item, self.eat, self.rides = mk(), mk(), mk(), mk(), mk()
         self.umb = mk()                              # umbrella in hand (separate from the item slot)
+        self.pose = mk()                             # (t0, t1, pose name): gestures held with a short ease in / out
+        self.back = mk()                             # (t, True/False): seen from behind (back to the viewer)
+        self.cam = []                                # camera keyframes (t, seconds to get there, zoom, target)
         self.weather, self.tod = None, None          # None | rain | storm | snow  /  None | morning | day | sunset | night
         self.explicit = dict(weather=False, tod=False, umb=False)
         self.has_rain, self.title = False, ""
         self.visits, self._scene_seen, self._w_mark = {}, None, None
         self.pops = []                               # (t0, t1, name, text)
-        self.start_vis = {nm: True for nm in L.CHARS}
+        self.start_vis = {nm: not L.CHARS[nm].get("extra") for nm in L.CHARS}      # supporting characters start off stage
         self.start_x = dict(self.home)
 
     # -- setup
@@ -196,6 +269,13 @@ class Stage:
                         if verb == "enter":
                             self.start_vis[nm] = False
                             self.start_x[nm] = self._off(nm, "left" if self.home[nm] < self.W / 2 else "right")
+                        elif L.CHARS[nm].get("extra"):
+                            self.start_vis[nm] = True          # first used without entering: already standing there
+            sp = ln.get("speaker")
+            if sp in L.CHARS and sp not in seen:
+                seen.add(sp)
+                if L.CHARS[sp].get("extra"):
+                    self.start_vis[sp] = True
 
     def _off(self, nm, side):
         return -L.SPRITE_W if side == "left" else self.W + L.SPRITE_W
@@ -297,6 +377,48 @@ class Stage:
                 it, bite = name, b
         return it, bite
 
+    def set_camera(self, spec, t):
+        if self.cam and self.cam[-1][0] > t:
+            t = self.cam[-1][0]
+        self.cam.append((t, spec["dur"], spec["z"], spec["tgt"]))
+
+    def cam_reset(self, t):
+        """A new place starts on a wide shot (only if the camera is still zoomed in)."""
+        if self.cam and self.cam[-1][2] > 1.0:
+            self.set_camera(dict(z=1.0, tgt="both", dur=0.0), t)
+
+    def cam_state(self, tt, lay, who=None):
+        """(zoom, centre x, centre y) of the camera at time tt; targets follow the characters while they move."""
+        W, H = L.W, L.H
+
+        def centre(tgt):
+            if tgt == "speaker":
+                tgt = who if who in lay else "both"
+            if tgt in lay:
+                return lay[tgt]["cx"], lay[tgt]["fy"]
+            if not lay:
+                return W / 2, H / 2
+            return sum(e["cx"] for e in lay.values()) / len(lay), sum(e["fy"] for e in lay.values()) / len(lay)
+
+        def key(i, t):
+            t0, dur, z, tgt = self.cam[i]
+            pz, px, py = (1.0, W / 2, H / 2) if i == 0 else key(i - 1, t0)
+            qx, qy = centre(tgt)
+            u = 1.0 if dur <= 0 else _smooth(max(0.0, min(1.0, (t - t0) / dur)))
+            return pz + (z - pz) * u, px + (qx - px) * u, py + (qy - py) * u
+        idx = -1
+        for i, k in enumerate(self.cam):
+            if k[0] <= tt:
+                idx = i
+        return (1.0, W / 2, H / 2) if idx < 0 else key(idx, tt)
+
+    def pose_at(self, nm, t):
+        """(pose name, blend 0..1) while a gesture is on, else None. The blend eases in and out over 0.3 s."""
+        for t0, t1, name in reversed(self.pose[nm]):
+            if t0 <= t < t1:
+                return name, _smooth(max(0.0, min((t - t0) / 0.3, (t1 - t) / 0.3, 1.0)))
+        return None
+
     def state(self, nm, t):
         speed = 0.0
         for t0, t1, x0, x1 in self.moves[nm]:
@@ -310,7 +432,8 @@ class Stage:
                     wave=any(a <= t < b for a, b in self.wave[nm]), hop=hop, ride=ride,
                     pop=next((txt for a, b, n, txt in self.pops if n == nm and a <= t < b), None),
                     expr=self._last(self.expr[nm], t, "neutral"), face=face, mirror=(face != self.dflt_face[nm]),
-                    item=item, bite=bite, eating=any(a <= t < b for a, b in self.eat[nm]), umb=self._last(self.umb[nm], t, False))
+                    item=item, bite=bite, eating=any(a <= t < b for a, b in self.eat[nm]), umb=self._last(self.umb[nm], t, False),
+                    pose=self.pose_at(nm, t), back=self._last(self.back[nm], t, False))
 
     # -- compile directives into keyframes
     def _target(self, nm, arg, t):
@@ -369,6 +492,7 @@ class Stage:
                 if (not self.vis_at(nm, t)) or x_now < -L.SPRITE_W * 0.5 or x_now > self.W + L.SPRITE_W * 0.5:
                     self.moves[nm].append((t, t, x_now, self._off(nm, side)))   # start from off-screen
                     self.vis[nm].append((t, True))
+                    self.back[nm].append((t, False))      # a character walking in faces the viewer again
                 d = self._move(nm, t, dest)
                 end = t + d
                 dur = max(dur, d)
@@ -391,6 +515,8 @@ class Stage:
                 dur = max(dur, d)
             elif verb == "look":
                 self.expr[nm].append((t, EXPRS[arg])); dur = max(dur, 1.3)
+            elif verb == "face" and arg.lower().strip() in BACK_ON | BACK_OFF:
+                self.back[nm].append((t, arg.lower().strip() in BACK_ON)); dur = max(dur, 0.5)
             elif verb == "face":
                 a = arg.lower().strip()
                 names = _names()
@@ -401,6 +527,13 @@ class Stage:
                 else:
                     raise ValueError(f"'{text}': face left, right or a name")
                 self.face[nm].append((t, f)); dur = max(dur, 0.4)
+            elif verb in GESTURES:
+                mm = re.search(r"\bfor\s+([\d.]+)", arg)
+                secs = float(mm[1]) if mm else GESTURE_SECS[GESTURES[verb]]
+                self.pose[nm].append((t, t + secs, GESTURES[verb]))
+                if GESTURES[verb] == "phone":
+                    self.item[nm].append((t, "phone", 0)); self.item[nm].append((t + secs, None, 0))
+                dur = max(dur, 0.7 if GESTURES[verb] != "bow" else secs)    # the gesture goes on while the next line is spoken
             elif verb == "wave":
                 self.wave[nm].append((t, t + 1.6)); dur = max(dur, 1.6)
             elif verb == "hop":
@@ -409,7 +542,7 @@ class Stage:
                 self.hop[nm].append((t, t + 0.8, 150)); self.expr[nm].append((t, "happy")); self.wave[nm].append((t, t + 1.4))
                 dur = max(dur, 1.4)
             elif verb == "laugh":
-                self.expr[nm].append((t, "happy"))
+                self.expr[nm].append((t, "laugh")); self.expr[nm].append((t + 1.3, "happy"))
                 self.hop[nm].append((t, t + 0.4, 40)); self.hop[nm].append((t + 0.45, t + 0.85, 40)); dur = max(dur, 1.3)
             elif verb == "nod":
                 self.hop[nm].append((t, t + 0.35, 20)); self.hop[nm].append((t + 0.4, t + 0.75, 20)); dur = max(dur, 0.9)
@@ -477,17 +610,22 @@ class Stage:
 
     def line(self, speaker, a, b):
         """The speaker turns to the other visible character (and vice versa) when a line starts."""
-        for other in L.CHARS:
-            if other != speaker and self.vis_at(other, a) and self.vis_at(speaker, a):
-                xs, xo = self.x_at(speaker, a), self.x_at(other, a)
-                if abs(xs - xo) > 5:
-                    self.face[speaker].append((a, 1 if xo > xs else -1))
-                    self.face[other].append((a, 1 if xs > xo else -1))
+        if not self.vis_at(speaker, a):
+            return
+        xs = self.x_at(speaker, a)
+        others = [o for o in L.CHARS if o != speaker and self.vis_at(o, a) and abs(self.x_at(o, a) - xs) > 5]
+        if others:
+            near = min(others, key=lambda o: abs(self.x_at(o, a) - xs))          # the speaker turns to the nearest listener
+            self.face[speaker].append((a, 1 if self.x_at(near, a) > xs else -1))
+        for other in others:                                                       # everyone else turns to the speaker
+            self.face[other].append((a, 1 if xs > self.x_at(other, a) else -1))
 
 
 def story_line(tr, stage, mark, ln, prev):
     """Directions (as animated 'act' segments), then the spoken line. Returns the current scene."""
     prev_box = [prev]
+    if prev and ln.get("scene") and ln["scene"] != prev:
+        stage.cam_reset(tr.t)
 
     def run(items, cur):
         group = []
@@ -513,6 +651,9 @@ def story_line(tr, stage, mark, ln, prev):
             elif it[0] in ("weather", "time"):
                 flush(cur)
                 stage.set_atmos(it[0], it[1])
+            elif it[0] == "camera":
+                flush(cur)
+                stage.set_camera(it[1], tr.t)
             else:
                 group.append((it[1], it[2]))
         flush(cur)
@@ -699,13 +840,17 @@ _WARNED = set()
 _RIG_CACHE = {}
 
 
-def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t):
+def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t, pose=None, pk=1.0, back=False):
     w, h = int(L.SPRITE_W * out), int(L.SPRITE_H * out * 960 / 760)
-    held = bool(item or umb) and not arm
-    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h)
+    prop = item if item in RIGPROPS else None
+    if prop:
+        item = None
+    held = bool(item or umb or prop) and not arm
+    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h, pose, pk, prop, back)
+    held = held and bool(item or umb)
     if im is not None and held:
         # held item / folded umbrella: drawn with the original helpers on a 2x layer (smooth edges), at the rig's right hand
-        hx, hy = RS.held_hand(walk)
+        hx, hy = RS.hand_B(walk, pose, pk)
         kk = 2.0 * w / 583.0
         layer = Image.new("RGBA", (2 * w, 2 * h), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
         ox, oy = hx - 383 + 12, hy - 650 + 10
@@ -721,19 +866,20 @@ def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t):
     return im
 
 
-def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False, t=0.0):
+def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False, t=0.0, pose=None, pk=1.0, back=False):
     """Rigged characters (separate head / eyes / mouth / two-joint arms / legs, see rigsvg.py).
     Same call as before (plus the time t); falls back to the classic drawing if rigsvg or resvg is unavailable."""
     if RIG_SVG and RS is not None:
         try:
             tq = round(t * 12) / 12
-            key = (name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq)
+            pk = round(float(pk) * 10) / 10
+            key = (name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back)
             im = _RIG_CACHE.get(key)
             if im is None:
-                im = _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq)
+                im = _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back)
                 if im is None:
                     raise ValueError("no rig for this character")
-                if len(_RIG_CACHE) > 48:
+                if len(_RIG_CACHE) > 160:
                     _RIG_CACHE.pop(next(iter(_RIG_CACHE)))
                 _RIG_CACHE[key] = im
             return im
@@ -1057,10 +1203,12 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         sp_k = max(0.6, st["speed"] / SPEED) if st["walking"] else 1.0
         walk = (0, 1, 0, 3)[int(tt * 7 * sp_k) % 4] if st["walking"] else 0
         arm = (1 + int(tt * 5) % 2) if st["wave"] else 0
-        mth = int(mouth) if speaking else (1 if st["eating"] and int(tt * 4) % 2 else 0)
+        mth = int(mouth) if speaking else (1 + int(tt * 8) % 2 if st["expr"] == "laugh" else (1 if st["eating"] and int(tt * 4) % 2 else 0))
         has_umb = bool(st.get("umb"))
         is_open = has_umb and rainy
-        s = rig(nm, mth, blink, st["expr"], walk, arm, L.STAGE_OUT, st["item"], min(3, st["bite"]), has_umb and not is_open, t=tt)
+        pz = st.get("pose")
+        s = rig(nm, mth, blink, st["expr"], walk, arm, L.STAGE_OUT, st["item"], min(3, st["bite"]), has_umb and not is_open, t=tt,
+                pose=(pz[0] if pz else None), pk=(pz[1] if pz else 1.0), back=st.get("back", False))
         if st["mirror"]:
             s = ImageOps.mirror(s)
         if st["walking"]:
@@ -1075,6 +1223,7 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         y0 = SOLE_Y - (s.height - _sole_pad(nm))           # sprite top when the soles are on the ground
         lay.append(dict(nm=nm, st=st, s=s, x=int(st["x"] - s.width // 2), y=int(y0 - bob), y0=int(y0),
                         cx=st["x"], mirror=st["mirror"], open=is_open, speaking=speaking))
+    R._lay = {e["nm"]: dict(cx=e["cx"], fy=e["y"] + 0.42 * e["s"].height) for e in lay}      # where the camera aims (face / chest)
     shelters = AT.draw_umbrellas(fr, lay) if rainy else []
     markers = []
     for e in lay:

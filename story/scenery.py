@@ -28,6 +28,9 @@ SCENES = {
     "schoolyard": dict(top=(176, 220, 250), bot=(234, 246, 240), floor=(214, 196, 160), table=(150, 200, 120), edge=(104, 156, 84)),
     "festival": dict(top=(24, 26, 64), bot=(96, 56, 104), floor=(96, 72, 84), table=(186, 70, 70), edge=(130, 48, 56)),
     "busstop": dict(top=(200, 214, 232), bot=(232, 238, 244), floor=(96, 98, 110), table=(190, 190, 196), edge=(150, 150, 160)),
+    "apartment": dict(top=(240, 230, 212), bot=(232, 218, 194), floor=(190, 150, 112), table=(206, 170, 128), edge=(160, 124, 92)),
+    "stall": dict(top=(176, 214, 240), bot=(244, 236, 214), floor=(186, 170, 150), table=(170, 150, 120), edge=(128, 110, 86)),
+    "sushi": dict(top=(252, 238, 214), bot=(244, 224, 196), floor=(176, 128, 92), table=(196, 150, 108), edge=(150, 108, 76)),
 }
 KEYWORDS = {
     "town": ["まち", "町", "しょうてんがい", "商店街", "パンや", "パン屋", "bakery", "vending", "shopping street", "flower shop", "town"],
@@ -39,6 +42,9 @@ KEYWORDS = {
     "schoolyard": ["こうてい", "校庭", "うんどうかい", "運動会", "schoolyard", "school gate", "sports day", "recess"],
     "festival": ["まつり", "祭り", "はなび", "花火", "たこやき", "きんぎょ", "festival", "fireworks", "yukata", "takoyaki", "goldfish"],
     "busstop": ["バスてい", "バス停", "バス", "bus stop", "bus"],
+    "apartment": ["アパート", "apartment", "living room"],
+    "stall": ["やたい", "屋台", "たまごやき", "street stall", "food stall"],
+    "sushi": ["かいてんずし", "回転寿司", "conveyor belt sushi", "sushi train"],
 }
 ALIASES = {
     "town": "town", "shopping street": "town", "downtown": "town", "main street": "town", "village": "town", "neighborhood": "town",
@@ -49,6 +55,9 @@ ALIASES = {
     "schoolyard": "schoolyard", "school yard": "schoolyard", "school gate": "schoolyard", "playground": "schoolyard",
     "bus stop": "busstop", "busstop": "busstop", "bus station": "busstop",
     "festival": "festival", "matsuri": "festival", "fireworks": "festival", "summer festival": "festival",
+    "apartment": "apartment", "flat": "apartment", "living room": "apartment",
+    "stall": "stall", "food stall": "stall", "street stall": "stall", "street food": "stall",
+    "sushi": "sushi", "conveyor belt sushi": "sushi", "sushi train": "sushi", "sushi restaurant": "sushi",
 }
 LANDMARKS = {
     "town": {"vending machine": 0.12, "bakery": 0.34, "fruit shop": 0.58, "flower shop": 0.82},
@@ -60,6 +69,9 @@ LANDMARKS = {
     "schoolyard": {"gate": 0.11, "door": 0.5, "flagpole": 0.86},
     "festival": {"takoyaki stall": 0.25, "goldfish stall": 0.5, "shaved ice stall": 0.75},
     "busstop": {"bus stop": 0.35, "bench": 0.38, "sign": 0.62, "bus": 0.82},
+    "apartment": {"door": 0.12, "clock": 0.26, "kitchen": 0.45, "table": 0.47, "sliding doors": 0.75, "plant": 0.95},
+    "stall": {"shop": 0.12, "stall": 0.5, "counter": 0.5, "tree": 0.74, "restaurant": 0.88},
+    "sushi": {"door": 0.08, "window": 0.14, "menu": 0.5, "counter": 0.5, "belt": 0.5},
 }
 
 
@@ -410,8 +422,124 @@ def _busstop(d, rng):
         d.ellipse((wx - 50, 730, wx + 50, 830), fill=(40, 40, 46)); d.ellipse((wx - 22, 758, wx + 22, 802), fill=(170, 174, 186))
 
 
+
+# ------------------------------------------------------------------ v3 places: furnished apartment, street food stall, conveyor-belt sushi
+def _apartment(d, rng):
+    W = L.W
+    d.rectangle((0, 0, W, 800), fill=(238, 224, 198))
+    d.rectangle((0, 764, W, 800), fill=(200, 172, 138))                                           # skirting board
+    d.pieslice((820, -90, 1100, 90), 0, 180, fill=(255, 250, 232), outline=(214, 200, 170), width=4)   # ceiling light
+    # entrance door + step + shoes
+    d.rounded_rectangle((80, 170, 340, 770), radius=14, fill=(196, 160, 124), outline=(150, 116, 86), width=8)
+    d.rounded_rectangle((110, 210, 310, 420), radius=10, outline=(160, 126, 94), width=6); d.rounded_rectangle((110, 450, 310, 720), radius=10, outline=(160, 126, 94), width=6)
+    d.ellipse((290, 480, 316, 506), fill=(236, 214, 130))
+    d.rectangle((40, 766, 390, 800), fill=(150, 124, 100))
+    for sx, c in ((90, (210, 96, 96)), (160, (70, 70, 84))):
+        d.rounded_rectangle((sx, 744, sx + 56, 768), radius=10, fill=c)
+    # wall clock + calendar
+    d.ellipse((430, 120, 560, 250), fill=(255, 255, 252), outline=(110, 90, 80), width=8)
+    d.line([(495, 185), (495, 140)], fill=(70, 60, 60), width=6); d.line([(495, 185), (528, 200)], fill=(70, 60, 60), width=6)
+    d.rectangle((600, 170, 700, 300), fill=(255, 255, 250), outline=(190, 160, 130), width=5); d.rectangle((600, 170, 700, 205), fill=(224, 92, 92))
+    for gy in range(222, 292, 22):
+        for gx in range(612, 690, 22):
+            d.rectangle((gx, gy, gx + 12, gy + 10), fill=(170, 170, 180))
+    # kitchenette: wall cabinets, counter, sink
+    d.rectangle((760, 110, 1060, 290), fill=(224, 206, 176), outline=(176, 150, 116), width=5)
+    d.line([(910, 110), (910, 290)], fill=(176, 150, 116), width=5)
+    d.rectangle((888, 220, 898, 262), fill=(150, 130, 100)); d.rectangle((922, 220, 932, 262), fill=(150, 130, 100))
+    d.rectangle((760, 520, 1060, 770), fill=(226, 212, 186), outline=(176, 150, 116), width=5)
+    d.rectangle((748, 500, 1072, 530), fill=(196, 196, 204)); d.rounded_rectangle((830, 504, 960, 524), radius=8, fill=(160, 166, 178))
+    d.line([(1000, 500), (1000, 450), (1030, 450)], fill=(150, 154, 166), width=7)
+    d.line([(910, 530), (910, 770)], fill=(176, 150, 116), width=4)
+    # green sliding doors with a poster
+    for k in range(4):
+        x = 1130 + k * 160
+        d.rectangle((x, 140, x + 156, 770), fill=(124, 174, 118), outline=(236, 228, 204), width=8)
+        d.rectangle((x + 14, 154, x + 142, 756), outline=(96, 148, 94), width=3)
+    d.rectangle((1250, 220, 1350, 360), fill=(255, 250, 238), outline=(176, 150, 116), width=4); d.ellipse((1272, 244, 1328, 300), fill=(250, 190, 120))
+    # low table with laptop + cup, cushion, plant
+    d.rounded_rectangle((690, 640, 1110, 676), radius=12, fill=(176, 126, 90)); d.rectangle((720, 676, 746, 770), fill=(140, 100, 72)); d.rectangle((1054, 676, 1080, 770), fill=(140, 100, 72))
+    d.polygon([(800, 640), (940, 640), (962, 566), (820, 566)], fill=(214, 218, 226), outline=(150, 154, 166)); d.rectangle((790, 636, 950, 644), fill=(170, 174, 186))
+    d.rounded_rectangle((1010, 616, 1046, 642), radius=6, fill=(255, 255, 252), outline=(190, 180, 170), width=3)
+    d.ellipse((560, 712, 700, 764), fill=(226, 120, 120), outline=(176, 84, 84), width=4)
+    d.rectangle((1816, 660, 1872, 770), fill=(176, 120, 90))
+    for ang, ln in ((-40, 150), (-10, 190), (20, 170), (50, 130)):
+        ex, ey = 1844 + ln * math.sin(math.radians(ang)) * 0.55, 660 - ln * math.cos(math.radians(ang))
+        d.line([(1844, 664), (ex, ey)], fill=(70, 130, 84), width=6); d.ellipse((ex - 34, ey - 22, ex + 34, ey + 22), fill=(92, 164, 104))
+
+
+def _stall(d, rng):
+    W = L.W
+    _skyline(d, rng, 800, [(214, 206, 196), (226, 214, 190), (204, 200, 206), (232, 220, 204)], 150, 280)
+    # shop fronts left and right
+    d.rectangle((0, 250, 470, 800), fill=(218, 196, 164)); d.rectangle((40, 330, 430, 770), fill=(120, 96, 80))
+    for k in range(8):
+        d.polygon([(30 + k * 52, 300), (82 + k * 52, 300), (92 + k * 52, 350), (20 + k * 52, 350)], fill=(222, 84, 76) if k % 2 == 0 else (252, 248, 240))
+    L.sign(d, 235, 200, 330, 70, "ようしょく", (90, 70, 64), size=40)
+    d.rectangle((1450, 250, W, 800), fill=(204, 214, 190)); d.rectangle((1500, 330, 1880, 770), fill=(110, 100, 90))
+    L.window(d, 1540, 380, 300, 300)
+    L.sign(d, 1690, 200, 330, 70, "しょくどう", (70, 110, 90), size=40)
+    # ginkgo tree
+    d.rectangle((1396, 400, 1426, 800), fill=(110, 84, 66))
+    for cx, cy, r in ((1410, 330, 150), (1320, 400, 110), (1500, 400, 110), (1410, 250, 100)):
+        d.ellipse((cx - r, cy - r * 0.8, cx + r, cy + r * 0.8), fill=(244, 196, 64))
+    # the stall: posts, striped awning, counter with egg rolls, lanterns
+    for px in (590, 1330):
+        d.rectangle((px, 400, px + 22, 800), fill=(120, 84, 62))
+    n, sw = 12, 760 / 12
+    for j in range(n):
+        xa = 580 + j * sw
+        d.polygon([(xa, 400), (xa + sw, 400), (xa + sw + 8, 500), (xa - 8, 500)], fill=(222, 84, 76) if j % 2 == 0 else (252, 248, 240))
+    d.rectangle((570, 386, 1350, 408), fill=(150, 100, 70))
+    L.sign(d, 960, 300, 440, 76, "たまごやき", (196, 70, 60), size=46)
+    d.rectangle((600, 640, 1320, 800), fill=(150, 104, 76)); d.rectangle((590, 616, 1330, 650), fill=(190, 140, 100))
+    for j in range(6):
+        d.rounded_rectangle((690 + j * 86, 586, 770 + j * 86, 622), radius=12, fill=(244, 200, 84), outline=(214, 160, 50), width=3)
+    d.rectangle((650, 560, 1270, 580), fill=(196, 196, 204))
+    for lx in (520, 1400):
+        d.line([(lx, 150), (lx, 250)], fill=(110, 84, 70), width=5); d.ellipse((lx - 40, 240, lx + 40, 360), fill=(232, 80, 68))
+        d.line([(lx - 38, 300), (lx + 38, 300)], fill=(255, 214, 150), width=3)
+    for _ in range(70):                                                                        # fallen leaves along the kerb
+        x, y = rng.randint(0, W), rng.randint(764, 798)
+        d.ellipse((x, y, x + rng.randint(10, 18), y + rng.randint(5, 9)), fill=rng.choice(((244, 196, 64), (232, 160, 50), (214, 120, 40))))
+
+
+def _sushi(d, rng):
+    W = L.W
+    d.rectangle((0, 0, W, 800), fill=(246, 228, 196))
+    d.rectangle((0, 520, W, 800), fill=(214, 176, 132))
+    d.rectangle((0, 510, W, 526), fill=(150, 108, 76))
+    L.window(d, 90, 150, 360, 300)
+    d.ellipse((1640, 130, 1780, 270), fill=(255, 255, 252), outline=(110, 90, 80), width=8)
+    d.line([(1710, 200), (1710, 150)], fill=(70, 60, 60), width=6); d.line([(1710, 200), (1744, 214)], fill=(70, 60, 60), width=6)
+    for k, (x, label) in enumerate(((560, "さけ"), (760, "まぐろ"), (960, "えび"), (1160, "たまご"), (1360, "うなぎ"))):
+        d.rectangle((x - 70, 150, x + 70, 330), fill=(255, 250, 238), outline=(150, 108, 76), width=5)
+        d.text((x, 240), label, font=L.font(44), fill=(120, 60, 50), anchor="mm")
+        d.ellipse((x - 34, 160, x + 34, 200), fill=[(244, 140, 120), (214, 70, 80), (250, 170, 120), (250, 214, 100), (140, 100, 80)][k])
+    d.rounded_rectangle((120, 566, 1800, 596), radius=10, fill=(176, 182, 196), outline=(130, 136, 150), width=4)      # belt rail
+    d.rectangle((100, 596, 1820, 644), fill=(190, 140, 100)); d.rectangle((100, 644, 1820, 780), fill=(130, 90, 64))
+    for x in range(160, 1800, 220):
+        d.rectangle((x, 660, x + 150, 760), outline=(104, 72, 52), width=4)
+
+
+def _sushi_belt(fr, tt):
+    """Plates ride the belt (drawn every frame, behind the characters)."""
+    d = ImageDraw.Draw(fr)
+    cols = [(244, 140, 120), (250, 190, 110), (236, 236, 230), (150, 200, 150), (240, 120, 140)]
+    step, shift = 150, tt * 70
+    base = int(shift // step); off = shift % step
+    for k in range(-1, L.W // step + 3):
+        x = int(k * step - off) + 140; c = cols[(k + base) % len(cols)]
+        if x < 130 or x > 1790:
+            continue
+        d.ellipse((x - 46, 566, x + 46, 590), fill=(250, 250, 252), outline=(176, 176, 186), width=2)
+        d.rounded_rectangle((x - 34, 556, x + 34, 578), radius=10, fill=(255, 255, 252))
+        d.rounded_rectangle((x - 38, 542, x + 38, 566), radius=10, fill=c)
+
+
 DRAW = {"town": _town, "mountain": _mountain, "river": _river, "train": _train, "bedroom": _bedroom, "kitchen": _kitchen,
-        "schoolyard": _schoolyard, "festival": _festival, "busstop": _busstop}
+        "schoolyard": _schoolyard, "festival": _festival, "busstop": _busstop,
+        "apartment": _apartment, "stall": _stall, "sushi": _sushi}
 BIRD_SCENES = {"park", "sakura", "beach", "town", "mountain", "river", "schoolyard", "shrine"}
 
 
@@ -433,6 +561,8 @@ def dynamic(fr, scene, tt, seg):
         _fireworks(fr, tt)
     elif scene == "kitchen":
         _steam(fr, tt)
+    elif scene == "sushi":
+        _sushi_belt(fr, tt)
     if scene in BIRD_SCENES and seg.get("tod") != "night":
         import atmos
         kind, k = atmos.weather_state(seg, tt)
