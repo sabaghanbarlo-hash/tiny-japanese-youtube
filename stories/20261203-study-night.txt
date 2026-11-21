@@ -1,0 +1,67 @@
+title: Study Night
+scene: apartment
+
+[story]
+@time night
+@scene apartment
+> Mika enters left
+& Alex enters right
+> Alex looks worried
+Alex: あした、にほんごの しけんが ある……。 | I have a Japanese test tomorrow... | Ashita, nihongo no shiken ga aru...
+> Mika looks happy
+Mika: だいじょうぶ。 いっしょに べんきょうしよう。 | It's okay. Let's study together. | Daijoubu. Issho ni benkyou shiyou.
+> Alex thinks
+Alex: ありがとう。 まず、かんじを れんしゅうしたい。 | Thanks. First, I want to practice kanji. | Arigatou. Mazu, kanji o renshuu shitai.
+> Mika points right
+Mika: じゃあ、もんだい。 「やま」は なんですか。 | Okay, a question. What is "yama"? | Jaa, mondai. "Yama" wa nan desu ka.
+> Alex looks excited
+Alex: わかる！ やまは「mountain」だ！ | I know! Yama is "mountain"! | Wakaru! Yama wa "mountain" da!
+> Mika laughs
+Mika: せいかい！ じゃあ、「かわ」は？ | Correct! Then, what about "kawa"? | Seikai! Jaa, "kawa" wa?
+> Alex looks confused
+Alex: えっと……「river」？ | Um... "river"? | Etto... "river"?
+> Mika cheers
+Mika: すごい！ ぜんぶ せいかい！ | Amazing! All correct! | Sugoi! Zenbu seikai!
+> Alex looks embarrassed
+Alex: でも、ねむい……。 もう こんな じかんだ。 | But I'm sleepy... It's already this late. | Demo, nemui... Mou konna jikan da.
+> Mika crosses arms
+Mika: だめ。 ねむいから、すこし やすもう。 | No. Since you're sleepy, let's rest a little. | Dame. Nemui kara, sukoshi yasumou.
+> Alex nods
+Alex: はい。 おやすみ、ミカ。 | Okay. Good night, Mika. | Hai. Oyasumi, Mika.
+@time morning
+> Alex looks excited
+Alex: おはよう！ きょうは しけんの ひだ！ | Good morning! Today is test day! | Ohayou! Kyou wa shiken no hi da!
+> Mika looks happy
+Mika: がんばって ね！ | Do your best! | Ganbatte ne!
+> Alex cheers
+Alex: うん！ いって きます！ | Yeah! I'm off! | Un! Itte kimasu!
+> Alex exits right
+Mika: いって らっしゃい！ | Take care! | Itte rasshai!
+
+[vocab]
+vocab: しけん | test / exam | shiken
+example: あした しけんが あります。 | I have a test tomorrow. | Ashita shiken ga arimasu.
+vocab: べんきょう | study | benkyou
+example: まいにち べんきょうします。 | I study every day. | Mainichi benkyou shimasu.
+vocab: れんしゅう | practice | renshuu
+example: かんじを れんしゅうします。 | I practice kanji. | Kanji o renshuu shimasu.
+vocab: ねむい | sleepy | nemui
+example: とても ねむいです。 | I'm very sleepy. | Totemo nemui desu.
+vocab: がんばる | to do one's best | ganbaru
+example: がんばって ください。 | Please do your best. | Ganbatte kudasai.
+
+[grammar]
+grammar: Verb stem + たい | Use this to say what you want to do
+example: かんじを れんしゅうしたい。 | I want to practice kanji. | Kanji o renshuu shitai.
+example: ラーメンが たべたい。 | I want to eat ramen. | Raamen ga tabetai.
+grammar: Reason + から | Use this to give a reason ("because ...")
+example: ねむいから、やすみます。 | I'm sleepy, so I'll rest. | Nemui kara, yasumimasu.
+example: あめだから、かさを もちます。 | It's raining, so I'll carry an umbrella. | Ame dakara, kasa o mochimasu.
+
+[quiz]
+quiz: What does しけん mean? | test | holiday | breakfast | A | しけん means test or exam.
+quiz: How do you say "I want to eat ramen"? | ラーメンを たべない | ラーメンが たべたい | ラーメンは たべた | B | Verb stem + たい means "want to".
+quiz: What does ねむいから、やすみます mean? | I'm sleepy, so I'll rest | I'm hungry, so I'll eat | I'm busy, so I'll work | A | から gives a reason.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

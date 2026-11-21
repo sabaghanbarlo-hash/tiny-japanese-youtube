@@ -1,0 +1,73 @@
+title: A Present for Mom
+scene: store
+
+[story]
+@scene store
+> Mika enters left
+& Alex enters right
+> Mika looks excited
+Mika: らいしゅう、ははが おおさかから くるの。 | Next week my mom is coming from Osaka. | Raishuu, haha ga Oosaka kara kuru no.
+> Alex looks curious
+Alex: じゃあ、おみやげを かおう！ | Then let's buy a souvenir! | Jaa, omiyage o kaou!
+> Hana enters right
+Hana: いらっしゃいませ。 なにを おさがしですか。 | Welcome. What are you looking for? | Irasshaimase. Nani o osagashi desu ka.
+> Mika bows
+Mika: ははに プレゼントを さがして います。 | I'm looking for a present for my mother. | Haha ni purezento o sagashite imasu.
+> Hana shows
+Hana: これは いかがですか。 きれいな ハンカチです。 | How about this? It's a pretty handkerchief. | Kore wa ikaga desu ka. Kirei na hankachi desu.
+> Mika looks happy
+Mika: かわいい！ いくらですか。 | Cute! How much is it? | Kawaii! Ikura desu ka.
+Hana: さんぜんえんです。 | It's three thousand yen. | Sanzen en desu.
+> Alex looks surprised
+Alex: ええっ、たかい！ | What, expensive! | Ee, takai!
+> Hana points right
+Hana: それでは、あれは どうですか。 せんごひゃくえんです。 | Then how about that one? It's fifteen hundred yen. | Sore dewa, are wa dou desu ka. Sengohyaku en desu.
+> Mika thinks
+Mika: こちらの ほうが やすいね。 これに します。 | This one is cheaper. I'll take this. | Kochira no hou ga yasui ne. Kore ni shimasu.
+> Mika holds the box
+Hana: ありがとうございます。 リボンを つけましょうか。 | Thank you. Shall I add a ribbon? | Arigatou gozaimasu. Ribon o tsukemashou ka.
+> Mika looks happy
+Mika: はい、おねがいします！ | Yes, please! | Hai, onegaishimasu!
+> Hana bows
+> Hana exits right
+@scene stall
+> Ono enters right
+> Alex looks excited
+Alex: ぼくは おのさんの たまごやきを おみやげに します！ | I'll bring Mr. Ono's tamagoyaki as a souvenir! | Boku wa Ono-san no tamagoyaki o omiyage ni shimasu!
+> Ono cheers
+Ono: おお、ありがとう！ ひとつ ひゃくごじゅうえんだよ。 | Oh, thank you! It's one hundred fifty yen each. | Oo, arigatou! Hitotsu hyakugojuu en da yo.
+Alex: じゃあ、みっつ ください。 | Then three, please. | Jaa, mittsu kudasai.
+> Ono shows
+Ono: よんひゃくごじゅうえんです。 | That's four hundred fifty yen. | Yonhyakugojuu en desu.
+> Mika laughs
+Mika: うちの おかあさん、たまごやき すきかな？ | I wonder if my mom likes tamagoyaki. | Uchi no okaasan, tamagoyaki suki kana?
+> Alex shrugs
+Alex: だれでも すきだよ！ | Everybody does! | Dare demo suki da yo!
+
+[vocab]
+vocab: おみやげ | souvenir | omiyage
+example: おみやげを かいます。 | I buy a souvenir. | Omiyage o kaimasu.
+vocab: いくら | how much | ikura
+example: これは いくらですか。 | How much is this? | Kore wa ikura desu ka.
+vocab: たかい | expensive / tall | takai
+example: この かばんは たかいです。 | This bag is expensive. | Kono kaban wa takai desu.
+vocab: やすい | cheap | yasui
+example: あの みせは やすいです。 | That shop is cheap. | Ano mise wa yasui desu.
+vocab: えん | yen | en
+example: ひゃくえんです。 | It's one hundred yen. | Hyaku en desu.
+
+[grammar]
+grammar: これ / それ / あれ | Use these to point at things: this, that near you, that over there
+example: これは いくらですか。 | How much is this? | Kore wa ikura desu ka.
+example: あれは なんですか。 | What is that over there? | Are wa nan desu ka.
+grammar: Number + えん | Use this to say prices
+example: せんえんです。 | It's one thousand yen. | Sen en desu.
+example: さんぜんえんです。 | It's three thousand yen. | Sanzen en desu.
+
+[quiz]
+quiz: What does いくら mean? | how much | where | when | A | いくら asks for a price.
+quiz: Which means "cheap"? | たかい | やすい | おもい | B | やすい means cheap.
+quiz: How do you say "It's one thousand yen"? | せんえんです | ひゃくえんです | いちえんです | A | せん is 1,000.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

@@ -1,0 +1,70 @@
+title: Where Is My Package?
+scene: apartment
+
+[story]
+@scene apartment
+> Mika enters left
+& Alex enters right
+> Mika looks worried
+> Mika phones for 6
+Mika: もしもし。 にもつが まだ とどいて いません。 | Hello. My package hasn't arrived yet. | Moshimoshi. Nimotsu ga mada todoite imasen.
+> Alex looks curious
+Alex: ミカ、だれに でんわして いるの？ | Mika, who are you calling? | Mika, dare ni denwa shite iru no?
+Mika: たくはいびんだよ。 きのう とどく よていだったの。 | The delivery company. It was scheduled to arrive yesterday. | Takuhaibin da yo. Kinou todoku yotei datta no.
+> Alex thinks
+Alex: ええと……なにを かったの？ | Um... what did you buy? | Eeto... nani o katta no?
+> Mika looks shy
+Mika: ひみつ！ | It's a secret! | Himitsu!
+> Hana enters left
+Hana: こんにちは。 たくはいびんです。 | Hello. Delivery. | Konnichiwa. Takuhaibin desu.
+> Mika looks surprised
+Mika: あっ、きた！ | Oh, it's here! | A, kita!
+Hana: おそく なって すみません。 おとなりの さかもとさんが あずかって いました。 | Sorry for the delay. Mr. Sakamoto next door was holding it. | Osoku natte sumimasen. Otonari no Sakamoto-san ga azukatte imashita.
+> Mika bows
+Mika: そうだったんですか。 ありがとうございます。 | I see. Thank you very much. | Sou datta n desu ka. Arigatou gozaimasu.
+> Hana shows
+Hana: ここに サインを おねがいします。 | Please sign here. | Koko ni sain o onegaishimasu.
+> Mika nods
+Mika: はい。 | Yes. | Hai.
+> Alex holds the box
+> Alex looks surprised
+Alex: おもい！ なにが はいって いるの？ | Heavy! What's inside? | Omoi! Nani ga haitte iru no?
+> Mika crosses arms
+Mika: ひみつって いったでしょ。 まだ あけないで ください。 | I said it's a secret. Please don't open it yet. | Himitsu tte itta desho. Mada akenaide kudasai.
+> Alex shrugs
+Alex: はい、はい。 | Yes, yes. | Hai, hai.
+> Hana exits left
+> Mika looks happy
+Mika: たんじょうびの プレゼントだよ。 アレックスの！ | It's a birthday present. For you, Alex! | Tanjoubi no purezento da yo. Arekkusu no!
+> Alex looks surprised
+Alex: ぼくの？ ぼくの たんじょうびは らいしゅうだよ！ | Mine? My birthday is next week! | Boku no? Boku no tanjoubi wa raishuu da yo!
+> Mika laughs
+Mika: だから、いま とどいて よかったの。 | That's why it's good it arrived now. | Dakara, ima todoite yokatta no.
+
+[vocab]
+vocab: にもつ | package / luggage | nimotsu
+example: おもい にもつを もちます。 | I carry a heavy package. | Omoi nimotsu o mochimasu.
+vocab: とどく | to arrive | todoku
+example: にもつが とどきました。 | The package arrived. | Nimotsu ga todokimashita.
+vocab: あずかる | to hold / keep for someone | azukaru
+example: となりの ひとが あずかって います。 | The neighbor is keeping it. | Tonari no hito ga azukatte imasu.
+vocab: おもい | heavy | omoi
+example: このはこは おもいです。 | This box is heavy. | Kono hako wa omoi desu.
+vocab: ひみつ | secret | himitsu
+example: これは ひみつです。 | This is a secret. | Kore wa himitsu desu.
+
+[grammar]
+grammar: まだ + Verb て form + いません | Use this to say something has not happened yet
+example: まだ とどいて いません。 | It hasn't arrived yet. | Mada todoite imasen.
+example: まだ たべて いません。 | I haven't eaten yet. | Mada tabete imasen.
+grammar: Verb ない form + で ください | Use this to say "please don't ..."
+example: あけないで ください。 | Please don't open it. | Akenaide kudasai.
+example: さわらないで ください。 | Please don't touch it. | Sawaranaide kudasai.
+
+[quiz]
+quiz: What does とどく mean? | to send | to arrive | to open | B | とどく means to arrive.
+quiz: How do you say "I haven't eaten yet"? | まだ たべて いません | もう たべました | たべないで ください | A | まだ + て form + いません means "not yet".
+quiz: What does あけないで ください mean? | Please open it | Please don't open it | Please buy it | B | ないで ください means "please don't".
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

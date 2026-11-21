@@ -1,0 +1,40 @@
+name: Check stories (no video)
+
+on:
+  workflow_dispatch:
+    inputs:
+      pattern:
+        description: "Story file pattern in stories/ (e.g. week-*.txt)"
+        required: true
+        default: "week-*.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Check every script builds (silent audio, no video)
+        env:
+          PATTERN: ${{ github.event.inputs.pattern }}
+        run: |
+          fail=0
+          for f in stories/$PATTERN; do
+            echo "== $f"
+            if python story/lesson.py "$f" -o /tmp/lint --dummy-audio --preview "/tmp/lint/$(basename "$f" .txt)" > /tmp/log.txt 2>&1; then
+              echo "OK $f"
+            else
+              echo "FAILED $f"; tail -8 /tmp/log.txt; fail=1
+            fi
+          done
+          exit $fail

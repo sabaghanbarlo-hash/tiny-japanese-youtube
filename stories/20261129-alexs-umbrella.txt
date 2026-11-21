@@ -1,0 +1,71 @@
+title: Alex's Umbrella
+scene: bus stop
+
+[story]
+@weather rain
+> Mika enters left
+> Mika opens the umbrella
+& Alex enters right
+> Alex looks sad
+Alex: あめだ！ かさが ない！ | It's raining! I don't have an umbrella! | Ame da! Kasa ga nai!
+> Mika looks happy
+Mika: わたしは かさが あるよ。 | I have an umbrella. | Watashi wa kasa ga aru yo.
+Alex: いっしょに はいっても いい？ | May I get under it with you? | Issho ni haittemo ii?
+> Alex walks to next to Mika
+Mika: いいよ。 どうぞ。 | Sure. Go ahead. | Ii yo. Douzo.
+> Alex looks happy
+Alex: ありがとう！ たすかった。 | Thanks! You saved me. | Arigatou! Tasukatta.
+> Mika looks worried
+Mika: でも、バスが こないね。 | But the bus isn't coming, is it. | Demo, basu ga konai ne.
+> Alex shrugs
+Alex: ひどい あめだね。 さむい……。 | What awful rain. I'm cold... | Hidoi ame da ne. Samui...
+> Mika points right
+Mika: あそこに カフェが あるよ。 あたたかい おちゃを のもう。 | There's a cafe over there. Let's drink some warm tea. | Asoko ni kafe ga aru yo. Atatakai ocha o nomou.
+> Mika closes the umbrella
+@scene cafe
+> Hana enters right
+Hana: いらっしゃいませ！ | Welcome! | Irasshaimase!
+Alex: あたたかい おちゃを ふたつ おねがいします。 | Two hot teas, please. | Atatakai ocha o futatsu onegaishimasu.
+> Hana bows
+Hana: かしこまりました。 すぐに おもちします。 | Certainly. I'll bring them right away. | Kashikomarimashita. Sugu ni omochi shimasu.
+> Alex looks happy
+Alex: ああ、あたたかい……。 | Ahh, so warm... | Aa, atatakai...
+> Mika looks surprised
+Mika: あっ、あめが やんだ！ | Oh, the rain stopped! | A, ame ga yanda!
+> Alex cheers
+Alex: よかった！ かえろう！ | Great! Let's go home! | Yokatta! Kaerou!
+> Hana shows
+Hana: あの、かさを わすれて いますよ！ | Excuse me, you forgot your umbrella! | Ano, kasa o wasurete imasu yo!
+> Mika covers her mouth
+> Mika looks embarrassed
+Mika: あっ！ すみません！ ありがとうございます！ | Oh! Sorry! Thank you so much! | A! Sumimasen! Arigatou gozaimasu!
+> Alex laughs
+Alex: ミカも わすれものを するんだね！ | So you forget things too, Mika! | Mika mo wasuremono o suru n da ne!
+
+[vocab]
+vocab: かさ | umbrella | kasa
+example: かさが あります。 | I have an umbrella. | Kasa ga arimasu.
+vocab: あめ | rain | ame
+example: きょうは あめです。 | It's rainy today. | Kyou wa ame desu.
+vocab: さむい | cold | samui
+example: きょうは さむいです。 | It's cold today. | Kyou wa samui desu.
+vocab: あたたかい | warm | atatakai
+example: あたたかい おちゃを のみます。 | I drink warm tea. | Atatakai ocha o nomimasu.
+vocab: やむ | to stop (rain) | yamu
+example: あめが やみました。 | The rain stopped. | Ame ga yamimashita.
+
+[grammar]
+grammar: Noun + が ある | Use this to say you have something or that something exists
+example: かさが ある。 | I have an umbrella. | Kasa ga aru.
+example: カフェが ある。 | There is a cafe. | Kafe ga aru.
+grammar: Verb て form + も いい | Use this to ask "may I ...?"
+example: はいっても いい？ | May I come in? | Haittemo ii?
+example: すわっても いいですか。 | May I sit down? | Suwattemo ii desu ka.
+
+[quiz]
+quiz: What does かさ mean? | umbrella | tea | bus | A | かさ means umbrella.
+quiz: How do you ask "May I come in?" | はいって ください | はいっても いい？ | はいる ない | B | Verb て form + も いい asks for permission.
+quiz: What does さむい mean? | hot | cold | warm | B | さむい means cold.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

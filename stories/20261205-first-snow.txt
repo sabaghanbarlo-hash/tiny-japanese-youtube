@@ -1,0 +1,69 @@
+title: First Snow
+scene: park
+
+[story]
+@weather snow
+@time day
+> Mika enters left
+& Alex enters right
+> Mika looks excited
+Mika: ゆきだ！ はじめての ゆきだよ！ | Snow! It's the first snow! | Yuki da! Hajimete no yuki da yo!
+> Alex looks happy
+Alex: きれい！ でも、さむい……。 | Beautiful! But it's cold... | Kirei! Demo, samui...
+> Mika covers her mouth
+> Mika looks worried
+Mika: あっ、てぶくろを わすれた！ | Oh, I forgot my gloves! | A, tebukuro o wasureta!
+> Alex thinks
+Alex: ぼくの てぶくろを かして あげる。 | I'll lend you my gloves. | Boku no tebukuro o kashite ageru.
+> Mika looks shy
+Mika: ううん、だいじょうぶ。 それに、アレックスが さむく なるよ。 | No, it's okay. Besides, you'll get cold. | Uun, daijoubu. Sore ni, Arekkusu ga samuku naru yo.
+> Alex looks smirking
+Alex: じゃあ、ふたりで かたほうずつ つけよう。 | Then let's each wear one. | Jaa, futari de katahou zutsu tsukeyou.
+> Mika laughs
+Mika: いい アイデア！ | Good idea! | Ii aidea!
+@scene town
+> Alex walks to 40
+> Alex holds a drink
+Alex: あたたかい コーヒーを かったよ。 どうぞ。 | I bought a hot coffee. Here you go. | Atatakai koohii o katta yo. Douzo.
+> Mika holds a drink
+> Mika looks happy
+Mika: ありがとう。 ……あったかい！ | Thanks. ...So warm! | Arigatou. ...Attakai!
+> Sakamoto enters left
+& Sakamoto holds a broom
+Sakamoto: おや、ふたりとも。 かぜを ひかないように ね。 | Oh, you two. Be careful not to catch a cold. | Oya, futari tomo. Kaze o hikanai you ni ne.
+> Alex bows
+Alex: はい、ありがとうございます！ | Yes, thank you! | Hai, arigatou gozaimasu!
+> Sakamoto looks happy
+Sakamoto: ゆきの ひは、あたたかい スープが いちばんだ。 | On a snowy day, warm soup is the best. | Yuki no hi wa, atatakai suupu ga ichiban da.
+> Mika cheers
+Mika: いいですね！ ひるごはんは スープに しましょう！ | Sounds great! Let's have soup for lunch! | Ii desu ne! Hirugohan wa suupu ni shimashou!
+> Alex cheers
+Alex: さんせい！ | Agreed! | Sansei!
+
+[vocab]
+vocab: ゆき | snow | yuki
+example: きょうは ゆきです。 | It's snowing today. | Kyou wa yuki desu.
+vocab: てぶくろ | gloves | tebukuro
+example: てぶくろを つけます。 | I put on gloves. | Tebukuro o tsukemasu.
+vocab: かぜ | cold (illness) | kaze
+example: かぜを ひきました。 | I caught a cold. | Kaze o hikimashita.
+vocab: スープ | soup | suupu
+example: あたたかい スープを のみます。 | I drink warm soup. | Atatakai suupu o nomimasu.
+vocab: いちばん | the best / number one | ichiban
+example: これが いちばん おいしいです。 | This is the most delicious. | Kore ga ichiban oishii desu.
+
+[grammar]
+grammar: Verb ない form + ように | Use this to say "so that you don't ..." or "be careful not to ..."
+example: かぜを ひかないように ね。 | Be careful not to catch a cold. | Kaze o hikanai you ni ne.
+example: わすれないように メモします。 | I take notes so I won't forget. | Wasurenai you ni memo shimasu.
+grammar: Noun + に しましょう | Use this to suggest a choice ("let's have ...")
+example: ひるごはんは スープに しましょう。 | Let's have soup for lunch. | Hirugohan wa suupu ni shimashou.
+example: のみものは おちゃに しましょう。 | Let's have tea to drink. | Nomimono wa ocha ni shimashou.
+
+[quiz]
+quiz: What does ゆき mean? | snow | rain | wind | A | ゆき means snow.
+quiz: What does かぜを ひく mean? | to catch a cold | to eat soup | to wear gloves | A | かぜを ひく means to catch a cold.
+quiz: How do you say "Let's have tea"? | おちゃに しましょう | おちゃが ない | おちゃを わすれた | A | Noun + に しましょう suggests a choice.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

@@ -119,3 +119,23 @@ Checkpoints:
 - 1 Dec: median views per format, 10 Shorts each. Keep a format at 3x today's median (about 400 Japanese, 65 French) and above 50% viewed; cut one under 1x.
 
 Not done here: weekly listen-and-repeat compilation videos (needs a new script type); the existing queued Shorts keep their current length and titles; the weekly hiragana workflow (`kana-daily-upload.yml`) still runs on Wednesdays, disable it in Actions to stop it.
+
+## Daily story week (Nov 29 - Dec 5) - added Nov 21, 2026
+One new Japanese story every day for a week, on top of the plan above. Scripts are in `stories/`, the calendar entries are in `schedule.json` (kind `story`), and the daily scheduler renders and uploads them like everything else (private + publish time).
+
+| Date (UTC) | UTC | ET | Tehran | Title |
+|---|---|---|---|---|
+| Sun Nov 29 | 15:00 | 10:00 | 18:30 | Alex's Umbrella |
+| Mon Nov 30 | 14:00 | 09:00 | 17:30 | Where Is My Package? |
+| Tue Dec 01 | 15:00 | 10:00 | 18:30 | Alex's First Tamagoyaki |
+| Wed Dec 02 | 12:00 | 07:00 | 15:30 | Mr. Sakamoto's Cat |
+| Thu Dec 03 | 22:00 | 17:00 | Fri 01:30 | Study Night |
+| Fri Dec 04 | 17:00 | 12:00 | 20:30 | A Present for Mom |
+| Sat Dec 05 | 20:00 | 15:00 | 23:30 | First Snow |
+
+**Why these times:** long-form slots from Buffer's July 2026 study of 1.8M videos (Sunday 10:00 ET is the strongest slot of the week; Monday 09:00; weekday mornings; Thursday 17:00; Friday near noon; Saturday afternoon). Each slot is kept at least 4 hours away from the Shorts slots in this plan (22:00-23:00 UTC weekdays, 16:00 UTC Saturday) so long videos and Shorts do not compete. These are starting guesses, not facts about your audience.
+
+**Honest caveat:** earlier in this plan, long videos got about 10 views in total and posting too much split the audience, which is why the other long videos are held. Seven long videos in seven days is an experiment. Check YouTube Studio after the week (views, average view duration, subscribers per video). If the stories do not hold viewers, move them to `held_items` in `schedule.json` or set `"paused": true`.
+
+**Cast:** Marinette/Adrien or Mika/Alex plus Sakamoto (older neighbour), Ono (shopkeeper), Hana (clerk). Check any new script before it is scheduled: Actions > "Check stories (no video)" (pattern e.g. `2026*.txt`).
+

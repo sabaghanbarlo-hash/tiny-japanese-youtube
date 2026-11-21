@@ -1,0 +1,65 @@
+title: Mr. Sakamoto's Cat
+scene: town
+
+[story]
+@scene town
+> Mika enters left
+& Alex enters right
+> Sakamoto enters left
+& Sakamoto looks worried
+Sakamoto: あっ、ミカさん、アレックスさん！ うちの ねこが いないんです！ | Oh, Mika, Alex! My cat is gone! | A, Mika-san, Arekkusu-san! Uchi no neko ga inai n desu!
+> Mika looks surprised
+Mika: ええっ！ ねこの なまえは なんですか。 | What?! What's the cat's name? | Ee! Neko no namae wa nan desu ka.
+Sakamoto: ミケです。 しろくて、あしが くろいです。 | Mike. She's white and her feet are black. | Mike desu. Shirokute, ashi ga kuroi desu.
+> Alex thinks
+Alex: けさ、どこに いましたか。 | Where was she this morning? | Kesa, doko ni imashita ka.
+Sakamoto: まどの そばに いたんですが……。 | She was by the window, but... | Mado no soba ni ita n desu ga...
+> Mika puts hands on her hips
+Mika: みんなで さがしましょう！ | Let's all look for her! | Minna de sagashimashou!
+> Sakamoto exits left
+@scene park
+> Alex looks curious
+Alex: ここに いるかな。 ……あっ！ | I wonder if she's here. ...Oh! | Koko ni iru kana. ...A!
+> Alex points right
+Alex: ベンチの したに ねこが いる！ | There's a cat under the bench! | Benchi no shita ni neko ga iru!
+> Mika looks excited
+Mika: ほんとうだ！ しろくて あしが くろい！ | You're right! White with black feet! | Hontou da! Shirokute ashi ga kuroi!
+> Sakamoto enters left
+Sakamoto: ミケ！ ここに いたのか！ | Mike! So you were here! | Mike! Koko ni ita no ka!
+> Sakamoto clasps hands
+> Sakamoto looks happy
+Sakamoto: よかった……ほんとうに よかった。 | Thank goodness... really, thank goodness. | Yokatta... hontou ni yokatta.
+> Alex bows
+Alex: ミケちゃんが みつかって よかったですね。 | I'm glad Mike was found. | Mike-chan ga mitsukatte yokatta desu ne.
+> Sakamoto bows
+Sakamoto: ありがとう。 おれいに、ごはんを ごちそうします。 | Thank you. As thanks, dinner is my treat. | Arigatou. Orei ni, gohan o gochisou shimasu.
+> Mika cheers
+Mika: わあ！ ありがとうございます！ | Wow! Thank you very much! | Waa! Arigatou gozaimasu!
+
+[vocab]
+vocab: ねこ | cat | neko
+example: ねこが います。 | There is a cat. | Neko ga imasu.
+vocab: した | under / below | shita
+example: ベンチの したに います。 | It's under the bench. | Benchi no shita ni imasu.
+vocab: そば | beside / near | soba
+example: まどの そばに います。 | It's by the window. | Mado no soba ni imasu.
+vocab: みつかる | to be found | mitsukaru
+example: ねこが みつかりました。 | The cat was found. | Neko ga mitsukarimashita.
+vocab: おれい | thanks / reward | orei
+example: おれいに ごはんを ごちそうします。 | As thanks, I'll treat you to a meal. | Orei ni gohan o gochisou shimasu.
+
+[grammar]
+grammar: Place + に + いる / います | Use this for people and animals that exist in a place
+example: ねこが ベンチの したに います。 | A cat is under the bench. | Neko ga benchi no shita ni imasu.
+example: ともだちが こうえんに います。 | My friend is in the park. | Tomodachi ga kouen ni imasu.
+grammar: Noun + の + うえ / した / なか | Use this to say on, under or inside something
+example: つくえの うえに ほんが あります。 | There is a book on the desk. | Tsukue no ue ni hon ga arimasu.
+example: はこの なかに ねこが います。 | There is a cat inside the box. | Hako no naka ni neko ga imasu.
+
+[quiz]
+quiz: What does した mean? | on | under | inside | B | した means under or below.
+quiz: Which is correct for "There is a cat"? | ねこが います | ねこが あります | ねこを います | A | Animals use います.
+quiz: How do you say "on the desk"? | つくえの なか | つくえの した | つくえの うえ | C | うえ means on or above.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

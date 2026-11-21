@@ -1,0 +1,71 @@
+title: Alex's First Tamagoyaki
+scene: kitchen
+
+[story]
+@scene kitchen
+> Mika enters left
+& Alex enters right
+> Alex looks excited
+Alex: きょうは ぼくが たまごやきを つくる！ | Today I'm going to make tamagoyaki! | Kyou wa boku ga tamagoyaki o tsukuru!
+> Mika crosses arms
+Mika: じゃあ、まず たまごを わって ください。 | Then first, please crack the eggs. | Jaa, mazu tamago o watte kudasai.
+> Alex nods
+Alex: はい！ ……あっ、からが はいった！ | Okay! ...Oh, a shell got in! | Hai! ...A, kara ga haitta!
+> Mika laughs
+Mika: だいじょうぶ。 ゆっくり とって ね。 | It's fine. Take it out slowly. | Daijoubu. Yukkuri totte ne.
+Mika: つぎは さとうを ひとつ。 しおは ほんの すこし。 | Next, one spoon of sugar. Only a little salt. | Tsugi wa satou o hitotsu. Shio wa hon no sukoshi.
+> Alex looks confused
+Alex: ほんの すこし……このくらい？ | Only a little... about this much? | Hon no sukoshi... kono kurai?
+> Mika looks surprised
+Mika: ああ！ しおを いれすぎ！ | Ah! Too much salt! | Aa! Shio o iresugi!
+> Alex looks embarrassed
+Alex: ごめん……。 | Sorry... | Gomen...
+> Mika thinks
+Mika: たべて みよう。 ……しょっぱい！ | Let's taste it. ...Salty! | Tabete miyou. ...Shoppai!
+> Alex covers his mouth
+> Alex laughs
+Alex: ほんとうだ！ しょっぱすぎる！ | You're right! It's way too salty! | Hontou da! Shoppasugiru!
+> Mika points right
+Mika: おのさんの たまごやきを たべに いこう。 おいしい コツを きこう。 | Let's go eat Mr. Ono's tamagoyaki and ask for his trick. | Ono-san no tamagoyaki o tabe ni ikou. Oishii kotsu o kikou.
+@scene stall
+> Ono enters right
+Ono: おお、いらっしゃい！ | Oh, welcome! | Oo, irasshai!
+Alex: おのさん、たまごやきの つくりかたを おしえて ください！ | Mr. Ono, please teach me how to make tamagoyaki! | Ono-san, tamagoyaki no tsukurikata o oshiete kudasai!
+> Ono thinks
+Ono: コツは ひとつだけ。 ゆっくり まいて、あせらない こと。 | There's only one trick. Roll slowly and don't rush. | Kotsu wa hitotsu dake. Yukkuri maite, aseranai koto.
+> Ono shows
+Ono: さあ、たべて みて。 | Here, try it. | Saa, tabete mite.
+> Alex looks happy
+Alex: おいしい！ あまくて ふわふわ！ | Delicious! Sweet and fluffy! | Oishii! Amakute fuwafuwa!
+> Mika looks smirking
+Mika: アレックス、つぎは しおを いれすぎないでね。 | Alex, next time don't put in too much salt. | Arekkusu, tsugi wa shio o iresuginai de ne.
+> Alex bows
+Alex: はい、がんばります！ | Yes, I'll do my best! | Hai, ganbarimasu!
+
+[vocab]
+vocab: たまご | egg | tamago
+example: たまごを わります。 | I crack an egg. | Tamago o warimasu.
+vocab: しお | salt | shio
+example: しおを すこし いれます。 | I add a little salt. | Shio o sukoshi iremasu.
+vocab: さとう | sugar | satou
+example: さとうは ひとつです。 | One spoon of sugar. | Satou wa hitotsu desu.
+vocab: しょっぱい | salty | shoppai
+example: この スープは しょっぱいです。 | This soup is salty. | Kono suupu wa shoppai desu.
+vocab: あまい | sweet | amai
+example: たまごやきは あまいです。 | Tamagoyaki is sweet. | Tamagoyaki wa amai desu.
+
+[grammar]
+grammar: Verb stem + すぎる | Use this to say "too much"
+example: しおを いれすぎた。 | I put in too much salt. | Shio o iresugita.
+example: たべすぎた。 | I ate too much. | Tabesugita.
+grammar: Verb て form + から | Use this to say "after doing ..."
+example: たまごを わって から、さとうを いれます。 | After cracking the egg, I add sugar. | Tamago o watte kara, satou o iremasu.
+example: てを あらって から、たべます。 | I eat after washing my hands. | Te o aratte kara, tabemasu.
+
+[quiz]
+quiz: What does しょっぱい mean? | sweet | salty | spicy | B | しょっぱい means salty.
+quiz: What does いれすぎた mean? | put in too much | put in a little | didn't put in | A | すぎる means "too much".
+quiz: Which means "after washing my hands"? | てを あらってから | てを あらうまえ | てを あらわない | A | Verb て form + から means "after".
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!
