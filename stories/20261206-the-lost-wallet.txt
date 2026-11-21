@@ -1,0 +1,96 @@
+title: The Lost Wallet
+scene: apartment
+
+[story]
+@scene apartment
+> Mika enters left
+& Alex enters right
+> Alex covers his mouth
+> Alex looks worried
+Alex: ない、ない、ない！ さいふが ない！ | It's gone, gone, gone! My wallet is gone! | Nai, nai, nai! Saifu ga nai!
+> Mika crosses arms
+Mika: おちついて。 きのう、どこに いったの？ | Calm down. Where did you go yesterday? | Ochitsuite. Kinou, doko ni itta no?
+> Alex thinks
+Alex: えっと……しごとの あとで、おのさんの みせに いった。 | Um... after work, I went to Mr. Ono's shop. | Etto... shigoto no ato de, Ono-san no mise ni itta.
+> Mika points right
+Mika: じゃあ、そこで さがして みよう。 | Then let's try looking for it there. | Jaa, soko de sagashite miyou.
+> Alex shrugs
+Alex: みつからなかったら、どうしよう……。 | What if we can't find it...? | Mitsukaranakattara, dou shiyou...
+> Mika puts hands on her hips
+Mika: だいじょうぶ！ いっしょに いこう。 | It'll be fine! Let's go together. | Daijoubu! Issho ni ikou.
+@scene stall
+> Ono enters right
+Alex: おのさん、こんにちは！ | Hello, Mr. Ono! | Ono-san, konnichiwa!
+Ono: おお、アレックスさん。 いらっしゃい！ | Oh, Alex. Welcome! | Oo, Arekkusu-san. Irasshai!
+> Alex looks worried
+Alex: あの、きのう ここに さいふを おとしませんでしたか？ | Um, didn't I drop my wallet here yesterday? | Ano, kinou koko ni saifu o otoshimasen deshita ka?
+> Ono looks smirking
+Ono: さいふ？ ……もしかして、これですか？ | A wallet? ...Could it be this one? | Saifu? ...Moshikashite, kore desu ka?
+> Ono shows
+> Alex cheers
+> Alex looks surprised
+Alex: あっ！ ぼくの さいふだ！ | Ah! That's my wallet! | A! Boku no saifu da!
+Ono: きのう、おいて いきましたよ。 だいじに あずかって いました。 | You left it behind yesterday. I kept it safe. | Kinou, oite ikimashita yo. Daiji ni azukatte imashita.
+> Alex bows
+Alex: ほんとうに ありがとうございます！ | Thank you so much! | Hontou ni arigatou gozaimasu!
+> Alex looks surprised
+Alex: ……あれ？ おかねは ぜんぶ ありますね！ | ...Huh? All the money is here! | ...Are? Okane wa zenbu arimasu ne!
+Ono: もちろん！ おれいは いりませんよ。 | Of course! No reward needed. | Mochiron! Orei wa irimasen yo.
+> Alex looks happy
+Alex: じゃあ、たまごやきを ふたつ ください。 | Then, two egg rolls, please. | Jaa, tamagoyaki o futatsu kudasai.
+> Ono cheers
+Ono: まいど ありがとうございます！ | Thank you for your business! | Maido arigatou gozaimasu!
+> Alex holds the box
+> Mika looks smirking
+Mika: アレックスは いつも わすれものが おおいね。 | Alex always leaves things behind. | Arekkusu wa itsumo wasuremono ga ooi ne.
+> Mika laughs
+> Alex shrugs
+Alex: ごめん、ごめん。 これから きを つけるよ。 | Sorry, sorry. I'll be careful from now on. | Gomen, gomen. Korekara ki o tsukeru yo.
+> Alex shows
+Alex: はい、ミカの ぶん。 | Here, this one's yours. | Hai, Mika no bun.
+> Mika looks happy
+Mika: ありがとう！ ……あつい！ おいしい！ | Thanks! ...Hot! Delicious! | Arigatou! ...Atsui! Oishii!
+> Ono bows
+Ono: また きて くださいね！ | Please come again! | Mata kite kudasai ne!
+> Ono exits right
+@scene town
+> Sakamoto enters left
+& Sakamoto holds a broom
+Sakamoto: おや、さいふは みつかったかい？ | Oh, did you find your wallet? | Oya, saifu wa mitsukatta kai?
+> Alex looks happy
+Alex: はい、おのさんが あずかって くれて いました。 | Yes, Mr. Ono had kept it for me. | Hai, Ono-san ga azukatte kurete imashita.
+> Sakamoto thinks
+Sakamoto: よかった、よかった。 ものを だいじに しなさいよ。 | Good, good. Take good care of your things. | Yokatta, yokatta. Mono o daiji ni shinasai yo.
+> Alex bows
+Alex: はい、きを つけます！ | Yes, I'll be careful! | Hai, ki o tsukemasu!
+
+[vocab]
+vocab: さいふ | wallet | saifu
+example: さいふを さがして います。 | I'm looking for my wallet. | Saifu o sagashite imasu.
+vocab: さがす | to look for | sagasu
+example: かぎを さがして みます。 | I'll try looking for my key. | Kagi o sagashite mimasu.
+vocab: おとす | to drop / to lose | otosu
+example: ここで さいふを おとしました。 | I dropped my wallet here. | Koko de saifu o otoshimashita.
+vocab: みつかる | to be found | mitsukaru
+example: さいふが みつかりました。 | My wallet was found. | Saifu ga mitsukarimashita.
+vocab: わすれもの | something left behind | wasuremono
+example: わすれものを しないで ください。 | Please don't leave anything behind. | Wasuremono o shinaide kudasai.
+vocab: だいじ | important / precious | daiji
+example: ともだちは だいじです。 | Friends are important. | Tomodachi wa daiji desu.
+
+[grammar]
+grammar: Verb て form + みる | Use this to say you will try doing something
+example: さがして みます。 | I'll try looking for it. | Sagashite mimasu.
+example: たべて みよう。 | Let's try eating it. | Tabete miyou.
+grammar: Noun + を ください | Use this to ask for something
+example: たまごやきを ください。 | Egg rolls, please. | Tamagoyaki o kudasai.
+example: みずを ください。 | Water, please. | Mizu o kudasai.
+
+[quiz]
+quiz: What does さいふ mean? | wallet | umbrella | ticket | A | さいふ means wallet.
+quiz: How do you say "Let's try looking for it"? | さがして みよう | さがして ください | さがして いる | A | Verb て form + みよう means "let's try".
+quiz: Which one asks for something politely? | たまごやきを ください | たまごやきが ない | たまごやきを おとす | A | を ください is used to ask for something.
+quiz: What does おとす mean? | to drop / to lose | to look for | to find | A | おとす means to drop or lose something.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!
