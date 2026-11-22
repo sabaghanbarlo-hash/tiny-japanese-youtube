@@ -16,7 +16,7 @@ import upload   # this repo's uploader
 OWNER = "sabaghanbarlo-hash"
 SRC = "tiny-japanese-video"
 KIND = "jp"
-SKIP = set(['px-01-introduce-yourself', 'mx-01-greeting', 'px-02-say-thank-you', 'mx-02-before-eating', 'px-03-i-dont-understand', 'mx-03-to-your-teacher', 'px-04-order-a-coffee', 'mx-04-at-night', 'px-05-say-excuse-me', 'mx-05-coming-home', 'px-06-say-delicious', 'mx-06-yes-and-no', 'px-07-count-to-three', 'mx-07-when-you-leave'])          # videos that were already posted before cross-posting started: never uploaded
+SKIP = set(['01-whats-your-name', '202610031047-at-the-station', '202610040937-at-the-station', '202610040939-at-the-station', '202610051708-at-the-station', '202610061831-at-the-station', '202610070951-at-the-station', '202610110748-meeting-for-the-first-time', '202610111829-meeting-for-the-first-time', '202610121218-at-the-caf', '202610121224-at-the-caf', '202610130748-ordering-food', '202610140813-at-the-bookstore', '202610151318-at-the-convenience-store', '202610161841-in-the-classroom', '202610170808-at-the-supermarket', '202610180907-buying-a-train-ticket', '202610191219-at-the-clothing-store', '202610200841-at-the-park', '202610210824-at-the-pharmacy', '202610221142-at-the-beach', '202610221204-at-the-ramen-shop', '202610230946-we-missed-the-train', '202610240820-where-is-mika', '202610250826-i-m-allergic-to', '202610261221-i-missed-the-last-train', '202610271247-i-lost-my-phone', '202610280802-my-room-key-doesn-t-work', '202610280819-taking-a-taxi', '202610280907-let-s-hang-out', '202610311022-complimenting-someone', '202611040813-where-is-the-toilet', '202611040814-ramen-ticket-machine', '202611040815-can-i-pay-by-card', '202611040816-tattoo-at-the-onsen', '202611040817-itadakimasu', '202611051450-vegetarian-in-japan', '202611061428-the-check-please', '202611071322-does-this-bus-go', '202611081343-which-thank-you', '202611091642-not-spicy-please', '202611101506-sushi-recommendation', '202611121529-take-a-photo', '202611121530-speak-slowly', '202611131446-english-menu', '202611141342-wifi-password', '202611151410-hold-my-luggage', '202611161613-water-please', '202611171620-tax-free-shopping', 'mx-01-greeting', 'mx-02-before-eating', 'mx-03-to-your-teacher', 'mx-04-at-night', 'mx-05-coming-home', 'mx-06-yes-and-no', 'mx-07-when-you-leave', 'mx-08-a-present', 'mx-09-after-the-meal', 'mx-10-at-mikas-house', 'mx-11-a-compliment', 'mx-12-leaving-work', 'mx-13-old-friend', 'mx-14-saying-no', 'px-01-introduce-yourself', 'px-02-say-thank-you', 'px-03-i-dont-understand', 'px-04-order-a-coffee', 'px-05-say-excuse-me', 'px-06-say-delicious', 'px-07-count-to-three', 'px-08-lost-in-tokyo', 'px-10-hungry-at-ramen', 'px-11-stepped-on-foot', 'px-12-freezing'])   # videos that were already posted before cross-posting started: never uploaded
 MARKERS = os.path.join("docs", "videos")
 NOW = dt.datetime.now(dt.timezone.utc)
 
@@ -44,7 +44,11 @@ def uploaded_today():
 def candidates():
     """Newest or soonest first, each as dict(stem, post_at, video_urls, caption_urls)."""
     if KIND == "jp":
-        stems = [l.strip() for l in get(raw("posted-extra.txt")).text.splitlines() if l.strip()]
+        stems = []
+        for name in ("posted-extra.txt", "posted.txt"):      # Practice / Mistake & fix hand-overs, then the original daily reels
+            for l in get(raw(name)).text.splitlines():
+                if l.strip() and l.strip() not in stems:
+                    stems.append(l.strip())
         return [dict(stem=s, post_at=None, video=[raw(f"output/{s}.mp4")], caption=[raw(f"output/{s}.caption.txt")]) for s in reversed(stems) if s not in SKIP]
     hdr = {"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"} if os.environ.get("GITHUB_TOKEN") else {}
     listing = get(f"https://api.github.com/repos/{OWNER}/{SRC}/contents/queue", headers=hdr).json()
@@ -79,7 +83,7 @@ def main():
     only = os.environ.get("ONLY_STEM", "").strip()
     dry = os.environ.get("DRY_RUN") == "1"
     per_run = int(os.environ.get("MAX_PER_RUN", "2") or 2)
-    budget = int(os.environ.get("MAX_PER_DAY", "3") or 3) - uploaded_today()
+    budget = int(os.environ.get("MAX_PER_DAY", "4") or 3) - uploaded_today()
     todo = [c for c in candidates() if (c["stem"] == only if only else not os.path.exists(marker(c["stem"])))]
     if only and not todo:     # forced by hand: allow any video that exists, even one that is not queued/posted yet
         sub = "output" if KIND == "jp" else "queue/videos"
