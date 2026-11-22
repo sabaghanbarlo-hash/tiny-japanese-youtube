@@ -113,3 +113,24 @@ Zoom levels are deliberately gentle: medium = 1.15x, close = 1.4x. Change `CAM_Z
 ```
 
 Characters keep speaking while turned away. Facial expressions are not visible from behind.
+
+
+## Gestures, feelings, props, supporting characters and places (story mode v3)
+
+**Gestures** (`> Mika <gesture>`; they ease in and out and carry on while the next line is spoken; add `for N` to hold longer):
+`points` (right/left), `shrugs`, `thinks`, `bows`, `crosses arms`, `covers mouth`, `phones` (phone to the ear, 5 s by default, `phones for 8`), `shows`, `clasps hands`, `puts hands on hips`, `cheers`, `laughs`.
+
+**Feelings** (`> Mika looks <feeling>`): happy, sad, worried, surprised, confused, shy / embarrassed, excited / thrilled, annoyed / bored, angry, smirking, thinking / curious, determined / serious, joyful. `laughs` has its own laughing face.
+
+**Props** (`holds a ...`): phone, broom, box (food box / bento), cake (cake box), plus the old items (bag, book, drink, ticket, balloon, umbrella ...).
+
+**Supporting characters:** Sakamoto (older neighbour, deep voice), Ono (shopkeeper), Hana (clerk). They are off stage until a script uses them (`> Ono enters right`, or a spoken line), have their own voice pitch and never count as "both". Characters who walk in from off-screen face the viewer again.
+
+**New places** (`@scene ...`): apartment, stall (street food stall), sushi (conveyor-belt sushi). Named spots, if you use `walks to ...`: apartment (door, clock, kitchen, table, plant), stall (shop, stall, counter, tree), sushi (door, window, menu, counter).
+
+**Seen from behind:** `> Mika faces away` / `> Mika turns around`.
+
+**Rules that trip scripts up**
+- A direction that comes *before* the first spoken line of a new `@scene` still runs in the *old* scene. Named spots therefore fail there ("don't know the place 'to vending machine'"): use left / center / right / a percent (`walks to 40`) right after `@scene`.
+- Anyone still on stage when you change `@scene` stays on stage: add `> Ono exits right` first.
+- Check a new script before scheduling it: GitHub > Actions > **Check stories (no video)** (pattern e.g. `20261206-*.txt`). It builds each script with silent audio and reports the first error.
