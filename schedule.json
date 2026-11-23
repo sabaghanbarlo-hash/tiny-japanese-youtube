@@ -120,6 +120,12 @@
       "publish_at": "2026-11-23T14:00:00Z"
     },
     {
+      "kind": "story",
+      "file": "20261123-the-wrong-train.txt",
+      "publish_at": "2026-11-23T18:00:00Z",
+      "title": "The Wrong Train"
+    },
+    {
       "kind": "short",
       "file": "20261123-suki-can-sound-like-a-confession.txt",
       "publish_at": "2026-11-23T22:00:00Z"
@@ -128,6 +134,12 @@
       "kind": "short",
       "file": "20261124-water-please-in-japanese.txt",
       "publish_at": "2026-11-24T14:00:00Z"
+    },
+    {
+      "kind": "story",
+      "file": "20261124-a-new-haircut.txt",
+      "publish_at": "2026-11-24T18:00:00Z",
+      "title": "A New Haircut"
     },
     {
       "kind": "short",
@@ -140,9 +152,27 @@
       "publish_at": "2026-11-25T14:00:00Z"
     },
     {
+      "kind": "story",
+      "file": "20261125-mika-has-a-cold.txt",
+      "publish_at": "2026-11-25T18:00:00Z",
+      "title": "Mika Has a Cold"
+    },
+    {
       "kind": "short",
       "file": "20261125-three-ways-to-say-yes.txt",
       "publish_at": "2026-11-25T22:00:00Z"
+    },
+    {
+      "kind": "story",
+      "file": "20261126-at-the-convenience-store.txt",
+      "publish_at": "2026-11-26T22:00:00Z",
+      "title": "At the Convenience Store"
+    },
+    {
+      "kind": "story",
+      "file": "20261127-weekend-plans.txt",
+      "publish_at": "2026-11-27T17:00:00Z",
+      "title": "Weekend Plans"
     },
     {
       "kind": "short",
@@ -153,6 +183,12 @@
       "kind": "short",
       "file": "20261128-count-to-ten-in-japanese.txt",
       "publish_at": "2026-11-28T16:00:00Z"
+    },
+    {
+      "kind": "story",
+      "file": "20261128-cooking-curry-together.txt",
+      "publish_at": "2026-11-28T20:00:00Z",
+      "title": "Cooking Curry Together"
     },
     {
       "kind": "story",

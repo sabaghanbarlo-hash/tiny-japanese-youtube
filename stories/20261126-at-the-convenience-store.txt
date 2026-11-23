@@ -1,0 +1,60 @@
+title: At the Convenience Store
+scene: store
+
+[story]
+@scene store
+> Mika enters left
+& Alex enters right
+> Alex looks sad
+Alex: おなかが すいた……。 | I'm hungry... | Onaka ga suita...
+> Mika points right
+Mika: コンビニで なにか かおう。 | Let's buy something at the convenience store. | Konbini de nanika kaou.
+> Alex holds a bag
+> Alex looks excited
+Alex: おにぎりを ふたつ かう！ | I'll buy two rice balls! | Onigiri o futatsu kau!
+> Hana enters right
+Hana: いらっしゃいませ。 | Welcome. | Irasshaimase.
+Alex: これ、おねがいします。 | This, please. | Kore, onegaishimasu.
+> Hana shows
+Hana: ふたつで ごひゃくえんです。 ふくろは いりますか。 | Two is five hundred yen. Do you need a bag? | Futatsu de gohyaku en desu. Fukuro wa irimasu ka.
+> Alex shrugs
+Alex: いいえ、いりません。 | No, I don't need one. | Iie, irimasen.
+> Hana nods
+Hana: レシートは いりますか。 | Do you need a receipt? | Reshiito wa irimasu ka.
+Alex: はい、おねがいします。 | Yes, please. | Hai, onegaishimasu.
+> Hana clasps hands
+Hana: ありがとうございました。 | Thank you very much. | Arigatou gozaimashita.
+> Mika looks smirking
+Mika: アレックス、また ツナマヨ？ | Alex, tuna mayo again? | Arekkusu, mata tsunamayo?
+> Alex looks happy
+Alex: ツナマヨが いちばん おいしいんだよ。 | Tuna mayo is the most delicious. | Tsunamayo ga ichiban oishii n da yo.
+> Mika laughs
+Mika: はい、はい。 わたしは おちゃを かって いくね。 | Yes, yes. I'll buy some tea and go. | Hai, hai. Watashi wa ocha o katte iku ne.
+
+[vocab]
+vocab: コンビニ | convenience store | konbini
+example: コンビニで パンを かいます。 | I buy bread at the convenience store. | Konbini de pan o kaimasu.
+vocab: おにぎり | rice ball | onigiri
+example: おにぎりを たべます。 | I eat a rice ball. | Onigiri o tabemasu.
+vocab: ふくろ | bag | fukuro
+example: ふくろは いりません。 | I don't need a bag. | Fukuro wa irimasen.
+vocab: レシート | receipt | reshiito
+example: レシートを ください。 | A receipt, please. | Reshiito o kudasai.
+vocab: おなかが すく | to get hungry | onaka ga suku
+example: おなかが すきました。 | I'm hungry. | Onaka ga sukimashita.
+
+[grammar]
+grammar: Noun + は いりますか / いりません | Use this to ask or say whether you need something
+example: ふくろは いりますか。 | Do you need a bag? | Fukuro wa irimasu ka.
+example: いいえ、いりません。 | No, I don't need one. | Iie, irimasen.
+grammar: Place + で + Verb | Use this to say where an action happens
+example: コンビニで かいます。 | I buy it at the convenience store. | Konbini de kaimasu.
+example: こうえんで あそびます。 | I play at the park. | Kouen de asobimasu.
+
+[quiz]
+quiz: What does ふくろは いりますか mean? | Do you need a bag? | Where is the bag? | How much is the bag? | A | いりますか asks whether you need something.
+quiz: How do you say "I don't need a receipt"? | レシートは いりません | レシートが あります | レシートを ください | A | いりません = I don't need.
+quiz: What does おなかが すいた mean? | I'm hungry | I'm sleepy | I'm cold | A | おなかが すく means to be hungry.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

@@ -1,0 +1,65 @@
+title: The Wrong Train
+scene: station
+
+[story]
+@time morning
+@scene station
+> Mika enters left
+& Alex enters right
+> Mika looks excited
+Mika: きょうは かまくらに いくよ！ | Today we're going to Kamakura! | Kyou wa Kamakura ni iku yo!
+> Alex looks happy
+Alex: たのしみだな。 でんしゃは なんばんせん？ | I'm looking forward to it. Which platform is the train? | Tanoshimi da na. Densha wa nanbansen?
+> Mika thinks
+Mika: ええと……さんばんせん。 | Um... platform three. | Eeto... sanbansen.
+@scene train
+> Alex looks happy
+Alex: ひさしぶりの でんしゃだ！ | It's been a while since I rode a train! | Hisashiburi no densha da!
+> Mika looks surprised
+Mika: ……あれ？ この でんしゃ、かまくらに いかない！ | ...Huh? This train doesn't go to Kamakura! | ...Are? Kono densha, Kamakura ni ikanai!
+> Alex covers his mouth
+Alex: ええっ！ まちがえた！ | What?! We made a mistake! | Ee! Machigaeta!
+> Mika looks worried
+Mika: つぎの えきで おりて、のりかえよう。 | Let's get off at the next station and change trains. | Tsugi no eki de orite, norikaeyou.
+@scene station
+> Hana enters right
+Alex: すみません、かまくらに いきたいんですが……。 | Excuse me, I'd like to go to Kamakura... | Sumimasen, Kamakura ni ikitai n desu ga...
+> Hana points right
+Hana: かまくらですか。 いちばんせんから でんしゃが でますよ。 | Kamakura? A train leaves from platform one. | Kamakura desu ka. Ichibansen kara densha ga demasu yo.
+> Mika bows
+Mika: ありがとうございます！ | Thank you very much! | Arigatou gozaimasu!
+> Hana looks smirking
+Hana: じかんが あまり ありません。 はしって ください！ | There isn't much time. Please run! | Jikan ga amari arimasen. Hashitte kudasai!
+> both run to 20
+> Mika looks happy
+Mika: ふう、まにあった！ | Phew, we made it! | Fuu, maniatta!
+> Alex shrugs
+Alex: つぎは ちゃんと かくにんしよう。 | Next time let's check properly. | Tsugi wa chanto kakunin shiyou.
+
+[vocab]
+vocab: でんしゃ | train | densha
+example: でんしゃに のります。 | I ride the train. | Densha ni norimasu.
+vocab: えき | station | eki
+example: えきは ちかいです。 | The station is near. | Eki wa chikai desu.
+vocab: のりかえる | to change trains | norikaeru
+example: ここで のりかえます。 | I change trains here. | Koko de norikaemasu.
+vocab: まちがえる | to make a mistake | machigaeru
+example: みちを まちがえました。 | I took the wrong way. | Michi o machigaemashita.
+vocab: おりる | to get off | oriru
+example: つぎの えきで おります。 | I get off at the next station. | Tsugi no eki de orimasu.
+
+[grammar]
+grammar: Vehicle + に のる / Place + で おりる | Use these to say you get on a vehicle or get off at a place
+example: でんしゃに のります。 | I get on the train. | Densha ni norimasu.
+example: えきで おります。 | I get off at the station. | Eki de orimasu.
+grammar: Verb stem + たいんですが | Use this to politely say "I'd like to ..."
+example: かまくらに いきたいんですが。 | I'd like to go to Kamakura. | Kamakura ni ikitai n desu ga.
+example: ちずを かいたいんですが。 | I'd like to buy a map. | Chizu o kaitai n desu ga.
+
+[quiz]
+quiz: What does のりかえる mean? | to get off | to change trains | to run | B | のりかえる means to change trains.
+quiz: How do you say "I get off at the station"? | えきで おります | えきに おります | えきを おります | A | Place + で + おりる.
+quiz: What does まちがえた mean? | made a mistake | arrived | forgot | A | まちがえる means to make a mistake.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

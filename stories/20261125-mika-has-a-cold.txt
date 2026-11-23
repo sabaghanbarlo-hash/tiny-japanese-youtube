@@ -1,0 +1,70 @@
+title: Mika Has a Cold
+scene: bedroom
+
+[story]
+@scene bedroom
+> Mika enters left
+> Mika looks sad
+Mika: ごほん、ごほん。 あたまが いたい……。 | Cough, cough. My head hurts... | Gohon, gohon. Atama ga itai...
+> Alex enters right
+> Alex looks worried
+Alex: ミカ！ だいじょうぶ？ ねつは あるの？ | Mika! Are you okay? Do you have a fever? | Mika! Daijoubu? Netsu wa aru no?
+Mika: すこし ある……。 でも、しごとに いかなきゃ。 | A little... But I have to go to work. | Sukoshi aru... Demo, shigoto ni ikanakya.
+> Alex crosses arms
+Alex: だめ！ きょうは やすんで ください。 | No! Please rest today. | Dame! Kyou wa yasunde kudasai.
+> Mika looks shy
+Mika: ……わかった。 | ...Okay. | ...Wakatta.
+> Alex thinks
+Alex: くすりを のんで、ゆっくり ねて ね。 | Take your medicine and sleep well. | Kusuri o nonde, yukkuri nete ne.
+> Mika exits left
+@scene kitchen
+> Alex looks excited
+Alex: よし、おかゆを つくろう！ | Okay, let's make rice porridge! | Yoshi, okayu o tsukurou!
+> Sakamoto enters left
+& Sakamoto holds a bag
+Sakamoto: アレックスさん、ミカさんが かぜだと きいたよ。 | Alex, I heard Mika has a cold. | Arekkusu-san, Mika-san ga kaze da to kiita yo.
+> Alex looks surprised
+Alex: えっ、どうして しっているんですか。 | Huh, how do you know? | E, doushite shitte iru n desu ka.
+> Sakamoto laughs
+Sakamoto: ここの かべは うすいからね。 しょうがを もって きたよ。 | These walls are thin. I brought some ginger. | Koko no kabe wa usui kara ne. Shouga o motte kita yo.
+> Alex bows
+Alex: ありがとうございます！ たすかります！ | Thank you so much! It's a big help! | Arigatou gozaimasu! Tasukarimasu!
+> Sakamoto shows
+Sakamoto: あたたかい スープで、はやく よく なるよ。 おだいじに。 | Warm soup will help her get better soon. Take care. | Atatakai suupu de, hayaku yoku naru yo. Odaijini.
+> Sakamoto exits left
+@scene bedroom
+> Mika enters left
+> Alex holds a drink
+Alex: ミカ、スープを もって きたよ。 | Mika, I brought you soup. | Mika, suupu o motte kita yo.
+> Mika looks happy
+Mika: ありがとう……あったかい。 おいしい。 | Thank you... it's warm. Delicious. | Arigatou... attakai. Oishii.
+> Alex looks smirking
+Alex: はやく よく なってね。 | Get well soon. | Hayaku yoku natte ne.
+
+[vocab]
+vocab: かぜ | cold (illness) | kaze
+example: かぜを ひきました。 | I caught a cold. | Kaze o hikimashita.
+vocab: ねつ | fever | netsu
+example: ねつが あります。 | I have a fever. | Netsu ga arimasu.
+vocab: あたま | head | atama
+example: あたまが いたいです。 | I have a headache. | Atama ga itai desu.
+vocab: くすり | medicine | kusuri
+example: くすりを のみます。 | I take medicine. | Kusuri o nomimasu.
+vocab: おだいじに | take care (get well soon) | odaijini
+example: おだいじに。 | Take care of yourself. | Odaijini.
+
+[grammar]
+grammar: Body part + が いたい | Use this to say something hurts
+example: あたまが いたい。 | My head hurts. | Atama ga itai.
+example: おなかが いたい。 | My stomach hurts. | Onaka ga itai.
+grammar: Verb て form + 、Verb て form | Use this to link actions in order
+example: くすりを のんで、ねます。 | I take medicine and then sleep. | Kusuri o nonde, nemasu.
+example: てを あらって、たべます。 | I wash my hands and then eat. | Te o aratte, tabemasu.
+
+[quiz]
+quiz: How do you say "My head hurts"? | あたまが いたい | あたまを いたい | あたまに いたい | A | Body part + が いたい.
+quiz: What does くすり mean? | medicine | soup | fever | A | くすり means medicine.
+quiz: What does おだいじに mean? | Take care | Good morning | Thank you | A | おだいじに is said to someone who is sick.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

@@ -1,0 +1,63 @@
+title: Weekend Plans
+scene: cafe
+
+[story]
+@scene cafe
+> Mika enters left
+& Alex enters right
+> Hana enters right
+Hana: いらっしゃいませ。 ごちゅうもんは？ | Welcome. Your order? | Irasshaimase. Gochuumon wa?
+> Mika bows
+Mika: コーヒーを ふたつ おねがいします。 | Two coffees, please. | Koohii o futatsu onegaishimasu.
+> Hana exits right
+> Mika looks curious
+Mika: ねえ、こんしゅうの しゅうまつ、なにを する？ | Hey, what are you doing this weekend? | Nee, konshuu no shuumatsu, nani o suru?
+> Alex shrugs
+Alex: まだ きめて いない。 | I haven't decided yet. | Mada kimete inai.
+> Mika looks excited
+Mika: いっしょに こうえんに いきませんか。 | Would you like to go to the park together? | Issho ni kouen ni ikimasen ka.
+> Alex looks happy
+Alex: いいね！ おべんとうを もって いこう。 | Nice! Let's take lunch boxes. | Ii ne! Obentou o motte ikou.
+> Mika nods
+Mika: わたしが サンドイッチを つくるよ。 | I'll make sandwiches. | Watashi ga sandoitchi o tsukuru yo.
+> Alex thinks
+Alex: じゃあ、ぼくは のみものを かうよ。 | Then I'll buy the drinks. | Jaa, boku wa nomimono o kau yo.
+> Hana enters right
+> Hana shows
+Hana: おまたせしました。 コーヒーです。 | Sorry to keep you waiting. Your coffees. | Omatase shimashita. Koohii desu.
+> Alex bows
+Alex: ありがとうございます。 | Thank you. | Arigatou gozaimasu.
+> Mika looks worried
+Mika: あっ、てんきよほうを みなきゃ。 | Oh, I should check the weather forecast. | A, tenki yohou o minakya.
+> Alex looks smirking
+Alex: だいじょうぶ。 あしたは はれだよ。 | It's fine. Tomorrow will be sunny. | Daijoubu. Ashita wa hare da yo.
+> Mika cheers
+Mika: やった！ たのしみ！ | Yay! I can't wait! | Yatta! Tanoshimi!
+
+[vocab]
+vocab: しゅうまつ | weekend | shuumatsu
+example: しゅうまつは ひまです。 | I'm free on the weekend. | Shuumatsu wa hima desu.
+vocab: いっしょに | together | issho ni
+example: いっしょに いきます。 | We go together. | Issho ni ikimasu.
+vocab: おべんとう | lunch box | obentou
+example: おべんとうを つくります。 | I make a lunch box. | Obentou o tsukurimasu.
+vocab: のみもの | drink | nomimono
+example: のみものを かいます。 | I buy drinks. | Nomimono o kaimasu.
+vocab: てんき | weather | tenki
+example: きょうの てんきは いいです。 | Today's weather is good. | Kyou no tenki wa ii desu.
+
+[grammar]
+grammar: Verb stem + ませんか | Use this to invite someone ("Would you like to ...?")
+example: いっしょに いきませんか。 | Would you like to go together? | Issho ni ikimasen ka.
+example: おちゃを のみませんか。 | Would you like to drink tea? | Ocha o nomimasen ka.
+grammar: Verb て form + いく | Use this to say you take something along
+example: おべんとうを もって いく。 | I take a lunch box. | Obentou o motte iku.
+example: かさを もって いきます。 | I take an umbrella. | Kasa o motte ikimasu.
+
+[quiz]
+quiz: What does いっしょに いきませんか mean? | Would you like to go together? | Where did you go? | I will go alone | A | ませんか is a polite invitation.
+quiz: What does しゅうまつ mean? | weekend | weekday | holiday | A | しゅうまつ means weekend.
+quiz: How do you say "I take an umbrella"? | かさを もって いきます | かさを もちません | かさが ありません | A | Verb て form + いく means "take along".
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

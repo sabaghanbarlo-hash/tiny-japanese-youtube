@@ -1,0 +1,66 @@
+title: Cooking Curry Together
+scene: store
+
+[story]
+@scene store
+> Mika enters left
+& Alex enters right
+> Mika holds a bag
+> Mika looks excited
+Mika: きょうの ばんごはんは カレーに しよう！ | Let's have curry for dinner tonight! | Kyou no bangohan wa karee ni shiyou!
+> Alex looks happy
+Alex: いいね！ ざいりょうを かわなきゃ。 | Nice! We have to buy the ingredients. | Ii ne! Zairyou o kawanakya.
+> Mika thinks
+Mika: にんじんと じゃがいもと たまねぎ。 それから おにく。 | Carrots, potatoes and onions. And meat. | Ninjin to jagaimo to tamanegi. Sorekara oniku.
+> Hana enters right
+Alex: すみません、カレールーは どこですか。 | Excuse me, where is the curry roux? | Sumimasen, karee ruu wa doko desu ka.
+> Hana points right
+Hana: あちらの たなに ありますよ。 | It's on that shelf over there. | Achira no tana ni arimasu yo.
+> Alex bows
+Alex: ありがとうございます！ | Thank you! | Arigatou gozaimasu!
+> Hana exits right
+@scene kitchen
+> Mika looks happy
+Mika: まず、やさいを きります。 | First, we cut the vegetables. | Mazu, yasai o kirimasu.
+> Alex looks worried
+Alex: ゆびを きらないように きを つけるね。 | I'll be careful not to cut my finger. | Yubi o kiranai you ni ki o tsukeru ne.
+> Mika nods
+Mika: つぎに、おにくと いっしょに いためます。 | Next, we fry them with the meat. | Tsugi ni, oniku to issho ni itamemasu.
+> Alex looks excited
+Alex: いい におい！ | What a good smell! | Ii nioi!
+> Mika shows
+Mika: それから、みずを いれて にます。 | Then we add water and simmer. | Sorekara, mizu o irete nimasu.
+> Alex cheers
+Alex: さいごに、カレールーを いれる！ | Finally, we add the curry roux! | Saigo ni, karee ruu o ireru!
+> Mika looks happy
+Mika: できた！ いただきます！ | It's done! Let's eat! | Dekita! Itadakimasu!
+> Alex laughs
+Alex: おいしい！ ミカは てんさいだ！ | Delicious! Mika is a genius! | Oishii! Mika wa tensai da!
+
+[vocab]
+vocab: ざいりょう | ingredients | zairyou
+example: ざいりょうを かいます。 | I buy the ingredients. | Zairyou o kaimasu.
+vocab: やさい | vegetables | yasai
+example: やさいを きります。 | I cut vegetables. | Yasai o kirimasu.
+vocab: にる | to simmer | niru
+example: すこし にます。 | I simmer it a little. | Sukoshi nimasu.
+vocab: におい | smell | nioi
+example: いい においが します。 | It smells good. | Ii nioi ga shimasu.
+vocab: いただきます | let's eat (before a meal) | itadakimasu
+example: いただきます！ | Let's eat! | Itadakimasu!
+
+[grammar]
+grammar: まず / つぎに / それから / さいごに | Use these to say steps in order: first, next, then, finally
+example: まず、やさいを きります。 | First, I cut the vegetables. | Mazu, yasai o kirimasu.
+example: さいごに、たべます。 | Finally, I eat. | Saigo ni, tabemasu.
+grammar: Noun + は どこですか | Use this to ask where something is
+example: カレールーは どこですか。 | Where is the curry roux? | Karee ruu wa doko desu ka.
+example: トイレは どこですか。 | Where is the toilet? | Toire wa doko desu ka.
+
+[quiz]
+quiz: What does まず mean? | first | finally | next | A | まず means "first".
+quiz: How do you ask "Where is the curry roux?" | カレールーは どこですか | カレールーは なんですか | カレールーは いつですか | A | どこ means "where".
+quiz: What does やさい mean? | vegetables | meat | fish | A | やさい means vegetables.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

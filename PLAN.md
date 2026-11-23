@@ -139,3 +139,17 @@ One new Japanese story every day for a week, on top of the plan above. Scripts a
 
 **Cast:** Marinette/Adrien or Mika/Alex plus Sakamoto (older neighbour), Ono (shopkeeper), Hana (clerk). Check any new script before it is scheduled: Actions > "Check stories (no video)" (pattern e.g. `2026*.txt`).
 
+## Extra stories before the story week (Nov 23 - 28) - added Nov 23, 2026
+Six more stories, one a day, so every day until the Nov 29 story week has one. Same method as above, but because your Shorts already fill most of these days the story is placed in the gap that is at least 3 hours from every Shorts slot (usually 17:00-20:00 UTC).
+
+| Date (UTC) | UTC | ET | Tehran | Title |
+|---|---|---|---|---|
+| Mon Nov 23 | 18:00 | 13:00 | 21:30 | The Wrong Train |
+| Tue Nov 24 | 18:00 | 13:00 | 21:30 | A New Haircut |
+| Wed Nov 25 | 18:00 | 13:00 | 21:30 | Mika Has a Cold |
+| Thu Nov 26 | 22:00 | 17:00 | Fri 01:30 | At the Convenience Store |
+| Fri Nov 27 | 17:00 | 12:00 | 20:30 | Weekend Plans |
+| Sat Nov 28 | 20:00 | 15:00 | 23:30 | Cooking Curry Together |
+
+Thursday Nov 26 is US Thanksgiving, so US viewing may be lower that day.
+

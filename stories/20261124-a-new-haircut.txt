@@ -1,0 +1,66 @@
+title: A New Haircut
+scene: apartment
+
+[story]
+@scene apartment
+> Mika enters left
+& Alex enters right
+> Alex looks thinking
+Alex: かみが ながく なったな。 | My hair has gotten long. | Kami ga nagaku natta na.
+> Mika nods
+Mika: そうだね。 びよういんに いったら？ | True. Why don't you go to a hair salon? | Sou da ne. Biyouin ni ittara?
+> Alex looks excited
+Alex: うん、いってくる！ | Yeah, I'll go! | Un, ittekuru!
+> Alex exits right
+@scene store
+> Alex enters left
+> Hana enters right
+Hana: いらっしゃいませ。 きょうは どう しますか。 | Welcome. What would you like today? | Irasshaimase. Kyou wa dou shimasu ka.
+> Alex bows
+Alex: すこし みじかく して ください。 | Please make it a little shorter. | Sukoshi mijikaku shite kudasai.
+> Hana nods
+Hana: かしこまりました。 では、はじめますね。 | Certainly. Then let's begin. | Kashikomarimashita. Dewa, hajimemasu ne.
+> Alex looks worried
+> Hana looks smirking
+Hana: できました。 いかがですか。 | It's done. How is it? | Dekimashita. Ikaga desu ka.
+> Alex looks surprised
+Alex: あれ？ みじかすぎる！ | Huh? It's too short! | Are? Mijikasugiru!
+> Mika enters left
+> Mika looks surprised
+Mika: アレックス？ ……ふふ、にあってるよ。 | Alex? ...Hehe, it suits you. | Arekkusu? ...Fufu, niatteru yo.
+> Alex looks shy
+Alex: ほんとう？ | Really? | Hontou?
+> Mika laughs
+Mika: うん、すっきりしたね。 | Yeah, you look fresh. | Un, sukkiri shita ne.
+> Alex looks happy
+Alex: よかった。 じゃあ、これで いいや。 | Good. Then I guess this is fine. | Yokatta. Jaa, kore de ii ya.
+> Hana bows
+Hana: ありがとうございました。 | Thank you very much. | Arigatou gozaimashita.
+
+[vocab]
+vocab: かみ | hair | kami
+example: かみが ながいです。 | My hair is long. | Kami ga nagai desu.
+vocab: みじかい | short | mijikai
+example: みじかい かみが すきです。 | I like short hair. | Mijikai kami ga suki desu.
+vocab: ながい | long | nagai
+example: ながい みちを あるきます。 | I walk a long road. | Nagai michi o arukimasu.
+vocab: びよういん | hair salon | biyouin
+example: びよういんに いきます。 | I go to the hair salon. | Biyouin ni ikimasu.
+vocab: にあう | to suit | niau
+example: その ぼうしは にあいます。 | That hat suits you. | Sono boushi wa niaimasu.
+
+[grammar]
+grammar: Adjective (い→く) + して ください | Use this to ask someone to make something a certain way
+example: みじかく して ください。 | Please make it short. | Mijikaku shite kudasai.
+example: おおきく して ください。 | Please make it bigger. | Ookiku shite kudasai.
+grammar: Noun + に にあう | Use this to say something suits someone
+example: ミカに にあって いる。 | It suits Mika. | Mika ni niatte iru.
+example: その ふくは あなたに にあいます。 | That outfit suits you. | Sono fuku wa anata ni niaimasu.
+
+[quiz]
+quiz: What does みじかい mean? | long | short | tall | B | みじかい means short.
+quiz: How do you say "Please make it short"? | みじかく して ください | みじかい して ください | みじかく ない ください | A | い-adjective: い → く + して ください.
+quiz: What does にあう mean? | to suit | to cut | to wait | A | にあう means to suit or look good on someone.
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!
