@@ -1,0 +1,37 @@
+title: Action Test 1
+scene: store
+
+[story]
+@scene store
+> Mika enters left
+& Alex enters right
+Alex: このジャケット、きて みる！ | I'll try this jacket on! | Kono jaketto, kite miru!
+> Alex changes into a green jacket
+Alex: どう？ にあう？ | How is it? Does it suit me? | Dou? Niau?
+> Mika puts on a red coat
+Mika: わたしは あかい コートに する！ | I'll take the red coat! | Watashi wa akai kooto ni suru!
+> wait 2.5
+@scene kitchen
+> Mika changes into a yellow sweater
+Mika: さあ、りょうりを はじめよう。 | Now let's start cooking. | Saa, ryouri o hajimeyou.
+> Mika chops carrots for 5
+Mika: まず、にんじんを きります。 | First, I cut the carrots. | Mazu, ninjin o kirimasu.
+> wait 4
+> Alex stirs the curry for 5
+Alex: ぼくは カレーを まぜるよ。 | I'll stir the curry. | Boku wa karee o mazeru yo.
+> wait 4
+> Mika fries an egg for 5
+Mika: たまごも やこう。 | Let's fry an egg too. | Tamago mo yakou.
+> wait 5
+@scene apartment
+> Alex eats ramen
+Alex: いただきます！ | Let's eat! | Itadakimasu!
+> Mika eats an onigiri
+> wait 8
+> Mika holds a mug
+> Mika drinks
+Mika: あったかい おちゃだね。 | What a warm tea. | Attakai ocha da ne.
+> wait 4
+
+[ending]
+Mika and Alex: またね！ | See you again! | Mata ne!

@@ -27,12 +27,12 @@ EXPRS = {"neutral": "neutral", "confused": "confused", "puzzled": "confused", "n
          "joyful": "joy", "delighted": "joy", "thrilled": "excited", "thinking": "thinking", "curious": "thinking", "determined": "determined", "serious": "determined"}
 
 # ------------------------------------------------------------------ items
-EDIBLE = {"cotton_candy", "ice_cream", "popcorn"}
-ITEMS = {"cotton_candy", "ice_cream", "balloon", "ticket", "drink", "bag", "book", "popcorn", "plush", "umbrella", "phone", "broom", "box", "cake_box"}
+EDIBLE = {"cotton_candy", "ice_cream", "popcorn", "onigiri", "crepe", "croissant", "sandwich", "apple"}
+ITEMS = {"cotton_candy", "ice_cream", "balloon", "ticket", "drink", "bag", "book", "popcorn", "plush", "umbrella", "phone", "broom", "box", "cake_box", "onigiri", "crepe", "croissant", "sandwich", "apple", "mug"}
 RIGPROPS = {"phone", "broom", "box", "cake_box"}     # drawn by rigsvg (move with the hands), not by _draw_item
 ITEM_ALIASES = {"cotton candy": "cotton_candy", "candyfloss": "cotton_candy", "candy floss": "cotton_candy",
                 "fairy floss": "cotton_candy", "ice cream": "ice_cream", "icecream": "ice_cream", "ice-cream": "ice_cream",
-                "tickets": "ticket", "juice": "drink", "soda": "drink", "tea": "drink", "coffee": "drink", "cup": "drink",
+                "tickets": "ticket", "juice": "drink", "soda": "drink", "tea": "mug", "coffee": "mug", "cup": "mug", "hot chocolate": "mug", "rice ball": "onigiri", "riceball": "onigiri", "crêpe": "crepe", "pastry": "croissant", "sandwiches": "sandwich",
                 "shopping bag": "bag", "gift": "bag", "present": "bag", "teddy": "plush", "teddy bear": "plush",
                 "prize": "plush", "stuffed animal": "plush", "toy": "plush", "bear": "plush", "plushie": "plush",
                 "smartphone": "phone", "mobile": "phone", "cell phone": "phone", "food box": "box", "bento": "box", "parcel": "box", "cake": "cake_box", "cake box": "cake_box", "balloons": "balloon", "brolly": "umbrella", "umbrellas": "umbrella", "rain umbrella": "umbrella", "parasol": "umbrella"}
@@ -148,6 +148,69 @@ def apply_camera(R, fr, seg, tt):
     return out.filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2))
 
 
+GARMENT_ALIASES = {"sweater": "sweater", "jumper": "sweater", "pullover": "sweater", "knit": "sweater", "jacket": "jacket", "blazer": "jacket",
+                   "coat": "coat", "parka": "coat", "dress": "dress", "gown": "dress", "hoodie": "hoodie", "hoody": "hoodie",
+                   "kimono": "kimono", "yukata": "kimono", "shirt": "shirt", "t-shirt": "shirt", "blouse": "shirt", "top": "shirt", "scarf": "scarf"}
+DEFAULT_COLOR = {"sweater": "blue", "jacket": "navy", "coat": "red", "dress": "pink", "hoodie": "grey", "kimono": "purple", "shirt": "white", "scarf": "red"}
+VEG_WORDS = {"carrot": "carrot", "carrots": "carrot", "cucumber": "cucumber", "cucumbers": "cucumber", "onion": "onion", "onions": "onion",
+             "tomato": "tomato", "tomatoes": "tomato", "potato": "potato", "potatoes": "potato", "vegetables": "carrot", "veggies": "carrot", "vegetable": "carrot"}
+DISH_WORDS = {"soup": "soup", "curry": "curry", "stew": "stew", "miso": "miso", "porridge": "porridge", "sauce": "stew", "pot": "soup"}
+MEAL_WORDS = {"ramen": "ramen", "noodles": "ramen", "noodle": "ramen", "curry": "curry", "rice": "rice", "sushi": "sushi", "cake": "cake", "slice": "cake"}
+HAND_FOODS = {"onigiri", "crepe", "croissant", "sandwich", "apple"}
+
+
+def _for_secs(text):
+    m = re.search(r"\bfor\s+([\d.]+)\s*(?:s|sec|secs|seconds)?\b", text)
+    return (float(m[1]) if m else None), re.sub(r"\s*\bfor\s+[\d.]+\s*(?:s|sec|secs|seconds)?\b", "", text).strip()
+
+
+def parse_outfit(text):
+    s = re.sub(r"^(on|into|up)\s+", "", text.strip().lower())
+    for _ in range(2):
+        s = re.sub(r"^(a|an|the|her|his|their|new|another|some)\s+", "", s)
+    words = re.findall(r"[a-z\-]+", s)
+    col = next((w for w in words if w in RS.COLORS), None)
+    g = next((GARMENT_ALIASES[w] for w in words if w in GARMENT_ALIASES), None)
+    if g is None:
+        raise ValueError(f"'{text}': which clothes? Use e.g. 'changes into a blue sweater'. Garments: {', '.join(sorted(set(GARMENT_ALIASES.values())))}. "
+                         f"Colours: {', '.join(sorted(c for c in RS.COLORS if c != 'gray'))}")
+    return f"{g}|{col or DEFAULT_COLOR[g]}"
+
+
+def _veg(text):
+    ws = re.findall(r"[a-z]+", text.lower())
+    return next((VEG_WORDS[w] for w in ws if w in VEG_WORDS), "carrot")
+
+
+def _dish(text):
+    ws = re.findall(r"[a-z]+", text.lower())
+    return next((DISH_WORDS[w] for w in ws if w in DISH_WORDS), "soup")
+
+
+def _meal(text):
+    s = text.strip().lower()
+    if re.search(r"\b(onigiri|rice ball|riceball|croissant|crepe|crêpe|sandwich|apple|cotton candy|ice cream|popcorn)\b", s):
+        return None
+    ws = re.findall(r"[a-z]+", s)
+    return next((MEAL_WORDS[w] for w in ws if w in MEAL_WORDS), None)
+
+
+def _poof(fr, cx, cy, w, age):
+    """Smoke puff + sparkles that hide an outfit change (age 0..1)."""
+    R_ = int(w * 0.95); lay = Image.new("RGBA", (2 * R_, 2 * R_), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    fade = max(0.0, 1 - age) ** 0.7 * min(1.0, age * 7)
+    for k in range(10):
+        a = k * 36 * math.pi / 180 + 0.3
+        dist = (0.10 + 0.50 * age) * w * (0.55 + 0.45 * ((k * 7) % 5) / 4); r = (0.07 + 0.17 * math.sin(math.pi * min(1, age * 1.15))) * w
+        x, y = R_ + math.cos(a) * dist, R_ + math.sin(a) * dist * 1.25
+        d.ellipse([x - r, y - r, x + r, y + r], fill=(252, 252, 255, int(235 * fade)))
+        d.ellipse([x - r * 0.6, y - r * 0.6, x + r * 0.6, y + r * 0.6], fill=(226, 232, 244, int(160 * fade)))
+    for k in range(7):
+        a = k * 51 * math.pi / 180; dist = (0.18 + 0.55 * age) * w; s_ = (0.05 + 0.03 * ((k * 3) % 3)) * w * (1 - age * 0.4)
+        x, y = R_ + math.cos(a) * dist, R_ + math.sin(a) * dist * 1.2
+        d.polygon([(x, y - s_), (x + s_ * 0.28, y - s_ * 0.28), (x + s_, y), (x + s_ * 0.28, y + s_ * 0.28), (x, y + s_), (x - s_ * 0.28, y + s_ * 0.28), (x - s_, y), (x - s_ * 0.28, y - s_ * 0.28)],
+                  fill=(255, 232, 120, int(255 * max(0.0, 1 - age ** 1.5))))
+    fr.paste(lay, (int(cx - R_), int(cy - R_)), lay)
 BACK_ON = {"away", "back", "backwards", "away from us", "away from the camera", "back to us", "back to the camera", "to the window"}
 BACK_OFF = {"around", "front", "forward", "us", "the front", "the camera", "us again", "round", "to us"}
 GESTURES = {"point": "point", "shrug": "shrug", "think": "think", "bow": "bow", "cross": "cross", "cover": "cover", "phone": "phone",
@@ -165,6 +228,10 @@ for _v, _ws in {
     "point": "points point", "shrug": "shrugs shrug", "think": "thinks think ponders ponder", "bow": "bows bow", "cross": "crosses cross",
     "cover": "covers cover", "phone": "phones phone calls call", "show": "shows show presents present", "clasp": "clasps clasp pleads plead",
     "hips": "akimbo",
+    "wear": "wears wear changes change tries try dresses",
+    "chop": "chops chop slices slice dices dice cuts cut",
+    "stir": "stirs stir mixes mix",
+    "fry": "fries fry flips flip cooks cook bakes bake",
 }.items():
     for _w in _ws.split():
         VERBS[_w] = _v
@@ -187,10 +254,12 @@ def parse_dir(text):
     if verb_w not in VERBS:
         raise ValueError(f"unknown action '{verb_w}' in '{text}'. Actions: enters, walks to, runs to, exits, looks <feeling>, faces, "
                          f"waves, jumps, laughs, nods, cheers, points, shrugs, thinks, bows, crosses arms, covers mouth, phones, shows, clasps hands, "
-                         f"puts hands on hips, holds/buys <item>, eats, drinks, drops, gives <item> to <name>, rides, wait")
+                         f"puts hands on hips, changes into <clothes>, chops/stirs/fries, eats <food>, holds/buys <item>, drinks, drops, gives <item> to <name>, rides, wait")
     verb = VERBS[verb_w]
     if verb == "drop" and verb_w in ("puts", "put") and re.search(r"hands?\s+on\s+(her\s+|his\s+|their\s+)?hips", arg, re.I):
         verb, arg = "hips", ""
+    elif verb == "drop" and verb_w in ("puts", "put") and re.match(r"on\b", arg, re.I):
+        verb, arg = "wear", re.sub(r"^on\s+", "", arg, flags=re.I)
     if verb == "look":
         a = re.sub(r"^(at\s+)", "", arg, flags=re.I).strip()
         if arg.lower().startswith("at "):
@@ -205,11 +274,25 @@ def parse_dir(text):
         verb, arg = "phone", ""
     elif verb in ("hold", "buy"):
         arg = item_name(arg)
+    elif verb in ("wear", "chop", "stir", "fry"):
+        secs_, arg2 = _for_secs(arg)
+        if verb == "wear":
+            arg = parse_outfit(arg2)
+        elif verb == "chop":
+            arg = f"{_veg(arg2)}|{secs_ or ''}"
+        elif verb == "stir":
+            arg = f"{_dish(arg2)}|{secs_ or ''}"
+        else:
+            arg = f"egg|{secs_ or ''}"
     elif verb == "eat":
-        if arg and arg.lower() not in ("it", "some", "them"):
+        secs_, arg = _for_secs(arg)
+        ml = _meal(arg) if arg and arg.lower() not in ("it", "some", "them") else None
+        if ml:
+            arg = f"meal:{ml}|{secs_ or ''}"
+        elif arg and arg.lower() not in ("it", "some", "them"):
             arg = item_name(arg)
             if arg not in EDIBLE:
-                raise ValueError(f"'{text}': you can't eat {arg.replace('_', ' ')}. Edible: cotton candy, ice cream, popcorn (use 'drinks' for a drink)")
+                raise ValueError(f"'{text}': you can't eat {arg.replace('_', ' ')}. Edible: {', '.join(sorted(e.replace('_', ' ') for e in EDIBLE))}, ramen, curry, rice, sushi, cake (use 'drinks' for a drink)")
         else:
             arg = ""
     elif verb == "give":
@@ -246,6 +329,7 @@ class Stage:
         self.umb = mk()                              # umbrella in hand (separate from the item slot)
         self.pose = mk()                             # (t0, t1, pose name): gestures held with a short ease in / out
         self.back = mk()                             # (t, True/False): seen from behind (back to the viewer)
+        self.act, self.outfit, self.poof = mk(), mk(), mk()      # actions (t0, t1, kind, detail), outfits (t, garment, colour), outfit-change puffs (t)
         self.cam = []                                # camera keyframes (t, seconds to get there, zoom, target)
         self.weather, self.tod = None, None          # None | rain | storm | snow  /  None | morning | day | sunset | night
         self.explicit = dict(weather=False, tod=False, umb=False)
@@ -412,6 +496,26 @@ class Stage:
                 idx = i
         return (1.0, W / 2, H / 2) if idx < 0 else key(idx, tt)
 
+    def act_at(self, nm, t):
+        """(kind, detail, seconds since the action began, progress 0..1) while an action is on, else None."""
+        for t0, t1, kind, detail in reversed(self.act[nm]):
+            if t0 <= t < t1:
+                return (kind, detail, t - t0, (t - t0) / (t1 - t0))
+        return None
+
+    def outfit_at(self, nm, t):
+        cur = None
+        for t0, g, col in self.outfit[nm]:
+            if t0 + 0.3 <= t:                      # the clothes swap while the puff of smoke hides the character
+                cur = (g, col)
+        return cur
+
+    def poof_at(self, nm, t):
+        for t0 in reversed(self.poof[nm]):
+            if 0 <= t - t0 < 0.9:
+                return (t - t0) / 0.9
+        return None
+
     def pose_at(self, nm, t):
         """(pose name, blend 0..1) while a gesture is on, else None. The blend eases in and out over 0.3 s."""
         for t0, t1, name in reversed(self.pose[nm]):
@@ -433,7 +537,8 @@ class Stage:
                     pop=next((txt for a, b, n, txt in self.pops if n == nm and a <= t < b), None),
                     expr=self._last(self.expr[nm], t, "neutral"), face=face, mirror=(face != self.dflt_face[nm]),
                     item=item, bite=bite, eating=any(a <= t < b for a, b in self.eat[nm]), umb=self._last(self.umb[nm], t, False),
-                    pose=self.pose_at(nm, t), back=self._last(self.back[nm], t, False))
+                    pose=self.pose_at(nm, t), back=self._last(self.back[nm], t, False),
+                    act=self.act_at(nm, t), outfit=self.outfit_at(nm, t), poof=self.poof_at(nm, t))
 
     # -- compile directives into keyframes
     def _target(self, nm, arg, t):
@@ -553,18 +658,39 @@ class Stage:
                 if verb == "buy":
                     self.hop[nm].append((t, t + 0.45, 60)); self.expr[nm].append((t + 0.3, "happy"))
                 dur = max(dur, 0.9)
+            elif verb == "eat" and arg.startswith("meal:"):
+                kind_, sec_ = arg[5:].split("|"); secs = float(sec_) if sec_ else 7.5
+                self.act[nm].append((t, t + secs, "meal", kind_)); self.expr[nm].append((t, "happy")); dur = max(dur, 0.8)
             elif verb == "eat":
                 it, bite = self.item_at(nm, t)
                 if arg:
                     it = arg
                     self.item[nm].append((t, it, 0)); bite = 0
                 if it not in EDIBLE:
-                    raise ValueError(f"'{text}': {nm} isn't holding anything edible (hold or buy cotton candy, ice cream or popcorn first)")
-                for j in range(1, 4):
-                    self.item[nm].append((t + 0.5 + 0.8 * (j - 1), it, min(3, bite + j)))
-                self.eat[nm].append((t, t + 2.8)); self.expr[nm].append((t, "happy")); dur = max(dur, 2.8)
+                    raise ValueError(f"'{text}': {nm} isn't holding anything edible (hold or buy {', '.join(sorted(e.replace('_', ' ') for e in EDIBLE))} first, or eat ramen, curry, rice, sushi, cake)")
+                for j in range(3):                       # three bites: the hand brings the food to the mouth, the food gets smaller
+                    t0 = t + 0.3 + 1.5 * j
+                    self.pose[nm].append((t0, t0 + 1.15, "to_mouth"))
+                    self.item[nm].append((t0 + 0.55, it, min(3, bite + j + 1)))
+                    self.eat[nm].append((t0 + 0.5, t0 + 1.3))
+                self.expr[nm].append((t, "happy")); dur = max(dur, 0.8)
             elif verb == "drink":
-                self.eat[nm].append((t, t + 1.8)); self.expr[nm].append((t, "happy")); dur = max(dur, 1.8)
+                it, bite = self.item_at(nm, t)
+                if it in ("drink", "mug"):
+                    for j in range(2):
+                        t0 = t + 0.3 + 1.7 * j
+                        self.pose[nm].append((t0, t0 + 1.4, "to_mouth"))
+                    self.expr[nm].append((t, "happy")); dur = max(dur, 0.8)
+                else:
+                    self.eat[nm].append((t, t + 1.8)); self.expr[nm].append((t, "happy")); dur = max(dur, 1.8)
+            elif verb in ("chop", "stir", "fry"):
+                det, sec_ = arg.split("|"); secs = float(sec_) if sec_ else (5.0 if verb == "fry" else 4.5)
+                self.act[nm].append((t, t + secs, verb, det)); dur = max(dur, 0.8)
+            elif verb == "wear":
+                g_, col_ = arg.split("|")
+                self.poof[nm].append(t); self.outfit[nm].append((t, g_, col_))
+                self.pose[nm].append((t, t + 0.8, "cheer")); self.pose[nm].append((t + 0.8, t + 2.6, "show"))
+                self.hop[nm].append((t + 0.35, t + 0.8, 36)); self.expr[nm].append((t + 0.4, "happy")); dur = max(dur, 1.2)
             elif verb == "drop":
                 if re.search(r"umbrella|brolly", arg, re.I):
                     self.umb[nm].append((t, False))
@@ -680,11 +806,44 @@ def story_line(tr, stage, mark, ln, prev):
 
 
 # ------------------------------------------------------------------ drawing: characters
+NEW_FOOD_ITEMS = {"onigiri", "crepe", "croissant", "sandwich", "apple", "mug"}
+
+
+def _draw_food_item(d, ell, P, S, item, bite, x, k):
+    """Hand-held foods and the mug (sprite coordinates); they shrink with every bite."""
+    if item == "onigiri":
+        d.polygon(P(x - 40 * k, 684, x + 40 * k, 684, x, 598 + (1 - k) * 60), fill=(250, 250, 248), outline=(204, 204, 198))
+        d.rectangle(P(x - 26 * k, 652 + (1 - k) * 18, x + 26 * k, 684), fill=(38, 68, 48))
+        for dx, dy in ((-8, 630), (10, 640), (0, 618)):
+            ell((x + dx * k - 3, dy + (1 - k) * 30 - 3, x + dx * k + 3, dy + (1 - k) * 30 + 3), (190, 190, 180))
+    elif item == "crepe":
+        d.polygon(P(x - 38 * k, 606 + (1 - k) * 30, x + 38 * k, 606 + (1 - k) * 30, x, 694), fill=(240, 206, 150), outline=(206, 160, 100))
+        for j in range(3):
+            d.line(P(x - 24 * k + j * 22 * k, 614 + (1 - k) * 30, x - 6 * k + j * 8 * k, 680), fill=(206, 160, 100), width=int(3 * S))
+        ell((x - 30 * k, 588 + (1 - k) * 24, x + 30 * k, 624 + (1 - k) * 24), (252, 250, 246)); ell((x - 10, 580 + (1 - k) * 24, x + 10, 602 + (1 - k) * 24), (226, 60, 70))
+    elif item == "croissant":
+        for dx, dy, rx, ry in ((-36, 12, 18, 30), (-18, -4, 22, 34), (6, -10, 24, 36), (30, -4, 22, 34), (46, 12, 16, 28)):
+            ell((x + (dx - rx) * k, 640 + dy - ry * k, x + (dx + rx) * k, 640 + dy + ry * k), (228, 164, 84))
+        for dx in (-18, 4, 28):
+            d.line(P(x + dx * k, 616, x + (dx + 2) * k, 664), fill=(204, 132, 58), width=int(3 * S))
+    elif item == "sandwich":
+        d.polygon(P(x - 46 * k, 692, x + 46 * k, 692, x + 46 * k, 636 + (1 - k) * 24), fill=(246, 226, 172), outline=(206, 176, 110))
+        d.polygon(P(x - 40 * k, 676, x + 40 * k, 676, x + 40 * k, 650 + (1 - k) * 20), fill=(110, 180, 90))
+        d.polygon(P(x - 36 * k, 668, x + 36 * k, 668, x + 36 * k, 656 + (1 - k) * 16), fill=(236, 120, 110))
+    elif item == "apple":
+        r = 38 * k; ell((x - r, 650 - r, x + r, 650 + r), (226, 60, 60)); ell((x - r * 0.5, 650 - r * 0.7, x - r * 0.1, 650 - r * 0.3), (246, 130, 120))
+        d.line(P(x, 650 - r, x + 6, 650 - r - 18), fill=(110, 80, 50), width=int(5 * S)); ell((x + 6, 650 - r - 22, x + 30, 650 - r - 10), (90, 170, 80))
+    elif item == "mug":
+        d.rounded_rectangle(P(x - 28, 598, x + 28, 668), radius=int(10 * S), fill=(250, 250, 252), outline=(190, 190, 196), width=int(3 * S))
+        d.arc(P(x + 14, 612, x + 52, 656), 270, 90, fill=(190, 190, 196), width=int(6 * S))
+        ell((x - 24, 600, x + 24, 616), (120, 78, 52)); d.line(P(x - 28, 626, x + 28, 626), fill=(214, 70, 74), width=int(8 * S))
 def _draw_item(d, ell, P, S, item, bite, swing):
     """Held item in the right hand (sprite coordinates)."""
     k = 1 - 0.22 * bite
     x = 383 - swing
     stick = (232, 210, 168)
+    if item in NEW_FOOD_ITEMS:
+        return _draw_food_item(d, ell, P, S, item, bite, x, k)
     if item == "cotton_candy":
         d.line(P(x, 660, x, 545), fill=stick, width=int(8 * S))
         r = 64 * k
@@ -840,13 +999,13 @@ _WARNED = set()
 _RIG_CACHE = {}
 
 
-def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t, pose=None, pk=1.0, back=False):
+def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t, pose=None, pk=1.0, back=False, act=None, outfit=None):
     w, h = int(L.SPRITE_W * out), int(L.SPRITE_H * out * 960 / 760)
     prop = item if item in RIGPROPS else None
     if prop:
         item = None
-    held = bool(item or umb or prop) and not arm
-    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h, pose, pk, prop, back)
+    held = bool(item or umb or prop) and not arm and not act
+    im = RS.render(name, L.CHARS.get(name), mouth, blink, expr, walk, arm, held, t, w, h, pose, pk, prop, back, act, outfit)
     held = held and bool(item or umb)
     if im is not None and held:
         # held item / folded umbrella: drawn with the original helpers on a 2x layer (smooth edges), at the rig's right hand
@@ -866,17 +1025,19 @@ def _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, t, pose=
     return im
 
 
-def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False, t=0.0, pose=None, pk=1.0, back=False):
+def rig(name, mouth, blink, expr, walk, arm, out, item=None, bite=0, umb=False, t=0.0, pose=None, pk=1.0, back=False, act=None, outfit=None):
     """Rigged characters (separate head / eyes / mouth / two-joint arms / legs, see rigsvg.py).
     Same call as before (plus the time t); falls back to the classic drawing if rigsvg or resvg is unavailable."""
     if RIG_SVG and RS is not None:
         try:
             tq = round(t * 12) / 12
             pk = round(float(pk) * 10) / 10
-            key = (name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back)
+            if act:
+                act = (act[0], act[1], round(act[2] * 24) / 24, round(act[3], 3))
+            key = (name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back, act, outfit)
             im = _RIG_CACHE.get(key)
             if im is None:
-                im = _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back)
+                im = _rig_svg(name, mouth, blink, expr, walk, arm, out, item, bite, umb, tq, pose, pk, back, act, outfit)
                 if im is None:
                     raise ValueError("no rig for this character")
                 if len(_RIG_CACHE) > 160:
@@ -1203,12 +1364,13 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
         sp_k = max(0.6, st["speed"] / SPEED) if st["walking"] else 1.0
         walk = (0, 1, 0, 3)[int(tt * 7 * sp_k) % 4] if st["walking"] else 0
         arm = (1 + int(tt * 5) % 2) if st["wave"] else 0
-        mth = int(mouth) if speaking else (1 + int(tt * 8) % 2 if st["expr"] == "laugh" else (1 if st["eating"] and int(tt * 4) % 2 else 0))
+        act = st.get("act")
+        mth = int(mouth) if speaking else (RS.meal_mouth(act[2]) if act and act[0] == "meal" else (1 + int(tt * 8) % 2 if st["expr"] == "laugh" else (1 if st["eating"] and int(tt * 4) % 2 else 0)))
         has_umb = bool(st.get("umb"))
         is_open = has_umb and rainy
         pz = st.get("pose")
         s = rig(nm, mth, blink, st["expr"], walk, arm, L.STAGE_OUT, st["item"], min(3, st["bite"]), has_umb and not is_open, t=tt,
-                pose=(pz[0] if pz else None), pk=(pz[1] if pz else 1.0), back=st.get("back", False))
+                pose=(pz[0] if pz else None), pk=(pz[1] if pz else 1.0), back=st.get("back", False), act=act, outfit=st.get("outfit"))
         if st["mirror"]:
             s = ImageOps.mirror(s)
         if st["walking"]:
@@ -1229,6 +1391,8 @@ def draw_characters(R, fr, seg, i, tt, who, mouth):
     for e in lay:
         nm, st, s, x, y = e["nm"], e["st"], e["s"], e["x"], e["y"]
         fr.paste(s, (x, y), s)
+        if st.get("poof") is not None:
+            _poof(fr, int(st["x"]), int(y + 0.55 * s.height), s.width, st["poof"])
         p = R.pills[(nm, int(e["speaking"]))]
         fr.paste(p, (int(st["x"]) - p.width // 2, e["y0"] + 36), p)
         mk = st["pop"] or {"confused": "?", "surprised": "!"}.get(st["expr"])

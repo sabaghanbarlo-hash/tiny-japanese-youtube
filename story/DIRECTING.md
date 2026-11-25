@@ -134,3 +134,21 @@ Characters keep speaking while turned away. Facial expressions are not visible f
 - A direction that comes *before* the first spoken line of a new `@scene` still runs in the *old* scene. Named spots therefore fail there ("don't know the place 'to vending machine'"): use left / center / right / a percent (`walks to 40`) right after `@scene`.
 - Anyone still on stage when you change `@scene` stays on stage: add `> Ono exits right` first.
 - Check a new script before scheduling it: GitHub > Actions > **Check stories (no video)** (pattern e.g. `20261206-*.txt`). It builds each script with silent audio and reports the first error.
+
+## Actions (story mode v3b): clothes, cooking, eating
+
+These show the audience what is happening instead of only talking about it. Each lasts a few seconds (add `for N` to change that) and carries on while the next line is spoken; add `> wait N` if nothing is spoken meanwhile.
+
+```
+> Mika changes into a blue sweater    # also: puts on / tries on / wears. A puff of smoke hides the change.
+> Mika chops carrots                  # counter, knife, the carrot gets shorter and slices pile up (onion, tomato, cucumber, potato)
+> Alex stirs the curry                # pot on a stove, spoon, steam (soup, stew, miso, porridge)
+> Mika fries an egg                   # pan with a sizzling egg that gets flipped
+> Alex eats ramen                     # plated: ramen, curry, rice, sushi, cake - chopsticks / spoon / fork go to the mouth, the food goes down
+> Mika eats an onigiri                # hand-held: onigiri, crepe, croissant, sandwich, apple (also cotton candy, ice cream, popcorn) - 3 bites
+> Alex holds a mug                    # then:
+> Alex drinks                         # the cup really goes to the mouth (tea, coffee, hot chocolate)
+```
+
+Garments: sweater, jacket, coat, dress, hoodie, kimono, shirt, scarf. Colours: red, blue, green, yellow, pink, purple, orange, white, black, brown, grey, navy, beige. The outfit stays until the next change.
+

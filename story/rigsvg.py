@@ -321,6 +321,7 @@ POSES = {
     "bow": dict(A=(244, 642), B=(316, 642), lean=17, tilt=9),
     "cheer": dict(A=(112, 336), B=(448, 336), tilt=-4),
     "hold_box": dict(A=(236, 612), B=(324, 612)),
+    "to_mouth": dict(B=(318, 444), tilt=-3),
 }
 PROP_HAND = {"phone", "broom"}          # attached to the right-screen forearm (move with the hand)
 PROP_FRONT = {"box", "cake_box"}        # carried in front of the body with both hands
@@ -394,9 +395,164 @@ def held_hand(walk):
     return ex-106*math.sin(r(a)), ey+106*math.cos(r(a))
 
 
-def svg(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0, prop=None, back=False):
+
+# ------------------------------------------------------------------ v3b: actions (outfits, chopping, stirring, frying, eating)
+COLORS = {"red": (214, 70, 74), "blue": (70, 110, 196), "green": (76, 160, 100), "yellow": (240, 196, 70), "pink": (240, 150, 180),
+          "purple": (140, 96, 190), "orange": (240, 140, 60), "white": (246, 246, 248), "black": (50, 50, 58), "brown": (150, 100, 70),
+          "grey": (150, 154, 164), "gray": (150, 154, 164), "navy": (44, 58, 104), "beige": (226, 204, 168)}
+VEG = {"carrot": ((240, 140, 50), "long"), "cucumber": ((110, 180, 90), "long"), "onion": ((238, 226, 196), "round"),
+       "tomato": ((226, 76, 66), "round"), "potato": ((206, 170, 110), "round")}
+SOUPS = {"soup": (236, 200, 120), "curry": (170, 110, 50), "stew": (196, 84, 60), "miso": (206, 156, 106), "porridge": (240, 232, 210)}
+_FR_OLD = {"marinette": (H((88, 130, 182)), H((62, 98, 146))), "adrien": (H((44, 58, 104)), H((30, 42, 82)))}
+
+
+def _sm(x):
+    x = max(0.0, min(1.0, x)); return x*x*(3-2*x)
+
+
+def _shade(rgb, f):
+    return tuple(max(0, min(255, int(v*f))) for v in rgb)
+
+
+def _garment(g, rgb, sk):
+    col, d, lt, wh = H(rgb), H(_shade(rgb, 0.78)), H(_shade(rgb, 1.15)), H((248, 248, 250))
+    base = rrect((185, 450, 375, 700), 60, col)
+    if g == "sweater":
+        return base+rrect((185, 672, 375, 706), 14, d)+ell((232, 438, 328, 486), d)+ell((248, 448, 312, 478), sk)+"".join(line([(204, y), (356, y)], lt, 4) for y in (540, 590, 640))
+    if g == "shirt":
+        return base+poly([(236, 452), (262, 452), (280, 490), (298, 452), (324, 452), (310, 472), (280, 524), (250, 472)], wh)+"".join(ell((276, y-4, 284, y+4), d) for y in (540, 590, 640))
+    if g == "jacket":
+        return (base+poly([(262, 456), (298, 456), (312, 700), (248, 700)], wh)+poly([(236, 456), (266, 456), (254, 600), (226, 470)], d)
+                + poly([(324, 456), (294, 456), (306, 600), (334, 470)], d)+line([(280, 470), (280, 700)], d, 4)+rrect((206, 640, 252, 672), 6, d)+rrect((308, 640, 354, 672), 6, d))
+    if g == "coat":
+        return (rrect((178, 450, 382, 800), 60, col)+poly([(236, 456), (280, 520), (324, 456), (346, 490), (280, 566), (214, 490)], d)
+                + "".join(ell((274, y-6, 286, y+6), d) for y in (590, 640, 690))+line([(180, 640), (380, 640)], d, 5)+rrect((178, 780, 382, 800), 8, d))
+    if g == "dress":
+        return rrect((200, 450, 360, 640), 50, col)+poly([(200, 626), (360, 626), (430, 800), (130, 800)], col)+rrect((200, 618, 360, 648), 6, d)+poly([(248, 452), (280, 490), (312, 452)], wh)
+    if g == "hoodie":
+        return base+ell((220, 438, 340, 492), d)+ell((240, 450, 320, 486), sk)+rrect((220, 610, 340, 690), 18, d)+line([(262, 490), (258, 560)], lt, 4)+line([(298, 490), (302, 560)], lt, 4)
+    if g == "kimono":
+        return base+poly([(244, 452), (280, 540), (316, 452), (300, 452), (280, 498), (260, 452)], wh)+rrect((186, 590, 374, 650), 8, H((196, 64, 76)))+ell((300, 610, 344, 630), H((226, 96, 104)))
+    if g == "scarf":
+        return rrect((212, 452, 348, 498), 24, col)+poly([(300, 486), (340, 486), (350, 600), (312, 610)], col)+line([(300, 520), (344, 520)], d, 4)
+    return ""
+
+
+def _outfit(name, c, ch, outfit):
+    """(character parts with the outfit colours, extra SVG drawn over the torso). outfit = (garment, colour name)."""
+    g, cname = outfit
+    rgb = COLORS.get(cname, COLORS["blue"]); sk = H(skin_rgb(name, c))
+    over = _garment(g, rgb, sk)
+    if g == "scarf":
+        return ch, over
+    n = name.lower()
+    if n in _FR_OLD:
+        main, dark = _FR_OLD[n]; nm_, nd_ = H(rgb), H(_shade(rgb, 0.78))
+        rc = lambda s: s.replace(main, nm_).replace(dark, nd_) if isinstance(s, str) else s
+        ch2 = dict(ch); ch2["torso"] = rc(ch["torso"]); ch2["tb"] = rc(ch["tb"]); ch2["arms"] = tuple(rc(x) for x in ch["arms"])
+        return ch2, over
+    c2 = dict(c); c2["top"] = rgb; c2["accent"] = _shade(rgb, 0.78)
+    return _get(name, c2), over
+
+
+def _surface(kind):
+    if kind == "stove":
+        return (rrect((100, 650, 460, 688), 8, H((64, 68, 78)))+rrect((106, 688, 454, 940), 4, H((150, 152, 160)))+ell((186, 640, 414, 664), H((38, 40, 48)))
+                + "".join(ell((x-11, 716, x+11, 738), H((60, 62, 70))) for x in (160, 280, 400)))
+    if kind == "table":
+        return rrect((100, 650, 460, 684), 10, H((242, 238, 228)))+rrect((108, 684, 452, 940), 4, H((232, 226, 214)))+rrect((108, 702, 452, 720), 4, H((214, 84, 92)))
+    return rrect((100, 650, 460, 688), 8, H((198, 152, 110)))+rrect((106, 688, 454, 940), 4, H((162, 120, 88)))+line([(280, 700), (280, 930)], H((130, 96, 70)), 4)+rrect((262, 720, 270, 764), 3, H((120, 90, 66)))+rrect((290, 720, 298, 764), 3, H((120, 90, 66)))
+
+
+def meal_mouth(tr, T=2.5):
+    ph = (tr/T) % 1
+    return 2 if 0.28 <= ph < 0.40 else (1+int(tr*6) % 2 if 0.40 <= ph < 0.62 else 0)
+
+
+def _act(kind, detail, tr, u, sk):
+    """Props + hand targets for an action at tr seconds in (u = 0..1 progress). Returns dict(surface, tools, A, B)."""
+    wood, steel = H((176, 128, 84)), H((214, 218, 226))
+    if kind == "chop":
+        col, shape = VEG.get(detail, VEG["carrot"]); n = min(8, int(u*8.0)); cH = H(col); lH = H(_shade(col, 1.18))
+        dn = 0.5-0.5*math.cos((2*math.pi*(tr/0.55)) % (2*math.pi)); bx, by = 322, 578+70*dn
+        s = _surface("counter")+rrect((204, 634, 362, 652), 5, H((238, 214, 172)))
+        if shape == "long": s += rrect((214, 620, 288-4*n, 640), 9, cH)+(poly([(214, 628), (196, 618), (200, 640)], H((96, 170, 70))) if detail == "carrot" else "")
+        else:
+            r = max(8, 24-2*n); s += ell((246-r, 634-r, 246+r, 634+r), cH)
+        for i in range(n): s += ell((304+12*i-8, 636, 304+12*i+8, 650), cH)+ell((304+12*i-4, 639, 304+12*i+4, 647), lH)
+        t = poly([(bx-6, by+2), (bx-66, by+12), (bx-66, by+26), (bx-6, by+20)], steel)+line([(bx-6, by+20), (bx-66, by+26)], H((150, 154, 164)), 3)+rrect((bx-8, by-10, bx+36, by+12), 6, H((90, 60, 44)))
+        return dict(surface=s, tools=t, A=(254+8*math.sin(tr*3), 630), B=(bx, by))
+    if kind in ("stir", "fry"):
+        s = _surface("stove")
+        if kind == "stir":
+            liq = SOUPS.get(detail, SOUPS["soup"]); w = 2*math.pi*tr/1.5; bx, by = 300+24*math.cos(w), 562+9*math.sin(w)
+            s += rrect((212, 598, 388, 662), 14, H((172, 176, 186)))+rrect((196, 608, 214, 624), 6, H((120, 124, 134)))+rrect((386, 608, 404, 624), 6, H((120, 124, 134)))
+            s += ell((208, 586, 392, 610), H((96, 100, 110)))+ell((216, 590, 384, 606), H(liq))
+            for k in range(3):
+                x0 = 252+40*k+(tr*9+k*40) % 22-11
+                s += ell((x0-5, 594, x0+5, 600), H(_shade(liq, 1.2)))
+            tipx, tipy = 300+0.4*(bx-300), 602
+            t = line([(bx, by), (tipx, tipy)], wood, 10)+ell((tipx-13, tipy-8, tipx+13, tipy+8), H((150, 104, 66)))
+            for k in range(3):
+                f = (tr*0.7+k/3.0) % 1
+                t += f'<circle cx="{262+38*k+6*math.sin(tr*3+k):.0f}" cy="{584-90*f:.0f}" r="{12+10*f:.0f}" fill="#ffffff" fill-opacity="{0.55*(1-f):.2f}"/>'
+            return dict(surface=s, tools=t, A=(204, 616), B=(bx, by))
+        ph = (tr/2.6) % 1; fl = (ph-0.55)/0.15; flick = 0 <= fl <= 1
+        bx, by = 438, 612+(-46*math.sin(math.pi*fl) if flick else 3*math.sin(tr*9))
+        px, py = bx-124, by+22
+        t = ell((px-82, py-14, px+82, py+14), H((50, 52, 60)))+ell((px-70, py-10, px+70, py+10), H((84, 86, 96)))+line([(px+80, py), (bx, by+6)], H((60, 44, 40)), 14)
+        if flick:
+            h = 130*math.sin(math.pi*fl); ex, ey = px+10*math.sin(math.pi*fl), py-14-h
+            t += ell((ex-30, ey-10, ex+30, ey+10), H((250, 214, 90)))
+        else:
+            t += ell((px-34, py-12, px+34, py+8), H((250, 248, 240)))+ell((px-14, py-10, px+14, py+4), H((244, 190, 60)))
+            for k in range(2):
+                f = (tr*0.8+k/2.0) % 1; t += f'<circle cx="{px-20+40*k:.0f}" cy="{py-24-50*f:.0f}" r="{8+8*f:.0f}" fill="#ffffff" fill-opacity="{0.45*(1-f):.2f}"/>'
+        return dict(surface=s, tools=t, A=(232, 640), B=(bx, by))
+    if kind == "meal":
+        T = 2.5; ph = (tr/T) % 1; f = 1-0.8*u; M, P1 = (322, 446), (298, 628)
+        if ph < 0.30: sp = _sm(ph/0.30); bx, by = P1[0]+sp*(M[0]-P1[0]), P1[1]+sp*(M[1]-P1[1]); loaded = True
+        elif ph < 0.55: bx, by = M; loaded = ph < 0.40
+        elif ph < 0.85: sp = _sm((ph-0.55)/0.30); bx, by = M[0]+sp*(P1[0]-M[0]), M[1]+sp*(P1[1]-M[1]); loaded = False
+        else: bx, by = P1; loaded = False
+        s = _surface("table"); wh, rim = H((250, 250, 252)), H((214, 214, 220))
+        if detail == "ramen":
+            s += poly([(224, 646), (356, 646), (338, 688), (242, 688)], wh)+rrect((230, 662, 350, 674), 2, H((214, 70, 74)))+ell((222, 636, 358, 660), rim)+ell((226, 638, 354, 658), wh)
+            s += ell((232, 640, 348, 656), H((214, 150, 70)))+ell((246, 632-int(20*f), 334, 652), H((246, 214, 120)))+ell((300, 634, 326, 648), wh)+ell((262, 632, 292, 648), wh)+ell((270, 636, 284, 646), H((244, 190, 60)))
+            s += "".join(ell((250+22*k, 634, 258+22*k, 640), H((90, 170, 80))) for k in range(4))
+        elif detail == "curry":
+            s += ell((212, 640, 368, 676), rim)+ell((216, 642, 364, 672), wh)+ell((236, 632, 236+int(64*f)+10, 662), wh)+ell((290, 638, 290+int(60*f)+8, 664), H((170, 110, 50)))
+        elif detail == "rice":
+            s += poly([(224, 646), (356, 646), (338, 688), (242, 688)], wh)+rrect((230, 662, 350, 674), 2, H((90, 150, 200)))+ell((222, 636, 358, 660), rim)+ell((246, 626-int(18*f), 334, 652), wh)
+        elif detail == "sushi":
+            s += rrect((212, 650, 368, 672), 6, H((176, 128, 84)))
+            for i in range(max(1, math.ceil(4*f))): s += rrect((228+34*i, 636, 256+34*i, 654), 6, wh)+rrect((226+34*i, 628, 258+34*i, 644), 6, H((240, 130, 100)))
+        else:
+            s += ell((220, 646, 360, 676), wh)+poly([(250, 650), (330, 650), (330, 650-int(30*f)-6), (250, 644-int(30*f))], H((252, 226, 236)))+ell((282, 628-int(26*f), 298, 640-int(26*f)), H((226, 60, 70)))
+        pf = (by-M[1])/(P1[1]-M[1]); tx, ty = bx-24, by-18+48*pf*0.62
+        if detail in ("ramen", "rice", "sushi"):
+            t = line([(bx+18, by+30), (tx, ty)], H((200, 160, 100)), 6)+line([(bx+30, by+16), (tx+8, ty-6)], H((200, 160, 100)), 6)
+        elif detail == "curry":
+            t = line([(bx+22, by+26), (tx, ty)], H((190, 194, 202)), 7)+ell((tx-12, ty-8, tx+10, ty+8), H((200, 204, 212)))
+        else:
+            t = line([(bx+22, by+26), (tx, ty)], H((190, 194, 202)), 6)+"".join(line([(tx-3+5*k, ty), (tx-9+5*k, ty-12)], H((190, 194, 202)), 3) for k in range(3))
+        if loaded:
+            if detail == "ramen": t += "".join(line([(tx-6+6*k, ty+4), (tx-8+6*k, ty+18), (tx-4+6*k, ty+26)], H((246, 214, 120)), 3) for k in range(3))
+            elif detail == "curry": t += ell((tx-12, ty-12, tx+8, ty), H((190, 130, 60)))
+            elif detail == "rice": t += ell((tx-12, ty-10, tx+8, ty+2), wh)
+            elif detail == "sushi": t += rrect((tx-14, ty-8, tx+8, ty+6), 4, H((240, 130, 100)))
+            else: t += poly([(tx-10, ty), (tx+10, ty), (tx, ty-14)], H((252, 226, 236)))
+        return dict(surface=s, tools=t, A=(236, 636), B=(bx, by))
+    return dict(surface="", tools="")
+
+
+
+def svg(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0, prop=None, back=False, act=None, outfit=None):
     ch = _get(name, c)
     if ch is None: return None
+    tor_over = ''
+    if outfit and not back:
+        ch, tor_over = _outfit(name, c, ch, outfit)
     ph = (sum(map(ord, name)) % 7)*0.9
     sway, br = math.sin(t*1.6+ph), 1+math.sin(t*2+ph)*.012
     lfL, lfR = (28 if walk == 1 else 0), (28 if walk == 3 else 0)
@@ -413,6 +569,12 @@ def svg(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0
         if "A" in pz: Au, Af = (_lerp_ang(a0, a1, pk) for a0, a1 in zip((Au, Af), ik(ch["A"], pz["A"], -1)))
         if "B" in pz: Bu, Bf = (_lerp_ang(a0, a1, pk) for a0, a1 in zip((Bu, Bf), ik(ch["B"], pz["B"], 1)))
         tilt, lean = pz.get("tilt", 0)*pk, pz.get("lean", 0)*pk
+    surf = tools = ''
+    if act:
+        info = _act(act[0], act[1], act[2], act[3], skin_rgb(name, c))
+        surf, tools = info.get('surface', ''), info.get('tools', '')
+        if 'A' in info: Au, Af = ik(ch['A'], info['A'], -1)
+        if 'B' in info: Bu, Bf = ik(ch['B'], info['B'], 1)
     hT = f'rotate({lean:.2f} 280 790) translate(0 {sway*4:.2f}) rotate({sway*1.5+tilt:.2f} 280 460)'
     tT = f'rotate({lean:.2f} 280 790) translate(280 790) scale(1 {br:.4f}) translate(-280 -790)'
     ups, fos = ch["arms"]
@@ -428,16 +590,17 @@ def svg(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0
     face = '' if back else (_face_jp(expr, mouth, blink) if ch["k"] == 'jp' else _face_fr(ch, expr, mouth, blink))
     torso_s = (ch["tb"]+ch.get("bkl", '')) if back else ch["torso"]       # seen from behind: plain back, hair only, no face
     head_s = ch["bk"] if back else ch["hf"]
+    if not back: torso_s = torso_s+tor_over
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="-12 -10 583 1000">'
             f'<g transform="translate(0 {-lfL})">{ch["legs"][0]}</g><g transform="translate(0 {-lfR})">{ch["legs"][1]}</g>{ch["low"]}'
             f'<g transform="{hT}">{ch["hb"]}</g><g transform="{tT}">{torso_s}</g>{tails}'
-            f'<g transform="{tT}">{arm_svg(ch["A"], Au, Af, ups, fos)}{arm_svg(ch["B"], Bu, Bf, ups, fos, _prop_hand(prop) if prop in PROP_HAND else "")}{front}</g>'
+            f'<g transform="{tT}">{surf}{arm_svg(ch["A"], Au, Af, ups, fos)}{arm_svg(ch["B"], Bu, Bf, ups, fos, _prop_hand(prop) if prop in PROP_HAND else "")}{front}{tools}</g>'
             f'<g transform="{hT}">{head_s}{face}</g></svg>')
 
 
-def render(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0, prop=None, back=False):
+def render(name, c, mouth, blink, expr, walk, arm, held, t, w, h, pose=None, pk=1.0, prop=None, back=False, act=None, outfit=None):
     """RGBA sprite of size (w, h), or None if this character cannot be drawn this way."""
     if resvg_py is None: return None
-    s = svg(name, c, int(mouth), bool(blink), expr, int(walk), int(arm), bool(held), float(t), w, h, pose, pk, prop, back)
+    s = svg(name, c, int(mouth), bool(blink), expr, int(walk), int(arm), bool(held), float(t), w, h, pose, pk, prop, back, act, outfit)
     if s is None: return None
     return Image.open(io.BytesIO(bytes(resvg_py.svg_to_bytes(svg_string=s, width=w, height=h)))).convert("RGBA")
