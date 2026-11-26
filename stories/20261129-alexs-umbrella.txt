@@ -29,6 +29,10 @@ Alex: あたたかい おちゃを ふたつ おねがいします。 | Two hot 
 > Hana bows
 Hana: かしこまりました。 すぐに おもちします。 | Certainly. I'll bring them right away. | Kashikomarimashita. Sugu ni omochi shimasu.
 > Alex looks happy
+> Alex holds a mug
+> Mika holds a mug
+> Alex drinks
+> Mika drinks
 Alex: ああ、あたたかい……。 | Ahh, so warm... | Aa, atatakai...
 > Mika looks surprised
 Mika: あっ、あめが やんだ！ | Oh, the rain stopped! | A, ame ga yanda!

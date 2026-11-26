@@ -21,21 +21,26 @@ Alex: ありがとうございます！ | Thank you! | Arigatou gozaimasu!
 > Hana exits right
 @scene kitchen
 > Mika looks happy
+> Mika chops carrots for 7
 Mika: まず、やさいを きります。 | First, we cut the vegetables. | Mazu, yasai o kirimasu.
 > Alex looks worried
 Alex: ゆびを きらないように きを つけるね。 | I'll be careful not to cut my finger. | Yubi o kiranai you ni ki o tsukeru ne.
 > Mika nods
+> Mika stirs the stew for 6
 Mika: つぎに、おにくと いっしょに いためます。 | Next, we fry them with the meat. | Tsugi ni, oniku to issho ni itamemasu.
 > Alex looks excited
 Alex: いい におい！ | What a good smell! | Ii nioi!
-> Mika shows
+> Alex stirs the curry for 7
 Mika: それから、みずを いれて にます。 | Then we add water and simmer. | Sorekara, mizu o irete nimasu.
 > Alex cheers
 Alex: さいごに、カレールーを いれる！ | Finally, we add the curry roux! | Saigo ni, karee ruu o ireru!
 > Mika looks happy
+> Mika eats curry for 8
+> Alex eats curry for 8
 Mika: できた！ いただきます！ | It's done! Let's eat! | Dekita! Itadakimasu!
 > Alex laughs
 Alex: おいしい！ ミカは てんさいだ！ | Delicious! Mika is a genius! | Oishii! Mika wa tensai da!
+> wait 6
 
 [vocab]
 vocab: ざいりょう | ingredients | zairyou

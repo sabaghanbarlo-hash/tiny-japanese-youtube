@@ -11,6 +11,7 @@ Alex: あした、にほんごの しけんが ある……。 | I have a Japane
 > Mika looks happy
 Mika: だいじょうぶ。 いっしょに べんきょうしよう。 | It's okay. Let's study together. | Daijoubu. Issho ni benkyou shiyou.
 > Alex thinks
+> Alex holds a book
 Alex: ありがとう。 まず、かんじを れんしゅうしたい。 | Thanks. First, I want to practice kanji. | Arigatou. Mazu, kanji o renshuu shitai.
 > Mika points right
 Mika: じゃあ、もんだい。 「やま」は なんですか。 | Okay, a question. What is "yama"? | Jaa, mondai. "Yama" wa nan desu ka.

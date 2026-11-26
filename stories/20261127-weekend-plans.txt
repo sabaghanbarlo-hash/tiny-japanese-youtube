@@ -25,6 +25,10 @@ Alex: じゃあ、ぼくは のみものを かうよ。 | Then I'll buy the dri
 > Hana enters right
 > Hana shows
 Hana: おまたせしました。 コーヒーです。 | Sorry to keep you waiting. Your coffees. | Omatase shimashita. Koohii desu.
+> Alex holds a mug
+> Mika holds a mug
+> Alex drinks
+> Mika drinks
 > Alex bows
 Alex: ありがとうございます。 | Thank you. | Arigatou gozaimasu.
 > Mika looks worried

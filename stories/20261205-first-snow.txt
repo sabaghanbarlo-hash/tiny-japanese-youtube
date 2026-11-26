@@ -23,11 +23,13 @@ Alex: じゃあ、ふたりで かたほうずつ つけよう。 | Then let's e
 Mika: いい アイデア！ | Good idea! | Ii aidea!
 @scene town
 > Alex walks to 40
-> Alex holds a drink
+> Alex holds a mug
 Alex: あたたかい コーヒーを かったよ。 どうぞ。 | I bought a hot coffee. Here you go. | Atatakai koohii o katta yo. Douzo.
-> Mika holds a drink
+> Mika holds a mug
 > Mika looks happy
 Mika: ありがとう。 ……あったかい！ | Thanks. ...So warm! | Arigatou. ...Attakai!
+> Alex drinks
+> Mika drinks
 > Sakamoto enters left
 & Sakamoto holds a broom
 Sakamoto: おや、ふたりとも。 かぜを ひかないように ね。 | Oh, you two. Be careful not to catch a cold. | Oya, futari tomo. Kaze o hikanai you ni ne.

@@ -1,0 +1,12 @@
+title: Action Test 2
+scene: stall
+
+[story]
+@scene stall
+> Mika enters left
+& Alex enters right
+> Mika eats an egg roll
+> Alex eats an orange
+> wait 6
+> Mika eats a baguette
+> wait 5

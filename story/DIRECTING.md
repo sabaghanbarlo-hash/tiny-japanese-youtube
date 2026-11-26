@@ -134,3 +134,40 @@ Characters keep speaking while turned away. Facial expressions are not visible f
 - A direction that comes *before* the first spoken line of a new `@scene` still runs in the *old* scene. Named spots therefore fail there ("don't know the place 'to vending machine'"): use left / center / right / a percent (`walks to 40`) right after `@scene`.
 - Anyone still on stage when you change `@scene` stays on stage: add `> Ono exits right` first.
 - Check a new script before scheduling it: GitHub > Actions > **Check stories (no video)** (pattern e.g. `20261206-*.txt`). It builds each script with silent audio and reports the first error.
+
+## Actions (story mode v3b): clothes, cooking, eating
+
+These show the audience what is happening instead of only talking about it. Each lasts a few seconds (add `for N` to change that) and carries on while the next line is spoken; add `> wait N` if nothing is spoken meanwhile.
+
+```
+> Mika changes into a blue sweater    # also: puts on / tries on / wears. A puff of smoke hides the change.
+> Mika chops carrots                  # counter, knife, the carrot gets shorter and slices pile up (onion, tomato, cucumber, potato)
+> Alex stirs the curry                # pot on a stove, spoon, steam (soup, stew, miso, porridge)
+> Mika fries an egg                   # pan with a sizzling egg that gets flipped
+> Alex eats ramen                     # plated: ramen, curry, rice, sushi, cake - chopsticks / spoon / fork go to the mouth, the food goes down
+> Mika eats an onigiri                # hand-held: onigiri, crepe, croissant, sandwich, apple (also cotton candy, ice cream, popcorn) - 3 bites
+> Alex holds a mug                    # then:
+> Alex drinks                         # the cup really goes to the mouth (tea, coffee, hot chocolate)
+```
+
+Garments: sweater, jacket, coat, dress, hoodie, kimono, shirt, scarf. Colours: red, blue, green, yellow, pink, purple, orange, white, black, brown, grey, navy, beige. The outfit stays until the next change.
+
+## House rule: show what is happening
+
+Whatever the characters are doing in the story, the video must **show it**, not only talk about it. When a line mentions an activity, put the matching direction just before it:
+
+| The story says... | Add |
+|---|---|
+| trying on / changing clothes, a new coat or scarf | `> Adrien changes into a red sweater` / `> Marinette puts on a green scarf` |
+| cutting vegetables | `> Mika chops carrots for 6` |
+| stirring a pot, soup, curry | `> Alex stirs the curry for 6` |
+| frying or flipping an egg | `> Alex fries an egg for 6` |
+| eating a meal | `> Alex eats ramen` (ramen, curry, rice, sushi, cake) |
+| eating something in the hand | `> Mika eats an onigiri` (onigiri, crepe, croissant, sandwich, apple, orange, baguette, egg roll) |
+| drinking tea / coffee / hot chocolate | `> Mika holds a mug` then `> Mika drinks` |
+| carrying or being given something | `> Alex holds the box` / `holds a bag`, `holds a baguette` |
+| a phone call, reading, an umbrella | `phones for N`, `holds a book`, `opens the umbrella` |
+| a feeling or reaction | `looks surprised`, `shrugs`, `laughs`, `covers her mouth` |
+
+If a needed action does not exist yet, ask for it to be added instead of leaving it out. Check every new script with Actions > **Check stories (no video)** before it is scheduled.
+

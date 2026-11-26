@@ -39,6 +39,7 @@ Ono: おお、ありがとう！ ひとつ ひゃくごじゅうえんだよ。 
 Alex: じゃあ、みっつ ください。 | Then three, please. | Jaa, mittsu kudasai.
 > Ono shows
 Ono: よんひゃくごじゅうえんです。 | That's four hundred fifty yen. | Yonhyakugojuu en desu.
+> Alex holds the box
 > Mika laughs
 Mika: うちの おかあさん、たまごやき すきかな？ | I wonder if my mom likes tamagoyaki. | Uchi no okaasan, tamagoyaki suki kana?
 > Alex shrugs

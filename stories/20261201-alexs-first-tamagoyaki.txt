@@ -8,6 +8,7 @@ scene: kitchen
 > Alex looks excited
 Alex: きょうは ぼくが たまごやきを つくる！ | Today I'm going to make tamagoyaki! | Kyou wa boku ga tamagoyaki o tsukuru!
 > Mika crosses arms
+> Alex fries an egg for 7
 Mika: じゃあ、まず たまごを わって ください。 | Then first, please crack the eggs. | Jaa, mazu tamago o watte kudasai.
 > Alex nods
 Alex: はい！ ……あっ、からが はいった！ | Okay! ...Oh, a shell got in! | Hai! ...A, kara ga haitta!
@@ -36,8 +37,10 @@ Ono: コツは ひとつだけ。 ゆっくり まいて、あせらない こ�
 > Ono shows
 Ono: さあ、たべて みて。 | Here, try it. | Saa, tabete mite.
 > Alex looks happy
+> Alex eats an egg roll
 Alex: おいしい！ あまくて ふわふわ！ | Delicious! Sweet and fluffy! | Oishii! Amakute fuwafuwa!
 > Mika looks smirking
+> Mika eats an egg roll
 Mika: アレックス、つぎは しおを いれすぎないでね。 | Alex, next time don't put in too much salt. | Arekkusu, tsugi wa shio o iresuginai de ne.
 > Alex bows
 Alex: はい、がんばります！ | Yes, I'll do my best! | Hai, ganbarimasu!
