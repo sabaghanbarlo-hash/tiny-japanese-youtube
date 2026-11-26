@@ -7,6 +7,8 @@ scene: stall
 & Alex enters right
 > Mika eats an egg roll
 > Alex eats an orange
-> wait 6
+Mika: たまごやきは おいしいね。 | The egg roll is delicious. | Tamagoyaki wa oishii ne.
+> wait 5
 > Mika eats a baguette
+Alex: この オレンジも あまいよ。 | This orange is sweet too. | Kono orenji mo amai yo.
 > wait 5
