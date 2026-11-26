@@ -1,0 +1,51 @@
+name: Preview video to YouTube (private, not published)
+
+on:
+  workflow_dispatch:
+    inputs:
+      story:
+        description: "Story file in stories/ (on the branch you run this from)"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-${{ github.event.inputs.story }}
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system packages
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Render
+        env:
+          STRICT_VOICE: "1"
+          STORY: ${{ github.event.inputs.story }}
+        run: python story/lesson.py "stories/$STORY" -o output
+      - name: Cover image
+        env:
+          STORY: ${{ github.event.inputs.story }}
+        run: b=$(basename "stories/$STORY" .txt); python story/make_cover.py "stories/$STORY" "output/$b.thumbnail.png"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preview-video
+          path: output/
+      - name: Upload to YouTube as PRIVATE (no publish time, not on the website)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_PRIVACY: private
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "YouTube secrets are not set - skipping the upload"; exit 0; fi
+          for f in output/*.mp4; do python upload.py "$f"; done
