@@ -1,0 +1,12 @@
+title: What Time Do You Close? Ask in Japanese
+scene: store
+cast: mika, alex
+
+[hook]
+Mika: Want to know when a shop closes?
+[story]
+Alex: すみません、なんじまで ですか。 | Excuse me, until what time are you open?
+Mika: ごご しちじまで です。 | Until 7 p.m.
+Alex: わかりました。 ありがとう！ | Got it. Thanks!
+[ending]
+Alex: Say it once, then comment done!

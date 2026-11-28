@@ -1,0 +1,12 @@
+title: First Snow in Japan! Say This
+scene: snow
+cast: mika, alex
+
+[hook]
+Alex: It's snowing! Say it like a local!
+[story]
+Mika: みて！ ゆきが ふっている！ | Look! It's snowing!
+Alex: きれい！ でも さむい！ | Pretty! But cold!
+Mika: あったかい コーヒーを のもう！ | Let's drink a warm coffee!
+[ending]
+Mika: Is it snowing where you are? Comment yes or no!

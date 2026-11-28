@@ -1,0 +1,12 @@
+title: Christmas Cake in Japan? Say This
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: Japan loves strawberry Christmas cake!
+[story]
+Alex: クリスマスケーキを かいました！ | I bought a Christmas cake!
+Mika: やった！ いちごの ケーキ？ | Yay! A strawberry cake?
+Alex: うん、いちごの ケーキ！ | Yes, a strawberry cake!
+[ending]
+Mika: What's your Christmas food? Comment below!

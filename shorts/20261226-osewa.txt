@@ -1,0 +1,12 @@
+title: Thank You for This Year! Say It in Japanese
+scene: commute
+cast: mika, alex
+
+[hook]
+Mika: At the end of the year, Japanese people say this!
+[story]
+Alex: ことしも おせわに なりました。 | Thank you for your help this year.
+Mika: こちらこそ、ありがとう ございました。 | Thank you too.
+Alex: らいねんも よろしく おねがいします。 | Please take care of me next year too.
+[ending]
+Mika: Say it to a coworker! Comment thanks!

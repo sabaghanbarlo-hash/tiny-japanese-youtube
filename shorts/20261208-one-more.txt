@@ -1,0 +1,12 @@
+title: Want One More? Say This in Japan
+scene: ramen
+cast: mika, alex
+
+[hook]
+Alex: Loved your food? Ask for one more!
+[story]
+Alex: すみません、もう ひとつ おねがいします。 | Excuse me, one more please.
+Mika: はい、すぐ もってきます！ | Yes, I'll bring it right away!
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud, then comment done!

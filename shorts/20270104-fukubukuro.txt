@@ -1,0 +1,12 @@
+title: Mystery Lucky Bags in Japan: Fukubukuro
+scene: store
+cast: mika, alex
+
+[hook]
+Mika: In January, Japan sells mystery bags!
+[story]
+Alex: ふくぶくろ！ なにが はいって いる？ | Lucky bag! What's inside?
+Mika: あけるまで ひみつ！ | It's a secret until you open it!
+Alex: ドキドキ！ | My heart is pounding!
+[ending]
+Alex: Would you buy one? Comment yes or no!

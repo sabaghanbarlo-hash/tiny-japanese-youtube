@@ -1,0 +1,12 @@
+title: What Do Japanese People Eat on New Year's Day?
+scene: home
+cast: mika, alex
+
+[hook]
+Alex: New Year's food in Japan is called osechi!
+[story]
+Mika: おせちは おしょうがつの りょうりだよ。 | Osechi is New Year's food.
+Alex: カラフル！ たべても いい？ | So colorful! Can I eat some?
+Mika: どうぞ！ | Go ahead!
+[ending]
+Alex: Would you try osechi? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Too Fast? Ask People to Speak Slowly in Japanese
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Can't follow fast Japanese? Say this!
+[story]
+Alex: すみません、もう すこし ゆっくり おねがいします。 | Sorry, a little more slowly please.
+Mika: はい、ゆっくり はなしますね。 | Okay, I'll speak slowly.
+Alex: ありがとう！ | Thanks!
+[ending]
+Alex: Comment yes if you need this one!

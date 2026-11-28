@@ -1,0 +1,12 @@
+title: Where Is the Hospital? Ask in Japanese
+scene: street
+cast: mika, alex
+
+[hook]
+Alex: In an emergency, this question can help you!
+[story]
+Alex: すみません、びょういんは どこですか。 | Excuse me, where is the hospital?
+Mika: まっすぐ いって、みぎです。 | Go straight, then it's on the right.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Save this one! Comment saved!

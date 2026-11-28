@@ -1,0 +1,12 @@
+title: Alex wore shoes inside! Mika screamed!
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: Never wear shoes inside a Japanese home!
+[story]
+Alex: おじゃまします！ | Excuse me for coming in!
+Mika: あっ！ くつを ぬいで ください！ | Ah! Please take off your shoes!
+Alex: あっ、すみません！ | Oh, sorry!
+[ending]
+Mika: Did you know? Comment yes or no!

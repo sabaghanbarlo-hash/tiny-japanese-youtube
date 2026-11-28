@@ -1,0 +1,12 @@
+title: Last Time You See Someone This Year? Say This
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Japan has a special goodbye for the end of the year!
+[story]
+Mika: それでは、よい おとしを！ | Well then, have a good new year!
+Alex: よい おとしを！ | You too!
+Alex: また らいねん！ | See you next year!
+[ending]
+Alex: Say it to a friend! Comment yoi otoshi o!

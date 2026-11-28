@@ -1,0 +1,14 @@
+title: Alex called her “anata”. Mika froze!
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Never use anata for you in Japanese! Here is why.
+[story]
+Alex: あなたは がくせい ですか。 | Are you a student?
+Mika: あなたは ちょっと きついよ。 | "Anata" sounds a bit harsh.
+Mika: なまえに さんを つけてね。 | Use their name plus san.
+Alex: ミカさんは がくせい ですか。 | Mika-san, are you a student?
+Mika: そう！ それが しぜん！ | Yes! That sounds natural!
+[ending]
+Alex: Did you know this? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Fried Chicken for Christmas in Japan?!
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: In Japan, many families eat fried chicken at Christmas!
+[story]
+Alex: クリスマスに フライドチキン？ | Fried chicken at Christmas?
+Mika: そう！ みんな たべるよ！ | Yes! Everyone eats it!
+Alex: ほんとう？ たべたい！ | Really? I want some!
+[ending]
+Alex: Would you try it? Comment yes or no!

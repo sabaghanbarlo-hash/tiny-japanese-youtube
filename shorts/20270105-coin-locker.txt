@@ -1,0 +1,12 @@
+title: Need a Coin Locker in Japan? Ask Like This
+scene: station
+cast: mika, alex
+
+[hook]
+Mika: Heavy bags in a Japanese station? Find a locker!
+[story]
+Alex: すみません、コインロッカーは どこですか。 | Excuse me, where are the coin lockers?
+Mika: あそこです。 | Over there.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Alex: Say it once out loud, then comment done!

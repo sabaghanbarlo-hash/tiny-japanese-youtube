@@ -1,0 +1,12 @@
+title: Cold Outside? Ask for a Hot Drink in Japanese
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: Brr! It's freezing. Order something warm!
+[story]
+Alex: すみません、あたたかい のみものを おねがいします。 | Excuse me, a warm drink please.
+Mika: はい、ホットコーヒーは いかがですか。 | Yes, how about a hot coffee?
+Alex: はい、それを おねがいします！ | Yes, that one please!
+[ending]
+Mika: Say it out loud once, then comment done!

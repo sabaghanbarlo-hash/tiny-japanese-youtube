@@ -1,0 +1,12 @@
+title: “Sumimasen” Can Mean Thank You Too!
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: This one word means sorry, excuse me AND thank you!
+[story]
+Mika: おかね おとしましたよ。 | You dropped your money.
+Alex: あっ、すみません！ | Oh, thank you!
+Mika: すみませんは ありがとうの ときも つかうよ。 | Sumimasen is also used for thank you.
+[ending]
+Alex: Do you use sumimasen a lot? Comment yes!

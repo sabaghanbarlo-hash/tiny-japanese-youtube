@@ -1,0 +1,12 @@
+title: Point and Say “Kore o onegaishimasu” in Japan
+scene: store
+cast: mika, alex
+
+[hook]
+Mika: Don't know the word? Point and say this!
+[story]
+Alex: すみません、これを おねがいします。 | Excuse me, this one please.
+Mika: はい、ありがとう ございます！ | Yes, thank you!
+Alex: おねがいします！ | Please!
+[ending]
+Mika: Say it out loud once, then comment done!

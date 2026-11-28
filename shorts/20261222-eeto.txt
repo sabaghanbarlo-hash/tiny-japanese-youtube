@@ -1,0 +1,13 @@
+title: No Idea What to Say? Buy Time in Japanese
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: Need a moment to think? Japanese people say this!
+[story]
+Mika: なにが たべたい？ | What do you want to eat?
+Alex: ええと… そうですね… | Um... let me see...
+Mika: ゆっくり かんがえてね。 | Take your time.
+Alex: じゃあ、ラーメン！ | Then, ramen!
+[ending]
+Mika: Say eeto when you think! Comment ok!

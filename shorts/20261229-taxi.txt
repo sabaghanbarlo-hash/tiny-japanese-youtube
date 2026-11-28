@@ -1,0 +1,12 @@
+title: Taking a Taxi in Japan? Say This
+scene: street
+cast: mika, alex
+
+[hook]
+Alex: Need a taxi? Tell the driver where to go!
+[story]
+Alex: すみません、ここまで おねがいします。 | Excuse me, to here please.
+Mika: はい、わかりました。 | Yes, understood.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

@@ -1,0 +1,13 @@
+title: The konbini cashier asked Alex this. He froze!
+scene: store
+cast: mika, alex
+
+[hook]
+Mika: A konbini cashier asks this every time. Do you understand?
+[story]
+Mika: おはしは おつけ しますか。 | Would you like chopsticks with that?
+Alex: ええと…？ | Um...?
+Mika: おはし、いりますか。 | Do you need chopsticks?
+Alex: はい、おねがいします！ | Yes, please!
+[ending]
+Alex: Now you know! Comment I know!

@@ -1,0 +1,12 @@
+title: Japan Cleans EVERYTHING Before New Year!
+scene: home
+cast: mika, alex
+
+[hook]
+Alex: Big cleaning day before the new year!
+[story]
+Mika: きょうは おおそうじ！ | Today is the big cleaning day!
+Alex: ええっ！ まども？ | What! The windows too?
+Mika: もちろん！ ぜんぶ きれいに するよ！ | Of course! We clean everything!
+[ending]
+Mika: Do you clean before New Year? Comment yes or no!

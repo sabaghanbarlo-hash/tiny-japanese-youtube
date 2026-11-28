@@ -1,0 +1,12 @@
+title: Sound Natural: Say “Naruhodo” in Japanese
+scene: cafe
+cast: mika, alex
+
+[hook]
+Mika: Want to sound like a real Japanese speaker? Say this!
+[story]
+Mika: にほんの でんしゃは いつも じかんどおり！ | Japanese trains are always on time!
+Alex: なるほど！ | I see!
+Mika: だから あんしんだよ。 | So you can relax.
+[ending]
+Alex: Use naruhodo today! Comment it below!

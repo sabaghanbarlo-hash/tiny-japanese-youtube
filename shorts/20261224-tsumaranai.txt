@@ -1,0 +1,12 @@
+title: Giving a Gift in Japan? Say This Humble Phrase
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: Japanese people call their gifts boring on purpose!
+[story]
+Alex: つまらない ものですが、どうぞ。 | It's nothing special, but please take it.
+Mika: ええっ！ ありがとう！ | Oh! Thank you!
+Mika: これは ていねいな いいかたなんだよ。 | This is a polite way to say it.
+[ending]
+Alex: Would you say this? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Need Help in Japan? Ask Like This
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: Ask for help politely in Japanese!
+[story]
+Alex: すみません、てつだって もらえますか。 | Excuse me, could you help me?
+Mika: もちろん！ | Of course!
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Alex: Say it once out loud, then comment done!

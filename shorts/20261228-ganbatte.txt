@@ -1,0 +1,12 @@
+title: Cheer Someone On in Japanese: “Ganbatte!”
+scene: classroom
+cast: mika, alex
+
+[hook]
+Alex: Friend nervous? Cheer them on!
+[story]
+Mika: あした、しけん なんだ… | I have a test tomorrow...
+Alex: だいじょうぶ！ がんばって！ | You'll be fine! Do your best!
+Mika: ありがとう！ がんばる！ | Thanks! I'll do my best!
+[ending]
+Alex: Cheer someone on today! Comment ganbatte!

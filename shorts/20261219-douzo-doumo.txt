@@ -1,0 +1,12 @@
+title: Two Tiny Words: “Douzo” and “Doumo”
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: You hear these two words every day in Japan!
+[story]
+Mika: どうぞ！ | Here you go!
+Alex: どうも！ | Thanks!
+Mika: どういたしまして！ | You're welcome!
+[ending]
+Alex: Say douzo when you offer something! Comment it below!

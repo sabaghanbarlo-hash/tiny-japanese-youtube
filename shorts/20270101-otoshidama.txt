@@ -1,0 +1,12 @@
+title: Kids Get Money on New Year's Day in Japan!
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: In Japan, kids get otoshidama on New Year's Day!
+[story]
+Alex: おとしだま、ください！ | Otoshidama, please!
+Mika: ええっ！ おとなは もらえないよ！ | Hey! Adults don't get it!
+Alex: ざんねん… | Too bad...
+[ending]
+Mika: Did you get otoshidama as a kid? Comment below!

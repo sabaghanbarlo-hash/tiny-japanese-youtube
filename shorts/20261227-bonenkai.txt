@@ -1,0 +1,12 @@
+title: Year-End Party in Japan? Say This First
+scene: izakaya
+cast: mika, alex
+
+[hook]
+Alex: Year-end parties in Japan are called bonenkai!
+[story]
+Mika: ことしも おつかれさま！ かんぱい！ | Good work this year! Cheers!
+Alex: かんぱい！ | Cheers!
+Mika: らいねんも がんばろう！ | Let's do our best next year too!
+[ending]
+Alex: Say kanpai! Comment cheers!

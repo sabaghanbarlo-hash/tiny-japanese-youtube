@@ -1,0 +1,12 @@
+title: Alex Drew the BEST Fortune in Japan!
+scene: shrine
+cast: mika, alex
+
+[hook]
+Mika: Omikuji can say lucky or unlucky. What did Alex get?
+[story]
+Alex: おみくじ、だいきち！ | My fortune is daikichi!
+Mika: すごい！ いちばん いいよ！ | Wow! That's the best!
+Alex: やった！ ことしは いい としに なる！ | Yay! It will be a good year!
+[ending]
+Mika: Daikichi means great luck! Comment daikichi!

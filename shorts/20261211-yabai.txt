@@ -1,0 +1,12 @@
+title: “Yabai” Can Mean Amazing OR Terrible!
+scene: ramen
+cast: mika, alex
+
+[hook]
+Alex: One slang word, two opposite meanings!
+[story]
+Mika: この ラーメン、やばい！ | This ramen is amazing!
+Alex: やばい？ まずいの？ | Yabai? Is it bad?
+Mika: ちがう ちがう！ おいしくて やばい！ | No no! It's so good it's crazy!
+[ending]
+Alex: Use yabai only with friends! Comment ok!

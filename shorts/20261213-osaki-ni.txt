@@ -1,0 +1,12 @@
+title: Leaving Work First? Say This in Japanese
+scene: commute
+cast: mika, alex
+
+[hook]
+Alex: Going home before everyone else? Say this!
+[story]
+Alex: おさきに しつれいします。 | Excuse me for leaving first.
+Mika: おつかれさまでした！ | Good work today!
+Alex: おつかれさまでした！ | Good work today!
+[ending]
+Mika: Say it out loud, then comment done!
