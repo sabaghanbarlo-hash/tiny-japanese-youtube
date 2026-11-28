@@ -1,0 +1,12 @@
+title: Not Good With Spicy Food? Say This in Japanese
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Alex: Worried it's too spicy? Say this!
+[story]
+Alex: からいのは にがてです。 | I'm not good with spicy food.
+Mika: だいじょうぶ！ からくないよ。 | It's okay! It's not spicy.
+Alex: よかった！ | Great!
+[ending]
+Mika: Say it once out loud, then comment done!

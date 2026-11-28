@@ -1,0 +1,12 @@
+title: Merry Christmas in Japanese! Say This
+scene: snow
+cast: mika, alex
+
+[hook]
+Alex: It's Christmas Eve! Say it in Japanese!
+[story]
+Mika: メリークリスマス！ | Merry Christmas!
+Alex: メリークリスマス！ プレゼントです！ | Merry Christmas! A present for you!
+Mika: ありがとう！ うれしい！ | Thank you! I'm so happy!
+[ending]
+Mika: Merry Christmas! Comment a Christmas emoji!

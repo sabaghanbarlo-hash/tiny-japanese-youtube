@@ -1,0 +1,12 @@
+title: Alex said “urusai” to a friend. Never do this!
+scene: classroom
+cast: mika, alex
+
+[hook]
+Mika: Never say urusai to your friends in Japanese!
+[story]
+Alex: うるさい！ | Be quiet!
+Mika: ひどい！ そんな こと いわないで！ | How mean! Don't say that!
+Alex: ごめん… しずかに して くれる？ | Sorry... could you be quieter?
+[ending]
+Mika: Would you say urusai? Comment yes or no!

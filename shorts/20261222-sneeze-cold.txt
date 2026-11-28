@@ -1,0 +1,12 @@
+title: Friend Sneezing? Say This in Japanese
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Cold season! Care for your friend in Japanese.
+[story]
+Alex: くしゅん！ | Achoo!
+Mika: だいじょうぶ？ かぜを ひかないでね。 | Are you okay? Don't catch a cold.
+Alex: ありがとう！ | Thanks!
+[ending]
+Alex: Say it to a friend today! Comment ok!

@@ -1,0 +1,12 @@
+title: Is There Wi-Fi? Ask Like This in Japan
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: Need internet in Japan? Ask this!
+[story]
+Alex: すみません、ワイファイは ありますか。 | Excuse me, is there Wi-Fi?
+Mika: はい、ありますよ。 | Yes, there is.
+Alex: パスワードを おしえて ください。 | Please tell me the password.
+[ending]
+Mika: Say it once out loud, then comment done!

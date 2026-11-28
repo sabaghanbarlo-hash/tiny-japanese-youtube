@@ -1,0 +1,13 @@
+title: Alex stuck his chopsticks in the rice. Everyone froze!
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Mika: Never do this with chopsticks in Japan!
+[story]
+Alex: ごはんに おはしを たてました。 | I stood my chopsticks in the rice.
+Mika: だめ！ それは よくないよ。 | No! That's not good.
+Mika: おはしは おはしおきに おいてね。 | Put them on the chopstick rest.
+Alex: ごめんなさい！ | Sorry!
+[ending]
+Mika: Did you know this one? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Excited About Something? Say This in Japanese
+scene: airport
+cast: mika, alex
+
+[hook]
+Alex: Going on a trip? Say how excited you are!
+[story]
+Mika: あした、りょこうに いくよ！ | I'm going on a trip tomorrow!
+Alex: いいな！ たのしみだね！ | Lucky! You must be excited!
+Mika: うん、すごく たのしみ！ | Yes, I'm really excited!
+[ending]
+Alex: What are you excited for? Comment below!

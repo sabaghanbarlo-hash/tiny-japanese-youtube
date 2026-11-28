@@ -1,0 +1,12 @@
+title: Never Say “Akemashite” Before January 1!
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: Careful! This greeting is only for after New Year's!
+[story]
+Alex: あけまして おめでとう！ | Happy New Year!
+Mika: まだ じゅうにがつ だよ！ | It's still December!
+Alex: あっ！ よい おとしを！ | Oh! Have a good new year!
+[ending]
+Mika: Now you know! Comment ok!

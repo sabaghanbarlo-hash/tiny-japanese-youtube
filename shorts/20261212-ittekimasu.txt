@@ -1,0 +1,13 @@
+title: Leaving Home in Japan? Say This First!
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: Japanese families say this every day when leaving and coming home!
+[story]
+Alex: いってきます！ | I'm leaving!
+Mika: いってらっしゃい！ | See you later!
+Alex: ただいま！ | I'm back!
+Mika: おかえり！ | Welcome back!
+[ending]
+Alex: Try it with your family! Comment tadaima!

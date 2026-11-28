@@ -1,0 +1,13 @@
+title: Never Say “Gomen” to Your Boss!
+scene: commute
+cast: mika, alex
+
+[hook]
+Mika: Gomen is only for friends!
+[story]
+Alex: ぶちょう、ごめん！ | Boss, sorry!
+Mika: だめ だめ！ ごめんは ともだちに ね。 | No no! Gomen is for friends.
+Mika: ぶちょうには、もうしわけ ありません。 | To a boss: moushiwake arimasen.
+Alex: もうしわけ ありません！ | I'm very sorry!
+[ending]
+Alex: Did you know this? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Finished Eating in Japan? Say This!
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Mika: Don't just walk out! Say this after every meal.
+[story]
+Alex: ごちそうさまでした。 | Thank you for the meal.
+Mika: おそまつさまでした。 | My pleasure.
+Alex: おいしかったです！ | It was delicious!
+[ending]
+Alex: Say it after every meal! Comment done!

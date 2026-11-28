@@ -1,0 +1,12 @@
+title: Alex asked about Christmas plans. Awkward!
+scene: street
+cast: mika, alex
+
+[hook]
+Mika: In Japan, Christmas Eve is often a date night!
+[story]
+Alex: クリスマスは だれと すごしますか。 | Who are you spending Christmas with?
+Mika: ええっ… ひみつ！ | Eh... it's a secret!
+Alex: あっ、しつれい しました！ | Oh, sorry about that!
+[ending]
+Mika: Would you ask this? Comment yes or no!

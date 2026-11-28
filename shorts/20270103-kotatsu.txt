@@ -1,0 +1,12 @@
+title: Japan's Coziest Winter Table: The Kotatsu
+scene: home
+cast: mika, alex
+
+[hook]
+Alex: Warm blanket, warm table, no way out!
+[story]
+Mika: こたつ、あったかい！ | The kotatsu is warm!
+Alex: もう でたく ない… | I don't want to leave...
+Mika: みかんも あるよ！ | There are mandarins too!
+[ending]
+Alex: Would you stay in the kotatsu? Comment yes!

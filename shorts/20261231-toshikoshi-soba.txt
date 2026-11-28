@@ -1,0 +1,12 @@
+title: New Year's Eve in Japan: Eat This Long Noodle!
+scene: ramen
+cast: mika, alex
+
+[hook]
+Mika: On New Year's Eve, Japan eats long noodles!
+[story]
+Alex: おおみそかは なにを たべる？ | What do you eat on New Year's Eve?
+Mika: としこしそば！ ながく いきる ように。 | Toshikoshi soba! So we live a long life.
+Alex: いいね！ ぼくも たべたい！ | Nice! I want some too!
+[ending]
+Mika: Happy New Year's Eve! Comment soba!

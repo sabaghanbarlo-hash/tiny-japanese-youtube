@@ -1,0 +1,12 @@
+title: What Do You Recommend? Ask in Japanese
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Alex: Can't decide what to order? Ask the staff!
+[story]
+Alex: おすすめは なんですか。 | What do you recommend?
+Mika: ラーメンが にんきです！ | The ramen is popular!
+Alex: じゃあ、それを おねがいします！ | Then I'll have that one!
+[ending]
+Mika: Say it once out loud, then comment done!

@@ -1,0 +1,12 @@
+title: First Shrine Visit of the Year: Hatsumoude
+scene: shrine
+cast: mika, alex
+
+[hook]
+Alex: The first shrine visit of the year is a big deal in Japan!
+[story]
+Mika: はつもうでに いこう！ | Let's go for the first shrine visit!
+Alex: いいね！ おみくじも ひく？ | Nice! Shall we draw a fortune too?
+Mika: もちろん！ | Of course!
+[ending]
+Alex: Would you go? Comment yes or no!

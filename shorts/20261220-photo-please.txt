@@ -1,0 +1,12 @@
+title: Can You Take Our Photo? Ask in Japanese
+scene: park
+cast: mika, alex
+
+[hook]
+Mika: Want a photo together? Ask politely!
+[story]
+Alex: すみません、しゃしんを とって もらえますか。 | Excuse me, could you take a photo for us?
+Mika: はい、いいですよ！ | Sure!
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

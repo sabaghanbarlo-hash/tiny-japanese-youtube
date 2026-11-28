@@ -1,0 +1,12 @@
+title: Happy New Year in Japanese! Say This
+scene: shrine
+cast: mika, alex
+
+[hook]
+Mika: It's New Year's Day! Say this to everyone!
+[story]
+Alex: あけまして おめでとう ございます！ | Happy New Year!
+Mika: ことしも よろしく おねがいします！ | Let's have a good year again!
+Alex: よろしく おねがいします！ | Please take care of me too!
+[ending]
+Mika: Say it to someone today! Comment akeome!

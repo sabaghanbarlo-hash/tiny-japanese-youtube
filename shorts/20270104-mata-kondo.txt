@@ -1,0 +1,12 @@
+title: “Mata kondo” Can Really Mean NO in Japanese!
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: Maybe next time can be a polite no!
+[story]
+Mika: こんど、ごはん いきませんか。 | Want to get a meal sometime?
+Alex: ええと… また こんど。 | Um... maybe next time.
+Mika: あっ… わかりました。 | Oh... I see.
+[ending]
+Alex: Have you heard this one? Comment yes or no!

@@ -1,0 +1,12 @@
+title: Need an English Menu? Ask Like This in Japan
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Mika: Can't read the menu? Ask for an English one!
+[story]
+Alex: すみません、えいごの メニューは ありますか。 | Excuse me, do you have an English menu?
+Mika: はい、ありますよ。 | Yes, we do.
+Alex: たすかります！ | That helps a lot!
+[ending]
+Mika: Say it out loud once, then comment done!

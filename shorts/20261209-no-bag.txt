@@ -1,0 +1,12 @@
+title: No Bag Please! Say This at a Japanese Store
+scene: store
+cast: mika, alex
+
+[hook]
+Mika: Japanese stores always ask if you need a bag. Answer like this!
+[story]
+Mika: ふくろは いりますか。 | Do you need a bag?
+Alex: いいえ、ふくろは いりません。 | No, I don't need a bag.
+Mika: わかりました！ | Got it!
+[ending]
+Alex: Say it out loud, then comment done!

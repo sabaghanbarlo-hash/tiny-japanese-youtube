@@ -1,0 +1,12 @@
+title: Can I Pay by Card? Ask Like This in Japan
+scene: store
+cast: mika, alex
+
+[hook]
+Alex: Not sure if shops take cards in Japan? Ask like this!
+[story]
+Alex: すみません、カードは つかえますか。 | Excuse me, can I use a card?
+Mika: はい、つかえますよ。 | Yes, you can.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

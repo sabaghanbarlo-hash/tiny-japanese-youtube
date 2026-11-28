@@ -1,0 +1,12 @@
+title: Where Is the Exit? Ask in Japanese
+scene: station
+cast: mika, alex
+
+[hook]
+Alex: Lost in a big Japanese station? Ask like this!
+[story]
+Alex: すみません、でぐちは どこですか。 | Excuse me, where is the exit?
+Mika: あちらです。 | Over there.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

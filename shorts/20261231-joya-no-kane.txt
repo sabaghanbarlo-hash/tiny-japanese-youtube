@@ -1,0 +1,12 @@
+title: Japan Rings a Temple Bell 108 Times!
+scene: shrine
+cast: mika, alex
+
+[hook]
+Alex: On New Year's Eve, temples ring a bell 108 times!
+[story]
+Mika: じょやの かねを きいて！ | Listen to the New Year's Eve bell!
+Alex: きれいな おとだね。 | What a beautiful sound.
+Mika: ひゃくはち かい なるよ！ | It rings 108 times!
+[ending]
+Alex: Would you listen to it? Comment yes or no!

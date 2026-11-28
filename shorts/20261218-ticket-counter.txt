@@ -1,0 +1,12 @@
+title: Where Can I Buy a Ticket? Ask in Japanese
+scene: station
+cast: mika, alex
+
+[hook]
+Alex: Need a train ticket? Ask like this!
+[story]
+Alex: すみません、きっぷうりばは どこですか。 | Excuse me, where is the ticket counter?
+Mika: あそこです。 | Over there.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

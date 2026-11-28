@@ -1,0 +1,13 @@
+title: “Kekkou desu” Can Mean Yes AND No!
+scene: cafe
+cast: mika, alex
+
+[hook]
+Mika: This polite phrase can mean yes or no in Japanese!
+[story]
+Mika: おちゃは いかがですか。 | Would you like some tea?
+Alex: けっこうです。 | I'm fine.
+Mika: あれ？ いるの？ いらないの？ | Huh? Do you want it or not?
+Alex: ええと… いただきます！ | Um... I'll have some!
+[ending]
+Alex: Tricky, right? Comment if this happened to you!

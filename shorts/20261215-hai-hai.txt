@@ -1,0 +1,13 @@
+title: Saying “hai, hai” Can Sound Rude in Japanese!
+scene: classroom
+cast: mika, alex
+
+[hook]
+Alex: Careful! Saying hai twice can sound annoyed.
+[story]
+Mika: しゅくだい、やった？ | Did you do your homework?
+Alex: はい、はい。 | Yes, yes.
+Mika: その いいかた、ちょっと おこっている みたい。 | That sounds like you're annoyed.
+Alex: ごめん！ はい、やりました！ | Sorry! Yes, I did it!
+[ending]
+Mika: Say hai once, with a smile! Comment ok!

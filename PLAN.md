@@ -153,3 +153,43 @@ Six more stories, one a day, so every day until the Nov 29 story week has one. S
 
 Thursday Nov 26 is US Thanksgiving, so US viewing may be lower that day.
 
+## December plan (28 Nov 2026): one more month of Shorts, built from the Nov data
+
+Scripts for **6 Dec - 5 Jan** are in `shorts/` (62 Shorts, two a day at 14:00 UTC and 22:00 UTC) and listed in `schedule.json`. The scheduler picks them up like everything else: it renders and uploads each one as private with a publish time about 48 hours ahead.
+
+### What the YouTube data shows (20 Oct - 27 Nov, channel analytics + per-video stats)
+Channel: 51 subscribers, about 11.8k views. 63 Shorts (median 120 views, mean 189) and 14 long videos (median 7.5 views, 152 in total).
+
+| What | Result |
+|---|---|
+| Where views come from | Shorts feed 91%, YouTube search 4.5%. Shorts are 97% of views, long videos about 1%. |
+| Who watches | Japan 5,801 of about 9,970 views (58%), then Indonesia 777, US 331, India 164, Philippines 80. On 17 Nov Japan was 93% of views, so roughly half of the views since the English-first change are now outside Japan. |
+| Top 5 Shorts | "Stop Saying Just Arigatou" 1,055 (8.8x median); "Alex got a present. Never say this" 888 (7.4x, 58% viewed, 6 subs); "Chotto Can Mean NO" 877; "Alex said this after the meal. Big mistake!" 817 (65% viewed); "2 Polite Ways Japanese People Say No" 656. |
+| Hook shape | "Polite vs rude / doesn't mean" titles: median 554-766 views. "Alex did X, never say this" (character hook): median 582 and the best retention (65% viewed). Plain "How to say X": median 134. Quiz-only and Hiragana Shorts: 0-1 views. |
+| Length | Under 26 seconds: 58-71% viewed. Over 62 seconds: 36% viewed, median 127 views. The three hits over 60 seconds are topic hits; the short character hooks keep viewers better. |
+| Long videos | 14 videos, median 7.5 views, 12-44% viewed. Nobody finds them yet. |
+
+**Working:** a contrast or mistake in the first line about a phrase every learner knows; Alex making the mistake on screen; 20-30 second scripts; English hook line.
+**Not working:** Hiragana Shorts, quiz-only Shorts, generic "How to say X", long videos for now, Japanese script in the title (median 90 vs 120 without it), "Japanese for Beginners / JLPT N5" title prefixes (no effect: median 124 vs 120).
+
+**Caveats:** one Short is 9% of all Shorts views, so a single title can move any average. Titles of 60 characters or fewer did better (median 448, but only 6 videos), so the new titles are kept short. 0 comments and almost no shares on most Shorts. Retention for a few Shorts is not in the API yet.
+
+### The December mix (62 Shorts)
+- survival phrase ("Ask like this"): 27
+- seasonal / culture: 19
+- character hook ("Alex did X..."): 8
+- mistake / "doesn't mean" hook: 8
+
+Rules used: the first line is an English hook; 20-30 seconds; one situation; one comment question at the end; no two Shorts on the same phrase inside a week; titles 60 characters or fewer. About a quarter of the month is Christmas and New Year culture (search interest peaks then; this is a guess, not measured).
+
+### Calendar
+Every day: Short A at 14:00 UTC (9:00 ET), Short B at 22:00 UTC (17:00 ET). First: Sun 6 Dec; last: Tue 5 Jan. Exact titles are the `title:` line of each file in `shorts/`.
+
+### Checkpoints (ship it, or change it?)
+- **6 Dec:** the Nov 23 - Dec 5 story week is over. If the stories averaged under 50 views each, move the rest to `held_items` and keep at most one story a week.
+- **13 Dec:** median views of the first 14 December Shorts. Keep the mix if it is above 120 (the Nov median) and above 50% viewed. Replace the weakest hook type if it sits under 60.
+- **3 Jan:** compare hook types over 40+ Shorts. Double the best type for the next month, cut the worst.
+- Studio > Analytics > Audience > Geography: keep the English hook if at least 25% of views come from outside Japan.
+
+### Native-speaker check
+The Japanese is AI-written and not native-verified. Worth a look first: Alex/Mika's "anata" lesson (20261206-anata), the "urusai", "gomen to your boss" and "tsumaranai gift" scripts, and the "hai, hai" script. Edit the file before its upload date or change `publish_at`.

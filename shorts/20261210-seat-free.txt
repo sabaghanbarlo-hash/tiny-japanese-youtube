@@ -1,0 +1,12 @@
+title: Is This Seat Free? Ask Like This in Japan
+scene: cafe
+cast: mika, alex
+
+[hook]
+Alex: Need a seat in a busy cafe? Ask like this!
+[story]
+Alex: すみません、ここは あいて いますか。 | Excuse me, is this seat free?
+Mika: はい、どうぞ。 | Yes, go ahead.
+Alex: ありがとう ございます！ | Thank you!
+[ending]
+Mika: Say it out loud once, then comment done!

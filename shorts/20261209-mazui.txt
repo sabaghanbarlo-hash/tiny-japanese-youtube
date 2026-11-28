@@ -1,0 +1,13 @@
+title: Alex told the chef “mazui”. Mika gasped!
+scene: restaurant
+cast: mika, alex
+
+[hook]
+Mika: Never say mazui about food in Japan!
+[story]
+Alex: これ、まずい。 | This tastes bad.
+Mika: ええっ！ しつれいですよ！ | What! That's rude!
+Mika: おいしいです、と いってね。 | Say oishii desu instead.
+Alex: おいしいです！ | It's delicious!
+[ending]
+Alex: Would you say mazui? Comment yes or no!

@@ -1,0 +1,12 @@
+title: What's Your Goal This Year? Say It in Japanese
+scene: home
+cast: mika, alex
+
+[hook]
+Mika: New year, new goals! Say yours in Japanese!
+[story]
+Mika: ことしの もくひょうは？ | What's your goal this year?
+Alex: にほんごを べんきょう する！ | I'll study Japanese!
+Mika: すごい！ がんばってね！ | Great! Do your best!
+[ending]
+Alex: Comment your goal in Japanese or English!
